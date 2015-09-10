@@ -3,7 +3,7 @@ Students in 18.06 have the option of using <img src="https://camo.githubusercont
 ## Instructions
 
 1. Go to [juliabox.org](https://juliabox.org).
-2. In the Sync tab, paste `https://github.com/alanedelman/18.06_Spring_2015.git` in "Git Clone URL". Then click on the "+" button.
+2. Click on the Sync tab, paste `https://github.com/alanedelman/18.06_Spring_2015.git` in "Git Clone URL". Then click on the "+" button.
 3. Go the IJulia tab, refresh (upper right icon), and click on `18.06_Spring_2015`
 4. Enter your answers with Shift+Enter
 
