@@ -2,10 +2,12 @@ Students in 18.06 have the option of using <img src="https://camo.githubusercont
 
 ## Instructions
 
-1. go to juliabox.org
-2. In the sync tab, paste `https://github.com/alanedelman/18.06_Spring_2015.git` in Git Clone URL
-3. Go the the Ijulia tab, refresh (upper right icon), and drill down
-Enter your answers with <shift>+<enter>
+1. Go to [juliabox.org](https://juliabox.org).
+2. Click on the Sync tab (on top). (If by chance it fails to load, try hitting refresh in the browser.)
+3. Paste `https://github.com/alanedelman/18.06_Spring_2015.git` under "Git Clone URL". <br> Then click on the "+" button under Action.
+4. Click on the IJulia tab (on top), refresh (upper right icon), and click on `18.06_Spring_`
+5. The first cell is a bit ugly, but if you hit Shift+Enter it will ask for your @mit login name.  This is how we know who you are.
+6. Enter your answers with Shift+Enter.  Have fun with Julia!
 
 ### Some Notes:
 
