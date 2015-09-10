@@ -1,6 +1,6 @@
 Students in 18.06 have the option of using <img src="https://camo.githubusercontent.com/e1ae5c7f6fe275a50134d5889a68f0acdd09ada8/687474703a2f2f6a756c69616c616e672e6f72672f696d616765732f6c6f676f5f68697265732e706e67" width="40"> through the  [juliabox.org](https://juliabox.org) website or mitx.  
 
-## Instructions
+## Instructions for the Julia Based Problem Sets
 
 1. Go to [juliabox.org](https://juliabox.org).
 2. Click on the Sync tab (on top). (If by chance it fails to load, try hitting refresh in the browser.)
