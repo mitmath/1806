@@ -15,4 +15,4 @@ Students in 18.06 have the option of using <img src="https://camo.githubusercont
 2. Scores for MITx or Julia may be posted at different times (probably 24 or 48 hours apart)
 3. The MITx and Julia problems are nearly identical, though there are some minor changes due to format and language.  We hope the Julia set is more fun.
 4. Ask Julia questions through Piazza and very likely Professor Edelman will answer them quickly
-6. Don't worry if something technically goes wrong.  We can always do things manually, just send  a friendly note to edelman at mit.edu.
+6. Don't worry if something technically goes wrong.  We can always do things manually, just send  a friendly note through piazza or to edelman at mit.edu.
