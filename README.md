@@ -4,7 +4,7 @@ Students in 18.06 have the option of using <img src="https://camo.githubusercont
 
 
 1. Login to [juliabox.org](https://juliabox.org) with your google account. <br> <img  src="http://www.exegetic.biz/blog/wp-content/uploads/2015/08/julia-juliabox.jpg" width="300" >
-2. If you did pset 1, go back into pset1 and copy and paste <br> `download https://github.com/alanedelman/18.06_Spring_2015/blob/master/18.06-PS2.ipynb` in a new cell in pset1 and execute
+2. If you did pset 1, go back into pset1 and copy and paste the next line:<br> `download https://github.com/alanedelman/18.06_Spring_2015/blob/master/18.06-PS2.ipynb` <br> in a new cell in pset1 and execute
 3. Go back to the notebooks tab (or hit the IJ icon), refresh, and enjoy pset 2
 4. If you are trying julia for the first time, open up a new notebook and follow the instruction on line 2
 
