@@ -4,9 +4,8 @@ Students in 18.06 have the option of using <img src="https://camo.githubusercont
 
 
 1. Login to [juliabox.org](https://juliabox.org) with your google account. <br> <img  src="http://www.exegetic.biz/blog/wp-content/uploads/2015/08/julia-juliabox.jpg" width="300" >
-0. If you wish to save your notebook from the previous problem set, you can download to your own computer or make a copy.
-2. Click on the Sync tab (on top). (If by chance it fails to load, try hitting refresh in the browser.)
-3. Paste `https://github.com/alanedelman/18.06_Spring_2015.git` under "Git Clone URL". <br> Then click on the "+" button under Action.  
+2. Click on the Console tab
+3. Copy and paste wget https://github.com/alanedelman/18.06_Spring_2015/blob/master/18.06-PS2.ipynb
 4. Click on the IJulia tab (on top), refresh (upper right icon), and click on `18.06_Spring_`
 5. The first cell is a bit ugly, but if you hit Shift+Enter it will ask for your @mit login name.  This is how we know who you are.  (If by chance nothing happens after a minute, try hitting Shift+Enter again.)
 6. Enter your answers with Shift+Enter.  Have fun with Julia!
