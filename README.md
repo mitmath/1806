@@ -4,7 +4,7 @@ Students in 18.06 have the option of using <img src="https://camo.githubusercont
 
 
 1. Login to [juliabox.org](https://juliabox.org) with your google account. <br> <img  src="http://www.exegetic.biz/blog/wp-content/uploads/2015/08/julia-juliabox.jpg" width="300" >
-2. Click on the Console tab
+2. Click on the Console tab (we are going to upload ps2 only so as not to overwrite ps1)
 3. Copy and paste `wget https://github.com/alanedelman/18.06_Spring_2015/blob/master/18.06-PS2.ipynb`
 4. Sometimes paste doesn't work.  You can right click on the console, paste from browser, paste, ok, (maybe click on console), and hit return
 4. Click on the IJulia tab (on top), refresh (upper right icon)
