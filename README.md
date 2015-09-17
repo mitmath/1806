@@ -4,13 +4,10 @@ Students in 18.06 have the option of using <img src="https://camo.githubusercont
 
 
 1. Login to [juliabox.org](https://juliabox.org) with your google account. <br> <img  src="http://www.exegetic.biz/blog/wp-content/uploads/2015/08/julia-juliabox.jpg" width="300" >
-2. Click on the Console tab (we are going to upload ps2 only so as not to overwrite ps1)
-3. Copy and paste `wget https://github.com/alanedelman/18.06_Spring_2015/blob/master/18.06-PS2.ipynb`
-4. Sometimes paste doesn't work.  You can right click on the console, paste from browser, paste, ok, (maybe click on console), and hit return
-4. Click on the IJulia tab (on top), refresh (upper right icon)
-5. The first cell is a bit ugly, but if you hit Shift+Enter it will ask for your @mit login name.  This is how we know who you are.  (If by chance nothing happens after a minute, try hitting Shift+Enter again.)
-6. Enter your answers with Shift+Enter.  Have fun with Julia!
-7. The progress bar is at the bottom.
+2. If you did pset 1, go back into pset1 and copy and paste `download https://github.com/alanedelman/18.06_Spring_2015/blob/master/18.06-PS2.ipynb` in a new cell in pset1 and execute
+3. Go back to the notebooks tab (or hit the IJ icon), refresh, and enjoy pset 2
+4. If you are trying julia for the first time, open up a new notebook and follow the instruction on line 2
+
 
 ### Some Notes:
 
