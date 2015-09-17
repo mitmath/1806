@@ -10,6 +10,7 @@ Students in 18.06 have the option of using <img src="https://camo.githubusercont
 4. Click on the IJulia tab (on top), refresh (upper right icon), and click on `18.06_Spring_`
 5. The first cell is a bit ugly, but if you hit Shift+Enter it will ask for your @mit login name.  This is how we know who you are.  (If by chance nothing happens after a minute, try hitting Shift+Enter again.)
 6. Enter your answers with Shift+Enter.  Have fun with Julia!
+7. The progress bar is at the bottom.
 
 ### Some Notes:
 
