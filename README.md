@@ -1,13 +1,16 @@
 Students in 18.06 have the option of using <img src="https://camo.githubusercontent.com/e1ae5c7f6fe275a50134d5889a68f0acdd09ada8/687474703a2f2f6a756c69616c616e672e6f72672f696d616765732f6c6f676f5f68697265732e706e67" width="33" align=top> through the  [juliabox.org](https://juliabox.org) website.
 
-## Instructions 
+## Instructions for Problem Set 2 
+
 
 1. Login to [juliabox.org](https://juliabox.org) with your google account. <br> <img  src="http://www.exegetic.biz/blog/wp-content/uploads/2015/08/julia-juliabox.jpg" width="300" >
-2. Click on the Sync tab (on top). (If by chance it fails to load, try hitting refresh in the browser.)
-3. Paste `https://github.com/alanedelman/18.06_Spring_2015.git` under "Git Clone URL". <br> Then click on the "+" button under Action.
-4. Click on the IJulia tab (on top), refresh (upper right icon), and click on `18.06_Spring_`
-5. The first cell is a bit ugly, but if you hit Shift+Enter it will ask for your @mit login name.  This is how we know who you are.  (If by chance nothing happens after a minute, try hitting Shift+Enter again.)
-6. Enter your answers with Shift+Enter.  Have fun with Julia!
+2. If you did pset 1, go back into pset1 (or a new notebook) and copy and paste the next line:<br>
+ `download("https://github.com/alanedelman/18.06_Spring_2015/blob/master/18.06-PS2.ipynb")`
+<br> in a new cell  and execute
+3. If you filled in your gmail and mit address once this semester, it is not necessary to do again.
+4. Go back to the notebooks tab (or hit the IJ icon), refresh, and enjoy pset 2
+5. If you are trying julia for the first time, open up a new notebook (any kernel is fine) and follow the instruction on line 2
+
 
 ### Some Notes:
 
