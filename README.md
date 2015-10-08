@@ -18,3 +18,4 @@ Students in 18.06 have the option of using <img src="https://camo.githubusercont
 3. The MITx and Julia problems are nearly identical, though there are some minor changes due to format and language.  We hope the Julia set is more fun.
 4. Ask Julia questions through Piazza and very likely Professor Edelman will answer them quickly
 6. Don't worry if something technically goes wrong.  We can always do things manually, just send  a friendly note through piazza or to edelman at mit.edu.
+7. If you need to re-download the notebook to get some fixes you can run `download("https://raw.githubusercontent.com/alanedelman/18.06_Spring_2015/master/18.06-PS3.ipynb", "18.06-PS3_new_version.ipynb" )` (notice the changed name as the second argument to `download`. Now you can open the new notebook and you *only need to answer the problems you haven't already or had trouble with*. Your score from the previous notebook will be saved.
