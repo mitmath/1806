@@ -1,12 +1,16 @@
 Students in 18.06 have the option of using <img src="https://camo.githubusercontent.com/e1ae5c7f6fe275a50134d5889a68f0acdd09ada8/687474703a2f2f6a756c69616c616e672e6f72672f696d616765732f6c6f676f5f68697265732e706e67" width="33" align=top> through the  [juliabox.org](https://juliabox.org) website.
 
-**Julia problem set 4 is already out! Replace `PS3`in the instructions below with `PS4`to get it! Deadline for problem set 3 is Saturday  10th October 12:01am.**
+**  A ready made copy and paste for pset 4 **: <br>
+
+`download("https://raw.githubusercontent.com/alanedelman/18.06_Spring_2015/master/18.06-PS4.ipynb", "18.06-PS4.ipynb" )`
+
+
 
 ## Instructions for Problem Sets 3 (and so on)
 
 0. The Julia option (only!)  may be completed by midnight Friday night for full credit (12:01AM Saturday to be precise)
 1. Login to [juliabox.org](https://juliabox.org) with your google account. <br> <img  src="http://www.exegetic.biz/blog/wp-content/uploads/2015/08/julia-juliabox.jpg" width="300" >
-2. If you did pset 1, go back into pset1 (or a new notebook) and copy and paste the next line:<br> `download("https://raw.githubusercontent.com/alanedelman/18.06_Spring_2015/master/18.06-PS3.ipynb", "18.06-PS3.ipynb" )`
+2. Go back into an existing (or a new notebook) and copy and paste the next line:<br> `download("https://raw.githubusercontent.com/alanedelman/18.06_Spring_2015/master/18.06-PS3.ipynb", "18.06-PS3.ipynb" )`
 <br> in a new cell  and execute
 4. Go back to the notebooks tab (or hit the IJ icon), refresh, and enjoy pset 2
 3. If you filled in your gmail and mit address once this semester, it is not necessary to do again.
