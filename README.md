@@ -2,7 +2,7 @@ Students in 18.06 have the option of using <img src="https://camo.githubusercont
 
 **Julia problem set 4 is already out! Replace `PS3`in the instructions below with `PS4`to get it! Deadline for problem set 3 is Friday 9th October 11:59pm.**
 
-## Instructions for Problem Set 3
+## Instructions for Problem Sets 3 (and so on)
 
 0. The Julia option (only!)  may be completed by midnight Friday night for full credit (12:01AM Saturday to be precise)
 1. Login to [juliabox.org](https://juliabox.org) with your google account. <br> <img  src="http://www.exegetic.biz/blog/wp-content/uploads/2015/08/julia-juliabox.jpg" width="300" >
