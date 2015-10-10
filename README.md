@@ -1,6 +1,6 @@
 Students in 18.06 have the option of using <img src="https://camo.githubusercontent.com/e1ae5c7f6fe275a50134d5889a68f0acdd09ada8/687474703a2f2f6a756c69616c616e672e6f72672f696d616765732f6c6f676f5f68697265732e706e67" width="33" align=top> through the  [juliabox.org](https://juliabox.org) website.
 
-**Julia problem set 4 is already out! Replace `PS3`in the instructions below with `PS4`to get it! Deadline for problem set 3 is Friday 9th October.**
+**Julia problem set 4 is already out! Replace `PS3`in the instructions below with `PS4`to get it! Deadline for problem set 3 is Friday 9th October 11:59pm.**
 
 ## Instructions for Problem Set 3
 
