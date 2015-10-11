@@ -1,7 +1,6 @@
 Students in 18.06 have the option of using <img src="https://camo.githubusercontent.com/e1ae5c7f6fe275a50134d5889a68f0acdd09ada8/687474703a2f2f6a756c69616c616e672e6f72672f696d616765732f6c6f676f5f68697265732e706e67" width="33" align=top> through the  [juliabox.org](https://juliabox.org) website.
 
-**   For those who don't read instructions: <br>
-
+For those who don't read instructions: <br>
 `download("https://raw.githubusercontent.com/alanedelman/18.06_Spring_2015/master/18.06-PS4.ipynb", "18.06-PS4.ipynb" )`
 
 
