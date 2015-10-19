@@ -25,3 +25,4 @@ For those who don't read instructions: <br>
 6. Don't worry if something technically goes wrong.  We can always do things manually, just send  a friendly note through piazza or to edelman at mit.edu.
 7. If you need to re-download the notebook to get some fixes you can run `download("https://raw.githubusercontent.com/alanedelman/18.06_Spring_2015/master/18.06-PS5.ipynb", "18.06-PS5_a.ipynb" )` (notice the changed name as the second argument to `download`. Now you can open the new notebook and you *only need to answer the problems you haven't already or had trouble with*. Your score from the previous notebook will be saved.
 8. Notice that the files on <a href="https://github.com/alanedelman/18.06_Spring_2015"> the github page </a> are timestamped.  If you are having trouble with a problem for technical reasons, check for updates.
+9. If you see a dead kernel, please follow the instructions on https://piazza.com/class/iebnrdsl7th4h7?cid=130
