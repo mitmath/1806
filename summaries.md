@@ -9,6 +9,8 @@ I'll try to update it within a day of each lecture.
 
 ## Lecture 1 (Feb 8)
 
+* [pset 1 is posted](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset1/pset1.ipynb).
+
 Went over the [course overview
 slides](https://github.com/stevengj/1806-spring17/blob/master/lectures/lecture1/overview.pdf)
 giving the syllabus and the "big picture" of what 18.06 is about.
