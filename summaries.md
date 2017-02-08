@@ -42,3 +42,21 @@ What comes next?  The problem with expressing Gaussian elimination this way, as 
 In particular, our goal in the next lectures will be to find a matrix E such that multiplying both sides of Ax=b by E (on the left) transforms it into upper-triangular form.  That is, Gaussian elimination turns Ax=b into EAx=Ux=Eb=c, where U is upper triangular.  *Amazing fact*: it will turn out that E is *lower* triangular, and that by writing U=EA we have effectively written A=E⁻¹U=LU, where L is lower triangular too.  This is called the [LU factorization of A](https://en.wikipedia.org/wiki/LU_decomposition), and is an *incredibly useful* way to look at Gaussian elimination.  The computer gives us L and U, and then given those matrices it turns out that we can figure out lots of things that would have been hard to do with A alone.
 
 **Textbook:** sections 2.1 and 2.2.
+
+## Optional Julia Tutorial (Friday Feb 10, 5pm, 32-123)
+
+On Friday at 5pm, there will be an optional tutorial session in 32-123
+for the [Julia](http://julialang.org/) computer software that we will be using in 18.06 this
+semester for homework and lecture demonstrations. Julia is a
+programming language, but no programming will be required in 18.06: we
+will just be using it as a "fancy calculator" that happens to have
+lots of linear algebra and other capabilities. The tutorial session is
+optional; for the homework, we will mostly just give you code and tell
+you to run it, perhaps with minor tweaks, in order to perform
+computational experiments.  Bring your laptops, and try logging into
+[juliabox.com](https://juliabox.com) beforehand.  More information:
+
+* [Instructions/links for using Julia](https://github.com/stevengj/julia-mit/)
+* [Overview slides](https://github.com/stevengj/1806-spring17/blob/master/julia/Julia-intro.pdf)
+* [Julia cheatsheet](https://github.com/stevengj/1806-spring17/blob/master/julia/Julia-cheatsheet.pdf)
+* [Tutorial notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/julia/tutorial.ipynb)
