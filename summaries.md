@@ -17,7 +17,7 @@ giving the syllabus and the "big picture" of what 18.06 is about.
 
 Then I started right in on [Gaussian
 elimination](https://en.wikipedia.org/wiki/Gaussian_elimination).  I
-started with the "high school" method of writing ouit three equations
+started with the "high school" method of writing out three equations
 in three unknowns, adding/subtracting multiples of equations until we
 were left with one equation in one unknown — at that point we can
 solve it, then work backwards ("backsubstitution") through the
