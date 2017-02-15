@@ -71,3 +71,22 @@ computational experiments.  Bring your laptops, and try logging into
 * [Overview slides](https://github.com/stevengj/1806-spring17/blob/master/julia/Julia-intro.pdf)
 * [Julia cheatsheet](https://github.com/stevengj/1806-spring17/blob/master/julia/Julia-cheatsheet.pdf)
 * [Tutorial notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/julia/tutorial.ipynb)
+
+## Lecture 3 (Feb 15)
+
+* [pset 1 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset1/pset1-sol.ipynb), [pset 2 is posted](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset2/pset2.ipynb).
+
+* [LU and matrix-inverse notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture3/LU-and-Inverses.ipynb)
+
+Went through the LU notebook, with some blackboard aids, covering:
+
+* How the L matrix entries are just the multipliers from Gaussian elimination
+* How in practice, one rarely "augments" the matrix with the right-hand side.  Instead, you compute A=LU, substitute this into Ax=b=LUx, let c=Ux, solve Lc=b, then solve Ux=c.  In particular, solving Lc=b is *exactly* the same as performing the Gaussian-elimination steps on c.
+* Given A=LU, you can efficiently solve multiple right-hand sides, or equivalently the matrix equation AX=B.
+* How row swaps lead to the factorization PA=LU: in practice, the computer *always* does row swaps, and always gives you a permutation matrix P (or its equivalent).
+* Singular matrices = zero pivots (that can't be eliminated by row swaps) = no solutions or infinitely many solutions.
+
+I briefly started talking about matrix inverses, but will mainly do
+that in Lecture 4.
+
+**Further reading:** Textbook sections 2.6, 2.7, 2.5.
