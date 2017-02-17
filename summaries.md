@@ -93,7 +93,17 @@ that in Lecture 4.
 
 ## Lecture 4 (Feb 17)
 
-* [notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture4/Inverses-Complexity-Transposes.ipynb)
+* [Inverses, complexity, and transposes notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture4/Inverses-Complexity-Transposes.ipynb)
 
+Went through the topics in the lecture notebook:
 
+* Matrix inverses: computation from LU (and why in practice you usually *don't* compute them), properties like A⁻¹A = A⁻¹A = I or (AB)⁻¹ = B⁻¹A⁻¹.
+
+* Complexity of matrix operations: why matrix × vector or backsubstitution scale like n² for n×n matrices, while matrix × matrix or Gaussian elimination (LU factorization) scale like n³.   Matrices much bigger than a few thousand square quickly become impractical, and really large problems are only tractable because they have special structure like sparsity.
+
+* Transposes.  Showed that the inverse of a permutation matrix is its transpose because the columns are orthonormal: this is an example of what we will later call an "orthogonal" or "unitary" matrix.
+
+We will discuss more properties of transposes in the next lecture (I didn't finish the last two sections).
+
+**Further reading:** Textbook sections 2.5, 2.7, 2.6 ("The cost of elimination").  Strang [video lecture 3](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-3-multiplication-and-inverse-matrices/) and [video lecture 5](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/).
 
