@@ -93,7 +93,7 @@ that in Lecture 4.
 
 ## Lecture 4 (Feb 17)
 
-* [notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture4/Inverses-Complexity.ipynb)
+* [notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture4/Inverses-Complexity-Transposes.ipynb)
 
 
 
