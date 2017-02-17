@@ -90,3 +90,8 @@ I briefly started talking about matrix inverses, but will mainly do
 that in Lecture 4.
 
 **Further reading:** Textbook sections 2.6, 2.7, 2.5.
+
+## Lecture 4 (Feb 17)
+
+* [notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture4/Inverses-Complexity.ipynb)
+
