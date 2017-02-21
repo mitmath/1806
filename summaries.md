@@ -107,3 +107,12 @@ We will discuss more properties of transposes in the next lecture (I didn't fini
 
 **Further reading:** Textbook sections 2.5, 2.7, 2.6 ("The cost of elimination").  Strang [video lecture 3](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-3-multiplication-and-inverse-matrices/) and [video lecture 5](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/).
 
+## Lecture 5 (Feb 21)
+
+* [Transposes notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture5/Transposes.ipynb)
+
+Continued talking about transposes, from lecture 4: relationship to
+matrix multiplication, dot products, and LU factorization.  Symmetric
+matrices and factorizations (LDLᵀ and Cholesky).
+
+**Further reading:** Textbook, section 2.7. We will return to symmetric positive-definite (SPD) matrices much later in the course; for a preview, see the textbook section 6.5 (it's okay if you don't understand the eigenvalue stuff yet).
