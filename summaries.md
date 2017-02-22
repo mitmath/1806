@@ -116,3 +116,28 @@ matrix multiplication, dot products, and LU factorization.  Symmetric
 matrices and factorizations (LDLᵀ and Cholesky).
 
 **Further reading:** Textbook, section 2.7. We will return to symmetric positive-definite (SPD) matrices much later in the course; for a preview, see the textbook section 6.5 (it's okay if you don't understand the eigenvalue stuff yet).
+
+## Lecture 6 (Feb 22)
+
+* [pset 2 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset2/pset2-sol.ipynb), [pset 3 posted tonight](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset3/pset3.ipynb).
+
+* The first exam will be ***next week** on Friday March 3 in room 54-340.  It will cover everything through pset 3, up to including the lecture on Monday, February 27.  (It may be a *bit harder* than exams in previous terms, but grading will be adjusted accordingly.)
+
+
+Introduced vector spaces and subspaces.  Examples of vector spaces include real n-component vectors (ℝⁿ, or ℂⁿ for complex numbers), real m×n matrices, functions f(x) (ℝ↦ℝ, real numbers to real numbers).  Examples of subspaces includes planes or lines through the origin in ℝ³, or the origin itself; polynomial functions; polynomials of degree ≤ 3.
+
+For an m×n matrix A, introduced two important subspaces.
+
+* First, the column space C(A): the set {Ax for all x ∈ ℝⁿ}.  This is the set of *right-hand sides* b such that Ax=b is *solvable*, and is a subspace of ℝᵐ (not ℝⁿ unless m=n!).
+
+* Second, the null space (also called the "kernel") N(A): the set {x such that Ax=0⃗} ⊆ ℝⁿ (i.e., a subspace of ℝⁿ).  Given any solution x to Ax=b, then x+y is also a solution if y ∈ N(A).
+
+These are very important subspaces because they tell us a lot about
+the matrix A and solutions to Ax=b.  As a trivial example, if A is an
+n×n *invertible* matrix, C(A)=ℝⁿ and N(A)={0⃗}.  Conversely, if A is
+the n×n matrix of *all zeros* (the "most singular" matrix), then
+C(A)={0⃗} and N(A)=ℝⁿ.  Our goal in the next lectures will be to
+understand how C(A) and N(A) relate to each other (and another two
+important subspaces) and to the *elimination* process on A.
+
+**Further reading:** Textbook, sections 3.1 and 3.2.
