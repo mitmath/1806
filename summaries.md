@@ -141,3 +141,45 @@ understand how C(A) and N(A) relate to each other (and another two
 important subspaces) and to the *elimination* process on A.
 
 **Further reading:** Textbook, sections 3.1 and 3.2.
+
+## Lecture 7 (Feb 24)
+
+More on nullspace and column space.  Showed that N(A) ⊆ N(BA) for any
+matrix B, and that the two are equal if B is invertible.  However,
+C(A) and C(BA) are in general quite distinct (neither is contained in
+the other), although they have the same dimension if B is invertible.
+In consequence, elimination steps (or any other row operations), which
+correspond to multiplying by invertible matrices on the left, don't
+change the nullspace.
+
+Defined a **basis** for a vector space as a minimal set of vectors (we
+will later say that they have to be *linearly independent*) whose
+**span** (all linear combinations) produces everything in the space.
+The **dimension** of a vector space is the number of vectors in a
+basis.
+
+Went through a couple of examples of applying elimination to singular
+and nonsquare matrices.  Defined the **rank** as the number of (nonzero)
+pivots, the reduced-row echelon form R, the pivot columns, and the
+free columns.  Showed how we can "read off" a basis for the null space
+from R, especially if R is of the typical form [I F].
+
+As a practical matter, computing the null space from R is not very
+important.  If a matrix is not full rank, usually you go back to where
+the matrix came from and ask what part of the *problem structure* led
+to this, and this usually tells you the nullspace -- interesting
+nullspaces don't happen by accident.  Actually computing R is very
+sensitive to roundoff errors, and it is not a good way to analyze
+matrices that are *nearly* singular (e.g. have very small pivots).  A
+better computational tool for this is the
+[SVD](https://en.wikipedia.org/wiki/Singular_value_decomposition),
+which we will look at much later in the course.  However, the
+following things *are* useful and important:
+
+* Understanding how the various fundamental subspaces like N(A) and C(A) are *affected by matrix operations*, e.g. elimination or factorization.
+
+* Understanding how the rank r, the size m×n of the matrix, and the dimensions of the subspaces are *related*.
+
+* Understanding how to determine the nullspace etc. for matrices with *special structure*, like R.
+
+**Further reading:** Textbook, sections 3.2-3.5.  OCW video [lecture 6](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-6-column-space-and-nullspace/), [lecture 7](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-7-solving-ax-0-pivot-variables-special-solutions/), [lecture 8](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-8-solving-ax-b-row-reduced-form-r/).
