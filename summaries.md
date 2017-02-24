@@ -130,13 +130,13 @@ For an m×n matrix A, introduced two important subspaces.
 
 * First, the column space C(A): the set {Ax for all x ∈ ℝⁿ}.  This is the set of *right-hand sides* b such that Ax=b is *solvable*, and is a subspace of ℝᵐ (not ℝⁿ unless m=n!).
 
-* Second, the null space (also called the "kernel") N(A): the set {x such that Ax=0⃗} ⊆ ℝⁿ (i.e., a subspace of ℝⁿ).  Given any solution x to Ax=b, then x+y is also a solution if y ∈ N(A).
+* Second, the null space (also called the "kernel") N(A): the set {x such that Ax=0} ⊆ ℝⁿ (i.e., a subspace of ℝⁿ).  Given any solution x to Ax=b, then x+y is also a solution if y ∈ N(A).
 
 These are very important subspaces because they tell us a lot about
 the matrix A and solutions to Ax=b.  As a trivial example, if A is an
-n×n *invertible* matrix, C(A)=ℝⁿ and N(A)={0⃗}.  Conversely, if A is
+n×n *invertible* matrix, C(A)=ℝⁿ and N(A)={0}.  Conversely, if A is
 the n×n matrix of *all zeros* (the "most singular" matrix), then
-C(A)={0⃗} and N(A)=ℝⁿ.  Our goal in the next lectures will be to
+C(A)={0} and N(A)=ℝⁿ.  Our goal in the next lectures will be to
 understand how C(A) and N(A) relate to each other (and another two
 important subspaces) and to the *elimination* process on A.
 
@@ -144,13 +144,14 @@ important subspaces) and to the *elimination* process on A.
 
 ## Lecture 7 (Feb 24)
 
-More on nullspace and column space.  Showed that N(A) ⊆ N(BA) for any
-matrix B, and that the two are equal if B is invertible.  However,
-C(A) and C(BA) are in general quite distinct (neither is contained in
-the other), although they have the same dimension if B is invertible.
-In consequence, elimination steps (or any other row operations), which
-correspond to multiplying by invertible matrices on the left, don't
-change the nullspace.
+More on nullspace and column space.  Reviewed the definitions, and the fact that Ax=b is solvable if and only if ("iff") b ∈ C(A).  Given a particular solution xₚ satisfying Axₚ=b, xₚ+x is *also* a solution for any x ∈ N(A).
+
+Showed that N(A) ⊆ N(BA) for any matrix B, and that the two are equal
+if B is invertible.  However, C(A) and C(BA) are in general quite
+distinct (neither is contained in the other), although they have the
+same dimension if B is invertible.  In consequence, elimination steps
+(or any other row operations), which correspond to multiplying by
+invertible matrices on the left, don't change the nullspace.
 
 Defined a **basis** for a vector space as a minimal set of vectors (we
 will later say that they have to be *linearly independent*) whose
