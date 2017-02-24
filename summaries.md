@@ -161,7 +161,7 @@ basis.
 
 Went through a couple of examples of applying elimination to singular
 and nonsquare matrices.  Defined the **rank** as the number of (nonzero)
-pivots, the reduced-row echelon form R, the pivot columns, and the
+pivots, the reduced row-echelon form R, the pivot columns, and the
 free columns.  Showed how we can "read off" a basis for the null space
 from R, especially if R is of the typical form [I F].
 
