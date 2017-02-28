@@ -52,7 +52,7 @@ Went over several different perspectives on matrix multiplication: the *same ari
 Using this understanding, we rewrote Gaussian elimination in matrix form: we multiply a matrix A on the *left* by a sequence of lower-triangular elimination matrices to arrive at an upper-triangular matrix U.   Going *backwards* from U to A just means reversing the steps, or multiplying by the elimination matrices with flipped signs.  This led us to understand Gaussian elimination (without row swaps) as computing the [LU factorization](https://en.wikipedia.org/wiki/LU_decomposition) A=LU: it expresses A as the product of a lower-triangular matrix L with an upper-triangular matrix U.   This turns out to be *extremely* useful
 as both a computational and a theoretical tool, because we will see that triangular matrices are much easier to work with than general matrices.
 
-**Further reading:** Textbook secitons 2.4, 2.3, 2.6.  Strang [lecture 1 video](https://www.youtube.com/watch?v=ZK3O402wf1c), [lecture 4 video](https://www.youtube.com/watch?v=5hO3MrzPa0A). 
+**Further reading:** Textbook secitons 2.4, 2.3, 2.6.  Strang [lecture 1 video](https://www.youtube.com/watch?v=ZK3O402wf1c), [lecture 4 video](https://www.youtube.com/watch?v=5hO3MrzPa0A).
 
 ## Optional Julia Tutorial (Friday Feb 10, 5pm, 32-123)
 
@@ -121,7 +121,7 @@ matrices and factorizations (LDLᵀ and Cholesky).
 
 * [pset 2 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset2/pset2-sol.ipynb), [pset 3](http://nbviewer.jupyter.org/urls/rawgit.com/stevengj/1806-spring17/master/psets/pset3/pset3.ipynb).
 
-* The first exam will be ***next week** on Friday March 3 in room 50-340.  It will cover everything through pset 3, up to including the lecture on Monday, February 27.  (It may be a *bit harder* than exams in previous terms, but grading will be adjusted accordingly.)
+* The first exam will be **next week** on Friday March 3 in room 50-340.  It will cover everything through pset 3, up to including the lecture on Monday, February 27.  (It may be a *bit harder* than exams in previous terms, but grading will be adjusted accordingly.)
 
 
 Introduced vector spaces and subspaces.  Examples of vector spaces include real n-component vectors (ℝⁿ, or ℂⁿ for complex numbers), real m×n matrices, functions f(x) (ℝ↦ℝ, real numbers to real numbers).  Examples of subspaces includes planes or lines through the origin in ℝ³, or the origin itself; polynomial functions; polynomials of degree ≤ 3.
@@ -184,3 +184,27 @@ following things *are* useful and important:
 * Understanding how to determine the nullspace etc. for matrices with *special structure*, like R.
 
 **Further reading:** Textbook, sections 3.2-3.5.  OCW video [lecture 6](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-6-column-space-and-nullspace/), [lecture 7](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-7-solving-ax-0-pivot-variables-special-solutions/), [lecture 8](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-8-solving-ax-b-row-reduced-form-r/).
+
+## Lecture 8 (Feb 27)
+
+Reviewed the key ideas for row-reduced echelon form etc from the previous lecture.   Showed that, when solving for the nullspace, given the "free" variables (the variables corresponding to the free columns), the "pivot" variables (the variables corresponding to the pivot columns) are completely determined (hence their names) by writing out the equation in "block" form in terms of the free and pivot variables.
+
+Then put a *nonzero* right-hand side b into Ax=b.  Elimination turns
+this into Rx=c (multiplying both sides on the left by elimination
+matrices E). If A is m×n and has rank r, then the last m-r rows of R are zero.  Showed that the corresponding rows of c must *also* be zero to have a solution — this gives us a way to test whether b is in C(A).   If there is a solution, we can find a particular solution xₚ by setting the pivot variables to zero, and then write the complete solution as x=xₚ+xₙ where xₙ is anything in N(A).
+
+Went through four important cases for an m×n matrix A of rank r.  (Note that we must have r ≤ m and n: you can't have more pivots than there are rows or columns.)
+
+1. If r=n, then A has **full column rank**.  We must have m ≥ n (it must be a "tall" matrix), and N(A)={0} (there are no free columns).  Hence, any solution to Ax=b (if it exists at all) must be *unique*.
+
+2. If r=m, then A has **full row rank**.  We must have n ≥ m (it must be a "wide" matrix), and C(A)=ℝᵐ.  Ax=b is *always solvable* (but the solution will not be unique unless m=n).
+
+3. If r=m=n, then A is a square **invertible** matrix.  Ax=b is always solvable and the solution x=A⁻¹b is unique.
+
+4. If r < m and r < n, then A is **rank deficient**.  Solutions to Ax=b may not exist and will not be unique if they do exist.
+
+Cases (1)-(3) are called **full rank**: the rank is as big as possible given the shape of A.  In practice, most matrices that one encounters are full rank (this is essentially always true for *random* matrices).  If the matrix is rank deficient, it usually arises from some special structure of the problem (i.e. you usually want to look at where A came from to help you figure out why it is rank deficient, rather than computing the rank etcetera by mindless calculation).   (A separate problem is that of matrices that are *nearly* rank deficient because the pivots are very small, but the right tools to analyze this case won't come up until near the end of the course).
+
+**End of exam-1 material.**
+
+Started talking about bases, dimension, and independence.   Earlier, I defined a basis as a minimal set of vectors whose span gives an entire vector space, and the dimension of the space as the size of the basis.  Now, we want to think more carefully about the term "minimal".   If we have too many vectors in our basis, the problem is that some of the vectors might be redundant (you can get them from the other basis).  We now rephrase this as saying that such vectors are *linearly dependent*: some linear combination (with nonzero multipliers) of them gives the zero vector, and we want every basis to be *linearly indepenedent*.   Next lecture, we will write this out more carefully and connect it to the nullspace of the matrix whose columns are the basis vectors.
