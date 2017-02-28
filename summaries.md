@@ -191,7 +191,7 @@ Reviewed the key ideas for row-reduced echelon form etc from the previous lectur
 
 Then put a *nonzero* right-hand side b into Ax=b.  Elimination turns
 this into Rx=c (multiplying both sides on the left by elimination
-matrices E). If A is m×n and has rank r, then the last m-r rows of R are zero.  Showed that the corresponding rows of c must *also* be zero to have a solution — this gives us a way to test whether b is in C(A).   If there is a solution, we can find a particular solution xₚ by setting the pivot variables to zero, and then write the complete solution as x=xₚ+xₙ where xₙ is anything in N(A).
+matrices E). If A is m×n and has rank r, then the last m-r rows of R are zero.  Showed that the corresponding rows of c must *also* be zero to have a solution — this gives us a way to test whether b is in C(A).   If there is a solution, we can find a particular solution xₚ by setting the free variables to zero, and then write the complete solution as x=xₚ+xₙ where xₙ is anything in N(A).
 
 Went through four important cases for an m×n matrix A of rank r.  (Note that we must have r ≤ m and n: you can't have more pivots than there are rows or columns.)
 
