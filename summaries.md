@@ -210,3 +210,66 @@ Cases (1)-(3) are called **full rank**: the rank is as big as possible given the
 Started talking about bases, dimension, and independence.   Earlier, I defined a basis as a minimal set of vectors whose span gives an entire vector space, and the dimension of the space as the size of the basis.  Now, we want to think more carefully about the term "minimal".   If we have too many vectors in our basis, the problem is that some of the vectors might be redundant (you can get them from the other basis).  We now rephrase this as saying that such vectors are *linearly dependent*: some linear combination (with nonzero multipliers) of them gives the zero vector, and we want every basis to be *linearly indepenedent*.   Next lecture, we will write this out more carefully and connect it to the nullspace of the matrix whose columns are the basis vectors.
 
 **Further reading:** Textbook sections 3.3–3.4.  Strang video [lecture 8](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-8-solving-ax-b-row-reduced-form-r/) and [lecture 9](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-9-independence-basis-and-dimension/).
+
+## Lecture 9 (Feb 29)
+
+* [pset 3 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset3/pset3-sol.ipynb), pset 4 posted soon.
+
+Given a set of n vectors {x₁, ⋯, xₙ}, if we matrix a matrix X whose columns
+are x₁⋯xₙ, then C(X) is precisely the span of x₁⋯xₙ.   To check whether
+the x₁⋯xₙ form a *basis* for C(X), we need to check whether they
+are *linearly independent*.  Discussed three equivalent ways to think about
+this:
+
+1. We want to make sure that none of x₁⋯xₙ are "redundant": make sure
+   that no xⱼ can be made from a linear combination of the other xᵢ's.
+
+2. Equivalently, we don't want any linear combination of x₁⋯xₙ to give
+   zero unless all the coefficients are zero.
+
+3. Equivalently, we want N(X) = {0}.
+
+In this way, we reduced the concept of independence to thinking about the
+null space.
+
+Exploited this insight in order to determine how elimination on a matrix
+A relates to C(A).  Because elimination corresponds to multiplying A on
+the left, it changes the column space: C(A) ≠ C(U) ≠ C(R) in general.
+However, to find a basis for C(A), what we need to know is which columns
+of A are dependent/independent.  From above, showed that some columns
+of A are dependent if there is a vector in N(A) that is nonzero only in
+components corresponding to those columns.   But since N(A) = N(U) = N(R),
+we see an important fact: *columns of A are dependent/independent if and
+only if the corresponding columns of R are dependent/independent*.
+By looking at R, we can see by inspection that the *pivot columns* form
+a maximal set of independent vectors, and hence are a basis for C(R).
+Hence, the *pivot columns of A* (i.e. the columns of A corresponding to
+the columns of R or U where the pivots appear) are a basis for C(A).
+
+It follows that the dimension of C(A) is exactly rank(A).
+
+However, we are missing two important subspaces, which turn out to be
+the **row space** C(Aᵀ) and the **left nullspace** N(Aᵀ).
+
+Since elimination multiplies A on the *left*, it multiplies Aᵀ on the *right*
+by an invertible matrix.  Therefore, C(Aᵀ) = C(Rᵀ), and the *pivot rows of
+R* are a basis for C(Aᵀ).   More importantly, this tells us a very non-obvious
+fact: rank(Aᵀ) = rank(A).   (That is, if you did elimination on Aᵀ, you
+would get the *same number of pivots*.)
+
+In summary, for an m×n matrix A of rank r, we find:
+
+* C(A) ⊆ ℝᵐ, dimension r
+* N(Aᵀ) ⊆ ℝᵐ, dimension m-r
+* C(Aᵀ) ⊆ ℝⁿ, dimension r
+* N(A) ⊆ ℝⁿ, dimension n-r
+
+In fact, I claimed (without proof so far) that C(A)+N(Aᵀ)=ℝᵐ and
+C(Aᵀ)+N(A)=ℝⁿ, where I define addition S₁+S₂ of subspaces as the
+subspace {x₁+x₂ for all x₁∈S₁, x₂∈S₂}.  Certainly, the dimensions
+add up to m and n, respectively, which is very suggestive, and next
+time we will complete the picture by seeing that the subspaces
+are *orthogonal complements*.
+
+**Further reading:** Textbook sections 3.4–3.5; video
+[lecture 9](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-9-independence-basis-and-dimension/) and [lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/).
