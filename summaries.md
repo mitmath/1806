@@ -213,7 +213,7 @@ Started talking about bases, dimension, and independence.   Earlier, I defined a
 
 ## Lecture 9 (Feb 29)
 
-* [pset 3 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset3/pset3-sol.ipynb), pset 4 posted soon.
+* [pset 3 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset3/pset3-sol.ipynb), [pset 4](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset4/pset4.ipynb),
 
 Given a set of n vectors {x₁, ⋯, xₙ}, if we matrix a matrix X whose columns
 are x₁⋯xₙ, then C(X) is precisely the span of x₁⋯xₙ.   To check whether
