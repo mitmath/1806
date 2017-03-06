@@ -273,3 +273,33 @@ are *orthogonal complements*.
 
 **Further reading:** Textbook sections 3.4–3.5; video
 [lecture 9](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-9-independence-basis-and-dimension/) and [lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/).
+
+## Lecture 10 (March 6)
+
+Further discussion of subspace addition, showing dim(S₁+S₂)=dim(S₁)+dim(S₂)-dim(S₁∩S₂).
+
+Showed that the matrix subspaces have an *orthogonality* relationship: C(A)⟂N(Aᵀ),
+in the sense that every vector in C(A) is orthogonal to every vector in N(Aᵀ).
+In consequence, their intersection is {0} (0-dimensional), and C(A)+N(Aᵀ)=ℝᵐ.
+Similarly for C(Aᵀ) and N(A).
+
+Equivalently, showed that N(Aᵀ) is the *orthogonal complement* of C(A),
+defining the orthogonal complement S<sup>⟂</sup> of a subspace S as
+{x such that xᵀy=0 for all y ∈ S}.  Showed explicitly that if y is orthogonal
+to every vector in C(A), then y is necessarily in N(Aᵀ) (and vice versa).
+
+This often gives an nice way to check if a vector is in C(A): b is in C(A)
+if and only if b is orthogonal to N(Aᵀ) (or to a basis thereof).   Gave
+an example where C(A) is a plane in ℝ³, N(Aᵀ) is the line through 0 orthogonal
+to that plane, and the equation for b ∈ C(A) was yᵀb=0 for a y ∈ N(Aᵀ).
+(Another nice example of a test of this sort can be found in problem 1a of
+exam 1, although you probably didn't derive it this way on the exam.)
+
+Wrapped up this section with a few more examples.  Discussed the dimension
+and basis for the space of upper-triangular 3×3 matrices and a subspace thereof.
+Discussed a basis {1,x,x²,x³,⋯} for the space of polynomial functions p(x): because this
+basis is infinite, we say that this vector space is *infinite-dimensional*.
+Briefly discussed rank-1 matrices uvᵀ.  (Eventually, with the [SVD](https://en.wikipedia.org/wiki/Singular_value_decomposition),
+we will write *every* rank-r matrix as a sum of r rank-1 matrices, and with orthogonal vectors.)
+
+**Further reading:** Textbook section 3.4, end of section 3.5 on rank-1 and rank-2 matrices, 4.1; video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/).
