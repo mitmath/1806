@@ -292,7 +292,7 @@ This often gives an nice way to check if a vector is in C(A): b is in C(A)
 if and only if b is orthogonal to N(Aᵀ) (or to a basis thereof).   Gave
 an example where C(A) is a plane in ℝ³, N(Aᵀ) is the line through 0 orthogonal
 to that plane, and the equation for b ∈ C(A) was yᵀb=0 for a y ∈ N(Aᵀ).
-(Another nice example of a test of this sort can be found in problem 1a of
+(Another nice example of a test of this sort can be found in problem 1c of
 exam 1, although you probably didn't derive it this way on the exam.)
 
 Wrapped up this section with a few more examples.  Discussed the dimension
