@@ -1,0 +1,203 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+
+\title{MIT 18.06 Exam 1, Spring 2017 - Solutions}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\subsection*{Problem 1:}
+
+Suppose A is the $6\times6$ matrix 
+\[
+A=\left(\begin{array}{cccccc}
+1 & -1\\
+-1 & 2 & -1\\
+ & -1 & 2 & -1\\
+ &  & -1 & 2 & -1\\
+ &  &  & -1 & 2 & -1\\
+ &  &  &  & -1 & 1
+\end{array}\right).
+\]
+
+\begin{enumerate}[(a)]
+\item What is the rank of $A$? (\emph{Hint: }doing elimination is okay.
+You should notice a simple pattern.)
+\item Give a basis for $N(A)$.
+\item For what $b=\left(\begin{array}{c}
+b_{1}\\
+b_{2}\\
+b_{3}\\
+b_{4}\\
+b_{5}\\
+b_{6}
+\end{array}\right)$ does $Ax=b$ have a solution? Give an equation in terms of the entries
+$b_{1},\ldots,b_{6}$.\emph{}\\
+\emph{}\\
+\emph{Hint:} from class, if we do the same row operations to transform
+$b\rightsquigarrow c$ as we did for Gaussian elimination to transform
+$A\rightsquigarrow U$ (or $R)$, for $b\in C(A)$ we needed $c$
+to be \rule[-6pt]{0.2\columnwidth}{1pt} in the rows where $U$ is
+\rule[-6pt]{0.2\columnwidth}{1pt}. For \emph{this} $A$, the row
+operations have a simple pattern you should have noticed above.
+\end{enumerate}
+
+\subsubsection*{Solution:}
+\begin{enumerate}[(a)]
+\item We do elimination by iteratively adding to every line the one immediately above. The end result is
+\[
+U = \left(\begin{array}{cccccc}
+1 & -1\\
+0 & 1 & -1\\
+ & 0 & 1 & -1\\
+ &  & 0 & 1 & -1\\
+ &  &  & 0 & 1 & -1\\
+ &  &  &  & 0 & 0
+\end{array}\right)\,.
+\]
+(Don't forget that the lower-right corner of $A$ is a 1, not a 2!)  Since there are five pivots, the rank of $A$ is 5.
+\item Using the result of the elimination, we see that a vector $\begin{pmatrix} x_1 \\ \vdots \\ x_6\end{pmatrix}$ is in the null space if and only if it satisfies the equations
+\[\begin{cases} x_1-x_2 &=0\\ x_2-x_3&=0\\\vdots\\x_5-x_6&=0\end{cases}\,.\]
+That is, if and only if all of its components are equal. So a basis for the null space is given by the vector
+$$
+\begin{pmatrix}1\\1\\1\\1\\1\\1\end{pmatrix}\,.
+$$
+  Alternatively, you could do elimination upwards to transform the matrix to rref form: \emph{add} each row to the row above it, working from the \emph{bottom up}, to obtain:
+\[
+R = \left(\begin{array}{cccccc}
+1&   &   &  &   & -1\\
+ & 1 &   &  &   & -1\\
+ &   & 1 &  &   & -1\\
+ &   &  & 1 &   & -1\\
+ &   &  &   & 1 & -1\\
+ &   &  &   &   &  0
+\end{array}\right)\,.
+\]
+From the free column, we can read off the same (1,1,1,1,1,1) nullspace vector as above.
+\item From class, if we do the same row operations to transform
+$b\rightsquigarrow c$ as we did for Gaussian elimination to transform
+$A\rightsquigarrow U$ (or $R)$, for $b\in C(A)$ we needed $c$
+to be \underline{zero} in the rows where $U$ is \underline{zero}. In this particular case we need the last component of $L^{-1}b$ to be zero. But after doing the row operations, the last component is given by the sum of the components of $b$. That is a vector is in the column space of $A$ if and only if the sum of its components is zero:
+\[b_1+b_2+b_3+b_4+b_5+b_6=0\,.\]
+\end{enumerate}
+
+\textbf{Alternative solution:} We could also find the column space of $A$ more easily: one quick inspection reveals immediately that the sum of the entries of each column is zero, so the column space is contained in the dimension 5 subspace $\left\{\sum_{i=1}^6x_i=0\right\}$. But since it has dimension 5 itself, it must be equal to it.  Another alternative approach is possible if you know that $C(A)$ is orthogonal to the left nullspace: since $A$ is symmetric then $C(A)$ is orthogonal to $N(A)=N(A^T)$, so $b$ must be orthogonal to our (1,1,1,1,1,1) vector from above; however, this technique was not covered in class until after the exam.
+
+\subsection*{Problem 2:}
+
+\emph{Circle} which of the following statements \emph{might possibly}
+be true. \emph{Give an example} of a possible matrix $A$ \emph{for
+each possibly true }statement\emph{.}
+\begin{enumerate}[(a)]
+\item $Ax=b$ has a unique solution for a $5\times3$ matrix $A$.
+\item $Ax=b$ has a unique solution for a $3\times5$ matrix $A$.
+\item $Ax=b$ is not solvable for \emph{any} $b$.
+\item $Ax=b$ is not solvable for any $b\ne0$.
+\end{enumerate}
+
+\subsubsection*{Solution:}
+\begin{enumerate}[(a)]
+    \item \textbf{Possible}. We just need an example where $A$ has full column rank, and the easiest way to get independent columns is just to use orthogonal unit vectors (columns of $I$):
+    \[A=\begin{pmatrix} 1 & 0 & 0\\ 0&1&0\\ 0&0&1\\ 0&0&0 \\ 0&0&0\end{pmatrix}\ b=\begin{pmatrix} 1\\0\\0\\0\\0\end{pmatrix}\,.\]
+    \item \textbf{Impossible}. Since the rank is at most 3 (it is a subspace of $\mathbb{R}^3$), the nullspace has dimension at least $5-3=2$. So if there is a solution, there are infinitely many.
+    \item \textbf{Impossible}. $Ax=0$ is always solvable, by $x=0$.
+    \item \textbf{Possible}. Let $A$ be the zero matrix. Then $Ax=0$ for each $x$ and so $Ax=b$ is not solvable for any $b\neq0$.
+\end{enumerate}
+
+\subsection*{Problem 3:}
+
+Suppose that we do \emph{column operations} on the matrix $A$ to
+transform it to another matrix $B$:
+\[
+\underbrace{\left(\begin{array}{ccc}
+2 & 4 & 6\\
+3 & 1 & 10\\
+0 & -1 & 3
+\end{array}\right)}_{A}\rightsquigarrow\underbrace{\left(\begin{array}{ccc}
+2 & 0 & 0\\
+3 & -5 & 1\\
+0 & -1 & 3
+\end{array}\right)}_{B}.
+\]
+For example, we subtracted twice the first column of $A$ from the
+second column of $A$ to get the second column of $B$.
+\begin{enumerate}[(a)]
+\item Write $B$ as a matrix product involving $A$ and some other matrix.
+\item Which of $C(A)$ and $N(A)$ are the same as $C(B)$ and $N(B)$,
+if any? (No computation should be required! \emph{You don't have to
+compute these subspaces explicitly}!)
+\end{enumerate}
+
+\subsubsection*{Solution:}
+
+\begin{enumerate}[(a)]
+\item \emph{Row} operations are multiplications on the *left* by an invertible elimination matrix; similarly, \emph{column} operations correspond to multiplications on the *right* by an invertible elimination matrix.  So, we can write $B=AE$ via an elimination matrix $E$.  It was given that $E$ should subtract twice the first column of $A$ from the second column.  To get a zero in the upper-right corner, we also need to subtract three times the first column from the third column.  This leads to:
+  $$
+  B = A \underbrace{\begin{pmatrix} 1 & -2 & -3 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}}_E
+  $$
+An easy way to see $E$ is just to start with the $3\times 3$ identity matrix $I$ and do the desired column operations, since $IE = E$.
+
+\item Since $B=AE$ involves multiplication on the \emph{right} by an invertible matrix, we haven't changed the column space $C(B)=C(A)$. (For any $y \in C(B)$, $y=Bx=A(Ex)$ for some $x$, and hence $y\in C(A)$.  Similarly, for any $y \in C(A)$, $y=Ax$ and hence $y = B(E^{-1}x) = AEE^{-1}x = Ax$ is in the column space of $B$.  We did something very similar in class.)   In general, multiplying $A$ on the right \emph{will} change the null space, since if $x \in N(A)$ then $E^{-1}x$ (not $x$) is in $N(B)$: $BE^{-1}x = AEE^{-1}x = Ax = 0$.   However, in this \emph{particular} case, the matrix is full rank, so $N(B)=N(A)={0}$.
+
+\end{enumerate}
+
+
+\subsection*{Problem 4:}
+
+Suppose you are \emph{given} the $PA=LU$ factorization of an invertible
+$n\times n$ matrix $A$. Now, suppose we want to solve 
+\[
+\left(\begin{array}{cc}
+A & B\\
+0 & A
+\end{array}\right)x=b
+\]
+for some $n\times n$ matrix $B$, where ``0'' denotes an $n\times n$
+block of zeros in the lower-left corner.
+\begin{enumerate}[(a)]
+\item Suppose we express $x=\left(\begin{array}{c}
+x_{1}\\
+x_{2}
+\end{array}\right)$, where $x_{1}$ and $x_{2}$ are $n$-component \emph{vectors. }Similarly,
+we express $b=\left(\begin{array}{c}
+b_{1}\\
+b_{2}
+\end{array}\right)$ in terms of $n$-component vectors $b_{1}$ and $b_{2}$.\\
+\\
+Write the solution $x_{1}$ and $x_{2}$ in terms of $P,L,U,B,b_{1},b_{2}$
+(or the inverses of those matrices). \emph{Hint:} write out two $n\times n$
+equations involving $x_{1}$ and $x_{2}$ first.
+\item Take your answer from (a) and explain how (if you do things \emph{in
+the right order}), you can compute the solution $x$ in $\sim n^{2}$
+operations (i.e. roughly proportional to $n^{2}$).\\
+\\
+You can indicate the order of operations by parentheses. For example,
+if you have an expression $LBb_{1}$ in your answer, you could either
+evaluate it as $(LB)b_{1}$ (multiply $LB$, then multiply by $b_{1}$)
+or evaluate it as $L(Bb_{1})$ (multiply $Bb_{1}$, then multiply
+$L$ by that vector).
+\end{enumerate}
+
+\subsubsection*{Solution:}
+
+\begin{enumerate}[(a)]
+    \item If we write
+    \[x=\begin{pmatrix}x_1\\x_2\end{pmatrix},\ b=\begin{pmatrix}b_1\\b_2\end{pmatrix}\,,\]
+    where $x_1, x_2, b_1, b_2$ are $n$-dimensional vectors, the system becomes
+    \[\begin{cases} Ax_1 + Bx_2 = b_1\\ Ax_2=b_2\end{cases}\,.\]
+    From the second line, we immediately see that
+    \[x_2 = U^{-1}(L^{-1}(Pb_2))\,.\]
+    \[x_1 = U^{-1}(L^{-1}(P(b_1-Bx_2))) = U^{-1}(L^{-1}(P(b_1-B(U^{-1}(L^{-1}(Pb_2)))))\,.\]
+  \item The key thing is to remember that $\mathrm{matrix} \times \mathrm{vector}$ or $T^{-1} \times \mathrm{vector}$, where $T$ is upper or lower triangular, both take $\sim n^2$ operations.  Note that to compute $y=T^{-1}x$ you would \emph{not} actually invert the matrix $T$, you would solve $Ty=x$ by backsubstitution (for upper triangular) or forward substitution (for lower triangular).   If we do the operations in the order indicated by the parentheses above, then every operation is of this form and hence the whole computation takes an operation count proportional to $n^2$.
+    \\
+    \\
+    The key thing to \emph{avoid} here is (a) explicit matrix inversion and (b) $\mathrm{matrix} \times \mathrm{matrix}$ operations, e.g. computing $BU^{-1}$ or $U^{-1}L^{-1}$ as matrix products.  These would require $\sim n^3$ operations.
+\end{enumerate}
+
+\end{document}

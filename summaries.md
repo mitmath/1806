@@ -274,6 +274,11 @@ are *orthogonal complements*.
 **Further reading:** Textbook sections 3.4–3.5; video
 [lecture 9](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-9-independence-basis-and-dimension/) and [lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/).
 
+## Exam 1 (March 3)
+
+[Exam 1](https://github.com/stevengj/1806-spring17/blob/master/exams/exam1.pdf)
+and [solutions](https://github.com/stevengj/1806-spring17/blob/master/exams/exam1-sol.pdf).
+
 ## Lecture 10 (March 6)
 
 Further discussion of subspace addition, showing dim(S₁+S₂)=dim(S₁)+dim(S₂)-dim(S₁∩S₂).
