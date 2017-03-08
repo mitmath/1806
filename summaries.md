@@ -308,3 +308,7 @@ Briefly discussed rank-1 matrices uvᵀ.  (Eventually, with the [SVD](https://en
 we will write *every* rank-r matrix as a sum of r rank-1 matrices, and with orthogonal vectors.)
 
 **Further reading:** Textbook section 3.4, end of section 3.5 on rank-1 and rank-2 matrices, 4.1; video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/).
+
+## Lecture 11 (March 8)
+
+* [Graphs and networks notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture11/Graphs-Networks.ipynb)
