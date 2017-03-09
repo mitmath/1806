@@ -311,7 +311,7 @@ we will write *every* rank-r matrix as a sum of r rank-1 matrices, and with orth
 
 ## Lecture 11 (March 8)
 
-* [pset 4 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset4/pset4-sol.ipynb), pset 5 posted soon.
+* [pset 4 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset4/pset4-sol.ipynb), [pset 5](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset5/pset5.ipynb)
 
 * [Graphs and networks notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture11/Graphs-Networks.ipynb)
 
