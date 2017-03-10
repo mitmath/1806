@@ -12,7 +12,7 @@ I'll try to update it within a day of each lecture.
 * [pset 1 is posted](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset1/pset1.ipynb).
 
 Went over the [course overview
-slides](https://github.com/stevengj/1806-spring17/blob/master/lectures/lecture1/overview.pdf)
+slides](https://github.com/stevengj/1806-spring17/blob/master/lectures/overview.pdf)
 giving the syllabus and the "big picture" of what 18.06 is about.
 
 Then I started right in on [Gaussian
@@ -27,9 +27,9 @@ elimination": we add/subtract multiples of matrix rows to introduce
 zeros below the diagonal, i.e. to make the matrix [upper
 triangular](https://en.wikipedia.org/wiki/Triangular_matrix).   We want to do the same operations to the right-hand side, so we [augment](https://en.wikipedia.org/wiki/Augmented_matrix) the matrix with the right-hand side before starting Gaussian eliminations.
 
-This process is quite tedious to do by hand, so I instead switched over to [Julia](http://julialang.org/) to do more computational exploration with [this Julia notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture1/Gaussian-elimination.ipynb).  See [here for more information on using Julia](https://github.com/stevengj/julia-mit); you can also go to [juliabox.com](https://juliabox.com/) to use it online without installing anything.  To use the interactive widgets in the notebook from today, you will have to run it in Julia yourself:
+This process is quite tedious to do by hand, so I instead switched over to [Julia](http://julialang.org/) to do more computational exploration with [this Julia notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Gaussian-elimination.ipynb).  See [here for more information on using Julia](https://github.com/stevengj/julia-mit); you can also go to [juliabox.com](https://juliabox.com/) to use it online without installing anything.  To use the interactive widgets in the notebook from today, you will have to run it in Julia yourself:
 
-1. Go to the [notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture1/Gaussian-elimination.ipynb) and click on the *download icon* on the upper-right hand corner to download the file onto your computer
+1. Go to the [notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Gaussian-elimination.ipynb) and click on the *download icon* on the upper-right hand corner to download the file onto your computer
 
 2. Log into juliabox (if you haven't installed Julia locally on your computer) and you will see a "dashboard" listing of notebooks.  *Drag* the `Gaussian-elimination.ipynb` file from your computer onto this dashboard to upload it.
 
@@ -45,7 +45,7 @@ In particular, our goal in the next lectures will be to find a matrix E such tha
 
 ## Lecture 2 (Feb 10)
 
-* [Matrix-multiplication and LU notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture2/Matrix-mult-perspectives.ipynb)
+* [Matrix-multiplication and LU notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Matrix-mult-perspectives.ipynb)
 
 Went over several different perspectives on matrix multiplication: the *same arithmetic operations* can be viewed as row×columns, matrix×columns, rows×matrix, columns×rows, and more.   If you are doing hand calculations (but who does that, really?), rows×columns is probably the easiest.  But the other viewpoints help us *think* about matrix multiplication in different ways, both to understand what is going on and also to *design* matrices to perform certain operations.
 
@@ -76,7 +76,7 @@ computational experiments.  Bring your laptops, and try logging into
 
 * [pset 1 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset1/pset1-sol.ipynb), [pset 2 is posted](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset2/pset2.ipynb).
 
-* [LU and matrix-inverse notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture3/LU-and-Inverses.ipynb)
+* [LU and matrix-inverse notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/LU-and-Inverses.ipynb)
 
 Went through the LU notebook, with some blackboard aids, covering:
 
@@ -93,7 +93,7 @@ that in Lecture 4.
 
 ## Lecture 4 (Feb 17)
 
-* [Inverses, complexity, and transposes notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture4/Inverses-Complexity-Transposes.ipynb)
+* [Inverses, complexity, and transposes notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Inverses-Complexity-Transposes.ipynb)
 
 Went through the topics in the lecture notebook:
 
@@ -109,7 +109,7 @@ We will discuss more properties of transposes in the next lecture (I didn't fini
 
 ## Lecture 5 (Feb 21)
 
-* [Transposes notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture5/Transposes.ipynb)
+* [Transposes notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Transposes.ipynb)
 
 Continued talking about transposes, from lecture 4: relationship to
 matrix multiplication, dot products, and LU factorization.  Symmetric
@@ -313,13 +313,13 @@ we will write *every* rank-r matrix as a sum of r rank-1 matrices, and with orth
 
 * [pset 4 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset4/pset4-sol.ipynb), [pset 5](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset5/pset5.ipynb)
 
-* [Graphs and networks notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture11/Graphs-Networks.ipynb)
+* [Graphs and networks notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Graphs-Networks.ipynb)
 
 **Further reading:** Textbook section 10.1; video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-12-graphs-networks-incidence-matrices/).
 
 ## Lecture 12 (March 10)
 
-* [Multidimensional Newton’s method notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/lecture12/Multidimensional-Newton.ipynb)
+* [Multidimensional Newton’s method notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Multidimensional-Newton.ipynb)
 
 The key point of this lecture is that *linear* algebra can even be used to solve *nonlinear* equations.  There are many methods to convert a nonlinear equation into a *sequence* of *approximate* linear equations whose solutions *converge* to the nonlinear solution.   The most famous is Newton’s method.  You learned the 1d version of Newton’s method in first-year calculus.  The generalization, for *n* nonlinear equations in *n* unknowns, is a sequence of *n*×*n* matrix problems.
 
