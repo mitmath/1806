@@ -335,6 +335,8 @@ Introduced the topic of least-square fitting of data to curves.  As long as the 
 
 ## Lecture 14 (March 16)
 
+* [pset 5 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset5/pset5-sol.ipynb), pset 6 posted soon
+
 * [Projections notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Projections.ipynb)
 
 Orthogonal projection onto subspaces, and the projection operator.  (Guest lecture by [Prof. Alan Edelman](http://www-math.mit.edu/~edelman/).)
