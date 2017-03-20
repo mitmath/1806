@@ -333,7 +333,7 @@ Introduced the topic of least-square fitting of data to curves.  As long as the 
 
 **Further reading:** Strang, section 4.3, and video [lecture 16](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-16-projection-matrices-and-least-squares/).  (Note that Strang does this in a little bit of a different order: he does orthogonal projection and then fitting, and I do the reverse in order to motivate these techniques with the real-world application of least-square fits.)
 
-## Lecture 14 (March 16)
+## Lecture 14 (March 15)
 
 * [pset 5 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset5/pset5-sol.ipynb), [pset 6](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset6/pset6.ipynb)
 
@@ -343,8 +343,26 @@ Orthogonal projection onto subspaces, and the projection operator.  (Guest lectu
 
 **Further reading:** Strang, section 4.2, and video [lecture 15](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-15-projections-onto-subspaces/).
 
-## Lecture 15 (March 18)
+## Lecture 15 (March 17)
 
 Orthonormal bases, matrices Q with orthonormal columns (QᵀQ = I), orthogonal (a.k.a. unitary) matrices (square Q: Qᵀ = Q⁻¹), Gram-Schmidt orthogonalization, and QR factorization.
 
 **Further reading:** Strang, section 4.4, and video [lecture 17](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/).
+
+## Lecture 16 (March 20)
+
+* [Orthogonal polynomials](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Orthogonal-Polynomials.ipynb)
+
+* [Fourier sine series](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Sine-series.ipynb)
+
+Using QR to solve the least-squares problem: given A=QR, the normal equations AᵀAx̂=Aᵀb turn into the triangular system of equations Rx̂=Qᵀb.
+
+Key practical facts to keep in mind if you ever need to do least-squares or orthogonal basis for real problems involving data with finite precision:
+
+* Never explicitly form AᵀA or solve the normal equations: it turns out that this greatly exacerbates the sensitivity to numerical errors (in 18.335, you would learn that it squares the [condition number](https://en.wikipedia.org/wiki/Condition_number))  Instead, use the A=QR factorization and solve Rx̂=Qᵀb.  Better yet, just do `A \ b` (in Julia or Matlab) or the equivalent in other languages, which will use a good algorithm.
+
+* Never use Gram–Schmidt, which turns out to be notoriously sensitive to small errors if some vectors are nearly parallel.  There is an improved version called "modified Gram–Schmidt" described in the book, but in practice computers actually use a completely different algorithm called "Householder reflections."  You should just use the built-in `Q,R = qr(A)` function in Julia (or other languages), which will do the right thing most of the time.
+
+This is not unusual: there is often a difference between the way we conceptually *think* about linear algebra and the more sophisticated tricks that are required to make it *work well* on *large matrices* of real data in the presence small numerical errors.
+
+Another wonderful and far-reaching application of these ideas is to realize that the same concepts of orthogonal bases and Gram–Schmidt can be applied to *any* vector space once we define a dot product (giving a so-called [Hilbert space](https://en.wikipedia.org/wiki/Hilbert_space), though we won't use that level of abstraction much in 18.06).  In particular, it turns out to be expecially powerful to think about **orthogonal bases of functions**.  See the notebooks for two examples: orthogonal polynomials called [Legendre polynomials](https://en.wikipedia.org/wiki/Legendre_polynomials) and the [Fourier sine series](https://en.wikipedia.org/wiki/Fourier_sine_and_cosine_series).
