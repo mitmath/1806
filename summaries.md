@@ -342,3 +342,9 @@ Introduced the topic of least-square fitting of data to curves.  As long as the 
 Orthogonal projection onto subspaces, and the projection operator.  (Guest lecture by [Prof. Alan Edelman](http://www-math.mit.edu/~edelman/).)
 
 **Further reading:** Strang, section 4.2, and video [lecture 15](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-15-projections-onto-subspaces/).
+
+## Lecture 15 (March 18)
+
+Orthonormal bases, matrices Q with orthonormal columns (QᵀQ = I), orthogonal (a.k.a. unitary) matrices (square Q: Qᵀ = Q⁻¹), Gram-Schmidt orthogonalization, and QR factorization.
+
+**Further reading:** Strang, section 4.4, and video [lecture 17](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/).
