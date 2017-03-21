@@ -368,3 +368,18 @@ This is not unusual: there is often a difference between the way we conceptually
 Another wonderful and far-reaching application of these ideas is to realize that the same concepts of orthogonal bases and Gram–Schmidt can be applied to *any* vector space once we define a dot product (giving a so-called [Hilbert space](https://en.wikipedia.org/wiki/Hilbert_space), though we won't use that level of abstraction much in 18.06).  In particular, it turns out to be expecially powerful to think about **orthogonal bases of functions**.  See the notebooks for two examples: orthogonal polynomials called [Legendre polynomials](https://en.wikipedia.org/wiki/Legendre_polynomials) and the [Fourier sine series](https://en.wikipedia.org/wiki/Fourier_sine_and_cosine_series).
 
 **Further reading:** Strang, section 10.5 (Fourier series), these [18.06 sine-series notes](http://web.mit.edu/18.06/www/Spring09/sines.pdf), these [TAMU notes on orthogonal polynomials](http://www.math.tamu.edu/~yvorobet/MATH304-503/Lect4-04web.pdf) and [these 18.06 notes on orthogonal polynomials](http://web.mit.edu/18.06/www/Spring09/legendre.pdf).
+
+## Lecture 17 (March 22)
+
+* [Eigenvalue/eigenvector introduction](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Eigenvalue-Intro.ipynb)
+
+Begin by going over the last section of the orthogonal-polynomials notebook from
+the last lecture: explain why projecting onto orthogonal polynomials (or any
+orthogonal basis of functions, like a Fourier series) can be viewed as
+a *least-square fit* of the function with those polynomials.
+
+Start on a new topic: **eigenvalues and eigenvectors**.  I proceed a little
+differently from the book, working *backwards* from what we would *like* to
+obtain (make matrices **act like scalars**) to *how* we achieve it.
+
+**Further reading:** Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).
