@@ -371,6 +371,8 @@ Another wonderful and far-reaching application of these ideas is to realize that
 
 ## Lecture 17 (March 22)
 
+* [pset 6 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset6/pset6-sol.ipynb), pset 7 to be posted soon
+
 * [Eigenvalue/eigenvector introduction](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Eigenvalue-Intro.ipynb)
 
 Begin by going over the last section of the orthogonal-polynomials notebook from
