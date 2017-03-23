@@ -371,7 +371,7 @@ Another wonderful and far-reaching application of these ideas is to realize that
 
 ## Lecture 17 (March 22)
 
-* [pset 6 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset6/pset6-sol.ipynb), pset 7 to be posted soon
+* [pset 6 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset6/pset6-sol.ipynb), [pset 7](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset7/pset7.ipynb)
 
 * [Eigenvalue/eigenvector introduction](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Eigenvalue-Intro.ipynb)
 
