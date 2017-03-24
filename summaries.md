@@ -388,7 +388,7 @@ obtain (make matrices **act like scalars**) to *how* we achieve it.
 
 ## Lecture 18 (March 24)
 
-* [Determinants](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Determinants.ipynb)
+* [Determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Determinants.ipynb)
 
 Explained determinants and their properties.  Considering how central a role determinants play for the 2×2 and 3×3 matrices you probably encountered before 18.06, you may be surprised that we didn't get to determinants until now.  The fact of the matter is that determinants play a much less important role in applied linear algebra for larger matrices — with a few exceptions, most things that you would want to use determinants for can be done more effectively in other ways.  They are a useful *conceptual* tool, however, especially for thinking about eigenvalues.
 
