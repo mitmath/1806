@@ -385,3 +385,11 @@ differently from the book, working *backwards* from what we would *like* to
 obtain (make matrices **act like scalars**) to *how* we achieve it.
 
 **Further reading:** Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).
+
+## Lecture 18 (March 24)
+
+* [Determinants](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Determinants.ipynb)
+
+Explained determinants and their properties.  Considering how central a role determinants play for the 2×2 and 3×3 matrices you probably encountered before 18.06, you may be surprised that we didn't get to determinants until now.  The fact of the matter is that determinants play a much less important role in applied linear algebra for larger matrices — with a few exceptions, most things that you would want to use determinants for can be done more effectively in other ways.  They are a useful *conceptual* tool, however, especially for thinking about eigenvalues.
+
+**Further reading:** Strang, section 5.1; video [lecture 18](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants).  We will skip Strang, section 5.2 and 5.3, because the formulas in those sections are nearly useless in applied settings for large matrices, as explained in the notebook.
