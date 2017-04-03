@@ -398,3 +398,23 @@ Explained determinants and their properties.  Considering how central a role det
 ## Lecture 19 (April 3)
 
 * [Eigenvalues and polynomials](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Eigenvalue-Polynomials.ipynb)
+
+Reviewed eigenvalues, eigenvectors, and diagonalization.
+
+The eigenvalues are the roots of the characteristic polynomial det(A–λI). This
+is a good way to *think* about eigenvalue problems (e.g. it tells you immediately
+to expect ≤ m eigenvalues, possibly complex, from an m×m matrix).  But it is not
+really a good way to compute them except for tiny (e.g. 2×2) matrices.
+
+In fact, it's actually the reverse: one of the best ways to compute roots of
+polynomials is to convert the polynomial into a matrix and find the eigenvalues.
+Showed how this is done, by constructing the *companion matrix* to a polynomial.
+
+The actual way eigenvalues are computed is a topic for another class (e.g. 18.335);
+in 18.06, we will focus mainly on their properties and usage.  The computer
+will handle finding them.
+
+Began defining [similar matrices](https://en.wikipedia.org/wiki/Matrix_similarity);
+to be continued next lecture.
+
+**Further reading:** Strang, sections 6.1 and 6.2; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/) and [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/)
