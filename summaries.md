@@ -441,7 +441,7 @@ As an application of matrix powers, considered the famous [Fibonacci numbers](ht
 
 ## Lecture 21 (April 6)
 
-* [Analyzing Chutes & Ladders](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Eigenvalue-Polynomials.ipynb)
+* [Analyzing Chutes & Ladders](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Chutes-and-Ladders.ipynb)
 
 [Markov matrices](https://en.wikipedia.org/wiki/Stochastic_matrix) and eigenvalues.
 
