@@ -418,3 +418,21 @@ Began defining [similar matrices](https://en.wikipedia.org/wiki/Matrix_similarit
 to be continued next lecture.
 
 **Further reading:** Strang, sections 6.1 and 6.2; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/) and [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/)
+
+## Lecture 20 (April 5)
+
+Defined [similar matrices](https://en.wikipedia.org/wiki/Matrix_similarity) B=M⁻¹AM, and showed that similar matrices have the same *eigenvalues* (with eigenvectors related by a factor of M), the same *determinant*, the same *characteristic polynomial*, and the same *trace*.  Defined the [trace](https://en.wikipedia.org/wiki/Trace_(linear_algebra)) of a matrix tr(A),
+and showed tr(AB)=tr(BA) for any m×n matrix A and n×m matrix B.  (Similar matrices essentially
+represent the same linear operation in a different coordinate system.)  In hindsight, we
+now see that a diagonalizable matrix A is *similar to a diagonal matrix Λ*.  Hence, we
+see that det(A) is the *product* of the eigenvalues and tr(A) is the *sum* of the eigenvalues.
+For a 2×2 matrix, it follows that det(A-λI)=λ²-λtr(A)+det(A), which is a useful formula when solving 2×2 eigenproblems.
+
+Showed that A and Aᵀ have the same eigenvalues and the same characteristic polynomial; we already know that they have the same determinant, and it is obvious that they have the same trace.  (In fact, A and Aᵀ are similar, but I didn't show this.)
+
+Reviewed matrix powers for a diagonalizable A=XΛX⁻¹: Aⁿ=XΛⁿX⁻¹.  That is, to multiply Aⁿx, we first decompose x into the basis of eigenvectors (with coefficients c=X⁻¹x), then multiply each eigenvector by λⁿ, and then sum.
+If any eigenvalues λ have |λ|>1, then that eigenvector's length will diverge as n⟶∞.  For eigenvalues with |λ|<1, those eigenvectors lengths will ⟶0 as n⟶∞.  Therefore, by looking at the eigenvalues, we can tell whether Aⁿx will blow up or decay to zero for a typical x (where all of the eigenvector coefficients are nonzero).
+
+As an application of matrix powers, considered the famous [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number) 1,1,2,3,5,8,13,21,….  The n-th Fibonacci number fₙ satisfies the [linear recurrence relation](http://mathworld.wolfram.com/LinearRecurrenceEquation.html) fₙ=fₙ₋₁+fₙ₋₂, which we can express in terms of multiplication by a 2×2 matrix F that gives (fₙ,fₙ₋₁) from (fₙ₋₁,fₙ₋₂).  We found that the eigenvalues of F are (1±√5)/2.  The larger of these eigenvalues, (1+√5)/2≈1.618, is the so-called [golden ratio](https://en.wikipedia.org/wiki/Golden_ratio), and it means that the Fibonacci numbers blow up exponentially fast for large n.  Furthermore, we showed that the *ratio* fₙ/fₙ₋₁ of successive Fibonacci numbers goes to the golden ratio for large n.   Checked these facts numerically with a Julia notebook.
+
+**Further reading:** Strang, sections 6.2 and 6.6; video [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/) and [lecture 28](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-28-similar-matrices-and-jordan-form/).
