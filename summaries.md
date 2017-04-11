@@ -447,3 +447,24 @@ As an application of matrix powers, considered the famous [Fibonacci numbers](ht
 [Markov matrices](https://en.wikipedia.org/wiki/Stochastic_matrix) and eigenvalues.
 
 **Further reading:** Strang, section 8.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).
+
+## Exam 2 (April 11)
+
+Exam and solutions to be posted Wednesday afternoon.
+
+## Lecture 22 (April 13)
+
+* [Power method](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Power-Method.ipynb)
+* Ordinary differential equations (ODEs).
+
+Discussed how multiplying by a matrix repeatedly is actually a starting point
+for many practical algorithms to compute eigenvectors and eigenvalues: the most
+basic version of this is known as the power method.
+
+We can now solve systems of ODEs dx/dt = Ax in terms of eigenvectors and eigenvalues.
+Each eigenvector is multiplied by exp(λt) (where exp(x)=eˣ), so that solutions decay
+if the eigenvalues have *negative real parts* (and approach a nonzero steady state
+if one eigenvalue is *zero*).  We will also express this in terms of a new
+Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential).
+
+**Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).
