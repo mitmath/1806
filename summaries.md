@@ -455,7 +455,7 @@ Exam and solutions to be posted Wednesday afternoon.
 ## Lecture 22 (April 13)
 
 * [Power method](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Power-Method.ipynb)
-* Ordinary differential equations (ODEs).
+* [Ordinary differential equations (ODEs)](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/ODEs.ipynb).
 
 Discussed how multiplying by a matrix repeatedly is actually a starting point
 for many practical algorithms to compute eigenvectors and eigenvalues: the most
