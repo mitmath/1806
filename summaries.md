@@ -450,7 +450,7 @@ As an application of matrix powers, considered the famous [Fibonacci numbers](ht
 
 ## Exam 2 (April 11)
 
-[Exam 1](https://github.com/stevengj/1806-spring17/blob/master/exams/exam2.pdf)
+[Exam 2](https://github.com/stevengj/1806-spring17/blob/master/exams/exam2.pdf)
 and [solutions](https://github.com/stevengj/1806-spring17/blob/master/exams/exam2-sol.pdf).
 
 ## Lecture 22 (April 13)
