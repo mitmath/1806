@@ -421,7 +421,7 @@ to be continued next lecture.
 
 ## Lecture 20 (April 5)
 
-* [pset 7 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset7/pset7-sol.ipynb), [pset 8 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset8/pset8.ipynb) (due in **2 weeks**: Wed., April 19).
+* [pset 7 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset7/pset7-sol.ipynb), [pset 8](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset8/pset8.ipynb) (due in **2 weeks**: Wed., April 19).
 
 Defined [similar matrices](https://en.wikipedia.org/wiki/Matrix_similarity) B=M⁻¹AM, and showed that similar matrices have the same *eigenvalues* (with eigenvectors related by a factor of M), the same *determinant*, the same *characteristic polynomial*, and the same *trace*.  Defined the [trace](https://en.wikipedia.org/wiki/Trace_(linear_algebra)) of a matrix tr(A),
 and showed tr(AB)=tr(BA) for any m×n matrix A and n×m matrix B.  (Similar matrices essentially
