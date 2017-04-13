@@ -469,3 +469,12 @@ if one eigenvalue is *zero*).  We will also express this in terms of a new
 Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential).
 
 **Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).
+
+## Lecture 23 (April 14)
+
+* [Oscillating ODE solutions: Masses and springs](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/ODEs.ipynb).
+* [Matrix exponentials eᴬ](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Matrix-Exponentials.ipynb).
+
+Continued discussion of ODEs from last lecture, focusing now on oscillating solutions and complex eigenvalues λ (see notebook).   Then reformulated the solution of dx/dt=Ax in terms of the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential) eᴬᵗ, and discussed the properties of this fascinating and important matrix operation.
+
+**Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).
