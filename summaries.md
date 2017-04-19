@@ -478,3 +478,23 @@ Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki
 Continued discussion of ODEs from last lecture, focusing now on oscillating solutions and complex eigenvalues λ (see notebook).   Then reformulated the solution of dx/dt=Ax in terms of the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential) eᴬᵗ, and discussed the properties of this fascinating and important matrix operation.
 
 **Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).
+
+# Lecture 23 (April 19)
+
+* [pset 8 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset8/pset8-sol.ipynb), pset 9 to be posted shortly.
+
+Finished matrix-exponential notes from lecture 23.
+
+Began discussing **symmetric matrices**.  A real-symmetric matrix A
+(i.e. a real A where A = Aᵀ), has three key properties:
+
+* All the eigenvalues λ are **real**.  (It follows that the eigenvectors are real too.)
+* Eigenvalues for different λ are **orthogonal** (and hence eigenvectors can be chosen to be **orthonormal**).
+* The matrix is always **diagonalizable** (no funny defective case).
+
+This is extremely important.  Just by looking at the *structure* of such a matrix,
+we learn a lot.   And symmetric matrices come up in lots of physics and engineering
+applications (e.g. we already saw the symmetric matrix AYAᵀ in circuit problems),
+and the properties above are often intimately related to crucial physical facts.
+
+**Further reading:** Strang, sections 6.3–6.4 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/) and [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/).
