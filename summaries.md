@@ -481,7 +481,7 @@ Continued discussion of ODEs from last lecture, focusing now on oscillating solu
 
 # Lecture 23 (April 19)
 
-* [pset 8 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset8/pset8-sol.ipynb), pset 9 to be posted shortly.
+* [pset 8 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset8/pset8-sol.ipynb), [pset 9](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset9/pset9.ipynb)
 
 Finished matrix-exponential notes from lecture 23.
 
