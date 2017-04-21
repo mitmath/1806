@@ -498,3 +498,90 @@ applications (e.g. we already saw the symmetric matrix AYAᵀ in circuit problem
 and the properties above are often intimately related to crucial physical facts.
 
 **Further reading:** Strang, sections 6.3–6.4 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/) and [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/).
+
+# Lecture 24 (April 21)
+
+## Complex matrices, vectors, and dot products: the adjoint H
+
+To prove the facts claimed about symmetric matrices from last lecture, we need
+to generalize our notion of a "dot product" to complex vectors.  The "transpose"
+is actually not the right notion here.  Instead, we define:
+
+* xᴴ and Aᴴ are the **conjugate-transpose** of a vector or matrix (that is, you transpose and then take the complex conjugate of every element).  This is also called the [adjoint](https://en.wikipedia.org/wiki/Conjugate_transpose) operation.  *For a real matrix, the adjoint is the same as the transpose.*
+
+For complex vectors, the dot product x⋅y is xᴴy, *not* xᵀy.   And the length
+of a vector ‖x‖² = x⋅x = xᴴx.  Defined this way, it has the key property:
+
+* ‖x‖² = x⋅x = ∑ᵢ|xᵢ|² ≥ 0, and = 0 only for x=0.
+
+If you look back at 18.06 and you change our real vectors to complex vectors, just
+change every transpose to an adjoint.  This includes for Gram-Schmidt and orthonormal
+bases!   And if you look back at 18.06 and change real matrices to complex matrices,
+again the right thing is to *change every transpose (T) to adjoint (H)*:
+
+* The normal equations for minimizing ‖Ax-b‖ are AᴴAx̂=Aᴴb.
+* If the columns of Q are orthonormal, then QᴴQ = I.
+* The projection matrix onto C(A) is A(AᴴA)⁻¹Aᴴ
+* The left nullspace is N(Aᴴ) ⟂ C(A), and N(A) ⟂ C(Aᴴ).
+* A square matrix Q with orthonormal columns (Q⁻¹=Qᴴ) is called **unitary**.  (Formerly "orthogonal".)
+* If A=Aᴴ, the matrix is called **Hermitian**.
+
+Again, for real matrices/vectors, the adjoint = the transpose, so everything
+we've done before is just a special case of the complex case with zero imaginary parts.
+
+## Hermitian and real-symmetric matrices
+
+Now, given a Hermitian matrix A=Aᴴ (= real-symmetric if A is real), we can
+easily prove that the eigenvalues are real.  Given an eigensolution Ax=λx, we
+just took the dot products of both sides with x:
+
+: xᴴAx=λxᴴx=(Aᴴx)ᴴx=(Ax)ᴴx=(λx)ᴴx=λ̄xᴴx
+
+Since x≠0 for any eigenvector, we have xᴴx>0 and can divide by it to obtain
+λ=λ̄, which means that **λ is real**.
+
+Similarly, given two eigensolutions Ax₁=λ₁x₁ and Ax₂=λ₂x₂ with λ₁≠λ₂, we
+can take the dot product x₁ᴴAx₂=λ₂x₁ᴴx₂=⋯, and after a couple of lines
+we immediately found x₁ᴴx₂=0.  The **eigenvectors are orthogonal**, and
+they can be chosen (scaled) to be **orthonormal**.
+
+I didn't prove diagonalizability, but gave a hand-waving argument for why this must be the case.
+(There are various proofs you can easily find online.  See e.g. [this video](https://www.youtube.com/watch?v=_2gGqEGA_IY) if you are curious, but
+they seem slightly too tricky for 18.06.)
+
+Since a **Hermitian matrix has an orthonormal basis of eigenvectors**, we
+can call the eigenvectors q₁,q₂,⋯, and put them as the columns of a
+**unitary** matrix Q (= orthogonal if A is real).  (Formerly, we called this X.)
+We can write:
+
+: A = QΛQᴴ = ∑ₖ λₖqₖqₖᴴ
+
+Equivalently, to **expand an arbitrary vector x** in the eigenvector basis,
+we **just need to take dot products**.   Formerly, to write x=∑ₖcₖxₖ, to find
+the coefficients c we had to solve Xx=x, or c=X⁻¹x.   Now, to write x=∑ₖcₖqₖ,
+the coefficients are just **cₖ=qₖᴴx**, or x=∑ₖqₖ(qₖᴴx).  *Expressing a vector
+in an orthonormal basis is easy.*
+
+Gave some examples of how you could use this to more easily understand
+e.g. solving dx/dt=Ax if A is Hermitian (or real-symmetric).
+
+## Positive-definite matrices
+
+A lot of Hermitian matrices in practice come in the form BᴴB (or BᵀB for real B)
+for some matrix B.  e.g. we have seen several of these already, in least-squares
+and circuit/graph problems.   Such matrices are not only Hermitian, but they
+are **positive-definite**.
+
+In particular, a positive-definite matrix A is a Hermitian matrix A=Aᴴ that
+*additionally* has the following *equivalent* properties:
+
+* All eigenvalues λ of A are > 0.
+* xᴴAx > 0 for *any* vector x≠0.
+* A = BᴴB for some full-column-rank matrix B
+* All the pivots are > 0 in Gaussian elimination of A.
+
+These are all *equivalent*: any one of these properties implies *all* of
+the other properties for a Hermitian A.   I proved a couple of the equivalencies,
+but not all; some more equivalencies are proved in the textbook.
+
+**Further reading:** Strang, sections 6.4–6.5, 9.2, and video [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/) and [lecture 26](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/).
