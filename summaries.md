@@ -588,7 +588,7 @@ but not all; some more equivalencies are proved in the textbook.
 
 # Lecture 25 (April 24)
 
-* [SVD](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/SVD.ipynb).
+* [SVD](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/SVD.ipynb)
 
 Guest lecture by Prof. Alan Edelman on the **singular value decomposition** (SVD), with application to image processing.
 
