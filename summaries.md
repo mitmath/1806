@@ -585,3 +585,11 @@ the other properties for a Hermitian A.   I proved a couple of the equivalencies
 but not all; some more equivalencies are proved in the textbook.
 
 **Further reading:** Strang, sections 6.4–6.5, 9.2, and video [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/) and [lecture 26](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/).
+
+# Lecture 25 (April 24)
+
+* [SVD](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/SVD.ipynb).
+
+Guest lecture by Prof. Alan Edelman on the **singular value decomposition** (SVD), with application to image processing.
+
+**Further reading:** Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/)
