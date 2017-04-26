@@ -623,7 +623,7 @@ but the math in that notebook is focused on another topic that may be a bit hard
 
 # Exam 3 (Friday, May 5 in 50-340)
 
-* Practice problems: [Fall 2007 exam 3](http://web.mit.edu/18.06/www/Fall07/examsF07.html), [Spring 2009 exam 3](http://web.mit.edu/18.06/www/Spring09/examsS09.html), [Spring 2014 exam 3, problem 2](http://web.mit.edu/18.06/www/Spring14/oldS14.html), [Fall 2013 exam 3, problems 2–3](http://web.mit.edu/18.06/www/Fall13/oldF13.html), [Fall 2012 exam 3, problem 1](http://web.mit.edu/18.06/www/Fall12/oldF12.html), [Spring 2012 exam 3, problems 1, 3a, 3b](http://web.mit.edu/18.06/www/Spring12/oldS12.html), [Fall 2011 exam 3, problems 1.1, 1.2, 3](http://web.mit.edu/18.06/www/Fall11/oldF11.html)
+* Practice problems: [Fall 2007 exam 3](http://web.mit.edu/18.06/www/Fall07/examsF07.html); [Spring 2009 exam 3](http://web.mit.edu/18.06/www/Spring09/examsS09.html); [Spring 2014 exam 3, problem 2](http://web.mit.edu/18.06/www/Spring14/oldS14.html); [Fall 2013 exam 3, problems 2–3](http://web.mit.edu/18.06/www/Fall13/oldF13.html); [Fall 2012 exam 3, problem 1](http://web.mit.edu/18.06/www/Fall12/oldF12.html); [Spring 2012 exam 3, problems 1, 3a, 3b](http://web.mit.edu/18.06/www/Spring12/oldS12.html); [Fall 2011 exam 3, problems 1.1, 1.2, 3](http://web.mit.edu/18.06/www/Fall11/oldF11.html)
 
 The primary focus of exam 3 will be eigenvectors and eigenvalues and related issues: relationship to polynomial roots, similar matrices, diagonalization, markov matrices, matrix powers and the power method, ODEs and matrix exponentials, Hermitian/real-symmetric matrices, positive-definite matrices, complex matrices (H vs T).
 
