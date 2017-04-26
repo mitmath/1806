@@ -538,7 +538,8 @@ just took the dot products of both sides with x:
 : xᴴAx=λxᴴx=(Aᴴx)ᴴx=(Ax)ᴴx=(λx)ᴴx=λ̄xᴴx
 
 Since x≠0 for any eigenvector, we have xᴴx>0 and can divide by it to obtain
-λ=λ̄, which means that **λ is real**.
+λ=λ̄, which means that **λ is real**.  (It follows that the eigenvector x is also real *if*
+the matrix A is real-symmetric.)
 
 Similarly, given two eigensolutions Ax₁=λ₁x₁ and Ax₂=λ₂x₂ with λ₁≠λ₂, we
 can take the dot product x₁ᴴAx₂=λ₂x₁ᴴx₂=⋯, and after a couple of lines
@@ -593,3 +594,27 @@ but not all; some more equivalencies are proved in the textbook.
 Guest lecture by Prof. Alan Edelman on the **singular value decomposition** (SVD), with application to image processing.
 
 **Further reading:** Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/)
+
+# Lecture 26 (April 26)
+
+As an application of real-symmetric and positive-definite matrices, I returned
+to the system of masses and springs from lecture 23, but this time I considered
+n masses m and n+1 springs.   I showed that Newton's laws take the form:
+
+* mẍ = -DᵀKDx ⟹ ẍ = -Ax, where D is an incidence matrix, K is a diagonal matrix of spring constants, and A=DᵀWD where W=K/m.
+
+A is obviously real-symmetric, so its eigenvalues λ are real.  With a little more work, we saw that it must be positive-definite.  In particular, take any eigensolution Ax=λx for x≠0.  We showed that xᵀAx=λxᵀx>0, which implies λ>0.  The reason is that xᵀAx=xᵀDᵀWDx=(Dx)ᵀWDx=yᵀWy where y=Dx, and (i) y≠0 since D is full column rank (Dᵀ is upper triangular so we could just "read off" its rank, and (ii) W is a diagonal matrix of positive entries so it is automatically positive-definite, or alternatively we can just write out yᵀWy and see that it is positive for y≠0.
+
+The fact that A is positive definite allowed us to derive that *any* such system of masses and springs has *orthogonal oscillating solutions* called the [normal modes](https://en.wikipedia.org/wiki/Normal_mode). In particular, given the eigenvectors qⱼ (chosen orthonormal), satisfying Aqⱼ=λⱼqⱼ with λⱼ>0, we expanded the solution x(t)=∑ⱼcⱼqⱼ in the basis of these eigenvectors.  For each eigenvector component, the matrix A acts just like a number λ, allowing us to easily solve the equation c̈ⱼ=-λⱼcⱼ to get sines and cosines, and hence to get the general solution:
+
+* x(t) = ∑ⱼ [αⱼ cos(ωⱼt) + βⱼ sin(ωⱼt)] qⱼ
+
+where ωⱼ=√λⱼ αⱼ and βⱼ are determined from the initial conditions x(0) and ẋ(0).
+
+The key point is that the **structure** of the problem told us that λⱼ>0 and
+hence that the **frequencies** ωⱼ are **real** numbers.  (If they were complex, we would have exponentially growing or decaying solutions, which would make no physical sense for a system of lossless springs and masses.)  The moral of this story is that Hermitian and definite matrices don't just fall down out of the sky, they arise from how the matrix was constructed, and that these matrix properties are often the key to understanding the physical properties of real problems.
+
+Finally, for fun, I pointed out that essentially the same structure A=DᵀWD arises for *two-dimensional grids of springs and masses*.  D is still the incidence matrix, just for a more complicated graph, and W is still a diagonal matrix of spring constants divided by masses.   I showed some example eigenfunctions from various such grids, which can be thought of as the **oscillating modes of a drum** (stretched membrane).
+
+**Further reading:** Strang, section 10.2.  See also [these notes on the springs-and-masses problem](http://math.mit.edu/~stevenj/18.303/lecture-5.5.pdf) from [18.303](http://math.mit.edu/~stevenj/18.303/) (you can ignore the last two pages, which go beyond 18.06, and ignore the Δx factor which is used in 18.303 to connect the discrete problem to a continuous problem).  My vibrating-drum examples were taken from this [18.303 notebook](http://nbviewer.jupyter.org/url/math.mit.edu/~stevenj/18.303/min-max-examples.ipynb),
+but the math in that notebook is focused on another topic that may be a bit hard to follow for 18.06 students.
