@@ -611,7 +611,7 @@ The fact that A is positive definite allowed us to derive that *any* such system
 
 * x(t) = ∑ⱼ [αⱼ cos(ωⱼt) + βⱼ sin(ωⱼt)] qⱼ
 
-where ωⱼ=√λⱼ αⱼ and βⱼ are determined from the initial conditions x(0) and ẋ(0).
+where ωⱼ=√λⱼ, and αⱼ and βⱼ are determined from the initial conditions x(0) and ẋ(0).
 
 The key point is that the **structure** of the problem told us that λⱼ>0 and
 hence that the **frequencies** ωⱼ are **real** numbers.  (If they were complex, we would have exponentially growing or decaying solutions, which would make no physical sense for a system of lossless springs and masses.)  The moral of this story is that Hermitian and definite matrices don't just fall down out of the sky, they arise from how the matrix was constructed, and that these matrix properties are often the key to understanding the physical properties of real problems.
