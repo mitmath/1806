@@ -597,7 +597,7 @@ Guest lecture by Prof. Alan Edelman on the **singular value decomposition** (SVD
 
 # Lecture 26 (April 26)
 
-* [pset 9 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset9/pset9-sol.ipynb), pset 10 to be posted shortly
+* [pset 9 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset9/pset9-sol.ipynb), , [pset 10](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset10/pset10.ipynb)
 
 As an application of real-symmetric and positive-definite matrices, I returned
 to the system of masses and springs from lecture 23, but this time I considered
