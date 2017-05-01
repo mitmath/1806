@@ -641,6 +641,11 @@ The wonderful thing about this approach is that it allows us to derive real λ>0
 
 **Further reading**:  Linear algebra applied to functions and PDEs can be found in [18.303](http://math.mit.edu/~stevenj/18.303/), 18.101 (functional analysis), and many other courses (e.g. quantum mechanics 8.04+ is taught this way).   See also my [notes on Hermitian operators for 18.06 from Fall 2007](http://web.mit.edu/18.06/www/Fall07/operators.pdf) which gives an informal introduction similar to my presentation in class.  Strang's book [Computational Science and Engineering](http://math.mit.edu/~gs/cse/) gives a more computational viewpoint on this subject.  The linear-algebra approach to the 1d case of functions u(x) and second-derivative operators is often called [Sturm–Liouville theory](https://en.wikipedia.org/wiki/Sturm%E2%80%93Liouville_theory), but nowadays people apply similar concepts to more complicated operators in higher dimensions.  Scientist and engineers usually adopt an informal approach to this subject, whereas a rigorous approach is much more tricky and requires the spaces of allowed functions and operators to be carefully circumscribed, leading to the topic of [functional analysis](https://en.wikipedia.org/wiki/Functional_analysis).
 
+# Lecture 28 (May 1)
+
+* [Statistics and PCA](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Statistics-and-PCA.ipynb)
+
+* [Eigen-walker demo](https://www.biomotionlab.ca/Demos/BMLwalker.html)
 
 # Exam 3 (Friday, May 5 in 50-340)
 
