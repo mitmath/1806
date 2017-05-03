@@ -597,7 +597,7 @@ Guest lecture by Prof. Alan Edelman on the **singular value decomposition** (SVD
 
 # Lecture 26 (April 26)
 
-* [pset 9 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset9/pset9-sol.ipynb), , [pset 10](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset10/pset10.ipynb)
+* [pset 9 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset9/pset9-sol.ipynb), [pset 10](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset10/pset10.ipynb)
 
 As an application of real-symmetric and positive-definite matrices, I returned
 to the system of masses and springs from lecture 23, but this time I considered
@@ -656,6 +656,8 @@ Gave some examples (see notebook), and closed with the [eigen-walker data](http:
 **Further reading**: Strang book, sections 7.3, 12.1, 12.2.  Googling "principal components analysis" or looking it up in any applied-statistics textbook will give you a lot more detail and examples.
 
 # Lecture 29 (May 3): Exam 3 Review
+
+* [pset 10 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset10/pset10-sol.ipynb), pset 11 to be posted soon.
 
 # Exam 3 (Friday, May 5 in 50-340)
 
