@@ -664,7 +664,7 @@ Gave some examples (see notebook), and closed with the [eigen-walker data](http:
 
 # Lecture 29 (May 3): Exam 3 Review
 
-* [pset 10 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset10/pset10-sol.ipynb), pset 11 to be posted soon.
+* [pset 10 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset10/pset10-sol.ipynb), [pset 11](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset11/pset11.ipynb) to be posted soon.
 
 # Exam 3 (Friday, May 5 in 50-340)
 
