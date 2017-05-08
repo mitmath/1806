@@ -1,0 +1,1570 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\vec}[1]{\mathbf{#1}}
+
+\date{Created Spring 2009; updated \today}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 2
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+A useful basis for defective matrices: 
+\begin_inset Newline newline
+\end_inset
+
+Jordan vectors and the Jordan form
+\end_layout
+
+\begin_layout Author
+S.
+ G.
+ Johnson, MIT 18.06
+\end_layout
+
+\begin_layout Abstract
+Many textbooks and lecture notes can be found online for the 
+\emph on
+existence
+\emph default
+ of something called a 
+\begin_inset Quotes eld
+\end_inset
+
+Jordan form
+\begin_inset Quotes erd
+\end_inset
+
+ of a matrix based on 
+\begin_inset Quotes eld
+\end_inset
+
+generalized eigenvectors (or 
+\begin_inset Quotes eld
+\end_inset
+
+Jordan vectors
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+Jordan chains
+\begin_inset Quotes erd
+\end_inset
+
+).
+ In these notes, instead, I omit most of the formal derivations and instead
+ focus on the 
+\emph on
+consequences
+\emph default
+ of the Jordan vectors for how we understand matrices.
+ What happens to our traditional eigenvector-based pictures of things like
+ 
+\begin_inset Formula $A^{n}$
+\end_inset
+
+ or 
+\begin_inset Formula $e^{At}$
+\end_inset
+
+ when diagonalization of 
+\begin_inset Formula $A$
+\end_inset
+
+ fails? The answer, for any matrix function 
+\begin_inset Formula $f(A)$
+\end_inset
+
+, turns out to involve the 
+\emph on
+derivative
+\emph default
+ of 
+\begin_inset Formula $f$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+So far in the eigenproblem portion of 18.06, our strategy has been simple:
+ find the eigenvalues 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ and the corresponding eigenvectors 
+\begin_inset Formula $\vec{x}_{i}$
+\end_inset
+
+ of a square matrix 
+\begin_inset Formula $A$
+\end_inset
+
+, expand any vector of interest 
+\begin_inset Formula $\vec{u}$
+\end_inset
+
+ in the basis of these eigenvectors (
+\begin_inset Formula $\vec{u}=c_{1}\vec{x}_{1}+\cdots+c_{n}\vec{x}_{n})$
+\end_inset
+
+, and then any operation with 
+\begin_inset Formula $A$
+\end_inset
+
+ can be turned into the corresponding operation with 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ acting on each eigenvector.
+ So, 
+\begin_inset Formula $A^{k}$
+\end_inset
+
+ becomes 
+\begin_inset Formula $\lambda_{i}^{k}$
+\end_inset
+
+, 
+\begin_inset Formula $e^{At}$
+\end_inset
+
+ becomes 
+\begin_inset Formula $e^{\lambda_{i}t}$
+\end_inset
+
+, and so on.
+ But this relied on one key assumption: we require the 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ to have a 
+\emph on
+basis
+\emph default
+ of 
+\begin_inset Formula $n$
+\end_inset
+
+ independent eigenvectors.
+ We call such a matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\series bold
+diagonalizable
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Many important cases are always diagonalizable: matrices with 
+\begin_inset Formula $n$
+\end_inset
+
+ distinct eigenvalues 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+, real symmetric or orthogonal matrices, and complex Hermitian or unitary
+ matrices.
+ But there are rare cases where 
+\begin_inset Formula $A$
+\end_inset
+
+ does 
+\emph on
+not
+\emph default
+ have a complete basis of 
+\begin_inset Formula $n$
+\end_inset
+
+ eigenvectors: such matrices are called 
+\series bold
+defective
+\series default
+.
+ For example, consider the matrix 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cc}
+1 & 1\\
+0 & 1
+\end{array}\right).
+\]
+
+\end_inset
+
+This matrix has a characteristic polynomial 
+\begin_inset Formula $\lambda^{2}-2\lambda+1$
+\end_inset
+
+, with a repeated root (a single eigenvalue) 
+\begin_inset Formula $\lambda_{1}=1$
+\end_inset
+
+.
+ (Equivalently, since 
+\begin_inset Formula $A$
+\end_inset
+
+ is upper triangular, we can read the determinant of 
+\begin_inset Formula $A-\lambda I$
+\end_inset
+
+, and hence the eigenvalues, off the diagonal.) However, it only has a 
+\emph on
+single
+\emph default
+ indepenent eigenvector, because 
+\begin_inset Formula 
+\[
+A-I=\left(\begin{array}{cc}
+0 & 1\\
+0 & 0
+\end{array}\right)
+\]
+
+\end_inset
+
+is obviously rank 1, and has a one-dimensional nullspace spanned by 
+\begin_inset Formula $\vec{x}_{1}=(1,0)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Defective matrices arise rarely in practice, and usually only when one arranges
+ for them intentionally, so we have not worried about them up to now.
+ But it is important to have some idea of what happens when you have a defective
+ matrix.
+ Partially for computational purposes, but also to understand conceptually
+ what is possible.
+ For example, what will be the result of 
+\begin_inset Formula 
+\[
+A^{k}\left(\begin{array}{c}
+1\\
+2
+\end{array}\right)\quad\mbox{or}\quad e^{At}\left(\begin{array}{c}
+1\\
+2
+\end{array}\right)
+\]
+
+\end_inset
+
+for the defective matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ above, since 
+\begin_inset Formula $(1,2)$
+\end_inset
+
+ is not in the span of the (single) eigenvector of 
+\begin_inset Formula $A$
+\end_inset
+
+? For diagonalizable matrices, this would grow as 
+\begin_inset Formula $\lambda^{k}$
+\end_inset
+
+ or 
+\begin_inset Formula $e^{\lambda t}$
+\end_inset
+
+, respectively, but what about defective matrices? Although matrices in
+ real applications are rarely 
+\emph on
+exactly
+\emph default
+ defective, it sometimes happens (often by design!) that they are 
+\emph on
+nearly 
+\emph default
+defective, and we can think of exactly defective matrices as a limiting
+ case.
+ (The book 
+\emph on
+Spectra and Pseudospectra
+\emph default
+ by Trefethen & Embree is a much more detailed dive into the fascinating
+ world of nearly defective matrices.)
+\end_layout
+
+\begin_layout Standard
+The textbook (
+\emph on
+Intro.
+ to Linear Algebra, 5th ed.
+
+\emph default
+ by Strang) covers the defective case only briefly, in section 8.3, with
+ something called the 
+\series bold
+Jordan form
+\series default
+ of the matrix, a generalization of diagonalization, but in this section
+ we will focus more on the 
+\begin_inset Quotes eld
+\end_inset
+
+Jordan vectors
+\begin_inset Quotes erd
+\end_inset
+
+ than on the Jordan factorization.
+ For a diagonalizable matrix, the fundamental vectors are the eigenvectors,
+ which are useful in their own right and give the diagonalization of the
+ matrix as a side-effect.
+ For a defective matrix, to get a complete basis we need to supplement the
+ eigenvectors with something called 
+\series bold
+Jordan vectors
+\series default
+ or 
+\series bold
+generalized eigenvectors
+\series default
+.
+ Jordan vectors are useful in their own right, just like eigenvectors, and
+ also give the Jordan form.
+ Here, we'll focus mainly on the 
+\emph on
+consequences
+\emph default
+ of the Jordan vectors for how matrix problems 
+\emph on
+behave.
+\end_layout
+
+\begin_layout Section
+
+\emph on
+Defining
+\emph default
+ Jordan vectors
+\end_layout
+
+\begin_layout Standard
+In the example above, we had a 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ but only a single eigenvector 
+\begin_inset Formula $\vec{x}_{1}=(1,0)$
+\end_inset
+
+.
+ We need another vector to get a basis for 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+ Of course, we could pick another vector at random, as long as it is independent
+ of 
+\begin_inset Formula $\vec{x}_{1}$
+\end_inset
+
+, but we'd like it to have something to do with 
+\begin_inset Formula $A$
+\end_inset
+
+, in order to help us with computations just like eigenvectors.
+ The key thing is to look at 
+\begin_inset Formula $A-I$
+\end_inset
+
+ above, and to notice that 
+\begin_inset Formula $(A-I)^{2}=0$
+\end_inset
+
+.
+ (A matrix is called 
+\series bold
+nilpotent
+\series default
+ if some power is the zero matrix.) So, the nullspace of 
+\begin_inset Formula $(A-I)^{2}$
+\end_inset
+
+ must give us an 
+\begin_inset Quotes eld
+\end_inset
+
+extra
+\begin_inset Quotes erd
+\end_inset
+
+ basis vector beyond the eigenvector.
+ But this extra vector must still be related to the eigenvector! If 
+\begin_inset Formula $\vec{y}\in N[(A-I)^{2}]$
+\end_inset
+
+, then 
+\begin_inset Formula $(A-I)\vec{y}$
+\end_inset
+
+ must be in 
+\begin_inset Formula $N(A-I)$
+\end_inset
+
+, which means that 
+\begin_inset Formula $(A-I)\vec{y}$
+\end_inset
+
+ is a multiple of 
+\begin_inset Formula $\vec{x}_{1}$
+\end_inset
+
+! We just need to find a new 
+\series bold
+
+\begin_inset Quotes eld
+\end_inset
+
+Jordan vector
+\begin_inset Quotes erd
+\end_inset
+
+
+\series default
+ or 
+\series bold
+
+\begin_inset Quotes eld
+\end_inset
+
+generalized eigenvector
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\vec{j}_{1}$
+\end_inset
+
+ satisfying 
+\begin_inset Formula 
+\[
+(A-I)\vec{j}_{1}=\vec{x}_{1},\qquad\vec{j}_{1}\perp\vec{x}_{1}.
+\]
+
+\end_inset
+
+Notice that, since 
+\begin_inset Formula $\vec{x}_{1}\in N(A-I)$
+\end_inset
+
+, we can add any multiple of 
+\begin_inset Formula $\vec{x}_{1}$
+\end_inset
+
+ to 
+\begin_inset Formula $\vec{j}_{1}$
+\end_inset
+
+ and still have a solution, so we can use Gram-Schmidt to get a 
+\emph on
+unique
+\emph default
+ solution 
+\begin_inset Formula $\vec{j}_{1}$
+\end_inset
+
+ perpendicular to 
+\begin_inset Formula $\vec{x}_{1}$
+\end_inset
+
+.
+ This particular 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ equation is easy enough for us to solve by inspection, obtaining 
+\begin_inset Formula $\vec{j}_{1}=(0,1)$
+\end_inset
+
+.
+ Now we have a nice 
+\emph on
+orthonormal
+\emph default
+ basis for 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+, and our basis has some simple relationship to 
+\begin_inset Formula $A$
+\end_inset
+
+! 
+\end_layout
+
+\begin_layout Standard
+Before we talk about how to 
+\emph on
+use
+\emph default
+ these Jordan vectors, let's give a more general definition.
+ Suppose that 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $A$
+\end_inset
+
+ corresponding to a repeated root of 
+\begin_inset Formula $\det(A-\lambda_{i}I)$
+\end_inset
+
+, but with only a single (ordinary) eigenvector 
+\begin_inset Formula $\vec{x}_{i}$
+\end_inset
+
+, satisfying, as usual: 
+\begin_inset Formula 
+\[
+(A-\lambda_{i}I)\vec{x}_{i}=0.
+\]
+
+\end_inset
+
+If 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ is a double root, we will need a second vector to complete our basis.
+ Remarkably,
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This fact is proved in any number of advanced textbooks on linear algebra;
+ I like 
+\emph on
+Linear Algebra
+\emph default
+ by P.
+ D.
+ Lax.
+\end_layout
+
+\end_inset
+
+ it turns out to 
+\emph on
+always
+\emph default
+ be the case for a double root 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+  that 
+\begin_inset Formula $N([A-\lambda_{i}I]^{2})$
+\end_inset
+
+ is two-dimensional, just as for the 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ example above.
+ Hence, we can 
+\emph on
+always
+\emph default
+ find a unique second solution 
+\begin_inset Formula $\vec{j}_{i}$
+\end_inset
+
+ satisfying: 
+\begin_inset Formula 
+\[
+\boxed{(A-\lambda_{i}I)\vec{j}_{i}=\vec{x}_{i},\qquad\vec{j}_{i}\perp\vec{x}_{i}}.
+\]
+
+\end_inset
+
+Again, we can choose 
+\begin_inset Formula $\vec{j}_{i}$
+\end_inset
+
+ to be perpendicular to 
+\begin_inset Formula $\vec{x}_{i}$
+\end_inset
+
+ via Gram-Schmidt—this is not strictly necessary, but gives a convenient
+ orthogonal basis.
+ (That is, the complete solution is always of the form 
+\begin_inset Formula $\vec{x}_{p}+c\vec{x}_{i}$
+\end_inset
+
+, a particular solution 
+\begin_inset Formula $\vec{x}_{p}$
+\end_inset
+
+ plus any multiple of the nullspace basis 
+\begin_inset Formula $\vec{x}_{i}$
+\end_inset
+
+.
+ If we choose 
+\begin_inset Formula $c=-\vec{x}_{i}^{T}\vec{x}_{p}/\vec{x}_{i}^{T}\vec{x}_{i}$
+\end_inset
+
+ we get the unique orthogonal solution 
+\begin_inset Formula $\vec{j}_{i}$
+\end_inset
+
+.) We call 
+\begin_inset Formula $\vec{j}_{i}$
+\end_inset
+
+ a 
+\series bold
+Jordan vector
+\series default
+ or 
+\series bold
+Jordan vector 
+\series default
+of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ The relationship between 
+\begin_inset Formula $\vec{j}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{x}_{1}$
+\end_inset
+
+ is also called a 
+\series bold
+Jordan chain
+\series default
+.
+\end_layout
+
+\begin_layout Subsection
+More than double roots
+\end_layout
+
+\begin_layout Standard
+A more general notation is to use 
+\begin_inset Formula $\vec{x}_{i}^{(1)}$
+\end_inset
+
+ instead of 
+\begin_inset Formula $\vec{x}_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{x}_{i}^{(2)}$
+\end_inset
+
+ instead of 
+\begin_inset Formula $\vec{j}_{i}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ is a triple root, we would find a third vector 
+\begin_inset Formula $\vec{x}_{i}^{(3)}$
+\end_inset
+
+ perpendicular to 
+\begin_inset Formula $\vec{x}_{i}^{(1,2)}$
+\end_inset
+
+ by requiring 
+\begin_inset Formula $(A-\lambda_{i}I)\vec{x}_{i}^{(3)}=\vec{x}_{i}^{(2)}$
+\end_inset
+
+, and so on.
+ In general, if 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ is an 
+\begin_inset Formula $m$
+\end_inset
+
+-times repeated root, then 
+\begin_inset Formula $N([A-\lambda_{i}]^{m})$
+\end_inset
+
+ is 
+\begin_inset Formula $m$
+\end_inset
+
+-dimensiohnal we will always be able to find an orthogonal sequence (a Jordan
+ chain) of Jordan vectors 
+\begin_inset Formula $\vec{x}_{i}^{(j)}$
+\end_inset
+
+ for 
+\begin_inset Formula $j=2\ldots m$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $(A-\lambda_{i}I)\vec{x}_{i}^{(j)}=\vec{x}_{i}^{(j-1)}$
+\end_inset
+
+ and 
+\begin_inset Formula $(A-\lambda_{i}I)\vec{x}_{i}^{(1)}=0$
+\end_inset
+
+.
+ Even more generally, you might have cases with e.g.
+ a triple root and two ordinary eigenvectors, where you need only one generalize
+d eigenvector, or an 
+\begin_inset Formula $m$
+\end_inset
+
+-times repeated root with 
+\begin_inset Formula $\ell>1$
+\end_inset
+
+ eigenvectors and 
+\begin_inset Formula $m-\ell$
+\end_inset
+
+ Jordan vectors.
+ However, cases with more than a double root are extremely rare in practice.
+ Defective matrices are rare enough to begin with, so here we'll stick with
+ the most common defective matrix, one with a double root 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+: hence, one ordinary eigenvector 
+\begin_inset Formula $\vec{x}_{i}$
+\end_inset
+
+ and one Jordan vector 
+\begin_inset Formula $\vec{j}_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+
+\emph on
+Using
+\emph default
+ Jordan vectors
+\end_layout
+
+\begin_layout Standard
+Using an eigenvector 
+\begin_inset Formula $\vec{x}_{i}$
+\end_inset
+
+ is easy: multiplying by 
+\begin_inset Formula $A$
+\end_inset
+
+ is just like multiplying by 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+.
+ But how do we use a Jordan vector 
+\begin_inset Formula $\vec{j}_{i}$
+\end_inset
+
+? The key is in the definition
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ above.
+ It immediately tells us that 
+\begin_inset Formula 
+\[
+A\vec{j}_{i}=\lambda_{i}\vec{j}_{i}+\vec{x}_{i}.
+\]
+
+\end_inset
+
+It will turn out that this has a simple consequence for more complicated
+ expressions like 
+\begin_inset Formula $A^{k}$
+\end_inset
+
+ or 
+\begin_inset Formula $e^{At}$
+\end_inset
+
+, but that's probably not obvious yet.
+ Let's try multiplying by 
+\begin_inset Formula $A^{2}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{aligned}A^{2}\vec{j}_{i} & =A(A\vec{j}_{i})=A(\lambda_{i}\vec{j}_{i}+\vec{x}_{i})=\lambda_{i}(\lambda_{i}\vec{j}_{i}+\vec{x}_{i})+\lambda_{i}\vec{x}_{i}\\
+ & =\lambda_{i}^{2}\vec{j}_{i}+2\lambda_{i}\vec{x}_{i}
+\end{aligned}
+\]
+
+\end_inset
+
+ and then try 
+\begin_inset Formula $A^{3}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\begin{aligned}A^{3}\vec{j}_{i} & =A(A^{2}\vec{j}_{i})=A(\lambda_{i}^{2}\vec{j}_{i}+2\lambda_{i}\vec{x}_{i})=\lambda_{i}^{2}(\lambda_{i}\vec{j}_{i}+\vec{x}_{i})+2\lambda_{i}^{2}\vec{x}_{i}\\
+ & =\lambda_{i}^{3}\vec{j}_{i}+3\lambda_{i}^{2}\vec{x}_{i}.
+\end{aligned}
+\]
+
+\end_inset
+
+ From this, it's not hard to see the general pattern (which can be formally
+ proved by induction): 
+\begin_inset Formula 
+\[
+\boxed{A^{k}\vec{j}_{i}=\lambda_{i}^{k}\vec{j}_{i}+k\lambda_{i}^{k-1}\vec{x}_{i}}.
+\]
+
+\end_inset
+
+Notice that the coefficient in the second term is exactly 
+\begin_inset Formula $\frac{d}{d\lambda_{i}}(\lambda_{i})^{k}$
+\end_inset
+
+.
+ This is the clue we need to get the general formula to apply any function
+ 
+\begin_inset Formula $f(A)$
+\end_inset
+
+ of the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ to the eigenvector and the Jordan vector: 
+\begin_inset Formula 
+\[
+f(A)\vec{x}_{i}=f(\lambda_{i})\vec{x}_{i},
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{f(A)\vec{j}_{i}=f(\lambda_{i})\vec{j}_{i}+f'(\lambda_{i})\vec{x}_{i}}.
+\]
+
+\end_inset
+
+Multiplying by a function of the matrix multiplies 
+\begin_inset Formula $\vec{j}_{i}$
+\end_inset
+
+ by the same function of the eigenvalue, just as for an eigenvector, but
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph on
+\bar default
+\noun default
+\color inherit
+also
+\emph default
+ adds a term multiplying 
+\begin_inset Formula $\vec{x}_{i}$
+\end_inset
+
+ by the 
+\emph on
+derivative
+\emph default
+ 
+\begin_inset Formula $f'(\lambda_{i})$
+\end_inset
+
+.
+ So, for example: 
+\begin_inset Formula 
+\[
+\boxed{e^{At}\vec{j}_{i}=e^{\lambda_{i}t}\vec{j}_{i}+te^{\lambda_{i}t}\vec{x}_{i}}.
+\]
+
+\end_inset
+
+ We can show this explicitly by considering what happens when we apply our
+ formula for 
+\begin_inset Formula $A^{k}$
+\end_inset
+
+ in the Taylor series for 
+\begin_inset Formula $e^{At}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{multline*}
+e^{At}\vec{j}_{i}=\sum_{k=0}^{\infty}\frac{A^{k}t^{k}}{k!}\vec{j}_{i}=\sum_{k=0}^{\infty}\frac{t^{k}}{k!}(\lambda_{i}^{k}\vec{j}_{i}+k\lambda_{i}^{k-1}\vec{x}_{i})\\
+=\sum_{k=0}^{\infty}\frac{(\lambda_{i}t)^{k}}{k!}\vec{j}_{i}+t\sum_{k=1}^{\infty}\frac{(\lambda_{i}t)^{k-1}}{(k-1)!}\vec{x}_{i}=e^{\lambda_{i}t}\vec{j}_{i}+te^{\lambda_{i}t}\vec{x}_{i}.
+\end{multline*}
+
+\end_inset
+
+In general, that's how we show the formula for 
+\begin_inset Formula $f(A)$
+\end_inset
+
+ above: we Taylor expand each term, and the 
+\begin_inset Formula $A^{k}$
+\end_inset
+
+ formula means that each term in the Taylor expansion has corresponding
+ term multiplying 
+\begin_inset Formula $\vec{j}_{i}$
+\end_inset
+
+ and a 
+\emph on
+derivative
+\emph default
+ term multiplying 
+\begin_inset Formula $\vec{x}_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+More than double roots
+\end_layout
+
+\begin_layout Standard
+In the rare case of two Jordan vectors from a triple root, you will have
+ a Jordan vector 
+\begin_inset Formula $\vec{x}_{i}^{(3)}$
+\end_inset
+
+ and get a 
+\begin_inset Formula $f(A)\vec{x}_{i}^{(3)}=f(\lambda)\vec{x}_{i}^{(3)}+f'(\lambda)\vec{j}_{i}+f''(\lambda)\vec{x}_{i}$
+\end_inset
+
+, where the 
+\begin_inset Formula $f''$
+\end_inset
+
+ term will give you 
+\begin_inset Formula $k(k-1)\lambda_{i}^{k-2}$
+\end_inset
+
+ and 
+\begin_inset Formula $t^{2}e^{\lambda_{i}t}$
+\end_inset
+
+ for 
+\begin_inset Formula $A^{k}$
+\end_inset
+
+ and 
+\begin_inset Formula $e^{At}$
+\end_inset
+
+ respectively.
+ A quadruple root with one eigenvector and three Jordan vectors will give
+ you 
+\begin_inset Formula $f'''$
+\end_inset
+
+ terms (that is, 
+\begin_inset Formula $k^{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $t^{3}$
+\end_inset
+
+ terms), and so on.
+ The theory is quite pretty, but doesn't arise often in practice so I will
+ skip it; it is straightforward to work it out on your own if you are interested.
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Let's try this for our example 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+1 & 1\\
+0 & 1
+\end{array}\right)$
+\end_inset
+
+ from above, which has an eigenvector 
+\begin_inset Formula $\vec{x}_{1}=(1,0)$
+\end_inset
+
+ and a Jordan vector 
+\begin_inset Formula $\vec{j}_{1}=(0,1)$
+\end_inset
+
+ for an eigenvalue 
+\begin_inset Formula $\lambda_{1}=1$
+\end_inset
+
+.
+ Suppose we want to comput 
+\begin_inset Formula $A^{k}\vec{u}_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $e^{At}\vec{u}_{0}$
+\end_inset
+
+ for 
+\begin_inset Formula $\vec{u}_{0}=(1,2)$
+\end_inset
+
+.
+ As usual, our first step is to write 
+\begin_inset Formula $\vec{u}_{0}$
+\end_inset
+
+ in the basis of the eigenvectors...except that now we also include the generalized
+ eigenvectors to get a complete basis: 
+\begin_inset Formula 
+\[
+\vec{u}_{0}=\left(\begin{array}{c}
+1\\
+2
+\end{array}\right)=\vec{x}_{1}+2\vec{j}_{1}.
+\]
+
+\end_inset
+
+Now, computing 
+\begin_inset Formula $A^{k}\vec{u}_{0}$
+\end_inset
+
+ is easy, from our formula above: 
+\begin_inset Formula 
+\begin{eqnarray*}
+A^{k}\vec{u}_{0} & = & A^{k}\vec{x}_{1}+2A^{k}\vec{j}_{1}=\lambda_{1}^{k}\vec{x}_{1}+2\lambda_{1}^{k}\vec{j}_{1}+2k\lambda_{1}^{k-1}\vec{x}_{1}\\
+ & = & 1^{k}\left(\begin{array}{c}
+1\\
+2
+\end{array}\right)+2k\,1^{k-1}\left(\begin{array}{c}
+1\\
+0
+\end{array}\right)=\left(\begin{array}{c}
+1+2k\\
+2
+\end{array}\right).
+\end{eqnarray*}
+
+\end_inset
+
+For example, this is the solution to the recurrence 
+\begin_inset Formula $\vec{u}_{k+1}=A\vec{u}_{k}$
+\end_inset
+
+.
+ Even though 
+\begin_inset Formula $A$
+\end_inset
+
+ has only an eigenvalue 
+\begin_inset Formula $|\lambda_{1}|=1\leq1$
+\end_inset
+
+, the solution still blows up, but it blows up 
+\emph on
+linearly
+\emph default
+ with 
+\begin_inset Formula $k$
+\end_inset
+
+ instead of exponentially.
+\end_layout
+
+\begin_layout Standard
+Consider instead 
+\begin_inset Formula $e^{At}\vec{u}_{0}$
+\end_inset
+
+, which is the solution to the system of ODEs 
+\begin_inset Formula $\frac{d\vec{u}(t)}{dt}=A\vec{u}(t)$
+\end_inset
+
+ with the initial condition 
+\begin_inset Formula $\vec{u}(0)=\vec{u}_{0}$
+\end_inset
+
+.
+ In this case, we get:
+\begin_inset Formula 
+\begin{eqnarray*}
+e^{At}\vec{u}_{0} & = & e^{At}\vec{x}_{1}+2e^{At}\vec{j}_{1}=e^{\lambda_{1}t}\vec{x}_{1}+2e^{\lambda_{1}t}\vec{j}_{1}+2te^{\lambda_{1}t}\vec{x}_{1}\\
+ & = & e^{t}\left(\begin{array}{c}
+1\\
+2
+\end{array}\right)+2te^{t}\left(\begin{array}{c}
+1\\
+0
+\end{array}\right)=\left(\begin{array}{c}
+1+2t\\
+2
+\end{array}\right)e^{t}.
+\end{eqnarray*}
+
+\end_inset
+
+In this case, the solution blows up exponentially since 
+\begin_inset Formula $\lambda_{1}=1>0$
+\end_inset
+
+, but we have an 
+\emph on
+additional
+\emph default
+ term that blows up as an exponential multiplied by 
+\emph on
+t
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Those of you who have taken 18.03 are probably familiar with these terms
+ multiplied by 
+\begin_inset Formula $t$
+\end_inset
+
+ in the case of a repeated root.
+ In 18.03, it is presented simply as a guess for the solution that turns
+ out to work, but here we see that it is part of a more general pattern
+ of Jordan vectors for defective matrices.
+\end_layout
+
+\begin_layout Section
+The Jordan form
+\end_layout
+
+\begin_layout Standard
+For a diagonalizable matrix 
+\begin_inset Formula $A$
+\end_inset
+
+, we made a matrix 
+\begin_inset Formula $S$
+\end_inset
+
+ out of the eigenvectors, and saw that multiplying by 
+\begin_inset Formula $A$
+\end_inset
+
+ was equivalent to multiplying by 
+\begin_inset Formula $S\Lambda S^{-1}$
+\end_inset
+
+ where 
+\begin_inset Formula $\Lambda=S^{-1}AS$
+\end_inset
+
+ is the diagonal matrix of eigenvalues, the 
+\emph on
+diagonalization
+\emph default
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Equivalently, 
+\begin_inset Formula $AS=\Lambda S$
+\end_inset
+
+: 
+\begin_inset Formula $A$
+\end_inset
+
+ multiplies each column of 
+\begin_inset Formula $S$
+\end_inset
+
+ by the corresponding eigenvalue.
+ Now, we will do exactly the same steps for a defective matrix 
+\begin_inset Formula $A$
+\end_inset
+
+, using the basis of eigenvectors and Jordan vectors, and obtain the 
+\series bold
+Jordan form
+\series default
+ 
+\begin_inset Formula $J$
+\end_inset
+
+ instead of 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Let's consider a simple case of a 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ first, in which there is only 
+\emph on
+one
+\emph default
+ repeated root 
+\begin_inset Formula $\lambda_{2}$
+\end_inset
+
+ with an eigenvector 
+\begin_inset Formula $\vec{x}_{2}$
+\end_inset
+
+ and a Jordan vector 
+\begin_inset Formula $\vec{j}_{2}$
+\end_inset
+
+, and the other two eigenvalues 
+\begin_inset Formula $\lambda_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{3}$
+\end_inset
+
+ are distinct with independent eigenvectors 
+\begin_inset Formula $\vec{x}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{x}_{3}$
+\end_inset
+
+.
+ Form a matrix 
+\begin_inset Formula $M=(\vec{x}_{1},\vec{x}_{2},\vec{j}_{2},\vec{x}_{3})$
+\end_inset
+
+ from this basis of four vectors (3 eigenvectors and 1 Jordan vector).
+ Now, consider what happends when we multiply 
+\begin_inset Formula $A$
+\end_inset
+
+ by 
+\begin_inset Formula $M$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{eqnarray*}
+AM & = & (\lambda_{1}\vec{x}_{1},\lambda_{2}\vec{x}_{2},\lambda_{2}\vec{j}_{2}+\vec{x}_{2},\lambda_{3}\vec{x}_{3}).\\
+ & = & M\left(\begin{array}{cccc}
+\lambda_{1}\\
+ & \lambda_{2} & 1\\
+ &  & \lambda_{2}\\
+ &  &  & \lambda_{3}
+\end{array}\right)=MJ.
+\end{eqnarray*}
+
+\end_inset
+
+That is, 
+\begin_inset Formula $A=MJM^{-1}$
+\end_inset
+
+ where 
+\begin_inset Formula $J$
+\end_inset
+
+ is 
+\emph on
+almost
+\emph default
+ diagonal: it has 
+\begin_inset Formula $\lambda's$
+\end_inset
+
+ along the diagonal, but it 
+\emph on
+also has 1's above the diagonal for the columns corresponding to generalized
+ eigenvectors
+\emph default
+.
+ This is exactly the Jordan form of the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\begin_inset Formula $J$
+\end_inset
+
+, of course, has the same eigenvalues as 
+\begin_inset Formula $A$
+\end_inset
+
+ since 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $J$
+\end_inset
+
+ are similar, but 
+\begin_inset Formula $J$
+\end_inset
+
+ is much simpler than 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ block 
+\begin_inset Formula $\left(\begin{array}{cc}
+\lambda_{2} & 1\\
+ & \lambda_{2}
+\end{array}\right)$
+\end_inset
+
+ is a called a 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ 
+\series bold
+Jordan block
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+The generalization of this, when you perhaps have more than one repeated
+ root, and perhaps the multiplicity of the root is greater than 2, is fairly
+ obvious, and leads immediately to the formula given without proof in section
+ 6.6 of the textbook.
+ What I want to emphasize here, however, is not so much the formal theorem
+ that a Jordan form exists, but how to 
+\emph on
+use
+\emph default
+ it via the Jordan vectors: in particular, that generalized eigenvectors
+ give us 
+\emph on
+linearly growing
+\emph default
+ terms 
+\begin_inset Formula $k\lambda^{k-1}$
+\end_inset
+
+ and 
+\begin_inset Formula $te^{\lambda t}$
+\end_inset
+
+ when we multiply by 
+\begin_inset Formula $A^{k}$
+\end_inset
+
+ and 
+\begin_inset Formula $e^{At}$
+\end_inset
+
+, respectively.
+\end_layout
+
+\begin_layout Standard
+Computationally, the Jordan form is famously problematic, because with any
+ slight random perturbation to 
+\begin_inset Formula $A$
+\end_inset
+
+ (e.g.
+ roundoff errors) the matrix typically becomes diagonalizable, and the 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ Jordan block for 
+\begin_inset Formula $\lambda_{2}$
+\end_inset
+
+ disappears.
+ One then has a basis 
+\begin_inset Formula $X$
+\end_inset
+
+ of eigenvectors, but it is 
+\emph on
+nearly singular
+\emph default
+ (
+\begin_inset Quotes eld
+\end_inset
+
+ill conditioned
+\begin_inset Quotes erd
+\end_inset
+
+): for a 
+\series bold
+nearly defective matrix, the eigenvectors are 
+\emph on
+almost
+\emph default
+ linearly dependent
+\series default
+.
+ This makes eigenvectors a problematic way of looking at nearly defective
+ matrices as well, because they are so sensitive to errors.
+ Finding an 
+\emph on
+approximate
+\emph default
+ Jordan form of a 
+\emph on
+nearly
+\emph default
+ defective matrix is the famous 
+\series bold
+Wilkinson problem
+\series default
+ in numerical linear algebra, and has a number of tricky solutions.
+ Alternatively, there are approaches like 
+\begin_inset Quotes eld
+\end_inset
+
+Schur factorization
+\begin_inset Quotes erd
+\end_inset
+
+ or the SVD that lead to nice orthonormal bases for any matrix, but aren't
+ nearly as simple to use as eigenvectors.
+\end_layout
+
+\end_body
+\end_document

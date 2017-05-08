@@ -675,3 +675,13 @@ The primary focus of exam 3 will be eigenvectors and eigenvalues and related iss
 Of course, 18.06 is cumulative, so it is still fair to ask questions on material from earlier in the course.  For example, Hermitian matrices lead to orthonormal eigenvectors, which relates to earlier material on orthogonal/unitary matrices and projections.  Or I could ask about eigenvalues of triangular, orthogonal, or projection matrices, for example.
 
 *Not* on the exam: SVDs, non-diagonalizable (defective) matrices.
+
+# Lecture 30 (May 8)
+
+* [Notes on Jordan vectors](lectures/jordan-vectors.pdf)
+
+Most matrices are diagonalizable.  (*Any* n×n matrix with n distinct eigenvalues is diagonalizable, as is *any* Hermitian A=Aᴴ, unitary A⁻¹=Aᴴ, or anti-Hermitian A=-Aᴴ matrix.)  Non-diagonalizable matrices in practical situations typically arise only by design: you start with a "non-normal" matrix and play with the entries until you *force* two eigenvalues and eigenvectors to coincide.  This does not mean that such "exceptional" or "defective" cases are not interesting, however!   Even more commonly, on encounters a matrix that is *nearly* defective (i.e. the matrix X of eigenvectors is *nearly singular*).
+
+To understand what happens with defective matrices, I introduce Jordan vectors (also called [generalized eigenvectors](https://en.wikipedia.org/wiki/Generalized_eigenvector) and Jordan chains.  I don't focus on formal proofs of the *existence* of these chains and the theoretical construct of the "Jordan form" of a matrix.  Instead, I want to explore their *consequences* for the Aⁿx and dx/dt=Ax types of problems that we have spent a lot of time on.  We show that, for a defective A, Aⁿx gives an extra term that grows as n×λⁿ, not just λⁿ!  And dx/dt=Ax gives an extra term that grows as t×exp(λt), not just exp(λt).
+
+**Further reading**: Strang book, section 8.3.  Going far beyond 18.06, there is a wonderful book, *Spectra and Pseudospectra* by Trefethen and Embree, entirely devoted to cases where diagonalization fails (or nearly fails). One of my former UROP students, Felipe Hernández, just posted a [paper on computational algorithms](https://arxiv.org/abs/1704.05837) for Jordan vectors of large-scale (10000×10000 or bigger) defective matrices arising in physics, which grew out of his final project in 18.335.
