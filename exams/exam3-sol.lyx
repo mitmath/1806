@@ -1,0 +1,1261 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{(\roman{enumii})}
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MIT 18.06 Exam 3 Solutions, Spring 2017
+\end_layout
+
+\begin_layout Subsection*
+Problem 1:
+\end_layout
+
+\begin_layout Standard
+The following matrix 
+\begin_inset Formula $M$
+\end_inset
+
+ is a Markov matrix (its columns sum to 1):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+M=\left(\begin{array}{ccc}
+0.3 & 0.4 & 0.5\\
+0.3 & 0.4 & 0.3\\
+0.4 & 0.2 & 0.2
+\end{array}\right)
+\]
+
+\end_inset
+
+and its steady-state eigenvector (
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+) is 
+\begin_inset Formula 
+\[
+s=\left(\begin{array}{c}
+7/18\\
+1/3\\
+5/18
+\end{array}\right).
+\]
+
+\end_inset
+
+Recall from class that multiplying a vector 
+\begin_inset Formula $x$
+\end_inset
+
+ by 
+\begin_inset Formula $M$
+\end_inset
+
+ does not change the sum of the components.
+ That is, the sum 
+\begin_inset Formula $=o^{T}x$
+\end_inset
+
+ , where 
+\begin_inset Formula $o=\left(\begin{array}{c}
+1\\
+1\\
+1
+\end{array}\right)$
+\end_inset
+
+, is conserved:
+\begin_inset Formula 
+\[
+o^{T}Mx=o^{T}x=x_{1}+x_{2}+x_{3}
+\]
+
+\end_inset
+
+for any 
+\begin_inset Formula $x=\left(\begin{array}{c}
+x_{1}\\
+x_{2}\\
+x_{3}
+\end{array}\right)$
+\end_inset
+
+.
+ (The steady-state vector 
+\begin_inset Formula $s$
+\end_inset
+
+ above was normalized so that 
+\begin_inset Formula $o^{T}s=1$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Enumerate
+If we let 
+\begin_inset Formula $x=\left(\begin{array}{c}
+2\\
+0\\
+0
+\end{array}\right)$
+\end_inset
+
+, what vector does 
+\begin_inset Formula $M^{n}x$
+\end_inset
+
+ approach as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+? 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: Since this is a positive Markov matrix, all other eigenvalues have magnitude
+ 
+\begin_inset Formula $<1$
+\end_inset
+
+, and the solution must approach a multiple of 
+\begin_inset Formula $s$
+\end_inset
+
+.
+ Which multiple? Well, the sum of the entries is conserved, so the sum must
+ equal 
+\begin_inset Formula $o^{T}x=2$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $\boxed{M^{n}x\to2s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+For the same 
+\begin_inset Formula $x$
+\end_inset
+
+, in what direction does 
+\begin_inset Formula $(M^{T})^{n}x$
+\end_inset
+
+ point as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+.
+ (You don't have to give the correct 
+\emph on
+magnitude
+\emph default
+, just give a vector in the correct 
+\emph on
+direction
+\emph default
+.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: Similar to the previous part, except that the steady state eigenvector
+ is 
+\begin_inset Formula $o$
+\end_inset
+
+, since 
+\begin_inset Formula $M^{T}o=o$
+\end_inset
+
+ (this is just the statement that the columns of 
+\begin_inset Formula $M$
+\end_inset
+
+ sum to 1, written in matrix form).
+ Hence 
+\begin_inset Formula $\boxed{(M^{T})^{n}x\to\alpha o}$
+\end_inset
+
+ for some scalar coefficient 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ (From the solution of the next part, we must have 
+\begin_inset Formula $s^{T}(\alpha o)=s^{T}x$
+\end_inset
+
+, and we can compute 
+\begin_inset Formula $\boxed{\alpha=\frac{s^{T}x}{s^{T}o}=7/9}$
+\end_inset
+
+.
+ You 
+\emph on
+weren't required
+\emph default
+ to do this, however.) 
+\end_layout
+
+\begin_layout Enumerate
+Multiplying 
+\begin_inset Formula $M^{T}x$
+\end_inset
+
+ does 
+\emph on
+not
+\emph default
+ conserve the 
+\emph on
+sum
+\emph default
+ of the components of 
+\begin_inset Formula $x$
+\end_inset
+
+, unlike 
+\begin_inset Formula $Mx$
+\end_inset
+
+.
+ However, it does conserve 
+\emph on
+some
+\emph default
+ linear combination of the components: there is some vector 
+\begin_inset Formula $v\ne0$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+v^{T}M^{T}x=v^{T}x
+\]
+
+\end_inset
+
+for all 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ What is 
+\begin_inset Formula $v$
+\end_inset
+
+? (Hint: this is easy if you understand 
+\emph on
+why
+\emph default
+ 
+\begin_inset Formula $o^{T}Mx=o^{T}x$
+\end_inset
+
+ as stated above.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution:
+\series default
+ The reason why 
+\begin_inset Formula $o^{T}Mx=o^{T}x$
+\end_inset
+
+ was simply that 
+\begin_inset Formula $o$
+\end_inset
+
+ is an eigenvector of 
+\begin_inset Formula $M^{T}$
+\end_inset
+
+ with eigenvalue 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+ (a 
+\begin_inset Quotes eld
+\end_inset
+
+left eigenvector
+\begin_inset Quotes erd
+\end_inset
+
+ of 
+\begin_inset Formula $M$
+\end_inset
+
+).
+ Here, we need a similar eigenvector of 
+\begin_inset Formula $M$
+\end_inset
+
+, and we have one: 
+\begin_inset Formula $\boxed{v=s}$
+\end_inset
+
+ (or any multiple of 
+\begin_inset Formula $s$
+\end_inset
+
+), since 
+\begin_inset Formula $s^{T}M^{T}x=(Ms)^{T}x=s^{T}x$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(Erratum: the problem originally failed to specify 
+\begin_inset Formula $v\ne0$
+\end_inset
+
+, in which case 
+\begin_inset Formula $v=0$
+\end_inset
+
+ is a valid, if trivial, solution.)
+\end_layout
+
+\begin_layout Subsection*
+Problem 2:
+\end_layout
+
+\begin_layout Standard
+Suppose that 
+\begin_inset Formula $A$
+\end_inset
+
+ is a 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ real-symmetric matrix with eigenvalues 
+\begin_inset Formula $\lambda_{1}=1$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{2}=-1$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{3}=-2$
+\end_inset
+
+, and corresponding eigenvectors 
+\begin_inset Formula $x_{1},x_{2},x_{3}$
+\end_inset
+
+.
+ You are given that 
+\begin_inset Formula $x_{1}=\left(\begin{array}{c}
+1\\
+0\\
+1
+\end{array}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Give an approximate solution at 
+\begin_inset Formula $t=100$
+\end_inset
+
+ to 
+\begin_inset Formula $\frac{dx}{dt}=Ax$
+\end_inset
+
+ for 
+\begin_inset Formula $x(0)=(1,1,0)$
+\end_inset
+
+.
+ (You should give a specific vector, even if the vector is very big or very
+ small — an answer of 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\approx0$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\approx\infty$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ is not acceptable.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution:
+\series default
+ If we write 
+\begin_inset Formula $x(t)=c_{1}x_{1}e^{t}+c_{2}x_{2}e^{-t}+c_{3}x_{3}e^{-2t}$
+\end_inset
+
+, then for 
+\begin_inset Formula $t=100$
+\end_inset
+
+ it is clear that the 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ term dominates.
+ Furthermore, since 
+\begin_inset Formula $A$
+\end_inset
+
+ is real-symmetric, the eigenvectors must be orthogonal, and hence 
+\begin_inset Formula $1=x_{1}^{T}x(0)=c_{1}x_{1}^{T}x_{1}=2c_{1}$
+\end_inset
+
+, or 
+\begin_inset Formula $c_{1}=0.5$
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $\boxed{x(100)\approx0.5e^{100}x_{1}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $x_{2}=\left(\begin{array}{c}
+0\\
+1\\
+0
+\end{array}\right)$
+\end_inset
+
+, what is 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+? (You should 
+\emph on
+not
+\emph default
+ need your answer here to solve the previous part!)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution:
+\series default
+ Since 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+ must be orthogonal to 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ (
+\begin_inset Formula $A$
+\end_inset
+
+ is real-symmetric with distinct 
+\begin_inset Formula $\lambda$
+\end_inset
+
+'s), the only possibility is 
+\begin_inset Formula $\boxed{x_{3}=\left(\begin{array}{c}
+1\\
+0\\
+-1
+\end{array}\right)}$
+\end_inset
+
+ or some nonzero multiple thereof.
+\end_layout
+
+\begin_layout Enumerate
+If instead we solve 
+\begin_inset Formula $\frac{dx}{dt}=(\alpha I-A^{3})x$
+\end_inset
+
+ for some 
+\emph on
+complex
+\emph default
+ number 
+\begin_inset Formula $\alpha$
+\end_inset
+
+and the same 
+\begin_inset Formula $x(0)$
+\end_inset
+
+, give a possible value of α for which the solutions 
+\begin_inset Formula $x(t)$
+\end_inset
+
+ approach 
+\emph on
+oscillating
+\emph default
+ solutions (but not decaying or growing!) for large 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution:
+\series default
+ The eigenvalues of 
+\begin_inset Formula $\alpha I-A^{3}$
+\end_inset
+
+ are 
+\begin_inset Formula $\alpha-\lambda_{k}^{3}$
+\end_inset
+
+, or 
+\begin_inset Formula $\alpha-1$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha+1$
+\end_inset
+
+, and 
+\begin_inset Formula $\alpha+8$
+\end_inset
+
+ (with the same eigenvectors).
+ To have oscillating solutions at a large 
+\begin_inset Formula $t$
+\end_inset
+
+, one of these eigenvalues must be purely imaginary, and the other eigenvalues
+ must have negative real parts.
+ So, we must have 
+\begin_inset Formula $\operatorname{Re}(\alpha)=-8$
+\end_inset
+
+ (to cancel the real part of the largest term), and some imaginary part
+ (any imaginary part we want).
+ Hence, the allowed solutions are 
+\begin_inset Formula $\boxed{\alpha=-8+i\omega}$
+\end_inset
+
+ for any real 
+\begin_inset Formula $\omega\ne0$
+\end_inset
+
+ (e.g.
+ 
+\begin_inset Formula $\omega=1$
+\end_inset
+
+ is fine).
+\end_layout
+
+\begin_layout Subsection*
+Problem 3:
+\end_layout
+
+\begin_layout Standard
+The real 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ is positive-definite, and the real 
+\begin_inset Formula $3\times4$
+\end_inset
+
+ matrix 
+\begin_inset Formula $B$
+\end_inset
+
+ is rank 3: 
+\begin_inset Formula 
+\[
+B=\left(\begin{array}{cccc}
+1 & 1 & 0 & 2\\
+2 & -1 & 1 & 2\\
+1 & 0 & 0 & 1
+\end{array}\right).
+\]
+
+\end_inset
+
+ The nullspace 
+\begin_inset Formula $N(B)$
+\end_inset
+
+ is spanned by the vector 
+\begin_inset Formula $x_{0}=\left(\begin{array}{c}
+1\\
+1\\
+1\\
+-1
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+How many zero, positive, and negative eigenvalues does 
+\begin_inset Formula $B^{T}AB$
+\end_inset
+
+ have? (Hint: what happens if you plug an eigenvector into 
+\begin_inset Formula $x^{T}(B^{T}AB)x$
+\end_inset
+
+?)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution:
+\series default
+ If 
+\begin_inset Formula $B^{T}ABx=\lambda x$
+\end_inset
+
+ , then 
+\begin_inset Formula $x^{T}B^{T}ABx=\lambda x^{T}x=y^{T}Ay$
+\end_inset
+
+ where 
+\begin_inset Formula $y=Bx$
+\end_inset
+
+ .
+ 
+\begin_inset Formula $x^{T}x>0$
+\end_inset
+
+, and because 
+\begin_inset Formula $A$
+\end_inset
+
+ is positive-definite we know that 
+\begin_inset Formula $y^{T}Ay\ge0$
+\end_inset
+
+, so it immediately follows that 
+\begin_inset Formula $\lambda\ge0$
+\end_inset
+
+.
+ Furthermore, 
+\begin_inset Formula $y^{T}Ay=0$
+\end_inset
+
+ only if 
+\begin_inset Formula $y=0$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $x\in N(B)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $N(B)$
+\end_inset
+
+ is one-dimensional, this means that there is only
+\series bold
+ one zero eigenvalue
+\series default
+ (with eigenvector 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+) and the 
+\series bold
+remaining three eigenvalues are positive
+\series default
+.
+ (There are four eigenvalues because 
+\begin_inset Formula $B^{T}AB$
+\end_inset
+
+ is a 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ matrix.
+ Of course, it is possible that some of the positive three eigenvalues are
+ repeated, e.g.
+ if 
+\begin_inset Formula $A=I$
+\end_inset
+
+ .) 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+In fact, 
+\begin_inset Formula $B^{T}AB$
+\end_inset
+
+ is positive semidefinite for any real 
+\begin_inset Formula $B$
+\end_inset
+
+ and any positive-definite 
+\begin_inset Formula $A$
+\end_inset
+
+, and nullspace is the same as 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+For which sign (
+\begin_inset Formula $+$
+\end_inset
+
+ or 
+\begin_inset Formula $-$
+\end_inset
+
+) does 
+\begin_inset Formula $\frac{dx}{dt}=\pm B^{T}ABx$
+\end_inset
+
+ have solutions that approach a constant steady state for any initial condition
+ 
+\begin_inset Formula $x(0)$
+\end_inset
+
+?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution:
+\series default
+ 
+\begin_inset Formula $-$
+\end_inset
+
+.
+ This way, the positive eigenvalues from above give decaying solutions,
+ and the zero eigenvalue gives a steady state.
+\end_layout
+
+\begin_layout Enumerate
+For the sign you chose in the previous part, what is 
+\begin_inset Formula $x(\infty)$
+\end_inset
+
+ for 
+\begin_inset Formula $x(0)=\left(\begin{array}{c}
+1\\
+0\\
+0\\
+0
+\end{array}\right)$
+\end_inset
+
+?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution:
+\series default
+ Since 
+\begin_inset Formula $B^{T}AB$
+\end_inset
+
+ is real-symmetric, the eigenvalues are orthogonal, and we can get the steady-st
+ate (
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+) component (given by the null-space vector 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ given above) just by a dot product (the projection of 
+\begin_inset Formula $x(0)$
+\end_inset
+
+ onto 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+):
+\begin_inset Formula 
+\[
+\boxed{x(\infty)=\frac{x_{0}x_{0}^{T}x(0)}{x_{0}^{T}x_{0}}=x_{0}\frac{1}{4}=\frac{1}{4}\left(\begin{array}{c}
+1\\
+1\\
+1\\
+-1
+\end{array}\right).}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Problem 4:
+\end_layout
+
+\begin_layout Standard
+True or false.
+ Give a reason if true (one sentence and/or one equation should suffice),
+ or a counterexample if false.
+\end_layout
+
+\begin_layout Enumerate
+A singular matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ cannot be similar to a non-singular matrix 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+True
+\series default
+.
+ Similar matrices have the same eigenvalues, but 
+\begin_inset Formula $B$
+\end_inset
+
+ must have a zero eigenvalue and 
+\begin_inset Formula $A$
+\end_inset
+
+ must have nonzero eigenvalues.
+\end_layout
+
+\begin_layout Enumerate
+Any positive markov matrix 
+\begin_inset Formula $M$
+\end_inset
+
+ (that is, positive entries) must also be positive definite.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+False.
+ 
+\series default
+There are many ways to construct a counterexample without doing a lot of
+ calculations.
+ Every positive-definite matrix by definition must be Hermitian, so it is
+ sufficient to give a non-symmetric Markov matrix, e.g.
+ the one from problem 1.
+ Even if the Markov matrix is real-symmetric, it can still have negative
+ eigenvalues with magnitude 
+\begin_inset Formula $<1$
+\end_inset
+
+.
+ For example, start with the Markov matrix 
+\begin_inset Formula $\left(\begin{array}{cc}
+0 & 1\\
+1 & 0
+\end{array}\right)$
+\end_inset
+
+, which has eigenvalues 
+\begin_inset Formula $\pm1$
+\end_inset
+
+, then add 
+\begin_inset Formula $0.5I$
+\end_inset
+
+ to it to make a positive matrix 
+\begin_inset Formula $\left(\begin{array}{cc}
+0.5 & 1\\
+1 & 0.5
+\end{array}\right)$
+\end_inset
+
+ with eigenvalues 
+\begin_inset Formula $-0.5$
+\end_inset
+
+ and 
+\begin_inset Formula $1.5$
+\end_inset
+
+, then divide by 
+\begin_inset Formula $1.5$
+\end_inset
+
+ (the sum of the columns) to make it a positive Markov matrix 
+\begin_inset Formula $\left(\begin{array}{cc}
+\frac{1}{3} & \frac{2}{3}\\
+\frac{2}{3} & \frac{1}{3}
+\end{array}\right)$
+\end_inset
+
+ with eigenvalues 
+\begin_inset Formula $-\frac{1}{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A=QR$
+\end_inset
+
+ is the QR factorization of a real (square) matrix 
+\begin_inset Formula $A$
+\end_inset
+
+, then the matrix 
+\begin_inset Formula $RQ$
+\end_inset
+
+ has the same eigenvalues as 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+True.
+
+\series default
+ 
+\begin_inset Formula $A=QR\implies R=Q^{-1}A=Q^{T}A\implies RQ=Q^{-1}AQ$
+\end_inset
+
+, which is similar to 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(Clarification: The problem did not originally specify that 
+\begin_inset Formula $A$
+\end_inset
+
+ was square, but this is automatically implied by the statement that 
+\begin_inset Formula $A$
+\end_inset
+
+ has eigenvalues, which are only defined for square matrices.)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $e^{A^{3}}$
+\end_inset
+
+ have the same eigenvalues.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+False.
+ 
+\series default
+If 
+\begin_inset Formula $Ax=\lambda x$
+\end_inset
+
+, then 
+\begin_inset Formula $e^{A^{3}}x=e^{\lambda^{3}}x$
+\end_inset
+
+, and 
+\begin_inset Formula $e^{\lambda^{3}}\ne\lambda$
+\end_inset
+
+ in general.
+ For example, consider the 
+\begin_inset Formula $1\times1$
+\end_inset
+
+ matrix 
+\begin_inset Formula $A=0$
+\end_inset
+
+ with a single eigenvalue 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+ , then 
+\begin_inset Formula $e^{A^{3}}=e^{0}=1$
+\end_inset
+
+ has only the eigenvalue 
+\begin_inset Formula $1\ne0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $e^{A^{3}}$
+\end_inset
+
+ have the same eigenvectors.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+True
+\series default
+.
+ 
+\begin_inset Formula $Ax=\lambda x$
+\end_inset
+
+, then 
+\begin_inset Formula $e^{A^{3}}x=e^{\lambda^{3}}x$
+\end_inset
+
+, so 
+\begin_inset Formula $x$
+\end_inset
+
+ is also an eigenvector of 
+\begin_inset Formula $e^{A^{3}}$
+\end_inset
+
+.
+ (The converse also works.)
+\end_layout
+
+\end_body
+\end_document
