@@ -687,3 +687,9 @@ Most matrices are diagonalizable.  (*Any* n×n matrix with n distinct eigenvalue
 To understand what happens with defective matrices, I introduce Jordan vectors (also called [generalized eigenvectors](https://en.wikipedia.org/wiki/Generalized_eigenvector) and Jordan chains.  I don't focus on formal proofs of the *existence* of these chains and the theoretical construct of the "Jordan form" of a matrix.  Instead, I want to explore their *consequences* for the Aⁿx and dx/dt=Ax types of problems that we have spent a lot of time on.  We show that, for a defective A, Aⁿx gives an extra term that grows as n×λⁿ, not just λⁿ!  And dx/dt=Ax gives an extra term that grows as t×exp(λt), not just exp(λt).
 
 **Further reading**: Strang book, section 8.3.  Going far beyond 18.06, there is a wonderful book, *Spectra and Pseudospectra* by Trefethen and Embree, entirely devoted to cases where diagonalization fails (or nearly fails). One of my former UROP students, Felipe Hernández, just posted a [paper on computational algorithms](https://arxiv.org/abs/1704.05837) for Jordan vectors of large-scale (10000×10000 or bigger) defective matrices arising in physics, which grew out of his final project in 18.335.
+
+# Lecture 31 (May 10)
+
+* [Dense and sparse linear algebra](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Dense-and-Sparse.ipynb)
+
+Large-scale linear algebra: the computational techniques (but not the *conceptual approaches*) of linear algebra completely change when one looks at large-scale matrix problems (100000×100000 or more).  There, the focus turns to exploiting matrix **sparsity** (matrices that are mostly zero) and other structures that let you multiply matrices by vectors quickly (and let you avoid storing the whole matrix).
