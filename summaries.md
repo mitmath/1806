@@ -705,3 +705,7 @@ This material will not be on the final exam, but is still very useful for practi
 In this lecture, I want to introduce you to a new type of matrix: circulant matrices. Like Hermitian matrices, they have orthonormal eigenvectors, but unlike Hermitian matrices we know exactly what their eigenvectors are! Moreover, their eigenvectors are closely related to the famous Fourier transform and Fourier series. Even more importantly, it turns out that circulant matrices and the eigenvectors lend themselves to incredibly efficient algorithms called FFTs, that play a central role in much of computational science and engineering.
 
 **Further reading**: The textbook, sections 8.3 and 9.3, has some basic information on these topics.  The Wikipedia articles on [Circulant matrix](https://en.wikipedia.org/wiki/Circulant_matrix), [discrete Fourier transform](https://en.wikipedia.org/wiki/Discrete_Fourier_transform), and [fast Fourier transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform) aren't too bad.  Some [elementary lecture notes on FFTs](https://math.mit.edu/~stevenj/18.335/fft-iap3.pdf) from 18.095 talk more about the algorithms.
+
+# Lecture 33 (May 15)
+
+Guest lecture, Gil Strang.
