@@ -664,7 +664,7 @@ Gave some examples (see notebook), and closed with the [eigen-walker data](http:
 
 # Lecture 29 (May 3): Exam 3 Review
 
-* [pset 10 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset10/pset10-sol.ipynb), [pset 11](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset11/pset11.ipynb) to be posted soon.
+* [pset 10 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset10/pset10-sol.ipynb), [pset 11](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset11/pset11.ipynb).
 
 # Exam 3 (Friday, May 5 in 50-340)
 
@@ -699,6 +699,8 @@ This material will not be on the final exam, but is still very useful for practi
 **Further reading**: Textbook, section 11.3 has some discussion of iterative methods.  More advanced treatments include the book *Numerical Linear Algebra* by Trefethen and Bao, and surveys of algorithms can be found in the *Templates* books for [Ax=b](http://www.netlib.org/linalg/html_templates/Templates.html) and [Ax=λx](http://web.cs.ucdavis.edu/~bai/ET/contents.html).  Sparse-direct solvers are described in detail by the book *Direct Methods for Sparse Linear Systems* by Davis.
 
 # Lecture 32 (May 12)
+
+* [pset 11 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset11/pset11-sol.ipynb).  (This was the last pset.)
 
 * [Circulant matrices](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Circulant-Matrices.ipynb)
 
