@@ -710,7 +710,7 @@ In this lecture, I want to introduce you to a new type of matrix: circulant matr
 
 # Lecture 33 (May 15)
 
-Guest lecture, Gil Strang.
+Guest lecture, Gil Strang: why columns-times-rows is a good way to look at matrix multiplication AB, and how it relates to the factorizations from 18.06.  See Prof. Strang's notes: [Multiplying and factoring matrices](http://mth1007.mathappl.polymtl.ca/MultFactMatrStrang.pdf).
 
 
 # Final Exam (May 23, Johnson Ice Rink, 9am–noon)
