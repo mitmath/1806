@@ -711,3 +711,14 @@ In this lecture, I want to introduce you to a new type of matrix: circulant matr
 # Lecture 33 (May 15)
 
 Guest lecture, Gil Strang.
+
+
+# Final Exam (May 23, Johnson Ice Rink, 9am–noon)
+
+The final exam will cover all of the topics of exams 1–3, plus SVDs and defective matrices (Jordan vectors etc.).
+
+* **Potential topics:** elimination, LU, scaling/complexity (n³ etc), inverses, singular matrices, permutations, transposes & dot products, vector spaces/subspaces, 4 fundamental subspaces, rank, basis/independence/dimension, rref form, orthogonality/complements/orthonormal, Gram–Schmidt & QR, projections, orthogonal functions, least-square fitting and minimizing ‖Ax-b‖, the normal equations and QR, graphs/networks, determinants, eigenvectors and eigenvalues and related issues (relationship to polynomial roots, similar matrices, diagonalization, markov matrices, matrix powers and the power method, ODEs and matrix exponentials, Hermitian/real-symmetric matrices, positive-definite matrices), complex matrices (H vs T), SVDs and PCA, defective matrices and Jordan vectors (mainly: what does a defective matrix do in Aⁿ, eᴬ, etc., relationship to repeated roots, types of matrices that cannot be defective).
+
+Obviously, a single exam won't be able to cover everything, but any of these topics *might* be on the final.  Some useful practice problems from previous exams are:
+
+* [2016 ASE](exams/2016-ase.pdf) and [solutions](exams/2016-ase-sol.pdf); [spring 2009 final](http://web.mit.edu/18.06/www/Spring09/final-s09.pdf) and [solutions](http://web.mit.edu/18.06/www/Spring09/final-s09-soln.pdf); [fall 2007 practice final](http://web.mit.edu/18.06/www/Fall07/practicefinal-sol.pdf); [fall 2015 final](http://web.mit.edu/18.06/www/Fall15/FinalSols.pdf), problems 1,4,5,7; [spring 2013 final](http://web.mit.edu/18.06/www/Spring13/Examfblank.pdf) and [solutions](http://web.mit.edu/18.06/www/Spring13/final_s13_sol.pdf), problems 3,4,5,7; [spring 2007](http://web.mit.edu/18.06/www/Spring07/final.pdf) problems 1–5.
