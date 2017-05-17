@@ -712,6 +712,17 @@ In this lecture, I want to introduce you to a new type of matrix: circulant matr
 
 Guest lecture, Gil Strang: why columns-times-rows is a good way to look at matrix multiplication AB, and how it relates to the factorizations from 18.06.  See Prof. Strang's notes: [Multiplying and factoring matrices](http://mth1007.mathappl.polymtl.ca/MultFactMatrStrang.pdf).
 
+# Lecture 34 (May 17)
+
+Everything in 18.06 has been about "1d" column vectors and "2d" matrices.  But what about "3d" matrices, and more?  This leads into the subject of [multilinear algebra](https://en.wikipedia.org/wiki/Multilinear_algebra), but it can also sometimes be related to "ordinary" linear algebra with the help of a new operation on matrices: the [Kronecker product](https://en.wikipedia.org/wiki/Kronecker_product).
+
+The Kronecker product of matrices can be thought of as making a "higher dimensional" matrix if we reshape our matrices into column vectors (an operation sometimes called [vectorization = vec A](https://en.wikipedia.org/wiki/Vectorization_(mathematics))).
+
+Gave an example of how this works for a two-dimensional grid of springs and masses: we can make the matrix describing the whole 2d problem from a Kronecker product of the matrices for the 1d array of springs and masses (from lecture 23).  And the eigenvalues/eigenvectors for the 2d problem (the vibrating modes) can be formed from the "1d" eigenvectors/eigenvalues.  (This is the discrete/matrix analogue of a [separable PDE](https://en.wikipedia.org/wiki/Separable_partial_differential_equation).)
+
+This is just one of a multitude of examples showing that the reach of linear algebra extends far beyond the simple 3×3 matrix problems you see in high school or 18.02.  Many of you will find yourself using linear algebra in unexpected and complex ways in your future careers, whether it be for engineering/science, data mining/statistics, finance, or pure mathematics.
+
+**Further reading**: The 2009 talk [The Kronecker Product: A Product of the Times](https://www.cs.cornell.edu/cv/ResearchPDF/KPHist.pdf) by Charles Van Loan is a nice overview of the history and applications of this product, together with an [article](http://www.sciencedirect.com/science/article/pii/S0377042700003939) by the same author.   In 18.303, we cover how Kronecker products can be used to construct matrices for problems defined or approximated on Cartesian grids (see [notes](http://math.mit.edu/~stevenj/18.303/lecture-10.pdf)); several of the examples in lecture 31 were constructed in precisely this way.
 
 # Final Exam (May 23, Johnson Ice Rink, 9am–noon)
 
