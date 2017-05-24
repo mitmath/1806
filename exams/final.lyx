@@ -1,0 +1,1512 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{(\roman{enumii})}
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MIT 18.06 Final Exam, Spring 2017
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Your name: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-6pt"
+width "80col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Recitation: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-6pt"
+width "80col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\size largest
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+problem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+score
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+\emph on
+total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/175
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 1:
+\end_layout
+
+\begin_layout Standard
+For some real matrix 
+\begin_inset Formula $A$
+\end_inset
+
+, the following vectors form a basis for its column space and null space:
+\begin_inset Formula 
+\[
+C(A)=\operatorname{span}\langle\left(\begin{array}{c}
+1\\
+0\\
+1
+\end{array}\right),\left(\begin{array}{c}
+1\\
+1\\
+-1
+\end{array}\right)\rangle,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+N(A)=\operatorname{span}\langle\left(\begin{array}{c}
+1\\
+-1\\
+0\\
+0\\
+0
+\end{array}\right),\left(\begin{array}{c}
+1\\
+1\\
+0\\
+0\\
+1
+\end{array}\right),\left(\begin{array}{c}
+2\\
+1\\
+-1\\
+0\\
+0
+\end{array}\right)\rangle.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+What is the size 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+, what is its rank, and what are the dimensions of 
+\begin_inset Formula $C(A^{T})$
+\end_inset
+
+ and 
+\begin_inset Formula $N(A^{T}$
+\end_inset
+
+)?
+\end_layout
+
+\begin_layout Enumerate
+Give 
+\emph on
+one
+\emph default
+ possible matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ with this 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ and 
+\begin_inset Formula $N(A)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Give a right-hand side 
+\begin_inset Formula $b$
+\end_inset
+
+ for which 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ has a solution, and give 
+\emph on
+all
+\emph default
+ the solutions 
+\begin_inset Formula $x$
+\end_inset
+
+ for your 
+\begin_inset Formula $A$
+\end_inset
+
+ from the previous part.
+ (Hint: you should not have to do Gaussian elimination.)
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $b=\left(\begin{array}{c}
+1\\
+0\\
+0
+\end{array}\right)$
+\end_inset
+
+, the equation 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ as 
+\emph on
+no solutions
+\emph default
+.
+ Instead, give another right-hand side 
+\begin_inset Formula $\hat{b}$
+\end_inset
+
+ for which 
+\begin_inset Formula $A\hat{x}=\hat{b}$
+\end_inset
+
+ is solvable and yields a least-square solution 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ (i.e.
+ 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ minimizes 
+\begin_inset Formula $\Vert Ax-b\Vert$
+\end_inset
+
+).
+ 
+\begin_inset Formula $\hat{b}$
+\end_inset
+
+ must be the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule[-2pt]{5cm}{0.5pt}
+\end_layout
+
+\end_inset
+
+ of 
+\begin_inset Formula $b$
+\end_inset
+
+ onto the subspace 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule[-2pt]{3cm}{0.5pt}
+\end_layout
+
+\end_inset
+
+.
+ (Hint: if you find yourself solving a 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ system of equations, you are missing a way to do it much more easily.
+ The answer should 
+\emph on
+not
+\emph default
+ depend on your choice of 
+\begin_inset Formula $A$
+\end_inset
+
+ matrix in part b.)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 2:
+\end_layout
+
+\begin_layout Standard
+Suppose you have 100 data points 
+\begin_inset Formula $(x_{i},y_{i})$
+\end_inset
+
+ for 
+\begin_inset Formula $i=1,2,\ldots,100$
+\end_inset
+
+, and you want to fit them to a power-law curve 
+\begin_inset Formula $y(x)=ax^{b}$
+\end_inset
+
+ for some 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Equivalently, you want to fit 
+\begin_inset Formula $\log y_{i}$
+\end_inset
+
+ to 
+\begin_inset Formula $\log y=\log(ax^{b})=b\log x+\log a$
+\end_inset
+
+.
+ Describe how to find 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ to 
+\emph on
+minimize the sum of the squares of the errors:
+\emph default
+
+\begin_inset Formula 
+\[
+s(a,b)=\sum_{i=1}^{100}\left(b\log x_{i}+\log a-\log y_{i}\right)^{2}.
+\]
+
+\end_inset
+
+Write down a 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ system of equations for the vector 
+\begin_inset Formula $z=\left(\begin{array}{c}
+b\\
+\log a
+\end{array}\right)$
+\end_inset
+
+; you can leave your equations in the form of a product of matrices/vectors
+ as long as you say what the matrices/vectors are.
+ (Hint: rewrite it as an 18.06-style least-squares problem with matrices/vectors.)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 3:
+\end_layout
+
+\begin_layout Standard
+Suppose that 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ real matrix 
+\begin_inset Formula $A=\left(\begin{array}{cccc}
+a_{1} & a_{2} & a_{3} & a_{4}\end{array}\right)$
+\end_inset
+
+ has four 
+\emph on
+orthogonal 
+\emph default
+but 
+\emph on
+not orthonormal 
+\emph default
+columns 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ with lengths 
+\begin_inset Formula $\Vert a_{1}\Vert=2$
+\end_inset
+
+, 
+\begin_inset Formula $\Vert a_{2}\Vert=1$
+\end_inset
+
+, 
+\begin_inset Formula $\Vert a_{3}\Vert=3$
+\end_inset
+
+, 
+\begin_inset Formula $\Vert a_{4}\Vert=2$
+\end_inset
+
+.
+ (That is, 
+\begin_inset Formula $a_{i}^{T}a_{j}=0$
+\end_inset
+
+ for 
+\begin_inset Formula $i\ne j$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Enumerate
+Write an explicit expression for the solution 
+\begin_inset Formula $x$
+\end_inset
+
+ to 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ in terms of dot products, additions, and multiplications by scalars.
+\end_layout
+
+\begin_layout Enumerate
+Write 
+\begin_inset Formula $A$
+\end_inset
+
+ as a sum of four rank-1 matrices.
+\end_layout
+
+\begin_layout Enumerate
+If we write the matrix 
+\begin_inset Formula $B=A\left(\begin{array}{cccc}
+3\\
+ & 6\\
+ &  & 2\\
+ &  &  & 3
+\end{array}\right),$
+\end_inset
+
+ then what is 
+\begin_inset Formula $B^{T}B$
+\end_inset
+
+? Hence, for any 
+\begin_inset Formula $x\ne0$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{\Vert Bx\Vert}{\Vert x\Vert}=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule[-6pt]{1cm}{0.5pt}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Write the SVD 
+\begin_inset Formula $A=U\Sigma V^{T}$
+\end_inset
+
+: explicitly give the singular values 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ (diagonal of 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+) and the singular vectors (columns of 
+\begin_inset Formula $U,V$
+\end_inset
+
+, possibly in terms of the columns 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+).
+ Hint: what is 
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+, and what are its eigenvectors (this should give you either 
+\begin_inset Formula $U$
+\end_inset
+
+ or 
+\begin_inset Formula $V$
+\end_inset
+
+) and eigenvalues (related somehow to 
+\begin_inset Formula $\sigma$
+\end_inset
+
+)? Recall also from homework that 
+\begin_inset Formula $AV=U\Sigma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Problem 4:
+\end_layout
+
+\begin_layout Standard
+Suppose that 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are two real 
+\begin_inset Formula $m\times m$
+\end_inset
+
+ matrices, and 
+\begin_inset Formula $B$
+\end_inset
+
+ is invertible.
+\end_layout
+
+\begin_layout Enumerate
+Circle which (if any) of the following must be true: 
+\begin_inset Formula $C(A)=C(AB)$
+\end_inset
+
+, 
+\begin_inset Formula $C(A)=C(BA)$
+\end_inset
+
+, 
+\begin_inset Formula $N(A)=N(AB)$
+\end_inset
+
+, 
+\begin_inset Formula $N(A)=N(BA)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Circle which (if any) of the following matrices must be symmetric: 
+\begin_inset Formula $ABBA$
+\end_inset
+
+, 
+\begin_inset Formula $A^{T}BB^{T}A$
+\end_inset
+
+, 
+\begin_inset Formula $A^{T}BAB^{T}$
+\end_inset
+
+, 
+\begin_inset Formula $A^{T}BB^{-1}A$
+\end_inset
+
+, 
+\begin_inset Formula $A^{T}(B^{T})^{-1}B^{-1}A$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $B$
+\end_inset
+
+ is a projection matrix (as well as invertible), then 
+\begin_inset Formula $AB=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule[-4pt]{2cm}{0.5pt}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Do 
+\begin_inset Formula $AB$
+\end_inset
+
+ and 
+\begin_inset Formula $BA$
+\end_inset
+
+ have the same eigenvalues? Give a reason if true, a counter-example if
+ false.
+\end_layout
+
+\begin_layout Enumerate
+Suppose 
+\begin_inset Formula $A$
+\end_inset
+
+ has rank 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Say as many true things as possible about the eigenvalues of 
+\begin_inset Formula $C=A^{T}B^{T}BA$
+\end_inset
+
+ that would 
+\emph on
+not
+\emph default
+ necessarily be true if 
+\begin_inset Formula $C$
+\end_inset
+
+ were just a random 
+\begin_inset Formula $m\times m$
+\end_inset
+
+ matrix.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Problem 5:
+\end_layout
+
+\begin_layout Standard
+You have a matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ with the factorization:
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{ccc}
+1\\
+3 & 2\\
+1 & -1 & 2
+\end{array}\right)\left(\begin{array}{ccc}
+1 & 3 & 1\\
+ & 2 & -1\\
+ &  & 2
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+What is the product of the 3 eigenvalues of 
+\begin_inset Formula $A$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+Solve 
+\begin_inset Formula $Ax=\left(\begin{array}{c}
+2\\
+4\\
+7
+\end{array}\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ (Hint: if you find yourself doing Gaussian elimination, you are missing
+ something.)
+\end_layout
+
+\begin_layout Enumerate
+Gaussian elimination (without row swaps) produces an 
+\begin_inset Formula $A=LU$
+\end_inset
+
+ factorization, but you can tell at a glance that this is 
+\emph on
+not
+\emph default
+ the same as the factorization above, because 
+\begin_inset Formula $L$
+\end_inset
+
+ is always a lower-triangular matrix with 1's on the diagonal.
+ Find the ordinary LU factorization of 
+\begin_inset Formula $A$
+\end_inset
+
+ (the matrices 
+\begin_inset Formula $L$
+\end_inset
+
+ and 
+\begin_inset Formula $U$
+\end_inset
+
+) by multiplying and/or dividing the factors above with some diagonal matrix.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Problem 6:
+\end_layout
+
+\begin_layout Enumerate
+One of of the eigenvalues of 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{ccc}
+3 & 1 & 4\\
+ & 1 & 5\\
+ & 1 & 5
+\end{array}\right).
+\]
+
+\end_inset
+
+is 
+\begin_inset Formula $\lambda=3$
+\end_inset
+
+.
+ Find the other two eigenvalues.
+ (Hint: one eigenvalue should be obvious from inspection of 
+\begin_inset Formula $A$
+\end_inset
+
+, since 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule[-2pt]{3cm}{0.5pt}
+\end_layout
+
+\end_inset
+
+.
+ You shouldn't need to explicitly write down and solve any cubic equation,
+ because once you find two eigenvalues you can get the third from the 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule[-2pt]{3cm}{0.5pt}
+\end_layout
+
+\end_inset
+
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Enumerate
+For a 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ matrix 
+\begin_inset Formula $B$
+\end_inset
+
+, the polynomial 
+\begin_inset Formula $\det(B-\lambda I)$
+\end_inset
+
+ has three roots 
+\begin_inset Formula $\lambda=1,0.4,-0.7$
+\end_inset
+
+.
+ You find that, for some vector 
+\begin_inset Formula $x$
+\end_inset
+
+, the vector 
+\begin_inset Formula $B^{n}x$
+\end_inset
+
+ is getting longer and longer as 
+\begin_inset Formula $n$
+\end_inset
+
+ grows.
+ It must be the case that 
+\begin_inset Formula $B$
+\end_inset
+
+ is a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule[-2pt]{5cm}{0.5pt}
+\end_layout
+
+\end_inset
+
+ matrix.
+ Approximately what is 
+\begin_inset Formula $\Vert B^{2000}x\Vert/\Vert B^{1000}x\Vert?$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+A positive Markov matrix 
+\begin_inset Formula $M$
+\end_inset
+
+ has a steady-state eigenvector 
+\begin_inset Formula $\left(\begin{array}{c}
+1\\
+0\\
+2\\
+3
+\end{array}\right).$
+\end_inset
+
+ What is 
+\begin_inset Formula $M^{n}\left(\begin{array}{c}
+1\\
+0\\
+0\\
+0
+\end{array}\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+For a real matrix 
+\begin_inset Formula $C$
+\end_inset
+
+, and almost any randomly chosen initial 
+\begin_inset Formula $x(0)$
+\end_inset
+
+, the equation 
+\begin_inset Formula $\frac{dx}{dt}=Cx$
+\end_inset
+
+ has solutions that are 
+\emph on
+oscillating and decaying
+\emph default
+ (for large 
+\begin_inset Formula $t$
+\end_inset
+
+) as a function of 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ 
+\series bold
+Circle all of the things 
+\series default
+that could 
+\series bold
+possibly be true
+\series default
+ of 
+\begin_inset Formula $C$
+\end_inset
+
+: symmetric, anti-symmetric, orthogonal, Markov, diagonalizable, defective,
+ singular, diagonal.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Problem 7:
+\end_layout
+
+\begin_layout Standard
+The matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ is real-symmetric and positive-definite.
+ Using it, we write a recurrence equation 
+\begin_inset Formula 
+\[
+x_{n}-x_{n+1}=A\left(x_{n}+x_{n+1}\right)
+\]
+
+\end_inset
+
+for a sequence of vectors 
+\begin_inset Formula $x_{0},x_{1},\ldots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For any 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+, the recurrence relation above defines a unique solution 
+\begin_inset Formula $x_{n+1}$
+\end_inset
+
+.
+ Why?
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $Av=\lambda v$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{0}=v$
+\end_inset
+
+, give an equation for 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $v$
+\end_inset
+
+, 
+\begin_inset Formula $n$
+\end_inset
+
+, and 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+For an arbitrary 
+\begin_inset Formula $x_{0},$
+\end_inset
+
+ does the length of the solution 
+\begin_inset Formula $\Vert x_{n}\Vert$
+\end_inset
+
+ grow with 
+\begin_inset Formula $n$
+\end_inset
+
+, decay with 
+\begin_inset Formula $n$
+\end_inset
+
+, oscillate, or approach a nonzero steady-state?
+\end_layout
+
+\begin_layout Enumerate
+Suppose 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ and the eigenvalues are 
+\begin_inset Formula $\lambda_{1}=0.1$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{2}=1$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{3}=2$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{4}=3$
+\end_inset
+
+, and the corresponding eigenvectors are 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $v_{3}$
+\end_inset
+
+, and 
+\begin_inset Formula $v_{4}$
+\end_inset
+
+ (all normalized to length 
+\begin_inset Formula $\Vert v_{k}\Vert=1$
+\end_inset
+
+).
+ The initial 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ is some arbitrary vector.
+ Write an exact formula for 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ and these eigenvectors and eigenvalues—you should get a sum of four terms.
+ Which term should typically dominate for large 
+\begin_inset Formula $n$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\end_body
+\end_document
