@@ -9,10 +9,10 @@ I'll try to update it within a day of each lecture.
 
 ## Lecture 1 (Feb 8)
 
-* [pset 1 is posted](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset1/pset1.ipynb).
+* [pset 1 is posted](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset1/pset1.ipynb).
 
 Went over the [course overview
-slides](https://github.com/stevengj/1806-spring17/blob/master/lectures/overview.pdf)
+slides](https://github.com/stevengj/1806/blob/spring17/lectures/overview.pdf)
 giving the syllabus and the "big picture" of what 18.06 is about.
 
 Then I started right in on [Gaussian
@@ -27,9 +27,9 @@ elimination": we add/subtract multiples of matrix rows to introduce
 zeros below the diagonal, i.e. to make the matrix [upper
 triangular](https://en.wikipedia.org/wiki/Triangular_matrix).   We want to do the same operations to the right-hand side, so we [augment](https://en.wikipedia.org/wiki/Augmented_matrix) the matrix with the right-hand side before starting Gaussian eliminations.
 
-This process is quite tedious to do by hand, so I instead switched over to [Julia](http://julialang.org/) to do more computational exploration with [this Julia notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Gaussian-elimination.ipynb).  See [here for more information on using Julia](https://github.com/stevengj/julia-mit); you can also go to [juliabox.com](https://juliabox.com/) to use it online without installing anything.  To use the interactive widgets in the notebook from today, you will have to run it in Julia yourself:
+This process is quite tedious to do by hand, so I instead switched over to [Julia](http://julialang.org/) to do more computational exploration with [this Julia notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Gaussian-elimination.ipynb).  See [here for more information on using Julia](https://github.com/stevengj/julia-mit); you can also go to [juliabox.com](https://juliabox.com/) to use it online without installing anything.  To use the interactive widgets in the notebook from today, you will have to run it in Julia yourself:
 
-1. Go to the [notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Gaussian-elimination.ipynb) and click on the *download icon* on the upper-right hand corner to download the file onto your computer
+1. Go to the [notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Gaussian-elimination.ipynb) and click on the *download icon* on the upper-right hand corner to download the file onto your computer
 
 2. Log into juliabox (if you haven't installed Julia locally on your computer) and you will see a "dashboard" listing of notebooks.  *Drag* the `Gaussian-elimination.ipynb` file from your computer onto this dashboard to upload it.
 
@@ -45,7 +45,7 @@ In particular, our goal in the next lectures will be to find a matrix E such tha
 
 ## Lecture 2 (Feb 10)
 
-* [Matrix-multiplication and LU notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Matrix-mult-perspectives.ipynb)
+* [Matrix-multiplication and LU notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Matrix-mult-perspectives.ipynb)
 
 Went over several different perspectives on matrix multiplication: the *same arithmetic operations* can be viewed as row×columns, matrix×columns, rows×matrix, columns×rows, and more.   If you are doing hand calculations (but who does that, really?), rows×columns is probably the easiest.  But the other viewpoints help us *think* about matrix multiplication in different ways, both to understand what is going on and also to *design* matrices to perform certain operations.
 
@@ -68,15 +68,15 @@ computational experiments.  Bring your laptops, and try logging into
 [juliabox.com](https://juliabox.com) beforehand.  More information:
 
 * [Instructions/links for using Julia](https://github.com/stevengj/julia-mit/)
-* [Overview slides](https://github.com/stevengj/1806-spring17/blob/master/julia/Julia-intro.pdf)
-* [Julia cheatsheet](https://github.com/stevengj/1806-spring17/blob/master/julia/Julia-cheatsheet.pdf)
-* [Tutorial notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/julia/tutorial.ipynb)
+* [Overview slides](https://github.com/stevengj/1806/blob/spring17/julia/Julia-intro.pdf)
+* [Julia cheatsheet](https://github.com/stevengj/1806/blob/spring17/julia/Julia-cheatsheet.pdf)
+* [Tutorial notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/julia/tutorial.ipynb)
 
 ## Lecture 3 (Feb 15)
 
-* [pset 1 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset1/pset1-sol.ipynb), [pset 2 is posted](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset2/pset2.ipynb).
+* [pset 1 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset1/pset1-sol.ipynb), [pset 2 is posted](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset2/pset2.ipynb).
 
-* [LU and matrix-inverse notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/LU-and-Inverses.ipynb)
+* [LU and matrix-inverse notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/LU-and-Inverses.ipynb)
 
 Went through the LU notebook, with some blackboard aids, covering:
 
@@ -93,7 +93,7 @@ that in Lecture 4.
 
 ## Lecture 4 (Feb 17)
 
-* [Inverses, complexity, and transposes notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Inverses-Complexity-Transposes.ipynb)
+* [Inverses, complexity, and transposes notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Inverses-Complexity-Transposes.ipynb)
 
 Went through the topics in the lecture notebook:
 
@@ -109,7 +109,7 @@ We will discuss more properties of transposes in the next lecture (I didn't fini
 
 ## Lecture 5 (Feb 21)
 
-* [Transposes notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Transposes.ipynb)
+* [Transposes notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Transposes.ipynb)
 
 Continued talking about transposes, from lecture 4: relationship to
 matrix multiplication, dot products, and LU factorization.  Symmetric
@@ -119,7 +119,7 @@ matrices and factorizations (LDLᵀ and Cholesky).
 
 ## Lecture 6 (Feb 22)
 
-* [pset 2 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset2/pset2-sol.ipynb), [pset 3](http://nbviewer.jupyter.org/urls/rawgit.com/stevengj/1806-spring17/master/psets/pset3/pset3.ipynb).
+* [pset 2 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset2/pset2-sol.ipynb), [pset 3](http://nbviewer.jupyter.org/urls/rawgit.com/stevengj/1806/spring17/psets/pset3/pset3.ipynb).
 
 * The first exam will be **next week** on Friday March 3 in room 50-340.  It will cover everything through pset 3, up to including the lecture on Monday, February 27.  (It may be a *bit harder* than exams in previous terms, but grading will be adjusted accordingly.)
 
@@ -213,7 +213,7 @@ Started talking about bases, dimension, and independence.   Earlier, I defined a
 
 ## Lecture 9 (Feb 29)
 
-* [pset 3 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset3/pset3-sol.ipynb), [pset 4](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset4/pset4.ipynb)
+* [pset 3 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset3/pset3-sol.ipynb), [pset 4](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset4/pset4.ipynb)
 
 Given a set of n vectors {x₁, ⋯, xₙ}, if we matrix a matrix X whose columns
 are x₁⋯xₙ, then C(X) is precisely the span of x₁⋯xₙ.   To check whether
@@ -276,8 +276,8 @@ are *orthogonal complements*.
 
 ## Exam 1 (March 3)
 
-[Exam 1](https://github.com/stevengj/1806-spring17/blob/master/exams/exam1.pdf)
-and [solutions](https://github.com/stevengj/1806-spring17/blob/master/exams/exam1-sol.pdf).
+[Exam 1](https://github.com/stevengj/1806/blob/spring17/exams/exam1.pdf)
+and [solutions](https://github.com/stevengj/1806/blob/spring17/exams/exam1-sol.pdf).
 
 ## Lecture 10 (March 6)
 
@@ -311,15 +311,15 @@ we will write *every* rank-r matrix as a sum of r rank-1 matrices, and with orth
 
 ## Lecture 11 (March 8)
 
-* [pset 4 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset4/pset4-sol.ipynb), [pset 5](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset5/pset5.ipynb)
+* [pset 4 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset4/pset4-sol.ipynb), [pset 5](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset5/pset5.ipynb)
 
-* [Graphs and networks notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Graphs-Networks.ipynb)
+* [Graphs and networks notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Graphs-Networks.ipynb)
 
 **Further reading:** Textbook section 10.1; video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-12-graphs-networks-incidence-matrices/).
 
 ## Lecture 12 (March 10)
 
-* [Multidimensional Newton’s method notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Multidimensional-Newton.ipynb)
+* [Multidimensional Newton’s method notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Multidimensional-Newton.ipynb)
 
 The key point of this lecture is that *linear* algebra can even be used to solve *nonlinear* equations.  There are many methods to convert a nonlinear equation into a *sequence* of *approximate* linear equations whose solutions *converge* to the nonlinear solution.   The most famous is Newton’s method.  You learned the 1d version of Newton’s method in first-year calculus.  The generalization, for *n* nonlinear equations in *n* unknowns, is a sequence of *n*×*n* matrix problems.
 
@@ -327,7 +327,7 @@ The key point of this lecture is that *linear* algebra can even be used to solve
 
 ## Lecture 13 (March 13)
 
-* [Least-square fitting notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Least-Square%20Fitting.ipynb)
+* [Least-square fitting notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Least-Square%20Fitting.ipynb)
 
 Introduced the topic of least-square fitting of data to curves.  As long as the fitting function is linear in the unknown coefficients x, showed that minimizing the sum of the squares of the errors corresponds to minimizing the norm of the residual ‖b-Ax‖.   By straightforward (if somewhat tedious) calculus, found that this corresponds to solving the **normal equations** AᵀAx̂=Aᵀb for the fit coefficients x̂.  And we have enough linear algebra tools now to show that these equations are always solvable (uniquely if A has full column rank).
 
@@ -335,9 +335,9 @@ Introduced the topic of least-square fitting of data to curves.  As long as the 
 
 ## Lecture 14 (March 15)
 
-* [pset 5 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset5/pset5-sol.ipynb), [pset 6](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset6/pset6.ipynb)
+* [pset 5 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset5/pset5-sol.ipynb), [pset 6](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset6/pset6.ipynb)
 
-* [Projections notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Projections.ipynb)
+* [Projections notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Projections.ipynb)
 
 Orthogonal projection onto subspaces, and the projection operator.  (Guest lecture by [Prof. Alan Edelman](http://www-math.mit.edu/~edelman/).)
 
@@ -351,9 +351,9 @@ Orthonormal bases, matrices Q with orthonormal columns (QᵀQ = I), orthogonal (
 
 ## Lecture 16 (March 20)
 
-* [Orthogonal polynomials](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Orthogonal-Polynomials.ipynb)
+* [Orthogonal polynomials](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Orthogonal-Polynomials.ipynb)
 
-* [Fourier sine series](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Sine-series.ipynb)
+* [Fourier sine series](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Sine-series.ipynb)
 
 Using QR to solve the least-squares problem: given A=QR, the normal equations AᵀAx̂=Aᵀb turn into the triangular system of equations Rx̂=Qᵀb.
 
@@ -371,9 +371,9 @@ Another wonderful and far-reaching application of these ideas is to realize that
 
 ## Lecture 17 (March 22)
 
-* [pset 6 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset6/pset6-sol.ipynb), [pset 7](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset7/pset7.ipynb)
+* [pset 6 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset6/pset6-sol.ipynb), [pset 7](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset7/pset7.ipynb)
 
-* [Eigenvalue/eigenvector introduction](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Eigenvalue-Intro.ipynb)
+* [Eigenvalue/eigenvector introduction](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Eigenvalue-Intro.ipynb)
 
 Begin by going over the last section of the orthogonal-polynomials notebook from
 the last lecture: explain why projecting onto orthogonal polynomials (or any
@@ -388,7 +388,7 @@ obtain (make matrices **act like scalars**) to *how* we achieve it.
 
 ## Lecture 18 (March 24)
 
-* [Determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Determinants.ipynb)
+* [Determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Determinants.ipynb)
 
 Explained determinants and their properties.  Considering how central a role determinants play for the 2×2 and 3×3 matrices you probably encountered before 18.06, you may be surprised that we didn't get to determinants until now.  The fact of the matter is that determinants play a much less important role in applied linear algebra for larger matrices — with a few exceptions, most things that you would want to use determinants for can be done more effectively in other ways.  They are a useful *conceptual* tool, however, especially for thinking about eigenvalues.
 
@@ -397,7 +397,7 @@ Explained determinants and their properties.  Considering how central a role det
 
 ## Lecture 19 (April 3)
 
-* [Eigenvalues and polynomials](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Eigenvalue-Polynomials.ipynb)
+* [Eigenvalues and polynomials](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Eigenvalue-Polynomials.ipynb)
 
 Reviewed eigenvalues, eigenvectors, and diagonalization.
 
@@ -421,8 +421,8 @@ to be continued next lecture.
 
 ## Lecture 20 (April 5)
 
-* [pset 7 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset7/pset7-sol.ipynb), [pset 8](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset8/pset8.ipynb) (due in **2 weeks**: Wed., April 19).
-* [Fibonacci numbers](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Fibonacci.ipynb)
+* [pset 7 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset7/pset7-sol.ipynb), [pset 8](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset8/pset8.ipynb) (due in **2 weeks**: Wed., April 19).
+* [Fibonacci numbers](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Fibonacci.ipynb)
 
 Defined [similar matrices](https://en.wikipedia.org/wiki/Matrix_similarity) B=M⁻¹AM, and showed that similar matrices have the same *eigenvalues* (with eigenvectors related by a factor of M), the same *determinant*, the same *characteristic polynomial*, and the same *trace*.  Defined the [trace](https://en.wikipedia.org/wiki/Trace_(linear_algebra)) of a matrix tr(A),
 and showed tr(AB)=tr(BA) for any m×n matrix A and n×m matrix B.  (Similar matrices essentially
@@ -442,8 +442,8 @@ As an application of matrix powers, considered the famous [Fibonacci numbers](ht
 
 ## Lecture 21 (April 6)
 
-* [Markov matrices](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Markov.ipynb)
-* [Analyzing Chutes & Ladders](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Chutes-and-Ladders.ipynb)
+* [Markov matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Markov.ipynb)
+* [Analyzing Chutes & Ladders](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Chutes-and-Ladders.ipynb)
 
 [Markov matrices](https://en.wikipedia.org/wiki/Stochastic_matrix) and eigenvalues.
 
@@ -451,13 +451,13 @@ As an application of matrix powers, considered the famous [Fibonacci numbers](ht
 
 ## Exam 2 (April 11)
 
-[Exam 2](https://github.com/stevengj/1806-spring17/blob/master/exams/exam2.pdf)
-and [solutions](https://github.com/stevengj/1806-spring17/blob/master/exams/exam2-sol.pdf).
+[Exam 2](https://github.com/stevengj/1806/blob/spring17/exams/exam2.pdf)
+and [solutions](https://github.com/stevengj/1806/blob/spring17/exams/exam2-sol.pdf).
 
 ## Lecture 22 (April 13)
 
-* [Power method](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Power-Method.ipynb)
-* [Ordinary differential equations (ODEs)](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/ODEs.ipynb).
+* [Power method](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Power-Method.ipynb)
+* [Ordinary differential equations (ODEs)](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/ODEs.ipynb).
 
 Discussed how multiplying by a matrix repeatedly is actually a starting point
 for many practical algorithms to compute eigenvectors and eigenvalues: the most
@@ -473,8 +473,8 @@ Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki
 
 ## Lecture 23 (April 14)
 
-* [Oscillating ODE solutions: Masses and springs](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/ODEs.ipynb).
-* [Matrix exponentials eᴬ](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Matrix-Exponentials.ipynb).
+* [Oscillating ODE solutions: Masses and springs](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/ODEs.ipynb).
+* [Matrix exponentials eᴬ](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Matrix-Exponentials.ipynb).
 
 Continued discussion of ODEs from last lecture, focusing now on oscillating solutions and complex eigenvalues λ (see notebook).   Then reformulated the solution of dx/dt=Ax in terms of the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential) eᴬᵗ, and discussed the properties of this fascinating and important matrix operation.
 
@@ -482,7 +482,7 @@ Continued discussion of ODEs from last lecture, focusing now on oscillating solu
 
 # Lecture 23 (April 19)
 
-* [pset 8 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset8/pset8-sol.ipynb), [pset 9](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset9/pset9.ipynb)
+* [pset 8 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset8/pset8-sol.ipynb), [pset 9](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset9/pset9.ipynb)
 
 Finished matrix-exponential notes from lecture 23.
 
@@ -596,7 +596,7 @@ are the same things except with the opposites signs, i.e. "< 0" or "≤ 0" above
 
 # Lecture 25 (April 24)
 
-* [SVD](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/SVD.ipynb)
+* [SVD](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/SVD.ipynb)
 
 Guest lecture by Prof. Alan Edelman on the **singular value decomposition** (SVD), with application to image processing.
 
@@ -604,7 +604,7 @@ Guest lecture by Prof. Alan Edelman on the **singular value decomposition** (SVD
 
 # Lecture 26 (April 26)
 
-* [pset 9 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset9/pset9-sol.ipynb), [pset 10](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset10/pset10.ipynb)
+* [pset 9 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset9/pset9-sol.ipynb), [pset 10](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset10/pset10.ipynb)
 
 As an application of real-symmetric and positive-definite matrices, I returned
 to the system of masses and springs from lecture 23, but this time I considered
@@ -650,7 +650,7 @@ The wonderful thing about this approach is that it allows us to derive real λ>0
 
 # Lecture 28 (May 1)
 
-* [Statistics and PCA](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Statistics-and-PCA.ipynb)
+* [Statistics and PCA](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Statistics-and-PCA.ipynb)
 
 * [Eigen-walker demo](https://www.biomotionlab.ca/Demos/BMLwalker.html)
 
@@ -664,7 +664,7 @@ Gave some examples (see notebook), and closed with the [eigen-walker data](http:
 
 # Lecture 29 (May 3): Exam 3 Review
 
-* [pset 10 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset10/pset10-sol.ipynb), [pset 11](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset11/pset11.ipynb).
+* [pset 10 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset10/pset10-sol.ipynb), [pset 11](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset11/pset11.ipynb).
 
 # Exam 3 (Friday, May 5 in 50-340)
 
@@ -690,7 +690,7 @@ To understand what happens with defective matrices, I introduce Jordan vectors (
 
 # Lecture 31 (May 10)
 
-* [Dense and sparse linear algebra](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Dense-and-Sparse.ipynb)
+* [Dense and sparse linear algebra](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Dense-and-Sparse.ipynb)
 
 Large-scale linear algebra: the computational techniques (but not the *conceptual approaches*) of linear algebra completely change when one looks at large-scale matrix problems (100000×100000 or more).  There, the focus turns to exploiting matrix **sparsity** (matrices that are mostly zero) and other structures that let you multiply matrices by vectors quickly (and let you avoid storing the whole matrix).
 
@@ -700,9 +700,9 @@ This material will not be on the final exam, but is still very useful for practi
 
 # Lecture 32 (May 12)
 
-* [pset 11 solutions](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/psets/pset11/pset11-sol.ipynb).  (This was the last pset.)
+* [pset 11 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/psets/pset11/pset11-sol.ipynb).  (This was the last pset.)
 
-* [Circulant matrices](http://nbviewer.jupyter.org/github/stevengj/1806-spring17/blob/master/lectures/Circulant-Matrices.ipynb)
+* [Circulant matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Circulant-Matrices.ipynb)
 
 In this lecture, I want to introduce you to a new type of matrix: circulant matrices. Like Hermitian matrices, they have orthonormal eigenvectors, but unlike Hermitian matrices we know exactly what their eigenvectors are! Moreover, their eigenvectors are closely related to the famous Fourier transform and Fourier series. Even more importantly, it turns out that circulant matrices and the eigenvectors lend themselves to incredibly efficient algorithms called FFTs, that play a central role in much of computational science and engineering.
 
