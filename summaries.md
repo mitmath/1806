@@ -12,7 +12,7 @@ I'll try to update it within a day of each lecture.
 * [course overview
 slides](https://github.com/stevengj/1806/blob/master/lectures/overview.pdf) and [Gaussian
 elimination notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Gaussian-elimination.ipynb)
-* [pset 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset1.ipynb) (due Wed 9/13, 11am)
+* [pset 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset1.ipynb) (due Wed 9/13, 11am in your recitation box)
 
 Went over the [course overview
 slides](https://github.com/stevengj/1806/blob/master/lectures/overview.pdf)
