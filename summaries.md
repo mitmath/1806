@@ -9,6 +9,11 @@ I'll try to update it within a day of each lecture.
 
 ## Lecture 1 (Feb 8)
 
+* [course overview
+slides](https://github.com/stevengj/1806/blob/master/lectures/overview.pdf) and [Gaussian
+elimination notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Gaussian-elimination.ipynb)
+* [pset 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset1.ipynb) (due Wed 9/13, 11am)
+
 Went over the [course overview
 slides](https://github.com/stevengj/1806/blob/master/lectures/overview.pdf)
 giving the syllabus and the "big picture" of what 18.06 is about.
