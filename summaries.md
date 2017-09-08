@@ -7,7 +7,12 @@ useful study guide.
 
 I'll try to update it within a day of each lecture.
 
-## Lecture 1 (Feb 8)
+## Lecture 1 (Sep 6)
+
+* [course overview
+slides](https://github.com/stevengj/1806/blob/master/lectures/overview.pdf) and [Gaussian
+elimination notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Gaussian-elimination.ipynb)
+* [pset 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset1.ipynb) (due Wed 9/13, 11am in your recitation box)
 
 Went over the [course overview
 slides](https://github.com/stevengj/1806/blob/master/lectures/overview.pdf)
