@@ -58,3 +58,25 @@ as both a computational and a theoretical tool, because triangular matrices are 
 In the next lecture, we will reverse the elimination steps to obtain the [LU factorization](https://en.wikipedia.org/wiki/LU_decomposition) A=LU.
 
 **Further reading:** Textbook sections 2.4, 2.3, 2.6.  Strang [lecture 1 video](https://www.youtube.com/watch?v=ZK3O402wf1c), [lecture 4 video](https://www.youtube.com/watch?v=5hO3MrzPa0A).
+
+## Lecture 2 (Sep 11)
+
+Matrix inverses and LU factorization.
+
+## Optional Julia Tutorial (Monday Sep 11, 5pm, 32-155)
+
+On Friday at 5pm, there will be an optional tutorial session in 32-155
+for the [Julia](http://julialang.org/) computer software that we will be using in 18.06 this
+semester for homework and lecture demonstrations. Julia is a
+programming language, but no "real" programming will be required in 18.06: we
+will just be using it as a "fancy calculator" that happens to have
+lots of linear algebra and other capabilities. The tutorial session is
+optional; for the homework, we will mostly just give you code and tell
+you to run it, perhaps with minor tweaks, in order to perform
+computational experiments.  Bring your laptops, and try logging into
+[juliabox.com](https://juliabox.com) beforehand.  More information:
+
+* [Instructions/links for using Julia](https://github.com/stevengj/julia-mit/)
+* [Overview slides](https://github.com/stevengj/1806/blob/master/julia/Julia-intro.pdf)
+* [Julia cheatsheet](https://github.com/stevengj/1806/blob/master/julia/Julia-cheatsheet.pdf)
+* [Tutorial notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/julia/tutorial.ipynb)
