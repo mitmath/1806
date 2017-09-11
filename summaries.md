@@ -67,7 +67,7 @@ Introduction to the concept of a matrix inverse via the identity matrix.  Our fi
 
 ## Optional Julia Tutorial (Monday Sep 11, 5pm, 32-155)
 
-On Friday at 5pm, there will be an optional tutorial session in 32-155
+On **Monday** at 5pm, there will be an optional tutorial session in 32-155
 for the [Julia](http://julialang.org/) computer software that we will be using in 18.06 this
 semester for homework and lecture demonstrations. Julia is a
 programming language, but no "real" programming will be required in 18.06: we
