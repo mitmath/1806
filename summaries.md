@@ -59,9 +59,11 @@ In the next lecture, we will reverse the elimination steps to obtain the [LU fac
 
 **Further reading:** Textbook sections 2.4, 2.3, 2.6.  Strang [lecture 1 video](https://www.youtube.com/watch?v=ZK3O402wf1c), [lecture 4 video](https://www.youtube.com/watch?v=5hO3MrzPa0A).
 
-## Lecture 2 (Sep 11)
+## Lecture 3 (Sep 11)
 
-Matrix inverses and LU factorization.
+* [Matrix inverse and LU notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Inverses-LU-intro.ipynb)
+
+Introduction to the concept of a matrix inverse via the identity matrix.  Our first application is not to compute general matrix inverses, but rather to invert the elimination steps from the last lecture and compute the [LU factorization](https://en.wikipedia.org/wiki/LU_decomposition) A=LU of a matrix.   Afterwards, we will look at calculating inverses more generally, but it turns out that this is something that you should almost never do explicitly (even on a computer!).
 
 ## Optional Julia Tutorial (Monday Sep 11, 5pm, 32-155)
 
