@@ -101,6 +101,9 @@ computational experiments.  Bring your laptops, and try logging into
 
 ## Lecture 4 (Sep 13)
 
+* [pset 1 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset1-sol.ipynb)
+* pset 2 (due Wed 9/20 at 11am): to be posted shortly
+
 * [Matrix inverses and complexity](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Inverses-Complexity-Transposes.ipynb)
 
 Went through how to explicitly compute A⁻¹ by solving AA⁻¹ = I.  In particular, went through the Gauss–Jordan algorithm (on a 3×3 example that can also be found in the textbook): If we do row operations on A to get I, then the *same* row operations on I give A⁻¹!  To carry this out by hand, we augment (A|I), do ordinary Gaussian elimination to get (U|C), and then do elimination "upwards" to get (I|A⁻¹).  (This is not in the Julia notebook, but can be found in the textbook.)
