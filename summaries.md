@@ -101,4 +101,18 @@ computational experiments.  Bring your laptops, and try logging into
 
 ## Lecture 4 (Sep 13)
 
-* [Matrix inverse, complexity, transposes](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Inverses-Complexity-Transposes.ipynb)
+* [Matrix inverses and complexity](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Inverses-Complexity-Transposes.ipynb)
+
+Went through how to explicitly compute A⁻¹ by solving AA⁻¹ = I.  In particular, went through the Gauss–Jordan algorithm (on a 3×3 example that can also be found in the textbook): If we do row operations on A to get I, then the *same* row operations on I give A⁻¹!  To carry this out by hand, we augment (A|I), do ordinary Gaussian elimination to get (U|C), and then do elimination "upwards" to get (I|A⁻¹).  (This is not in the Julia notebook, but can be found in the textbook.)
+
+In practice, people hardly ever do Gauss–Jordan anymore to get inverses by hand.  (For 2×2 and 3×3 matrices, you can just [google the formula](https://www.dr-lex.be/random/matrix-inv.html) for the inverse, while for larger matrices hand computation is too annoying to be practical.)  However, it *is* important to understand *why* it works, because understanding that gets at the heart of what elimination and inverses truly are.
+
+Going through the Gauss–Jordan process also highlights how much unnecessary work it normally is to compute a matrix inverse.  For an m×m matrix A, finding A⁻¹ involves all the work to do Gaussian elimination on A *plus* all of the work to solve m right-hand-sides (the columns of I).   If you just want to solve Ax=b, you would have to be crazy to compute A⁻¹ first and then multiply A⁻¹b to get x — instead, just solve Ax=b directly, either via `A \ b` (on a computer) or by augmenting (A|b) and doing elimination and backsubstitution by hand.  Even if you have many right-hand sides, it is almost always a better idea to compute the LU factorization of A and then do back/forward-substitution for each new right-hand side.
+
+This does not mean that matrix inverses are useless!  However, they are mainly a *conceptual* tool that we use to move matrices around *symbolically* in equations.   Once you are through with your algebraic manipulations, you might end up with an expression like A⁻¹b — but when it comes time to actually *compute* the answer, you should **read "A⁻¹b" as "solve Ax=b for x by the best available method"**.
+
+* Complexity of matrix operations: why matrix × vector or backsubstitution scale like n² for n×n matrices, while matrix × matrix or Gaussian elimination (LU factorization) scale like n³.   Matrices much bigger than a few thousand square quickly become impractical, and really large problems are only tractable because they have special structure like sparsity.
+
+(*Skipped the sections of the notebook on transposes and permutations, for now!*)
+
+**Further reading:** Textbook sections 2.5, 2.6 ("The cost of elimination"), and 11.1.  Strang [video lecture 3](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-3-multiplication-and-inverse-matrices/).
