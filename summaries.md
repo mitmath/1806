@@ -98,3 +98,7 @@ computational experiments.  Bring your laptops, and try logging into
 * [Overview slides](https://github.com/stevengj/1806/blob/master/julia/Julia-intro.pdf)
 * [Julia cheatsheet](https://github.com/stevengj/1806/blob/master/julia/Julia-cheatsheet.pdf)
 * [Tutorial notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/julia/tutorial.ipynb)
+
+## Lecture 4 (Sep 13)
+
+* [Matrix inverse, complexity, transposes](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Inverses-Complexity-Transposes.ipynb)
