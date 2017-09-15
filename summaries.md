@@ -121,7 +121,7 @@ This does not mean that matrix inverses are useless!  However, they are mainly a
 
 ## Lecture 5 (Sep 15)
 
-* [LU factorization notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/LU-for-real.ipynb)
+* [LU factorization notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/LU-for-real.ipynb)
 
 Went through a more realistic and complete discussion of LU factorization, with some blackboard aids, covering:
 
