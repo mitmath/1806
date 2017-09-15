@@ -118,3 +118,14 @@ This does not mean that matrix inverses are useless!  However, they are mainly a
 (*Skipped the sections of the notebook on transposes and permutations, for now!*)
 
 **Further reading:** Textbook sections 2.5, 2.6 ("The cost of elimination"), and 11.1.  Strang [video lecture 3](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-3-multiplication-and-inverse-matrices/).
+
+## Lecture 5 (Sep 15)
+
+* [LU factorization notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/LU-for-real.ipynb)
+
+Went through a more realistic and complete discussion of LU factorization, with some blackboard aids, covering:
+
+* How the L matrix entries are just the multipliers from Gaussian elimination.  No extra work is required!
+* How in practice, one rarely "augments" the matrix with the right-hand side.  Instead, you compute A=LU, substitute this into Ax=b=LUx, let c=Ux, solve Lc=b, then solve Ux=c.  In particular, solving Lc=b is *exactly* the same as performing the Gaussian-elimination steps on c.  (The "augmented" method is a little easier for human bookkeeping, but has essentially no advantage for the computer.)
+* Given A=LU, you can efficiently solve multiple right-hand sides, or equivalently the matrix equation AX=B.
+* How row swaps lead to the factorization PA=LU: in practice, the computer *always* does row swaps, and always gives you a permutation matrix P (or its equivalent).
