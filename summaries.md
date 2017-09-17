@@ -141,7 +141,7 @@ Exam 1 will cover the material through **lecture 6**: matrix-vector operations, 
 
 *Note:* For scheduling reasons, exam 1 came a little earlier this term than in previous terms, so some of the topics on exam 1 from previous terms will have to wait until exam 2.  In particular, questions about "finding a basis" for various subspaces or finding the "complete solution" to a singular or non-square system of equations will *not* be asked on exam 1 (but *will* be on exam 2).
 
-Practice problems: [spring 2017 exam 1](http://web.mit.edu/18.06/www/Spring17/exam1.pdf) problems 1a, 1c, 3a, 4 ([solutions](Solutions));
+Practice problems: [spring 2017 exam 1](http://web.mit.edu/18.06/www/Spring17/exam1.pdf) problems 1a, 1c, 3a, 4 ([solutions](http://web.mit.edu/18.06/www/Spring17/exam1-sol.pdf));
 [fall 2012 exam 1](http://web.mit.edu/18.06/www/Fall12/Exam%201/quiz1-1806-f12.pdf) problems 2, 3 ([solutions](http://web.mit.edu/18.06/www/Fall12/Exam%201/quiz1-1806-f12-solution.pdf));
 [fall 2007 exam 1](http://web.mit.edu/18.06/www/Fall07/quiz2-1806-F07.pdf) problems 2, 3 ([solutions](http://web.mit.edu/18.06/www/Fall07/quiz2-1806-F07-sol.pdf)); [spring 2008 exam 1](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08.pdf) problems 1, 2 ([solutions](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08-soln.pdf));  [fall 2011 exam 1](http://web.mit.edu/18.06/www/Fall11/q1_f11.pdf) problems 2 ([solutions](http://web.mit.edu/18.06/www/Fall11/q1_f11_solution.pdf));
 [spring 2012 exam 1](http://web.mit.edu/18.06/www/Spring12/q1_sp12.pdf) problems ([solutions](pdf))
