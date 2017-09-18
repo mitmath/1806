@@ -146,7 +146,7 @@ For an m×n matrix A, introduced two important subspaces.
   - Did an 3×2 example in which C(A) was a plane in ℝ³, and noticed via elimination that the "dimensionality" ("2d") of this subspace matched the rank (2).
   - Did a 2×3 example in which C(A) was all of ℝ²: all right-hand sides b of Ax=b had solutions x.  (Again, the dimensionality of C(A) matched the rank of our example, and later we will see that this is generally true.) However, the matrix is not square and cannot be invertible, and the difference is that the solutions are *not unique*.
 
-* Second, the null space (also called the "kernel") N(A): the set {x such that Ax=0} ⊆ ℝⁿ (i.e., a subspace of ℝⁿ).  Given any solution x to Ax=b, then x+y is also a solution if y ∈ N(A).
+* Second, the null space (also called the "kernel") N(A): the set {x such that Ax=0} ⊆ ℝⁿ (i.e., a subspace of ℝⁿ).  Given any solution x to Ax=b, then x+z is also a solution if z ∈ N(A) (i.e. Az=0 ⟹ A(x+z)=Ax+Az=Ax=b).
   - In our 2×3 example, the null space was determined to be a *line* in ℝ³, and we saw that this gave a line of solutions.
 
 These are very important subspaces because they tell us a lot about the matrix A and solutions to Ax=b.  As a trivial example, if A is an n×n *invertible* matrix, C(A)=ℝⁿ and N(A)={0}.  Conversely, if A is the n×n matrix of *all zeros* (the "most singular" matrix), then C(A)={0} and N(A)=ℝⁿ.  Our goal in the next lectures will be to understand how C(A) and N(A) relate to each other (and another two important subspaces) and to the *elimination* process on A, and then use this to find more systematic ways to compute/describe them.
