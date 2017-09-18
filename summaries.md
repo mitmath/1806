@@ -134,6 +134,24 @@ Next week, we will start talking more about singular matrices, subspaces, and th
 
 **Further reading:** Textbook, sections 2.6, 2.7 (on permutations; we will talk about transposes a little later), and 11.1.  Strang [video lecture 4](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-4-factorization-into-a-lu/) and [video lecture 5](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/).   For 18.06, I *don't expect you to know* the details of how the permutation P in PA=LU is constructed even though you don't know the permutation in advance, but if you are interested it is described in [lecture 21 of *Numerical Linear Algebra* by Trefethen and Bau](http://library.books24x7.com.libproxy.mit.edu/assetviewer.aspx?bookid=9436&chunkid=389684869) (readable online with MIT certificates; this is a *graduate-level* textbook used for 18.335, so let it scare you!).
 
+## Lecture 6 (Sep 18)
+
+Defined the **rank** of a matrix = # pivots (note that pivots are nonzero by definition).   An invertible matrix, i.e. a non-singular matrix, has **full rank**: rank = number of rows = number of columns.   A **rank-deficient** matrix has a rank *less than* either the number of rows or the number of columns (or both).  Our main goal for the next few weeks will be to understand rank-deficient matrix problems, especially non-square cases.
+
+Introduced vector spaces (a set V of anything you can add x+y and multiply by scalars αx) and subspaces (a subset of V such that vector operations *stay in the subspace*).  Examples of vector spaces include real n-component vectors (ℝⁿ, or ℂⁿ for complex numbers), real m×n matrices, functions f(x) (ℝ↦ℝ, real numbers to real numbers).  Examples of subspaces includes planes or lines through the origin in ℝ³, or the origin itself.   The goal of this is to break vector spaces into smaller pieces that we can still do linear algebra on (hence the need for a subspace, not just any arbitrary subset).
+
+For an m×n matrix A, introduced two important subspaces.
+
+* First, the column space C(A): the set {Ax for all x ∈ ℝⁿ}.  This is the set of *right-hand sides* b such that Ax=b is *solvable*, and is a subspace of ℝᵐ (not ℝⁿ unless m=n!).  Equivalently, C(A) is all linear combinations of the *columns* of A, which we call the **span** of the columns.
+  - Did an 3×2 example in which C(A) was a plane in ℝ³, and noticed via elimination that the "dimensionality" ("2d") of this subspace matched the rank (2).
+  - Did a 2×3 example in which C(A) was all of ℝ²: all right-hand sides b of Ax=b had solutions x.  (Again, the dimensionality of C(A) matched the rank of our example, and later we will see that this is generally true.) However, the matrix is not square and cannot be invertible, and the difference is that the solutions are *not unique*.
+
+* Second, the null space (also called the "kernel") N(A): the set {x such that Ax=0} ⊆ ℝⁿ (i.e., a subspace of ℝⁿ).  Given any solution x to Ax=b, then x+y is also a solution if y ∈ N(A).
+  - In our 2×3 example, the null space was determined to be a *line* in ℝ³, and we saw that this gave a line of solutions.
+
+These are very important subspaces because they tell us a lot about the matrix A and solutions to Ax=b.  As a trivial example, if A is an n×n *invertible* matrix, C(A)=ℝⁿ and N(A)={0}.  Conversely, if A is the n×n matrix of *all zeros* (the "most singular" matrix), then C(A)={0} and N(A)=ℝⁿ.  Our goal in the next lectures will be to understand how C(A) and N(A) relate to each other (and another two important subspaces) and to the *elimination* process on A, and then use this to find more systematic ways to compute/describe them.
+
+**Further reading:** Textbook, sections 3.1 and 3.2.
 
 ## Exam 1 (Sep 25, 11am in 50-340)
 
