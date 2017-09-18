@@ -151,7 +151,7 @@ For an m×n matrix A, introduced two important subspaces.
 
 These are very important subspaces because they tell us a lot about the matrix A and solutions to Ax=b.  As a trivial example, if A is an n×n *invertible* matrix, C(A)=ℝⁿ and N(A)={0}.  Conversely, if A is the n×n matrix of *all zeros* (the "most singular" matrix), then C(A)={0} and N(A)=ℝⁿ.  Our goal in the next lectures will be to understand how C(A) and N(A) relate to each other (and another two important subspaces) and to the *elimination* process on A, and then use this to find more systematic ways to compute/describe them.
 
-**Further reading:** Textbook, sections 3.1 and 3.2.
+**Further reading:** Textbook, sections 3.1 and 3.2; Strang [video lecture 6](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-6-column-space-and-nullspace/).
 
 ## Exam 1 (Sep 25, 11am in 50-340)
 
