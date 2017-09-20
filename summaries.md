@@ -185,6 +185,9 @@ free columns.  Showed that the null space is preserved by elimination, so that N
 
 **Further reading:** Textbook, sections 3.2-3.3.  OCW video [lecture 6](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-6-column-space-and-nullspace/), [lecture 7](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-7-solving-ax-0-pivot-variables-special-solutions/)
 
+## Lecture 8 (Sep 22)
+
+Reduced row echelon form R, the null space, linear independence, and the complete solution to a linear system Ax=b.
 
 ## Optional Exam 1 Review (Friday Sep 22, 4–5pm in 4-163)
 
