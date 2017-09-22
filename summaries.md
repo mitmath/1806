@@ -208,6 +208,8 @@ Not every matrix is so nice, however.   I gave another 3×6 example matrix A (fr
 
 In this optional review session, we'll just go over a few practice problems from past exams.  (The specific practice problems will be posted here after the review.)
 
+* Practice problems covered (all from exam 1 of previous terms, see links below for solutions): fall 2008 problem 1, fall 2012 problem 2, fall 2012 problem 3, spring 2017 problem 4, fall 2014 problem 1, part of fall 2009 problem 1 (finding A⁻¹ from A=LU), spring 2017 problem 3a. 
+
 ## Exam 1 (Sep 25, 11am in 50-340)
 
 Exam 1 will cover the material through **lecture 6**: matrix-vector operations, matrix multiplication interpretations, writing/working with equations in matrix form, solving systems of equations with one or more right-hand side, Gaussian elimination, back/forward-substitution and triangular matrices, LU factorization and PA=LU, permutation matrices, matrix inverses and Gauss–Jordan, singular matrices, computational costs (which operations are ~ m² or ~ m³ and arranging calculations efficiently), rank of a matrix (= numbrer of pivots).  Some basics of column space C(A) and nullspace N(A) and subspaces: what it means to be a subspace (i.e. what things are subspaces and what aren't), and what the meanings of C(A) and N(A) are (but *not* how to find a basis).
