@@ -268,7 +268,7 @@ the columns of R or U where the pivots appear) are a basis for C(A).
 
 It follows that the dimension of C(A) is exactly rank(A).
 
-###Four cases for Ax=b
+### Four cases for Ax=b
 
 Went through four important cases for an m×n matrix A of rank r.  (Note that we must have r ≤ m and n: you can't have more pivots than there are rows or columns.)
 
