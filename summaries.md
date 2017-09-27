@@ -208,7 +208,7 @@ Not every matrix is so nice, however.   I gave another 3×6 example matrix A (fr
 
 In this optional review session, we'll just go over a few practice problems from past exams.  (The specific practice problems will be posted here after the review.)
 
-* Practice problems covered (all from exam 1 of previous terms, see links below for solutions): fall 2008 problem 1, fall 2012 problem 2, fall 2012 problem 3, spring 2017 problem 4, fall 2014 problem 1, part of fall 2009 problem 1 (finding A⁻¹ from A=LU), spring 2017 problem 3a. 
+* Practice problems covered (all from exam 1 of previous terms, see links below for solutions): fall 2008 problem 1, fall 2012 problem 2, fall 2012 problem 3, spring 2017 problem 4, fall 2014 problem 1, part of fall 2009 problem 1 (finding A⁻¹ from A=LU), spring 2017 problem 3a.
 
 ## Exam 1 (Sep 25, 11am in 50-340)
 
@@ -225,3 +225,78 @@ Practice problems: [spring 2017 exam 1](http://web.mit.edu/18.06/www/Spring17/ex
 [fall 2009 exam 1](http://web.mit.edu/18.06/www/Fall09/exam1.pdf) problems 1, 2 ([solutions](http://web.mit.edu/18.06/www/Fall09/exam1soln.pdf));
 [spring 2008 exam 1](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08.pdf) problems 1, 3
 ([solutions](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08-soln.pdf))
+
+## Lecture 9 (Sep 27)
+
+* [pset 3 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset3-sol.ipynb)
+* pset 4 to be posted shortly
+
+## Linear independence and a basis for C(A)
+
+Started talking about bases, dimension, and independence.   Earlier, I defined a basis as a minimal set of vectors whose span gives an entire vector space, and the dimension of the space as the size of the basis.  Now, we want to think more carefully about the term "minimal".   If we have too many vectors in our basis, the problem is that some of the vectors might be redundant (you can get them from the other basis vectors).  We now rephrase this as saying that such vectors are *linearly dependent*: some linear combination (with nonzero multipliers) of them gives the zero vector, and we want every basis to be **linearly independent**.    The **dimension** of a subspace is still the number of basis vectors.
+
+What does it mean to be linearly independent?  Given a set of n vectors {x₁, ⋯, xₙ}, if we matrix a matrix X whose columns
+are x₁⋯xₙ, then C(X) is precisely the span of x₁⋯xₙ.   To check whether
+the x₁⋯xₙ form a *basis* for C(X), we need to check whether they
+are *linearly independent*.  There are three equivalent ways to think about
+this:
+
+1. We want to make sure that none of x₁⋯xₙ are "redundant": make sure
+   that no xⱼ can be made from a linear combination of the other xᵢ's.
+
+2. Equivalently, we don't want any linear combination of x₁⋯xₙ to give
+   zero unless all the coefficients are zero.
+
+3. Equivalently, we want N(X) = {0}.
+
+In this way, we reduced the concept of independence to thinking about the
+null space.
+
+Exploited this insight in order to determine how elimination on a matrix
+A relates to C(A).  Because elimination corresponds to multiplying A on
+the left, it changes the column space: C(A) ≠ C(U) ≠ C(R) in general.
+However, to find a basis for C(A), what we need to know is which columns
+of A are dependent/independent.  From above, showed that some columns
+of A are dependent if there is a vector in N(A) that is nonzero only in
+components corresponding to those columns.   But since N(A) = N(U) = N(R),
+we see an important fact: *columns of A are dependent/independent if and
+only if the corresponding columns of R are dependent/independent*.
+By looking at R, we can see by inspection that the *pivot columns* form
+a maximal set of independent vectors, and hence are a basis for C(R).
+Hence, the *pivot columns of A* (i.e. the columns of A corresponding to
+the columns of R or U where the pivots appear) are a basis for C(A).
+
+It follows that the dimension of C(A) is exactly rank(A).
+
+## Four cases for Ax=b
+
+Went through four important cases for an m×n matrix A of rank r.  (Note that we must have r ≤ m and n: you can't have more pivots than there are rows or columns.)
+
+1. If r=n, then A has **full column rank**.  We must have m ≥ n (it must be a "tall" matrix), and N(A)={0} (there are no free columns).  Hence, any solution to Ax=b (if it exists at all) must be *unique*.
+
+2. If r=m, then A has **full row rank**.  We must have n ≥ m (it must be a "wide" matrix), and C(A)=ℝᵐ.  Ax=b is *always solvable* (but the solution will not be unique unless m=n).
+
+3. If r=m=n, then A is a square **invertible** matrix.  Ax=b is always solvable and the solution x=A⁻¹b is unique.
+
+4. If r < m and r < n, then A is **rank deficient**.  Solutions to Ax=b may not exist and will not be unique if they do exist.
+
+Cases (1)-(3) are called **full rank**: the rank is as big as possible given the shape of A.  In practice, most matrices that one encounters are full rank (this is essentially always true for *random* matrices).  If the matrix is rank deficient, it usually arises from some special structure of the problem (i.e. you usually want to look at where A came from to help you figure out why it is rank deficient, rather than computing the rank etcetera by mindless calculation).   (A separate problem is that of matrices that are *nearly* rank deficient because the pivots are very small, but the right tools to analyze this case won't come up until near the end of the course).
+
+## Transposes and dot products
+
+Reviewed the dot product or **inner product** of two column vectors, x⋅y, defined as ∑ᵢxᵢyᵢ.  In linear-algebra terms, we write this as x⋅y=xᵀy in terms of the *transpose* of the vector x: if x is a column vector, xᵀ is a row vector (sometimes more technically called a "dual" vector).  The *length* (or **norm**) of a vector is is the square root of the dot product with itself: ‖x‖=√xᵀx.
+
+Most of you have seen the definition of a matrix transpose Aᵀ before: you turn rows into columns or vice versa.  But the *reason* that this is an important operation (as opposed to, say, rotating a matrix by 90°) is that it is connected to dot products: Aᵀ is defined precisely so that xᵀAy = x⋅(Ay) = (Aᵀx)⋅y = (Aᵀx)ᵀy: transposes move matrices from one side to the other in an inner product.  Swapping rows and columns is actually obtained as a *consequence* of this property.  Another consequence is the important identity (AB)ᵀ=BᵀAᵀ.
+
+Because of this relationship, whenever we transpose a matrix in linear algebra, there will usually be a dot product lurking somewhere nearby.
+
+## Two more subspaces
+
+The reason we are introducing transposes now is that we are missing two important subspaces, which turn out to be
+the **row space** C(Aᵀ) and the **left nullspace** N(Aᵀ).
+
+As usual with transposes, we expect to find a dot product somewhere, and in this case we will see that it is because the row space and the left nullspace are *orthogonal* to N(A) and C(A), respectively.
+
+More on these next lecture!
+
+**Further reading:** Textbook sections 3.4, 2.7.  [video lecture 5](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/), [lecture 9](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-9-independence-basis-and-dimension/).
