@@ -231,7 +231,7 @@ Practice problems: [spring 2017 exam 1](http://web.mit.edu/18.06/www/Spring17/ex
 * [pset 3 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset3-sol.ipynb)
 * pset 4 to be posted shortly
 
-## Linear independence and a basis for C(A)
+### Linear independence and a basis for C(A)
 
 Started talking about bases, dimension, and independence.   Earlier, I defined a basis as a minimal set of vectors whose span gives an entire vector space, and the dimension of the space as the size of the basis.  Now, we want to think more carefully about the term "minimal".   If we have too many vectors in our basis, the problem is that some of the vectors might be redundant (you can get them from the other basis vectors).  We now rephrase this as saying that such vectors are *linearly dependent*: some linear combination (with nonzero multipliers) of them gives the zero vector, and we want every basis to be **linearly independent**.    The **dimension** of a subspace is still the number of basis vectors.
 
@@ -268,7 +268,7 @@ the columns of R or U where the pivots appear) are a basis for C(A).
 
 It follows that the dimension of C(A) is exactly rank(A).
 
-## Four cases for Ax=b
+###Four cases for Ax=b
 
 Went through four important cases for an m×n matrix A of rank r.  (Note that we must have r ≤ m and n: you can't have more pivots than there are rows or columns.)
 
@@ -282,7 +282,7 @@ Went through four important cases for an m×n matrix A of rank r.  (Note that we
 
 Cases (1)-(3) are called **full rank**: the rank is as big as possible given the shape of A.  In practice, most matrices that one encounters are full rank (this is essentially always true for *random* matrices).  If the matrix is rank deficient, it usually arises from some special structure of the problem (i.e. you usually want to look at where A came from to help you figure out why it is rank deficient, rather than computing the rank etcetera by mindless calculation).   (A separate problem is that of matrices that are *nearly* rank deficient because the pivots are very small, but the right tools to analyze this case won't come up until near the end of the course).
 
-## Transposes and dot products
+### Transposes and dot products
 
 Reviewed the dot product or **inner product** of two column vectors, x⋅y, defined as ∑ᵢxᵢyᵢ.  In linear-algebra terms, we write this as x⋅y=xᵀy in terms of the *transpose* of the vector x: if x is a column vector, xᵀ is a row vector (sometimes more technically called a "dual" vector).  The *length* (or **norm**) of a vector is is the square root of the dot product with itself: ‖x‖=√xᵀx.
 
@@ -290,7 +290,7 @@ Most of you have seen the definition of a matrix transpose Aᵀ before: you turn
 
 Because of this relationship, whenever we transpose a matrix in linear algebra, there will usually be a dot product lurking somewhere nearby.
 
-## Two more subspaces
+### Two more subspaces
 
 The reason we are introducing transposes now is that we are missing two important subspaces, which turn out to be
 the **row space** C(Aᵀ) and the **left nullspace** N(Aᵀ).
