@@ -231,7 +231,7 @@ Practice problems: [spring 2017 exam 1](http://web.mit.edu/18.06/www/Spring17/ex
 ## Lecture 9 (Sep 27)
 
 * [pset 3 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset3-sol.ipynb)
-* pset 4 to be posted shortly
+* [pset 4](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset4.ipynb) (due Wed Oct 4)
 
 ### Linear independence and a basis for C(A)
 
