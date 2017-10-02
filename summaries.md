@@ -323,7 +323,7 @@ would get the *same number of pivots*.)
 Showed that these subspaces are **orthogonal complements**, defining the orthogonal complement S<sup>⟂</sup> of a subspace S as
 {x such that xᵀy=0 for all y ∈ S}.  In particular, N(Aᵀ)=C(A)<sup>⟂</sup> and N(A)=C(Aᵀ)<sup>⟂</sup>.  This is why their dimensions sum to m and n, respectively: combining a basis for S and S<sup>⟂</sup> gives a basis for the whole vector space.
 
-In particular, showed explicitly that if y is orthogonal to every vector in C(A), then y is necessarily in N(Aᵀ) (and vice versa), hence C(A) and N(Aᵀ) are orthogonal complements.   (The reasoning for C(Aᵀ) and N(A) is identical: just replace A with Aᵀ.)
+In particular, showed explicitly that if x is orthogonal to every vector in C(A), then x is necessarily in N(Aᵀ) (and vice versa), hence C(A) and N(Aᵀ) are orthogonal complements.   (The reasoning for C(Aᵀ) and N(A) is identical: just replace A with Aᵀ.)
 
 This often gives an nice way to check if a vector is in C(A): b is in C(A) if and only if b is orthogonal to N(Aᵀ) (or to a basis thereof).   Gave an example where C(A) is a plane in ℝ³, N(Aᵀ) is the line through 0 orthogonal to that plane, and the equation for b ∈ C(A) was yᵀb=0 for a y ∈ N(Aᵀ).
 
