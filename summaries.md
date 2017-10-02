@@ -302,3 +302,32 @@ As usual with transposes, we expect to find a dot product somewhere, and in this
 More on these next lecture!
 
 **Further reading:** Textbook sections 3.4, 2.7.  [video lecture 5](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/), [lecture 9](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-9-independence-basis-and-dimension/).
+
+## Lecture 10 (Oct 2)
+
+In summary, for an m×n matrix A of rank r, we find the **four fundamental subspaces**:
+
+* column space C(A) ⊆ ℝᵐ, dimension r
+* left nullspace N(Aᵀ) ⊆ ℝᵐ, dimension m-r
+* row space C(Aᵀ) ⊆ ℝⁿ, dimension r
+* nullspace N(A) ⊆ ℝⁿ, dimension n-r
+
+In particular, since elimination multiplies A on the *left*, it multiplies Aᵀ on the *right*
+by an invertible matrix.  Therefore, C(Aᵀ) = C(Rᵀ), and the *pivot rows of
+R* are a basis for C(Aᵀ).   More importantly, this tells us a very non-obvious
+fact: rank(Aᵀ) = rank(A).   (That is, if you did elimination on Aᵀ, you
+would get the *same number of pivots*.)
+
+(Finding a basis for N(Aᵀ) is not so nice, because the left nullspace is *not* preserved by elimination on A.  If R=EA, and x∈N(Rᵀ), then Eᵀx∈N(Aᵀ): we have to re-do the elimination steps on x.  For humans, it might be easier just to re-do elimination on Aᵀ to find its nullspace in the familiar way.)
+
+Showed that these subspaces are **orthogonal complements**, defining the orthogonal complement S<sup>⟂</sup> of a subspace S as
+{x such that xᵀy=0 for all y ∈ S}.  In particular, N(Aᵀ)=C(A)<sup>⟂</sup> and N(A)=C(Aᵀ)<sup>⟂</sup>.  This is why their dimensions sum to m and n, respectively: combining a basis for S and S<sup>⟂</sup> gives a basis for the whole vector space.
+
+In particular, showed explicitly that if y is orthogonal to every vector in C(A), then y is necessarily in N(Aᵀ) (and vice versa), hence C(A) and N(Aᵀ) are orthogonal complements.   (The reasoning for C(Aᵀ) and N(A) is identical: just replace A with Aᵀ.)
+
+This often gives an nice way to check if a vector is in C(A): b is in C(A) if and only if b is orthogonal to N(Aᵀ) (or to a basis thereof).   Gave an example where C(A) is a plane in ℝ³, N(Aᵀ) is the line through 0 orthogonal to that plane, and the equation for b ∈ C(A) was yᵀb=0 for a y ∈ N(Aᵀ).
+
+As another example, considered **rank-1 matrices** uvᵀ for u∈ℝᵐ and v∈ℝⁿ: if u and v are nonzero, then uvᵀ is an m×n matrix of rank 1.   This is easy to see: every column is a multiple of u, so C(uvᵀ)=C(u) is 1d, and similarly the row space is the 1d subspace spanned by v.  Since the dimension of the column/row space is the rank, then the rank is 1.
+
+**Further reading:** Textbook sections 3.5, 4.1; video
+[lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/), video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/)
