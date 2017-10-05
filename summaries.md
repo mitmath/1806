@@ -334,7 +334,7 @@ As another example, considered **rank-1 matrices** uvᵀ for u∈ℝᵐ and v∈
 
 ## Lecture 11 (March 8)
 
-* pset 4 solutions (coming soon)
+* [pset 4 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset4-sol.ipynb)
 
 * pset 5 (coming soon)
 
