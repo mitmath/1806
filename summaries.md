@@ -336,7 +336,7 @@ As another example, considered **rank-1 matrices** uvᵀ for u∈ℝᵐ and v∈
 
 * [pset 4 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset4-sol.ipynb)
 
-* pset 5 (coming soon)
+* [pset 5](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset5.ipynb)
 
 * [Graphs and networks notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Graphs-Networks.ipynb)
 
