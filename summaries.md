@@ -352,7 +352,7 @@ The key point of this lecture is that *linear* algebra can even be used to solve
 
 ## Lecture 13 (October 11)
 
-* pset 5 solutions (coming soon)
+* [pset 5 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset5-sol.ipynb)
 * pset 6 (coming soon)
 * [Least-square fitting notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Least-Square%20Fitting.ipynb)
 
