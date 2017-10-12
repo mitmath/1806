@@ -353,7 +353,7 @@ The key point of this lecture is that *linear* algebra can even be used to solve
 ## Lecture 13 (October 11)
 
 * [pset 5 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset5-sol.ipynb)
-* pset 6 (coming soon)
+* [pset 6](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset6.ipynb)
 * [Least-square fitting notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Least-Square%20Fitting.ipynb)
 
 Introduced the topic of least-square fitting of data to curves.  As long as the fitting function is linear in the unknown coefficients x, showed that minimizing the sum of the squares of the errors corresponds to minimizing the norm of the residual ‖b-Ax‖.   By straightforward (if somewhat tedious) calculus, found that this corresponds to solving the **normal equations** AᵀAx̂=Aᵀb for the fit coefficients x̂.  And we have enough linear algebra tools now to show that these equations are always solvable (uniquely if A has full column rank).
