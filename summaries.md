@@ -364,4 +364,11 @@ Introduced the topic of least-square fitting of data to curves.  As long as the 
 
 Orthogonal projection onto C(A) and other subspaces, and the projection matrix P.
 
+* Projection P = aaᵀ/aᵀa onto 1d subspaces with a basis vector a.
+* Projection P = A(AᵀA)⁻¹Aᵀ onto n-dimensional subspaces C(A), where A is m×n with full column rank (rank n).
+* Equivalence between orthogonal projection and least-squares: minimizing ‖b-Ax‖ is equivalent to minimizing ‖b-y‖ over y∈C(A), and the solution is y=Ax̂=Pb, where AᵀAx̂=Aᵀb as before.
+* Key properties P²=P, P=Pᵀ.
+* Projection I-P onto the orthogonal complement of C(A), i.e onto N(Aᵀ).
+* Projection P = B(BᵀB)⁻¹Bᵀ onto an arbitrary subspace, where B is a matrix whose columns are the basis vectors.  For example, if A is not full column rank, we can make a new matrix B out of the pivot columns and use B(BᵀB)⁻¹Bᵀ to project onto C(A)=C(B).
+
 **Further reading:** Strang, section 4.2, and video [lecture 15](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-15-projections-onto-subspaces/).
