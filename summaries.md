@@ -382,7 +382,7 @@ Orthonormal bases, matrices Q with orthonormal columns q₁,q₂,… (QᵀQ = I)
 * The projection matrix onto C(Q) is just QQᵀ=q₁q₁ᵀ+q₂q₂ᵀ+⋯.  (The rank-1 matrix q₁q₁ᵀ is projection onto the line αq₁.)  In general, the **q component of a vector can be found just by a dot product.**
   - Similarly, the least-squares solution x̂ minimizing ‖b-Qx‖ is just x̂=Qᵀb.
 
-If a matrix Q is square, then it is called **orthogonal** (or **unitary**).
+If a matrix Q with orthonormal columns is square, then it is called **orthogonal** (or **unitary**).
 
 * In this case, QᵀQ=I means that Qᵀ = Q⁻¹.
   - It also follows that QQᵀ = I: a unitary matrix has orthonormal rows *and* columns.
