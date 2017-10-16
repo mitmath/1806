@@ -372,3 +372,37 @@ Orthogonal projection onto C(A) and other subspaces, and the projection matrix P
 * Projection P = B(BᵀB)⁻¹Bᵀ onto an arbitrary subspace, where B is a matrix whose columns are the basis vectors.  For example, if A is not full column rank, we can make a new matrix B out of the pivot columns and use B(BᵀB)⁻¹Bᵀ to project onto C(A)=C(B).
 
 **Further reading:** Strang, section 4.2, and video [lecture 15](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-15-projections-onto-subspaces/).
+
+## Lecture 15 (October 16)
+
+Orthonormal bases, matrices Q with orthonormal columns q₁,q₂,… (QᵀQ = I):
+
+* Saying that the columns of Q are orthonormal vectors is *equivalent* to saying QᵀQ = I.
+  - It follows that ‖Qx‖=‖x‖, and more generally (Qx)ᵀ(Qy) = xᵀy: dot products and lengths are preserved.
+* The projection matrix onto C(Q) is just QQᵀ=q₁q₁ᵀ+q₂q₂ᵀ+⋯.  (The rank-1 matrix q₁q₁ᵀ is projection onto the line αq₁.)  In general, the **q component of a vector can be found just by a dot product.**
+  - Similarly, the least-squares solution x̂ minimizing ‖b-Qx‖ is just x̂=Qᵀb.
+
+If a matrix Q is square, then it is called **orthogonal** (or **unitary**).
+
+* In this case, QᵀQ=I means that Qᵀ = Q⁻¹.
+  - It also follows that QQᵀ = I: a unitary matrix has orthonormal rows *and* columns.
+* One way of looking at this: **to change "coordinates" to an orthonormal basis just involves dot products.**
+  - If you have a non-orthonormal basis a₁,a₂,…, then to write an arbitrary vector b in this basis, i.e. b = a₁x₁ + a₂x₂ + ⋯ with coefficients x₁,x₂,…, then you need to solve a linear system Ax=b for x.  Hard!  (∼m³).
+  - For an orthonormal basis q₁,q₂,… then to write b = q₁x₁ + q₂x₂ + ⋯ you can **just take dot products** x=Qᵀb.  For example, if you take the dot product q₁ᵀb, then you get x₁ (the coefficient of q₁), because all the other terms have dot product *zero*.
+
+Gram-Schmidt orthogonalization: given a non-orthonormal basis a₁,a₂,…, we can *convert* it to an orthonormal basis that **spans the same space**.  All we do is to **take each vector and subtract the projections onto the previous vectors** to make them orthogonal, and divide by their lengths to normalize them.
+
+* Conceptually, it is clearest to go directly from a₁,a₂,… to q₁,q₂,…:
+  - q₁ = a₁ / ‖a₁‖
+  - q₂ = (a₂ - q₁q₁ᵀa₂) / ‖⋯‖: subtract the projection q₁q₁ᵀa₂ of a₂ onto q₁ to make them orthogonal.
+  - q₃ = (a₃ - q₁q₁ᵀa₃ - q₂q₂ᵀa₃) / ‖⋯‖: subtract the projections of a₃ onto q₁ and q₂
+  - etcetera
+* For hand calculation, it is perhaps easier to defer square roots to the end: first we compute a basis v₁,v₂,… that is *orthogonal but not normalized* and then we normalize to q₁=v₁/‖v₁‖, q₂=v₂/‖v₂‖, etcetera at the end.
+  - v₁ = a₁
+  - v₂ = a₂ - v₁v₁ᵀa₂/v₁ᵀv₁
+  - v₃ = a₃ - v₁v₁ᵀa₃/v₁ᵀv₁ - v₂v₂ᵀa₃/v₂ᵀv₂
+  - etcetera ... note that the vᵢ vectors are still orthogonal, which is why projecting them is still easy, even though they are not normalized to have unit length.
+
+(The process described above and in the book is known as "classical" Gram-Schmidt.  In practice, the computer actually uses more sophisticated algorithms.  But classical Gram-Schmidt is still a good way to *think* about the process.
+
+**Further reading:** Strang, section 4.4, and video [lecture 17](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/).
