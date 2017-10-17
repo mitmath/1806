@@ -387,7 +387,7 @@ If a matrix Q with orthonormal columns is square, then it is called **orthogonal
 * In this case, QᵀQ=I means that Qᵀ = Q⁻¹.
   - It also follows that QQᵀ = I: a unitary matrix has orthonormal rows *and* columns.
 * One way of looking at this: **to change "coordinates" to an orthonormal basis just involves dot products.**
-  - If you have a non-orthonormal basis a₁,a₂,…, then to write an arbitrary vector b in this basis, i.e. b = a₁x₁ + a₂x₂ + ⋯ with coefficients x₁,x₂,…, then you need to solve a linear system Ax=b for x.  Hard!  (∼m³).
+  - If you have a non-orthonormal basis a₁,a₂,…, then to write an arbitrary vector b in this basis, i.e. b = a₁x₁ + a₂x₂ + ⋯ with coefficients x₁,x₂,…, you need to solve a linear system Ax=b for x.  Hard!  (∼m³).
   - For an orthonormal basis q₁,q₂,… then to write b = q₁x₁ + q₂x₂ + ⋯ you can **just take dot products** x=Qᵀb.  For example, if you take the dot product q₁ᵀb, then you get x₁ (the coefficient of q₁), because all the other terms have dot product *zero*.
 
 Gram-Schmidt orthogonalization: given a non-orthonormal basis a₁,a₂,…, we can *convert* it to an orthonormal basis that **spans the same space**.  All we do is to **take each vector and subtract the projections onto the previous vectors** to make them orthogonal, and divide by their lengths to normalize them.
