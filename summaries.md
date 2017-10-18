@@ -409,6 +409,9 @@ Gram-Schmidt orthogonalization: given a non-orthonormal basis a₁,a₂,…, we 
 
 ## Lecture 16 (October 18)
 
+* [pset 6 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset6-sol.ipynb)
+* pset 7 posted soon
+
 Writing Gram–Schmidt in matrix form: it turns out that what we are "really" doing is factoring A=QR, where Q is a matrix with orthonormal columns spanning C(A) and R is an invertible upper-triangular matrix.
 
 Using QR to solve the least-squares problem: given A=QR, the normal equations AᵀAx̂=Aᵀb turn into the triangular system of equations Rx̂=Qᵀb.
