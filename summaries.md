@@ -448,7 +448,7 @@ Explained determinants and their properties.  Considering how central a role det
 
 **Further reading:** Strang, section 5.1; video [lecture 18](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants).  (We will mostly skip Strang, section 5.2 and 5.3, because the formulas in those sections are nearly useless in computational settings for large matrices, as explained in the notebook.)
 
-## Optional Exam 2 Review (Thursday Oct 26, 4–5pm, location TBA)
+## Optional Exam 2 Review (Thursday Oct 26, 4–5pm, room 4-370)
 
 In this optional review session, we'll just go over a few practice problems from past exams.  (The specific practice problems will be posted here after the review.)
 
