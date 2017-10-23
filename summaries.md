@@ -438,7 +438,7 @@ Orthogonal and orthonormal bases of functions.  See the notebooks for two exampl
 
 **Further reading:** Strang, section 10.5 (Fourier series), these [18.06 sine-series notes](http://web.mit.edu/18.06/www/Spring09/sines.pdf), these [TAMU notes on orthogonal polynomials](http://www.math.tamu.edu/~yvorobet/MATH304-503/Lect4-04web.pdf) and [these 18.06 notes on orthogonal polynomials](http://web.mit.edu/18.06/www/Spring09/legendre.pdf).
 
-## Optional Exam 1 Review (Thursday Oct 26, 4–5pm, location TBA)
+## Optional Exam 2 Review (Thursday Oct 26, 4–5pm, location TBA)
 
 In this optional review session, we'll just go over a few practice problems from past exams.  (The specific practice problems will be posted here after the review.)
 
