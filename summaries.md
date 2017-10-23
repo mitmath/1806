@@ -437,3 +437,17 @@ Another wonderful and far-reaching application of these ideas is to realize that
 Orthogonal and orthonormal bases of functions.  See the notebooks for two examples: orthogonal polynomials called [Legendre polynomials](https://en.wikipedia.org/wiki/Legendre_polynomials) and the [Fourier sine series](https://en.wikipedia.org/wiki/Fourier_sine_and_cosine_series).
 
 **Further reading:** Strang, section 10.5 (Fourier series), these [18.06 sine-series notes](http://web.mit.edu/18.06/www/Spring09/sines.pdf), these [TAMU notes on orthogonal polynomials](http://www.math.tamu.edu/~yvorobet/MATH304-503/Lect4-04web.pdf) and [these 18.06 notes on orthogonal polynomials](http://web.mit.edu/18.06/www/Spring09/legendre.pdf).
+
+## Optional Exam 1 Review (Thursday Oct 26, 4–5pm, location TBA)
+
+In this optional review session, we'll just go over a few practice problems from past exams.  (The specific practice problems will be posted here after the review.)
+
+## Exam 2 (Oct 30, 11am in 50-340)
+
+Exam 2 will cover the material through **lecture 17** and **pset 7**: exam-1 material, four fundamental subspaces (relationships among, dimensions/bases of, & connections to Ax=b), full row/col rank vs. rank-deficient A, solvability of and complete solutions to Ax=b, rref form, linear independence, transposes and dot products, rank-1 matrices xyᵀ, orthogonal subspaces/complements, projections, least-square solutions, orthogonal/orthonormal bases, Gram–Schmidt and QR factorization, graphs and incidence matrix.
+
+*Not covered:* Physics (e.g. Kirchhoff's laws … but if you are *given* an equation from physics etcetera, you should of course be able to translate it into linear-algebra form), Newton's method, dot products of functions and orthogonal functions.
+
+*Note:* The average on exam 2 is typically quite a bit lower than on exam 1.  We take this into account in the grading, but don't be complacent if you did well on exam 1!  Exam 2 contains a lot of new material even for people who had seen some linear algebra before.
+
+**Practice problems:** coming soon.
