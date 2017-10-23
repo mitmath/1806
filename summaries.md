@@ -452,7 +452,7 @@ In this optional review session, we'll just go over a few practice problems from
 
 ## Exam 2 (Oct 30, 11am in 50-340)
 
-Exam 2 will cover the material through **lecture 17** and **pset 7**: exam-1 material, four fundamental subspaces (relationships among, dimensions/bases of, & connections to Ax=b), full row/col rank vs. rank-deficient A, solvability of and complete solutions to Ax=b, rref form, linear independence, transposes and dot products, rank-1 matrices xyᵀ, orthogonal subspaces/complements, projections, least-square solutions, orthogonal/orthonormal bases, Gram–Schmidt and QR factorization, graphs and incidence matrix.
+Exam 2 will cover the material through **lecture 17** and **pset 7**: exam-1 material, four fundamental subspaces (relationships among, dimensions/bases of, & connections to Ax=b), full row/col rank vs. rank-deficient A, solvability of and complete solutions to Ax=b, rref form, linear independence, transposes and dot products, rank-1 matrices xyᵀ, orthogonal subspaces/complements, projections, least-square solutions, orthogonal/orthonormal bases, Gram–Schmidt and QR factorization, graphs and incidence matrix, derivatives of matrix/vector expressions.
 
 *Not covered:* Physics (e.g. Kirchhoff's laws … but if you are *given* an equation from physics etcetera, you should of course be able to translate it into linear-algebra form), Newton's method, dot products of functions and orthogonal functions.
 
