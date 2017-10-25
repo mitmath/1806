@@ -448,6 +448,26 @@ Explained determinants and their properties.  Considering how central a role det
 
 **Further reading:** Strang, section 5.1; video [lecture 18](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants).  (We will mostly skip Strang, section 5.2 and 5.3, because the formulas in those sections are nearly useless in computational settings for large matrices, as explained in the notebook.)
 
+## Lecture 19 (October 24)
+
+Finished determinant notebook: det(A)=det(Aᵀ), and outlined the "big permutation formula" for determinants.  This last formula is not normally used for computing determinants (except maybe for 2×2 and 3×3), but is useful conceptually (e.g. it tells us that the determinant of an integer matrix is an integer).
+
+Started on our main topic for exam 3, **eigenvalues and eigenvectors**.  The goal, for an m×m matrix A, is to find a "magic" vector x≠0 such that Ax=λx: for this special "eigenvector", the **matrix acts just like a scalar** λ (the "eigenvalue").   For such a vector, all of linear algebra would become trivially easy, for example A³x=λ³x and A⁻¹x=x/λ.
+
+The trick is to figure out for **what λ an eigenvector exists**, and the key is to realize that Ax=λx is equivalent to (A-λI)x=0: an **eigenvector is a nonzero vector in N(A-λI)**.  Such a nonzero nullspace vector only exists when A-λI is singular, or equivalently **det(A-λI)=0**.  This gives us a way to find eigenvalues λ, and then to find the corresponding eigenvectors x.
+
+Our "big permutation formula" is useful here: it tells us that det(A-λI) is a **polynomial of degree m** in λ, called the **characteristic polynomial**, and the eigenvalues are the **roots** of this polynomial.  This gives us a *lot* of information about eigenvalues.  In particular, I highlighted three points:
+
+* An **m×m** matrix A will typically have **m eigenvalues**, since a degree-m polynomial typically has m roots.  (It could have fewer eigenvalues, since sometimes you get repeated roots, but we will defer that unusual case until later.)
+
+* Even a **real matrix may have complex eigenvalues**, since real-coefficient polynomials may have complex roots.   We can't avoid complex numbers for much longer in 18.06!
+
+* Computing eigenvalues of large matrices is hard, as hard as computing roots of high-degree polynomials.  Mostly, in 18.06 we will avoid the question of how to find eigenvalues and eigenvectors — the computer gives them to us — and focus on how to *use* them and what their properties are.
+
+ - There is a [famous theorem](https://en.wikipedia.org/wiki/Abel%E2%80%93Ruffini_theorem) that there is no closed-form formula, like the quadratic formula, for the roots of polynomials of degree > 4.  Because of this, eigenvalue algorithms are intrinsically different than things like Gaussian elimination: instead of giving an "exact" answer in a finite number of steps, they only converge asymptotically towards the eigenvalues, giving you as many digits as you want but never quite giving an "exact" answer.
+
+ **Further reading:** Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).
+
 ## Optional Exam 2 Reviews (Thursday and Friday)
 
 There will be two optional review sessions for exam 2:
