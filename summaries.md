@@ -463,7 +463,6 @@ Our "big permutation formula" is useful here: it tells us that det(A-λI) is a *
 * Even a **real matrix may have complex eigenvalues**, since real-coefficient polynomials may have complex roots.   We can't avoid complex numbers for much longer in 18.06!
 
 * Computing eigenvalues of large matrices is hard, as hard as computing roots of high-degree polynomials.  Mostly, in 18.06 we will avoid the question of how to find eigenvalues and eigenvectors — the computer gives them to us — and focus on how to *use* them and what their properties are.
-
  - There is a [famous theorem](https://en.wikipedia.org/wiki/Abel%E2%80%93Ruffini_theorem) that there is no closed-form formula, like the quadratic formula, for the roots of polynomials of degree > 4.  Because of this, eigenvalue algorithms are intrinsically different than things like Gaussian elimination: instead of giving an "exact" answer in a finite number of steps, they only converge asymptotically towards the eigenvalues, giving you as many digits as you want but never quite giving an "exact" answer.
 
  **Further reading:** Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).
