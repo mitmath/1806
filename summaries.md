@@ -475,7 +475,7 @@ Our "big permutation formula" is useful here: it tells us that det(A-λI) is a *
 
 There will be two optional review sessions for exam 2:
 
-* Thursday Oct 26, 4–5pm, room 4-370 (S. G. Johnson).
+* Thursday Oct 26, 4–5pm, room 4-370 (S. G. Johnson).  Did spring 2014 exam 1 problem 2, spring 2009 exam 2 problem 3, spring 2017 exam 2 problem 3, and spring 2009 exam 2 problem 2.
 * Friday Oct 27, 4–5pm, room 2-449 (I. Vogt).
 
 In these optional review sessions, we'll mainly just go over a few practice problems from past exams.  (The specific practice problems will be posted here after the review.)
