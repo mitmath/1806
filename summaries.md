@@ -489,7 +489,11 @@ The actual way eigenvalues are computed is a topic for another class (e.g. 18.33
 in 18.06, we will focus mainly on their properties and usage.  The computer
 will mostly handle finding them.
 
-Diagonalization and the basis of eigenvectors.
+Started using the *basis* of eigenvectors:
+
+* The key way we use eigenvectors is to take *any* vector x and write it in the basis of eigenvectors xᵢ.  Then, for any linear operation involving A, you replace A by the number λᵢ when acting on each xᵢ.  Finally, you add up the eigenvectors.
+
+Applied this process to the 2×2 matrix from the notebook, expanding the vector x=(3,4)=2x₁+x₂.   Then, for example, A⁻¹ or A¹⁰⁰ or A⁻¹⁰⁰ acting on x just becomes λ⁻¹ or λ¹⁰⁰ or λ⁻¹⁰⁰ multiplying each eigenvector.    We can see that, for example, A¹⁰⁰x is approximately parallel to x₂ (the eigenvector with the biggest |λ|), and that Aⁿx blows up as n⟶+∞ and vanishes as n⟶-∞.  Matrix powers turn out to be incredibly useful, so we will spend more time on this in subsequent lectures.
 
 **Further reading:** Strang, sections 6.1 and 6.2; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/) and [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/)
 
