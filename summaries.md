@@ -453,7 +453,6 @@ Explained determinants and their properties.  Considering how central a role det
 * [pset 7 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset7-sol.ipynb)
 * pset 8 coming soon (due **Friday** November 3 at 11am)
 
-
 Finished determinant notebook: det(A)=det(Aᵀ), and outlined the "big permutation formula" for determinants.  This last formula is not normally used for computing determinants (except maybe for 2×2 and 3×3), but is useful conceptually (e.g. it tells us that the determinant of an integer matrix is an integer).
 
 Started on our main topic for exam 3, **eigenvalues and eigenvectors**.  The goal, for an m×m matrix A, is to find a "magic" vector x≠0 such that Ax=λx: for this special "eigenvector", the **matrix acts just like a scalar** λ (the "eigenvalue").   For such a vector, all of linear algebra would become trivially easy, for example A³x=λ³x and A⁻¹x=x/λ.
@@ -470,6 +469,29 @@ Our "big permutation formula" is useful here: it tells us that det(A-λI) is a *
   - There is a [famous theorem](https://en.wikipedia.org/wiki/Abel%E2%80%93Ruffini_theorem) that there is no closed-form formula, like the quadratic formula, for the roots of polynomials of degree > 4.  Because of this, eigenvalue algorithms are intrinsically different than things like Gaussian elimination: instead of giving an "exact" answer in a finite number of steps, they only converge asymptotically towards the eigenvalues, giving you as many digits as you want but never quite giving an "exact" answer.
 
  **Further reading:** Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).
+
+## Lecture 20 (October 26)
+
+* [Eigenvalues and polynomials](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Eigenvalue-Polynomials.ipynb)
+
+Reviewed eigenvalues, eigenvectors.
+
+The eigenvalues are the roots of the characteristic polynomial det(A–λI). This
+is a good way to *think* about eigenvalue problems (e.g. it tells you immediately
+to expect ≤ m eigenvalues, possibly complex, from an m×m matrix).  But it is not
+really a good way to compute them except for tiny (e.g. 2×2) matrices.
+
+In fact, it's actually the reverse: one of the best ways to compute roots of
+polynomials is to convert the polynomial into a matrix and find the eigenvalues.
+Showed how this is done, by constructing the *companion matrix* to a polynomial.
+
+The actual way eigenvalues are computed is a topic for another class (e.g. 18.335);
+in 18.06, we will focus mainly on their properties and usage.  The computer
+will mostly handle finding them.
+
+Diagonalization and the basis of eigenvectors.
+
+**Further reading:** Strang, sections 6.1 and 6.2; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/) and [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/)
 
 ## Optional Exam 2 Reviews (Thursday and Friday)
 
