@@ -451,7 +451,7 @@ Explained determinants and their properties.  Considering how central a role det
 ## Lecture 19 (October 24)
 
 * [pset 7 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset7-sol.ipynb)
-* pset 8 coming soon (due **Friday** November 3 at 11am)
+* [pset 8](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset8.ipynb) (due **Friday** November 3 at 11am)
 
 Finished determinant notebook: det(A)=det(Aᵀ), and outlined the "big permutation formula" for determinants.  This last formula is not normally used for computing determinants (except maybe for 2×2 and 3×3), but is useful conceptually (e.g. it tells us that the determinant of an integer matrix is an integer).
 
@@ -495,7 +495,7 @@ Started using the *basis* of eigenvectors:
 
 Applied this process to the 2×2 matrix from the notebook, expanding the vector x=(3,4)=2x₁+x₂.   Then, for example, A⁻¹ or A¹⁰⁰ or A⁻¹⁰⁰ acting on x just becomes λ⁻¹ or λ¹⁰⁰ or λ⁻¹⁰⁰ multiplying each eigenvector.    We can see that, for example, A¹⁰⁰x is approximately parallel to x₂ (the eigenvector with the biggest |λ|), and that Aⁿx blows up as n⟶+∞ and vanishes as n⟶-∞.  Matrix powers turn out to be incredibly useful, so we will spend more time on this in subsequent lectures.
 
-**Further reading:** Strang, sections 6.1 and 6.2; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/) and [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/)
+**Further reading:** Strang, section 6.1 and video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/)
 
 ## Optional Exam 2 Reviews (Thursday and Friday)
 
