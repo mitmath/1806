@@ -430,9 +430,9 @@ Another wonderful and far-reaching application of these ideas is to realize that
 
 ## Lecture 17 (October 20)
 
-* [Orthogonal polynomials](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Orthogonal-Polynomials.ipynb)
+* [Orthogonal polynomials](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Orthogonal-Polynomials.ipynb)
 
-* [Fourier sine series](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Sine-series.ipynb)
+* [Fourier sine series](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Sine-series.ipynb)
 
 Orthogonal and orthonormal bases of functions.  See the notebooks for two examples: orthogonal polynomials called [Legendre polynomials](https://en.wikipedia.org/wiki/Legendre_polynomials) and the [Fourier sine series](https://en.wikipedia.org/wiki/Fourier_sine_and_cosine_series).
 
@@ -472,7 +472,7 @@ Our "big permutation formula" is useful here: it tells us that det(A-λI) is a *
 
 ## Lecture 20 (October 26)
 
-* [Eigenvalues and polynomials](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Eigenvalue-Polynomials.ipynb)
+* [Eigenvalues and polynomials](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Eigenvalue-Polynomials.ipynb)
 
 Reviewed eigenvalues, eigenvectors.
 
@@ -515,3 +515,10 @@ Exam 2 will cover the material through **lecture 17** and **pset 7**: exam-1 mat
 *Note:* The average on exam 2 is typically quite a bit lower than on exam 1.  We take this into account in the grading, but don't be complacent if you did well on exam 1!  Exam 2 contains a lot of new material even for people who had seen some linear algebra before.
 
 **Practice problems:** [spring 2017 exam 2](http://web.mit.edu/18.06/www/Spring17/exam2.pdf)  ([solutions](http://web.mit.edu/18.06/www/Spring17/exam2-sol.pdf)) problems 1(b,c), 2, 3; [fall 2014 exam 1](http://web.mit.edu/18.06/www/Fall14/midterm1_F14.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall14/Midterm1solF14.pdf)) problems 3,4; [fall 2014 exam 2](http://web.mit.edu/18.06/www/Fall14/midterm2_F14.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall14/Midterm2solF14.pdf)) problem 1; [spring 2014 exam 1](http://web.mit.edu/18.06/www/Spring14/quiz_1_draft.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring14/quiz_1_solution.pdf)) problems 1–3; [spring 2014 exam 2](http://web.mit.edu/18.06/www/Spring14/quiz_2_draft.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring14/StrangExamAprilSolutions.pdf)) problems 1,2,4; [fall 2013 exam 1](http://web.mit.edu/18.06/www/Fall13/exam1_f13.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall13/exam1_f13_sol.pdf)) problem 2; [spring 2013 exam 1](http://web.mit.edu/18.06/www/Spring13/Exam1blank.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring13/Exam1.pdf)) problem  2; [spring 2013 exam 2](http://web.mit.edu/18.06/www/Spring13/Exam2blank.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring13/Exam2.pdf)) problems 1, 3; [fall 2012 exam 1](http://web.mit.edu/18.06/www/Fall12/Exam%201/quiz1-1806-f12.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall12/Exam%201/quiz1-1806-f12-solution.pdf)) problem 4; [fall 2012 exam 2](http://web.mit.edu/18.06/www/Fall12/Exam%202/quiz2-1806-f12.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall12/Exam%202/quiz2-1806-f12-sol.pdf)) problems 1,3,4; [spring 2009](http://web.mit.edu/18.06/www/Spring09/quiz1-s09.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring09/quiz1-s09-soln.pdf)) problem 3; [spring 2009 practice exam 2](http://web.mit.edu/18.06/www/Spring09/practice-quiz2-S09.pdf) problems 1–17; [spring 2009 exam 2](http://web.mit.edu/18.06/www/Spring09/quiz2-s09.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring09/quiz2-s09-soln.pdf)) problem 1–3
+
+## Lecture 21 (November 1)
+
+* [Diagonalization](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Diagonalization.ipynb)
+* [Fibonacci numbers](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Fibonacci.ipynb)
+
+**Further reading:** Strang, section 6.2; video [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/)
