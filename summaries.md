@@ -539,8 +539,8 @@ For a 2×2 matrix, it follows that det(A-λI)=λ²-λtr(A)+det(A), which is a us
 ## Lecture 22 (November 3)
 
 * [Fibonacci numbers](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Fibonacci.ipynb)
-* [Markov matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Markov.ipynb)
-* [Analyzing Chutes & Ladders](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Chutes-and-Ladders.ipynb)
+* [Markov matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Markov.ipynb)
+* [Analyzing Chutes & Ladders](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Chutes-and-Ladders.ipynb)
 
 Matrix powers, linear recurrences, [Markov matrices](https://en.wikipedia.org/wiki/Stochastic_matrix).
 
