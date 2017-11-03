@@ -541,10 +541,19 @@ For a 2×2 matrix, it follows that det(A-λI)=λ²-λtr(A)+det(A), which is a us
 * pset 8 solutions: coming soon
 * pset 9 (due **Wednesday** Nov. 8 at 11am): coming soon
 
-* [Fibonacci numbers](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Fibonacci.ipynb)
+* [Diagonalization](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Diagonalization.ipynb)
+* skipped: [Fibonacci numbers](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Fibonacci.ipynb)
 * [Markov matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Markov.ipynb)
-* [Analyzing Chutes & Ladders](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Chutes-and-Ladders.ipynb)
 
-Matrix powers, linear recurrences, [Markov matrices](https://en.wikipedia.org/wiki/Stochastic_matrix).
+Briefly reviewed diagonalization etcetera.   Showed a useful formula for 2×2 matrix calculations in terms of trace and determinant: for a 2×2 matrix A, the characteristic polynomial det(A-λI) is λ²-λ⋅tr(A)+det(A).
+
+Diagonalization of matrix powers (see notebook): Aⁿ=XΛⁿX⁻¹.  This even works for non-integer n!    As an example considered the **matrix square root**, a matrix √A such that √A squared gives A.  For a diagonalizable matrix, this is easy to find: we just use √A=X√ΛX⁻¹, where √Λ is the diagonal matrix with √λ on the diagonal.  Equivalently, for an eigenvector Ax=λx, √Ax=√λx: the matrix acts like a number λ, so √A acts like √λ on an eigenvector.   Used this to explicitly compute the square root of our 2×2 example matrix.
+
+Started discussing [Markov matrices](https://en.wikipedia.org/wiki/Stochastic_matrix).  Got through the notebook up to the point where we showed that there is a steady-state (λ=1) eigenvector.
 
 **Further reading:** Strang, sections 6.2, 8.3, video [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/), and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).
+
+## Lecture 23 (November 6)
+
+* [Markov matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Markov.ipynb)
+* [Analyzing Chutes & Ladders](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Chutes-and-Ladders.ipynb)
