@@ -538,7 +538,7 @@ For a 2×2 matrix, it follows that det(A-λI)=λ²-λtr(A)+det(A), which is a us
 
 ## Lecture 22 (November 3)
 
-* pset 8 solutions: coming soon
+* [pset 8 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset8-sol.ipynb)
 * pset 9 (due **Wednesday** Nov. 8 at 11am): coming soon
 
 * [Diagonalization](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Diagonalization.ipynb)
