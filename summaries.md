@@ -538,6 +538,9 @@ For a 2×2 matrix, it follows that det(A-λI)=λ²-λtr(A)+det(A), which is a us
 
 ## Lecture 22 (November 3)
 
+* pset 8 solutions: coming soon
+* pset 9 (due **Wednesday** Nov. 8 at 11am): coming soon
+
 * [Fibonacci numbers](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Fibonacci.ipynb)
 * [Markov matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Markov.ipynb)
 * [Analyzing Chutes & Ladders](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Chutes-and-Ladders.ipynb)
