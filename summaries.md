@@ -567,7 +567,7 @@ Spent a little time on an example of a Markov-matrix application: analyzing the 
 ## Lecture 24 (November 8)
 
 * [pset 9 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset9-sol.ipynb)
-* pset 10 coming soon (due Wednesday Nov. 15 at 11am)
+* [pset 10](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset10.ipynb)(due Wednesday Nov. 15 at 11am)
 
 * [Ordinary differential equations (ODEs)](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/ODEs.ipynb).
 
