@@ -590,6 +590,9 @@ Continued discussion of ODEs from last lecture, focusing now on oscillating solu
 
 ## Lecture 26 (November 15)
 
+* [pset 10 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset10-sol.ipynb)
+* pset 11 coming soon (due Wednesday Nov. 22 at 11am; electronic submission on Stellar is acceptable)
+
 Finished matrix-exponential notes from lecture 25.
 
 Began discussing **symmetric matrices**.  A real-symmetric matrix A
