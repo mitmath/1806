@@ -591,7 +591,7 @@ Continued discussion of ODEs from last lecture, focusing now on oscillating solu
 ## Lecture 26 (November 15)
 
 * [pset 10 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset10-sol.ipynb)
-* pset 11 coming soon (due Wednesday Nov. 22 at 11am; electronic submission on Stellar is acceptable)
+* [pset 11](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset11.ipynb) (due Wednesday Nov. 22 at 11am; electronic submission on Stellar is acceptable)
 
 Finished matrix-exponential notes from lecture 25.
 
@@ -613,7 +613,7 @@ To prove the facts claimed about symmetric matrices above, we need
 to generalize our notion of a "dot product" to complex vectors.  The "transpose"
 is actually not the right notion here.  Instead, we define:
 
-* xᴴ and Aᴴ are the **conjugate-transpose** of a vector or matrix (that is, you transpose and then take the complex conjugate of every element).  This is also called the [adjoint](https://en.wikipedia.org/wiki/Conjugate_transpose) operation.  *For a real matrix, the adjoint is the same as the transpose.*
+* xᴴ and Aᴴ are the **conjugate-transpose** of a vector or matrix (that is, you transpose and then take the complex conjugate of every element).  This is also called the ("Hermitian") [adjoint](https://en.wikipedia.org/wiki/Conjugate_transpose) operation.  *For a real matrix, the adjoint is the same as the transpose.*
 
 For complex vectors, the dot product x⋅y is xᴴy, *not* xᵀy.   And the length
 of a vector ‖x‖² = x⋅x = xᴴx.  Defined this way, it has the key property:
