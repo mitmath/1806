@@ -648,3 +648,13 @@ Since x≠0 for any eigenvector, we have xᴴx>0 and can divide by it to obtain
 the matrix A is real-symmetric.)
 
 **Further reading:** Strang, sections 6.3–6.4, 9.2; video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/), [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/), and [lecture 26](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/).
+
+## Exam 3 (Nov 27, 11am in 50-340)
+
+Exam 3 will cover the material through **lecture 27** and **pset 11**: exam-1 and exam-2 material, determinants, eigenvalues/eigenvectors, diagonalization, similar matrices, matrix powers and linear recurrences xₙ=Aⁿx₀, linear ODEs, matrix exponentials, complex matrices and the adjoint Aᴴ, real-symmetric/Hermitian matrices, positive-definite matrices.
+
+* Review session: Tuesday, Nov. 21, 4–5pm, location TBA.
+
+* Practice problems: TBA.
+
+* Exam and solutions: posted Nov. 29.
