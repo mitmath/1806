@@ -632,4 +632,16 @@ again the right thing is to *change every transpose (T) to adjoint (H)*:
 Again, for real matrices/vectors, the adjoint = the transpose, so everything
 we've done before is just a special case of the complex case with zero imaginary parts.
 
+## Hermitian and real-symmetric matrices
+
+Now, given a Hermitian matrix A=Aᴴ (= real-symmetric if A is real), we can
+easily prove that the eigenvalues are real.  Given an eigensolution Ax=λx, we
+just took the dot products of both sides with x:
+
+: xᴴAx=λxᴴx=(Aᴴx)ᴴx=(Ax)ᴴx=(λx)ᴴx=λ̄xᴴx
+
+Since x≠0 for any eigenvector, we have xᴴx>0 and can divide by it to obtain
+λ=λ̄, which means that **λ is real**.  (It follows that the eigenvector x is also real *if*
+the matrix A is real-symmetric.)
+
 **Further reading:** Strang, sections 6.3–6.4, 9.2; video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/), [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/), and [lecture 26](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/).
