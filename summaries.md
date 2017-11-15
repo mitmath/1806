@@ -579,7 +579,6 @@ Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki
 
 **Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).
 
-
 ## Lecture 25 (November 13)
 
 * [Matrix exponentials eᴬ](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Matrix-Exponentials.ipynb).
@@ -587,3 +586,50 @@ Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki
 Continued discussion of ODEs from last lecture, focusing now on oscillating solutions and complex eigenvalues λ (see notebook).   Then reformulated the solution of dx/dt=Ax in terms of the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential) eᴬᵗ, and discussed the properties of this fascinating and important matrix operation.
 
 **Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).
+
+
+## Lecture 26 (November 15)
+
+Finished matrix-exponential notes from lecture 25.
+
+Began discussing **symmetric matrices**.  A real-symmetric matrix A
+(i.e. a real A where A = Aᵀ), has three key properties:
+
+* All the eigenvalues λ are **real**.  (It follows that the eigenvectors are real too.)
+* Eigenvalues for different λ are **orthogonal** (and hence eigenvectors can be chosen to be **orthonormal**).
+* The matrix is always **diagonalizable** (no funny defective case).
+
+This is extremely important.  Just by looking at the *structure* of such a matrix,
+we learn a lot.   And symmetric matrices come up in lots of physics and engineering
+applications (e.g. we already saw the symmetric matrix AYAᵀ in circuit problems),
+and the properties above are often intimately related to crucial physical facts.
+
+## Complex matrices, vectors, and dot products: the adjoint H
+
+To prove the facts claimed about symmetric matrices above, we need
+to generalize our notion of a "dot product" to complex vectors.  The "transpose"
+is actually not the right notion here.  Instead, we define:
+
+* xᴴ and Aᴴ are the **conjugate-transpose** of a vector or matrix (that is, you transpose and then take the complex conjugate of every element).  This is also called the [adjoint](https://en.wikipedia.org/wiki/Conjugate_transpose) operation.  *For a real matrix, the adjoint is the same as the transpose.*
+
+For complex vectors, the dot product x⋅y is xᴴy, *not* xᵀy.   And the length
+of a vector ‖x‖² = x⋅x = xᴴx.  Defined this way, it has the key property:
+
+* ‖x‖² = x⋅x = ∑ᵢ|xᵢ|² ≥ 0, and = 0 only for x=0.
+
+If you look back at 18.06 and you change our real vectors to complex vectors, just
+change every transpose to an adjoint.  This includes for Gram-Schmidt and orthonormal
+bases!   And if you look back at 18.06 and change real matrices to complex matrices,
+again the right thing is to *change every transpose (T) to adjoint (H)*:
+
+* The normal equations for minimizing ‖Ax-b‖ are AᴴAx̂=Aᴴb.
+* If the columns of Q are orthonormal, then QᴴQ = I.
+* The projection matrix onto C(A) is A(AᴴA)⁻¹Aᴴ
+* The left nullspace is N(Aᴴ) ⟂ C(A), and N(A) ⟂ C(Aᴴ).
+* A square matrix Q with orthonormal columns (Q⁻¹=Qᴴ) is called **unitary**.  (Formerly "orthogonal".)
+* If A=Aᴴ, the matrix is called **Hermitian**.
+
+Again, for real matrices/vectors, the adjoint = the transpose, so everything
+we've done before is just a special case of the complex case with zero imaginary parts.
+
+**Further reading:** Strang, sections 6.3–6.4, 9.2; video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/), [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/), and [lecture 26](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/).
