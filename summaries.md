@@ -641,7 +641,7 @@ Now, given a Hermitian matrix A=Aᴴ (= real-symmetric if A is real), we can
 easily prove that the eigenvalues are real.  Given an eigensolution Ax=λx, we
 just took the dot products of both sides with x:
 
-: xᴴAx=λxᴴx=(Aᴴx)ᴴx=(Ax)ᴴx=(λx)ᴴx=λ̄xᴴx
+* xᴴAx=λxᴴx=(Aᴴx)ᴴx=(Ax)ᴴx=(λx)ᴴx=λ̄xᴴx
 
 Since x≠0 for any eigenvector, we have xᴴx>0 and can divide by it to obtain
 λ=λ̄, which means that **λ is real**.  (It follows that the eigenvector x is also real *if*
