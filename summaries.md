@@ -684,7 +684,7 @@ in an orthonormal basis is easy.*
 Gave some examples of how you could use this to more easily understand
 e.g. working out Aⁿx if A is Hermitian (or real-symmetric).
 
-## Positive-definite/semidefinite matrices
+### Positive-definite/semidefinite matrices
 
 A lot of Hermitian matrices in practice come in the form BᴴB (or BᵀB for real B)
 for some matrix B.  e.g. we have seen several of these already, in least-squares
