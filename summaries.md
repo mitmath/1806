@@ -607,7 +607,7 @@ we learn a lot.   And symmetric matrices come up in lots of physics and engineer
 applications (e.g. we already saw the symmetric matrix AYAᵀ in circuit problems),
 and the properties above are often intimately related to crucial physical facts.
 
-## Complex matrices, vectors, and dot products: the adjoint H
+### Complex matrices, vectors, and dot products: the adjoint H
 
 To prove the facts claimed about symmetric matrices above, we need
 to generalize our notion of a "dot product" to complex vectors.  The "transpose"
@@ -635,7 +635,7 @@ again the right thing is to *change every transpose (T) to adjoint (H)*:
 Again, for real matrices/vectors, the adjoint = the transpose, so everything
 we've done before is just a special case of the complex case with zero imaginary parts.
 
-## Hermitian and real-symmetric matrices
+### Hermitian and real-symmetric matrices
 
 Now, given a Hermitian matrix A=Aᴴ (= real-symmetric if A is real), we can
 easily prove that the eigenvalues are real.  Given an eigensolution Ax=λx, we
@@ -649,12 +649,76 @@ the matrix A is real-symmetric.)
 
 **Further reading:** Strang, sections 6.3–6.4, 9.2; video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/), [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/), and [lecture 26](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/).
 
+
+## Lecture 27 (November 17)
+
+Continued discussing **Hermitian matrices** A = Aᴴ.  (Real-symmetric matrices are a special case of this.)  These have three key properties.
+
+* All the eigenvalues λ are **real**.  (The eigenvectors are *not* generally real unless A is real.)_
+* The matrix is always **diagonalizable** (no funny defective case).
+* Eigenvalues for different λ are **orthogonal** (and hence eigenvectors can be chosen to be **an orthonormal basis**).
+
+We showed that λ is real in the previous lecture.
+
+Similarly, given two eigensolutions Ax₁=λ₁x₁ and Ax₂=λ₂x₂ with λ₁≠λ₂, we
+can take the dot product x₁ᴴAx₂=λ₂x₁ᴴx₂=⋯, and after a couple of lines
+we immediately found x₁ᴴx₂=0.  The **eigenvectors are orthogonal**, and
+they can be chosen (scaled) to be **orthonormal**.
+
+I didn't prove diagonalizability.  (There are various proofs you can easily find online.  See e.g. [this video](https://www.youtube.com/watch?v=_2gGqEGA_IY) if you are curious, but
+they seem slightly too tricky for 18.06.)
+
+Since a **Hermitian matrix has an orthonormal basis of eigenvectors**, we
+can call the eigenvectors q₁,q₂,⋯, and put them as the columns of a
+**unitary** matrix Q (= orthogonal if A is real).  (Formerly, we called this X.)
+We can write:
+
+* A = QΛQᴴ = ∑ₖ λₖqₖqₖᴴ
+
+Equivalently, to **expand an arbitrary vector x** in the eigenvector basis,
+we **just need to take dot products**.   Formerly, to write x=∑ₖcₖxₖ, to find
+the coefficients c we had to solve Xx=x, or c=X⁻¹x.   Now, to write x=∑ₖcₖqₖ,
+the coefficients are just **cₖ=qₖᴴx**, or x=∑ₖqₖ(qₖᴴx).  *Expressing a vector
+in an orthonormal basis is easy.*
+
+Gave some examples of how you could use this to more easily understand
+e.g. working out Aⁿx if A is Hermitian (or real-symmetric).
+
+## Positive-definite/semidefinite matrices
+
+A lot of Hermitian matrices in practice come in the form BᴴB (or BᵀB for real B)
+for some matrix B.  e.g. we have seen several of these already, in least-squares
+and circuit/graph problems.   Such matrices are not only Hermitian, but they
+are **positive-definite**.
+
+In particular, a positive-definite matrix A is a Hermitian matrix A=Aᴴ that
+*additionally* has the following *equivalent* properties:
+
+* All eigenvalues λ of A are > 0.
+* xᴴAx > 0 for *any* vector x≠0.
+* A = BᴴB for some full-column-rank matrix B
+* All the pivots are > 0 in Gaussian elimination of A.
+
+These are all *equivalent*: any one of these properties implies *all* of
+the other properties for a Hermitian A.   I proved a couple of the equivalencies,
+but not all; some more equivalencies are proved in the textbook.
+
+A positive **semidefinite** matrix is almost the same, except you replace
+"> 0" with "≥ 0", and A = BᴴB is positive semidefinite for *any* B (not necessarily full rank).  (The pivots are > 0, but A may be singular.)
+
+(There are also "negative definite" and "negative semidefinite" matrices, which
+are the same things except with the opposites signs, i.e. "< 0" or "≤ 0" above.)
+
+**Further reading:** Strang, sections 6.4–6.5, 9.2, and video [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/) and [lecture 26](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/).
+
 ## Exam 3 (Nov 27, 11am in 50-340)
 
 Exam 3 will cover the material through **lecture 27** and **pset 11**: exam-1 and exam-2 material, determinants, eigenvalues/eigenvectors, diagonalization, similar matrices, matrix powers and linear recurrences xₙ=Aⁿx₀, linear ODEs, matrix exponentials, complex matrices and the adjoint Aᴴ, real-symmetric/Hermitian matrices, positive-definite matrices.
 
+Not covered: SVD or singular values.
+
 * Review session: Tuesday, Nov. 21, 4–5pm, location TBA.
 
-* Practice problems: TBA.
+* Practice problems: [Spring 2009 exam 3](http://web.mit.edu/18.06/www/Spring09/examsS09.html); [Spring 2014 exam 3, problems 1–2](http://web.mit.edu/18.06/www/Spring14/oldS14.html) ([solutions](http://web.mit.edu/18.06/www/Spring09/quiz3-s09-soln.pdf)); [Fall 2013 exam 2, problem 3](http://web.mit.edu/18.06/www/Fall13/exam2_f13.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall13/exam2_f13_sol.pdf)); [Fall 2013 exam 3, problems 2–3](http://web.mit.edu/18.06/www/Fall13/oldF13.html) ([solutions](http://web.mit.edu/18.06/www/Fall13/exam3_f13_sol.pdf)); [Fall 2012 exam 3, problem 1](http://web.mit.edu/18.06/www/Fall12/oldF12.html) ([solutions](http://web.mit.edu/18.06/www/Fall12/Exam%203/quiz3-1806-f12-solution.pdf)); [Spring 2012 exam 3, problems 1, 2, 3a, 3b](http://web.mit.edu/18.06/www/Spring12/oldS12.html) ([solutions](http://web.mit.edu/18.06/www/Spring12/q3_sp12_sol.pdf)); [Fall 2011 exam 3, problems 1.1, 1.2, 3](http://web.mit.edu/18.06/www/Fall11/oldF11.html) ([solutions](http://web.mit.edu/18.06/www/Fall11/q3_f11_sol.pdf)); [Fall 2011 exam 2, problem 3](http://web.mit.edu/18.06/www/Fall11/q2_f11.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall11/q2_f11_sol.pdf)); [Fall 2007 exam 3](http://web.mit.edu/18.06/www/Fall07/examsF07.html) ([solutions](http://web.mit.edu/18.06/www/Fall07/quiz3-1806-F07-sol.pdf))
 
 * Exam and solutions: posted Nov. 29.
