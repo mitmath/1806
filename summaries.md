@@ -711,6 +711,15 @@ are the same things except with the opposites signs, i.e. "< 0" or "≤ 0" above
 
 **Further reading:** Strang, sections 6.4–6.5, 9.2, and video [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/) and [lecture 26](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/).
 
+# Lecture 28 (Nov 20)
+
+* [SVD](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/SVD.ipynb)
+
+The **singular value decomposition** (SVD), with application to image processing.
+
+**Further reading:** Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/)
+
+
 ## Exam 3 (Nov 27, 11am in 50-340)
 
 Exam 3 will cover the material through **lecture 27** and **pset 11**: exam-1 and exam-2 material, determinants, eigenvalues/eigenvectors, diagonalization, similar matrices, matrix powers and linear recurrences xₙ=Aⁿx₀, linear ODEs, matrix exponentials, complex matrices and the adjoint Aᴴ, real-symmetric/Hermitian matrices, positive-definite matrices.
