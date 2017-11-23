@@ -729,7 +729,7 @@ The **singular value decomposition** (SVD), with application to image processing
 
 # Lecture 29 (Nov 22)
 
-* pset 11 solutions: coming soon
+* [pset 11 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset11-sol.ipynb)
 * pset 12: no pset this week
 
 As an application of real-symmetric and positive-definite matrices, I returned
