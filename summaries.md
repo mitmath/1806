@@ -717,8 +717,42 @@ are the same things except with the opposites signs, i.e. "< 0" or "≤ 0" above
 
 The **singular value decomposition** (SVD), with application to image processing.
 
+* Defined the SVD, both as the factorization A=UΣVᵀ and by writing A as a sum of rank-1 matrices.
+
+* Explained how the singular vectors (columsn of U and V) give (arguably) the "best" orthonormal bases for the four subspaces of A.
+
+* Discussed the usage of the SVD for [low rank approximation](https://en.wikipedia.org/wiki/Low-rank_approximation): if we take only a few of the biggest singular values σ and drop the remaining terms, then we have a lower-rank *approximation* for A that is often very good.   Showed graphically how this gives a "compressed" version of some images — often just a few of the singular values suffices to make the image recognizable.
+
+* Connection of SVD to eigenvalues:  showed that the singular values σ² are the *nonzero eigenvalues* of *either* AᵀA *or* AAᵀ, the right singular vectors v are corresponding eigenvectors of  AᵀA, and the left singular vectors are eigenvectors of AAᵀ.   Long ago, we already showed that rank(AᵀA)=rank(AAᵀ)=rank(A)=rank(Aᵀ).   Now, showed that AᵀA and AAᵀ always have the *same nonzero eigenvalues*.  They can have different numbers of *zero* eigenvalues because N(AᵀA)=N(A) ≠ N(Aᵀ)=N(AAᵀ) in general.
+
 **Further reading:** Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/)
 
+# Lecture 29 (Nov 22)
+
+* pset 11 solutions: coming soon
+* pset 12: no pset this week
+
+As an application of real-symmetric and positive-definite matrices, I returned
+to the system of masses and springs from lecture 23, but this time I considered
+n masses m and n+1 springs.   I showed that Newton's laws take the form:
+
+* mẍ = -DᵀKDx ⟹ ẍ = Ax, where D is an incidence matrix, K is a diagonal matrix of spring constants, and A=-DᵀWD where W=K/m.
+
+A is obviously real-symmetric, so its eigenvalues λ are real.  With a little more work, we saw that it must be negative-definite.  In particular, take any eigensolution Ax=λx for x≠0.  We showed that xᵀAx=λxᵀx<0, which implies λ<0.  The reason is that xᵀAx=-xᵀDᵀWDx=-(Dx)ᵀWDx=-yᵀWy where y=Dx, and (i) y≠0 since D is full column rank (Dᵀ is upper triangular so we could just "read off" its rank), and (ii) W is a diagonal matrix of positive entries so it is automatically positive-definite, or alternatively we can just write out yᵀWy and see that it is positive for y≠0.
+
+The fact that A is negative definite allowed us to derive that *any* such system of masses and springs has *orthogonal oscillating solutions* called the [normal modes](https://en.wikipedia.org/wiki/Normal_mode). In particular, given the eigenvectors qⱼ (chosen orthonormal), satisfying Aqⱼ=λⱼqⱼ with λⱼ>0, we expanded the solution x(t)=∑ⱼcⱼqⱼ in the basis of these eigenvectors.  For each eigenvector component, the matrix A acts just like a number λ, allowing us to easily solve the equation c̈ⱼ=-λⱼcⱼ to get sines and cosines, and hence to get the general solution:
+
+* x(t) = ∑ⱼ [αⱼ cos(ωⱼt) + βⱼ sin(ωⱼt)] qⱼ
+
+where ωⱼ=√-λⱼ, and αⱼ and βⱼ are determined from the initial conditions x(0) and ẋ(0).  (You solved a similar problem in homework, except that there the matrix A had no special structure.)
+
+The key point is that the **structure** of the problem told us that λⱼ<0 and
+hence that the **frequencies** ωⱼ are **real** numbers.  (If they were complex, we would have exponentially growing or decaying solutions, which would make no physical sense for a system of lossless springs and masses.)  The moral of this story is that Hermitian and definite matrices don't just fall down out of the sky, they arise from how the matrix was constructed, and that these matrix properties are often the key to understanding the physical properties of real problems.
+
+Finally, for fun, I pointed out that essentially the same structure A=-DᵀWD arises for *two-dimensional grids of springs and masses*.  D is still the incidence matrix, just for a more complicated graph, and W is still a diagonal matrix of spring constants divided by masses.   I showed some example eigenfunctions from various such grids, which can be thought of as the **oscillating modes of a drum** (stretched membrane).
+
+**Further reading:** Strang, section 10.2.  See also [these notes on the springs-and-masses problem](http://math.mit.edu/~stevenj/18.303/lecture-5.5.pdf) from [18.303](http://math.mit.edu/~stevenj/18.303/) (you can ignore the last two pages, which go beyond 18.06, and ignore the Δx factor which is used in 18.303 to connect the discrete problem to a continuous problem).  My vibrating-drum examples were taken from this [18.303 notebook](http://nbviewer.jupyter.org/url/math.mit.edu/~stevenj/18.303/min-max-examples.ipynb),
+but the math in that notebook is focused on another topic that may be a bit hard to follow for 18.06 students.
 
 ## Exam 3 (Nov 27, 11am in 50-340)
 
