@@ -783,6 +783,7 @@ Gave some examples (see notebook), and closed with the [eigen-walker data](http:
 # Lecture 31 (Dec 1)
 
 * [Notes on Jordan vectors](lectures/jordan-vectors.pdf)
+* [pset 12](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset12.ipynb) (due **Friday** Dec. 8 at 11am)
 
 Most matrices are diagonalizable.  (*Any* n×n matrix with n distinct eigenvalues is diagonalizable, as is *any* Hermitian A=Aᴴ, unitary A⁻¹=Aᴴ, or anti-Hermitian A=-Aᴴ matrix.)  Non-diagonalizable matrices in practical situations typically arise only by design: you start with a "non-normal" matrix and play with the entries until you *force* two eigenvalues and eigenvectors to coincide.  This does not mean that such "exceptional" or "defective" cases are not interesting, however!   Even more commonly, on encounters a matrix that is *nearly* defective (i.e. the matrix X of eigenvectors is *nearly singular*).
 
