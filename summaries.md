@@ -798,3 +798,13 @@ To understand what happens with defective matrices, I introduce Jordan vectors (
 In this lecture, I want to introduce you to a new type of matrix: circulant matrices. Like Hermitian matrices, they have orthonormal eigenvectors, but unlike Hermitian matrices we know exactly what their eigenvectors are! Moreover, their eigenvectors are closely related to the famous Fourier transform and Fourier series. Even more importantly, it turns out that circulant matrices and the eigenvectors lend themselves to incredibly efficient algorithms called FFTs, that play a central role in much of computational science and engineering.
 
 **Further reading**: The textbook, sections 8.3 and 9.3, has some basic information on these topics.  The Wikipedia articles on [Circulant matrix](https://en.wikipedia.org/wiki/Circulant_matrix), [discrete Fourier transform](https://en.wikipedia.org/wiki/Discrete_Fourier_transform), and [fast Fourier transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform) aren't too bad.  Some [elementary lecture notes on FFTs](https://math.mit.edu/~stevenj/18.335/fft-iap3.pdf) from 18.095 talk more about the algorithms.
+
+# Lecture 33 (Dec 6)
+
+* [Errors and condition numbers](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Conditioning.ipynb)
+
+When doing numerical calculations, we keep running into little roundoff errors that arise from the computer only keeping a finite number of digits in its arithmetic.   Mostly, we've been ignoring these or waving our hands, but a huge branch of mathematics is devoted to the origin and propagation of **errors** in calculations.
+
+In this lecture, we take a first step in that subject by asking a simple question: if we solve Ax=b and have a little error Δb in b (either due to roundoff, or measurement errors, or something else), how big is the resulting error in Δx?   This deceptively simple question leads to lots of interesting topics, e.g. induced **matrix norms** and matrix **condition numbers**.
+
+**Further reading**: Strang, section 9.2.   For a much more thorough discussion of these topics, see classes like 18.335 or (to a lesser extent) 18.330, as well as more advanced textbooks like *Numerical Linear Algebra* by Trefethen and Bau.
