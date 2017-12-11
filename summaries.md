@@ -818,4 +818,12 @@ Large-scale linear algebra: the computational techniques (but not the *conceptua
 
 This material will not be on the final exam, but is still very useful for practical applications of linear algebra!
 
-**Further reading**: Textbook, section 11.3 has some discussion of iterative methods.  More advanced treatments include the book *Numerical Linear Algebra* by Trefethen and Bao, and surveys of algorithms can be found in the *Templates* books for [Ax=b](http://www.netlib.org/linalg/html_templates/Templates.html) and [Ax=λx](http://web.cs.ucdavis.edu/~bai/ET/contents.html).  Sparse-direct solvers are described in detail by the book *Direct Methods for Sparse Linear Systems* by Davis.
+**Further reading**: Textbook, section 11.3 has some discussion of iterative methods.  More advanced treatments include the book *Numerical Linear Algebra* by Trefethen and Bao, and surveys of algorithms can be found in the *Templates* books for [Ax=b](http://www.netlib.org/linalg/html_templates/Templates.html) and [Ax=λx](http://web.cs.ucdavis.edu/~bai/ET/contents.html).  Sparse-direct solvers are described in detail by the book *Direct Methods for Sparse Linear Systems* by Davis.  The course 18.335 spends much more time on these methods.
+
+# Lecture 34 (Dec 11)
+
+Continued notes from last lecture: discussed iterative solvers for Ax=b, via the "toy" algorithm of steepest descent.
+
+In serious applications, you want to use a more sophisticated algorithm like conjugate gradients. You also often want to find a somewhat magical matrix called a "preconditioner": essentially, an easy-to-invert approximation P for your matrix A, such that P⁻¹A is "closer" to the identity (technically: you want it to have eigenvalues that are more "clustered").  (Finding a good preconditioner is difficult, often a research-level problem for "new" matrices.)   Explaining all of these details fully is beyond the scope of 18.06, but I want you to have some notion of what to look for if you encounter this kind of large-scale problem.
+
+**Further reading**: Textbook, section 11.3 has some discussion of iterative methods.  More advanced treatments include the book *Numerical Linear Algebra* by Trefethen and Bao, and surveys of algorithms can be found in the *Template* book for [Ax=b](http://www.netlib.org/linalg/html_templates/Templates.html).  The course 18.335 spends much more time on these methods.
