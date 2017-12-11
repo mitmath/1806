@@ -811,6 +811,8 @@ In this lecture, we take a first step in that subject by asking a simple questio
 
 # Lecture 33 (Dec 8)
 
+* [pset 12 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset12-sol.ipynb)
+
 * [Dense and sparse linear algebra](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Dense-and-Sparse.ipynb)
 * [Power method for eigenproblems](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Power-Method.ipynb)
 
