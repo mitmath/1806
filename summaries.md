@@ -829,3 +829,13 @@ Continued notes from last lecture: discussed iterative solvers for Ax=b, via the
 In serious applications, you want to use a more sophisticated algorithm like conjugate gradients. You also often want to find a somewhat magical matrix called a "preconditioner": essentially, an easy-to-invert approximation P for your matrix A, such that P⁻¹A is "closer" to the identity (technically: you want it to have eigenvalues that are more "clustered").  (Finding a good preconditioner is difficult, often a research-level problem for "new" matrices.)   Explaining all of these details fully is beyond the scope of 18.06, but I want you to have some notion of what to look for if you encounter this kind of large-scale problem.
 
 **Further reading**: Textbook, section 11.3 has some discussion of iterative methods.  More advanced treatments include the book *Numerical Linear Algebra* by Trefethen and Bao, and surveys of algorithms can be found in the *Template* book for [Ax=b](http://www.netlib.org/linalg/html_templates/Templates.html).  The course 18.335 spends much more time on these methods.
+
+# Lecture 35 (Dec 12)
+
+# Final Exam (Tues Dec 19, 9am–noon, duPont)
+
+* Potential topics: all topics from exams 1–3, SVDs, Jordan vectors and defective matrices.
+* Not covered: physics (i.e. you don't need to know any physics, but if you are *given* an equation from physics etcetera, you should of course be able to express/analyze it in linear-algebra form), Newton's method, orthogonal functions, circulant matrices, sparse/iterative solvers (except for the [power method](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Power-Method.ipynb), which is essentially exam-3 material).
+* Bring your ID — attendance will be taken.
+
+* Practice problems: practice problems from exams 1–3.  [2016 ASE](exams/2016-ase.pdf) and [solutions](exams/2016-ase-sol.pdf); [spring 2009 final](http://web.mit.edu/18.06/www/Spring09/final-s09.pdf) and [solutions](http://web.mit.edu/18.06/www/Spring09/final-s09-soln.pdf); [fall 2007 practice final](http://web.mit.edu/18.06/www/Fall07/practicefinal-sol.pdf); [fall 2015 final](http://web.mit.edu/18.06/www/Fall15/FinalSols.pdf), problems 1,4,5,7; [spring 2013 final](http://web.mit.edu/18.06/www/Spring13/Examfblank.pdf) and [solutions](http://web.mit.edu/18.06/www/Spring13/final_s13_sol.pdf), problems 3,4,5,7; [spring 2007](http://web.mit.edu/18.06/www/Spring07/final.pdf) problems 1–5.
