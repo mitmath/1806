@@ -834,6 +834,8 @@ In serious applications, you want to use a more sophisticated algorithm like con
 
 # Final Exam (Tues Dec 19, 9am–noon, duPont)
 
+* **Review session**: Thursday, December 14, 1–3pm, in 2-190.
+
 * Potential topics: all topics from exams 1–3, SVDs, Jordan vectors and defective matrices.
 * Not covered: physics (i.e. you don't need to know any physics, but if you are *given* an equation from physics etcetera, you should of course be able to express/analyze it in linear-algebra form), Newton's method, orthogonal functions, circulant matrices, sparse/iterative solvers (except for the [power method](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Power-Method.ipynb), which is essentially exam-3 material).
 * Bring your ID — attendance will be taken.
