@@ -830,7 +830,7 @@ In serious applications, you want to use a more sophisticated algorithm like con
 
 **Further reading**: Textbook, section 11.3 has some discussion of iterative methods.  More advanced treatments include the book *Numerical Linear Algebra* by Trefethen and Bao, and surveys of algorithms can be found in the *Template* book for [Ax=b](http://www.netlib.org/linalg/html_templates/Templates.html).  The course 18.335 spends much more time on these methods.
 
-# Lecture 35 (Dec 12)
+# Lecture 35 (Dec 13)
 
 Examined the analogues of Hermitian positive-definite matrices, matrix exponentials, etcetera, for *infinite-dimensional* linear algebra.  (This material will *not* be on the final.)   It turns out that this is tremendously important for understanding [partial differential equations (PDEs)](https://en.wikipedia.org/wiki/Partial_differential_equation) arising in science and engineering.
 
