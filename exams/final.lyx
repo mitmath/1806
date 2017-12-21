@@ -1,0 +1,1520 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{(\roman{enumii})}
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MIT 18.06 Final Exam, Fall 2017
+\begin_inset Newline newline
+\end_inset
+
+Johnson
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Your name: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-6pt"
+width "80col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Recitation: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-6pt"
+width "80col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\size largest
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+problem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+score
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/100
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 1 (15 points):
+\end_layout
+
+\begin_layout Standard
+A matrix 
+\begin_inset Formula $A=LU$
+\end_inset
+
+ has the LU factors 
+\begin_inset Formula 
+\[
+L=\left(\begin{array}{cccc}
+1\\
+-2 & 1\\
+0 & -2 & 1\\
+-1 & -1 & -2 & 1
+\end{array}\right),\;U=\left(\begin{array}{cccc}
+1 & -1 & -2 & 0\\
+ & 1 & 0 & -2\\
+ &  & 1 & 0\\
+ &  &  & 1
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $b=\left(\begin{array}{c}
+-1\\
+2\\
+2\\
+-4
+\end{array}\right),$
+\end_inset
+
+ what is 
+\begin_inset Formula $x=A^{-1}b$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+Assuming you solved the previous part efficiently, roughly how much more
+ arithmetic operations would be required for the same approach if the matrices
+ were 
+\begin_inset Formula $8\times8$
+\end_inset
+
+ instead of 
+\begin_inset Formula $4\times4$
+\end_inset
+
+? It should be about 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{
+\backslash
+hspace{3em}}
+\end_layout
+
+\end_inset
+
+ times more.
+\end_layout
+
+\begin_layout Enumerate
+If you form a new 
+\begin_inset Formula $4\times5$
+\end_inset
+
+ matrix 
+\begin_inset Formula $B=\left(\begin{array}{cc}
+A & b\end{array}\right)$
+\end_inset
+
+ by appending the vector 
+\begin_inset Formula $b$
+\end_inset
+
+ (from above) as an extra column after 
+\begin_inset Formula $A$
+\end_inset
+
+, and perform the 
+\emph on
+same
+\emph default
+ elimination steps as were used to get the LU factors above, what upper-triangul
+ar matrix would you obtain? (Hint: if you did part (a) properly, this part
+ can be done with 
+\emph on
+no arithmetic
+\emph default
+.)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 2 (15 points):
+\end_layout
+
+\begin_layout Standard
+You are given the recurrence relation 
+\begin_inset Formula 
+\[
+(2I+B^{T}B)x_{n+1}=(2I-B^{T}B)x_{n}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $B$
+\end_inset
+
+ is a real 
+\begin_inset Formula $5\times3$
+\end_inset
+
+ matrix.
+ We start with a vector 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ and compute 
+\begin_inset Formula $x_{1},x_{2},\ldots$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x_{n}=A^{n}x_{0}$
+\end_inset
+
+ for some matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ (independent of 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+).
+ What is 
+\begin_inset Formula $A$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $B^{T}B$
+\end_inset
+
+ , give an eigenvalue of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Circle all possible
+\series default
+ behaviors of 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ for large 
+\begin_inset Formula $n$
+\end_inset
+
+, given the information above: 
+\series bold
+decaying
+\series default
+ to zero, 
+\series bold
+oscillating
+\series default
+ but not growing or decaying in length, going to a 
+\series bold
+nonzero constant
+\series default
+ vector, or 
+\series bold
+growing
+\series default
+ longer and longer.
+ Explain your answers by giving some property (or properties) that must
+ be true of the eigenvalues of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $x_{1}=0$
+\end_inset
+
+ for a nonzero 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, give one of the singular values (
+\begin_inset Formula $\sigma$
+\end_inset
+
+) of 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 3 (15 points):
+\end_layout
+
+\begin_layout Standard
+The distance between a point 
+\begin_inset Formula $b$
+\end_inset
+
+ and a plane in 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ is defined as the 
+\emph on
+minimum
+\emph default
+ distance 
+\begin_inset Formula $\Vert b-y\Vert$
+\end_inset
+
+ between 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\emph on
+any
+\emph default
+ point 
+\begin_inset Formula $y$
+\end_inset
+
+ in the plane.
+\end_layout
+
+\begin_layout Enumerate
+Suppose the points 
+\begin_inset Formula $y$
+\end_inset
+
+ in the plane are of the form 
+\begin_inset Formula $y=c+\alpha a_{1}+\beta a_{2}$
+\end_inset
+
+ for all real numbers 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+, given vectors 
+\begin_inset Formula $c,a_{1},a_{2}\in\mathbb{R}^{3}$
+\end_inset
+
+ that define the plane (
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ are linearly independent).
+ Under 
+\series bold
+what condition(s)
+\series default
+ on 
+\begin_inset Formula $c,a_{1},a_{2}$
+\end_inset
+
+ is the plane a 
+\series bold
+subspace
+\series default
+ of 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+Write down a 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ 
+\series bold
+system of equations
+\series default
+, in terms of the vectors 
+\begin_inset Formula $a_{1},a_{2,}c,b$
+\end_inset
+
+ (or matrices defined from these vectors) whose solution gives the 
+\begin_inset Formula $\left(\begin{array}{c}
+\alpha\\
+\beta
+\end{array}\right)$
+\end_inset
+
+ for the 
+\emph on
+closest
+\emph default
+ point 
+\begin_inset Formula $y$
+\end_inset
+
+ in the plane to 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+For this closest point 
+\begin_inset Formula $y$
+\end_inset
+
+, 
+\begin_inset Formula $b-y$
+\end_inset
+
+ is in 
+\series bold
+what subspace
+\series default
+ of the matrix 
+\begin_inset Formula $A=\left(a_{1}a_{2}\right)$
+\end_inset
+
+? What is the 
+\series bold
+dimension
+\series default
+ of this subspace?
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $a_{1}=\left(\begin{array}{c}
+1\\
+2\\
+1
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $a_{2}=\left(\begin{array}{c}
+1\\
+0\\
+0
+\end{array}\right)$
+\end_inset
+
+, 
+\series bold
+find a vector
+\series default
+ 
+\begin_inset Formula $d$
+\end_inset
+
+ such that the distance between any point 
+\begin_inset Formula $b$
+\end_inset
+
+ and the plane is equal to 
+\begin_inset Formula $|d^{T}(b-c)|$
+\end_inset
+
+.
+ 
+\series bold
+What subspace
+\series default
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+ contains 
+\begin_inset Formula $d$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\emph default
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Problem 4 (15 points):
+\end_layout
+
+\begin_layout Standard
+You are given the following matrix:
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cccc}
+1 & 0 & -1 & 1\\
+2 & 1 & -3 & 4\\
+1 & -2 & 1 & -4
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find the 
+\series bold
+complete solution
+\series default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ (i.e.
+ all solutions) to 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ for 
+\begin_inset Formula $b=\left(\begin{array}{c}
+3\\
+9\\
+-4
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A^{T}y=d$
+\end_inset
+
+ is solvable if and only if 
+\begin_inset Formula $d^{T}z=0$
+\end_inset
+
+ for some 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ 
+\series bold
+Give such a vector
+\series default
+ 
+\begin_inset Formula $z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\emph default
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Problem 5 (15 points):
+\end_layout
+
+\begin_layout Standard
+QR factorization of the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ (e.g.
+ via Gram–Schmidt) yields 
+\begin_inset Formula $A=QR$
+\end_inset
+
+, where 
+\begin_inset Formula 
+\[
+Q=\left(\begin{array}{ccc}
+\frac{1}{\sqrt{2}} & 0 & \frac{1}{2}\\
+0 & \frac{1}{\sqrt{2}} & \frac{1}{2}\\
+-\frac{1}{\sqrt{2}} & 0 & \frac{1}{2}\\
+0 & -\frac{1}{\sqrt{2}} & \frac{1}{2}
+\end{array}\right),\;R=\left(\begin{array}{ccc}
+1 & 2 & 0\\
+ & 1 & 2\\
+ &  & 2
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Which columns of 
+\begin_inset Formula $A$
+\end_inset
+
+ were 
+\series bold
+orthogonal
+\series default
+ to begin with, if any?
+\end_layout
+
+\begin_layout Enumerate
+What is the orthogonal 
+\series bold
+projection
+\series default
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ of the vector 
+\begin_inset Formula $b=\left(\begin{array}{c}
+4\\
+0\\
+0\\
+0
+\end{array}\right)$
+\end_inset
+
+ onto 
+\begin_inset Formula $C(A)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+If we are minimizing 
+\begin_inset Formula $\Vert Ax-b\Vert$
+\end_inset
+
+ (i.e.
+ solving the least-square problem) for 
+\begin_inset Formula $b=\left(\begin{array}{c}
+4\\
+0\\
+0\\
+0
+\end{array}\right)$
+\end_inset
+
+, you should be able to 
+\emph on
+quickly
+\series bold
+\emph default
+ get an upper-triangular system
+\series default
+ of equations 
+\begin_inset Formula $U\hat{x}=c$
+\end_inset
+
+ for the least-square solution 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+.
+ 
+\series bold
+What are the
+\series default
+ upper-triangular matrix 
+\begin_inset Formula $U$
+\end_inset
+
+ and the right-hand-side vector 
+\begin_inset Formula $c$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Problem 6 (15 points):
+\end_layout
+
+\begin_layout Standard
+You are given the nonsymmetric, diagonalizable matrix 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{ccc}
+-1 & 1 & 3\\
+1 & -3 & -2\\
+-1 & 0 & -3
+\end{array}\right).
+\]
+
+\end_inset
+
+ and we want to understand the solutions of the ODE 
+\begin_inset Formula 
+\[
+\frac{dx}{dt}=Ax
+\]
+
+\end_inset
+
+for some initial condition 
+\begin_inset Formula $x(0)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Show (by any test you want, e.g.
+ the pivot test) that the matrix 
+\begin_inset Formula $A+A^{H}=\left(\begin{array}{ccc}
+-2 & 2 & 2\\
+2 & -6 & -2\\
+2 & -2 & -6
+\end{array}\right)$
+\end_inset
+
+ is 
+\series bold
+negative definite
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $Av=\lambda v$
+\end_inset
+
+ is an eigensolution of 
+\begin_inset Formula $A$
+\end_inset
+
+ (
+\begin_inset Formula $v$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ may be complex), look at 
+\begin_inset Formula $v^{H}\left(A+A^{H}\right)v$
+\end_inset
+
+ and use the fact that 
+\begin_inset Formula $A+A^{H}$
+\end_inset
+
+ is negative definite to 
+\series bold
+show
+\series default
+ that the 
+\series bold
+real part
+\series default
+ of 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ must be 
+\series bold
+negative
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+What can you conclude from the previous parts about the solutions 
+\begin_inset Formula $x(t)$
+\end_inset
+
+ as 
+\begin_inset Formula $t\to\infty$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A+A^{H}$
+\end_inset
+
+ is negative definite (so that 
+\begin_inset Formula $A$
+\end_inset
+
+'s eigenvalues have negative real parts), but 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\series bold
+defective
+\series default
+, does your answer to the previous part about 
+\begin_inset Formula $x(\infty)$
+\end_inset
+
+ 
+\series bold
+change?
+\series default
+ 
+\series bold
+Why
+\series default
+ or why not?
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Problem 7 (10 points):
+\end_layout
+
+\begin_layout Standard
+The following parts can be 
+\series bold
+answered independently
+\series default
+ (and refer to 
+\series bold
+different matrices
+\series default
+).
+ Little or no calculation should be needed.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $C(B)$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $N(A)$
+\end_inset
+
+, then either (
+\series bold
+circle one
+\series default
+) 
+\begin_inset Formula $AB$
+\end_inset
+
+ or 
+\begin_inset Formula $BA$
+\end_inset
+
+ must be simply 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{
+\backslash
+hspace{3em}}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ is a real-symmetric 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ matrix with eigenvalues 
+\begin_inset Formula $\lambda_{1}=1$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{2}=2$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{3}=3$
+\end_inset
+
+ and corresponding real eigenvectors 
+\begin_inset Formula $v_{1},v_{2},v_{3}$
+\end_inset
+
+, then an explicit equation for 
+\begin_inset Formula $A^{-1}b$
+\end_inset
+
+ in terms of sums/products involving these eigenvectors and 
+\begin_inset Formula $b$
+\end_inset
+
+, with 
+\emph on
+no matrix inverses, 
+\emph default
+is: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{
+\backslash
+hspace{20em}}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ is a 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ non-singular real matrix with singular values 
+\begin_inset Formula $\sigma_{1},\sigma_{2},\sigma_{3}$
+\end_inset
+
+, then give formulas in terms of 
+\begin_inset Formula $\sigma_{1},\sigma_{2},\sigma_{3}$
+\end_inset
+
+ for 
+\begin_inset Formula $\det(A^{T}A)=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{
+\backslash
+hspace{6em}}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Formula $|\det(A)|=$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{
+\backslash
+hspace{6em}}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $N(A)$
+\end_inset
+
+ is spanned by the vector 
+\begin_inset Formula $v\ne0$
+\end_inset
+
+, then projection matrices onto 
+\emph on
+two
+\emph default
+ of the fundamental subspaces of 
+\begin_inset Formula $A$
+\end_inset
+
+ are:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{
+\backslash
+hspace{15em}and
+\backslash
+hspace{15em}}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(write down two matrices and indicate which subspaces they project onto).
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ is similar to the matrix 
+\begin_inset Formula $\left(\begin{array}{ccc}
+3 & 6 & 2\\
+ & 17 & 3\\
+ &  & 4
+\end{array}\right)$
+\end_inset
+
+, then the eigenvalues of 
+\begin_inset Formula $A$
+\end_inset
+
+ are: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{
+\backslash
+hspace{10em}}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\end_body
+\end_document
