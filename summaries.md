@@ -1,4 +1,5 @@
-# Fall 2018 [18.06](https://web.mit.edu/18.06/www/) [Prof. Alan Edelman](http://math.mit.edu/~edelman)  Lecture Summaries
+# Fall 2018 [18.06](https://web.mit.edu/18.06/www/) Lecture Summaries <br>
+ [Prof. Alan Edelman](http://math.mit.edu/~edelman)  
 
 This document is a *brief* summary of what was covered in each 18.06
 lecture, along with links and suggestions for further reading.  It is
