@@ -14,6 +14,8 @@ I'll try to update it within a day of each lecture.
 
 [Overview](https://github.com/stevengj/1806/blob/master/lectures/1806overview.pdf)
 
+[Gaussian Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Gaussian-elimination.ipynb)
+
 ## Optional Julia Tutorial (Friday Feb 9, 5pm, 32-141)
 
 On **Friday** at 5pm, there will be an optional tutorial session in 32-141
