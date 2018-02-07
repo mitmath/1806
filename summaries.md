@@ -13,9 +13,11 @@ I'll try to update it within a day of each lecture.
 
 Materials to be posted soon.
 
+[Overview](1806overview.pptx)
+
 ## Optional Julia Tutorial (Friday Feb 9, 5pm, 32-141)
 
-On **Monday** at 5pm, there will be an optional tutorial session in 32-141
+On **Friday** at 5pm, there will be an optional tutorial session in 32-141
 for the [Julia](http://julialang.org/) computer software that we will be using in 18.06 this
 semester for homework and lecture demonstrations. Julia is a
 programming language, but no "real" programming will be required in 18.06: we
