@@ -12,7 +12,7 @@ I'll try to update it within a day of each lecture.
 ## Lecture 1 (Feb 7)
 
 
-[Overview](https://github.com/stevengj/1806/blob/master/lectures/1806overview.pptx)
+[Overview](https://github.com/stevengj/1806/blob/master/lectures/1806overview.pdf
 
 ## Optional Julia Tutorial (Friday Feb 9, 5pm, 32-141)
 
