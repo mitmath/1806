@@ -17,6 +17,7 @@ I'll try to update it within a day of each lecture.
 
 [Gaussian Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Gaussian-elimination.ipynb)
 
+PSET 1 will be posted tonight.
 As I'm sure you know, the world needs creative people who understand concepts and how to use them.  This course  does not emphasize hand computation like the old days. 
 
 ## Optional Julia Tutorial (Friday Feb 9, 5pm, 32-141)
