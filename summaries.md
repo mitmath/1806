@@ -17,7 +17,21 @@ I'll try to update it within a day of each lecture.
 
 [Gaussian Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Gaussian-elimination.ipynb)
 
+
+
 [PSET 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset1%20Spring2018%20Prof.Edelman.ipynb) is now online.
+
+**Further reading:** Textbook sections 2.1 and 2.2.  Strang [lecture 2 video](https://www.youtube.com/watch?v=QVKj3LADCnA).
+
+In the first lecture, we perform Gaussian elimination the "high school" way, by putting A next to b and
+performing row operations.  In the next lecture we will move into a more matrix computation view by bringing
+in Elimination matrices.  At the end of the notebook above I did a little machine learning experiment where
+Gaussian elimination accurately finds the unknown parameters in a 3-vector w right away with one backslash, while traditional
+machine learning can take a long time.  I'm not sure if traditional machine learning can be improved, but 
+if any of you try running another software library and see better results, I'd be very interested. 
+
+
+
 
 As I'm sure you know, the world needs creative people who understand concepts and how to use them.  This course  does not emphasize hand computation like the old days. 
 
