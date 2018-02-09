@@ -44,7 +44,7 @@ The big message: the matmul you learned in high school is not the only, perhaps 
 1. All the elementwise viewpoints can be reordered.  Matmul has that kind of "symmetry." 
 2. It may be better to view a matrix as a collection of columns or rows or blocks or just as a whole.
 
-**Further reading:** Textbook sections 2.4, 2.3, 2.6.  Strang [lecture 1 video](https://www.youtube.com/watch?v=ZK3O402wf1c), [lecture 4 video](https://www.youtube.com/watch?v=5hO3MrzPa0A).
+**Further reading:** Textbook sections 2.3, 2.4, 2.6.  Strang [lecture 1 video](https://www.youtube.com/watch?v=ZK3O402wf1c), [lecture 4 video](https://www.youtube.com/watch?v=5hO3MrzPa0A).
 
 
 
