@@ -18,7 +18,7 @@ I'll try to update it within a day of each lecture.
 [Gaussian Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Gaussian-elimination.ipynb)
 
 
-[Machine Learning with Gaussian Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Machine%20Learning%20with%20Gaussian-elimination.ipynb)
+[Machine Learning with Gaussian Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/MachineLearningwithGaussian-elimination.ipynb)
 
 [PSET 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset1%20Spring2018%20Prof.Edelman.ipynb) is now online.
 
