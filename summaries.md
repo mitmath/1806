@@ -39,10 +39,12 @@ As I'm sure you know, the world needs creative people who understand concepts an
 ## Lecture 2 (Feb 9)
 * [Matrix-multiplication and LU notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Matrix-mult-perspectives.ipynb)
 
-The big message: the matmul you learned in high school is not the only, perhaps not even the best perspective on how to multiply matrices.  There are many other ways that get to the same order.  There are really two key facts that are important
+The big message: the matmul you learned in high school is not the only, perhaps not even the best perspective on how to multiply matrices.  There are many other ways.  There are really two key facts that are important
 
 1. All the elementwise viewpoints can be reordered.  Matmul has that kind of "symmetry." 
 2. It may be better to view a matrix as a collection of columns or rows or blocks or just as a whole.
+
+You should understand all the views.  The column view.  The row view.  The outer product view.  The block matrix view.  You should unerstand why all 6 "ijk" choices are equally correct ways to multiply matrices.
 
 **Further reading:** Textbook sections 2.3, 2.4, 2.6.  Strang [lecture 1 video](https://www.youtube.com/watch?v=ZK3O402wf1c), [lecture 4 video](https://www.youtube.com/watch?v=5hO3MrzPa0A).
 
