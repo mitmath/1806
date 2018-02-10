@@ -37,7 +37,7 @@ As I'm sure you know, the world needs creative people who understand concepts an
 
 
 ## Lecture 2 (Feb 9)
-* [Matrix-multiplication and LU notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall18/lectures/Matrix-mult-perspectives.ipynb)
+* [Matrix-multiplication and LU notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Matrix-mult-perspectives.ipynb)
 
 The big message: the matmul you learned in high school is not the only, perhaps not even the best perspective on how to multiply matrices.  There are many other ways.  There are really two key facts that are important
 
