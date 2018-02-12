@@ -72,9 +72,9 @@ computational experiments.  Bring your laptops, and try logging into
 
 ## Lecture 3 (Feb 12)
 
-* [Elimination Matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Elimination-matrices.ipynb)
+* [Elimination Matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Elimination-matrices.ipynb)
 
-* [LU and matrix-inverse notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/LU-and-Inverses.ipynb)
+* [LU and matrix-inverse notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/LU-and-Inverses.ipynb)
 
 
 Key Points to consider
