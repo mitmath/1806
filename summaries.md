@@ -74,7 +74,7 @@ computational experiments.  Bring your laptops, and try logging into
 
 * [Elimination Matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Elimination-matrices.ipynb)
 
-* [LU and matrix-inverse notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/LU-and-Inverses.ipynb)
+* [LU and matrix-inverse notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/inverses-LU-intro.ipynb)
 
 
 Key Points to consider
