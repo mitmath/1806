@@ -76,6 +76,8 @@ computational experiments.  Bring your laptops, and try logging into
 
 * [LU and matrix-inverse notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Inverses-LU-intro.ipynb)
 
+* [Lower-Triangular-and-Elimination]  (http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Lower-Triangular-and-Elimination.ipynb)
+
 
 Key Points to consider
 
