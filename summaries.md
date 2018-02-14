@@ -89,3 +89,10 @@ Key Points to consider
 
 
 **Further reading:** Textbook sections 2.6, 2.7, 2.5.  Strang [lecture 4 video](https://www.youtube.com/watch?v=5hO3MrzPa0A) and [lecture 5 video](https://www.youtube.com/watch?v=JibVXBElKL0&list=PL49CF3715CB9EF31D).
+
+
+## Lecture 4 (Feb 14)
+
+To be posted tonight:
+* PSET 2
+* Solutions to PSET 1
