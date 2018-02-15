@@ -94,8 +94,14 @@ Key Points to consider
 ## Lecture 4 (Feb 14)
 
 [PSET 2](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset2%20Spring2018%20Prof.Edelman.ipynb)  .
-* [Solutions to PSET 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset1%20Solutions.ipynb)  
+[Solutions to PSET 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset1%20Solutions.ipynb)  
 
+
+We did an example of Gauss-Jordan to compute inverses.
+Then we explored the ordering of elimination  matrices.
+
+A Key point is that elimination matrices are for human understanding,
+in the real world the multipliers are computed and inserted into L.
 
 * [Lower-Triangular-and-Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Lower-Triangular-and-Elimination.ipynb)
 
