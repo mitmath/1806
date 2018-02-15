@@ -103,6 +103,10 @@ Then we explored the ordering of elimination  matrices.
 A Key point is that elimination matrices are for human understanding,
 in the real world the multipliers are computed and inserted into L.
 
+In the real world, neither Julia, nor Python, nor MATLAB, nor R
+does Gaussian Elimination, but rather all these packages
+call [LAPACK](http://www.netlib.org/lapack/) written in FORTRAN90.
+
 * [Lower-Triangular-and-Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Lower-Triangular-and-Elimination.ipynb)
 
 * [Transposes,permutations,orthogonality](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Transposes.ipynb)
