@@ -20,7 +20,7 @@ I'll try to update it within a day of each lecture.
 
 [Machine Learning with Gaussian Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Machine-Learning-with-Gaussian-elimination.ipynb)
 
-[PSET 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset1%20Spring2018%20Prof.Edelman.ipynb) is now online.
+[PSET 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset1%20Spring2018%20Prof.Edelman.ipynb)  .
 
 **Further reading:** Textbook sections 2.1 and 2.2.  Strang [lecture 2 video](https://www.youtube.com/watch?v=QVKj3LADCnA).
 
@@ -93,9 +93,8 @@ Key Points to consider
 
 ## Lecture 4 (Feb 14)
 
-To be posted tonight:
-* PSET 2
-* Solutions to PSET 1
+[PSET 2](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset2%20Spring2018%20Prof.Edelman.ipynb)  .
+* Solutions to PSET 1  (will be posted tomorrow)
 
 
 * [Lower-Triangular-and-Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Lower-Triangular-and-Elimination.ipynb)
