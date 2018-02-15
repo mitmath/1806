@@ -93,7 +93,7 @@ Key Points to consider
 
 ## Lecture 4 (Feb 14)
 
-[PSET 2](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset2%20Spring2018%20Prof.Edelman.ipynb)  .
+[PSET 2](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset2%20Spring2018%20Prof.Edelman.ipynb)  . <br>
 [Solutions to PSET 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset1%20Solutions.ipynb)  
 
 
