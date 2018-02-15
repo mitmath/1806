@@ -108,3 +108,4 @@ in the real world the multipliers are computed and inserted into L.
 * [Transposes,permutations,orthogonality](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Transposes.ipynb)
 **Further reading:** Textbook sections 2.5, 2.6 ("The cost of elimination"), and 11.1.  Strang [video lecture 3](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-3-multiplication-and-inverse-matrices/).
 
+One way or another, we have now covered the material up to 2.6 and also 11.1.
