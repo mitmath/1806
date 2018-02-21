@@ -98,6 +98,10 @@ Key Points to consider
 
 
 We did an example of Gauss-Jordan to compute inverses.
+
+*[Gauss Jordan](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Gauss-Jordan.ipynb)
+
+
 Then we explored the ordering of elimination  matrices.
 
 A Key point is that elimination matrices are for human understanding,
