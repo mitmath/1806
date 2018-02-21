@@ -117,9 +117,15 @@ Also we covered the first four Gil Strang videos on [OCW](https://ocw.mit.edu/co
 
 ## Lecture 5 (Feb 16)
 
-(To be added.)
+In today's lecture re finished the notebook on transposes, permutations, and orthogonality.  We then looked at the common algebraic structure of
+vector spaces, playing the game of "Am I a vector space?"
 
-## Lecture 6 (Feb 16)
+IF s set does not have a clear $0$, then it is easy to exclude it from being a vector space, but having a zero does not guarantee that a set is a vector space.
+
+The most important fact is that linear combinations of vectors should exist in the space.
+
+
+## Lecture 6 (Feb 20)
 
 Reviewed vector spaces (a set V of anything you can add x+y and multiply by scalars αx) and introduced **subspaces** (a subset of V such that vector operations *stay in the subspace*).  Examples of vector spaces include real n-component vectors (ℝⁿ, or ℂⁿ for complex numbers), real m×n matrices, functions f(x) (ℝ↦ℝ, real numbers to real numbers).  Examples of subspaces includes planes or lines through the origin in ℝ³, or the origin itself.   The goal of this is to break vector spaces into smaller pieces that we can still do linear algebra on (hence the need for a subspace, not just any arbitrary subset).  Subspaces are especially important to help us understand the solutions (if any) of Ax=b for **non-square** matrices A.
 
