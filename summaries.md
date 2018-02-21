@@ -153,3 +153,6 @@ The **dimension** of a vector space is the number of vectors in a
 basis.  More on this later… for now, I mostly rely on your intuition that a plane is 2d, a line is 1d, a point is 0d, etcetera.
 
 **Further reading:** Textbook, sections 3.1 and 3.2; Strang [video lecture 6](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-6-column-space-and-nullspace/).
+
+
+[PSET 3](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset3%20Spring2018%20Prof.Edelman.ipynb)
