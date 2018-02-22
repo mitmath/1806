@@ -156,3 +156,5 @@ basis.  More on this later… for now, I mostly rely on your intuition that a pl
 
 
 [PSET 3](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset3%20Spring2018%20Prof.Edelman.ipynb)
+[Solutions to PSET 2](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset2%20Solutions.ipynb)  
+
