@@ -159,3 +159,5 @@ basis.  More on this later… for now, I mostly rely on your intuition that a pl
 
 [Solutions to PSET 2](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset2%20Solutions.ipynb)  
 
+Note: On Wednesday February 28, we will have an in class review
+for Exam 1.  Bring Questions.
