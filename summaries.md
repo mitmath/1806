@@ -98,6 +98,10 @@ Key Points to consider
 
 
 We did an example of Gauss-Jordan to compute inverses.
+
+* [Gauss Jordan](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Gauss-Jordan.ipynb)
+
+
 Then we explored the ordering of elimination  matrices.
 
 A Key point is that elimination matrices are for human understanding,
@@ -117,7 +121,13 @@ Also we covered the first four Gil Strang videos on [OCW](https://ocw.mit.edu/co
 
 ## Lecture 5 (Feb 16)
 
-(To be added.)
+In today's lecture we finished the notebook on transposes, permutations, and orthogonality.  We then looked at the common algebraic structure of
+vector spaces, playing the game of "Am I a vector space?"
+
+IF s set does not have a clear $0$, then it is easy to exclude it from being a vector space, but having a zero does not guarantee that a set is a vector space.
+
+The most important fact is that linear combinations of vectors should exist in the space.
+
 
 ## Lecture 6 (Feb 20)
 
@@ -159,3 +169,15 @@ Brought up another way to think about the nullspace.  If N(A) contains a nonzero
 Earlier, I defined a basis as a minimal set of vectors whose span gives an entire vector space, and the dimension of the space as the size of the basis.  We now rephrase this as saying basis vectors must be be **linearly independent**.    The **dimension** of a space is still the number of basis vectors.
 
 **Further reading:** Textbook, sections 3.2-3.3, video [lecture 6](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-6-column-space-and-nullspace/), [lecture 7](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-7-solving-ax-0-pivot-variables-special-solutions/).  Textbook sections 3.4, video [lecture 9](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-9-independence-basis-and-dimension/).
+
+### Pset 3
+
+[PSET 3](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset3%20Spring2018%20Prof.Edelman.ipynb)
+
+[Solutions to PSET 2](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset2%20Solutions.ipynb)  
+
+## Exam 1 Information
+
+Note: On Wednesday February 28, we will have an in class review
+for Exam 1.  Bring Questions.  You may wish to look at
+[ previous Exam 1 problems](http://web.mit.edu/18.06/www/old.shtml), though note that the timing of Exam 1 can vary from semester to semester so topics can shift.
