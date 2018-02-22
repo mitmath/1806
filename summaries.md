@@ -124,7 +124,7 @@ Also we covered the first four Gil Strang videos on [OCW](https://ocw.mit.edu/co
 In today's lecture we finished the notebook on transposes, permutations, and orthogonality.  We then looked at the common algebraic structure of
 vector spaces, playing the game of "Am I a vector space?"
 
-IF s set does not have a clear $0$, then it is easy to exclude it from being a vector space, but having a zero does not guarantee that a set is a vector space.
+*If* a set does not have a clear 0 vector, then it is easy to exclude it from being a vector space, but having a zero does not guarantee that a set is a vector space.
 
 The most important fact is that linear combinations of vectors should exist in the space.
 
