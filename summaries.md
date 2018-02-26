@@ -179,7 +179,7 @@ Earlier, I defined a basis as a minimal set of vectors whose span gives an entir
 [Solutions to PSET 2](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset2%20Solutions.ipynb)  
 
 
-## Lecture 8 (Feb 21)
+## Lecture 8 (Feb 23)
 
 ### Linear independence and C(A)
 
