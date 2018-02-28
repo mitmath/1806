@@ -237,3 +237,11 @@ Cases (1)-(3) are called **full rank**: the rank is as big as possible given the
 Note: On Wednesday February 28, we will have an in class review
 for Exam 1.  Bring Questions.  You may wish to look at
 [ previous Exam 1 problems](http://web.mit.edu/18.06/www/old.shtml), though note that the timing of Exam 1 can vary from semester to semester so topics can shift.
+
+## Lecture 9 (Feb 26)
+
+We looked at the general form of the RREF, considered the four fundamental subspaces, and used a graph as an example.  We covered GS 3.5.
+
+## Lecture 10 (Feb 28)
+
+Review.
