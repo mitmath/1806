@@ -245,3 +245,6 @@ We looked at the general form of the RREF, considered the four fundamental subsp
 ## Lecture 10 (Feb 28)
 
 Review.
+
+
+[PSET 4](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset4%20Spring2018%20Prof.Edelman.ipynb) due March 7, 10:55am  .
