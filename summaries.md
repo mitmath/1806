@@ -248,3 +248,30 @@ Review.
 
 
 [PSET 4](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset4%20Spring2018%20Prof.Edelman.ipynb) due March 7, 10:55am  .
+
+## Lecture 11 (Mar 5)
+
+We defined orthogonal subpsaces and orthogonal complements.
+
+Showed that the matrix subspaces have an *orthogonality* relationship: C(A)⟂N(Aᵀ),
+in the sense that every vector in C(A) is orthogonal to every vector in N(Aᵀ).
+In consequence, their intersection is {0} (0-dimensional), and C(A)+N(Aᵀ)=ℝᵐ.
+Similarly for C(Aᵀ) and N(A).  This is the fundamental theorem of linear algebra.
+
+Equivalently, showed that N(Aᵀ) is the *orthogonal complement* of C(A),
+defining the orthogonal complement S<sup>⟂</sup> of a subspace S as
+{x such that xᵀy=0 for all y ∈ S}.  Showed explicitly that if y is orthogonal
+to every vector in C(A), then y is necessarily in N(Aᵀ) (and vice versa).
+
+This often gives an nice way to check if a vector is in C(A): b is in C(A)
+if and only if b is orthogonal to N(Aᵀ) (or to a basis thereof).   Gave
+an example where C(A) is a plane in ℝ³, N(Aᵀ) is the line through 0 orthogonal
+to that plane, and the equation for b ∈ C(A) was yᵀb=0 for a y ∈ N(Aᵀ)
+
+Considered a number of examples of matrices A, and considered the picture on the
+front cover of the book.
+
+Concluded with the observation that n independent vectors in ℝᵐ span the space hence
+form a basis.  Similaraly n spanning vector in ℝᵐ are independent, and thus are also a basis.
+
+
