@@ -249,7 +249,9 @@ Review.
 
 [PSET 4](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset4%20Spring2018%20Prof.Edelman.ipynb) due March 7, 10:55am  .
 
-## Lecture 11 (Mar 5)
+## Lecture 11 (Mar 2) Exam 1
+
+## Lecture 12 (Mar 5)
 
 We defined orthogonal subpsaces and orthogonal complements.
 
