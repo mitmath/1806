@@ -284,6 +284,9 @@ form a basis.  Similaraly n spanning vector in ℝᵐ are independent, and thus 
 
 **Further reading:** Textbook 4.2; video [lecture 15](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-15-projections-onto-subspaces/).
 
+[PSET 5](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset5%20Spring2018%20Prof.Edelman.ipynb) due March 14, 10:55am  .
+
+
 ## Lecture 14 (Mar 9)
 **Further reading:** Textbook 4.3; video [lecture 16](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-16-projection-matrices-and-least-squares/).
 
