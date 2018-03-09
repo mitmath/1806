@@ -290,6 +290,8 @@ Orthogonal projection onto C(A) and other subspaces, and the projection matrix P
 * Projection I-P onto the orthogonal complement of C(A), i.e onto N(Aᵀ).
 * Projection P = B(BᵀB)⁻¹Bᵀ onto an arbitrary subspace, where B is a matrix whose columns are the basis vectors.  For example, if A is not full column rank, we can make a new matrix B out of the pivot columns and use B(BᵀB)⁻¹Bᵀ to project onto C(A)=C(B).
 
+We mentioned that the SVD can be used when the subspace is not known, but is to be determined by the data, and deep neural nets (not 18.06) are used when we are fitting to a nonlinear space.
+
 
 **Further reading:** Textbook 4.2; video [lecture 15](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-15-projections-onto-subspaces/).
 
