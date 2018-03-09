@@ -279,3 +279,11 @@ Concluded with the observation that n independent vectors in ℝᵐ span the spa
 form a basis.  Similaraly n spanning vector in ℝᵐ are independent, and thus are also a basis.
 
 **Further reading:** Textbook 4.1; video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/). 
+
+## Lecture 13 (Mar 7)
+
+**Further reading:** Textbook 4.2; video [lecture 15].
+
+## Lecture 14 (Mar 9)
+
+**Further reading:** Textbook 4.3; video [lecture 16].
