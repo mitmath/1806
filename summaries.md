@@ -287,6 +287,3 @@ form a basis.  Similaraly n spanning vector in ℝᵐ are independent, and thus 
 ## Lecture 14 (Mar 9)
 **Further reading:** Textbook 4.3; video [lecture 16](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-16-projection-matrices-and-least-squares/).
 
-## Lecture 14 (Mar 9)
-
-**Further reading:** Textbook 4.3; video [lecture 16].
