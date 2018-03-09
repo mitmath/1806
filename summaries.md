@@ -296,6 +296,8 @@ We mentioned that the SVD can be used when the subspace is not known, but is to 
 **Further reading:** Textbook 4.2; video [lecture 15](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-15-projections-onto-subspaces/).
 
 [PSET 5](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset5%20Spring2018%20Prof.Edelman.ipynb) due March 14, 10:55am  .
+<br>
+[Solutions to PSET 4](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset4%20Solutions.ipynb) 
 
 
 ## Lecture 14 (Mar 9)
