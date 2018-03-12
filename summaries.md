@@ -341,3 +341,5 @@ There are lots of other least squares examples worth looking at in
 
 **Further reading:** Textbook 4.3; video [lecture 16](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-16-projection-matrices-and-least-squares/).
 
+## Lecture 15 (Mar 12)
+**Further reading:** Textbook 4.4; video [lecture 17](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/)
