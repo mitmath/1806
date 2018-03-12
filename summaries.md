@@ -331,7 +331,8 @@ and so the result is a matrix not a vector.  The idea is the same, one computes 
 output with respect to every component of a matrix.
 
 An important example in machine learning worth memorizing: <br>
-∇_W(xᵀWx) = xxᵀ for a square W.
+∇_W(xᵀWx) = xxᵀ for a square W. More generally <br>
+∇_W(yᵀWx) = yxᵀ. (Check that if W is mxn, so is yxᵀ). 
 
 There are lots of other least squares examples worth looking at in the
 [least squares lecture notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Least-Square%20Fitting.ipynb)
