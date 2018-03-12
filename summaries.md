@@ -321,7 +321,7 @@ with respect to. (x in these examples)
 ∇ₓ( w ⋅ x ) = ∇ₓ( wᵀx ) =  w
 ∇ₓ( xᵀMx ) = (M+Mᵀ)  (which is 2M if M is symmetric)
 
-Finding extrema such as minimimums is solved by setting a gradient to 0.
+Finding extrema such as minimums is solved by setting a gradient to 0.
 
 We then showed how if you find the gradient of (Ax-b)ᵀ(Ax-b) = xᵀAᵀAx - 2bᵀAx + bᵀb, and
 set it to 0 we recover (AᵀA)x̂=(Aᵀb).
