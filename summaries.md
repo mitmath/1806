@@ -333,7 +333,7 @@ output with respect to every component of a matrix.
 An important example in machine learning worth memorizing: <br>
 ∇_W(xᵀWx) = xxᵀ for a square W.
 
-There are lots of other least squares examples worth looking at in
+There are lots of other least squares examples worth looking at in the
 [least squares lecture notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Least-Square%20Fitting.ipynb)
 
 
