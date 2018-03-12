@@ -301,5 +301,43 @@ We mentioned that the SVD can be used when the subspace is not known, but is to 
 
 
 ## Lecture 14 (Mar 9)
+
+We went through least squares with geometry, algebra, and calculus.
+
+We mentioned that one can use A\b in Julia to find the least squares solution to Ax̂=b
+whose explicit solution is the same as (AᵀA)x̂=(Aᵀb) as long as A has independent columns.
+
+We show how to view two dimensional line fitting which minimizes vertical distances squared
+to a line is equivalent to an orthgonal projection in ℝ^n
+where the A is an nx2 matrix.
+
+We recommended memorizing a few basic gradients, not so much for 18.06 but other courses you may
+take.  We took gradients of functions with vector inputs and scalar outputs.  It is worth noting
+that the size of a gradient is always the size of the variable the gradient is taking the derivatives
+with respect to. (x in these examples)
+
+∇ₓ(constant) = the zero vector in ℝ^n <br>
+∇ₓ( sum(x) ) = the ones vector in ℝ^n <br>
+∇ₓ( w ⋅ x ) = ∇ₓ( wᵀx ) =  w
+∇ₓ( xᵀMx ) = (M+Mᵀ)  (which is 2M if M is symmetric)
+
+Finding extrema such as minimimums is solved by setting a gradient to 0.
+
+We then showed how if you find the gradient of (Ax-b)ᵀ(Ax-b) = xᵀAᵀAx - 2bᵀAx + bᵀb, and
+set it to 0 we recover (AᵀA)x̂=(Aᵀb).
+
+In machine learning one often computes gradients with respect to matrices not vectors,
+and so the result is a vector.  The idea is the same, one computes the derivative of a scalar
+output with respect to every component of a matrix.
+
+An important example in machine learning worth memorizing:
+∇_W(xᵀWx) = xxᵀ
+
+There are lots of other least squares examples worth looking at in
+[least squares lecture notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Least-Square%20Fitting.ipynb)
+
+
+
+
 **Further reading:** Textbook 4.3; video [lecture 16](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-16-projection-matrices-and-least-squares/).
 
