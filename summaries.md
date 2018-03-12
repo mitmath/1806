@@ -327,11 +327,11 @@ We then showed how if you find the gradient of (Ax-b)ᵀ(Ax-b) = xᵀAᵀAx - 2b
 set it to 0 we recover (AᵀA)x̂=(Aᵀb).
 
 In machine learning one often computes gradients with respect to matrices not vectors,
-and so the result is a vector.  The idea is the same, one computes the derivative of a scalar
+and so the result is a matrix not a vector.  The idea is the same, one computes the derivative of a scalar
 output with respect to every component of a matrix.
 
-An important example in machine learning worth memorizing:
-∇_W(xᵀWx) = xxᵀ
+An important example in machine learning worth memorizing: <br>
+∇_W(xᵀWx) = xxᵀ for a square W.
 
 There are lots of other least squares examples worth looking at in
 [least squares lecture notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Least-Square%20Fitting.ipynb)
