@@ -378,3 +378,4 @@ We also briefly looked at the Julia notebooks for sine series and orthogonal pol
 
 
 [PSET 6](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset6%20Spring2018%20Prof.Edelman.ipynb)  due March 21, 10:55am.<br> 
+[Solutions to PSET 5](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset5%20Solutions.ipynb)  
