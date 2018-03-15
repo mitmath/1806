@@ -346,13 +346,24 @@ There are lots of other least squares examples worth looking at in the
 
 We showed that projections and least squares simplify with orthonormal bases, discussed angles
 in higher dimensions (as defined by acos(x⋅y/(‖x‖‖y‖)).
+
+We considered rotations, permutations, and reflections (I-2uuᵀ) where u is a unit vector.
+
+
+We began a Gram Schmidt computation in a Julia notebook.  Many students noticed
+that this seemed too much like a hand computation on a computer, and asked if this
+could be done in a better way on a computer.  We will see that this is possible in Lecture 17.
+
 **Further reading:** Textbook 4.4; video [lecture 17](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/)
 
 ## Lecture 16 (Mar 14)
 
 We discussed two forms of infinite dimensional vector space.  The discrete v=(v₁,v₂,v₃,…) or continuous functions defined on an interval such as [0,2π], or [-1,1].  Dot products are infinite sums for the discrete case.  We take integrals in the continuous case: (f,g) = ∫f(x)g(x)dx, where the integration is over the interval.  In Hilbert space, we take only those vectors of finite length.  This is a subspace.  One can talk about angles between two functions or the length of a function, and this makes perfect sense.
 
-We then talked about Fourier series as an example of P = UUᵀ.  We also briefly looked at the Julia notebooks for sine series and orthogonal polynomials:
+We then talked about Fourier series as an example of P = UUᵀ.
+The purpose was not so very much to teach Fourier series, but to see Fourier series as the same mathematics
+as the finite matrix projection or expansion.
+We also briefly looked at the Julia notebooks for sine series and orthogonal polynomials:
 
 [sine series notebook](https://github.com/stevengj/1806/blob/master/lectures/Sine-series.ipynb) <br>
 [orthogonal polynomial notebook](Orthogonal-Polynomials.ipynb)
