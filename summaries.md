@@ -350,6 +350,9 @@ in higher dimensions (as defined by acos(x⋅y/(‖x‖‖y‖)).
 We considered rotations, permutations, and reflections (I-2uuᵀ) where u is a unit vector.
 
 
+
+
+
 We began a Gram Schmidt computation in a Julia notebook.  Many students noticed
 that this seemed too much like a hand computation on a computer, and asked if this
 could be done in a better way on a computer.  We will see that this is possible in Lecture 17.
