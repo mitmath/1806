@@ -377,4 +377,4 @@ We also briefly looked at the Julia notebooks for sine series and orthogonal pol
 **Further reading:** Textbook 10.5; video [lecture 24, starting at 35:15 ](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/)
 
 
-[PSET 6](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset6%20Spring2018%20Prof.Edelman.ipynb)  . <br>
+[PSET 6](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset6%20Spring2018%20Prof.Edelman.ipynb)  . <br> due March 21, 10:55am. 
