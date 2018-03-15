@@ -354,7 +354,7 @@ We began a Gram Schmidt computation in a Julia notebook.  Many students noticed
 that this seemed too much like a hand computation on a computer, and asked if this
 could be done in a better way on a computer.  We will see that this is possible in Lecture 17.
 
-(Gram Schmidt notebook)[http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Gram-Schmidt.ipynb]
+[Gram Schmidt notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Gram-Schmidt.ipynb)
 
 **Further reading:** Textbook 4.4; video [lecture 17](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/)
 
