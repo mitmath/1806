@@ -401,3 +401,7 @@ For starters it is not clear that there is a function with the above three prope
 Other properties of determinants may be seen in this notebook:
 
 [determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Determinants.ipynb) <br>
+
+
+**Further reading:** Textbook 5.1; video [lecture 18](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants/)
+
