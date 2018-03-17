@@ -379,3 +379,25 @@ We also briefly looked at the Julia notebooks for sine series and orthogonal pol
 
 [PSET 6](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset6%20Spring2018%20Prof.Edelman.ipynb)  due March 21, 10:55am.<br> 
 [Solutions to PSET 5](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset5%20Solutions.ipynb)  
+
+
+## Lecture 17 (Mar 16)
+
+We discussed how if A has independent columns, one can form A = QR, where Q and A have the same size and R is upper triangular.  R encodes the fact that the span of the first k columns of Q matches that of the first k columns of A, for k=1,2,....
+
+We compared and constrasted A,Q, and the U from the svd.  They all have the same size.  They all have the same column space.  A contains columns in arbitrary directions.  Q and U both have orthonormal columns but are not generally the same matrix.  Q has the spanning property mentioned above.  U has a best approximation property, which we will see later in the course.
+
+We then began to talk about the properties of determinants.  We mentioned that determinants are more useful for theory than for practical computations.  Determinants are rarely used in practical computer programs.
+
+A determinant is a scalar function of an nxn matrix.  One can write down an explicit formula or the three
+basic properties:
+
+1. Det(I)=1 <br>
+2. If you interchange rows, the determinant flips sign <br>
+3. The determinant is a linear function of each row separately.
+
+For starters it is not clear that there is a function with the above three properties, or whether it is unique, and that is what we will investigate.
+
+Other properties of determinants may be seen in this notebook:
+
+[determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Determinants.ipynb) <br>
