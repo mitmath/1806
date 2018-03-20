@@ -319,7 +319,7 @@ with respect to. (x in these examples)
 ∇ₓ(constant) = the zero vector in ℝ^n <br>
 ∇ₓ( sum(x) ) = the ones vector in ℝ^n <br>
 ∇ₓ( w ⋅ x ) = ∇ₓ( wᵀx ) =  w <br>
-∇ₓ( xᵀMx ) = (M+Mᵀ)  (which is 2M if M is symmetric)
+∇ₓ( xᵀMx ) = (M+Mᵀ)x  (which is 2Mx if M is symmetric)
 
 Finding extrema such as minimums is solved by setting a gradient to 0.
 
