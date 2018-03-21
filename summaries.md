@@ -415,4 +415,9 @@ In particular, we methodically showed step by step that the three axioms imply t
 
 Now that we know the three properties imply one unique function, then we can use this to show that D(A) defined as |AB|/|B| for any non-singular B, has the three properties so for sure D(A)=|A|, and thus |AB|=|A||B|.  (If A is singular or B is singular, it is easy to see that AB is singular, so these cases can be checked easily.)
 
+## Lecture 19 (Mar 21)
 
+We proved |Aᵀ|=|A| and discussed how |permutation matrix| = ±1.
+This allowed us to see that if you took the [fifteen puzzle](https://en.wikipedia.org/wiki/15_puzzle) and you interchanged two pieces you would render th epuzzle insolvable.  The same argument would basically be true if you interchanged two edge centered pieces of a Rubik's cube.  
+
+We showed that the pivots of a matrix are given by a ratio of determinants , and also the solution to Ax=b, is a ratio of determinants by Cramer's rule.
