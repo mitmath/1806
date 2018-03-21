@@ -405,3 +405,14 @@ Other properties of determinants may be seen in this notebook:
 
 **Further reading:** Textbook 5.1; video [lecture 18](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants/)
 
+## Lecture 18 (Mar 19)
+
+We continued to prove the various properties of the determinant found in 
+this notebook:
+[determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Determinants.ipynb) <br>
+
+In particular, we methodically showed step by step that the three axioms imply that the the determinant of a matrix must be (-1)^(# row exchanges) x (product of the pivots.)  That's it, nothing else, it must be that.
+
+Now that we know the three properties imply one unique function, then we can use this to show that D(A) defined as |AB|/|B| for any non-singular B, has the three properties so for sure D(A)=|A|, and thus |AB|=|A||B|.  (If A is singular or B is singular, it is easy to see that AB is singular, so these cases can be checked easily.)
+
+
