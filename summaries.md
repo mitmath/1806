@@ -421,3 +421,8 @@ We proved |Aᵀ|=|A| and discussed how |permutation matrix| = ±1.
 This allowed us to see that if you took the [fifteen puzzle](https://en.wikipedia.org/wiki/15_puzzle) and you interchanged two pieces you would render th epuzzle insolvable.  The same argument would basically be true if you interchanged two edge centered pieces of a Rubik's cube.  
 
 We showed that the pivots of a matrix are given by a ratio of determinants , and also the solution to Ax=b, is a ratio of determinants by Cramer's rule.
+
+
+We discussed that if L(x) is a linear function of x with scalar values, then L(x) must have the form C ⋅ x  for some vector C.  We then wrote down C for 2x2 matrix determinants and 3x3 matrix determinants.
+
+We wroted down the big formula for determinants in terms of permutations.
