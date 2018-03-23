@@ -415,10 +415,13 @@ In particular, we methodically showed step by step that the three axioms imply t
 
 Now that we know the three properties imply one unique function, then we can use this to show that D(A) defined as |AB|/|B| for any non-singular B, has the three properties so for sure D(A)=|A|, and thus |AB|=|A||B|.  (If A is singular or B is singular, it is easy to see that AB is singular, so these cases can be checked easily.)
 
+**Further reading:** Textbook 5.2; video [lecture 19](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-19-determinant-formulas-and-cofactors/)
+
 ## Lecture 19 (Mar 21)
 
 We proved |Aᵀ|=|A| and discussed how |permutation matrix| = ±1.
-This allowed us to see that if you took the [fifteen puzzle](https://en.wikipedia.org/wiki/15_puzzle) and you interchanged two pieces you would render th epuzzle insolvable.  The same argument would basically be true if you interchanged two edge centered pieces of a Rubik's cube.  
+This allowed us to see that if you took the [fifteen puzzle](https://en.wikipedia.org/wiki/15_puzzle) and you interchanged two pieces you would render th epuzzle insolvable.  Here's the idea: 1) if one checkerboards (colors alternately black and red) the 4x4 array, it's easy to see that if the "hole" journeys to the same starting position, it would take an even number of steps.  The state of the puzzle can be encoded as a 16x16 permutation matrix, and every step is a row exchange, hence switches the sign of the determinant.  Thus if you interchange two pieces artifically you can never solve the puzzle. 
+  The same argument would basically be true if you interchanged two of the edge centered pieces of a Rubik's cube.  The state is a 12x12 permutation matrix, and a 3d checkerboarding shows you need an even number of steps to return to where you start.   
 
 We showed that the pivots of a matrix are given by a ratio of determinants , and also the solution to Ax=b, is a ratio of determinants by Cramer's rule.
 
@@ -427,4 +430,13 @@ We discussed that if L(x) is a linear function of x with scalar values, then L(x
 
 We wroted down the big formula for determinants in terms of permutations.
 
-[PSET 7](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset7%20Spring2018%20Prof.Edelman.ipynb)  due Wednesday   April 5, 10:55am.<br> 
+[PSET 7](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset7%20Spring2018%20Prof.Edelman.ipynb)  due Wednesday   April 4, 10:55am.<br> 
+
+**Further reading:** Textbook 5.3; video [lecture 20](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-20-cramers-rule-inverse-matrix-and-volume/)
+
+
+## Lecture 20 (Mar 23)
+**Further reading:** Textbook 5.4. 
+
+
+
