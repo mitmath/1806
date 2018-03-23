@@ -426,3 +426,5 @@ We showed that the pivots of a matrix are given by a ratio of determinants , and
 We discussed that if L(x) is a linear function of x with scalar values, then L(x) must have the form C ⋅ x  for some vector C.  We then wrote down C for 2x2 matrix determinants and 3x3 matrix determinants.
 
 We wroted down the big formula for determinants in terms of permutations.
+
+[PSET 7](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset7%20Spring2018%20Prof.Edelman.ipynb)  due Wednesday   April 5, 10:55am.<br> 
