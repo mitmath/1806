@@ -436,7 +436,9 @@ We wroted down the big formula for determinants in terms of permutations.
 
 
 ## Lecture 20 (Mar 23)
-**Further reading:** Textbook 5.4. 
+
+We derived an explicit formula for the elements of A⁻¹, discussed the cofactor rules, the cross product, and volumes.
+**Further reading:** Textbook 5.3. 
 
 
 
