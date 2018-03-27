@@ -428,7 +428,7 @@ We showed that the pivots of a matrix are given by a ratio of determinants , and
 
 We discussed that if L(x) is a linear function of x with scalar values, then L(x) must have the form C ⋅ x  for some vector C.  We then wrote down C for 2x2 matrix determinants and 3x3 matrix determinants.
 
-We wroted down the big formula for determinants in terms of permutations.
+We wrote down the big formula for determinants in terms of permutations.
 
 [PSET 7](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset7%20Spring2018%20Prof.Edelman.ipynb)  due Wednesday   April 4, 10:55am.<br> 
 
@@ -438,6 +438,15 @@ We wroted down the big formula for determinants in terms of permutations.
 ## Lecture 20 (Mar 23)
 
 We derived an explicit formula for the elements of A⁻¹, discussed the cofactor rules, the cross product, and volumes.
+In particular the cofactor formula is the very Property 3.  We explained that perhaps one can view it as a formula
+for determinants, but one should also understand that the very linearity in Propety 3 is given explicitly in that formula.
+
+We saw that the cross product was really the cofactors and explained there could be a cross product in higher dimensions but it would
+take n-1 arguments and produce n cofactors.
+
+Familiar formulas like if you double every length in a 3d object, the volume is multiplied by 2^3=8 generalize to higher
+dimensions and are captured by the determinant formula.
+
 **Further reading:** Textbook 5.3. 
 
 
