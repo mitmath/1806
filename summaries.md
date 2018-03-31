@@ -347,6 +347,9 @@ There are lots of other least squares examples worth looking at in the
 We showed that projections and least squares simplify with orthonormal bases, discussed angles
 in higher dimensions (as defined by acos(x⋅y/(‖x‖‖y‖)).
 
+We talked about orthogonal matrices being defined as matrices with
+orthonormal columns.  Orthogonal matrices preserve length and dot products, hence angles.
+
 We considered rotations, permutations, and reflections (I-2uuᵀ) where u is a unit vector.
 
 
