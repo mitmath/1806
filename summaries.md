@@ -453,4 +453,10 @@ dimensions and are captured by the determinant formula.
 **Further reading:** Textbook 5.3. 
 
 
+## Lecture 21 (April 2)
 
+## Lecture 22 (April 4)
+
+## Lecture 23 (April 6)
+
+## Lecture 24 (April 9)
