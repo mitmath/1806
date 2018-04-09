@@ -454,9 +454,43 @@ dimensions and are captured by the determinant formula.
 
 
 ## Lecture 21 (April 2)
+Began Eigenvalues
+**Further reading:** Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).
+
+Ax=λx 
+
+A=XΛX⁻¹
+
+Considered eigenvalues of Projection Matrices, Rotation Matrices, Reflection Matrices.  
+
+Pure mathematicians make a big deal
+about the eigenvalues as the roots of the characteristic polynomial det(A–λI). This
+is one  good way to *think* about eigenvalue problems (e.g. it tells you immediately
+to expect ≤ m eigenvalues, possibly complex, from an m×m matrix).  But it is not
+really a good way to compute them except for tiny (e.g. 2×2) matrices.
+
+
+
+In fact, it's actually the reverse: one of the best ways to compute roots of
+polynomials is to convert the polynomial into a matrix and find the eigenvalues.
+
+The matrix factorization A=XΛX⁻¹ is also sometimes a better way to think
+about eigenvalues. 
+
+The actual way eigenvalues are computed is a topic for another class (e.g. 18.335);
+in 18.06, we will focus mainly on their properties and usage.  The computer
+will handle finding them.
+
+
 
 ## Lecture 22 (April 4)
+Review
 
 ## Lecture 23 (April 6)
+Exam 2
 
 ## Lecture 24 (April 9)
+Similar Matrices
+
+**Further reading:** Strang, sections 6.1 and 6.2; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/) and [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/)
+
