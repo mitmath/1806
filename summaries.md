@@ -455,11 +455,12 @@ dimensions and are captured by the determinant formula.
 
 ## Lecture 21 (April 2)
 Began Eigenvalues
-**Further reading:** Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).
-
 Ax=λx 
 
 A=XΛX⁻¹
+
+Eigenvalues are ways to turn hard matrix problems into a system of easy
+scalar problems.
 
 Considered eigenvalues of Projection Matrices, Rotation Matrices, Reflection Matrices.  
 
@@ -481,6 +482,11 @@ The actual way eigenvalues are computed is a topic for another class (e.g. 18.33
 in 18.06, we will focus mainly on their properties and usage.  The computer
 will handle finding them.
 
+* [Eigenvalues and Polynomials notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Eigenvalue-Polynomials.ipynb)
+
+
+**Further reading:** Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).
+
 
 
 ## Lecture 22 (April 4)
@@ -491,6 +497,8 @@ Exam 2
 
 ## Lecture 24 (April 9)
 Similar Matrices
+
+Flow Chart as to when matrices may be similar.
 
 **Further reading:** Strang, sections 6.1 and 6.2; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/) and [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/)
 
