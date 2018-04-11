@@ -506,5 +506,5 @@ Flow Chart as to when matrices may be similar.
 
 ## Lecture 25 (April 11)
 The matrices tA + (1-t)I all have the same eigenvectors for any scalar t.
-(This Julia code)[https://github.com/stevengj/1806/blob/master/lectures/eigshow.jl] is meant to be a fun illustration but it falls short.
+[This Julia code](https://github.com/stevengj/1806/blob/master/lectures/eigshow.jl) is meant to be a fun illustration but it falls short.
 If one of you would like to fix this, it would be fantastic.
