@@ -500,5 +500,11 @@ Similar Matrices
 
 Flow Chart as to when matrices may be similar.
 
+
 **Further reading:** Strang, sections 6.1 and 6.2; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/) and [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/)
 
+
+## Lecture 25 (April 11)
+The matrices tA + (1-t)I all have the same eigenvectors for any scalar t.
+(This Julia code)[https://github.com/stevengj/1806/blob/master/lectures/eigshow.jl] is meant to be a fun illustration but it falls short.
+If one of you would like to fix this, it would be fantastic.
