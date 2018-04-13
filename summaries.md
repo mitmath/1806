@@ -508,3 +508,24 @@ Flow Chart as to when matrices may be similar.
 The matrices tA + (1-t)I all have the same eigenvectors for any scalar t.
 [This Julia code](https://github.com/stevengj/1806/blob/master/lectures/eigshow.jl) is meant to be a fun illustration but it falls short.
 If one of you would like to fix this, it would be fantastic.
+
+The idea of similar matrices as buckets and for diagonalizible
+matrices, a  diagonal is a  nice representative.
+
+Analysis of Fibonacci numbers.
+
+## Lecture 26 (April 13)
+
+Analysis of Aᵏu₀
+
+Markov Matrices (Positive Markov Matrices)
+
+
+* [Markov matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Markov.ipynb)
+* [Analyzing Chutes & Ladders](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Chutes-and-Ladders.ipynb)
+
+[Markov matrices](https://en.wikipedia.org/wiki/Stochastic_matrix) and eigenvalues.
+
+**Further reading:** Strang, section 8.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).
+
+
