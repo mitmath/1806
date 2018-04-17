@@ -526,6 +526,6 @@ Markov Matrices (Positive Markov Matrices)
 
 [Markov matrices](https://en.wikipedia.org/wiki/Stochastic_matrix) and eigenvalues.
 
-**Further reading:** Strang, section 8.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).
+**Further reading:** Strang, section 10.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).
 
 
