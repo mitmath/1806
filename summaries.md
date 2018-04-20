@@ -528,16 +528,15 @@ Markov Matrices (Positive Markov Matrices)
 
 **Further reading:** Strang, section 10.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).
 
-## Lecture 27 (April 16)
 
-## Lecture 28 (April 18)
+## Lecture 27 (April 18)
 
 * [Ordinary differential equations (ODEs)](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/ODEs.ipynb).
 
 We can now solve systems of ODEs dx/dt = Ax in terms of eigenvectors and eigenvalues.
 Each eigenvector is multiplied by exp(λt) (where exp(x)=eˣ), so that solutions decay
 if the eigenvalues have *negative real parts* (and approach a nonzero steady state
-if one eigenvalue is *zero*).  Next time, we will also express this in terms of a new
+if one eigenvalue is *zero*).  We can also express this in terms of a new
 Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential).
 
 **Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).
