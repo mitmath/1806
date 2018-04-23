@@ -278,7 +278,7 @@ front cover of the book.
 Concluded with the observation that n independent vectors in ℝᵐ span the space hence
 form a basis.  Similaraly n spanning vector in ℝᵐ are independent, and thus are also a basis.
 
-**Further reading:** Textbook 4.1; video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/). 
+**Further reading:** Textbook 4.1; video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/).
 
 ## Lecture 13 (Mar 7)
 Orthogonal projection onto C(A) and other subspaces, and the projection matrix P.
@@ -297,7 +297,7 @@ We mentioned that the SVD can be used when the subspace is not known, but is to 
 
 [PSET 5](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset5%20Spring2018%20Prof.Edelman.ipynb) due March 14, 10:55am  .
 <br>
-[Solutions to PSET 4](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset4%20Solutions.ipynb) 
+[Solutions to PSET 4](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset4%20Solutions.ipynb)
 
 
 ## Lecture 14 (Mar 9)
@@ -332,7 +332,7 @@ output with respect to every component of a matrix.
 
 An important example in machine learning worth memorizing: <br>
 ∇_W(xᵀWx) = xxᵀ for a square W. More generally <br>
-∇_W(yᵀWx) = yxᵀ. (Check that if W is mxn, so is yxᵀ). 
+∇_W(yᵀWx) = yxᵀ. (Check that if W is mxn, so is yxᵀ).
 
 There are lots of other least squares examples worth looking at in the
 [least squares lecture notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Least-Square%20Fitting.ipynb)
@@ -375,12 +375,12 @@ We also briefly looked at the Julia notebooks for sine series and orthogonal pol
 
 [sine series notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Sine-series.ipynb) <br>
 [orthogonal polynomial notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Orthogonal-Polynomials.ipynb)
- 
+
 
 **Further reading:** Textbook 10.5; video [lecture 24, starting at 35:15 ](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/)
 
 
-[PSET 6](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset6%20Spring2018%20Prof.Edelman.ipynb)  due Thursday !! March 22, 10:55am.<br> 
+[PSET 6](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset6%20Spring2018%20Prof.Edelman.ipynb)  due Thursday !! March 22, 10:55am.<br>
 [Solutions to PSET 5](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset5%20Solutions.ipynb)  
 
 
@@ -410,7 +410,7 @@ Other properties of determinants may be seen in this notebook:
 
 ## Lecture 18 (Mar 19)
 
-We continued to prove the various properties of the determinant found in 
+We continued to prove the various properties of the determinant found in
 this notebook:
 [determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Determinants.ipynb) <br>
 
@@ -423,7 +423,7 @@ Now that we know the three properties imply one unique function, then we can use
 ## Lecture 19 (Mar 21)
 
 We proved |Aᵀ|=|A| and discussed how |permutation matrix| = ±1.
-This allowed us to see that if you took the [fifteen puzzle](https://en.wikipedia.org/wiki/15_puzzle) and you interchanged two pieces you would render th epuzzle insolvable.  Here's the idea: 1) if one checkerboards (colors alternately black and red) the 4x4 array, it's easy to see that if the "hole" journeys to the same starting position, it would take an even number of steps.  The state of the puzzle can be encoded as a 16x16 permutation matrix, and every step is a row exchange, hence switches the sign of the determinant.  Thus if you interchange two pieces artifically you can never solve the puzzle. 
+This allowed us to see that if you took the [fifteen puzzle](https://en.wikipedia.org/wiki/15_puzzle) and you interchanged two pieces you would render th epuzzle insolvable.  Here's the idea: 1) if one checkerboards (colors alternately black and red) the 4x4 array, it's easy to see that if the "hole" journeys to the same starting position, it would take an even number of steps.  The state of the puzzle can be encoded as a 16x16 permutation matrix, and every step is a row exchange, hence switches the sign of the determinant.  Thus if you interchange two pieces artifically you can never solve the puzzle.
   The same argument would basically be true if you interchanged two of the edge centered pieces of a Rubik's cube.  The state is a 12x12 permutation matrix, and a 3d checkerboarding shows you need an even number of steps to return to where you start.   
 
 We showed that the pivots of a matrix are given by a ratio of determinants , and also the solution to Ax=b, is a ratio of determinants by Cramer's rule.
@@ -433,7 +433,7 @@ We discussed that if L(x) is a linear function of x with scalar values, then L(x
 
 We wrote down the big formula for determinants in terms of permutations.
 
-[PSET 7](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset7%20Spring2018%20Prof.Edelman.ipynb)  due Wednesday   April 4, 10:55am.<br> 
+[PSET 7](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset7%20Spring2018%20Prof.Edelman.ipynb)  due Wednesday   April 4, 10:55am.<br>
 
 **Further reading:** Textbook 5.3; video [lecture 20](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-20-cramers-rule-inverse-matrix-and-volume/)
 
@@ -450,12 +450,12 @@ take n-1 arguments and produce n cofactors.
 Familiar formulas like if you double every length in a 3d object, the volume is multiplied by 2^3=8 generalize to higher
 dimensions and are captured by the determinant formula.
 
-**Further reading:** Textbook 5.3. 
+**Further reading:** Textbook 5.3.
 
 
 ## Lecture 21 (April 2)
 Began Eigenvalues
-Ax=λx 
+Ax=λx
 
 A=XΛX⁻¹
 
@@ -476,7 +476,7 @@ In fact, it's actually the reverse: one of the best ways to compute roots of
 polynomials is to convert the polynomial into a matrix and find the eigenvalues.
 
 The matrix factorization A=XΛX⁻¹ is also sometimes a better way to think
-about eigenvalues. 
+about eigenvalues.
 
 The actual way eigenvalues are computed is a topic for another class (e.g. 18.335);
 in 18.06, we will focus mainly on their properties and usage.  The computer
@@ -540,3 +540,34 @@ if one eigenvalue is *zero*).  We can also express this in terms of a new
 Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential).
 
 **Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).
+
+## Lecture 28 (April 20)
+
+## Lecture 29 (April 23) (S. G. Johnson)
+
+As an application of real-symmetric and positive-definite matrices, I returned
+to the system of masses and springs from lecture 23, but this time I considered
+N masses m and N+1 springs.   I showed that Newton's laws take the form:
+
+* mẍ = -kDᵀDx ⟹ ẍ = -Ax, where D is an incidence matrix and A=(k/m)DᵀD.
+
+A is obviously real-symmetric, so its eigenvalues λ are real.  With a little more work, we saw that it must be positive-definite.  In particular, take any eigensolution Av=λv for v≠0.  Taking a dot product vᵀAv=λvᵀv, we found vᵀAx=(k/m)vᵀDᵀDv=(Dv)ᵀDx=λvᵀv, so λ=(k/m)‖Dv‖²/‖v‖² ≥ 0 immediately follows.  Since Dᵀ is upper triangular, by inspection it had rank Ν (N pivots), and hence D has full column rank so Dv≠0 and λ>0.
+
+The fact that A is negative definite allowed us to derive that *any* such system of masses and springs has *orthogonal oscillating solutions* called the [normal modes](https://en.wikipedia.org/wiki/Normal_mode). In particular, given the eigenvectors vⱼ (orthogonal since A is real-symmetric!), satisfying Avⱼ=λⱼvⱼ with λⱼ>0, we expanded the solution x(t)=∑ⱼcⱼvⱼ in the basis of these eigenvectors.  For each eigenvector component, the matrix A acts just like a number λ, allowing us to easily solve the equation c̈ⱼ=-λⱼcⱼ to get sines and cosines, and hence to get the general solution:
+
+* x(t) = ∑ⱼ [αⱼ cos(ωⱼt) + βⱼ sin(ωⱼt)] vⱼ
+
+where ωⱼ=√-λⱼ, and αⱼ and βⱼ are determined from the initial conditions x(0) and ẋ(0).
+
+The key point is that the **structure** of the problem told us that λⱼ>0 and
+hence that the **frequencies** ωⱼ are **real** numbers.  (If they were complex, we would have exponentially growing or decaying solutions, which would make no physical sense for a system of lossless springs and masses.)  The moral of this story is that real-symmetric and definite matrices don't just fall down out of the sky, they arise from how the matrix was constructed, and that these matrix properties are often the key to understanding the physical properties of real problems.
+
+**Further reading:** Strang, section 10.2.  See also [these notes on the springs-and-masses problem](http://math.mit.edu/~stevenj/18.303/lecture-5.5.pdf) from [18.303](http://math.mit.edu/~stevenj/18.303/) (you can ignore the last two pages, which go beyond 18.06, and ignore the Δx factor which is used in 18.303 to connect the discrete problem to a continuous problem).  
+
+## Lecture 30 (April 25) (S. G. Johnson)
+
+* [Circulant matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Circulant-Matrices.ipynb)
+
+In this lecture, I want to introduce you to a new type of matrix: circulant matrices. Like real-symmetric matrices, they have orthonormal eigenvectors, but unlike real-symmetric matrices we know exactly what their eigenvectors are! Moreover, their eigenvectors are closely related to the famous Fourier transform and Fourier series. Even more importantly, it turns out that circulant matrices and the eigenvectors lend themselves to incredibly efficient algorithms called FFTs, that play a central role in much of computational science and engineering.
+
+**Further reading**: The textbook, sections 8.3 and 9.3, has some basic information on these topics.  The Wikipedia articles on [Circulant matrix](https://en.wikipedia.org/wiki/Circulant_matrix), [discrete Fourier transform](https://en.wikipedia.org/wiki/Discrete_Fourier_transform), and [fast Fourier transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform) aren't too bad.  Some [elementary lecture notes on FFTs](https://math.mit.edu/~stevenj/18.335/fft-iap3.pdf) from 18.095 talk more about the algorithms.
