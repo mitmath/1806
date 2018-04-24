@@ -543,6 +543,8 @@ Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki
 
 ## Lecture 28 (April 20)
 
+Symmetric matrices and Positive definite matrices.
+
 ## Lecture 29 (April 23) (S. G. Johnson)
 
 As an application of real-symmetric and positive-definite matrices, I returned
