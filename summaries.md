@@ -545,6 +545,15 @@ Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki
 
 Symmetric matrices and Positive definite matrices.
 
+Worth noting that for symmetric matrices, the singular values
+are the absolute values of the eigenvalues, while for positive
+definite matrices, the singular values are the same as eigenvalues.
+
+
+**Further reading:** Strang, sections 6.4–6.5,  and video [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/) .
+
+
+
 ## Lecture 29 (April 23) (S. G. Johnson)
 
 As an application of real-symmetric and positive-definite matrices, I returned
