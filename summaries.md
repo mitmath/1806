@@ -545,6 +545,13 @@ Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki
 
 Symmetric matrices and Positive definite matrices.
 
+We proved that symmetric matrices have real eigenvalues
+and eigenvectors for distinct eigenvalues are orthogonal.
+Further symmetric matrices are always diagonalizable.
+
+Positive definite matrices have a number of equivalent characterizations
+some of which are not so obviously equivalent.
+
 Worth noting that for symmetric matrices, the singular values
 are the absolute values of the eigenvalues, while for positive
 definite matrices, the singular values are the same as eigenvalues.
