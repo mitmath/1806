@@ -589,3 +589,15 @@ hence that the **frequencies** ωⱼ are **real** numbers.  (If they were comple
 In this lecture, I want to introduce you to a new type of matrix: circulant matrices. Like real-symmetric matrices, they have orthonormal eigenvectors, but unlike real-symmetric matrices we know exactly what their eigenvectors are! Moreover, their eigenvectors are closely related to the famous Fourier transform and Fourier series. Even more importantly, it turns out that circulant matrices and the eigenvectors lend themselves to incredibly efficient algorithms called FFTs, that play a central role in much of computational science and engineering.
 
 **Further reading**: The textbook, sections 8.3 and 9.3, has some basic information on these topics.  The Wikipedia articles on [Circulant matrix](https://en.wikipedia.org/wiki/Circulant_matrix), [discrete Fourier transform](https://en.wikipedia.org/wiki/Discrete_Fourier_transform), and [fast Fourier transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform) aren't too bad.  Some [elementary lecture notes on FFTs](https://math.mit.edu/~stevenj/18.335/fft-iap3.pdf) from 18.095 talk more about the algorithms.
+
+## Lecture 31 (April 27)
+
+** Quiz 3 will cover material up to today's lecture. **
+
+We went through a "real" proof of the [Perron Frobenius theorem](https://en.wikipedia.org/wiki/Perron%E2%80%93Frobenius_theorem] which states that a matrix will all positive entries has an eigenpair where every entry in Ax = tx is positive, and further all other eigenvalues have absolute value less than t.
+
+We remembered the five characterizations of positive definite matrices and pointed out again they were all equivalent.
+
+If S is positive definite we used the eigendecomposition to understand all the points x such that x'Sx=1, and also the image of the unit sphere under the mappsing x goes to Sx.  Both are ellipsoids with axes in the direction of the eigenvectors, the semi-lengths of the axes being 1/sqrt(eigenvalues) in the first case, and the eigenvalues in the second case.
+
+We then asked what is the image of the unit sphere for a general A?  It can not be the eigenvalues as they may not be real.  It is not even the absolute value of the eigenvalues.  A quick interpretation of the SVD shows that we have an ellipsoid with columns  in the direction of the columns of V and semi-lengths the singular values.
