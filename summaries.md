@@ -607,3 +607,5 @@ We remembered the five characterizations of positive definite matrices and point
 If S is positive definite we used the eigendecomposition to understand all the points x such that x'Sx=1, and also the image of the unit sphere under the mappsing x goes to Sx.  Both are ellipsoids with axes in the direction of the eigenvectors, the semi-lengths of the axes being 1/sqrt(eigenvalues) in the first case, and the eigenvalues in the second case.
 
 We then asked what is the image of the unit sphere for a general A?  It can not be the eigenvalues as they may not be real.  It is not even the absolute value of the eigenvalues.  A quick interpretation of the SVD shows that we have an ellipsoid with columns  in the direction of the columns of V and semi-lengths the singular values.
+
+See GS p. 354-356,392,477
