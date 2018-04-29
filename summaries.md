@@ -599,7 +599,7 @@ We went through a "real" proof of the [Perron Frobenius theorem](https://en.wiki
 The writeup of the proof along with an optimization demonstration that
 mimics the key part of the proof may be found in a Perron-Frobenius
 notebook:
-* [Perron-Frobenius](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Perron - Frobenius.ipynb)
+* [Perron-Frobenius](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Perron-Frobenius.ipynb)
 
 
 We remembered the five characterizations of positive definite matrices and pointed out again they were all equivalent.
