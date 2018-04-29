@@ -594,7 +594,13 @@ In this lecture, I want to introduce you to a new type of matrix: circulant matr
 
 ** Quiz 3 will cover material up to today's lecture. **
 
-We went through a "real" proof of the [Perron Frobenius theorem](https://en.wikipedia.org/wiki/Perron%E2%80%93Frobenius_theorem] which states that a matrix will all positive entries has an eigenpair where every entry in Ax = tx is positive, and further all other eigenvalues have absolute value less than t.
+We went through a "real" proof of the [Perron Frobenius theorem](https://en.wikipedia.org/wiki/Perron%E2%80%93Frobenius_theorem) which states that a matrix will all positive entries has an eigenpair where every entry in Ax = tx is positive, and further all other eigenvalues have absolute value less than t.
+
+The writeup of the proof along with an optimization demonstration that
+mimics the key part of the proof may be found in a Perron-Frobenius
+notebook:
+* [Perron-Frobenius](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Perron - Frobenius.ipynb)
+
 
 We remembered the five characterizations of positive definite matrices and pointed out again they were all equivalent.
 
