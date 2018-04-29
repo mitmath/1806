@@ -609,3 +609,5 @@ If S is positive definite we used the eigendecomposition to understand all the p
 We then asked what is the image of the unit sphere for a general A?  It can not be the eigenvalues as they may not be real.  It is not even the absolute value of the eigenvalues.  A quick interpretation of the SVD shows that we have an ellipsoid with columns  in the direction of the columns of V and semi-lengths the singular values.
 
 See GS p. 354-356,392,477
+
+Test Topics: Mostly from Chapter 6  with a little bit from Chapter 7 and 10.3.  
