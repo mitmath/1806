@@ -611,3 +611,20 @@ We then asked what is the image of the unit sphere for a general A?  It can not 
 See GS p. 354-356,392,477
 
 Test Topics: Mostly from Chapter 6  with a little bit from Chapter 7 and 10.3.  
+
+
+## Lecture 32 (April 30) 
+
+More complete notes soon.
+
+We explained the division by (n-1) in the sample covariance formula by studing the projection matrix P = eye(n) .- 1/n .  We saw that applying this to randn(n) and using the orthogonal invariance of randn(n) shows that the sum of squares of the projection is exactly n-1.
+
+We also talked about the approximation power of the SVD including image compression.
+
+## Lecture 33 (May 2
+
+Review
+
+## Lecture 34 May 4
+
+Quiz 3.) 
