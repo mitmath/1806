@@ -330,9 +330,9 @@ In machine learning one often computes gradients with respect to matrices not ve
 and so the result is a matrix not a vector.  The idea is the same, one computes the derivative of a scalar
 output with respect to every component of a matrix.
 
-An important example in machine learning worth memorizing: <br>
-∇_W(xᵀWx) = xxᵀ for a square W. More generally <br>
-∇_W(yᵀWx) = yxᵀ. (Check that if W is mxn, so is yxᵀ).
+An important example in machine learning worth memorizing:
+∇<sub>W</sub>(xᵀWx) = xxᵀ for a square W. More generally
+∇<sub>W</sub>(yᵀWx) = yxᵀ. (Check that if W is m×n, so is yxᵀ).
 
 There are lots of other least squares examples worth looking at in the
 [least squares lecture notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Least-Square%20Fitting.ipynb)
@@ -392,7 +392,7 @@ We compared and constrasted A,Q, and the U from the svd.  They all have the same
 
 We then began to talk about the properties of determinants.  We mentioned that determinants are more useful for theory than for practical computations.  Determinants are rarely used in practical computer programs.
 
-A determinant is a scalar function of an nxn matrix.  One can write down an explicit formula or the three
+A determinant is a scalar function of an n×n matrix.  One can write down an explicit formula or the three
 basic properties:
 
 1. Det(I)=1 <br>
@@ -613,18 +613,28 @@ See GS p. 354-356,392,477
 Test Topics: Mostly from Chapter 6  with a little bit from Chapter 7 and 10.3.  
 
 
-## Lecture 32 (April 30) 
+## Lecture 32 (April 30)
 
 More complete notes soon.
 
-We explained the division by (n-1) in the sample covariance formula by studing the projection matrix P = eye(n) .- 1/n .  We saw that applying this to randn(n) and using the orthogonal invariance of randn(n) shows that the sum of squares of the projection is exactly n-1.
+We explained the division by (n-1) in the sample covariance formula by studing the projection matrix `P = eye(n) .- 1/n` .  We saw that applying this to randn(n) and using the orthogonal invariance of randn(n) shows that the sum of squares of the projection is exactly n-1.
 
 We also talked about the approximation power of the SVD including image compression.
 
-## Lecture 33 (May 2
+## Lecture 33 (May 2)
 
 Review
 
-## Lecture 34 May 4
+## Quiz 3 (May 4)
 
-Quiz 3.) 
+Quiz 3.
+
+## Lecture 34 (May 7: S. G. Johnson)
+
+* [Errors and condition numbers](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Conditioning.ipynb)
+
+When doing numerical calculations, we keep running into little roundoff errors that arise from the computer only keeping a finite number of digits in its arithmetic.   Mostly, we've been ignoring these or waving our hands, but a huge branch of mathematics is devoted to the origin and propagation of **errors** in calculations.
+
+In this lecture, we take a first step in that subject by asking a simple question: if we solve Ax=b and have a little error Δb in b (either due to roundoff, or measurement errors, or something else), how big is the resulting error in Δx?   This deceptively simple question leads to lots of interesting topics, e.g. induced **matrix norms** and matrix **condition numbers**.
+
+**Further reading**: Strang, section 9.2.   For a much more thorough discussion of these topics, see classes like 18.335 or (to a lesser extent) 18.330, as well as more advanced textbooks like *Numerical Linear Algebra* by Trefethen and Bau.
