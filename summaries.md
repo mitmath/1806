@@ -638,3 +638,21 @@ When doing numerical calculations, we keep running into little roundoff errors t
 In this lecture, we take a first step in that subject by asking a simple question: if we solve Ax=b and have a little error Δb in b (either due to roundoff, or measurement errors, or something else), how big is the resulting error in Δx?   This deceptively simple question leads to lots of interesting topics, e.g. induced **matrix norms** and matrix **condition numbers**.
 
 **Further reading**: Strang, section 9.2.   For a much more thorough discussion of these topics, see classes like 18.335 or (to a lesser extent) 18.330, as well as more advanced textbooks like *Numerical Linear Algebra* by Trefethen and Bau.
+
+## Lecture 35 (May 9)
+
+In this and the next lecture, we discussed the more abstract approach of linear algebra
+that one finds in more advanced classes.  The power of this approach is that it, in one
+fell swoop, applies to vector spaces of concrete vectors, function spaces, vectors of vectors,
+vectors of matrices, and so much more.
+
+Another benefit of the abstract approach is that it explains why matrix multiply is defined
+as it is.  Perhaps you wondered why this complicated matrix multiply is what it is.  Now you know.
+
+ We defined linear transformations and pointed out that given bases there is always a matrix
+for the transformation.  Nonetheless, the linear transformation can be simpler than the matrix.
+
+We gave a few examples: 1) the concrete matrix times vector 2) stencils on a grid 3) rotation in x,y of polynomials of the form ax^2 + bxy + cy^2.
+
+**Further reading**: Strang, all of Chapter 8.
+[Video Lecture 30](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-30-linear-transformations-and-their-matrices/)
