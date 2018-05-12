@@ -656,3 +656,9 @@ We gave a few examples: 1) the concrete matrix times vector 2) stencils on a gri
 
 **Further reading**: Strang, all of Chapter 8.
 [Video Lecture 30](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-30-linear-transformations-and-their-matrices/)
+
+## Lecture 36 (May 11)
+
+More linear transformations.  See the notebook
+
+[Linear Transformations](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Linear%20Transformations.ipynb)
