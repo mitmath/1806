@@ -615,9 +615,14 @@ Test Topics: Mostly from Chapter 6  with a little bit from Chapter 7 and 10.3.
 
 ## Lecture 32 (April 30)
 
-More complete notes soon.
 
 We explained the division by (n-1) in the sample covariance formula by studing the projection matrix `P = eye(n) .- 1/n` .  We saw that applying this to randn(n) and using the orthogonal invariance of randn(n) shows that the sum of squares of the projection is exactly n-1.
+
+This may be found in the notebook:
+
+(Sample variance division by n-1)[http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Sample%20Variance%20division%20by%20n-1.ipynb]
+
+One can also see GS chapter 12.1 and perhaps a little 12.3.
 
 We also talked about the approximation power of the SVD including image compression.
 
