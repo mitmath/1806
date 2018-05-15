@@ -687,7 +687,7 @@ vector space and bases in mind.
 The identity transformation when W=V and m=n is the transformation
 Tv=v for all v in V.
 
-We consider two situations 1. rotation of ℜ³  2. polynomial shifting where
+We consider two situations <br> 1. rotation of ℜ³ <br>  2. polynomial shifting where
 one might have T=identity A≠I  and T≠identity A=I. 
 
 
