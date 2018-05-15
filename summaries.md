@@ -667,3 +667,59 @@ We gave a few examples: 1) the concrete matrix times vector 2) stencils on a gri
 More linear transformations.  See the notebook
 
 [Linear Transformations](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Linear%20Transformations.ipynb)
+
+Of particular note is the derivative in two different bases
+and how one matrix must be similar to the other.
+
+## Lecture 37 (May 14)
+
+We pointed out that symbolically we could write
+T[v1,...,vn] for [Tv1,...,Tvn] where v1,...,vn is a basis for V.
+In this notation
+T[v1,...,vn]c = [w1,....,wm]Ac
+describes every linear transformation where c are the coordinates
+for a vector in V, and d=Ac are the coordinates in W.
+
+On a numerical computer one would just work with c and d=Ac, and somewhere
+in the documentation one would understand the correspondence with the 
+vector space and bases in mind.
+
+The identity transformation when W=V and m=n is the transformation
+Tv=v for all v in V.
+
+We consider two situations 1. rotation of ℜ³  2. polynomial shifting where
+one might have T=identity A≠I  and T≠identity A=I. 
+
+
+1. Let V=W=ℜ³,  Q=[q1 q2 q3]  be an orthogonal rotation matrix.  The columns can be thought of as axes in a rotated coordinate system.  We can call q1,q2,q3 the q-basis and the usual x,y,z axes the standard-basis.
+
+1a. If the input and output bases are each the standard basis, and if T is rotation, then the matrix is Q.  Literally d=Qc is a rotation of a vector with coordinates (c[1],c[2],c[3]) to a new rotated position (d[1],d[2],d[3])
+
+1b. If the input basis is the standard basis and the output basis is the q-basis, then the same rotation in 1a is represented by the identity matrix, I.
+
+1c. If the input basis is the q-basis and the output basis is the standard basis, then the identity transformation T is represented by the matrix Q.  In this situation, no vector moves, but d=Qc represents taking a vector in the q frame of reference and writing it in the standard frame of reference.  
+
+2. Let V=W=cubic polynomials (dim=4).  We call the polynomials 1,(x+1),(x+1)^2,(x+1)^3 the translated basis or t-basis.  The standard-basis will be 1,x,x^2,x^3.
+
+Let P be the 4x4 upper triangular [Pascal matrix](https://en.wikipedia.org/wiki/Pascal_matrix) .  
+
+2a.  Input=Output=standard-basis. T(f(x))=f(x+1).   Matrix = P.  Here polynomials shift.  The [binomial theorem](https://en.wikipedia.org/wiki/Binomial_theorem) that you should have seen in high school proves the correctness of this matrix.
+(Note you should now be able to invert this matrix by expanding (x-1)^n, rather than the methods you learned at the start of the semester.)
+
+2b. Input=standard basis, Output=t-basis, same shift transformation in 2a is represented  as the  identity matrix, I.  (analogy with 1b above.)  The polynomial is shifting, but it's coordinates are the same numbers interpreted in a new basis. 
+
+
+2c. Input=t-basis, Output=standard basis, then the identity  transformation
+also has matrix P.  (Note the analogy with 1c above.) Here we are using
+the pascal matrix rather than symbolic manipulation to rewrite
+c0 + c1(x+1) + c2(x+1)^2 + x3(x+1)^3 as d0 + d1 x + d2 x^2 + d3 x^3.
+Again note the polynomial has not shifted, it is just being rewritten
+in the monomial basis.
+
+
+
+
+
+
+
+
