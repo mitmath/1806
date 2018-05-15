@@ -717,7 +717,7 @@ c0 + c1(x+1) + c2(x+1)^2 + x3(x+1)^3 as d0 + d1 x + d2 x^2 + d3 x^3.
 Again note the polynomial has not shifted, it is just being rewritten
 in the monomial basis.
 
-
+If you can appreciate how mathematicians see the analogy between the two examples as more than an analogy, but a common theoretical structure then you can appreciate why the linear transformation concept is more powerful than the matrix times vector concept.
 
 
 
