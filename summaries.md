@@ -719,8 +719,8 @@ in the monomial basis.
 
 Summary
 
-|Input Basis|Output Basis|T|Matrix|
-|----------|-----|---|---|
+||Input Basis|Output Basis|T|Matrix|
+---|----------|-----|---|---|
 1a|standard|standard|Rotation|Q|
 1b|standard|q|Rotation|I|
 1c|q|standard|Identity|Q|
