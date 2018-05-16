@@ -725,10 +725,10 @@ Summary
 1b|standard|q|Rotation|I|
 1c|q|standard|Identity|Q|
 --------
---------
 2a|standard|standard|shift|P|
 2b|standard|t-basis|shift|I|
 2c|t-basis|standard|Identity|P|
+--------
 
 If you can appreciate how mathematicians see the analogy between the two examples as more than an analogy, but a common theoretical structure then you can appreciate why the linear transformation concept is more powerful than the matrix times vector concept.
 
