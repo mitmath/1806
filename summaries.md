@@ -721,9 +721,9 @@ Summary
 
 |Input Basis|Output Basis|T|Matrix|
 |----------|-----|---|---|
-|standard|standard|Rotation|Q|
-|standard|q|Rotation|I|
-|q|standard|Identity|Q|
+1a|standard|standard|Rotation|Q|
+1b|standard|q|Rotation|I|
+1c|q|standard|Identity|Q|
 --------
 
 If you can appreciate how mathematicians see the analogy between the two examples as more than an analogy, but a common theoretical structure then you can appreciate why the linear transformation concept is more powerful than the matrix times vector concept.
