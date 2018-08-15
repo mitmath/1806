@@ -1,5 +1,5 @@
-# Fall 2018 [18.06](https://web.mit.edu/18.06/www/) Lecture Summaries <br>
- [Prof. Alan Edelman](http://math.mit.edu/~edelman)  
+# Spring 2018 [18.06](https://web.mit.edu/18.06/www/) Lecture Summaries <br>
+ [Prof. Alan Edelman](http://math.mit.edu/~edelman)
 
 This document is a *brief* summary of what was covered in each 18.06
 lecture, along with links and suggestions for further reading.  It is
@@ -13,14 +13,14 @@ I'll try to update it within a day of each lecture.
 ## Lecture 1 (Feb 7)
 
 
-[Overview](https://github.com/stevengj/1806/blob/master/lectures/1806overview.pdf)
+[Overview](https://github.com/stevengj/1806/blob/spring18/lectures/1806overview.pdf)
 
-[Gaussian Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Gaussian-elimination.ipynb)
+[Gaussian Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Gaussian-elimination.ipynb)
 
 
-[Machine Learning with Gaussian Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Machine-Learning-with-Gaussian-elimination.ipynb)
+[Machine Learning with Gaussian Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Machine-Learning-with-Gaussian-elimination.ipynb)
 
-[PSET 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset1%20Spring2018%20Prof.Edelman.ipynb)  .
+[PSET 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/psets/Pset1%20Spring2018%20Prof.Edelman.ipynb)  .
 
 **Further reading:** Textbook sections 2.1 and 2.2.  Strang [lecture 2 video](https://www.youtube.com/watch?v=QVKj3LADCnA).
 
@@ -38,7 +38,7 @@ As I'm sure you know, the world needs creative people who understand concepts an
 
 
 ## Lecture 2 (Feb 9)
-* [Matrix-multiplication and LU notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Matrix-mult-perspectives.ipynb)
+* [Matrix-multiplication and LU notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Matrix-mult-perspectives.ipynb)
 
 The big message: the matmul you learned in high school is not the only, perhaps not even the best perspective on how to multiply matrices.  There are many other ways.  There are really two key facts that are important
 
@@ -66,17 +66,17 @@ computational experiments.  Bring your laptops, and try logging into
 [juliabox.com](https://juliabox.com) beforehand.  More information:
 
 * [Instructions/links for using Julia](https://github.com/stevengj/julia-mit/)
-* [Overview slides](https://github.com/stevengj/1806/blob/master/julia/Julia-intro.pdf)
-* [Julia cheatsheet](https://github.com/stevengj/1806/blob/master/julia/Julia-cheatsheet.pdf)
-* [Tutorial notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/julia/tutorial.ipynb)
+* [Overview slides](https://github.com/stevengj/1806/blob/spring18/julia/Julia-intro.pdf)
+* [Julia cheatsheet](https://github.com/stevengj/1806/blob/spring18/julia/Julia-cheatsheet.pdf)
+* [Tutorial notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/julia/tutorial.ipynb)
 
 ## Lecture 3 (Feb 12)
 
-* [Elimination Matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Elimination-matrices.ipynb)
+* [Elimination Matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Elimination-matrices.ipynb)
 
-* [LU and matrix-inverse notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Inverses-LU-intro.ipynb)
+* [LU and matrix-inverse notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Inverses-LU-intro.ipynb)
 
-* [Lower-Triangular-and-Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Lower-Triangular-and-Elimination.ipynb)
+* [Lower-Triangular-and-Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Lower-Triangular-and-Elimination.ipynb)
 
 
 Key Points to consider
@@ -93,13 +93,13 @@ Key Points to consider
 
 ## Lecture 4 (Feb 14)
 
-[PSET 2](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset2%20Spring2018%20Prof.Edelman.ipynb)  . <br>
-[Solutions to PSET 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset1%20Solutions.ipynb)  
+[PSET 2](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/psets/Pset2%20Spring2018%20Prof.Edelman.ipynb)  . <br>
+[Solutions to PSET 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/psets/Pset1%20Solutions.ipynb)
 
 
 We did an example of Gauss-Jordan to compute inverses.
 
-* [Gauss Jordan](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Gauss-Jordan.ipynb)
+* [Gauss Jordan](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Gauss-Jordan.ipynb)
 
 
 Then we explored the ordering of elimination  matrices.
@@ -111,9 +111,9 @@ In the real world, neither Julia, nor Python, nor MATLAB, nor R
 does Gaussian Elimination, but rather all these packages
 call [LAPACK](http://www.netlib.org/lapack/) written in FORTRAN90.
 
-* [Lower-Triangular-and-Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Lower-Triangular-and-Elimination.ipynb)
+* [Lower-Triangular-and-Elimination](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Lower-Triangular-and-Elimination.ipynb)
 
-* [Transposes,permutations,orthogonality](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Transposes.ipynb)
+* [Transposes,permutations,orthogonality](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Transposes.ipynb)
 **Further reading:** Textbook sections 2.5, 2.6 ("The cost of elimination"), and 11.1.  Strang [video lecture 3](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-3-multiplication-and-inverse-matrices/).
 
 One way or another, we have now covered the material up to 2.6 and also 11.1.
@@ -166,7 +166,7 @@ We can solve Rx=0 by breaking up x=(p,f) into the pivot variables p and the free
 
 Did an example of a 3×5 matrix A with rank 3 (3 pivots, which we will call *full row rank*), in which case N(A) is a 2-dimensional "plane" (in ℝ⁵), and we find two special solutions (a basis for the nullspace).   Once you get used to this, you can just read off the special solutions from the rref form R.
 
-Brought up another way to think about the nullspace.  If N(A) contains a nonzero vector x≠0, then Ax=0 means that some linear combination of the columns of A, with at least one nonzero coefficient, is zero.   We say that the columns of A are **linearly dependent**: at least one of the columns can be made from a linear combination of the other columns.    If N(A)={0}, then we say that the columns are **linearly independent**.  
+Brought up another way to think about the nullspace.  If N(A) contains a nonzero vector x≠0, then Ax=0 means that some linear combination of the columns of A, with at least one nonzero coefficient, is zero.   We say that the columns of A are **linearly dependent**: at least one of the columns can be made from a linear combination of the other columns.    If N(A)={0}, then we say that the columns are **linearly independent**.
 
 Earlier, I defined a basis as a minimal set of vectors whose span gives an entire vector space, and the dimension of the space as the size of the basis.  We now rephrase this as saying basis vectors must be be **linearly independent**.    The **dimension** of a space is still the number of basis vectors.
 
@@ -174,9 +174,9 @@ Earlier, I defined a basis as a minimal set of vectors whose span gives an entir
 
 ### Pset 3
 
-[PSET 3](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset3%20Spring2018%20Prof.Edelman.ipynb)
+[PSET 3](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/psets/Pset3%20Spring2018%20Prof.Edelman.ipynb)
 
-[Solutions to PSET 2](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset2%20Solutions.ipynb)  
+[Solutions to PSET 2](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/psets/Pset2%20Solutions.ipynb)
 
 
 ## Lecture 8 (Feb 23)
@@ -247,7 +247,7 @@ We looked at the general form of the RREF, considered the four fundamental subsp
 Review.
 
 
-[PSET 4](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset4%20Spring2018%20Prof.Edelman.ipynb) due March 7, 10:55am  .
+[PSET 4](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/psets/Pset4%20Spring2018%20Prof.Edelman.ipynb) due March 7, 10:55am  .
 
 ## Lecture 11 (Mar 2)
 
@@ -295,9 +295,9 @@ We mentioned that the SVD can be used when the subspace is not known, but is to 
 
 **Further reading:** Textbook 4.2; video [lecture 15](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-15-projections-onto-subspaces/).
 
-[PSET 5](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset5%20Spring2018%20Prof.Edelman.ipynb) due March 14, 10:55am  .
+[PSET 5](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/psets/Pset5%20Spring2018%20Prof.Edelman.ipynb) due March 14, 10:55am  .
 <br>
-[Solutions to PSET 4](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset4%20Solutions.ipynb)
+[Solutions to PSET 4](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/psets/Pset4%20Solutions.ipynb)
 
 
 ## Lecture 14 (Mar 9)
@@ -335,7 +335,7 @@ An important example in machine learning worth memorizing:
 ∇<sub>W</sub>(yᵀWx) = yxᵀ. (Check that if W is m×n, so is yxᵀ).
 
 There are lots of other least squares examples worth looking at in the
-[least squares lecture notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Least-Square%20Fitting.ipynb)
+[least squares lecture notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Least-Square%20Fitting.ipynb)
 
 
 
@@ -360,7 +360,7 @@ We began a Gram Schmidt computation in a Julia notebook.  Many students noticed
 that this seemed too much like a hand computation on a computer, and asked if this
 could be done in a better way on a computer.  We will see that this is possible in Lecture 17.
 
-[Gram Schmidt notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Gram-Schmidt.ipynb)
+[Gram Schmidt notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Gram-Schmidt.ipynb)
 
 **Further reading:** Textbook 4.4; video [lecture 17](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/)
 
@@ -373,15 +373,15 @@ The purpose was not so very much to teach Fourier series, but to see Fourier ser
 as the finite matrix projection or expansion.
 We also briefly looked at the Julia notebooks for sine series and orthogonal polynomials:
 
-[sine series notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Sine-series.ipynb) <br>
-[orthogonal polynomial notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Orthogonal-Polynomials.ipynb)
+[sine series notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Sine-series.ipynb) <br>
+[orthogonal polynomial notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Orthogonal-Polynomials.ipynb)
 
 
 **Further reading:** Textbook 10.5; video [lecture 24, starting at 35:15 ](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/)
 
 
-[PSET 6](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset6%20Spring2018%20Prof.Edelman.ipynb)  due Thursday !! March 22, 10:55am.<br>
-[Solutions to PSET 5](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset5%20Solutions.ipynb)  
+[PSET 6](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/psets/Pset6%20Spring2018%20Prof.Edelman.ipynb)  due Thursday !! March 22, 10:55am.<br>
+[Solutions to PSET 5](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/psets/Pset5%20Solutions.ipynb)
 
 
 ## Lecture 17 (Mar 16)
@@ -403,7 +403,7 @@ For starters it is not clear that there is a function with the above three prope
 
 Other properties of determinants may be seen in this notebook:
 
-[determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Determinants.ipynb) <br>
+[determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Determinants.ipynb) <br>
 
 
 **Further reading:** Textbook 5.1; video [lecture 18](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants/)
@@ -412,7 +412,7 @@ Other properties of determinants may be seen in this notebook:
 
 We continued to prove the various properties of the determinant found in
 this notebook:
-[determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Determinants.ipynb) <br>
+[determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Determinants.ipynb) <br>
 
 In particular, we methodically showed step by step that the three axioms imply that the the determinant of a matrix must be (-1)^(# row exchanges) x (product of the pivots.)  That's it, nothing else, it must be that.
 
@@ -424,7 +424,7 @@ Now that we know the three properties imply one unique function, then we can use
 
 We proved |Aᵀ|=|A| and discussed how |permutation matrix| = ±1.
 This allowed us to see that if you took the [fifteen puzzle](https://en.wikipedia.org/wiki/15_puzzle) and you interchanged two pieces you would render th epuzzle insolvable.  Here's the idea: 1) if one checkerboards (colors alternately black and red) the 4x4 array, it's easy to see that if the "hole" journeys to the same starting position, it would take an even number of steps.  The state of the puzzle can be encoded as a 16x16 permutation matrix, and every step is a row exchange, hence switches the sign of the determinant.  Thus if you interchange two pieces artifically you can never solve the puzzle.
-  The same argument would basically be true if you interchanged two of the edge centered pieces of a Rubik's cube.  The state is a 12x12 permutation matrix, and a 3d checkerboarding shows you need an even number of steps to return to where you start.   
+  The same argument would basically be true if you interchanged two of the edge centered pieces of a Rubik's cube.  The state is a 12x12 permutation matrix, and a 3d checkerboarding shows you need an even number of steps to return to where you start.
 
 We showed that the pivots of a matrix are given by a ratio of determinants , and also the solution to Ax=b, is a ratio of determinants by Cramer's rule.
 
@@ -433,7 +433,7 @@ We discussed that if L(x) is a linear function of x with scalar values, then L(x
 
 We wrote down the big formula for determinants in terms of permutations.
 
-[PSET 7](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/Pset7%20Spring2018%20Prof.Edelman.ipynb)  due Wednesday   April 4, 10:55am.<br>
+[PSET 7](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/psets/Pset7%20Spring2018%20Prof.Edelman.ipynb)  due Wednesday   April 4, 10:55am.<br>
 
 **Further reading:** Textbook 5.3; video [lecture 20](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-20-cramers-rule-inverse-matrix-and-volume/)
 
@@ -462,7 +462,7 @@ A=XΛX⁻¹
 Eigenvalues are ways to turn hard matrix problems into a system of easy
 scalar problems.
 
-Considered eigenvalues of Projection Matrices, Rotation Matrices, Reflection Matrices.  
+Considered eigenvalues of Projection Matrices, Rotation Matrices, Reflection Matrices.
 
 Pure mathematicians make a big deal
 about the eigenvalues as the roots of the characteristic polynomial det(A–λI). This
@@ -482,7 +482,7 @@ The actual way eigenvalues are computed is a topic for another class (e.g. 18.33
 in 18.06, we will focus mainly on their properties and usage.  The computer
 will handle finding them.
 
-* [Eigenvalues and Polynomials notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Eigenvalue-Polynomials.ipynb)
+* [Eigenvalues and Polynomials notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Eigenvalue-Polynomials.ipynb)
 
 
 **Further reading:** Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).
@@ -506,7 +506,7 @@ Flow Chart as to when matrices may be similar.
 
 ## Lecture 25 (April 11)
 The matrices tA + (1-t)I all have the same eigenvectors for any scalar t.
-[This Julia code](https://github.com/stevengj/1806/blob/master/lectures/eigshow.jl) is meant to be a fun illustration but it falls short.
+[This Julia code](https://github.com/stevengj/1806/blob/spring18/lectures/eigshow.jl) is meant to be a fun illustration but it falls short.
 If one of you would like to fix this, it would be fantastic.
 
 The idea of similar matrices as buckets and for diagonalizible
@@ -531,7 +531,7 @@ Markov Matrices (Positive Markov Matrices)
 
 ## Lecture 27 (April 18)
 
-* [Ordinary differential equations (ODEs)](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/ODEs.ipynb).
+* [Ordinary differential equations (ODEs)](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/ODEs.ipynb).
 
 We can now solve systems of ODEs dx/dt = Ax in terms of eigenvectors and eigenvalues.
 Each eigenvector is multiplied by exp(λt) (where exp(x)=eˣ), so that solutions decay
@@ -580,11 +580,11 @@ where ωⱼ=√-λⱼ, and αⱼ and βⱼ are determined from the initial condi
 The key point is that the **structure** of the problem told us that λⱼ>0 and
 hence that the **frequencies** ωⱼ are **real** numbers.  (If they were complex, we would have exponentially growing or decaying solutions, which would make no physical sense for a system of lossless springs and masses.)  The moral of this story is that real-symmetric and definite matrices don't just fall down out of the sky, they arise from how the matrix was constructed, and that these matrix properties are often the key to understanding the physical properties of real problems.
 
-**Further reading:** Strang, section 10.2.  See also [these notes on the springs-and-masses problem](http://math.mit.edu/~stevenj/18.303/lecture-5.5.pdf) from [18.303](http://math.mit.edu/~stevenj/18.303/) (you can ignore the last two pages, which go beyond 18.06, and ignore the Δx factor which is used in 18.303 to connect the discrete problem to a continuous problem).  
+**Further reading:** Strang, section 10.2.  See also [these notes on the springs-and-masses problem](http://math.mit.edu/~stevenj/18.303/lecture-5.5.pdf) from [18.303](http://math.mit.edu/~stevenj/18.303/) (you can ignore the last two pages, which go beyond 18.06, and ignore the Δx factor which is used in 18.303 to connect the discrete problem to a continuous problem).
 
 ## Lecture 30 (April 25) (S. G. Johnson)
 
-* [Circulant matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Circulant-Matrices.ipynb)
+* [Circulant matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Circulant-Matrices.ipynb)
 
 In this lecture, I want to introduce you to a new type of matrix: circulant matrices. Like real-symmetric matrices, they have orthonormal eigenvectors, but unlike real-symmetric matrices we know exactly what their eigenvectors are! Moreover, their eigenvectors are closely related to the famous Fourier transform and Fourier series. Even more importantly, it turns out that circulant matrices and the eigenvectors lend themselves to incredibly efficient algorithms called FFTs, that play a central role in much of computational science and engineering.
 
@@ -599,7 +599,7 @@ We went through a "real" proof of the [Perron Frobenius theorem](https://en.wiki
 The writeup of the proof along with an optimization demonstration that
 mimics the key part of the proof may be found in a Perron-Frobenius
 notebook:
-* [Perron-Frobenius](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Perron-Frobenius.ipynb)
+* [Perron-Frobenius](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Perron-Frobenius.ipynb)
 
 
 We remembered the five characterizations of positive definite matrices and pointed out again they were all equivalent.
@@ -610,7 +610,7 @@ We then asked what is the image of the unit sphere for a general A?  It can not 
 
 See GS p. 354-356,392,477
 
-Test Topics: Mostly from Chapter 6  with a little bit from Chapter 7 and 10.3.  
+Test Topics: Mostly from Chapter 6  with a little bit from Chapter 7 and 10.3.
 
 
 ## Lecture 32 (April 30)
@@ -620,7 +620,7 @@ We explained the division by (n-1) in the sample covariance formula by studing t
 
 This may be found in the notebook:
 
-(Sample variance division by n-1)[http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Sample%20Variance%20division%20by%20n-1.ipynb]
+(Sample variance division by n-1)[http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Sample%20Variance%20division%20by%20n-1.ipynb]
 
 One can also see GS chapter 12.1 and perhaps a little 12.3.
 
@@ -636,7 +636,7 @@ Quiz 3.
 
 ## Lecture 34 (May 7: S. G. Johnson)
 
-* [Errors and condition numbers](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Conditioning.ipynb)
+* [Errors and condition numbers](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Conditioning.ipynb)
 
 When doing numerical calculations, we keep running into little roundoff errors that arise from the computer only keeping a finite number of digits in its arithmetic.   Mostly, we've been ignoring these or waving our hands, but a huge branch of mathematics is devoted to the origin and propagation of **errors** in calculations.
 
@@ -666,7 +666,7 @@ We gave a few examples: 1) the concrete matrix times vector 2) stencils on a gri
 
 More linear transformations.  See the notebook
 
-[Linear Transformations](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Linear%20Transformations.ipynb)
+[Linear Transformations](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Linear%20Transformations.ipynb)
 
 Of particular note is the derivative in two different bases
 and how one matrix must be similar to the other.
@@ -681,7 +681,7 @@ describes every linear transformation where c are the coordinates
 for a vector in V, and d=Ac are the coordinates in W.
 
 On a numerical computer one would just work with c and d=Ac, and somewhere
-in the documentation one would understand the correspondence with the 
+in the documentation one would understand the correspondence with the
 vector space and bases in mind.
 
 The identity transformation when W=V and m=n is the transformation
@@ -689,7 +689,7 @@ Tv=v for all v in V.
 
 We consider two situations <br> 1. rotation of ℜ³ <br>  2. polynomial shifting
 <br> where
-one might have T=identity A≠I  and T≠identity A=I. 
+one might have T=identity A≠I  and T≠identity A=I.
 
 
 1. Let V=W=ℜ³,  Q=[q1 q2 q3]  be an orthogonal rotation matrix.  The columns can be thought of as axes in a rotated coordinate system.  We can call q1,q2,q3 the q-basis and the usual x,y,z axes the standard-basis.
@@ -698,16 +698,16 @@ one might have T=identity A≠I  and T≠identity A=I.
 
 1b. If the input basis is the standard basis and the output basis is the q-basis, then the same rotation in 1a is represented by the identity matrix, I.
 
-1c. If the input basis is the q-basis and the output basis is the standard basis, then the identity transformation T is represented by the matrix Q.  In this situation, no vector moves, but d=Qc represents taking a vector in the q frame of reference and writing it in the standard frame of reference.  
+1c. If the input basis is the q-basis and the output basis is the standard basis, then the identity transformation T is represented by the matrix Q.  In this situation, no vector moves, but d=Qc represents taking a vector in the q frame of reference and writing it in the standard frame of reference.
 
 2. Let V=W=cubic polynomials (dim=4).  We call the polynomials 1,(x+1),(x+1)^2,(x+1)^3 the translated basis or t-basis.  The standard-basis will be 1,x,x^2,x^3.
 
-Let P be the 4x4 upper triangular [Pascal matrix](https://en.wikipedia.org/wiki/Pascal_matrix) .  
+Let P be the 4x4 upper triangular [Pascal matrix](https://en.wikipedia.org/wiki/Pascal_matrix) .
 
 2a.  Input=Output=standard-basis. T(f(x))=f(x+1).   Matrix = P.  Here polynomials shift.  The [binomial theorem](https://en.wikipedia.org/wiki/Binomial_theorem) that you should have seen in high school proves the correctness of this matrix.
 (Note you should now be able to invert this matrix by expanding (x-1)^n, rather than the methods you learned at the start of the semester.)
 
-2b. Input=standard basis, Output=t-basis, same shift transformation in 2a is represented  as the  identity matrix, I.  (analogy with 1b above.)  The polynomial is shifting, but it's coordinates are the same numbers interpreted in a new basis. 
+2b. Input=standard basis, Output=t-basis, same shift transformation in 2a is represented  as the  identity matrix, I.  (analogy with 1b above.)  The polynomial is shifting, but it's coordinates are the same numbers interpreted in a new basis.
 
 
 2c. Input=t-basis, Output=standard basis, then the identity  transformation
