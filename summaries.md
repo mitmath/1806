@@ -13,7 +13,7 @@ I'll try to update it within a day of each lecture.
 ## Lecture 1 (Sep 5)
 
 * [course overview
-slides](https://github.com/stevengj/1806/blob/master/lectures/overview.pdf) and [Gaussian
+slides](https://github.com/stevengj/1806/blob/master/lectures/1806overview.pdf) and [Gaussian
 elimination notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Gaussian-elimination.ipynb)
 * pset 1 to be posted soon (due Wed 9/12 at 10:55am, submitted electronically via Stellar)
 
