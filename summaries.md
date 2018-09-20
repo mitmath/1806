@@ -163,7 +163,7 @@ Generalizations of vector spaces and subspaces.  These aren't limited to the n-c
 ## Lecture 7 (Sep 19)
 
 * [pset 2 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset2sol.ipynb)
-* pset 3 to be posted shortly (due Wed 9/26 at 10:55am, submitted electronically via Stellar)
+* [pset 3](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset3.ipynb) (due Wed 9/26 at 10:55am, submitted electronically via Stellar)
 
 More examples of subspaces.  For ℝ³, possible subspaces are the origin ("0-dimensional), lines through the origin ("1-dimensional"), planes through the origin ("2-dimensional"), and the whole space.  For the vector space of functions f(x), possible subspaces include functions that pass through zero f(0)=0, or the "3d" subspace of polynomial functions of degree ≤ 2.   For the vector space of 3×3 matrices, subspaces include diagonal matrices or upper-triangular matrices.
 
