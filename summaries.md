@@ -198,7 +198,43 @@ Did an example of a 3×4 matrix A with rank 2 (2 pivots), in which case N(A) is 
 
 ## Lecture 9 (Sep 26)
 
-Complete solutions to Ax=b, linear independence, basis C(A).
+* [pset 3 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset3sol.ipynb)
+* pset 3 coming soon (due Wed 10/3 at 10:55am, submitted electronically via Stellar)
+
+Complete solutions to Ax=b, linear independence, basis of C(A).
+
+### Complete solution to Ax=b
+
+We can now find the **complete solution** (i.e., all solutions) to a non-square linear system Ax=b.  Elimination turns this into Rx=d. We look for solutions in the form xₚ + xₙ: a **particular solution** xₚ plus any vector xₙ in N(A) (specified explicitly by giving a basis).  The particular solution xₚ can be *any* solution to Ax=b, but the simplest one to find is usually to *set the free variables* to zero.  That is, we write the solution xₚ=(p; 0) where p is the unknown values in the pivot rows, setting the other (free) rows to zero, then plug into Rxₚ=d to get p.  Since this part of R is just I, we can easily solve it.   Then we add in anything in N(A).
+
+I gave a 3×4 example matrix A that was **rank deficient**: after elimination, we only had two pivots (rank r=2) in the first two rows, and a whole row of zeros.   Furthermore, its pivot columns were the first and *fourth* columns, with the second and third columns being free — this is possible (albeit unusual)!   Showed that we could still get the special solutions by solving for the pivot variables in terms of the free variables = (1,0,…) etcetera, and we still got dimension n-r (= 2) for the null space.   When solving Ax=b by elimination into Rx=c, however, we *only got a solution x if c was zero in the same rows as U*.  If the zero third row of R was matched by a zero third row of c, then we got a particular solution as before by setting the free variables to zero.  If the zero third row of R was *not* matched by a zero third row of c, then there is *no* solution: b was *not in the column space* C(A).
+
+### Linear independence and C(A)
+
+Bases, dimension, and independence.   Earlier, I defined a basis as a minimal set of vectors whose span gives an entire vector space, and the dimension of the space as the number of basis vectors.  Now, we want to think more carefully about the term "minimal".   If we have too many vectors in our basis, the problem is that some of the vectors might be redundant (you can get them from the other basis vectors).  We now rephrase this as saying that such vectors are *linearly dependent*: some linear combination (with nonzero multipliers) of them gives the zero vector, and we want every basis to be **linearly independent**. The **dimension** of a subspace is still the number of basis vectors.
+
+What does it mean to be linearly independent?  Given a set of n vectors {x₁, ⋯, xₙ}, if we matrix a matrix X whose columns
+are x₁⋯xₙ, then C(X) is precisely the span of x₁⋯xₙ.   To check whether
+the x₁⋯xₙ form a *basis* for C(X), we need to check whether they
+are *linearly independent*.  There are three equivalent ways to think about
+this:
+
+1. We want to make sure that none of x₁⋯xₙ are "redundant": make sure
+   that no xⱼ can be made from a linear combination of the other xᵢ's.
+
+2. Equivalently, we don't want any linear combination of x₁⋯xₙ to give
+   zero unless all the coefficients are zero.
+
+3. Equivalently, we want N(X) = {0}.
+
+In this way, we reduced the concept of independence to thinking about the
+null space.   Since the nullspace is preserved by elimination, it follows
+that *columns of A are dependent/independent if and
+only if the corresponding columns of R are dependent/independent*.
+By looking at R, we can see by inspection that the *pivot columns* form
+a maximal set of independent vectors, and hence are a basis for C(R).
+Hence, the *pivot columns of A* (i.e. the columns of A corresponding to
+the columns of R or U where the pivots appear) are a basis for C(A).
 
 **Further reading:** Textbook sections 3.3–3.4, [lecture 8](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-8-solving-ax-b-row-reduced-form-r/) and [lecture 9](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-9-independence-basis-and-dimension/).
 
