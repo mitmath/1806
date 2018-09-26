@@ -199,7 +199,7 @@ Did an example of a 3×4 matrix A with rank 2 (2 pivots), in which case N(A) is 
 ## Lecture 9 (Sep 26)
 
 * [pset 3 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset3sol.ipynb)
-* pset 3 coming soon (due Wed 10/3 at 10:55am, submitted electronically via Stellar)
+* pset 4 coming soon (due Wed 10/3 at 10:55am, submitted electronically via Stellar)
 
 Complete solutions to Ax=b, linear independence, basis of C(A).
 
