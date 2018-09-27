@@ -244,7 +244,7 @@ Exam 1 will cover the material through **lecture 8**: matrix-vector operations, 
 
 *Not on exam 1:* "Complete" solutions to Ax=b, linear independence, finding basis and dimension for the column space in general, row space and left nullspace, orthogonality and projection; these will be on exam 2.
 
-**Review session**: An *optional* review session (in which I go over some practice problems) will be held on Wed 9/26 5-6pm in 4-270.
+**Review session**: An *optional* review session (in which I go over some practice problems) will be held on Wed 9/26 5-6pm in 4-270.  Problems covered: Spring 2017 exam 1, problem 1a, 1b; Fall 2012 exam 1 problem 2; Fall 2009 exam 1, problem 3d; Spring 2017 exam 1 problem 4; Fall 2009 exam 1, problem 1b (*given* the LU factorization, find the inverse of A — I only found the 2nd column of A⁻¹, and by forward/backsubstitution rather than inverting U and L as in the solutions).
 
 Practice problems: [spring 2017 exam 1](http://web.mit.edu/18.06/www/Spring17/exam1.pdf) problems 1–4 ([solutions](http://web.mit.edu/18.06/www/Spring17/exam1-sol.pdf)); [fall 2017 exam 1](https://github.com/stevengj/1806/blob/fall17/exams/exam1.pdf) problems 1-4 ([solutions](https://github.com/stevengj/1806/blob/fall17/exams/exam1-sol.pdf)); [fall 2017 exam 1](https://github.com/stevengj/1806/blob/fall17/exams/exam2.pdf) problem 1a,b ([solutions](https://github.com/stevengj/1806/blob/fall17/exams/exam2-sol.pdf));
 [fall 2012 exam 1](http://web.mit.edu/18.06/www/Fall12/Exam%201/quiz1-1806-f12.pdf) problems 1–4 ([solutions](http://web.mit.edu/18.06/www/Fall12/Exam%201/quiz1-1806-f12-solution.pdf));
@@ -255,3 +255,5 @@ Practice problems: [spring 2017 exam 1](http://web.mit.edu/18.06/www/Spring17/ex
 [fall 2009 exam 1](http://web.mit.edu/18.06/www/Fall09/exam1.pdf) problems 1, 2, 3a–3c ([solutions](http://web.mit.edu/18.06/www/Fall09/exam1soln.pdf));
 [spring 2008 exam 1](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08.pdf) problems 1, 3, 4
 ([solutions](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08-soln.pdf))
+
+Exam 1 and solutions will be posted after Monday October 1.
