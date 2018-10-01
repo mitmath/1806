@@ -256,7 +256,7 @@ Practice problems: [spring 2017 exam 1](http://web.mit.edu/18.06/www/Spring17/ex
 [spring 2008 exam 1](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08.pdf) problems 1, 3, 4
 ([solutions](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08-soln.pdf))
 
-Exam 1 and solutions will be posted after Monday October 1.
+* [Fall 2018 Exam 1](exams/exam1.pdf) and [solutions](exams/exam1sol.pdf).
 
 ## Lecture 10 (Oct 1)
 
