@@ -1,0 +1,122 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 6}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+\section{Pictures/Words Problems}
+
+\begin{enumerate}
+
+\item Explain geometrically the formula for projection onto a one-dimensional subspace spanned by a vector $a$.
+
+\end{enumerate}
+
+\section{Problems}
+
+\begin{enumerate}
+
+
+\item (Problem 1, Exam 2, Spring 2017) You are given a $6 \times 6$ matrix
+\[A = \begin{pmatrix} 1 & -1 &  &  &  & \\ -1 & 2 & -1 &  &  &  \\  & -1 & 2 & -1 &  &  \\  &  & -1 & 2 & -1 &  \\  &  &  & -1 & 2 & -1 \\  &  &  &  & -1 & 2 \end{pmatrix}.\]
+
+\begin{enumerate}
+
+\item Find the determinant of $A$.
+
+\item What is the projection matrix onto $C(A)$?
+
+\item If you perform Gram-Schmidt orthogonalization on the columns of $A$, what is the pattern of nonzero entries in the resulting orthogonal matrix $Q$?  
+
+\end{enumerate}
+
+
+\item (Problem 3(d), Exam 2, Spring 2017) If $A$ and $B$ are two matrices such that $A^TB = 0$ (the zero matrix), with $QR$ factorizations
+\[A = Q_AR_A, \qquad B = Q_BR_B \]
+write down the $QR$ factorization of the matrix $C = \begin{pmatrix} A & B \end{pmatrix} $ in terms of $Q_A, Q_B, R_A, R_B$.
+
+
+\item (Strang, Section 5.1, Problem 8) Prove that every orthogonal matrix (recall: a matrix $Q$ so that $Q^TQ = I$) has determinant $1$ or $-1$.
+
+\begin{enumerate}
+
+\item Use the product rule $|AB| = |A||B|$ and the transpose rule $|Q| = |Q^T|$.
+
+
+\item Use only the product rule.  If $|\det(Q)| > 1$ then $\det (Q^n) = (\det Q)^n$ blows up.  How do you know that this can't happen to $Q^n$?
+
+\end{enumerate}
+
+\pagebreak
+
+\item (essentially Strang, Section 4.4, Problem 33) Find all matrices that are both orthogonal and lower triangular in two parts:
+\begin{enumerate}
+\item What are all orthogonal and lower-triangular $2\times 2$ matrices?
+\item Can you generalize this to $m\times m$ matrices?
+\end{enumerate}
+
+\item (Strang, Section 5.1, Problem 11) Suppose that $CD = -DC$ and find the flaw in this reasoning: Taking determinants gives
+\[ |C||D| = -|D||C| \]
+and so $|C||D| = 0$, so one of either $C$ or $D$ has determinant $0$ and is singular.  (This is not true).
+
+
+\item (Strang, Section 5.1, Problem 18) Use row operations to show that the $3 \times 3$ ``Vandermonde determinant" is
+\[\det \begin{pmatrix} 1 & a & a^2 \\ 1 & b & b^2 \\ 1 & c & c^2 \end{pmatrix} = (b-a)(c-a)(c-b). \]
+
+
+
+\end{enumerate}
+\end{document}  

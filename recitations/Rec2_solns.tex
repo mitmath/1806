@@ -1,0 +1,234 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 2}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+\section{Pictures/Words Problems}
+
+\begin{enumerate}
+
+
+\item[3.] Which of the following are vector subspaces of $\rr^2$:
+
+\begin{enumerate}
+
+\item The origin $(0,0)$.
+\item The first quadrant.
+\item The vectors corresponding to points on the line $y = x + 1$.
+\item The vectors corresponding to points on the line $y = 4x$.
+
+\end{enumerate}
+\textbf{Solution:} 
+\begin{enumerate}
+\item The origin is the zero vector, which is always a subspace.
+\item The first quadrant is \emph{not} a subspace of $\rr^2$.  For any vector $v \in \rr^2$ in the first quadrant, it's negative is in the third quadrant.  But if the first quadrant were a subspace, it would have to include all scalar multiples of vectors in the space.
+\item We think of solutions to $y = x + 1$ as vectors $\begin{bmatrix} x \\ y \end{bmatrix}$.  Then this is not a subspace, since a subspace of $\rr^2$ must contain all scalar multiples of vectors in the space.  But if $\begin{bmatrix} x \\ y \end{bmatrix}$ is in the space, then the zero vector $0 \cdot \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}$ is a scalar multiple that is not in the space, since $1 \neq 0$.
+\item This is a subspace!  It is simply the span of the vector $\begin{bmatrix} 1 \\ 4 \end{bmatrix}$.
+\end{enumerate}
+\end{enumerate}
+
+\section{Problems}
+
+\begin{enumerate}
+
+\item The following problems concern the vector space $\mathbf{M}$ of all $2 \times 2$ matrices.  What do we implicitly mean are the operations of addition and scaler multiplication.  Why is this a vector space?
+
+\begin{enumerate}
+
+\item[(i)] (Strang 3.1 Problem 4) The matrix $A = \begin{pmatrix} 2 & -2 \\ 2 & -2 \end{pmatrix}$ is a vector in the space $\mathbf{M}$.  Write sown the zero vector in this space, the vector $\frac{1}{2} A$, and the vector $-A$.  What matrices are in the smallest subspace containing $A$?
+
+\item[(ii)] (Strang 3.1 Problem 5) 
+
+\begin{enumerate}
+
+\item[(a)] Describe a subspace of $\mathbf{M}$ that contains $A = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$ but not $B = \begin{pmatrix} 0 & 0 \\ 0 & -1 \end{pmatrix}$.
+
+\item[(b)] If a subspace of $\mathbf{M}$ does contain $A$ and $B$, must it contain $I$?
+
+\item[(c)] Describe a subspace of $\mathbf{M}$ that contains no nonzero diagonal matrices.
+
+\end{enumerate}
+
+\end{enumerate}
+
+\textbf{Solution:} 
+
+The space $\mathbf{M}$ stands for the set of all $2 \times 2$ matrices with the operation of $+$ for matrix addition (in the usual sense) and scalar multiplication.  To check that this is a vector space, the main two things we need are
+
+\begin{enumerate}
+\item[(S)] If $A  \in \mathbf{M}$ (meaning: $A$ is a $2\times 2$ matrix), then for any scalar $c$, the scaled matrix $c A$ is also in $\mathbf{M}$ (meaning: $c A$ is also a $2 \times 2$ matrix).  This is clearly true!
+
+\item[(A)] If $A$ and $B$ are in $\mathbf{M}$ (meaning: $A$ and $B$ are both $2 \times 2$ matrices), then their sum $A + B$ is als in $\mathbf{M}$ (meaning: their sum is again a $2 \times 2 $ matrix).  This is also clearly true!
+
+\end{enumerate}
+
+So there is nothing \emph{deep} going on with the fact that $\mathbf{M}$ is a vector space -- we are just keeping track of the fact that $\mathbf{M}$ behaves in the ways that we expect.
+
+\begin{enumerate}
+
+\item[(i)] The zero vector is $0 = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}$.  It is $0 \cdot A$ (or $0$ times any matrix in $\mathbf{M}$).  It is also the matrix that can be added to any other matrix without changing the matrix: $0 + A = A$.  The example scalar multiples of $A$ are:
+\[ \frac{1}{2} A = \begin{pmatrix} 1 & -1 \\ 1 & -1 \end{pmatrix}, \qquad -A = \begin{pmatrix} -2 & 2 \\ -2 & 2 \end{pmatrix}. \]
+The smallest subspace containing $A$ is also known as the span of $A$.  Intuitively we should understand what to do to find this: a subspace must be closed under taking arbitrary linear combinations (scalar multiples as in condition (S) above and additions as in condition (A) above).  So to find the span of $A$, we must take all multiples of $A$.   This subspace is 
+\[\langle A \rangle  = \begin{pmatrix} a & -a \\ a & -a \end{pmatrix}, \qquad a \in \rr. \]
+Note that this does contain the zero matrix ($a = 0$) as it should!
+\item[(ii)] 
+
+\begin{enumerate}
+
+\item[(a)] An example subspace that contains $A$ but not $B$ is just the span of $A$:
+\[ \langle A \rangle = \begin{pmatrix} a & 0 \\ 0 & 0 \end{pmatrix}, \qquad a \in \rr. \]
+A \emph{non-example} is the subspace of diagonal matrices:
+\[\begin{pmatrix} a & 0 \\ 0 & b \end{pmatrix}, \qquad a, b \in \rr. \]
+This space has another name: the span of $A$ and $B$.
+
+\item[(b)] Any subspace containing $A$ and $B$ must contain all linear combinations of $A$ and $B$.  So in particular it must contain
+\[A - B = \begin{pmatrix} 1 & 0 \\ 0 & -(-1) \end{pmatrix} = I.\]
+
+\item[(c)] We could take the subspace of matrices 
+\[ V := \begin{pmatrix} 0 & x \\ 0 & 0 \end{pmatrix}, \qquad x \in \rr.\]
+Let's check that this is a subspace.  We need to test two conditions:
+\begin{enumerate}
+\item[(S)] If $A \in V$, then for all scalars $c$, we need $cA \in V$.  Well, if $A$ is in $V$, then $A$ is of the form $\begin{pmatrix} 0 & a \\ 0 & 0 \end{pmatrix}$ for some $a$.  And so 
+\[cA = c \cdot \begin{pmatrix} 0 & a \\ 0 & 0 \end{pmatrix} = \begin{pmatrix} 0 & ca \\ 0 & 0 \end{pmatrix},\]
+which is again of the form of a matrix in $V$, with $x = ca$ this time.
+
+\item[(A)] If $A$ and $B$ are both in $V$, then we need that $A + B$ is in $V$.  Well, we have
+\[A + B = \begin{pmatrix} 0 & a \\ 0 & 0 \end{pmatrix} + \begin{pmatrix} 0 & b \\ 0 & 0 \end{pmatrix} = \begin{pmatrix} 0 & a+b \\ 0 & 0 \end{pmatrix}.\]
+So this is again of the form of matrices in $V$, but with $x = a + b$.
+
+\end{enumerate}
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+\item (Strang 3.1 Problem 15) 
+
+\begin{enumerate}
+
+\item The intersection of two planes through $(0,0,0)$ in $\rr^3$ is probably a \underline{\phantom{aaaaaaaaaaaa}} in $\rr^3$ but it could be a \underline{\phantom{aaaaaaaaaaaa}}.  It can't be just $(0,0,0)$, why?
+
+\item The intersection of a plane through $(0,0,0)$ with a line through $(0,0,0)$ is probably a \underline{\phantom{aaaaaaaaaaaa}}, but it could be a \underline{\phantom{aaaaaaaaaaaa}} .
+
+\item If $\mathbf{S}$ and $\mathbf{T}$ are subspaces of $\rr^5$, prove that their intersection $\mathbf{S} \cap \mathbf{T}$ is a subspace of $\rr^5$.  Here $\mathbf{S} \cap \mathbf{T}$ consists of the vectors that lie in both spaces.
+
+\end{enumerate}
+
+\textbf{Solution:} 
+
+\begin{enumerate}
+
+\item The intersection of two planes through the origin is usually a \textbf{line}, but if the two planes are equal, then it is a \textbf{plane}.  It is never just $(0,0,0)$ -- a $2 \times 3$ matrix always has a nontrivial nullspace.  Do you see why this is what the problem is asking?
+
+\item The intersection of a plane through the origin with a line through the origin is usually a \textbf{point} -- namely the origin $(0,0,0)$ -- but it could be a \textbf{line}, if the original line was contained in the plane.
+
+\item If $\mathbf{S}$ and $\mathbf{T}$ are both subspaces, let's check that $\mathbf{S} \cap \mathbf{T}$ is also a subspace.  As a set, $\mathbf{S} \cap \mathbf{T}$ is the set of vectors $v$ so that $v \in \mathbf{S}$ and $v \in \mathbf{T}$.  We need to check two conditions
+\begin{enumerate}
+\item[(S)] If $v \in \mathbf{S} \cap \mathbf{T}$, then for any scalar $c$,  we need that $cv \in \mathbf{S} \cap \mathbf{T}$.  Because $v \in \mathbf{S} \cap \mathbf{T}$, we know that $v \in  \mathbf{S}$ and $v \in \mathbf{T}$.  In order for $cv$ to be in $\mathbf{S} \cap \mathbf{T}$, we need that both $cv \in \mathbf{S}$ and $cv \in \mathbf{T}$.  But $\mathbf{S}$ and $\mathbf{T}$ are both subspaces, so this follows from condition (S) for $\mathbf{S}$ and $\mathbf{T}$.
+
+\item[(A)] If $v$ and $v'$ are in $\mathbf{S} \cap \mathbf{T}$, we need that 
+$v + v'$ is in $\mathbf{S} \cap \mathbf{T}$.  The assumption that both $v$ and $v'$ are in $\mathbf{S} \cap \mathbf{T}$ means that $v$ and $v'$ are in $\mathbf{S}$ and $v$ and $v'$ are in $\mathbf{T}$ as well.  So by (A) for the subspace $\mathbf{S}$, we have
+\[v + v' \in \mathbf{S}. \]
+And by (A) for the subspace $\mathbf{T}$, we have
+\[v + v' \in \mathbf{T}.\]
+Since $v + v'$ is in both $\mathbf{S}$ and $\mathbf{T}$, it is in $\mathbf{S} \cap \mathbf{T}$ as desired.
+
+\end{enumerate}
+
+\end{enumerate}
+
+\item[5.] Let $A$ be an $n \times n$ matrix and let $b,c,x,y,z$ be $n$ component vectors.  Suppose that $Ax=b$ and $Ay=c$ are both solvable.  
+
+\begin{enumerate}
+
+\item Show that $Az=2b+3c$ is solvable: what is a possible solution $z$?  
+\item Can you rephrase this in terms of column spaces?
+\item If $z+u+v$ is another solution to $A(z+u+b)=2b+3c$ for some vectors $u$ and $v$, then \underline{\phantom{aaaaaaaaaaaa}} is in \underline{\phantom{aaaaaaaaaaaa}}.
+\item If $z+\alpha u+\beta v$ is also a solution for any $\alpha$ and $\beta$, then \underline{\phantom{aaaaaaaaaaaa}} is in \underline{\phantom{aaaaaaaaaaaa}}.
+\end{enumerate}
+
+\textbf{Solution:} 
+
+\begin{enumerate}
+
+\item We can solve this by
+\[z = 2x + 3y.\]
+To check:
+\[Az = A(2x + 3y) = 2(Ax) + 3(Ay) = 2b + 3c.\]
+\item The column space of $A$ is the set of all vectors $\mathbf{b}$ so that $Ax = \mathbf{b}$ is solvable.  So part (a) is asking if $2b + 3c$ is in the column space of $A$.  But the columns space is a subspace, so it is closed under linear combinations.  We know by assumption that $b$ and $c$ are in the column space of $A$, so the linear combination $2b + 3c$ must also be in the column space of $A$.
+
+\item If we have another solution ``$u+v$" (the fact that this happens to be decomposable into a sum is a red herring -- we can always write a vector like this, if we, for example, take $v = 0$) to the equation
+\[A \mathbf{z} = 2b + 3c \]
+besides the original solution $z$ we already knew about, then expanding out, we have
+\[A(z + u + v) = Az + A(u+v) = (2b + 3c) + A(u+v) = 2b + 3c,\]
+so $A(u+v) = 0$.  Therefore $\mathbf{u+v}$ is in the \textbf{null space} of $A$. (Note that this doesn't necessarily mean that $u$ and $v$ are individually in  the null space of $A$, only that $Au = -Av$).
+
+\item If for all scalars $\alpha$ and $\beta$, we know that $A(z + \alpha u + \beta v) = 2b + 3c$, then $\alpha u + \beta v$ is in the null space of $A$ for any $\alpha$ and $\beta$.  Therefore \textbf{the span of $\mathbf{u}$ and $\mathbf{v}$} is in the \textbf{null space} of $A$.  In particular, in this case, both $u$ and $v$ are independently in the null space of $A$.
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+\end{document}  

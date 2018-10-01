@@ -1,0 +1,237 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+\renewcommand{\bar}{\overline}
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 7 Solutions}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+\section{Problems}
+
+\begin{enumerate}
+
+
+
+%1) what is the pattern when you multiply A repeatedly by some vector?  After ___ multiplications, you get back the same vector, so A^___ = ____
+%
+%2) What are eigenvalues and eigenvectors of A?
+%        --- From the previous part, A^4=I ? is that consistent with your eigenvalues?
+%
+%3) Write the column vector x = (1,0) in the basis of the eigenvectors and give a formula for A^n x.
+%        --- Why is this real even though the eigenvectors/values are complex?
+%
+%4) What are the eigenvectors and eigenvectors of B = 2A + I?
+%        -- can do it both the hard way, of re-solving the characteristic polynomial, and the easy way ? ? 2?+1.
+%        -- what does this tell you about B^n x for n goes to +infinity?  To -infinity?
+%
+%More generally, if A is any real mxm matrix and Ax=?x is a solution with a complex eigenvalue ?, what must be another eigenvalue and eigenvector?  (Answer: complex conjugate of ? and x.)
+%
+%In general, if Ax=?x and ? is complex, how can you tell whether A^n x blows up as n goes to +infinity?
+
+
+
+\item Suppose that $A$ is the matrix
+\[A = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}.\]
+
+
+\begin{enumerate}
+
+\item What is the pattern when you multiply $A$ repeatedly by some vector?  After \underline{\phantom{aaaaaaa}} multiplications, you get back the same vector, so 
+\[A^{\underline{\phantom{aaa}}} = \underline{\phantom{aaaaaaaaaaaa}}.\]
+
+\textbf{Solution:} Let $v = \begin{pmatrix} v_1 \\ v_2 \end{pmatrix}$.  We can calculate
+\begin{align*}
+Av = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} &= \begin{pmatrix} v_2 \\ -v_1 \end{pmatrix}, \\
+A^2v = A(Av) = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} \begin{pmatrix} v_2 \\ -v_1 \end{pmatrix} &= \begin{pmatrix} -v_1 \\ -v_2 \end{pmatrix}, \\
+A^3v = A(A(Av)) = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} \begin{pmatrix} -v_1 \\ -v_2 \end{pmatrix} &= \begin{pmatrix} -v_2 \\ v_1 \end{pmatrix}, \\
+A^4v = A(A(A(Av))) = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} \begin{pmatrix} -v_2 \\ v_1 \end{pmatrix} &= \begin{pmatrix} v_1 \\ v_2 \end{pmatrix}.
+\end{align*}
+Therefore we see that after \textbf{four} multiplications, you get back the same vector, so $\mathbf{A^4 = I}$.  (Notice also that after $2$ multiplications we get back the negative of the original vector, so $A^2 = -I$).
+
+
+\item What are eigenvalues and eigenvectors of $A$?  Is this consistent with the previous part?
+
+\textbf{Solution:} 
+
+The eigenvalues are the roots of the characteristic polynomial
+\[ \det(A - \lambda I) = \det \begin{pmatrix} -\lambda & 1 \\ -1 & -\lambda \end{pmatrix}  = \lambda^2 + 1, \]
+which are $\lambda = \pm i$.
+
+To find eigenvectors we can do several things:
+
+\underline{Approach 1:} The eigenvector associated to eigenvalue $\lambda_1 = i$ is the basis vector of the nullspace of the matrix
+\[A -i I = \begin{pmatrix} -i & 1 \\ -1 & -i \end{pmatrix}.\]
+To find a basis for the nullspace, we can first put this into its rref:
+\[\begin{pmatrix} -i & 1 \\ -1 & -i \end{pmatrix} \rightsquigarrow \begin{pmatrix} -i & 1 \\ 0 & 0 \end{pmatrix}  \]
+Therefore the nullspace is spanned by the vector
+\[ x_1 = \begin{pmatrix} 1 \\ i \end{pmatrix}, \quad \lambda_1 = i.\]
+We can do a similar process to find the second eigenvector 
+\[x_2 = \begin{pmatrix} 1 \\ -i \end{pmatrix}, \quad \lambda_1 = -i.\]
+
+\underline{Approach 2:}  We want to solve the equation
+\[\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = i \begin{pmatrix} v_1 \\ v_2 \end{pmatrix}.\]
+Since the eigenspace associated to an eigenvalue $\lambda$ is a subspace of $\rr^2$ (or $\rr^m$ more generally), as long as there is an eigenvector in this subspace with $v_1 \neq 0$, we can assume that $v_1 = 1$, by scaling appropriately.  Then we want to solve the equation
+\[\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} \begin{pmatrix} 1 \\ v_2 \end{pmatrix} = i \begin{pmatrix} 1 \\ v_2 \end{pmatrix},\]
+or more simply
+\[v_2 = i, \qquad -1 = i v_2,\]
+which is consistent, since $i^2 = -1$.  This gives the eigenvector $x_1 = \begin{pmatrix} 1 \\ i \end{pmatrix}$ associated to the eigenvalue $\lambda_1 = i$, as before.  We could do the same thing to find the second one.
+
+We could also note that since $A$ has real entries, $\bar{A}$ (meaning the matrix composed of the complex conjugates of the entires of $A$) is equal to $A$, so taking complex conjugates we have
+\[\bar{Ax_1} = \bar{A}\bar{x_1} = A\bar{x_1}.\]
+But on the other hand, as $x_1$ is an eigenvector
+\[\bar{Ax_1} = \bar{\lambda_1 x_1} = \bar{\lambda_1}\bar{x_1}. \]
+Putting these two together, we see
+\[A\bar{x_1} = \bar{\lambda_1}\bar{x_1}, \]
+or in other words: if $A$ is real, then the eigenvalues and eigenvectors come in complex conjugate pairs.  Therefore
+\[x_2 = \bar{x_1} = \begin{pmatrix} 1 \\ -i \end{pmatrix}, \qquad \lambda_2 = \bar{\lambda_1} = -i.\]
+
+\item Write the vector $x = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$ in the basis of the eigenvectors and give a formula for $A^n x$.
+
+\textbf{Solution:} We want to find $a,b \in \cc$ so that
+\[\begin{pmatrix} 1 \\ 0 \end{pmatrix} = a \begin{pmatrix} 1 \\ i \end{pmatrix} + b \begin{pmatrix} 1 \\ -i \end{pmatrix}.\]
+This is pretty easy to see by inspection, but for the sake of demonstrating that nothing magical is happening, let's do this systematically.
+The $a$ and $b$ above are the solution to the linear system
+\[\begin{pmatrix} 1 & 1 \\ i & -i \end{pmatrix} \begin{pmatrix} a \\ b \end{pmatrix} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}.\]
+We can solve this by row reduction on the augmented matrix
+\[\begin{pmatrix} 1 & 1 & 1  \\ i & -i & 0  \end{pmatrix} \rightsquigarrow \begin{pmatrix} 1 & 1 & 1  \\ 0 & -2i & -i  \end{pmatrix}.\]
+So we see we should take
+\[b = 1/2, \qquad a = 1/2.\]
+Therefore, 
+\[\begin{pmatrix} 1 \\ 0 \end{pmatrix} = (1/2) \begin{pmatrix} 1 \\ i \end{pmatrix} + (1/2) \begin{pmatrix} 1 \\ -i \end{pmatrix}. \]
+So
+\begin{align*}
+A^n e_1 = A^n\begin{pmatrix} 1 \\ 0 \end{pmatrix} &= A^n \left((1/2) \begin{pmatrix} 1 \\ i \end{pmatrix}\right) + A^n\left( (1/2) \begin{pmatrix} 1 \\ -i \end{pmatrix}\right),\\
+&= (1/2) A^n  \begin{pmatrix} 1 \\ i \end{pmatrix} + (1/2)A^n \begin{pmatrix} 1 \\ -i \end{pmatrix},\\
+&= (1/2) (i)^n  \begin{pmatrix} 1 \\ i \end{pmatrix} + (1/2)(-i)^n \begin{pmatrix} 1 \\ -i \end{pmatrix},\\
+& = (1/2)\begin{pmatrix} i^n(1 + (-1)^n) \\ i^{n+1}(1 + (-1)^{n+1}) \end{pmatrix}.
+\end{align*}
+This might look terrible, since there are all of these $i$ terms floating around, but we are just multiplying a real matrix by a real vector!  Never fear... we can simplify more!  If $n$ is odd, then $(-1)^n = -1$ and the top coordinate is $0$.  And if $n$ is odd, then $n+1$ is even, and so the bottom coordinate simplifies too to
+\[ n \text{ odd, } \qquad A^n e_1 = \begin{pmatrix} 0 \\ i^{n+1} \end{pmatrix}.\]
+And if $n = 1 + 4*m$ then $i^{n+1} = i^{2 + 4m} = i^2 = -1$.  If $n = 3 + 4m$ then $i^{n+1} = i^{4(m+1)} = 1$ and so we cna further simplify this to
+\[ A^n e_1 = \begin{cases} \begin{pmatrix} 0 \\ - 1 \end{pmatrix} & \text{ if $n = 1 + 4m$} \\ \begin{pmatrix} 0 \\ 1 \end{pmatrix} & \text{ if $n = 3 + 4m$}. \end{cases}.\]
+Similarly, if $n$ is even, then the bottom entry is $0$ and we can similarly show that
+\[ A^n e_1 = \begin{cases} \begin{pmatrix} 1 \\ 0  \end{pmatrix} & \text{ if $n = 4m$} \\ \begin{pmatrix} -1 \\ 0 \end{pmatrix} & \text{ if $n = 2 + 4m$}. \end{cases}.\]
+This should not be surprising, since $A^n e_1$ is the first column of the matrix $A^n$.  And as we saw (basically in part (a)):
+\[A = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}, \ A^2 = \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix}, \ A^3 = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \ A^4 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix},\]
+and then it repeats!  This confirms our answers computed above using the eigenbasis.
+
+\item What are the eigenvectors and eigenvalues of $B = 2A + I$?
+
+\textbf{Solution:} Suppose that $x$ is an eigenvector of $A$ with eigenvalue $\lambda$, so that 
+\[Ax = \lambda x.\]
+Then
+\[Bx = (2A + I)x = 2Ax + x = 2\lambda x + x = (2\lambda + 1)x. \]
+Therefore $x$ is also an eigenvector of $B$ with eigenvalue $2\lambda + 1$.
+Going in the other way, using $A = (1/2)(B-I)$, we see than any eigenvector of $B$ is also an eigenvector of $A$.
+
+Alternatively, we can see the eigenvalues from the definition:
+\[\det(B - \lambda I) = \det \begin{pmatrix} (1-\lambda) & 2 \\ -2 & (1-\lambda) \end{pmatrix} = (1-\lambda)^2 + 4.\]
+This has roots
+\[(1-\lambda) = \pm 2 i, \qquad \lambda = 1 \pm 2 i, \]
+as expected.
+
+\item What do you know about $B^nx$ as $n \to \infty$ and $n \to -\infty$?
+
+\textbf{Solution:} $B$ now has eigenvalues with magnitude
+\[|\lambda_1| = |\lambda_2| = (1+2i)(1-2i) = 1 + 4 = 5 > 1.\]
+Therefore positive powers of $B$ times the eigenvectors $x_1$ and $x_2$ will become larger and larger multiples of $x_1$ or $x_2$.  Negative powers will become smaller and smaller.  You would then expect that $B^n$ times a random vector will blow up if $n \to \infty$ and go to $0$ if $n \to - \infty$.  Let's see this in action in the case as above.
+
+This is the level you're probably expected to understand, but to go a bit deeper:
+
+Using our formula $x = (1/2) x_1 + (1/2) x_2$, we see
+\begin{align*}
+B^n x &= (1/2)B^nx_1 + (1/2)B^n x_2 \\
+&= (1/2)(1+2i)^nx_1 + (1/2)(1-2i)^n x_2 \\
+&= (1/2)\begin{pmatrix} (1+2i)^n + (1-2i)^n \\ i\Big((1+2i)^n - (1-2i)^n\Big) \end{pmatrix}.
+\end{align*}
+
+Note that these entries are \underline{real} numbers!  We can check as follows:
+
+\begin{align*}
+\bar{(1+2i)^n + (1-2i)^n} &= \bar{(1+2i)^n} + \bar{(1-2i)^n} \\
+&= (\bar{1+2i})^n + (\bar{1-2i})^n \\
+&= (1-2i)^n + (1+2i)^n.
+\end{align*}
+Similarly,
+\begin{align*}
+\bar{i(1+2i)^n - i(1-2i)^n} &= \bar{i(1+2i)^n} - \bar{i(1-2i)^n} \\
+&= \bar{i}(\bar{1+2i})^n - \bar{i}(\bar{1-2i})^n \\
+&= -i(1-2i)^n - (-i)(1+2i)^n \\
+&= -i(1-2i)^n + i(1+2i)^n.
+\end{align*}
+
+Let's see that these ``blow up" as $n \to \infty$.  Let's look just at the first entry.  We can expand
+\begin{align*}
+(1+2i)^n + (1-2i)^n &= \sum_{j=0}^n {n \choose j} \Big((2i)^j + (-2i)^j\Big) \\
+&=  \sum_{j=0}^n 2^j {n \choose j} (i^j + (-i)^j)\\
+&=  \sum_{j=0}^n 2^j {n \choose j} i^j(1 + (-1)^j).
+\intertext{As we saw before, $(1 + (-1)^j)$ is only nonzero if $j$ is even.  So we can rewrite as}
+&=  \sum_{k=0}^{\lfloor n/2 \rfloor} 2^{2k+1} {n \choose 2k} (-1)^k.
+\end{align*}
+The numbers are all huge, and you can see that they won't cancel (the binomial coefficients are palindromic, but the powers of $2$ are increasing, giving different weights to the two palindromic terms.  The largest one will be in the middle/just above the middle.)  The sign of this expression will be positive or negative depending on whether the central/just above central $k$ is even or odd.
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+
+\end{enumerate}
+\end{document}  

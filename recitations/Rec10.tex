@@ -1,0 +1,117 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 10}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+\begin{enumerate}
+
+\item Consider unitary matrices $Q^HQ = I$.  If $Q$ is real, then we are saying that $Q$ is orthogonal (e.g., $Q^TQ = I$).
+\begin{enumerate}
+\item Find the flaw in this false proof: \textbf{False Claim: all eigenvalues of a real orthogonal matrix are $\pm 1$.}  Indeed, if $Qx = \lambda x$,
+\[\lambda^2 x^T x = (Qx)^T (Qx) = x^T (Q^T Q) x = x^Tx, \]
+therefore $\lambda^2 = 1$, so $\lambda = \pm 1$.  If you want, you can think about what happens for the rotation matrices
+\[ R = \begin{pmatrix} \cos \theta & -\sin \theta \\ \sin \theta & \cos \theta \end{pmatrix}.\]
+
+\item Correct the proof to show \textbf{True Claim: all eigenvalues of a unitary matrix have magnitude $1$ (e.g. $\lambda = e^{i \phi}$ for some $\phi$).}
+
+\item Show that the eigenvectors for different eigenvalues of a unitary matrix are orthogonal.
+
+\item Show that the determinant of any real unitary matrix (e.g., an orthogonal matrix) is $\pm 1$ using eigenvalues.  (Note: you already proved this on a previous pset in a different way.)
+
+\end{enumerate}
+
+\item Let $A$ be a Hermitian matrix and $B$ be a positive definite Hermitian matrix.  Consider the generalized eigenproblem
+\[Ax = \lambda Bx. \]
+\begin{enumerate}
+\item Show that these ``generalized" eigenvalues $\lambda$ above are real.
+\item Show that eigenvectors for different ``generalized eigenvalues" are orthogonal with respect to the ``$B$-dot-product":
+\[x_1 \cdot_{B} x_2 = x_1^H B x_2. \]
+\end{enumerate}
+
+\item (Strang 6.4, Problem 12) Here is a quick ``proof" that the eigenvalues of \textbf{every} real matrix $A$ are real:
+\[\text{\textbf{False Proof: }} Ax = \lambda x \text{ gives } x^TAx = \lambda x^Tx, \quad \text{so } \ \lambda  = \frac{ x^TAx}{x^Tx} = \frac{\text{real}}{\text{real}}.\]
+Find the flaw in this reasoning -- a hidden assumption that is not justified.  You can test those steps on the 90${}^\circ$ rotation matrix
+\[ A = \begin{pmatrix} 0 & -1 \\  1 & 0 \end{pmatrix}, \qquad \lambda =  i, \ x = \begin{pmatrix} i \\ 1 \end{pmatrix}.\]
+
+
+\item (Strang 9.2, Problem 23) How are the eigenvalues of $A^H$ related to the eigenvalues of the square matrix $A$?
+
+
+\item 
+
+\begin{enumerate}
+\item If $S$ is a positive definite matrix, show that $S^{-1}$ is also positive definite.
+\item If $S$ and $T$ are positive definite, their sum $S + T$ is also positive definite.  If $S = A^HA$ and $T = B^HB$ for full-column-rank matrices $A$ and $B$, then can you write down a full-column-rank matrix $C$ so that $S +T = C^TC$?
+\end{enumerate}
+
+\item We saw on homework $2$ that if we represent complex numbers $x + iy$ by the vector of real and imaginary parts $\begin{pmatrix} x \\  y \end{pmatrix}$, then multiplication by the fixed complex number $a + bi$ is given by matrix multiplication by the real matrix
+\[\begin{pmatrix} a & -b \\ b & a \end{pmatrix}. \]
+What real matrix represents multiplication by $\overline{a + bi}$?
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+\end{document}  

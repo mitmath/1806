@@ -1,0 +1,245 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 8 Solutions}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+%\section{Foundational Problems}
+%
+%\begin{enumerate}
+%
+%\item Suppose that $s_1, \dots, s_m$ are independent vectors in $\rr^m$, and so give a basis for $\rr^m$.
+%\begin{enumerate}
+%\item What is the matrix that expresses a vector $v \in \rr^m$ (in standard coordinates) in terms of the basis $s_1, \dots, s_m$?  That is, find a matrix $A$ so that
+%\[A\begin{pmatrix} v_1 \\ \vdots \\ v_m \end{pmatrix} = \begin{pmatrix} c_1 \\ \vdots \\ c_n \end{pmatrix}, \]
+%where
+%\[v = c_1 s_1 + \cdots  + c_m s_m. \]
+%\item What is the matrix that re-expresses a vector in the basis $s_1, \dots, s_m$ in terms of the standard basis vectors (that are the columns of the identity).
+%\end{enumerate}
+%
+%
+%\end{enumerate}
+
+\section{Problems}
+
+\begin{enumerate}
+
+\item The Fibonacci sequence is defined recursively by specifying initial values $F_0 = 0, F_1 = 1$, and the relation
+\[ F_{n+1} = F_n + F_{n-1}. \]
+\begin{enumerate}
+\item Given the input vector $v_{n} = \begin{pmatrix} F_{n} \\ F_{n-1} \end{pmatrix}$, what is the matrix $A$, so that $Av_n = v_{n+1}$?
+
+\textbf{Solution:} By the recursive definition, we know that
+\[\begin{pmatrix} F_{n+1} \\ F_n \end{pmatrix} = \begin{pmatrix} F_{n} + F_{n-1} \\ F_n \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} F_n\\ F_{n-1} \end{pmatrix}. \] 
+So we take
+\[A = \begin{pmatrix} 1 & 1 \\ 1 & 0 \end{pmatrix} .\]
+
+\item Give an expression for $v_{n+1}$ in terms of $A$ and $v_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$.
+
+\textbf{Solution:} We know from above that $v_{n+1} = A v_{n}$, so applying this recursively, we see:
+\[ v_{n+1} = A(Av_{n-1}) = A(A(Av_{n-2})) = \cdots = A^{n} v_1.\]
+
+\item What are the eigenvectors and eigenvalues of $A$?
+
+\textbf{Solution:} The eigenvalues of $A$ are roots of the characteristic polynomial
+\[\det(A - \lambda I) = \det \begin{pmatrix} 1 - \lambda & 1 \\ 1 & -\lambda \end{pmatrix} = \lambda(\lambda-1) - 1 = \lambda^2 - \lambda - 1. \]
+By the quadratic formula, these roots are
+\[\lambda_1 = \frac{1 + \sqrt{5}}{2}, \qquad \lambda_2 = \frac{1 - \sqrt{5}}{2}.\]
+To find the corresponding eigenvectors, we can find the nullspaces of the matrices
+\[A - \lambda_1 I =  \begin{pmatrix} 1 - \lambda_1 & 1 \\ 1 & -\lambda_1 \end{pmatrix}, \qquad A - \lambda_2 I =  \begin{pmatrix} 1 - \lambda_2 & 1 \\ 1 & -\lambda_2 \end{pmatrix}.\]
+Using row reduction, we can see
+\[ \begin{pmatrix} 1 - \lambda_i & 1 \\ 1 & -\lambda_i \end{pmatrix} \rightsquigarrow \begin{pmatrix} 1 - \lambda_i & 1 \\ 0 & -\lambda_i - \frac{1}{1-\lambda_i} \end{pmatrix} = \begin{pmatrix} 1 - \lambda_i & 1 \\ 0 & \frac{-\lambda_i(1-\lambda_i) - 1}{1-\lambda_i} \end{pmatrix} \]
+\[\qquad \qquad = \begin{pmatrix} 1 - \lambda_i & 1 \\ 0 & 0\end{pmatrix} 
+\rightsquigarrow \begin{pmatrix} 1 & -\lambda_i \\ 0 & 0\end{pmatrix} \]
+Therefore we see that the nullspace is spanned by the vector
+\[x_i = \begin{pmatrix}\lambda_i \\ 1 \end{pmatrix}.\]
+An eigenbasis is therefore given by
+\[\lambda_1 = \frac{1 + \sqrt{5}}{2}, \ x_1 =  \begin{pmatrix}\lambda_1 \\1 \end{pmatrix}, \qquad \lambda_2 = \frac{1 - \sqrt{5}}{2}, \ x_2 =  \begin{pmatrix}\lambda_2 \\1 \end{pmatrix}.\]
+
+%We can further simplify this, since we know that $\lambda_1^2 - \lambda_1 - 1 = 0$, we have
+%\[-\lambda_1(1-\lambda_1) = \lambda_1^2 - \lambda_1 = 1,\]
+%and so $\frac{1}{1 - \lambda_1} = -\lambda_1$, and
+%\[  x_1 = \begin{pmatrix}-\lambda_1 \\ 1 \end{pmatrix}.\]
+
+
+
+
+\item Using the eigenbasis, give an exact formula for $F_n$.  What do you know about $|F_n|$ as $n \to \infty$?
+
+\textbf{Solution:} 
+
+We know from part (b) that
+\[v_{n+1} = A^{n} v_1 = A^{n} \begin{pmatrix} 1 \\ 0 \end{pmatrix}. \]
+First we should express the vector $v_1$ in the eigenbasis above.  We can do this by solving the linear system 
+\[\begin{pmatrix} \lambda_1 & \lambda_2 \\ 1 & 1 \end{pmatrix} \begin{pmatrix} a \\ b \end{pmatrix}  = \begin{pmatrix}1 \\ 0 \end{pmatrix}. \]
+(We did this using elimination in the last recitation).  Alternatively, let's use change of basis matrices.  The matrix
+\[S = \begin{pmatrix} \lambda_1 & \lambda_2 \\ 1 & 1 \end{pmatrix} \]
+takes vectors expressed in terms of the $x_1, x_2$ eigenbasis to vectors expressed in terms of the standard basis.  The inverse matrix
+\[S^{-1} = \frac{1}{\lambda_1 - \lambda_2}\begin{pmatrix} 1 & -\lambda_2 \\ -1 & \lambda_1 \end{pmatrix} \]
+expresses vectors in the standard basis in terms of vectors in the eigenbasis.  So we want
+\[S^{-1}v_1 = \begin{pmatrix} \frac{1}{\lambda_1-\lambda_2} \\ \frac{-1}{\lambda_1 - \lambda_2} \end{pmatrix}, \]
+therefore
+\[a = \frac{1}{\lambda_1-\lambda_2} , \qquad b = \frac{-1}{\lambda_1 - \lambda_2} = \frac{1}{\lambda_2 - \lambda_1}.\]
+
+
+%Doing elimination on the augmented matrix (and noting that $\lambda_1 + \lambda_2 = 1$ and so $\lambda_1 - 1 = -\lambda_2$) we have
+%\[\begin{pmatrix} \lambda_1 & \lambda_2 & 1 \\ 1 & 1 & 0 \end{pmatrix} \rightsquigarrow \begin{pmatrix} \lambda_1 & \lambda_2 & 1 \\ 0 & 1 + \lambda_2(1-\lambda_1) & (1-\lambda_1) \end{pmatrix}  \]
+%
+%
+%And so $a = \frac{\lambda_2 -2}{\lambda_2 - \lambda_1}$ and $b = \frac{2-\lambda_1}{\lambda_2 - \lambda_1}$ are the coefficients we're looking for.
+
+This gives
+\[v_{n+1} = A^{n}v_1  = A^{n}(ax_1 + bx_2) = a\lambda_1^{n}x_1 + b\lambda_2^{n}x_2.\]
+Extracting the second coefficient, which is $F_n$, we see
+\[F_n = a\lambda_1^n + b\lambda_2^n = \frac{\lambda_1^n - \lambda_2^n}{\lambda_1 - \lambda_2}. \]
+
+We expect that after multiplying by $A$ many times, the output should be approximately a multiple of $x_1$, the eigenvector corresponding to the largest eigenvalue.  A consequence is that 
+\[\frac{F_{n+1}}{F_n} \rightsquigarrow \lambda_1.\]
+Let's check this:
+\begin{align*}
+\frac{F_{n+1}}{F_n} &= \frac{\lambda_1^{n+1} - \lambda_2^{n+1}}{\lambda_1^n - \lambda_2^n} \\
+&= \frac{\lambda_1^{n+1} - \lambda_1\lambda_2^n + \lambda_1\lambda_2^n - \lambda_2^{n+1}}{\lambda_1^n - \lambda_2^n}  \\
+&= \frac{\lambda_1(\lambda_1^{n} - \lambda_2^n) + \lambda_2^n(\lambda_1 - \lambda_2)}{\lambda_1^n - \lambda_2^n} \\
+&= \lambda_1 + \frac{\lambda_2^n(\lambda_1 - \lambda_2)}{\lambda_1^n - \lambda_2^n} \\
+&= \lambda_1 + \left(\frac{\lambda_2}{\lambda_1}\right)^n \left(\frac{(\lambda_1 - \lambda_2)}{1 - \left(\frac{\lambda_2}{\lambda_1}\right)^n}\right),
+\end{align*}
+as $n$ gets large, since
+\[ \left| \frac{\lambda_2}{\lambda_1} \right| <1, \]
+the right-hand term goes to $0$.
+
+So this tells us that $|F_n|$ as $n \to \infty$ is getting very large: at every stage, we're roughly multiplying the previous number by $\lambda_1 > 1$.
+
+
+\end{enumerate}
+
+\item Let $A$ be an $m \times m$ matrix
+\[ A = \begin{pmatrix} a_{11} & a_{12} & \dots & a_{1m} \\ a_{21} & a_{22} & \dots & a_{2m} \\  & & \ddots & \\ a_{m1} & a_{m2} & \dots & a_{mm} \end{pmatrix}, \]
+and let $A'$ be the matrix obtained from $A$ be reversing the rows and columns:
+\[A' = \begin{pmatrix} a_{mm} & a_{m(m-1)} & \dots & a_{m1} \\ a_{(m-1)m} & a_{(m-1)(m-1)} & \dots & a_{(m-1)1} \\  & & \ddots & \\ a_{1m} & a_{1(m-1)} & \dots & a_{11} \end{pmatrix}. \]
+
+\begin{enumerate}
+\item When $m=2$, what do you notices about the eigenvalues of $A'$?
+
+\textbf{Solution:} We're dealing with the special case
+\[A' = \begin{pmatrix} a_{22} & a_{21} \\ a_{12} & a_{11} \end{pmatrix}. \]
+The eigenvalues of $A$ are the roots of the characteristic polynomial $\det(A - \lambda I)$ and the eigenvalues of $A'$ are the roots of the characteristic polynomial $\det(A' - \lambda I)$.  Let's compute this:
+\[\det(A' - \lambda I) = \det \begin{pmatrix} a_{22}-\lambda & a_{21} \\ a_{12} & a_{11} - \lambda \end{pmatrix} = (a_{22}-\lambda)(a_{11} - \lambda) - a_{12}a_{21}  = \det \begin{pmatrix} a_{11}-\lambda & a_{12} \\ a_{21} & a_{22} - \lambda \end{pmatrix}. \]
+So we notice that \emph{the eigenvalues of $A$ and $A'$ are the same}.
+
+
+\item What is true in general and why?
+
+\textbf{Solution:} For the general $m \times m$ case, we can't compute simply by hand.  We'll have to realize the operation done to take $A$ to $A'$ as matrix operations.  Similar to a problem in an earlier recitation, if we let $P$ be the permutation matrix
+\[P = \begin{pmatrix} 0 & \cdots & 0 & 1 \\ 0 & \ddots &  1 & 0 \\ 0 & \ddots &  0 & 0 \\ 1 & \cdots &0 & 0 \end{pmatrix}. \]
+Then multiplication by $P$ on the left swaps the order of the rows.  Good!  This is one of the things we need to do to $A$ to get $A'$.
+
+Multiplication by $P$ on the right also swaps the order of the columns.  Double great!  This is the second thing we have to do to $A$ to get $A'$.
+
+So we see that 
+\[A' = PAP. \]
+There is one more important thing, which is that $P=P^{-1}$, because, as you can check, $P^2 = I$ (swapping the order of the rows and then swapping again is the same as doing nothing).  So really
+\[A' = P A P^{-1}, \]
+so $A$ and $A'$ are similar, and so have the same eigenvalues.
+
+
+\end{enumerate}
+
+\item (Strang, Section 10.3, Problem 6)  
+\begin{enumerate}
+\item For a Markov matrix, show that the sum of the components of $x$ equals the sum of the components of $Ax$.
+
+\textbf{Solution:}
+
+If $A$ is a Markov matrix then for $o = \begin{pmatrix} 1 \\ 1 \\ \vdots \\ 1 \end{pmatrix}$, we know that 
+\[o^T A = o^T. \]
+
+The sum of the components of a vector $y$ is given by $o^T y$.  Using the above we have
+\[o^T Ax = (o^TA)x = o^Tx, \] 
+and so $Ax$ and $x$ have the same sum of coefficients.
+
+\item If $Ax =  \lambda x$ with $\lambda \neq 1$, prove that the components of this non-steady eigenvector $x$ add to zero.
+
+\textbf{Solution:} If $\lambda \neq 1$, then from above we have
+\[ o^Tx = o^TAx = o^T(\lambda x) = \lambda o^T x,\]
+and so
+\[o^Tx(1-\lambda) = 0.\]
+Since we assumed that $\lambda \neq 1$, the first term $o^Tx$ must be $0$.
+\end{enumerate}
+
+
+\item 
+
+\begin{enumerate}
+\item Show that every square matrix is similar to its transpose.  That is, 
+\[A^T=SAS^{-1}, \] 
+for some invertible matrix $S$.
+
+\textbf{Solution:} 
+
+\item Assuming $A$ is diagonalizable, give a formula for $S$ in terms of the matrix $X$ of eigenvectors of $A$ and the matrix $Y$ of eigenvectors of $A^T$ (which is also diagonalizable).
+
+\textbf{Solution:} If $\Lambda$ is the matrix of eigenvalues of $A$ and $A^{T}$, then we have that
+\[ A =  X\Lambda X^{-1}, \qquad Y^{-1} A^T Y = \Lambda.\]
+
+So putting these together,
+\[ A = X Y^{-1} A^T Y X^{-1}, \]
+and so $S = XY^{-1}$.
+
+\end{enumerate}
+
+
+\end{enumerate}
+\end{document}  

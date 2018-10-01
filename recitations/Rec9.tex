@@ -1,0 +1,99 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 9}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+\begin{enumerate}
+
+\item Suppose that A is a $4\times4$ square matrix with eigenvalues $-0.7 \pm 0.1i, -0.3, 0.01$ and corresponding eigenvectors $v_1, v_2, v_3, v_4$.
+\begin{enumerate}
+\item  If 
+\[\frac{dx}{dt} = Ax,\]
+ for some initial $x(0)$, what does the solution $x(t)$ probably look like after a long time?
+\item For large $t$, the matrix $e^{At}$ is approximately a rank \underline{\phantom{aaaaaa}} matrix because the columns are roughly spanned by \underline{\phantom{aaaaaa}}.
+\item What must be true of $x(0)$ for the solution to be decaying, and what does the normalized solution 
+\[\frac{x(t)}{||x(t)||}\] 
+then probably look like after a long time?
+\item Suppose that instead we compute the recurrence $x_{n+1}=Ax_n$ for some initial vector $x_0$.   What can you say about the solution $x_n$ for large $n$ for a typical $x_0$?
+\end{enumerate}
+
+
+\item  (Strang 6.3, Problem 18) By explicitly differentiating the infinite series definition for $e^{At}$, show that $e^{At} x(0) $ solves $dx/dt = Ax$ with initial condition $x(0)$.
+
+\item (Strang 6.3, Problem 22) If $A^2 = A$ show that $e^{At} = I + (e^t - 1)A$.  For the $2\times2$ $A = \begin{pmatrix} 1 & 4 \\ 0 & 0 \end{pmatrix}$ this gives $e^{At} = \underline{\phantom{aaaaaaaaaaaaa}}$.
+
+
+\item (Strang 6.3, Problem 3)
+\begin{enumerate}
+\item If every column of $A$ adds to zero, why is $\lambda = 0$ an eigenvalue?
+\item With negative diagonal and positive off-diagonal adding to $0$, $u' = Au$ will be a ``continuous" Markov equation.  For example for
+\[\frac{du}{dt} = \begin{pmatrix} -2 & 3 \\ 2 & -3 \end{pmatrix} u, \qquad u(0) = \begin{pmatrix} 4 \\ 1 \end{pmatrix}.\]
+This has an eigenbasis
+\[\lambda_1 = 0, v_1 = \begin{pmatrix} 1 \\ 2/3 \end{pmatrix}, \qquad \lambda_2 = -5, v_1 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}.\]
+What is the steady state $u(\infty)$ as $t \to \infty$?
+\end{enumerate}
+
+\item (Strang 6.3, Problem 26) Give two reasons why the matrix $e^{At}$ is never singular.
+\begin{enumerate}
+\item Write down its inverse.
+\item Why are these eigenvalues nonzero?  If $Ax = \lambda x$ then 
+\[e^{At} x = \underline{\phantom{aaaaaaaaa}}. \]
+\end{enumerate}
+
+\end{enumerate}
+\end{document}  

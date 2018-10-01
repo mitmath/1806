@@ -1,0 +1,160 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 13}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+\begin{enumerate}
+
+
+\item Let 
+\[A = \begin{pmatrix} 2 & -1 & & &  \\-1 & 2 & -1 && \\ & -1 & 2 & -1 & \\ && -1 & 2 & -1 \\ && &-1 & 2 \end{pmatrix}. \]
+be a tridiagonal matrix.  You can imagine that $A$ is the $5 \times 5$ version of a family of tridiagonal matrices of size $n \times n$.
+
+\begin{enumerate}
+
+\item  How can you use Gaussian elimination to solve $Ax = b$ in linear time?
+
+\item What is special about the $LU$ factorization of $A$?  What is the pattern of nonzero entries.
+
+\item What is the pattern of nonzero entries of $A^{-1}$?
+
+
+\end{enumerate}
+
+
+\item Suppose that $A$ is a $4 \times 4$ matrix with singular value decomposition $AV = U \Sigma$ given by 
+\[A \begin{pmatrix}  & && 1/\sqrt{2} \\ v_1 & v_2& v_3& 0 \\  &&& 0 \\  & && -1/\sqrt{2} \end{pmatrix} = \begin{pmatrix} 1/3 & && 0 \\ 2/3 & u_2& u_3& 0 \\ 0 &&& 1 \\ 2/3 & && 0 \end{pmatrix} \begin{pmatrix} 1 &&& \\ & 0.2 && \\ && 0.00001 & \\ &&& 0 \end{pmatrix}.\]
+
+\begin{enumerate}
+\item What is the SVD of $A^T$?
+
+\item What is the rank of $A$?  Give an expression for a smaller rank matrix that approximates $A$.
+
+\item Is $Ax = \begin{pmatrix} 1 \\ -2 \\ 1 \\ 1 \end{pmatrix}$ solvable?
+
+\item  What is the matrix $P$ that projects $\rr^4$ onto $N(A)$?
+
+\item  Let $B = AA^T$ and let $y = \begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \end{pmatrix}$.  As $n \to \infty$, what do you know about $B^n y$?
+
+\item Suppose that you wanted to use the power method to compute $v_1$.  How would you set this up?  How does the error behave after $k$ iterates?
+
+\end{enumerate}
+
+
+\item Let 
+\[A = \begin{pmatrix} 2 & -1 & & & -1 \\-1 & 2 & -1 && \\ & -1 & 2 & -1 & \\ && -1 & 2 & -1 \\ -1&& &-1 & 2 \end{pmatrix}. \]
+\begin{enumerate}
+
+\item  What are the eigenvectors of $A$?  What special properties do they have?
+
+\item What are eigenvalues corresponding to these eigenvectors?
+
+
+\end{enumerate}
+
+
+\item  Assume that $A$ is diagonalizable with eigenvalues
+\[|\lambda_1| > |\lambda_2 | > \cdots > |\lambda_n|. \]
+We may find $\lambda_1$ and a corresponding eigenvector $v_1$ using the power method.  Let $P$ be the projection matrix onto the orthogonal complement to the span of $v_1$.  
+
+Now suppose that we want to find $\lambda_2$ and a corresponding eigenvector $v_2$.  Consider the following algorithm
+\begin{enumerate}
+\item[1.] Start with a random vector $x_0$.
+\item[2.] Iteratively set
+\[ x_k =  \frac{PAx_{k-1}}{||PAx_{k-1}||}. \] 
+\end{enumerate}
+
+\begin{enumerate}
+
+\item  Assuming that $A$ is normal (the eigenvectors for distinct eigenvalues are orthogonal) what does this converge to?
+
+\item  If $A$ is not normal what can you say about the vector $y = \lim_{k \to \infty} x_k$ that this converges to?
+Let 
+\[Q = \begin{pmatrix} & \\ v_1 & y \\ & \end{pmatrix} \]
+What do you know about the matrix $Q$?
+
+\item Write $AQ = QS$ for some matrix $S$.  Do you know anything special about $S$ (i.e. does it have a particular pattern of zero entries)?
+
+\item What is $\lambda_2$ and a choice of $v_2$?  (hint: use $S$!) 
+
+
+\end{enumerate}
+
+\item Suppose that $A$ is a $3 \times 3$ matrix that is not diagonalizable, but has a basis of generalized eigenvectors $\{x_1, j_1, x_2 \}$ where
+\[Ax_1  = \lambda_1 x_1, \qquad Aj_1 = \lambda_1 j_1 + x_1, \qquad Ax_2 = \lambda_2 x_2.\]
+
+\begin{enumerate}
+
+\item Is the matrix $A + I$ diagonalizable?  Give the eigenvalues and a basis of (generalized) eigenvectors.
+
+\item  What are the eigenvalues of the matrix $A^n$?  What is a basis of (generalized) eigenvectors of $A^n$ in terms of $x_1, j_1, x_2$?
+
+\item What are the eigenvalues of the matrix $e^{At}$?  What is a basis of (generalized) eigenvectors of $e^{At}$ in terms of $x_1, j_1, x_2$?
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+\end{document}  

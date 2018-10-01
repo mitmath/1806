@@ -1,0 +1,102 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 8}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+\begin{enumerate}
+
+\item The Fibonacci sequence is defined recursively by specifying initial values $F_0=1,  F_1 = 1$, and the relation
+\[ F_{n+1} = F_n + F_{n-1}. \]
+\begin{enumerate}
+\item Given the input vector $v_n = \begin{pmatrix} F_n \\ F_{n-1} \end{pmatrix}$, what is the matrix $A$, so that $Av_n = v_{n+1}$?
+
+Give an expression for $v_{n+1}$ in terms of $A$ and $v_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$.
+
+\item What are the eigenvectors and eigenvalues of $A$?
+
+\item Using the eigenbasis, give an exact formula for $F_n$.  What do you know about $|F_n|$ as $n \to \infty$?
+
+\end{enumerate}
+
+\item Let $A$ be an $m \times m$ matrix and let $A'$ be the matrix obtained from $A$ be reversing the rows and columns:
+\[ A = \begin{pmatrix} a_{11} & a_{12} & \dots & a_{1m} \\ a_{21} & a_{22} & \dots & a_{2m} \\  & & \ddots & \\ a_{m1} & a_{m2} & \dots & a_{mm} \end{pmatrix}, \qquad A' = \begin{pmatrix} a_{mm} & a_{m(m-1)} & \dots & a_{m1} \\ a_{(m-1)m} & a_{(m-1)(m-1)} & \dots & a_{(m-1)1} \\  & & \ddots & \\ a_{1m} & a_{1(m-1)} & \dots & a_{11} \end{pmatrix}. \]
+
+\begin{enumerate}
+\item When $m=2$, what do you notices about the eigenvalues of $A'$?
+\item What is true in general and why?
+\end{enumerate}
+
+\item (Strang, Section 10.3, Problem 6)  
+\begin{enumerate}
+\item For a Markov matrix, show that the sum of the components of $x$ equals the sum of the components of $Ax$.
+\item If $Ax =  \lambda x$ with $\lambda \neq 1$, prove that the components of this non-steady eigenvector $x$ add to zero.
+\end{enumerate}
+
+
+\item 
+
+\begin{enumerate}
+\item Show that every square matrix is similar to its transpose.  That is, 
+\[A^T=SAS^{-1}, \] 
+for some invertible matrix $S$.
+\item Assuming $A$ is diagonalizable, give a formula for $S$ in terms of the matrix $X$ of eigenvectors of $A$ and the matrix $Y$ of eigenvectors of $A^T$ (which is also diagonalizable).
+\end{enumerate}
+
+
+\end{enumerate}
+\end{document}  

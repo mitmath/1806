@@ -1,0 +1,204 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 3}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+\section{Problems}
+
+\begin{enumerate}
+
+
+
+
+\item (Strang 3.2, Problem 13)  The plane $x - 3y -z =12$ is parallel to $x-3y-z=0$.  One particular point on this plane is $(12,0,0)$.  All points on this plane have the form:
+\[\begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix}  \\ 0 \\0 \end{bmatrix} + y\begin{bmatrix}  \\ 1 \\ 0 \end{bmatrix} + z \begin{bmatrix}  \\ 0 \\ 1 \end{bmatrix}.\]
+
+\textbf{Solution:} The general form of points will be a particular point ($(12,0,0)$) plus all linear combinations of point on the parallel plane $x-3y-z=0$.  So it suffices to find a description of these points $(x,y,z)$ so that $x - 3y -z = 0$.  That is, we want to find a basis of the null space of the matrix $\begin{bmatrix} 1 & -3 & -1 \end{bmatrix}$.  This has two free columns, with corresponding special solutions
+\[ s_1 = \begin{bmatrix} 3 \\ 1 \\ 0 \end{bmatrix}, \qquad s_2 = \begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix}. \]
+
+Using this, we fill in the above blanks to get:
+\[\begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 12 \\ 0 \\0 \end{bmatrix} + y\begin{bmatrix} 3 \\ 1 \\ 0 \end{bmatrix} + z \begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix}.\]
+
+\item (Strang 3.2, Problem 16)  Construct $A$ so that $N(A)$ is the span of the vector $(4,3,2,1)$.  Its rank is \underline{\phantom{aaaaaaaaaaaaaaaa}}.
+
+\textbf{Solution:} One possible $A$ is
+\[ A = \begin{pmatrix} 1 & 0 & 0 &-4 \\ 0 & 1 & 0 & -3 \\ 0  & 0 & 1 & -2 \\ 0& 0 & 0 & 0 \end{pmatrix}. \]
+Then the vector $(4,3,2,1)$ is the special solution for the $x_4$ variable.  
+
+Note: there is some ambiguity in choosing $A$, we could multiply on the left by any invertible matrix, for example.
+
+Since we know that $x_4$ is the only free variable (the null space is $1$-dimensional (the span of this one vector)), the rank of $A$ must be $4-1 = 3$.
+
+\item \textbf{(Strang 3.3, Problem 30)} Find the complete solution to 
+\[ Ax = \begin{bmatrix} 1 & 0 & 2 & 3 \\ 1 & 3& 2 & 0 \\2 & 0 &4 & 9 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \\x_3 \\x_4 \end{bmatrix}= \begin{bmatrix} 2 \\ 5 \\ 10 \end{bmatrix} = b. \]
+
+\textbf{Solution:} First we put the augmented matrix $[A | b]$ into rref.
+
+\[  [A | b] = \begin{bmatrix} 1 & 0 & 2 & 3 & 2 \\ 1 & 3& 2 & 0 & 5 \\2 & 0 &4 & 9 & 10\end{bmatrix} \to  \begin{bmatrix} 1 & 0 & 2 & 3 & 2 \\ 0 & 3& 0 & -3 & 3 \\0 & 0 &0 & 3 & 6\end{bmatrix} \to  \begin{bmatrix} 1 & 0 & 2 & 0 & -4 \\ 0 & 3& 0 & 0 & 9 \\0 & 0 &0 & 3 & 6\end{bmatrix} \to  \begin{bmatrix} 1 & 0 & 2 & 0 & -4 \\ 0 & 1& 0 & 0 & 3 \\0 & 0 &0 & 1 & 2\end{bmatrix} = [R| d] \]
+
+From this we see that $A$ has rank $3$: columns $1$, $2$ and $4$ (or variables $x_1, x_2, x_4$) are pivots.  Column $3$ (or variable $x_3$) is free.  Since $\# \text{ rows } = 3 = \text{rank}$, we are in a \textbf{full row rank} situation.  Therefore solutions are guaranteed to exist, but they may not be unique (and since we are \emph{not} in a full column rank situation, they will not be unique).
+
+However, the form of all solutions will be $x = x_p + x_n$: the sum of a particular solution $x_p$ and elements of the null space $x_n$ ($A x_n = 0$).
+
+It is easy to find a particular solution from the augmented matrix $[R | d]$: set the free variables to $0$ and back-substitute.  This will give
+\[x_p = \begin{bmatrix} -4 \\ 3 \\ 0 \\ 2 \end{bmatrix}. \]
+
+It is also easy from $R$ to find a basis for the null space; there is a special solution corresponding to each free variable and these form a basis.  In this case, there is just one free variable, so the null space is $1$-dimensional spanned by the special solution
+\[ x_n = \begin{bmatrix} -2 \\ 0 \\ 1 \\ 0 \end{bmatrix}. \]
+We can read this off from $R$: it has a $1$ in the position of the free variable $x_3$, and the entry in position $i$ is $-R_{i3}$: the negative of the corresponding entry of $R$.
+
+So the complete solution is
+\[ \begin{bmatrix} x_1 \\ x_2 \\x_3 \\x_4 \end{bmatrix} = \begin{bmatrix} -4 \\ 3 \\ 0 \\ 2 \end{bmatrix} + x_3  \begin{bmatrix} -2 \\ 0 \\ 1 \\ 0 \end{bmatrix}\]
+
+\item \textbf{(Strang 3.3, Problem 6)} What conditions on $b_1, b_2, b_3, b_4$ make the system
+\[ \begin{bmatrix} 1 & 2 \\ 2 & 4 \\ 2 & 5 \\3 & 9 \end{bmatrix} \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} b_1 \\ b_2 \\ b_3 \\ b_4 \end{bmatrix} \]
+solvable?  Find $x$ in that case.
+
+\textbf{Solution:} Again, the best first thing to do is get everything in rref:
+
+\[ \begin{bmatrix} 1 & 2 & b_1 \\ 2 & 4 &b_2 \\ 2 & 5 & b_3 \\3 & 9 & b_4 \end{bmatrix} \to \begin{bmatrix} 1 & 2 & b_1 \\ 0 & 0 &b_2 - 2b_1 \\ 0 & 1 & b_3-2b_1 \\0 & 3 & b_4 - 3b_1 \end{bmatrix} \to \begin{bmatrix} 1 & 0 & b_1 - 2(b_3 - 2b_1) \\ 0 & 0 &b_2 - 2b_1 \\ 0 & 1 & b_3-2b_1 \\0 & 0 & b_4 - 3b_1 - 3(b_3-2b_1) \end{bmatrix} = \begin{bmatrix} 1 & 0 & 4b_1 - 2b_3 \\ 0 & 0 &b_2 - 2b_1 \\ 0 & 1 & b_3-2b_1 \\0 & 0 & b_4 + 3b_1 - 3b_3 \end{bmatrix} \]
+
+Now we see immediately that $A$ has rank $2$: the columns $1$ and $2$ are pivots.  So this is a \textbf{full column rank} situation.  Therefore if a solution exists, it is unique, but the column space is not all of $\rr^4$, so a solution may not exist. 
+
+The constraints on $b_1, b_2, b_3, b_4$ for a solution to exist are given by the \textbf{zero rows} of $R$:
+\begin{align*}
+ \text{(row 2):} & \qquad b_2 - 2b_1 = 0,\\
+  \text{(row 4):} & \qquad b_4 + 3b_1 - 3b_3 = 0.\\
+\end{align*}
+%\[b_2 - 2b_1 = 0,  \text{ and } \qquad b_4 + 3b_1 - 3b_3 = 0\]
+
+Under those conditions, we find a solution by back substitution from the \textbf{nonzero rows} of $R$:
+\begin{align*}
+ \text{(row 1):} & \qquad x_1 = 4b_1 - 2b_3,\\
+  \text{(row 3):} & \qquad x_2 = b_3 - 2b_1.\\
+\end{align*}
+
+So the complete solution is given by
+\[ \begin{cases} \text{no solution} & \ \text{if $b_2 - 2b_1 \neq 0$ \textbf{or} $b_4 + 3b_1 - 3b_3 \neq 0$,} \\ \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} 4b_1 - 2b_3 \\ b_3 - 2b_1 \end{bmatrix} & \ \text{if $b_2 - 2b_1 = 0$ \textbf{and} $b_4 + 3b_1 - 3b_3 = 0$.} \end{cases} \]
+
+
+\item (Strang 3.2, Problem 24) Give examples of matrices $A$ for which the number of solutions to $Ax = b$ is
+\begin{enumerate}
+
+\item $0$ or $1$ depending on $b$
+\item $\infty$, regardless of $b$
+\item $0$ or $\infty$, depending on $b$
+\item $1$ regardless of $b$
+
+\end{enumerate}
+
+\textbf{Solution:}
+
+\begin{enumerate}
+
+\item This is the case when $A$ has \textbf{full column rank} but \textbf{not full row rank}.  So an example is
+\[A =  \begin{bmatrix} 1 & 2 \\ 2 & 4 \\ 2 & 5 \\3 & 9 \end{bmatrix} \]
+from problem 4 above.
+
+\item This is the case when $A$ has \textbf{full row rank} but \textbf{not full column rank}.   So an example is
+\[A = \begin{bmatrix} 1 & 0 & 2 & 3 \\ 1 & 3& 2 & 0 \\2 & 0 &4 & 9 \end{bmatrix} \]
+from problem 3 above.
+
+\item This is the case when $A$ has \textbf{not full row rank} and \textbf{not full column rank} (also called the \textbf{rank deficit} case).  An example is
+\[A = \begin{bmatrix} 1 & 4 \\ -2 & - 8 \end{bmatrix}. \]
+
+
+\item This is the case when $A$ has both \textbf{full row rank} and \textbf{full column rank} (also called the \textbf{invertible} case).  An example is
+\[A = \begin{bmatrix} 1 & 0 \\ 2 & 1 \end{bmatrix}. \]
+
+\end{enumerate}
+
+\item (Strang 3.2, Problem 34) Suppose you know that a $3\times 4$ matrix $A$ has the vector $s = (2,3,1,0)$ as the only special solution to $Ax = 0$.
+
+\begin{enumerate}
+
+\item What is the rank of $A$?
+
+\item What is the exact reduced row echlon form $R$ of $A$?
+
+\item How do you know that $Ax = b$ can be solved for all $b$?
+
+\end{enumerate}
+
+\textbf{Solution:}  
+
+\begin{enumerate}
+
+\item If $s$ is the only special solution, then the null space of $A$ is dimension $1$.  Since $A$ has $4$ columns by assumptions, we must have that the other three columns/variables are pivots.  The rank of $A$ is the number of pivot columns, which is therefore $3$.
+
+\item From the form of $s$, we know that variable $x_3$ is the free variable.  Therefore variables $x_1, x_2$ and $x_4$ are pivots.  So in the rref, the columns $1$, $2$, and $4$ are identity matrix columns, so $R$ must be of the form
+\[R = \begin{bmatrix} 1 & 0 & & 0 \\ 0 & 1 & & 0 \\ 0 & 0 & & 1 \end{bmatrix}. \]
+
+To fill in column $3$, we know that it is free, so it must have a $0$ in component $3$.  And components $1$ and $2$ must be such that the vector $(2,3,1,0)$ is in the null space.  That is, we must solve the equation
+\[\begin{bmatrix} 1 & 0 & r_1 & 0 \\ 0 & 1 &r_2 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix} \begin{bmatrix} 2 \\ 3 \\ 1 \\ 0 \end{bmatrix} = \begin{bmatrix} 0 \\ 0 \\ 0 \end{bmatrix}. \]
+Because $R$ is in rref, this is easy to solve and works out precisely to $r_1 = -2$ and $r_2 = -3$:
+\[R = \begin{bmatrix} 1 & 0 & -2 & 0 \\ 0 & 1 &-3  & 0 \\ 0 & 0 &0 & 1 \end{bmatrix}. \]
+
+\item This is a case of full row rank, so every equation is solvable.  Alternatively, to see directly, the column space of $R$ contains the column space of the smaller matrix where I delete the free column $3$:
+
+\[ C(R) \supseteq C\left(\begin{bmatrix} 1 & 0 & 0 \\ 0 & 1  & 0 \\ 0 & 0 & 1 \end{bmatrix} \right). \]
+
+But this columns space is all of $\rr^3$, since it is the span of the three standard basis vectors.  So every $b$ gives rise to a solvable equation.
+
+
+
+
+
+\end{enumerate}
+
+\end{enumerate}
+\end{document}  

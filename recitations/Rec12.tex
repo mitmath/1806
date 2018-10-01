@@ -1,0 +1,118 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 12}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+\begin{enumerate}
+
+
+\item Exploring defective matrices
+\begin{enumerate}
+\item What are the eigenvalues and eigenvectors of the $2 \times 2$ matrix
+\[A = \begin{pmatrix} 0 & 1 \\ 0 & \epsilon \end{pmatrix}?\]
+\item What happens to the two eigenvectors as $\epsilon \to 0$.  What does this tell you about diagonalizability of A?
+\item For $\epsilon = 0$, $N(A)$ is dimension \underline{\phantom{aaaaaaaaaaaa}}.  What is $N(A^2)$?
+\item For $\epsilon = 0$, we know that $A^2 =  \underline{\phantom{aaaaaaaaaaaa}}$.  Therefore
+\[e^{At} = \underline{\phantom{aaaaaaaaaaaa}}. \]
+\item Given input vector $x(0) = \begin{pmatrix} a \\ b \end{pmatrix}$, give the solution $x(t)$ to 
+\[\frac{dx}{dt} = A x \]
+with this input.  What is the behavior as $t\to \infty$?
+\item How does $e^{At}$ act on eigenvectors?
+\item What is a basis of eigenvectors and ``Jordan vectors" or ``generalized eigenvectors"?  Does this explain the above behavior?
+
+\end{enumerate}
+\item
+\begin{enumerate}
+\item Which of the following matrices have the same Jordan forms, and what are they?
+\[A_1 = \begin{pmatrix} 0 & 1 & 0 \\ 0& 0 & 1 \\ 0& 0 & 0 \end{pmatrix}, \quad A_2 = \begin{pmatrix} 0 & 1 & 1 \\ 0& 0 & 1 \\ 0& 0 & 0 \end{pmatrix}, \quad A_3 = \begin{pmatrix} 0 & 0 & 1 \\ 0& 0 & 0 \\ 0& 0 & 0 \end{pmatrix}\]
+\item Consider a $6 \times 6$ matrix whose bottom triangle is
+\[ \begin{pmatrix} 0 &&&&& \\ 0 & 0 &&&& \\ 0 & 0 & 0 &&& \\ 0 & 0 & 0 & 1 && \\ 0 & 0 & 0 & 0 & 1 & \\ 0 & 0 & 0 & 0 & 0 & 1 \end{pmatrix}, \]
+and whose upper triangle is all $0$ except for a single $1$ in one of the $15$ possible positions.  What positions give rise to what possible Jordan forms?
+
+\end{enumerate}
+
+\item Suppose that $A$ is a $3 \times 3$ matrix with roots $\lambda = 1, -0.3$ of its characteristic polynomial $\det(A - \lambda I)$.
+\begin{enumerate}
+
+\item Suppose that for some vector $x_0$, the powers $A^n x_0$ grow in magnitude as $n \to \infty$.  What do you know about $A$?
+
+\item  What is $||A^{500}x_0||/||A^{100} x_0||$ approximately?
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+\end{document}  

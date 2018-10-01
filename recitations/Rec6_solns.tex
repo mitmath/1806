@@ -1,0 +1,109 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 6}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+\section{Problems}
+
+\begin{enumerate}
+
+\item[4.] (essentially Strang, Section 4.4, Problem 33) Find all matrices that are both orthogonal and lower triangular in two parts:
+\begin{enumerate}
+\item What are all orthogonal and lower-triangular $2\times 2$ matrices?
+\item Can you generalize this to $m\times m$ matrices?
+\end{enumerate}
+
+\textbf{Solution:} 
+\begin{enumerate}
+
+\item Any $2\times 2 $ lower-triangular matrix is of the form
+\[\begin{pmatrix} a & 0 \\ c & d \end{pmatrix}. \] 
+In order to be orthogonal, we need:
+\[a^2 + c^2 = 1, \qquad cd = 0, \qquad d^2 = 1. \]
+Let's look at these backwards: first $d^2 = 1$ tells us that $d = \pm 1$.  The second equation tells us that $c = 0$, since we can divide by the nonzero number $d$.  Finally, the first equation simplifies to $a^2 = 1$ and so $a = \pm 1$.
+So all orthogonal, lower-triangular $2 \times 2$ matrices are of the form
+\[\begin{pmatrix} \pm 1 & 0 \\ 0 & \pm 1 \end{pmatrix}. \]
+
+\item In general, we might surmise that ``working backwards" is helpful.  Let's write our lower-triangular $m \times m $ matrix as
+\[Q = \begin{pmatrix} q_1 & \cdots & q_m \end{pmatrix}, \]
+where the $i$th component of the $j$th column vector satisfies
+\[(q_j)_i = 0 \qquad \text{for } i < j. \]
+In particular, for last column $q_m$, the only nonzero entry is in the last position.  So first starting with the condition
+\[ q_m \cdot q_m = 1, \]
+we see that $((q_m)_m)^2 = 1$ so $(q_m)_m = \pm 1$.
+Now for $i < m$, the $i$th column and the $m$th column are orthogonal.  But the only nonzero entry of the $m$th column is the last one, so
+\[q_{i} \cdot q_m = (q_i)_m  (q_m)_m = 0 \qquad \Rightarrow \qquad (q_i)_m = 0, \]
+since we can divide by the nonzero $(q_m)_m$.  Therefore the bottom row of Q is all zeros except for the final position.
+
+Carrying on, let's look now at the condition $q_{m-1} \cdot q_{m-1} = 1$.  Originally, when we only knew that $Q$ was upper-triangular, $q_{m-1}$ could only have two nonzero entries: $(q_{m-1})_m$ and $(q_{m-1})_{m-1}$.  But from the last step, we learned that $(q_{m-1})_m = 0$.  So $q_{m-1}$ also has only 1 nonzero entry.  Exactly as above we can therefore show that 
+\[(q_i)_{m-1} = \begin{cases} 0 & \text{ if $i \neq m-1$} \\ \pm 1 & \text{ if $i = m-1$}. \end{cases} \]
+And so we learn that the second to bottom row is also almost all $0$, except in the $(m-1, m-1)$ position.
+
+Carrying on like this, we see that as before, $Q$ must be diagonal 
+\[Q =  \begin{pmatrix} \pm 1 &&&& \\ & \pm 1 &&& \\ && \ddots && \\ &&& \pm 1 & \\ &&&& \pm 1 \end{pmatrix}.\]
+
+
+
+
+
+
+
+\end{enumerate}
+
+
+\end{enumerate}
+\end{document}  

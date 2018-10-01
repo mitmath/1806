@@ -1,0 +1,254 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.5in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+\usepackage{makecell}
+\usepackage{pdflscape}
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 13}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+%\maketitle
+%\section{}
+%\subsection{}
+
+\begin{center}
+\textbf{The Four Fundamental Subspaces} \\
+$A$ is $m \times n$ matrix of rank $r$ \\
+$R = \operatorname{rref}(A)$,
+$M = \operatorname{rref}(A^T)$, \qquad
+The SVD of $A$ is $U \Sigma V^T$
+\end{center}
+
+\begin{tabular}{ l | l }
+Nullspace: $N(A)$ & Row space: $C(A^T)$  \\[5pt] \hline \\
+$\bullet$ definition: & $\bullet$ definition: \\ \\ \\ \\
+$\bullet$ subspace of \underline{\phantom{aaaaaaaaa}} of dimension \underline{\phantom{aaaaa}} \phantom{aaaaaaa} & $\bullet$ subspace of \underline{\phantom{aaaaaaaaa}} of dimension \underline{\phantom{aaaaa}} \phantom{aaaaaaa} \\ \\ \\
+$\bullet$ orthogonal complement: & $\bullet$ orthogonal complement: \\ \\ \\
+$\bullet$ relation to $N(R)$ or $N(M^T)$ : & $\bullet$ relation to $C(R^T)$ or $C(M)$ : \\ \\ \\
+\makecell[l]{$\bullet$ if $N(A) = 0$ then we say that $A$ has\\ \\ \qquad  \underline{\phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}}} & \makecell[l]{$\bullet$ if $C(A^T) = \rr^n$ then we say that $A$ has\\ \\ \qquad  \underline{\phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}}} \\ \\
+$\bullet$ an orthonormal basis given by: & $\bullet$ an orthonormal basis given by: \\  \\ \\ \hline \hline \\
+Column space: $C(A)$ & Left nullspace: $C=N(A^T)$  \\[5pt] \hline \\
+$\bullet$ definition: & $\bullet$ definition: \\ \\ \\ \\
+$\bullet$ subspace of \underline{\phantom{aaaaaaaaa}} of dimension \underline{\phantom{aaaaa}} \phantom{aaaaaaa} & $\bullet$ subspace of \underline{\phantom{aaaaaaaaa}} of dimension \underline{\phantom{aaaaa}} \phantom{aaaaaaa} \\ \\ \\
+$\bullet$ orthogonal complement: & $\bullet$ orthogonal complement: \\ \\ \\
+$\bullet$ relation to $C(R)$ or $C(M^T)$ : & $\bullet$ relation to $N(R^T)$ or $N(M)$ : \\ \\ \\
+\makecell[l]{$\bullet$ if $C(A) = \rr^m$ then we say that $A$ has\\ \\ \qquad  \underline{\phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}}} & \makecell[l]{$\bullet$ if $N(A^T) = 0$ then we say that $A$ has\\ \\ \qquad  \underline{\phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}}} \\ \\
+$\bullet$ an orthonormal basis given by: & $\bullet$ an orthonormal basis given by: \\ \\ \\  \\
+\end{tabular}
+
+\pagebreak 
+\begin{center}
+\textbf{Number of Operations}
+\end{center}
+
+\begin{enumerate}
+\item Multiplying an $m \times n$ matrix $A$ by an $n$ component vector $v$: \\ \\ \\
+\item Multiplying an $m \times n$ matrix $A$ by an $n \times r$ matrix $B$: \\ \\ \\
+
+\item Computing the dot product of two $m$ component vectors $v$ and $w$: \\ \\ \\
+
+\item Finding the inverse of a matrix $A$ using the Gauss-Jordan method: \\ \\ \\
+ 
+\item Finding the $LU$ factorization of an $m \times m$ matrix $A$ using Gaussian elimination: \\ \\ \\
+
+\item Finding the $LU$ factorization of an $m \times m$ upper-triangular matrix $A$ using Gaussian elimination: \\ \\ \\
+
+\item Finding the $LU$ factorization of an $m \times m$ matrix $A$ such that $a_{ij} =0$ if $i > j+1$ using Gaussian elimination: \\ \\ \\
+
+\item Finding the $LU$ factorization of an $m \times m$ matrix $A$ such that $a_{ij} =0$ if $i > j+1$ or $j > i +1$ using Gaussian elimination: \\ \\ \\
+
+\item Solving an upper-triangular system $Ux = b$, where $U$ is an $m \times m$ upper-triangular matrix and $b$ is an $m$ component vector:\\ \\ \\
+
+\item Solving an upper-triangular system $Ux = b$, where $U$ is an $m \times m$ upper-bidiagonal matrix (so $u_{ij} =0$ if $i > j$ or $j > i +1$) and $b$ is an $m$ component vector:
+
+\end{enumerate}
+
+\pagebreak
+
+\begin{center}
+\textbf{Linear Algebraic Algorithms}
+\end{center}
+
+\noindent \textsc{Gaussian Elimination:}
+\begin{itemize}
+\item Purpose: \\ \\
+\item Input: \\ 
+\item Any assumptions on the input? \\
+\item Output: \\ \\
+\item Approximate \# of operations (based on size of input): \\ \\
+\item Factorizations? \\
+\item Pattern of nonzero entries if input is:
+\begin{itemize}
+\item tridiagonal
+\item lower triangular
+\item upper triangular
+\end{itemize}
+\end{itemize}
+
+\noindent \textsc{Gram-Schmidt:}
+\begin{itemize}
+\item Purpose: \\ \\
+\item Input: \\ 
+\item Any assumptions on the input? \\
+\item Output: \\ \\
+\item Approximate \# of operations (based on size of input): \\ \\
+\item Factorizations? \\
+\item Pattern of nonzero entries if input is:
+\begin{itemize}
+\item tridiagonal
+\item lower triangular
+\item upper triangular
+\end{itemize}
+\end{itemize}
+
+
+\begin{landscape}
+
+\begin{tabular}{ c | c | c | c | c | c | c }
+The matrix is... & Definition & Special about \textbf{eigenvalues} & Special about \textbf{eigenvectors} & Special about \textbf{det} & Factorizations & Consequences \\ \hline \hline
+\makecell{\phantom{aaaaaaaa} \\ invertible \\ \phantom{aaaaaaaa} \\ \phantom{aaaaaaaa}}  & & & & & & \\ \hline
+\makecell{\phantom{aaaaaaaa} \\ \phantom{aaaaaaaa} \\ projection \\ \phantom{aaaaaaaa} \\ \phantom{aaaaaaaa}}  & & & & & & \\ \hline
+\makecell{\phantom{aaaaaaaa}  \\ \phantom{aaaaaaaa} \\ Markov \\ \phantom{aaaaaaaa} \\ \phantom{aaaaaaaa}}  & & & & & & \\ \hline
+\makecell{\phantom{aaaaaaaa}  \\ positive \\ Markov \\ \phantom{aaaaaaaa} \\ \phantom{aaaaaaaa}}  & & & & & & \\ \hline
+\makecell{ \phantom{aaaaaaaa} \\(real  \\ orthogonal) \\ unitary \\ \phantom{aaaaaaaa}}  & & & & & & \\ \hline
+\makecell{\phantom{aaaaaaaa} \\ (real  \\ symmetric) \\ Hermitian \\ \phantom{aaaaaaaa}}  & & & & & & \\ \hline
+\makecell{\phantom{aaaaaaaa} \\ (real  anti- \\ symmetric) \\ anti-Hermitian \\ \phantom{aaaaaaaa}}  & & & & & & \\ \hline
+\makecell{\phantom{aaaaaaaa} \\ positive/negatie \\  (semi)definite \\ Hermitian \\ \phantom{aaaaaaaa}}  & & & & & & \\ \hline
+\end{tabular}
+
+
+
+Suppose that $A$ is a matrix with eigenvectors $v_1, \cdots, v_n$ and eigenvalues $\lambda_1, \cdots, \lambda_n$.  Write as much as you know about the eigenvectors and eigenvalues of the following matrices: \\
+
+\begin{tabular}{ c | c | c | c | c | c | c | c  }
+& \phantom{aaaa} $-A$  \phantom{aaa} & \phantom{aaaa} $A^{2017}$ \phantom{aaa} & \phantom{aaaa} $A^4 + 3A + I$ \phantom{aaa} & \phantom{aaaa} $A^T$ \phantom{aaa} & \phantom{aaaa} $e^{A^2}$\phantom{aaa} & \phantom{aaaa} $(A + I)^{-1}$ \phantom{aaa} & \phantom{aaaa} $SAS^{-1}$ \phantom{aaa} \\ \hline \hline
+\makecell{\phantom{aaaaaaaa} \\\phantom{aaaaaaaa} \\ eigenvalues \\ \phantom{aaaaaaaa} \\ \phantom{aaaaaaaa}} & &&&& & \\ \hline
+\makecell{\phantom{aaaaaaaa} \\\phantom{aaaaaaaa} \\ eigenvectors \\ \phantom{aaaaaaaa} \\ \phantom{aaaaaaaa}} &&&&& &
+\end{tabular}
+
+\vspace{50pt}
+
+Suppose instead that $A$ is $3 \times 3$ and not diagonalizable, with a basis of generalized eigenvectors $v_1, j_1, v_2$, so that $Aj_1 = \lambda_1 j_1 + v_1$.  Now write down as much as you know about the eigenvalues, (generalized) eigenvectors, and diagonalizability of the following matrices: \\
+
+\begin{tabular}{ c | c | c | c | c | c | c | c  }
+& \phantom{aaaa} $-A$  \phantom{aaaa} & \phantom{aaaa} $A^{2}$ \phantom{aaaa} & \phantom{aaaa} $A + I$ \phantom{aaaa} & \phantom{aaaa} $A^T$ \phantom{aaaa} & \phantom{aaaa} $e^{A}$\phantom{aaaa} & \phantom{aaaa} $A^{-1}$ \phantom{aaaa} & \phantom{aaaa} $SAS^{-1}$ \phantom{aaaa} \\ \hline \hline
+\makecell{\phantom{aaaaaaaa} \\\phantom{aaaaaaaa} \\ eigenvalues \\ \phantom{aaaaaaaa} \\ \phantom{aaaaaaaa}} & &&& &&  \\ \hline
+\makecell{\phantom{aaaaaaaa} \\ (generalized) \\ eigenvectors \\ \phantom{aaaaaaaa} \\ \phantom{aaaaaaaa}} &&&& && \\ \hline
+\makecell{\phantom{aaaaaaaa} \\\phantom{aaaaaaaa} \\ diagonalizable? \\ \phantom{aaaaaaaa} \\ \phantom{aaaaaaaa}} &&&& &&
+\end{tabular}
+
+
+
+
+\end{landscape}
+
+ \pagebreak
+ 
+
+
+Suppose that $A$ is an $(m+1) \times (m+1)$ nondiagonalizable matrix with eigenvalues $\lambda_1$ (with multiplicity 2), $\lambda_2, \dots, \lambda_m$, and a corresponding basis of (generalized) eigenvectors $x_1, j_1, x_2, \dots, x_m$ (so $Aj_1 = \lambda_1 j_1 + x_1$ and $Ax_i = \lambda_i x_i$).
+
+
+
+\begin{enumerate}
+
+\item What is the solution to the differential equation $\frac{dx}{dt} = A x$ with initial condition $x(0)$? \\ \\
+
+\item For \emph{generic $x(0)$}, under what conditions does:
+\begin{enumerate}
+\item $|x(t)| \to \infty$, as $t \to \infty$? \\ \\ \\
+\item $|x(t)| \to 0$, as $t \to \infty$? \\ \\ \\
+\item $|x(t)| \to$ a nonzero constant, as $t \to \infty$? \\ \\ \\
+\item $x(t) \to$ a nonzero constant, as $t \to \infty$? \\ \\ \\
+\item $x(t)$ oscillates, as $t \to \infty$? \\ \\ \\
+\end{enumerate}
+
+\item For \emph{some choice of $x(0)$}, under what conditions does:
+\begin{enumerate}
+\item $|x(t)| \to \infty$, as $t \to \infty$? \\ \\ \\
+\item $|x(t)| \to 0$, as $t \to \infty$? \\ \\ \\
+\item $|x(t)| \to$ a nonzero constant, as $t \to \infty$? \\ \\ \\
+\item $x(t) \to$ a nonzero constant, as $t \to \infty$? \\ \\ \\
+\item $x(t)$ oscillate, as $t \to \infty$? \\ \\ \\
+\end{enumerate}
+
+\item What is the solution to the recurrence $x_{k} = A x_{k-1}$ with initial condition $x_0$? \\ \\
+
+\item For \emph{generic $x_0$}, under what conditions does:
+\begin{enumerate}
+\item $|x_n| \to \infty$, as $n \to \infty$? \\ \\ \\
+\item $|x_n| \to 0$, as $n \to \infty$? \\ \\ \\
+\item $|x_n| \to$ a nonzero constant, as $n \to \infty$? \\ \\ \\
+\item $x_n \to$ a nonzero constant, as $n \to \infty$? \\ \\ \\
+\item $x_n$ oscillates, as $n \to \infty$? \\ \\ \\
+\end{enumerate}
+
+\item For \emph{some choice of $x_0$}, under what conditions does:
+\begin{enumerate}
+\item $|x_n| \to \infty$, as $n \to \infty$? \\ \\ \\
+\item $|x_n| \to 0$, as $n \to \infty$? \\ \\ \\
+\item $|x_n| \to$ a nonzero constant, as $n \to \infty$? \\ \\ \\
+\item $x_n \to$ a nonzero constant, as $n \to \infty$? \\ \\ \\
+\item $x_n$ oscillates, as $n \to \infty$? \\ \\ \\
+\end{enumerate}
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}  

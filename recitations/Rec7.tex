@@ -1,0 +1,178 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 7}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+\section{Foundational Problems}
+
+\begin{enumerate}
+
+\item What assumptions on the dimensions of $A$ do we have when finding eigenvalues/eigenvectors of $A$?
+
+\item Find/describe as many eigenvalues and corresponding eigenvectors as you can (without doing any serious calculation) for the following matrices:
+
+\begin{enumerate}
+
+\item $A = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$.
+
+\item $B = \begin{pmatrix} 4 & 3 & -1 \\ 0 & 1 & 4 \\ 0 & 0 &2 \end{pmatrix}$.
+
+\item A projection matrix $P$ some subspace.  If you want to be concrete, think about projection to the column space of 
+\[C = \begin{pmatrix} 1 & 1 \\ -1 & 0 \\ 0 & -1 \end{pmatrix}.\]
+
+\item The permutation matrix
+\[M = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{pmatrix}. \]
+
+\item A rank one matrix $uv^T$.  If you want to be concrete, think about 
+\[u = \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix}, \qquad v = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}. \]
+
+\end{enumerate}
+
+\item Are there any real eigenvalues of a rotation matrix 
+\[R = \begin{pmatrix} \cos \theta & -\sin \theta \\ \sin \theta & \cos\theta \end{pmatrix}, \]
+for any possible $\theta$?
+
+\pagebreak
+
+\item Suppose that $A, B, C$ are $m \times m$ matrices with eigenbases that you know.
+%\begin{align*}
+% v_{A,1}, \cdots, v_{A, m}, & \qquad \lambda_{A, 1}, \cdots, \lambda_{A, m}, \\
+% v_{B,1}, \cdots, v_{B, m}, & \qquad \lambda_{B, 1}, \cdots, \lambda_{B, m}, \\
+%  v_{C,1}, \cdots, v_{C, m}, & \qquad \lambda_{C, 1}, \cdots, \lambda_{C, m}.
+%  \end{align*}
+%(So that $A v_{A, i} = \lambda_{A, i} v_{A, i}$, $B v_{B, i} = \lambda_{B, i} v_{B, i}$, and $C v_{C, i} = \lambda_{C, i} v_{C, i}$.)
+\begin{enumerate}
+
+\item What do you know about the eigenvectors and eigenvalues of $A^{2017}$?
+
+\item What do you know about the eigenvectors and eigenvalues of $A^{-1}$?
+
+\item What do you know about the eigenvectors and eigenvalues of $A^T$?
+
+\item What do you know about the eigenvectors and eigenvalues of $AB$?
+
+\item What do you know about the eigenvectors and eigenvalues of $A + B$?
+
+\item What do you know about the eigenvectors and eigenvalues of
+$\begin{pmatrix} A & C \\ 0 & B \end{pmatrix}$?
+
+\end{enumerate}
+
+\end{enumerate}
+
+\section{Problems}
+
+\begin{enumerate}
+
+
+
+%1) what is the pattern when you multiply A repeatedly by some vector?  After ___ multiplications, you get back the same vector, so A^___ = ____
+%
+%2) What are eigenvalues and eigenvectors of A?
+%        --- From the previous part, A^4=I ? is that consistent with your eigenvalues?
+%
+%3) Write the column vector x = (1,0) in the basis of the eigenvectors and give a formula for A^n x.
+%        --- Why is this real even though the eigenvectors/values are complex?
+%
+%4) What are the eigenvectors and eigenvectors of B = 2A + I?
+%        -- can do it both the hard way, of re-solving the characteristic polynomial, and the easy way ? ? 2?+1.
+%        -- what does this tell you about B^n x for n goes to +infinity?  To -infinity?
+%
+%More generally, if A is any real mxm matrix and Ax=?x is a solution with a complex eigenvalue ?, what must be another eigenvalue and eigenvector?  (Answer: complex conjugate of ? and x.)
+%
+%In general, if Ax=?x and ? is complex, how can you tell whether A^n x blows up as n goes to +infinity?
+
+
+
+\item Suppose that $A$ is the matrix
+\[A = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}.\]
+
+
+\begin{enumerate}
+
+\item What is the pattern when you multiply $A$ repeatedly by some vector?  After \underline{\phantom{aaaaaaa}} multiplications, you get back the same vector, so 
+\[A^{\underline{\phantom{aaa}}} = \underline{\phantom{aaaaaaaaaaaa}}.\]
+
+\item What are eigenvalues and eigenvectors of $A$?  Is this consistent with the previous part?
+
+\item Write the vector $x = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$ in the basis of the eigenvectors and give a formula for $A^n x$.
+
+\item What are the eigenvectors and eigenvalues of $B = 2A + I$?
+
+\item What do you know about $B^nx$ as $n \to \infty$ and $n \to -\infty$?
+
+\end{enumerate}
+
+\item Suppose that $A$ is any $m \times m$ matrix with entries in $\rr$ and 
+\[Ax = \lambda x \]
+for some $\lambda \in \cc, \lambda \not\in \rr$. 
+\begin{enumerate}
+\item What must be another eigenvector and eigenvalue?
+\item How can you tell if $A^n x$ blows up as $n \to \infty$?
+\end{enumerate}
+
+
+\item (Strang, Section 6.1, Problem 19) A $3 \times 3$ matrix $B$ is known to have eigenvalues $0,1,2$.  This is enough information to determine $3$ of the following.  Which are they and what are the answers:
+\begin{enumerate}
+\item The rank of $B$.
+\item The determinant of $B^TB$.
+\item The eigenvalues of $B^TB$.
+\item The eigenvalues of $(B^2 + I)^{-1}$.
+\end{enumerate}
+
+\end{enumerate}
+\end{document}  

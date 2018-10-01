@@ -1,0 +1,141 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 11}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+\begin{enumerate}
+
+\item \textbf{(Guided: What is SVD? From the perspective of $AA^T$ and $A^TA$)}  Let $A$ be an $m \times n$ real matrix of rank $r$.
+\begin{enumerate}
+\item The matrix $A A^T$: 
+\begin{itemize}
+\item ...is dimensions $\underline{\phantom{aaaaa}} \times \underline{\phantom{aaaaa}}$ 
+\item  ...and is \underline{\phantom{aaaaaaaaaaaaaaaaaaaa}} and \underline{\phantom{aaaaaaaaaaaaaaaaaaaa}}.
+\item Therefore the eigenvalues $\lambda_i$ of $AA^T$ satisfy \underline{\phantom{aaaaaaaaaaaaaaaaaaaa}}.
+\item I can choose an eigenbasis $\{u_i\}$ for $A A^T$ such that \underline{\phantom{aaaaaaaaaaaaaaaaaaaa}}.
+\item $N(AA^T) =  \underline{\phantom{aaaaaaaaaaaaaaa}}$.
+\item The rank of $AA^T$ is \underline{\phantom{aaaaaaaaaaaaaaa}}.
+\item $C(AA^T) = \underline{\phantom{aaaaaaaaaaaaaaa}}$.
+\end{itemize}
+\item The matrix $A^TA$: 
+\begin{itemize}
+\item ...is dimensions $\underline{\phantom{aaaaa}} \times \underline{\phantom{aaaaa}}$ 
+\item  ...and is \underline{\phantom{aaaaaaaaaaaaaaaaaaaa}} and \underline{\phantom{aaaaaaaaaaaaaaaaaaaa}}.
+\item Therefore the eigenvalues $\omega_i$ of $A^TA$ satisfy \underline{\phantom{aaaaaaaaaaaaaaaaaaaa}}.
+\item I can choose an eigenbasis $\{v_i\}$ for $A^TA$ such that \underline{\phantom{aaaaaaaaaaaaaaaaaaaa}}.
+\item $N(A^TA) =  \underline{\phantom{aaaaaaaaaaaaaaa}}$.
+\item The rank of $A^TA$ is \underline{\phantom{aaaaaaaaaaaaaaa}}.
+\item $C(A^TA) = \underline{\phantom{aaaaaaaaaaaaaaa}}$.
+\end{itemize}
+\item By considering $A(A^TA)v_i$ and $A^T(AA^T) u_i$, the eigenvalues (without multiplicity) of $AA^T$ and $A^TA$ are \underline{\phantom{aaaaaaaaaaaaaaaaaaaa}}.  Up to reordering we can therefore assume that 
+\[A^TA v_i = \sigma_i^2 v_i \text{ and } AA^T u_i = \sigma_i^2 u_i \qquad 1 \leq i \leq r, \]
+with $\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r$;
+and that $A^TAv_i = AA^Tu_i = 0$ for $i > r$.
+
+\item Using $(A^TA) v_i$, we know that $|| Av_i || = \underline{\phantom{aaaaaaaaaaaaaaa}}$.
+
+%\item  Using $(AA^T) u_i$, we know that $|| Au_i || = \underline{\phantom{aaaaaaaaaaaaaaa}}$.
+
+\item Again from considering $A(A^TA)v_i$, we know that 
+\[A v_i = \underline{\phantom{aaaaaaaaaaaaaaa}}. \]
+
+\item Using the above, write $AV = U \Sigma$, where $V$ is the matrix of vectors $v_i$ and $U$ is the matrix of vectors $v_i$, and $\Sigma$ is the $\underline{\phantom{aaaaa}} \times \underline{\phantom{aaaaa}}$ diagonal matrix of the singular values
+\[\Sigma = \begin{pmatrix} \sigma_1 &&&&&\\ & \ddots &&&& \\ && \sigma_r&&& \\ &&& 0&&\\ &&&& \ddots & \\ &&&&& 0 \end{pmatrix}. \]
+
+\item Using this, write $A$ as a sum of \underline{\phantom{aaaaaaaaaaaaa}} rank $1$ matrices
+\[A = \underline{\phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}}. \]
+
+%\item Again from considering $A^T(AA^T)u_i$, we know that 
+%\[A^T u_i = \underline{\phantom{aaaaaaaaaaaaaaa}}. \]
+
+\end{enumerate}
+
+
+\item Suppose that $B$ is a real-symmetric matrix.  
+\begin{enumerate}
+\item What do you know about the eigenvalues of $B$?  What nice properties can we arrange for an eigenbasis?
+\item Using the eigenbasis, what is the maximum possible value of the quoteint $\frac{x^TBx}{x^Tx}$?
+\item What is the minimum possible value of the quoteint $\frac{x^TBx}{x^Tx}$?
+\end{enumerate}
+
+
+\item Given the SVD of a real matrix $A$ and singular values $\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r$, what is the maximum value of $\frac{||Av||}{||v||}$?
+
+
+\item \textbf{(Beginning defective matrices!)} 
+\begin{enumerate}
+\item What are the eigenvalues and eigenvectors of the $2 \times 2$ matrix
+\[A = \begin{pmatrix} 0 & 1 \\ 0 & \epsilon \end{pmatrix}?\]
+\item What happens to the two eigenvectors as $\epsilon \to 0$.  What does this tell you about diagonalizability of A?
+\item For $\epsilon = 0$, $N(A)$ is dimension \underline{\phantom{aaaaaaaaaaaa}}.  What is $N(A^2)$?
+\item For $\epsilon = 0$, we know that $A^2 =  \underline{\phantom{aaaaaaaaaaaa}}$.  Therefore
+\[e^{At} = \underline{\phantom{aaaaaaaaaaaa}}. \]
+\item Given input vector $x(0) = \begin{pmatrix} a \\ b \end{pmatrix}$, give the solution $x(t)$ to 
+\[\frac{dx}{dt} = A x \]
+with this input.  What is the behavior as $t\to \infty$?
+\item How does $e^{At}$ act on eigenvectors?
+\item Similarly, what is $(I+A)^n$?  How does this act on eigenvectors?
+\end{enumerate}
+
+
+
+
+
+
+\end{enumerate}
+\end{document}  

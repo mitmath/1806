@@ -1,0 +1,144 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 1}
+\author{Isabel Vogt}
+\date{September 12, 2017}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+
+
+\begin{enumerate}
+
+%\item Let $m$ and $n$ be natural numbers (you can think of $m=3$ and $n=2$ if you like).  Let $A$ be an $m \times n$ matrix, $B$ be a $n \times n$ matrix, $v$ be a $1 \times n$ vector, $w$ be a $m \times 1$ vector, and $u$ be a $1 \times m$ vector.  Which of the following make sense (and if so, what is the result)
+%
+%\begin{enumerate}
+%
+%\item $A B$
+%
+%\item $BA$
+%
+%\item $A v$
+%
+%\item $A w$
+%
+%\item $ v A$
+%
+%\item $v B$
+%
+%\item $wu$
+%
+%\item $w v$
+%
+%\item $u w$
+%
+%\end{enumerate}
+%
+%\item If you have two coupled systems of equations
+%\begin{align*}
+%Bx + Cy &= c \\
+%Dx + Ey &= d.
+%\end{align*}
+%where $B, C, D$, and $E$ are $3 \times 3$ matrices and $x,y,c$ and $d$ are $3$-component vectors, can you write this as a single system of equations,
+%\[Az = b, \]
+%where $z = \begin{bmatrix} x \\ y \end{bmatrix}$ is the $6$-component vector of $x$ on top of $y$.  What are $A$ and $b$?
+%
+%\item Describe geometrically why the system of linear equations
+%\begin{align*}
+%3x + y &= 2\\
+%6x + 2y &= 4
+%\end{align*}
+%has infinitely many solutions.  Describe geometrically why the system of linear equations
+%\begin{align*}
+%3x + y &= 2\\
+%6x + 2y &= 10
+%\end{align*}
+%has no solutions.
+%
+%\item ``Do" Gaussian elimination on the matrix
+%\[ \begin{bmatrix} 2 & 0 & 0 \\ 4 & 1 & 0 \\ -1 & 6 & 2 \end{bmatrix}.\]
+%
+\item[5.] What is the $LU$ factorization of the matrix
+\[A = \begin{bmatrix} 0 & 1 \\ 2 & 3 \end{bmatrix}? \]
+
+\textbf{Solution:} This matrix doesn't have an $LU$ factorization!  Here's why: suppose that there were a lower triangular matrix
+\[L = \begin{bmatrix} x & 0 \\ y & z \end{bmatrix} \]
+and an upper triangular matrix 
+\[U = \begin{bmatrix} a & b \\ 0 & c \end{bmatrix}\]
+so that
+\[A = \begin{bmatrix} 0 & 1 \\ 2 & 3 \end{bmatrix} = \begin{bmatrix} x & 0 \\ y & z \end{bmatrix}\begin{bmatrix} a & b \\ 0 & c \end{bmatrix} = LU. \]
+
+In particular, this means that the upper left entry of the matrix $A$ would satisfy
+\[0 = x \cdot a + 0 \cdot 0 = xa. \] 
+But this means that one of $x$ or $a$ is $0$, as the product of two nonzero numbers is always nonzero.
+
+So either $x$ or $a$ is $0$.  Let's suppose that it's $x$.  The the matrix $L$ is really
+\[L = \begin{bmatrix} 0 & 0 \\ y & z \end{bmatrix}, \]
+and we still have
+\[A = \begin{bmatrix} 0 & 1 \\ 2 & 3 \end{bmatrix} = \begin{bmatrix} 0 & 0 \\ y & z \end{bmatrix}\begin{bmatrix} a & b \\ 0 & c \end{bmatrix}.\]
+
+But now look at the upper right entry of the matrix $A$.  The equation for this is
+\[1 = 0 \cdot b  + 0 \cdot c = 0. \]
+But this is absurd!  So no matrices $L$ and $U$ can exist.  We'd get the same contradiction (but for $2 \neq 0$) if we had $a =0$.
+
+The problem was the the first column pivot was not in row 1, we had to do a row swap.  If we were finding the $LU$ factorization in order to solve some equations, doing a row swap just corresponds to switching the order of equations, which we can clearly do without changing the solutions.  But in terms of the ordering we choose, an $LU$ factorization does not exist!
+
+\item[5.] Consider the company Widgets-R-Us (WRU).  WRU makes 100 kinds of widgets and sells them in all 50 US states.  Consider the 100 by 50 matrix $A$ with $i,j$-entry recording the number of widgets of type $i$ sold in state $j$ in the month of August 2017.  What kind of 50 by 1 column vectors $x$ could you cook up so that the 100 by 1 column vector $Ax$ records 
+\begin{enumerate}
+\item the number of each kind of widgets sold in Kansas, 
+\item the number of each kind of widget sold in all western states combined, and 
+\item the gross revenue obtained from each kind of widget (suppose all widgets have the same price in each state but vary state to state)?  
+\end{enumerate}
+What kind of 1 by 100 row vectors $y$ could you cook up so that the 1 by 50 row vector $yA$ records 
+\begin{enumerate}
+\item total widgets sold by state, 
+\item total revenue by state (suppose each kind of widget has the same price in all states, but that different widgets can be priced differently)?
+\end{enumerate}
+
+\textbf{Solution:}
+The matrix $A$ has rows indexed by widgets $w_1, \ldots, w_{100}$ and columns indexed by the states $s_1, \ldots, s_{50}$.
+\begin{enumerate}
+\item Say that Kansas is the state with index $s_k$.  The we want to extract the $s_k$th column of the matrix $A$.  This is achieved by the elementary vector with $0$ all components $j\neq k$ and a $1$ in the $k$th entry.  So if $k=3$, this would be
+\[ \begin{bmatrix} 0 \\ 0 \\ 1 \\ 0 \\ \vdots \\ 0 \end{bmatrix} \]
+for example.
+\item If the western states have indices $s_{r_1},  \ldots, s_{r_n}$, then the vector should have a $1$ in components $r_1, \ldots, r_n$ and a $0$ elsewhere.
+\item Suppose that all widgets in state $s_j$ have price $p_j$.  Then this is achieved by the vector
+\[\begin{bmatrix} p_1 \\ p_2 \\ p_3 \\ p_4 \\ \vdots \\ p_{50} \end{bmatrix}. \]
+\item[(a)]  To find total widgets by state, we want to sum each column of the matrix.  This is achieved by the matrix
+\[\begin{bmatrix} 1 & 1 & \cdots & 1 \end{bmatrix}. \]
+\item Suppose that widget $i$ has price $q_i$ in all states.  Then this is achieved by the matrix
+\[\begin{bmatrix} q_1 & q_2 & \cdots & q_{100} \end{bmatrix}. \]
+\end{enumerate}
+
+\item[6.] (Strang 2.4.31, essentially)  Consider a fixed complex number $A + Bi$, where 
+$A, B$ are real.  View complex numbers $z = x +yi$ as column vectors 
+\[z = \begin{bmatrix} x \\ y \end{bmatrix} \]
+Can you think of a 2 by 2 matrix M such that left multiplication by M is the same as complex multiplication by $A + Bi$?  When is this matrix singular?
+
+\textbf{Solution:}
+The product
+\[(A + Bi)(x + y i) = (Ax +i^2 By) + (Bx + Ay)i = (Ax - By) + (Bx+Ay)i.\]
+Putting this back in vector form, this is represented by
+\[\begin{bmatrix} Ax - By \\ Bx + Ay \end{bmatrix} = \begin{bmatrix} A & -B \\ B & A \end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix}. \]
+So the matrix representing ``multiplication by the complex number $A + Bi$" is
+\[\begin{bmatrix} A & -B \\ B & A \end{bmatrix}. \]
+This is singular if and only if it has fewer than $2$ pivots.  This will happen if (1) $A =0$  and $B = 0$, or if (2) $A \neq 0$ but $A +B^2/A = 0$ (the second pivot is $0$ after clearing the first column).  These two conditions can be combined into one by saying $A^2 + B^2 = 0$.
+\end{enumerate}
+
+
+
+
+
+
+\end{document}  

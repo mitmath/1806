@@ -1,0 +1,169 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 1}
+\author{Isabel Vogt}
+\date{September 12, 2017}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+\section{Practical Information}
+ \begin{enumerate}
+ 
+ \item Stellar is the main website for this class: \texttt{https://stellar.mit.edu/S/course/18/fa17/18.06}
+ 
+ \begin{enumerate}
+ 
+ \item Link to the github where lecture summaries, homework, etc. is posted.
+ 
+ \item Link to Piazza for asking questions.
+ 
+ \item Staff OH under ``Staff" link.  \textbf{My office hours are Tuesdays 8:30-9:30 pm in 2-239.}
+ 
+ \item Link to old OCW videos.  \textit{Warning: Prof. Johnson's lectures can differ substantially from Prof. Strang's!  In particular he goes faster and emphasizes different things; so this is not a substitute for going to lecture!}
+ 
+ \end{enumerate}
+ 
+ \item The syllabus is contained within the slides from the first lecture (on github)
+ \begin{enumerate}
+ 
+ \item Midterm 1: September 25
+ 
+ \item Midterm 2: October 30
+ 
+ \item Midterm 3: November 27
+
+\item Final exam announced at the end of this month. 
+
+
+  
+ \item Homework is due every Wednesdays at 11am in my recitation box, \textit{including on exam weeks!}
+ 
+  \end{enumerate}
+ 
+ \item The Math Learning Center is a math-department-run drop-in tutoring service from 3-5pm and 7:30-9:30pm Monday-Thursday (16 hours per week!!) for the classes 18.01, 18.02, 18.03, and 18.06.  This can be a great additional resource for you.
+ 
+ \end{enumerate}
+
+\section{Pictures/Words Problems}
+
+\begin{enumerate}
+
+\item Let $m$ and $n$ be natural numbers (you can think of $m=3$ and $n=2$ if you like).  Let $A$ be an $m \times n$ matrix, $B$ be a $n \times n$ matrix, $v$ be a $1 \times n$ vector, $w$ be a $m \times 1$ vector, and $u$ be a $1 \times m$ vector.  Which of the following make sense (and if so, what is the result)
+
+\begin{enumerate}
+
+\item $A B$
+
+\item $BA$
+
+\item $A v$
+
+\item $A w$
+
+\item $ v A$
+
+\item $v B$
+
+\item $wu$
+
+\item $w v$
+
+\item $u w$
+
+\end{enumerate}
+
+\item If you have two coupled systems of equations
+\begin{align*}
+Bx + Cy &= c \\
+Dx + Ey &= d.
+\end{align*}
+where $B, C, D$, and $E$ are $3 \times 3$ matrices and $x,y,c$ and $d$ are $3$-component vectors, can you write this as a single system of equations,
+\[Az = b, \]
+where $z = \begin{bmatrix} x \\ y \end{bmatrix}$ is the $6$-component vector of $x$ on top of $y$.  What are $A$ and $b$?
+
+\item Describe geometrically why the system of linear equations
+\begin{align*}
+3x + y &= 2\\
+6x + 2y &= 4
+\end{align*}
+has infinitely many solutions.  Describe geometrically why the system of linear equations
+\begin{align*}
+3x + y &= 2\\
+6x + 2y &= 10
+\end{align*}
+has no solutions.
+
+\item ``Do" Gaussian elimination on the matrix
+\[ \begin{bmatrix} 2 & 0 & 0 \\ 4 & 1 & 0 \\ -1 & 6 & 2 \end{bmatrix}.\]
+
+\item What is the $LU$ factorization of the matrix
+\[A = \begin{bmatrix} 0 & 1 \\ 2 & 3 \end{bmatrix}? \]
+
+\end{enumerate}
+
+\section{Problems}
+
+\begin{enumerate}
+
+\item Strang 2.2(22): 
+\[A = \begin{bmatrix} a & 2 & 3 \\ a& a & 4 \\ a & a & a \end{bmatrix}. \]
+For which 3 numbers $a$ will elimination on $A$ fail to give 3 pivots (i.e. for which 3 $a$'s is $A$ singular)?
+
+\item Strang 2.2(27): if you have a lower-triangular system, you can solve it quickly by ``forward substitution".  Solve the $3\times 3$ problem $Lx=b$:
+
+\[\begin{bmatrix} 3 & 0 & 0 \\ 6 & 2 & 0 \\ 9 & -2 & 1 \end{bmatrix} \begin{bmatrix} x \\ y \\ z \end{bmatrix} = \begin{bmatrix} 3 \\ 8 \\ 9 \end{bmatrix}.\]
+
+
+
+\item For the lower-triangular matrix $L$ above, find matrices $A$ and $B$ such that
+\[A L B = \begin{bmatrix} 1 & -2 & 9 \\ 0 & 2 & 6 \\ 0 & 0 & 3 \end{bmatrix}. \]
+
+
+
+
+
+\item Suppose that there are a billion Facebook users.  List the billion people 
+\[1, 2, ..., \text{billion},\] 
+and consider the billion by billion matrix $A$ which has $ij$-entry equal to 1 if people $i$ and $j$ are Facebook friends, and 0 otherwise (say by convention no person is friends with him/herself).  
+\begin{enumerate}
+\item Can you think of a billion by 1 column vector $x$ such that $Ax$ records how many friends each person has, i.e. so that the $i$th entry of $Ax$ is the number of friends person $i$ has?  
+\item Can you think of a billion by 1 column vector $y$ such that $Ay$ records who person 5 is friends with?  
+\item Can you think of a billion by 1 column vector $u$ and a 1 by billion row vector $w$ so that the \textit{scalar} $wAu$ records how many friendships there are in the Facebook universe? 
+\end{enumerate}
+
+\item Consider the company Widgets-R-Us (WRU).  WRU makes 100 kinds of widgets and sells them in all 50 US states.  Consider the 100 by 50 matrix $A$ with $i,j$-entry recording the number of widgets of type $i$ sold in state $j$ in the month of August 2017.  What kind of 50 by 1 column vectors $x$ could you cook up so that the 100 by 1 column vector $Ax$ records 
+\begin{enumerate}
+\item the number of each kind of widgets sold in Kansas, 
+\item the number of each kind of widget sold in all western states combined, and 
+\item the gross revenue obtained from each kind of widget (suppose all widgets have the same price in each state but vary state to state)?  
+\end{enumerate}
+What kind of 1 by 100 row vectors $y$ could you cook up so that the 1 by 50 row vector $yA$ records 
+\begin{enumerate}
+\item total widgets sold by state, 
+\item total revenue by state (suppose each kind of widget has the same price in all states, but that different widgets can be priced differently)?
+\end{enumerate}
+
+\item (Strang 2.4.31, essentially)  Consider a fixed complex number $A + Bi$, where 
+$A, B$ are real.  View complex numbers $z = x +yi$ as column vectors 
+\[z = \begin{bmatrix} x \\ y \end{bmatrix} \]
+Can you think of a 2 by 2 matrix M such that left multiplication by M is the same as complex multiplication by $A + Bi$?  When is this matrix singular?
+
+\end{enumerate}
+
+
+
+
+
+
+\end{document}  

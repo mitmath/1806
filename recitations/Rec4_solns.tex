@@ -1,0 +1,186 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 4}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+\section{Pictures/Words Problems}
+
+\begin{enumerate}
+
+
+\item (Strang, 3.4 Problem 24 + 3.5 Problem 25 + $\epsilon$) True or False (give a good reason if True/example if False)
+
+\begin{enumerate}
+
+\item If the zero vector is in the column space of a matrix $A$, then the columns of $A$ are linearly dependent.
+
+\item If the columns of a matrix are dependent, so are the rows.
+
+\item The column space of a $2 \times 2$ matrix is the same as its row space.
+
+\item The column space of a $2 \times 2$ matrix has the same dimension as its row space.
+
+\item The columns of a matrix are a basis for the column space.
+
+\item $A$ and $A^T$ have the same number of pivots.
+
+\item $A$ and $A^T$ have the same left nullspace.
+
+\item If the row space equals the column space then $A^T=A$.
+
+\item If $A^T = -A$, then the row space of $A$ equals the column space.
+
+\end{enumerate}
+
+\textbf{Solution:}
+
+\begin{enumerate}
+
+\item \textbf{False:} every subspace contains the zero vector.  Take for instance $A = I$.
+
+\item \textbf{False:} take a matrix with more columns than rows but full row rank, for example
+\[\begin{pmatrix} 1 & 0 & 1\\ 0 & 1 & 1 \end{pmatrix}. \]
+
+\item \textbf{False:} take a matrix such as
+\[A = \begin{pmatrix} 1 & 0 \\ 1 & 0 \end{pmatrix}. \]
+Then $C(A) = \left\langle \begin{pmatrix}1 \\ 1 \end{pmatrix} \right\rangle$, but $R(A) =  \left\langle \begin{pmatrix}1 \\ 0 \end{pmatrix} \right\rangle$, which is not the same.
+
+\item \textbf{True:} this is always true: the dimensions of both spaces are the rank of $A$.
+
+\item \textbf{False:} the columns of a matrix span the columns space, but they might be linearly dependent.  Take for example a matrix with more columns than rows:
+\[\begin{pmatrix} 1 & 0 & 1\\ 0 & 1 & 1 \end{pmatrix}. \]
+
+\item \textbf{True:} the number of (nonzero) pivots is the rank of $A$, which is equal to the rank of $A^T$.
+
+\item \textbf{False:} the left nullspace of $A $ is $N(A^T)$ and the left nullspace of $A^T$ is $N(A)$ and in general these don't even lie in the same space if $A$ is not square!
+
+\item \textbf{False:} take any invertible but nonsymmetric matrix, like
+\[A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}. \]
+In this case, the row space and the column space are both all of $\rr^2$, but $A \neq A^T$.
+
+\item \textbf{True:} here is another way to make a counter-example to the previous part!  Note that $C(A) = C(-A) = C(A^T) = R(A)$.
+
+\end{enumerate}
+
+
+
+\end{enumerate}
+
+\section{Problems}
+
+\begin{enumerate}
+
+
+\item (Strang 3.4, Problem 7) If $w_1, w_2, w_3$ are independent vectors in $\rr^3$, show that the differences 
+\begin{align*}
+v_1 &= w_2 - w_3 \\
+v_2 &= w_1 - w_3 \\
+v_3 &= w_1 - w_2.
+\end{align*}
+are \emph{dependent}.  Find the matrix $A$ so that
+\[ \begin{bmatrix} \\ w_1 & w_2 & w_3 \\ &\end{bmatrix}A = \begin{bmatrix} \\ v_1 & v_2 & v_3 \\ &\end{bmatrix}.\]
+Which matrices above are singular?
+
+\textbf{Solution:}
+
+We can show that the differences are dependent by finding a relation:
+\[v_1 - v_2 + v_3 = (w_2-w_3) - (w_1-w_3) + (w_1 - w_2) = 0.\]
+The matrix $A$ is
+\[A = \begin{pmatrix} 0 & 1 & 1 \\ 1 & 0 & -1 \\ -1 & -1 & 0 \end{pmatrix}. \]
+As has to be the case, this matrix is singular.  So is the matrix $(v_1 \ v_2 \ v_3)$.
+
+\item[3.] \textbf{(Strang 3.4, Problem 22)} Construct $A = uv^T + wz^T$ whose column space has basis $\begin{bmatrix} 1 \\ 2 \\ 4 \end{bmatrix}, \begin{bmatrix} 2 \\ 2 \\ 1 \end{bmatrix}$ and whose row space has basis $(1,0), (1,1)$.  Write $A$ as a $3 \times 2$ matrix times a $2 \times 2$ matrix.
+
+\textbf{Solution:}
+
+Let's try to find $A$ such that the columns are an invertible linear combination of $u = \begin{bmatrix} 1 \\ 2 \\ 4 \end{bmatrix}$, and $w=\begin{bmatrix} 2 \\ 2 \\ 1 \end{bmatrix}$, and the rows contain $(1,0)$ and $(1,1)$ as the first two rows.
+
+Inspection (or other techniques for solving linear equations) will show you that this is possible by
+\[\left(0 \begin{pmatrix} 1 \\ 2 \\ 4 \end{pmatrix} + (1/2) \begin{pmatrix} 2 \\ 2 \\ 1 \end{pmatrix} \ ,  \begin{pmatrix} 1 \\ 2 \\ 4 \end{pmatrix} - (1/2) \begin{pmatrix} 2 \\ 2 \\ 1 \end{pmatrix} \right) = \begin{pmatrix} 1 & 0 \\ 1 & 1 \\ (1/2) & (7/2) \end{pmatrix} = A. \]
+
+And so we see that 
+\begin{align*}
+A &= \begin{pmatrix} 1 \\ 2 \\ 4 \end{pmatrix} \begin{pmatrix} 0 & 1 \end{pmatrix} + \begin{pmatrix} 2 \\ 2 \\ 1 \end{pmatrix} \begin{pmatrix} 1/2 & -1/2 \end{pmatrix} \\
+&= \begin{pmatrix} 1 & 2 \\ 2 & 2 \\ 4 & 1 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1/2 & -1/2\end{pmatrix}.
+\end{align*}
+So we can take
+\[v = \begin{pmatrix} 0 \\ 1 \end{pmatrix}, \qquad z = \begin{pmatrix} 1/2 \\ -1/2 \end{pmatrix}. \]
+
+
+
+
+
+\item[5.]  \textbf{(Strang 3.5, Problem 23)} If a subspace $S$ is contained in a subspace $V$, prove that $S^\perp$ contains $V^\perp$.
+
+\textbf{Solution:}
+
+Suppose that $w \in V^\perp$.  Then for all $v \in V$, we have that $w \cdot v = 0$.  Since $S$ is contained in $V$, for all $s \in S$, we also have $s \in V$, and therefore $w \cdot s = 0$.  So $w \in S^\perp$.  This shows every vector in $V^\perp$ is also in $S^\perp$ and so we have $V^\perp \subset S^\perp$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+\end{document}  

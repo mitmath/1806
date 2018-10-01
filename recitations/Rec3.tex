@@ -1,0 +1,160 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 4}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+\section{Pictures/Words Problems}
+
+\begin{enumerate}
+
+\item Describe geometrically in pictures/words these subspaces:
+
+\begin{enumerate}
+
+\item The span of two vectors $v_1, v_2 \in \rr^n$ if $v_1$ and $v_2$ are linearly dependent.
+
+\item The span of three linearly independent vectors $v_1, v_2, v_3 \in \rr^n$.
+
+\item Let $u = \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}$.  The space of vectors $w \in \rr^3$ so that $u \cdot w = 0$.  Can you describe the geometry of this situation in terms of fundamental subspaces?
+
+
+\end{enumerate}
+
+\item (Strang, 3.4 Problem 24 + 3.5 Problem 25 + $\epsilon$) True or False (give a good reason if True/example if False)
+
+\begin{enumerate}
+
+\item If the zero vector is in the column space of a matrix $A$, then the columns of $A$ are linearly dependent.
+
+\item If the columns of a matrix are dependent, so are the rows.
+
+\item The column space of a $2 \times 2$ matrix is the same as its row space.
+
+\item The column space of a $2 \times 2$ matrix has the same dimension as its row space.
+
+\item The columns of a matrix are a basis for the column space.
+
+\item $A$ and $A^T$ have the same number of pivots.
+
+\item $A$ and $A^T$ have the same left nullspace.
+
+\item If the row space equals the column space then $A^T=A$.
+
+\item If $A^T = -A$, then the row space of $A$ equals the column space.
+
+\end{enumerate}
+
+\end{enumerate}
+
+\section{Problems}
+
+\begin{enumerate}
+
+
+\item (Strang 3.4, Problem 7) If $w_1, w_2, w_3$ are independent vectors in $\rr^3$, show that the differences 
+\begin{align*}
+v_1 &= w_2 - w_3 \\
+v_2 &= w_1 - w_3 \\
+v_3 &= w_1 - w_2.
+\end{align*}
+are \emph{dependent}.  Find the matrix $A$ so that
+\[ \begin{bmatrix} \\ w_1 & w_2 & w_3 \\ &\end{bmatrix}A = \begin{bmatrix} \\ v_1 & v_2 & v_3 \\ &\end{bmatrix}.\]
+Which matrices above are singular?
+
+\item \textbf{(Strang 3.4, Problem 11)} $A$ is an $m \times n$ matrix of rank $r$.  Suppose there are right sides $b$ for which $Ax = b$ has no solution.  (What does this mean in terms of fundamental subspaces?)
+
+
+\begin{enumerate}
+
+\item What are all of the inequalities ($<$ or $\leq$) that must be true between $m$ and $n$ and $r$?
+
+\item How do you know that $A^Ty=0$ has solutions other than $y=0$?
+
+
+\end{enumerate}
+
+\item \textbf{(Strang 3.4, Problem 22)} Construct $A = uv^T + wz^T$ whose column space has basis $\begin{bmatrix} 1 \\ 2 \\ 4 \end{bmatrix}, \begin{bmatrix} 2 \\ 2 \\ 1 \end{bmatrix}$ and whose row space has basis $(1,0), (1,1)$.  Write $A$ as a $3 \times 2$ matrix times a $2 \times 2$ matrix.
+
+\item (Strang 3.5, Problem 5) 
+\begin{enumerate}
+
+\item If $Ax = b$ has a solution and $A^Ty = 0$, is
+\[ y^Tx = 0, \qquad \text{or} \qquad y^Tb = 0? \]
+
+\item If $A^Ty = (1,1,1)$ has a solution and $Ax = 0$, then \underline{\phantom{aaaaaaaaaaaaaa}}.
+
+\end{enumerate}
+
+\item  \textbf{(Strang 3.5, Problem 23)} If a subspace $S$ is contained in a subspace $V$, prove that $S^\perp$ contains $V^\perp$.
+
+\item \textbf{(Strang 3.5, Problem 27)} The lines $3x + y = b_1$ and $6x + 2y = b_2$ are \underline{\phantom{aaaaaaaaaaaaaa}}.  They are the same line if \underline{\phantom{aaaaaaaaaaaaaa}}. In that case $(b_1, b_2)$ is perpendicular to the vector \underline{\phantom{aaaaaaaaaaaaaa}}.  The nullspace of the matrix is the line $3x + y =$ \underline{\phantom{aaaaaaaa}}.  One particular vector in the nullspace is \underline{\phantom{aaaaaaaaaaaaaa}}.
+
+\item (Strang 3.5, Problem 33)** Suppose I give you $8$ vectors $r_1, r_2, n_1, n_2, c_1, c_2, l_1, l_2$ in $\rr^4$.
+
+\begin{enumerate}
+
+\item What are the conditions for those pairs to be bases for the our fundamental subspaces of a $4 \times 4$ matrix?
+
+\item What is one possible matrix A?
+
+\end{enumerate}
+
+
+
+
+\end{enumerate}
+\end{document}  

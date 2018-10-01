@@ -1,0 +1,172 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+
+
+\renewcommand{\aa}{\mathbb{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\rr}{\mathbb{R}}
+\newcommand{\pp}{\mathbb{P}}
+\newcommand{\hh}{\mathbb{H}}
+\newcommand{\qq}{\mathbb{Q}}
+\newcommand{\zz}{\mathbb{Z}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\kk}{\mathbb{K}}
+\renewcommand{\gg}{\mathbb{G}}
+\newcommand{\nn}{\mathbb{N}}
+\renewcommand{\tt}{\mathbb{T}}
+
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\I}{\mathcal{I}}
+\renewcommand{\H}{\mathcal{H}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\renewcommand{\P}{\mathcal{P}}
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\Q}{\mathcal{Q}}
+\newcommand{\T}{\mathcal{T}}
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\X}{\mathcal{X}}
+
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sX}{\mathscr{X}}
+
+
+
+
+\usepackage{graphicx}
+\usepackage{amssymb, amsmath}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{18.06 Recitation 2}
+\author{Isabel Vogt}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+\section{Pictures/Words Problems}
+
+\begin{enumerate}
+
+\item If $S_1$ stands for the operation of putting on your socks, and $S_2$ stands for the operation of putting on your shoes (so $S_2 \circ S_1$ stands for first putting on your socks and then putting on your shoes), what is the inverse of $S_2 \circ S_1$?
+
+\item The following are a bunch of True/False problems.  If True, try to explain in words why; if False, try to give a counter-example!
+
+\begin{enumerate}
+
+\item \textbf{(T/F)} For any matrix $A$, if I use Gaussian Elimination to find the $A = LU$ factorization, then the diagonal entries of $U$ are the same as the diagonal entries of $A$.
+
+\item \textbf{(T/F)} The matrix $\begin{pmatrix} 0 & 1 & 4 \\ 0 & 3 &1 \\ 0& 0 & 1 \end{pmatrix}$ is upper-triangular.
+
+\item \textbf{(T/F)} If Gaussian Elimination on $A$ produces the identity matrix, then $A$ is lower-triangular.
+
+\item \textbf{(T/F)} The inverse of a permutation matrix $P$ is always the same permutation matrix $P$.
+
+\item \textbf{(T/F)} Fix a vector $u$ in $\rr^3$.  Then all vectors $v$ so that the dot product $u \cdot v =0$ is a vector subspace of $\rr^3$.
+
+
+
+\item \textbf{(T/F)} Given a nonsingular matrix $A$ and $m$ vectors $b_1, \ldots, b_m$, it will necessarily take on the order of $m^4$ operations to solve all the equations 
+\[Ax_1 = b_1, Ax_2 = b_2, \ldots, Ax_m = b_m. \]
+
+\item \textbf{(T/F)} The set of all invertible $2 \times 2$ matrices (with usual addition and scaler multiplication) forms a vector subspace of $\mathbf{M}$ the space of all $2 \times 2$ matrices.
+
+\end{enumerate}
+
+\item Which of the following are vector subspaces of $\rr^2$:
+
+\begin{enumerate}
+
+\item The origin $(0,0)$.
+\item The first quadrant.
+\item The vectors corresponding to points on the line $y = x + 1$.
+\item The vectors corresponding to points on the line $y = 4x$.
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+\section{Problems}
+
+\begin{enumerate}
+
+\item The following problems concern the vector space $\mathbf{M}$ of all $2 \times 2$ matrices.  What do we implicitly mean are the operations of addition and scaler multiplication.  Why is this a vector space?
+
+\begin{enumerate}
+
+\item[(i)] (Strang 3.1 Problem 4) The matrix $A = \begin{pmatrix} 2 & -2 \\ 2 & -2 \end{pmatrix}$ is a vector in the space $\mathbf{M}$.  Write sown the zero vector in this space, the vector $\frac{1}{2} A$, and the vector $-A$.  What matrices are in the smallest subspace containing $A$?
+
+\item[(ii)] (Strang 3.1 Problem 5) 
+
+\begin{enumerate}
+
+\item[(a)] Describe a subspace of $\mathbf{M}$ that contains $A = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$ but not $B = \begin{pmatrix} 0 & 0 \\ 0 & -1 \end{pmatrix}$.
+
+\item[(b)] If a subspace of $\mathbf{M}$ does contain $A$ and $B$, must it contain $I$?
+
+\item[(c)] Describe a subspace of $\mathbf{M}$ that contains no nonzero diagonal matrices.
+
+\end{enumerate}
+
+\end{enumerate}
+
+
+\item (Strang 3.1 Problem 15) 
+
+\begin{enumerate}
+
+\item The intersection of two planes through $(0,0,0)$ in $\rr^3$ is probably a \underline{\phantom{aaaaaaaaaaaa}} in $\rr^3$ but it could be a \underline{\phantom{aaaaaaaaaaaa}}.  It can't be just $(0,0,0)$, why?
+
+\item The intersection of a plane through $(0,0,0)$ with a line through $(0,0,0)$ is probably a \underline{\phantom{aaaaaaaaaaaa}}, but it could be a \underline{\phantom{aaaaaaaaaaaa}} .
+
+\item If $\mathbf{S}$ and $\mathbf{T}$ are subspaces of $\rr^5$, prove that their intersection $\mathbf{S} \cap \mathbf{T}$ is a subspace of $\rr^5$.  Here $\mathbf{S} \cap \mathbf{T}$ consists of the vectors that lie in both spaces.
+
+\end{enumerate}
+
+\item (Strang 3.1 Problem 23) If we add an extra column $b$ to a matrix $A$, then the column space get larger unless \underline{\phantom{aaaaaaaaaaaa}}.  Give an example where the column space gets larger and an example where it doesn't.  Why is $Ax = b$ solvable exactly when the column space doesn't get larger -- i.e. it is the same for $A$ and $\begin{bmatrix} A & b \end{bmatrix}$.
+
+\item Suppose that $E, A$, and $R$ are $n\times n$ matrices.  Further assume that $E$ is invertible, and that we have a factorization $EA = R$,.
+
+\begin{enumerate}
+\item If $y$ is an $n$ component vector and $Ey = 0$, what can we say about $y$?
+\item If $x$ is an $n$ component vector and $R x = 0$, then what can we say about $EAx$ and $Ax$?
+\item If $z$ is an $n$ component vector and $Az = 0$, then what can we say about $Rz$?  
+\item What does this tell us about the null spaces of the matrices $E$, $A$ and $R$?
+\end{enumerate}
+
+\item Let $A$ be an $n \times n$ matrix and let $b,c,x,y,z$ be $n$ component vectors.  Suppose that $Ax=b$ and $Ay=c$ are both solvable.  
+
+\begin{enumerate}
+
+\item Show that $Az=2b+3c$ is solvable: what is a possible solution $z$?  
+\item Can you rephrase this in terms of column spaces?
+\item If $z+u+v$ is another solution to $A(z+u+b)=2b+3c$ for some vectors $u$ and $v$, then \underline{\phantom{aaaaaaaaaaaa}} is in \underline{\phantom{aaaaaaaaaaaa}}.
+\item If $z+\alpha u+\beta v$ is also a solution for any $\alpha$ and $\beta$, then \underline{\phantom{aaaaaaaaaaaa}} is in \underline{\phantom{aaaaaaaaaaaa}}.
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+\end{document}  
