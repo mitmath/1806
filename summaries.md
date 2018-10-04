@@ -309,3 +309,28 @@ Claimed that these subspaces are **orthogonal complements**, defining the orthog
 
 **Further reading:** Textbook sections 3.4, 3.5, 4.1.  [video lecture 5](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/), video
 [lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/), video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/)
+
+## Lecture 11 (Oct 1)
+
+* [pset 4 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset4sol.ipynb)
+* pset 5 coming soon (due Wed 10/10 at 10:55am, submitted electronically via Stellar)
+
+Showed that N(Aᵀ) and C(A) are orthogonal complements.  This often gives an nice way to check if a vector is in C(A): b is in C(A) if and only if b is orthogonal to N(Aᵀ) (or to a basis thereof).   Gave an example where N(Aᵀ) is a line, allowing you to check whether b ∈ C(A) (that is, whether Ax=b has a solution) by checking a single dot product yᵀb=0 for a basis vector (special solution) y ∈ N(Aᵀ).
+
+As another example, considered **rank-1 matrices** uvᵀ for u∈ℝᵐ and v∈ℝⁿ: if u and v are nonzero, then uvᵀ is an m×n matrix of rank 1.   This is easy to see: every column is a multiple of u, so C(uvᵀ)=C(u) is 1d, and similarly the row space is the 1d subspace spanned by v.  Since the dimension of the column/row space is the rank, then the rank is 1.
+
+### Vectors and bases
+
+Given any vector space V, we can "turn it into" column vectors in ℝⁿ by **choosing** a basis {v₁, v₂, …}, and representing vectors v ∈ V by their coefficients in that basis: if v=x₁v₁+x₂v₂+⋯, then we can represent v by the column vector (x₁, x₂, …).
+
+One example of this is the high-school description of vectors as "arrows".   Choosing a basis corresponds to choosing a coordinate system.  Another example is the space P of degree ≤ 3 polynomials p(x)=c₀+c₁x+c₂x²: if we use the basis {1,x,x²} then we can represent such polynomials by the column vectors (c₀,c₁,c₂) ∈ ℝ³.    The latter example makes it clearer that the column vector "represents" the polynomial p(x), in the sense that ± and ×scalar operations on p(x) correspond to the equivalent operations on (c₀,c₁,c₂), even though p(x) and (c₀,c₁,c₂) are not the really "same" things.  (Technically, by choosing a basis we have defined an [isomorphism](https://en.wikipedia.org/wiki/Isomorphism) between P and ℝ³, but we won't be that technical in 18.06.)
+
+A *change* of basis corresponds to simply multiplying the coordinate vectors by an invertible matrix B.  For example, we gave the matrix to change P to the basis of the {1,x-1,(x-1)²}, and the inverse of this matrix changes basis in the other directions.
+
+### Linear transformations
+
+A **linear transformation** (or **linear operator**) T(v) is a function that transforms vectors v to new vectors in a *linear* way: T(αv)=αT(v) and T(v+w)=T(v)+T(w).
+
+One way of thinking about a matrix is that it is what we get when we start with a linear transformation T(v) and choose a basis for the "input" and "output" vector spaces.   For example, the derivative d/dx is a linear operator on functions.   Using our basis {1,x,x²} for P above, we could represent it by an equivalent 3×3 matrix acting on the coefficients (c₀,c₁,c₂) ∈ ℝ³.
+
+**Further reading:** See previous lecture readings on the four subspaces and orthogonal complements.  Chapter 8 of the textbook on linear transformations and [video lecture 30](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-30-linear-transformations-and-their-matrices).
