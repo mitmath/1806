@@ -256,4 +256,56 @@ Practice problems: [spring 2017 exam 1](http://web.mit.edu/18.06/www/Spring17/ex
 [spring 2008 exam 1](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08.pdf) problems 1, 3, 4
 ([solutions](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08-soln.pdf))
 
-Exam 1 and solutions will be posted after Monday October 1.
+* [Fall 2018 Exam 1](exams/exam1.pdf) and [solutions](exams/exam1sol.pdf).
+
+## Lecture 10 (Oct 1)
+
+### Four cases for Ax=b
+
+Went through four important cases for an m×n matrix A of rank r.  (Note that we must have r ≤ m and n: you can't have more pivots than there are rows or columns.)
+
+1. If r=n, then A has **full column rank**.  We must have m ≥ n (it must be a "tall" matrix), and N(A)={0} (there are no free columns).  Hence, any solution to Ax=b (if it exists at all) must be *unique*.
+
+2. If r=m, then A has **full row rank**.  We must have n ≥ m (it must be a "wide" matrix), and C(A)=ℝᵐ.  Ax=b is *always solvable* (but the solution will not be unique unless m=n).
+
+3. If r=m=n, then A is a square **invertible** matrix.  Ax=b is always solvable and the solution x=A⁻¹b is unique.
+
+4. If r < m and r < n, then A is **rank deficient**.  Solutions to Ax=b may not exist and will not be unique if they do exist.
+
+Cases (1)-(3) are called **full rank**: the rank is as big as possible given the shape of A.  In practice, most matrices that one encounters are full rank (this is essentially always true for *random* matrices).  If the matrix is rank deficient, it usually arises from some special structure of the problem (i.e. you usually want to look at where A came from to help you figure out why it is rank deficient, rather than computing the rank etcetera by mindless calculation).   (A separate problem is that of matrices that are *nearly* rank deficient because the pivots are very small, but the right tools to analyze this case won't come up until near the end of the course).
+
+### Transposes and dot products
+
+Reviewed the dot product or **inner product** of two column vectors, x⋅y, defined as ∑ᵢxᵢyᵢ.  In linear-algebra terms, we write this as x⋅y=xᵀy in terms of the *transpose* of the vector x: if x is a column vector, xᵀ is a row vector (sometimes more technically called a "dual" vector).  The *length* (or **norm**) of a vector is is the square root of the dot product with itself: ‖x‖=√xᵀx.
+
+Most of you have seen the definition of a matrix transpose Aᵀ before: you turn rows into columns or vice versa.  But the *reason* that this is an important operation (as opposed to, say, rotating a matrix by 90°) is that it is connected to dot products: Aᵀ is defined precisely so that xᵀAy = x⋅(Ay) = (Aᵀx)⋅y = (Aᵀx)ᵀy: transposes move matrices from one side to the other in an inner product.  Swapping rows and columns is actually obtained as a *consequence* of this property.  Another consequence is the important identity (AB)ᵀ=BᵀAᵀ.
+
+Because of this relationship, whenever we transpose a matrix in linear algebra, there will usually be a dot product lurking somewhere nearby.
+
+### Four Fundamental Subspaces
+
+The reason we are introducing transposes now is that we are missing two important subspaces, which turn out to be
+the **row space** C(Aᵀ) and the **left nullspace** N(Aᵀ).
+
+As usual with transposes, we expect to find a dot product somewhere, and in this case we will see that it is because the row space and the left nullspace are *orthogonal* to N(A) and C(A), respectively.
+
+n summary, for an m×n matrix A of rank r, we find the **four fundamental subspaces**:
+
+* column space C(A) ⊆ ℝᵐ, dimension r
+* left nullspace N(Aᵀ) ⊆ ℝᵐ, dimension m-r
+* row space C(Aᵀ) ⊆ ℝⁿ, dimension r
+* nullspace N(A) ⊆ ℝⁿ, dimension n-r
+
+In particular, since elimination multiplies A on the *left*, it multiplies Aᵀ on the *right*
+by an invertible matrix.  Therefore, C(Aᵀ) = C(Rᵀ), and the *pivot rows of
+R* are a basis for C(Aᵀ).   More importantly, this tells us a very non-obvious
+fact: rank(Aᵀ) = rank(A).   (That is, if you did elimination on Aᵀ, you
+would get the *same number of pivots*.)
+
+(Finding a basis for N(Aᵀ) is not so nice, because the left nullspace is *not* preserved by elimination on A.  If R=EA, and x∈N(Rᵀ), then Eᵀx∈N(Aᵀ): we have to re-do the elimination steps on x.  For humans, it might be easier just to re-do elimination on Aᵀ to find its nullspace in the familiar way.)
+
+Claimed that these subspaces are **orthogonal complements**, defining the orthogonal complement S<sup>⟂</sup> of a subspace S as
+{x such that xᵀy=0 for all y ∈ S}.  In particular, N(Aᵀ)=C(A)<sup>⟂</sup> and N(A)=C(Aᵀ)<sup>⟂</sup>.  This is why their dimensions sum to m and n, respectively: combining a basis for S and S<sup>⟂</sup> gives a basis for the whole vector space.
+
+**Further reading:** Textbook sections 3.4, 3.5, 4.1.  [video lecture 5](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/), video
+[lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/), video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/)

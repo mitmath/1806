@@ -1,0 +1,809 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{(\roman{enumii})}
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MIT 18.06 Exam 1, Fall 2018
+\begin_inset Newline newline
+\end_inset
+
+Johnson
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Your name: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-6pt"
+width "80col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Recitation: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-6pt"
+width "80col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\size largest
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+problem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+score
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/30
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/30
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/30
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+\emph on
+total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/100
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 1 (30 points):
+\end_layout
+
+\begin_layout Standard
+You have the matrix 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{ccccc}
+0 & 0 & 0 & 0 & 1\\
+0 & 0 & 1 & 0 & -1\\
+1 & 2 & -1 & 0 & 1\\
+0 & 2 & 0 & 1 & 0\\
+0 & 0 & 0 & 2 & 1
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find matrices 
+\begin_inset Formula $P,U,L$
+\end_inset
+
+ for a 
+\begin_inset Formula $PA=LU$
+\end_inset
+
+ factorization of 
+\begin_inset Formula $A.$
+\end_inset
+
+ Hint: look at 
+\begin_inset Formula $A$
+\end_inset
+
+ carefully first: if you find the right permutation 
+\begin_inset Formula $P$
+\end_inset
+
+ (a matrix to 
+\emph on
+re-order the rows
+\emph default
+) it will be simple.
+\end_layout
+
+\begin_layout Enumerate
+Compute 
+\begin_inset Formula $x=A^{-1}b$
+\end_inset
+
+ where 
+\begin_inset Formula $b=\left(\begin{array}{c}
+-2\\
+2\\
+2\\
+1\\
+-4
+\end{array}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 2 (30 points):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ is a 
+\begin_inset Formula $3\times5$
+\end_inset
+
+ matrix.
+ One of your Harvard friends performed row operations on 
+\begin_inset Formula $A$
+\end_inset
+
+ to convert it to rref form, but did something weird—instead of getting
+ the usual 
+\begin_inset Formula $R=\left(\begin{array}{cc}
+I & F\end{array}\right)$
+\end_inset
+
+, they reduced it to a matrix in the form 
+\begin_inset Formula $\left(\begin{array}{cc}
+F & I\end{array}\right)$
+\end_inset
+
+ instead.
+ In particular, their row operations gave: 
+\begin_inset Formula 
+\[
+A\rightsquigarrow\left(\begin{array}{ccccc}
+2 & 3 & 1 & 0 & 0\\
+4 & 5 & 0 & 1 & 0\\
+6 & 7 & 0 & 0 & 1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Find a basis for 
+\begin_inset Formula $N(A)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Give a matrix 
+\begin_inset Formula $M$
+\end_inset
+
+ so that if you multiply 
+\begin_inset Formula $A$
+\end_inset
+
+ by 
+\begin_inset Formula $M$
+\end_inset
+
+ (on the 
+\series bold
+left or right?
+\series default
+) then the 
+\series bold
+same
+\series default
+ row operations as the ones used by your Harvard friend will give a matrix
+ in the usual rref form: 
+\begin_inset Formula 
+\[
+\text{either }MA\text{ or }AM\rightsquigarrow\left(\begin{array}{ccccc}
+1 & 0 & 0 & 2 & 3\\
+0 & 1 & 0 & 4 & 5\\
+0 & 0 & 1 & 6 & 7
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 3 (10 points):
+\end_layout
+
+\begin_layout Standard
+In class, when we derived the LU factorization, we initially found 
+\begin_inset Formula $L$
+\end_inset
+
+ by multiplying a sequence of elementary elimination matrices, 
+\emph on
+one to eliminate below each pivot
+\emph default
+.
+ (We later found a more clever way to get 
+\begin_inset Formula $L$
+\end_inset
+
+ just by writing down the multipliers from the elimination steps, no arithmetic
+ required.)
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ is a non-singular 
+\begin_inset Formula $m\times m$
+\end_inset
+
+ matrix and we compute 
+\begin_inset Formula $L$
+\end_inset
+
+ in the 
+\series bold
+
+\begin_inset Quotes eld
+\end_inset
+
+naive
+\begin_inset Quotes erd
+\end_inset
+
+ way
+\series default
+, by directly multiplying the elementary elimination matrices (by the usual
+ 
+\begin_inset Formula $\text{rows}\times\text{columns}$
+\end_inset
+
+ method, no tricks), how would the cost to compute 
+\begin_inset Formula $L$
+\end_inset
+
+ (the number of scalar-arithmetic operations) scale with 
+\begin_inset Formula $m$
+\end_inset
+
+? (That is, roughly proportional to 
+\begin_inset Formula $m,$
+\end_inset
+
+ 
+\begin_inset Formula $m^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $m^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $m^{4}$
+\end_inset
+
+, 
+\begin_inset Formula $m^{5}$
+\end_inset
+
+, 
+\begin_inset Formula $2^{m}$
+\end_inset
+
+, or...?)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 4 (30 points):
+\end_layout
+
+\begin_layout Standard
+Here are some miscellaneous questions that require little calculation:
+\end_layout
+
+\begin_layout Enumerate
+Is 
+\begin_inset Formula $V$
+\end_inset
+
+ a vector space or not? (For multiplication by real scalars and the usual
+ 
+\begin_inset Formula $\pm$
+\end_inset
+
+ operations.) If 
+\series bold
+false
+\series default
+, give a rule of vector spaces that is violated:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ is a 
+\begin_inset Formula $3\times6$
+\end_inset
+
+ matrix.
+ 
+\emph on
+
+\begin_inset Formula $V=\text{all}$
+\end_inset
+
+
+\emph default
+ solutions 
+\begin_inset Formula $x$
+\end_inset
+
+ to 
+\begin_inset Formula $Ax=\left(\begin{array}{c}
+1\\
+2\\
+3
+\end{array}\right)$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ is a 
+\begin_inset Formula $3\times6$
+\end_inset
+
+ matrix.
+ 
+\emph on
+
+\begin_inset Formula $V=\text{all}$
+\end_inset
+
+
+\emph default
+ 
+\begin_inset Formula $6\times2$
+\end_inset
+
+ matrices 
+\begin_inset Formula $X$
+\end_inset
+
+ where 
+\begin_inset Formula $AX=0$
+\end_inset
+
+ (the 
+\begin_inset Formula $3\times2$
+\end_inset
+
+ zero matrix).
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+\begin_inset Formula $V=\text{all}$
+\end_inset
+
+
+\emph default
+ 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ singular matrices 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+\begin_inset Formula $V=\text{all}$
+\end_inset
+
+
+\emph default
+ 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ matries whose diagonal entries average to zero.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+\begin_inset Formula $V=\text{all}$
+\end_inset
+
+
+\emph default
+ differentiable functions 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ with 
+\begin_inset Formula $f'(0)=2f(0).$
+\end_inset
+
+ (
+\begin_inset Formula $f'$
+\end_inset
+
+ is the derivative.)
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+\begin_inset Formula $V=\text{all}$
+\end_inset
+
+
+\emph default
+ functions 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ with 
+\begin_inset Formula $f(x+y)=f(x)f(y).$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Give a matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ whose null space is spanned by 
+\begin_inset Formula $\left(\begin{array}{c}
+1\\
+2\\
+-1
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Give a nonzero matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ whose column space is in 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ but does 
+\emph on
+not
+\emph default
+ include 
+\begin_inset Formula $\left(\begin{array}{c}
+1\\
+2\\
+-1
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\end_body
+\end_document
