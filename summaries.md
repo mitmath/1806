@@ -313,7 +313,7 @@ Claimed that these subspaces are **orthogonal complements**, defining the orthog
 ## Lecture 11 (Oct 1)
 
 * [pset 4 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset4sol.ipynb)
-* pset 5 coming soon (due Wed 10/10 at 10:55am, submitted electronically via Stellar)
+* [pset 5](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset5.ipynb) (due Wed 10/10 at 10:55am, submitted electronically via Stellar)
 
 Showed that N(Aᵀ) and C(A) are orthogonal complements.  This often gives an nice way to check if a vector is in C(A): b is in C(A) if and only if b is orthogonal to N(Aᵀ) (or to a basis thereof).   Gave an example where N(Aᵀ) is a line, allowing you to check whether b ∈ C(A) (that is, whether Ax=b has a solution) by checking a single dot product yᵀb=0 for a basis vector (special solution) y ∈ N(Aᵀ).
 
