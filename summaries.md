@@ -310,7 +310,7 @@ Claimed that these subspaces are **orthogonal complements**, defining the orthog
 **Further reading:** Textbook sections 3.4, 3.5, 4.1.  [video lecture 5](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-5-transposes-permutations-spaces-r-n/), video
 [lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/), video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/)
 
-## Lecture 11 (Oct 1)
+## Lecture 11 (Oct 3)
 
 * [pset 4 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset4sol.ipynb)
 * [pset 5](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset5.ipynb) (due Wed 10/10 at 10:55am, submitted electronically via Stellar)
@@ -334,3 +334,25 @@ A **linear transformation** (or **linear operator**) T(v) is a function that tra
 One way of thinking about a matrix is that it is what we get when we start with a linear transformation T(v) and choose a basis for the "input" and "output" vector spaces.   For example, the derivative d/dx is a linear operator on functions.   Using our basis {1,x,x²} for P above, we could represent it by an equivalent 3×3 matrix acting on the coefficients (c₀,c₁,c₂) ∈ ℝ³.
 
 **Further reading:** See previous lecture readings on the four subspaces and orthogonal complements.  Chapter 8 of the textbook on linear transformations and [video lecture 30](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-30-linear-transformations-and-their-matrices).
+
+## Lecture 12 (Oct 5)
+
+### Linear transformations and bases
+
+Continuing from last lecture, explained why choosing a basis for the input and outputs allows us to represent a linear transformation by a matrix.   The key point is linearity: once we know what T(v) does to the basis vectors, {v₁, v₂, …, vₙ}, then we know what it does to *any* vector v = c₁v₁+c₂v₂+cₙvₙ, and writing down what it does to the coefficients c=(c₁,c₂,…,cₙ) gives us a matrix A.
+
+Examples: T(v) = rotation by 90° in the plane.  T(v) = d/dx on the space P of degree ≤ 3 polynomials in the basis {1,x,x²}.  The latter case is interesting: it gives us a 3×3 matrix A that is rank 2.  N(A) is a line, and correspondingly N(d/dx) is the 1d subspace spanned by p(x)=1; C(A) is a plane, and correspondingly C(d/dx) in P is the 2d subspace spanned by {1,x}.  dp/dx=q(x) is only solvable for p∈P if q(x) has degree ≤ 1, and even then the solution is not unique because you can add any constant to p!
+
+ Change of basis: if we have a matrix A, or a linear operation y=Ax, and we write the input in a new basis x=Bᵢv and the output in a new basis y=Bₒw, then in the new basis we have w=Bₒ⁻¹ABᵢv: the matrix Bₒ⁻¹ABᵢ is the "same" linear operation as A but changed to a new basis.  It is easy to show that Bₒ⁻¹ABᵢ and A have the same ranks and the same *dimensionality* of their subspaces: changing basis doesn't change whether solutions always exist or are unique.  From this perspective, consider the A=LU factorization, or U=L⁻¹A: we now see that U is the "same" linear operation as A, but the *output* is chnged to a new basis L.   In the special case of a square matrix A where we choose the *same* basis B=Bₒ=Bᵢ for input and output, we say that the matrix B⁻¹AB is [similar](https://en.wikipedia.org/wiki/Matrix_similarity) to A — we will come back to this later in the course, where it will be an important topic on exam 3.
+
+**Further reading**: Chapter 8 of the textbook on linear transformations and [video lecture 30](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-30-linear-transformations-and-their-matrices).
+
+ ### Multidimensional Newton's Method
+
+ * [Multidimensional Newton’s method notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Multidimensional-Newton.ipynb)
+
+Continuing on the theme of "where do matrices come from?", but from a more applied standpoint, talked about the multidimensional extension of Newton's method from 18.01, see notebook.
+
+The key point of this lecture is that *linear* algebra can even be used to solve *nonlinear* equations.  There are many methods to convert a nonlinear equation into a *sequence* of *approximate* linear equations whose solutions *converge* to the nonlinear solution.   The most famous is Newton’s method.  You learned the 1d version of Newton’s method in first-year calculus.  The generalization, for *n* nonlinear equations in *n* unknowns, is a sequence of *n*×*n* matrix problems.
+
+**Further reading:** Strang's textbook does not discuss this topic.   [Section 9.6 of Numerical Recipes in C](http://www.it.uom.gr/teaching/linearalgebra/NumericalRecipiesInC/c9-6.pdf) is a decent high-level review.  A somewhat more mathematically sophisticated review can be found in [these lecture notes](http://fabcol.free.fr/pdf/lectnotes5.pdf) by [Fabrice Collard](http://fabcol.free.fr/notes.html) or in these [2014 notes](http://www.math.cmu.edu/CNA/summer_institute/2014/projects/SUAMI_revised_paper.pdf) by Nicolle Eagan.
