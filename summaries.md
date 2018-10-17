@@ -418,7 +418,7 @@ Gram-Schmidt orthogonalization: given a non-orthonormal basis a₁,a₂,…, we 
 
 ## Lecture 16 (October 17)
 
-* pset 6 solutions coming soon
+* [pset 6 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset6sol.ipynb)
 * pset 7 coming soon (due Wed Oct 24 at 10:55am)
 * [Orthogonal polynomials](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Orthogonal-Polynomials.ipynb)
 
