@@ -438,7 +438,7 @@ Key practical facts to keep in mind if you ever need to do least-squares or orth
 
 * On a computer, never use Gram–Schmidt for large matrices, which turns out to be notoriously sensitive to small errors if some vectors are nearly parallel.  People still compute the "same" QR factorization, just using different methods! There is an improved version called "modified Gram–Schmidt" described in the book, but in practice computers actually use a completely different algorithm called "Householder reflections."  You should just use the built-in `Q,R = qr(A)` or `qrfact(A)` function in Julia (or other languages), which will do the right thing most of the time.
 
-This is not unusual: there is often a difference between the way we conceptually *think* about linear algebra and the more sophisticated tricks that are required to make it *work well* on *large matrices* of real data in the presence small numerical errors.
+This is not unusual: there is often a difference between the way we conceptually *think* about linear algebra and the more sophisticated tricks that are required to make it *work well* on *large matrices* of real data in the presence of small numerical errors.
 
 Another wonderful and far-reaching application of these ideas is to realize that the same concepts of orthogonal bases and Gram–Schmidt can be applied to *any* vector space once we define a dot product (giving a so-called [Hilbert space](https://en.wikipedia.org/wiki/Hilbert_space), though we won't use that level of abstraction much in 18.06).  In particular, it turns out to be especially powerful to think about **orthogonal/orthonormal bases of functions**.  Introduced a dot product f⋅g=∫fg for functions defined on x∈[-1,1], and started deriving an orthogonal basis of polynomials via Gram–Schmidt on {1,x,x²,x³,…}, resulting in the famous and important [Legendre polynomials](https://en.wikipedia.org/wiki/Legendre_polynomials).
 
@@ -447,6 +447,8 @@ Another wonderful and far-reaching application of these ideas is to realize that
 ## Exam 2 (Oct 26, 11am in 54-100)
 
 Exam 2 will cover the material through **lecture 17** and **pset 7**: exam-1 material, four fundamental subspaces (relationships among, dimensions/bases of, & connections to Ax=b), full row/col rank vs. rank-deficient A, solvability of and complete solutions to Ax=b, rref form, linear independence, bases, transposes and dot products, rank-1 matrices xyᵀ, orthogonal subspaces/complements, projections, least-square solutions, orthogonal/orthonormal bases, Gram–Schmidt and QR factorization, derivatives of matrix/vector expressions, orthogonal functions.
+
+*Not covered:* Newton's method.
 
 *Note:* The average on exam 2 is typically quite a bit lower than on exam 1.  We take this into account in the grading, but don't be complacent if you did well on exam 1!  Exam 2 contains a lot of new material even for people who had seen some linear algebra before.
 
