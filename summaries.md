@@ -434,7 +434,7 @@ Using QR to solve the least-squares problem: given A=QR, the normal equations A�
 
 Key practical facts to keep in mind if you ever need to do least-squares or orthogonal basis for real-world problems (not 18.06 exams!) involving data with finite precision (e.g. measurement or rounding errors):
 
-* The cost of QR factorization for an m×n is proportional to mn².  For a square m×m matrix it is therefore ~ m³, similar to other matrix factorizations.  (We could see this by estimating the number of operations in Gram–Schmidt, but it is also true for other QR algorithms.)
+* The cost of QR factorization for an m×n matrix is proportional to mn².  For a square m×m matrix it is therefore ~ m³, similar to other matrix factorizations.  (We could see this by estimating the number of operations in Gram–Schmidt, but it is also true for other QR algorithms.)
 
 * On a computer, (almost) never explicitly form AᵀA or solve the normal equations: it turns out that this greatly exacerbates the sensitivity to numerical errors (in 18.335, you would learn that it squares the [condition number](https://en.wikipedia.org/wiki/Condition_number))  Instead, use the A=QR factorization and solve Rx̂=Qᵀb.  Better yet, just do `A \ b` (in Julia or Matlab) or the equivalent in other languages, which will use a good algorithm.
 
