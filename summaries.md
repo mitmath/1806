@@ -455,6 +455,9 @@ Orthogonal and orthonormal bases of functions.  See the notebooks for two exampl
 
 **Further reading:** Strang, section 10.5 (Fourier series), these [18.06 sine-series notes](http://web.mit.edu/18.06/www/Spring09/sines.pdf), these [TAMU notes on orthogonal polynomials](http://www.math.tamu.edu/~yvorobet/MATH304-503/Lect4-04web.pdf) and [these 18.06 notes on orthogonal polynomials](http://web.mit.edu/18.06/www/Spring09/legendre.pdf).
 
+## Lecture 18 (October 22)
+
+* [SVD introduction](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/SVD-intro.ipynb)
 
 ## Exam 2 (Oct 26, 11am in 54-100)
 
