@@ -459,6 +459,20 @@ Orthogonal and orthonormal bases of functions.  See the notebooks for two exampl
 
 * [SVD introduction](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/SVD-intro.ipynb)
 
+The rref form and the way we've been finding a basis for C(A) etcetera is a conceptually nice way to understand the relationships between rank and dimensions.  But it isn't a practical tool — virtually no one uses the rref for matrices that arise in real applications.  Instead, the main tool for this kind of thing, both in practice and in theory, is the **SVD**.   The key observation is this: orthonormal bases are ideal, but if you multiply *most* orthonormal bases by a matrix A the result is no longer orthogonal.  However, it turns out that there is a *special* orthonormal basis v₁,…,vᵣ of C(Aᵀ) such that Av₁,…,Avᵣ *are* orthogonal.   We saw this "experimentally" in the notebook for a 2×2 matrix of rank 2, and I claimed (without proof, for now) that it is *always* possible to find such a basis.
+
+This leads us to the **singular value decomposition** (**SVD**).
+
+* Defined the SVD, both as the factorization A=UΣVᵀ and by writing A as a sum of rank-1 matrices.
+
+* Explained how the singular vectors (columsn of U and V) give (arguably) the "best" orthonormal bases for the four subspaces of A.
+
+* Discussed the usage of the SVD for [low rank approximation](https://en.wikipedia.org/wiki/Low-rank_approximation): if we take only a few of the biggest singular values σ and drop the remaining terms, then we have a lower-rank *approximation* for A that is often very good.   Showed graphically how this gives a "compressed" version of some images — often just a few of the singular values suffices to make the image recognizable.
+
+At this point in 18.06, we don't yet have the mathematical tools to prove the existence of the SVD, and in any case hand computation of the SVD is grossly impractical, so I have to ask you to take the existence of the SVD on faith.  Our main goal in the short term is to understand its implications: how to use the SVD to solve problems and to understand a given matrix.
+
+**Further reading:** Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/).  Note, however, that the connection of SVD to eigenvalues/eigenvectors of AᵀA is something that we won't cover until later in 18.06.
+
 ## Exam 2 (Oct 26, 11am in 54-100)
 
 Exam 2 will cover the material through **lecture 17** and **pset 7**: exam-1 material, four fundamental subspaces (relationships among, dimensions/bases of, & connections to Ax=b), full row/col rank vs. rank-deficient A, solvability of and complete solutions to Ax=b, rref form, linear independence, bases, transposes and dot products, rank-1 matrices xyᵀ, orthogonal subspaces/complements, projections, least-square solutions, orthogonal/orthonormal bases, Gram–Schmidt and QR factorization, derivatives of matrix/vector expressions, orthogonal functions.
