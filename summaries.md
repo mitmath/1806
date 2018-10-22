@@ -18,7 +18,7 @@ elimination notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/mast
 * [pset 1](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset1.ipynb) (due Wed 9/12 at 10:55am, submitted electronically via Stellar)
 
 Went over the [course overview
-slides](https://github.com/stevengj/1806/blob/master/lectures/overview.pdf)
+slides](https://github.com/stevengj/1806/blob/master/lectures/1806overview.pdf)
 giving the syllabus and the "big picture" of what 18.06 is about.
 
 Then I started right in on [Gaussian
