@@ -473,6 +473,17 @@ At this point in 18.06, we don't yet have the mathematical tools to prove the ex
 
 **Further reading:** Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/).  Note, however, that the connection of SVD to eigenvalues/eigenvectors of AᵀA is something that we won't cover until later in 18.06.
 
+## Lecture 19 (October 23)
+
+* [SVD introduction](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/SVD-intro.ipynb) — pseudoinverse notes
+* [Determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall17/lectures/Determinants.ipynb)
+
+Continued discussion of SVD and nearly rank-deficient (ill-conditioned) matrices, and introduced the pseudoinverse as yet another viewpoint on least-squares problems.
+
+Began explaining determinants and their properties.  Considering how central a role determinants play for the 2×2 and 3×3 matrices you probably encountered before 18.06, you may be surprised that we didn't get to determinants until now.  The fact of the matter is that determinants play a much less important role in applied linear algebra for larger matrices — with a few exceptions, most things that you would want to use determinants for can be done more effectively in other ways.  They are a useful *conceptual* tool, however, especially for thinking about eigenvalues.
+
+**Further reading:** Strang, section 5.1; video [lecture 18](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants).  (We will mostly skip Strang, section 5.2 and 5.3, because the formulas in those sections are nearly useless in computational settings for large matrices, as explained in the notebook.)
+
 ## Exam 2 (Oct 26, 11am in 54-100)
 
 Exam 2 will cover the material through **lecture 17** and **pset 7**: exam-1 material, four fundamental subspaces (relationships among, dimensions/bases of, & connections to Ax=b), full row/col rank vs. rank-deficient A, solvability of and complete solutions to Ax=b, rref form, linear independence, bases, transposes and dot products, rank-1 matrices xyᵀ, orthogonal subspaces/complements, projections, least-square solutions, orthogonal/orthonormal bases, Gram–Schmidt and QR factorization, derivatives of matrix/vector expressions, orthogonal functions.
