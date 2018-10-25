@@ -477,7 +477,7 @@ At this point in 18.06, we don't yet have the mathematical tools to prove the ex
 ## Lecture 19 (October 23)
 
 * [pset 7 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset7sol.ipynb)
-* pset 8 coming soon (due 10/31)
+* [pset 8](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset8.ipynb) (due Wed Oct 31 at 10:55am)
 * [SVD introduction](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/SVD-intro.ipynb) — pseudoinverse notes
 * [Determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall17/lectures/Determinants.ipynb)
 
