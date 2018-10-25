@@ -77,6 +77,7 @@ computational experiments.  Bring your laptops, and try logging into
 * [Overview slides](https://github.com/stevengj/1806/blob/master/julia/Julia-intro.pdf)
 * [Julia cheatsheet](https://github.com/stevengj/1806/blob/master/julia/Julia-cheatsheet.pdf)
 * [Tutorial notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/julia/tutorial.ipynb)
+* [Julia for linear algebra](https://web.stanford.edu/~boyd/vmls/vmls-julia-companion.pdf) companion to the [Boyd and Vandenberghe Linear Algebra book](http://vmls-book.stanford.edu/).
 
 Note: Julia 1.0 was [released at the end of summer 2018](https://julialang.org/blog/2018/08/one-point-zero), but the tutorial materials are still for Julia 0.6, and several Julia packages are still in the process of being upgraded.    juliabox.com currently supports Julia 0.6, so **for at least the first pset we will use Julia 0.6**.   (Some of my lecture notebooks may use a more recent Julia version, but you can view the notebooks regardless.)
 
