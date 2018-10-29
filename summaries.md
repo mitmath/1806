@@ -479,7 +479,7 @@ At this point in 18.06, we don't yet have the mathematical tools to prove the ex
 * [pset 7 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset7sol.ipynb)
 * [pset 8](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset8.ipynb) (due Wed Oct 31 at 10:55am)
 * [SVD introduction](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/SVD-intro.ipynb) — pseudoinverse notes
-* [Determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall17/lectures/Determinants.ipynb)
+* [Determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Determinants.ipynb)
 
 Continued discussion of SVD and nearly rank-deficient (ill-conditioned) matrices, and introduced the pseudoinverse as yet another viewpoint on least-squares problems.
 
@@ -501,7 +501,7 @@ Exam 2 will cover the material through **lecture 17** and **pset 7**: exam-1 mat
 
 ## Lecture 20 (October 29)
 
-* [Determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall17/lectures/Determinants.ipynb)
+* [Determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Determinants.ipynb)
 
 Finished notebook on determinants and their properties.
 
@@ -513,7 +513,7 @@ The trick is to figure out for **what λ an eigenvector exists**, and the key is
 
 ## Upcoming Lecture 21 (October 31)
 
-* [Eigenvalues and polynomials](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall17/lectures/Eigenvalue-Polynomials.ipynb)
+* [Eigenvalues and polynomials](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Eigenvalue-Polynomials.ipynb)
 
 Eigenvalues and eigenvectors.
 
@@ -540,7 +540,7 @@ Applied this process to the 2×2 matrix from the notebook, expanding the vector 
 
 ## Upcoming Lecture 22 (November 2)
 
-* [Diagonalization](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall17/lectures/Diagonalization.ipynb)
+* [Diagonalization](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Diagonalization.ipynb)
 
 Covered **diagonalization** of a matrix: the process of expanding a vector in the basis of eigenvectors, then multiplying each one by λ, then adding up the eigenvectors with the new coefficients, can be thought of as the matrix factorization A=XΛX⁻¹, where X is the matrix whose columns are the eigenvectors.   This only works if X is invertible: i.e. when for an m×m matrix A we have m eigenvalues (possibly repeated) and m independent eigenvectors (a *basis* of eigenvectors).  Such a matrix is called **diagonalizable**.
 
