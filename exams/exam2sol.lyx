@@ -1,0 +1,1306 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{(\roman{enumii})}
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MIT 18.06 Exam 2, Fall 2018 
+\series bold
+Solutions
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Johnson
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 (33 points):
+\end_layout
+
+\begin_layout Standard
+The matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ has a nullspace 
+\begin_inset Formula $N(A)$
+\end_inset
+
+ spanned by
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+1\\
+0\\
+-1
+\end{array}\right)
+\]
+
+\end_inset
+
+and a left nullspace 
+\begin_inset Formula $N(A^{T})$
+\end_inset
+
+ spanned by 
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+1\\
+1\\
+1\\
+1
+\end{array}\right),\left(\begin{array}{c}
+1\\
+1\\
+-1\\
+-1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+What is the 
+\series bold
+shape
+\series default
+ of the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ and its 
+\series bold
+rank
+\series default
+?
+\end_layout
+
+\begin_layout Enumerate
+If we consider the vector
+\begin_inset Formula 
+\[
+b=\left(\begin{array}{c}
+-1\\
+\alpha\\
+0\\
+\beta
+\end{array}\right),
+\]
+
+\end_inset
+
+for 
+\series bold
+what value(s)
+\series default
+ of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ (if any) is 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ solvable? Will the solution (if any) be 
+\series bold
+unique
+\series default
+?
+\end_layout
+
+\begin_layout Enumerate
+Give the orthogonal 
+\series bold
+projections
+\series default
+ of 
+\begin_inset Formula 
+\[
+y=\left(\begin{array}{c}
+1\\
+2\\
+-3
+\end{array}\right)
+\]
+
+\end_inset
+
+onto 
+\series bold
+two
+\series default
+ of the four fundamental subspaces of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $N(A)$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+, the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ must have three columns.
+ Since 
+\begin_inset Formula $N(A^{T})$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $\mathbb{R}^{4}$
+\end_inset
+
+, the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ must have four rows.
+ So 
+\begin_inset Formula $A$
+\end_inset
+
+ is a 
+\begin_inset Formula $\boxed{4\times3}$
+\end_inset
+
+ matrix.
+ The matrix has 3 columns and the null space has dimension 
+\begin_inset Formula $1$
+\end_inset
+
+, and so the rank of the matrix is 
+\begin_inset Formula $r=3-1=\boxed{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ is solvable, then 
+\begin_inset Formula $b\in C(A)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ is the orthogonal complement of 
+\begin_inset Formula $N(A^{T})$
+\end_inset
+
+, this means that an equivalent condition for 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ to be solvable is that 
+\begin_inset Formula $b$
+\end_inset
+
+ is orthogonal to 
+\begin_inset Formula $N(A^{T})$
+\end_inset
+
+.
+ This gives us two constraints on 
+\begin_inset Formula $b$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align*}
+b^{T}\begin{pmatrix}1\\
+1\\
+1\\
+1
+\end{pmatrix} & =0\;\;\implies\;\;-1+\alpha+\beta=0,\\
+b^{T}\begin{pmatrix}1\\
+1\\
+-1\\
+-1
+\end{pmatrix} & =0\;\;\implies\;\;-1+\alpha-\beta=0.
+\end{align*}
+
+\end_inset
+
+Solving these, we find that 
+\begin_inset Formula $b\in C(A)$
+\end_inset
+
+ requires 
+\begin_inset Formula $\boxed{\alpha=1,\;\beta=0}$
+\end_inset
+
+.
+ For these values of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+and 
+\begin_inset Formula $\beta$
+\end_inset
+
+, the solution of 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ is 
+\series bold
+not unique
+\series default
+, since 
+\begin_inset Formula $N(A)$
+\end_inset
+
+ has dimension 
+\begin_inset Formula $1$
+\end_inset
+
+: given any particuar solution of 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+, we can add on any multiple of 
+\begin_inset Formula $\begin{pmatrix}1\\
+0\\
+-1
+\end{pmatrix}$
+\end_inset
+
+ and the resulting vector would still be a solution.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The vector 
+\begin_inset Formula $y=\left(\begin{array}{c}
+1\\
+2\\
+-3
+\end{array}\right)$
+\end_inset
+
+ is in 
+\begin_inset Formula $\mathbb{\mathbb{{R}}}^{3}$
+\end_inset
+
+, and so we can 
+\series bold
+only
+\series default
+ project onto 
+\begin_inset Formula $N(A)$
+\end_inset
+
+ and 
+\begin_inset Formula $C(A^{T})$
+\end_inset
+
+.
+ To project onto 
+\begin_inset Formula $N(A)$
+\end_inset
+
+, we use the formula to project 
+\begin_inset Formula $y$
+\end_inset
+
+ onto 
+\begin_inset Formula $\begin{pmatrix}1\\
+0\\
+-1
+\end{pmatrix}$
+\end_inset
+
+ :
+\begin_inset Formula 
+\begin{align*}
+p_{N(A)} & =\begin{pmatrix}1\\
+0\\
+-1
+\end{pmatrix}\frac{{\begin{pmatrix}1 & 0 & -1\end{pmatrix}\begin{pmatrix}1\\
+2\\
+-3
+\end{pmatrix}}}{\begin{pmatrix}1 & 0 & -1\end{pmatrix}\begin{pmatrix}1\\
+0\\
+-1
+\end{pmatrix}}=\boxed{\begin{pmatrix}2\\
+0\\
+-2
+\end{pmatrix}}.
+\end{align*}
+
+\end_inset
+
+Note, that to compute the projection 
+\begin_inset Formula $\frac{aa^{T}}{a^{T}a}y$
+\end_inset
+
+, it is 
+\emph on
+not
+\emph default
+ necessary to first compute the projection matrix 
+\begin_inset Formula $\frac{aa^{T}}{a^{T}a}$
+\end_inset
+
+ (although this is certainly allowed).
+ It is a 
+\emph on
+lot less work
+\emph default
+ to compute the projection as 
+\begin_inset Formula $a\frac{(a^{T}y)}{a^{T}a}$
+\end_inset
+
+ (two dot products) than as 
+\begin_inset Formula $(\frac{aa^{T}}{a^{T}a})y$
+\end_inset
+
+ (explicitly forming the matrix 
+\begin_inset Formula $aa^{T}$
+\end_inset
+
+).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+To compute the projection onto 
+\begin_inset Formula $C(A^{T})$
+\end_inset
+
+, recall that if 
+\begin_inset Formula $p=Py$
+\end_inset
+
+ is the projection of 
+\begin_inset Formula $y$
+\end_inset
+
+ onto some subspace, then 
+\begin_inset Formula $(I-P)y$
+\end_inset
+
+ will project 
+\begin_inset Formula $y$
+\end_inset
+
+ onto the orthogonal complement of this subspace.
+ Since 
+\begin_inset Formula $C(A^{T})$
+\end_inset
+
+ is orthogonal to 
+\begin_inset Formula $N(A)$
+\end_inset
+
+, the projection of 
+\begin_inset Formula $y$
+\end_inset
+
+ onto 
+\begin_inset Formula $C(A^{T})$
+\end_inset
+
+ is given by:
+\begin_inset Formula 
+\begin{align*}
+p_{C(A^{T})} & =\begin{pmatrix}1\\
+2\\
+-3
+\end{pmatrix}-p_{N(A)}\\
+ & =\begin{pmatrix}1\\
+2\\
+-3
+\end{pmatrix}-\begin{pmatrix}2\\
+0\\
+-2
+\end{pmatrix}\\
+ & =\boxed{\begin{pmatrix}-1\\
+2\\
+-1
+\end{pmatrix}}.
+\end{align*}
+
+\end_inset
+
+Note in particular that it was 
+\emph on
+not
+\emph default
+ necessary to explicitly find a basis for 
+\begin_inset Formula $C(A^{T})$
+\end_inset
+
+ or to form its 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ projection matrix, and in fact this would be a lot more work!
+\end_layout
+
+\begin_layout Subsection*
+Problem 2 (34 points):
+\end_layout
+
+\begin_layout Standard
+You have a matrix 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{ccc}
+1 & 2 & 1\\
+0 & 1 & 0\\
+1 & 1 & 1\\
+1 & 0 & 1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Give the 
+\series bold
+ranks
+\series default
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $A^{T}$
+\end_inset
+
+, and 
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+, and also give 
+\series bold
+bases
+\series default
+ for 
+\begin_inset Formula $C(A)$
+\end_inset
+
+, 
+\begin_inset Formula $N(A)$
+\end_inset
+
+, and 
+\begin_inset Formula $N(A^{T}A)$
+\end_inset
+
+.
+ (
+\series bold
+Look carefully at the columns
+\series default
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+—very little calculation is needed!)
+\end_layout
+
+\begin_layout Enumerate
+Suppose we are looking for a least-square solution 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ that minimizes 
+\begin_inset Formula $\Vert b-Ax\Vert$
+\end_inset
+
+ for 
+\begin_inset Formula $b=\left(\begin{array}{c}
+0\\
+2\\
+1\\
+-1
+\end{array}\right)$
+\end_inset
+
+.
+ At this minimum, 
+\begin_inset Formula $p=A\hat{x}$
+\end_inset
+
+ will be the projection of 
+\begin_inset Formula $b$
+\end_inset
+
+ onto ................? 
+\series bold
+Find
+\series default
+ 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ (
+\series bold
+Hint
+\series default
+: your answer from (a) should help simplify the calculations.)
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+The first and third columns of 
+\begin_inset Formula $A$
+\end_inset
+
+ are the same, while the first and second columns are linearly independent.
+ This means that the rank of 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\begin_inset Formula $\boxed{2}$
+\end_inset
+
+.
+ The rank of 
+\begin_inset Formula $A^{T}$
+\end_inset
+
+and the rank of 
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+ are 
+\series bold
+equal
+\series default
+ to the rank of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ A basis for 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ is then just the first two columns 
+\begin_inset Formula $\boxed{\begin{pmatrix}1\\
+0\\
+1\\
+1
+\end{pmatrix},\begin{pmatrix}2\\
+1\\
+1\\
+0
+\end{pmatrix}}$
+\end_inset
+
+.
+ The nullspace of 
+\begin_inset Formula $A$
+\end_inset
+
+ is one dimensional, and since the first and third columns are the same,
+ a basis for 
+\begin_inset Formula $N(A)$
+\end_inset
+
+ is given by the vector 
+\begin_inset Formula $\boxed{\begin{pmatrix}1\\
+0\\
+-1
+\end{pmatrix}}.$
+\end_inset
+
+ Finally, 
+\begin_inset Formula $\boxed{N(A)=N(A^{T}A)}$
+\end_inset
+
+ (a property we saw several times in class and homework!), and so our basis
+ for 
+\begin_inset Formula $N(A)$
+\end_inset
+
+ is also a basis for 
+\begin_inset Formula $N(A^{T}A).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+First, 
+\begin_inset Formula $p=A\hat{{x}}$
+\end_inset
+
+ is the projection of 
+\begin_inset Formula $b$
+\end_inset
+
+ onto 
+\begin_inset Formula $\boxed{C(A)}$
+\end_inset
+
+.
+ To find 
+\begin_inset Formula $\hat{{x}}$
+\end_inset
+
+ we must solve the normal equations 
+\begin_inset Formula $A^{T}A\hat{x}=A^{T}b$
+\end_inset
+
+.
+ However, since 
+\begin_inset Formula $A$
+\end_inset
+
+ only has two linearly independent columns we can simplify our calculations
+ by instead using the basis matrix 
+\begin_inset Formula $B=\begin{pmatrix}1 & 2\\
+0 & 1\\
+1 & 1\\
+1 & 0
+\end{pmatrix}$
+\end_inset
+
+ with 
+\begin_inset Formula $C(B)=C(A)$
+\end_inset
+
+, and solve the normal equations 
+\begin_inset Formula $B^{T}B\hat{x}=B^{T}b$
+\end_inset
+
+ to find 
+\begin_inset Formula $p=B\hat{x}$
+\end_inset
+
+.
+ We can calculate 
+\begin_inset Formula 
+\begin{align*}
+B^{T}B & =\begin{pmatrix}1 & 0 & 1 & 1\\
+2 & 1 & 1 & 0
+\end{pmatrix}\begin{pmatrix}1 & 2\\
+0 & 1\\
+1 & 1\\
+1 & 0
+\end{pmatrix}=\begin{pmatrix}3 & 3\\
+3 & 6
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+ and 
+\begin_inset Formula 
+\begin{align*}
+B^{T}b & =\begin{pmatrix}1 & 0 & 1 & 1\\
+2 & 1 & 1 & 0
+\end{pmatrix}\begin{pmatrix}0\\
+2\\
+1\\
+-1
+\end{pmatrix}=\begin{pmatrix}0\\
+3
+\end{pmatrix}.
+\end{align*}
+
+\end_inset
+
+The normal equations are then:
+\begin_inset Formula 
+\begin{align*}
+\begin{pmatrix}3 & 3\\
+3 & 6
+\end{pmatrix}\hat{x} & =\begin{pmatrix}0\\
+3
+\end{pmatrix}\\
+\implies\hat{x} & =\begin{pmatrix}-1\\
+1
+\end{pmatrix}.
+\end{align*}
+
+\end_inset
+
+Finally, we can compute
+\begin_inset Formula 
+\begin{align*}
+p & =B\hat{x}=\begin{pmatrix}1 & 2\\
+0 & 1\\
+1 & 1\\
+1 & 0
+\end{pmatrix}\begin{pmatrix}-1\\
+1
+\end{pmatrix}=\boxed{\begin{pmatrix}1\\
+1\\
+0\\
+-1
+\end{pmatrix}}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Problem 3 (33 points):
+\end_layout
+
+\begin_layout Standard
+Suppose that we apply Gram–Schmidt to the 
+\emph on
+rows
+\emph default
+ (in order from top to bottom) of a matrix 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cccc}
+1 & 1 & 0 & 1\\
+1 & 0 & 0 & 1\\
+0 & 0 & 1 & 1
+\end{array}\right)
+\]
+
+\end_inset
+
+in order to find three 
+\series bold
+orthonormal row vectors
+\series default
+ 
+\begin_inset Formula $q_{1}^{T},q_{2}^{T},q_{3}^{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+What is 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+Suppose that these orthonormal vectors are the 
+\series bold
+rows
+\series default
+ of a matrix 
+\begin_inset Formula $U=\left(\begin{array}{c}
+q_{1}^{T}\\
+q_{2}^{T}\\
+q_{3}^{T}
+\end{array}\right)$
+\end_inset
+
+.
+ Then:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\series bold
+Circle any
+\series default
+ of the following that are 
+\series bold
+true
+\series default
+: 
+\begin_inset Formula $U^{T}U=I$
+\end_inset
+
+ and/or 
+\begin_inset Formula $UU^{T}=I$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Circle any
+\series default
+ of the following that are 
+\series bold
+true
+\series default
+: 
+\begin_inset Formula $C(A)=C(U)$
+\end_inset
+
+, 
+\begin_inset Formula $N(A)=N(U)$
+\end_inset
+
+, 
+\begin_inset Formula $C(A^{T})=C(U^{T}),$
+\end_inset
+
+ and/or 
+\begin_inset Formula $N(A^{T})=N(U^{T})$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+Which is 
+\series bold
+true
+\series default
+: 
+\begin_inset Formula $A=BU$
+\end_inset
+
+ or 
+\begin_inset Formula $A=UB$
+\end_inset
+
+ ? Is 
+\begin_inset Formula $B$
+\end_inset
+
+ upper or lower triangular?
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+The rows of 
+\begin_inset Formula $A$
+\end_inset
+
+ are 
+\begin_inset Formula $a^{T},$
+\end_inset
+
+ 
+\begin_inset Formula $b^{T}$
+\end_inset
+
+and 
+\begin_inset Formula $c^{T}$
+\end_inset
+
+where
+\begin_inset Formula 
+\begin{align*}
+a= & \begin{pmatrix}1\\
+1\\
+0\\
+1
+\end{pmatrix},b=\begin{pmatrix}1\\
+0\\
+0\\
+1
+\end{pmatrix},c=\begin{pmatrix}0\\
+0\\
+1\\
+1
+\end{pmatrix}.
+\end{align*}
+
+\end_inset
+
+We can use Gram-Schmidt to first find three orthogonal vectors 
+\begin_inset Formula $u_{1},$
+\end_inset
+
+ 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $u_{3}$
+\end_inset
+
+.
+ We let 
+\begin_inset Formula $u_{1}=a$
+\end_inset
+
+, then
+\begin_inset Formula 
+\begin{align*}
+u_{2} & =b-\frac{u_{1}^{T}b}{u_{1^{T}}u_{1}}u_{1}=\begin{pmatrix}1\\
+0\\
+0\\
+1
+\end{pmatrix}-\frac{{2}}{3}\begin{pmatrix}1\\
+1\\
+0\\
+1
+\end{pmatrix}=\frac{{1}}{3}\begin{pmatrix}1\\
+-2\\
+0\\
+1
+\end{pmatrix}.
+\end{align*}
+
+\end_inset
+
+We can then normalize 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+ to obtain 
+\begin_inset Formula $q_{2}=\frac{{u_{2}}}{\Vert u_{2}\Vert}$
+\end_inset
+
+.
+ Now 
+\begin_inset Formula $\Vert u_{2}\Vert=\frac{{\sqrt{{6}}}}{3}$
+\end_inset
+
+ and so 
+\begin_inset Formula 
+\begin{align*}
+q_{2} & =\boxed{\frac{{1}}{\sqrt{{6}}}\begin{pmatrix}1\\
+-2\\
+0\\
+1
+\end{pmatrix}}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Note that 
+\begin_inset Formula $q_{1},q_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{3}$
+\end_inset
+
+ are the orthonormal columns that you would obtain by applying Gram-Schmidt
+ to the columns of 
+\begin_inset Formula $A^{T}$
+\end_inset
+
+ , i.e.
+ 
+\begin_inset Formula $A^{T}=QR$
+\end_inset
+
+, where the columns of 
+\begin_inset Formula $Q$
+\end_inset
+
+ are 
+\begin_inset Formula $q_{1},q_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{3}$
+\end_inset
+
+ .
+ This means that 
+\begin_inset Formula $U=Q^{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $Q^{T}Q=I$
+\end_inset
+
+ for any orthogonal matrix, it follows that 
+\begin_inset Formula $\boxed{UU^{T}=I}$
+\end_inset
+
+: this is the dot product of every row of 
+\begin_inset Formula $U$
+\end_inset
+
+ with every other row.
+ However, since 
+\begin_inset Formula $Q$
+\end_inset
+
+ is not square, 
+\begin_inset Formula $QQ^{T}\neq I$
+\end_inset
+
+ and so 
+\begin_inset Formula $U^{T}U\neq I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $A$
+\end_inset
+
+ has rank 3, it has full column rank.
+ This means that 
+\begin_inset Formula $C(A)=\mathbb{{R}}^{3}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $U$
+\end_inset
+
+ also has full column rank, meaning that 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $C(U)=\mathbb{{R}}^{3}$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $C(A)=C(U)$
+\end_inset
+
+.
+ Since we obtain 
+\begin_inset Formula $U$
+\end_inset
+
+ by applying invertible row operations to 
+\begin_inset Formula $A$
+\end_inset
+
+, both the null space and row space of 
+\begin_inset Formula $A$
+\end_inset
+
+ will be unchanged; equivalently, Gram–Schmidt 
+\family default
+\series default
+\shape default
+\size default
+\emph on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+always
+\emph default
+ finds an 
+\series bold
+orthonormal basis for the same space
+\series default
+, in this case the row space.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ Hence 
+\begin_inset Formula $N(A)=N(U)$
+\end_inset
+
+ and 
+\begin_inset Formula $C(A^{T})=C(U^{T})$
+\end_inset
+
+.
+ Finally, since 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $U$
+\end_inset
+
+ have full column rank, the dimension of their left nullspaces will both
+ be 
+\begin_inset Formula $0$
+\end_inset
+
+ and so 
+\begin_inset Formula $N(A^{T})=N(U^{T})$
+\end_inset
+
+ trivially.
+ 
+\end_layout
+
+\begin_layout Enumerate
+We know that 
+\begin_inset Formula $A^{T}=QR$
+\end_inset
+
+ where 
+\begin_inset Formula $R$
+\end_inset
+
+ is always upper triangular.
+ Taking the transpose of this equation gives 
+\begin_inset Formula $A=R^{T}Q^{T}=BU$
+\end_inset
+
+, and so 
+\begin_inset Formula $B=R^{T}$
+\end_inset
+
+ is 
+\series bold
+lower triangular
+\series default
+.
+ 
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
