@@ -498,3 +498,60 @@ Exam 2 will cover the material through **lecture 17** and **pset 7**: exam-1 mat
 **Review session:** Thursday 10/25, 4-5pm, in 4-370.  Covered fall 2017 exam 2 problem 1b-1c, spring 2017 exam 2 problems 1-3, fall 2008 exam 2 problem 4, spring 2009 exam 2 orthogonal-function practice problem 2.
 
 **Practice problems:** [fall 2017 exam 2](https://github.com/stevengj/1806/blob/fall17/exams/exam2.pdf) ([solutions](https://github.com/stevengj/1806/blob/fall17/exams/exam2-sol.pdf)); [spring 2018 exam 2](https://web.mit.edu/18.06/www/quiz2.1806.s18.pdf) ([solutions](https://web.mit.edu/18.06/www/quiz2solutions.pdf)) problems 1–2; [spring 2017 exam 2](http://web.mit.edu/18.06/www/Spring17/exam2.pdf)  ([solutions](http://web.mit.edu/18.06/www/Spring17/exam2-sol.pdf)) problems 1(b,c), 2, 3; [fall 2014 exam 1](http://web.mit.edu/18.06/www/Fall14/midterm1_F14.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall14/Midterm1solF14.pdf)) problems 3,4; [fall 2014 exam 2](http://web.mit.edu/18.06/www/Fall14/midterm2_F14.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall14/Midterm2solF14.pdf)) problem 1; [spring 2014 exam 1](http://web.mit.edu/18.06/www/Spring14/quiz_1_draft.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring14/quiz_1_solution.pdf)) problem 3; [spring 2014 exam 2](http://web.mit.edu/18.06/www/Spring14/quiz_2_draft.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring14/StrangExamAprilSolutions.pdf)) problems 1,2,4; [spring 2013 exam 2](http://web.mit.edu/18.06/www/Spring13/Exam2blank.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring13/Exam2.pdf)) problems 1, 3; [fall 2012 exam 2](http://web.mit.edu/18.06/www/Fall12/Exam%202/quiz2-1806-f12.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall12/Exam%202/quiz2-1806-f12-sol.pdf)) problems 1,3; [spring 2009](http://web.mit.edu/18.06/www/Spring09/quiz1-s09.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring09/quiz1-s09-soln.pdf)) problem 3; [spring 2009 practice exam 2](http://web.mit.edu/18.06/www/Spring09/practice-quiz2-S09.pdf) problems 1–17 and the 2 orthogonal-function problems at the end; [spring 2009 exam 2](http://web.mit.edu/18.06/www/Spring09/quiz2-s09.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring09/quiz2-s09-soln.pdf)) problem 1–3
+
+## Lecture 20 (October 29)
+
+* [Determinants notebook](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall17/lectures/Determinants.ipynb)
+
+Finished notebook on determinants and their properties.
+
+Started on our main topic for exam 3, **eigenvalues and eigenvectors**.  The goal, for an m×m matrix A, is to find a "magic" vector x≠0 such that Ax=λx: for this special "eigenvector", the **matrix acts just like a scalar** λ (the "eigenvalue").   For such a vector, all of linear algebra would become trivially easy, for example A³x=λ³x and A⁻¹x=x/λ.
+
+The trick is to figure out for **what λ an eigenvector exists**, and the key is to realize that Ax=λx is equivalent to (A-λI)x=0: an **eigenvector is a nonzero vector in N(A-λI)**.  Such a nonzero nullspace vector only exists when A-λI is singular, or equivalently **det(A-λI)=0**.  This gives us a way to find eigenvalues λ, and then to find the corresponding eigenvectors x.
+
+**Further reading:** Determinants: Strang, section 5.1 and video [lecture 18](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants).  (We will mostly skip Strang, section 5.2 and 5.3, because the formulas in those sections are nearly useless in computational settings for large matrices, as explained in the notebook.) Eigenvalues: Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).
+
+## Upcoming Lecture 21 (October 31)
+
+* [Eigenvalues and polynomials](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall17/lectures/Eigenvalue-Polynomials.ipynb)
+
+Eigenvalues and eigenvectors.
+
+The eigenvalues are the roots of the characteristic polynomial det(A–λI). This
+is a good way to *think* about eigenvalue problems (e.g. it tells you immediately
+to expect ≤ m eigenvalues, possibly complex, from an m×m matrix).  But it is not
+really a good way to compute them except for tiny (e.g. 2×2) matrices.
+
+In fact, it's actually the reverse: one of the best ways to compute roots of
+polynomials is to convert the polynomial into a matrix and find the eigenvalues.
+Showed how this is done, by constructing the *companion matrix* to a polynomial.
+
+The actual way eigenvalues are computed is a topic for another class (e.g. 18.335);
+in 18.06, we will focus mainly on their properties and usage.  The computer
+will mostly handle finding them.
+
+Started using the *basis* of eigenvectors:
+
+* The key way we use eigenvectors is to take *any* vector x and write it in the basis of eigenvectors xᵢ.  Then, for any linear operation involving A, you replace A by the number λᵢ when acting on each xᵢ.  Finally, you add up the eigenvectors.
+
+Applied this process to the 2×2 matrix from the notebook, expanding the vector x=(3,4)=2x₁+x₂.   Then, for example, A⁻¹ or A¹⁰⁰ or A⁻¹⁰⁰ acting on x just becomes λ⁻¹ or λ¹⁰⁰ or λ⁻¹⁰⁰ multiplying each eigenvector.    We can see that, for example, A¹⁰⁰x is approximately parallel to x₂ (the eigenvector with the biggest |λ|), and that Aⁿx blows up as n⟶+∞ and vanishes as n⟶-∞.  Matrix powers turn out to be incredibly useful, so we will spend more time on this in subsequent lectures.
+
+**Further reading:** Strang, section 6.1 and video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/)
+
+## Upcoming Lecture 22 (November 2)
+
+* [Diagonalization](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall17/lectures/Diagonalization.ipynb)
+
+Covered **diagonalization** of a matrix: the process of expanding a vector in the basis of eigenvectors, then multiplying each one by λ, then adding up the eigenvectors with the new coefficients, can be thought of as the matrix factorization A=XΛX⁻¹, where X is the matrix whose columns are the eigenvectors.   This only works if X is invertible: i.e. when for an m×m matrix A we have m eigenvalues (possibly repeated) and m independent eigenvectors (a *basis* of eigenvectors).  Such a matrix is called **diagonalizable**.
+
+It turns out that **almost all matrices in practice are diagonalizable**, so for the most part we will only deal with diagonalizable matrices in 18.06.  The exceedingly rare exceptions are called **defective** matrices (and can only occur when there are *repeated roots* in the characteristic polynomial); we will talk about such defective (non-diagonalizable) cases much later.
+
+Defined [similar matrices](https://en.wikipedia.org/wiki/Matrix_similarity) B=M⁻¹AM, and showed that similar matrices have the same *eigenvalues* (with eigenvectors related by a factor of M), the same *determinant*, the same *characteristic polynomial*, and the same *trace*.  Defined the [trace](https://en.wikipedia.org/wiki/Trace_(linear_algebra)) of a matrix tr(A),
+and showed tr(AB)=tr(BA) for any m×n matrix A and n×m matrix B.  (We saw in lecture 12 that similar matrices essentially
+represent the *same linear operation in a different coordinate system.*)  In hindsight, we
+now see that a diagonalizable matrix A is *similar to a diagonal matrix Λ*.  Hence, we
+see that det(A) is the *product* of the eigenvalues and tr(A) is the *sum* of the eigenvalues.
+
+For a 2×2 matrix, it follows that det(A-λI)=λ²-λtr(A)+det(A), which is a useful formula when solving 2×2 eigenproblems.
+
+**Further reading:** Strang, section 6.2; video [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/) and video [lecture 28](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-28-similar-matrices-and-jordan-form/).
