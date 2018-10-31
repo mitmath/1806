@@ -513,7 +513,7 @@ The trick is to figure out for **what λ an eigenvector exists**, and the key is
 
 **Further reading:** Determinants: Strang, section 5.1 and video [lecture 18](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants).  (We will mostly skip Strang, section 5.2 and 5.3, because the formulas in those sections are nearly useless in computational settings for large matrices, as explained in the notebook.) Eigenvalues: Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).
 
-## Upcoming Lecture 21 (October 31)
+## Lecture 21 (October 31)
 
 * [Eigenvalues and polynomials](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Eigenvalue-Polynomials.ipynb)
 
