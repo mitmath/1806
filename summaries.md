@@ -538,7 +538,7 @@ Started using the *basis* of eigenvectors:
 
 Applied this process to the 2×2 matrix from the notebook, expanding the vector x=(3,4)=2x₁+x₂.   Then, for example, A⁻¹ or A¹⁰⁰ or A⁻¹⁰⁰ acting on x just becomes λ⁻¹ or λ¹⁰⁰ or λ⁻¹⁰⁰ multiplying each eigenvector.    We can see that, for example, A¹⁰⁰x is approximately parallel to x₂ (the eigenvector with the biggest |λ|), and that Aⁿx blows up as n⟶+∞ and vanishes as n⟶-∞.  Matrix powers turn out to be incredibly useful, so we will spend more time on this in subsequent lectures.
 
-**Further reading:** Strang, section 6.1 and video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/)
+**Further reading:** Strang, section 6.1 and video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).   Since we will now start dealing more and more with complex numbers (including matrices and vectors with complex entries), now would be a good time to review basic facts about complex numbers.   [These 18.03 notes are a helpful summary](https://math.mit.edu/~stoopn/18.031/complexnumbers.pdf), and there are lots of other resources online including these [easy Khan Academy videos](https://www.khanacademy.org/math/algebra2/introduction-to-complex-numbers-algebra-2).
 
 ## Upcoming Lecture 22 (November 2)
 
