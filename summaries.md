@@ -515,6 +515,8 @@ The trick is to figure out for **what λ an eigenvector exists**, and the key is
 
 ## Lecture 21 (October 31)
 
+* [pset 8 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset8sol.ipynb)
+* pset 9 coming soon (due Wed Nov 7 at 10:55am)
 * [Eigenvalues and polynomials](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Eigenvalue-Polynomials.ipynb)
 
 Eigenvalues and eigenvectors.
