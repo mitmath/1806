@@ -542,9 +542,10 @@ Applied this process to the 2×2 matrix from the notebook, expanding the vector 
 
 **Further reading:** Strang, section 6.1 and video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).   Since we will now start dealing more and more with complex numbers (including matrices and vectors with complex entries), now would be a good time to review basic facts about complex numbers.   [These 18.03 notes are a helpful summary](https://math.mit.edu/~stoopn/18.031/complexnumbers.pdf), and there are lots of other resources online including these [easy Khan Academy videos](https://www.khanacademy.org/math/algebra2/introduction-to-complex-numbers-algebra-2).
 
-## Upcoming Lecture 22 (November 2)
+## Lecture 22 (November 2)
 
 * [Diagonalization](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Diagonalization.ipynb)
+* [Recurrences and Fibonacci numbers](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Fibonacci.ipynb)
 
 Covered **diagonalization** of a matrix: the process of expanding a vector in the basis of eigenvectors, then multiplying each one by λ, then adding up the eigenvectors with the new coefficients, can be thought of as the matrix factorization A=XΛX⁻¹, where X is the matrix whose columns are the eigenvectors.   This only works if X is invertible: i.e. when for an m×m matrix A we have m eigenvalues (possibly repeated) and m independent eigenvectors (a *basis* of eigenvectors).  Such a matrix is called **diagonalizable**.
 
@@ -558,4 +559,17 @@ see that det(A) is the *product* of the eigenvalues and tr(A) is the *sum* of th
 
 For a 2×2 matrix, it follows that det(A-λI)=λ²-λtr(A)+det(A), which is a useful formula when solving 2×2 eigenproblems.
 
-**Further reading:** Strang, section 6.2; video [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/) and video [lecture 28](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-28-similar-matrices-and-jordan-form/).
+As an application of matrix powers, considered the famous [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number) 1,1,2,3,5,8,13,21,….  The n-th Fibonacci number fₙ satisfies the [linear recurrence relation](http://mathworld.wolfram.com/LinearRecurrenceEquation.html) fₙ=fₙ₋₁+fₙ₋₂, which we can express in terms of multiplication by a 2×2 matrix F that gives (fₙ,fₙ₋₁) from (fₙ₋₁,fₙ₋₂).  We found that the eigenvalues of F are (1±√5)/2.  The larger of these eigenvalues, (1+√5)/2≈1.618, is the so-called [golden ratio](https://en.wikipedia.org/wiki/Golden_ratio), and it means that the Fibonacci numbers blow up exponentially fast for large n.  Furthermore, we showed that the *ratio* fₙ/fₙ₋₁ of successive Fibonacci numbers goes to the golden ratio for large n.   Checked these facts numerically with a Julia notebook.
+
+## Upcoming Lecture 23 (November 4)
+
+* [Markov matrices](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Markov.ipynb)
+* [Analyzing Chutes & Ladders](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Chutes-and-Ladders.ipynb)
+
+[Markov matrices](https://en.wikipedia.org/wiki/Stochastic_matrix): see notebook.
+
+Spent a little time on an example of a Markov-matrix application: analyzing the game "Chutes and Ladders".   (Note that this is not a statistics class, so the calculations analyzing the probability distribution of the number of moves were just for fun.)
+
+**Further reading:** Strang, section 8.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).
+
+**Further reading:** Strang, section 6.2 and 6.6; video [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/) and video [lecture 28](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-28-similar-matrices-and-jordan-form/).
