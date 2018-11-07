@@ -574,12 +574,12 @@ Spent a little time on an example of a Markov-matrix application: analyzing the 
 
 **Further reading:** Strang, section 8.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).
 
-## Upcoming Lecture 24 (November 7)
+## Lecture 24 (November 7)
 
 * pset 9 solutions coming soon
 * pset 10 coming soon (due Wed. Nov. 14 at 10:55am)
-* [Power method](http://nbviewer.jupyter.org/github/stevengj/1806/blob/spring17/lectures/Power-Method.ipynb)
-* [Ordinary differential equations (ODEs)](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall17/lectures/ODEs.ipynb).
+* [Power method](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Power-Method.ipynb)
+* [Ordinary differential equations (ODEs)](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/ODEs.ipynb).
 
 Discussed how multiplying by a matrix repeatedly is actually a starting point
 for many practical algorithms to compute eigenvectors and eigenvalues: the most
@@ -595,7 +595,7 @@ Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki
 
 ## Upcoming Lecture 25 (November 9)
 
-* [Matrix exponentials eᴬ](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall17/lectures/Matrix-Exponentials.ipynb).
+* [Matrix exponentials eᴬ](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Matrix-Exponentials.ipynb).
 
 Continued discussion of ODEs from last lecture, focusing now on oscillating solutions and complex eigenvalues λ (see notebook).   Then reformulated the solution of dx/dt=Ax in terms of the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential) eᴬᵗ, and discussed the properties of this fascinating and important matrix operation.
 
