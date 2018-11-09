@@ -593,7 +593,7 @@ Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki
 
 **Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).
 
-## Upcoming Lecture 25 (November 9)
+## Lecture 25 (November 9)
 
 * [Matrix exponentials eᴬ](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Matrix-Exponentials.ipynb).
 
