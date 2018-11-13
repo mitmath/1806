@@ -572,7 +572,7 @@ As an application of matrix powers, considered the famous [Fibonacci numbers](ht
 
 Spent a little time on an example of a Markov-matrix application: analyzing the game "Chutes and Ladders".   (Note that this is not a statistics class, so the calculations analyzing the probability distribution of the number of moves were just for fun.)
 
-**Further reading:** Strang, section 8.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).
+**Further reading:** Strang, section 10.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).
 
 ## Lecture 24 (November 7)
 
