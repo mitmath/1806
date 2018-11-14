@@ -599,7 +599,7 @@ Continued discussion of ODEs from last lecture, focusing now on oscillating solu
 
 # Lecture 26 (November 14)
 
-* pset 10 solutions coming soon
+* [pset 10 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset10sol.ipynb)
 * pset 11 coming soon (due Nov. 21).
 * [Matrix exponentials eᴬ](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Matrix-Exponentials.ipynb).
 
