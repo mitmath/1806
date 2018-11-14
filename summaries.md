@@ -595,13 +595,21 @@ Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki
 
 ## Lecture 25 (November 9)
 
+Continued discussion of ODEs from last lecture, focusing now on oscillating solutions and complex eigenvalues λ (see notebook).   Started talking about matrix exponentials from next lecture.
+
+# Lecture 26 (November 14)
+
+* pset 10 solutions coming soon
+* pset 11 coming soon (due Nov. 21).
 * [Matrix exponentials eᴬ](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Matrix-Exponentials.ipynb).
 
-Continued discussion of ODEs from last lecture, focusing now on oscillating solutions and complex eigenvalues λ (see notebook).   Then reformulated the solution of dx/dt=Ax in terms of the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential) eᴬᵗ, and discussed the properties of this fascinating and important matrix operation.
+Reformulated the solution of dx/dt=Ax in terms of the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential) eᴬᵗ, and discussed the properties of this fascinating and important matrix operation.
+
+Begin discussing symmetric and Hermitian matrices from the next lecture.
 
 **Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).
 
-## Upcoming Lecture 26 (November 12)
+## Upcoming Lecture 27 (November 12)
 
 Began discussing **symmetric matrices**.  A real-symmetric matrix A
 (i.e. a real A where A = Aᵀ), has three key properties:
