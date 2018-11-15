@@ -600,7 +600,7 @@ Continued discussion of ODEs from last lecture, focusing now on oscillating solu
 # Lecture 26 (November 14)
 
 * [pset 10 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset10sol.ipynb)
-* pset 11 coming soon (due Nov. 21).
+* [pset 11](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset11.ipynb) (due Wed. Nov. 21 at 10:55am)
 * [Matrix exponentials eᴬ](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Matrix-Exponentials.ipynb).
 
 Reformulated the solution of dx/dt=Ax in terms of the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential) eᴬᵗ, and discussed the properties of this fascinating and important matrix operation.
