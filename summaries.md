@@ -609,7 +609,7 @@ Begin discussing symmetric and Hermitian matrices from the next lecture.
 
 **Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).
 
-## Upcoming Lecture 27 (November 12)
+## Lecture 27 (November 16)
 
 Began discussing **symmetric matrices**.  A real-symmetric matrix A
 (i.e. a real A where A = Aᵀ), has three key properties:
@@ -663,4 +663,61 @@ Since x≠0 for any eigenvector, we have xᴴx>0 and can divide by it to obtain
 λ=λ̄, which means that **λ is real**.  (It follows that the eigenvector x is also real *if*
 the matrix A is real-symmetric.)
 
+Similarly, given two eigensolutions Ax₁=λ₁x₁ and Ax₂=λ₂x₂ with λ₁≠λ₂, we
+can take the dot product x₁ᴴAx₂=λ₂x₁ᴴx₂=⋯, and after a couple of lines
+we immediately found x₁ᴴx₂=0.  The **eigenvectors are orthogonal**, and
+they can be chosen (scaled) to be **orthonormal**.
+
+I didn't prove diagonalizability.  (There are various proofs you can easily find online.  See e.g. [this video](https://www.youtube.com/watch?v=_2gGqEGA_IY) if you are curious, but
+they seem slightly too tricky for 18.06.)
+
+Since a **Hermitian matrix has an orthonormal basis of eigenvectors**, we
+can call the eigenvectors q₁,q₂,⋯, and put them as the columns of a
+**unitary** matrix Q (= orthogonal if A is real).  (Formerly, we called this X.)
+We can write:
+
+* A = QΛQᴴ = ∑ₖ λₖqₖqₖᴴ
+
+Equivalently, to **expand an arbitrary vector x** in the eigenvector basis,
+we **just need to take dot products**.   Formerly, to write x=∑ₖcₖxₖ, to find
+the coefficients c we had to solve Xx=x, or c=X⁻¹x.   Now, to write x=∑ₖcₖqₖ,
+the coefficients are just **cₖ=qₖᴴx**, or x=∑ₖqₖ(qₖᴴx).  *Expressing a vector
+in an orthonormal basis is easy.*
+
+Gave some examples of how you could use this to more easily understand
+e.g. working out Aⁿx if A is Hermitian (or real-symmetric).
+
 **Further reading:** Strang, sections 6.3–6.4, 9.2; video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/), [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/), and [lecture 26](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/).
+
+## Upcoming Lecture 28 (November 19)
+
+### Positive-definite/semidefinite matrices
+
+A lot of Hermitian matrices in practice come in the form BᴴB (or BᵀB for real B)
+for some matrix B.  e.g. we have seen several of these already, in least-squares
+and circuit/graph problems.   Such matrices are not only Hermitian, but they
+are **positive-definite**.
+
+In particular, a positive-definite matrix A is a Hermitian matrix A=Aᴴ that
+*additionally* has the following *equivalent* properties:
+
+* All eigenvalues λ of A are > 0.
+* xᴴAx > 0 for *any* vector x≠0.
+* A = BᴴB for some full-column-rank matrix B
+* All the pivots are > 0 in Gaussian elimination of A.
+
+These are all *equivalent*: any one of these properties implies *all* of
+the other properties for a Hermitian A.   I proved a couple of the equivalencies,
+but not all; some more equivalencies are proved in the textbook.
+
+A positive **semidefinite** matrix is almost the same, except you replace
+"> 0" with "≥ 0", and A = BᴴB is positive semidefinite for *any* B (not necessarily full rank).  (The pivots are > 0, but A may be singular.)
+
+(There are also "negative definite" and "negative semidefinite" matrices, which
+are the same things except with the opposites signs, i.e. "< 0" or "≤ 0" above.)
+
+### Eigenvalues and the SVD
+
+Connection of SVD to eigenvalues:  showed that the singular values σ² are the *nonzero eigenvalues* of *either* AᵀA *or* AAᵀ, the right singular vectors v are corresponding eigenvectors of  AᵀA, and the left singular vectors are eigenvectors of AAᵀ.   Long ago, we already showed that rank(AᵀA)=rank(AAᵀ)=rank(A)=rank(Aᵀ).   Now, showed that AᵀA and AAᵀ always have the *same nonzero eigenvalues*.  They can have different numbers of *zero* eigenvalues because N(AᵀA)=N(A) ≠ N(Aᵀ)=N(AAᵀ) in general.
+
+**Further reading:** Strang, sections 6.4–6.5, 9.2, and video [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/) and [lecture 26](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/).  Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/)
