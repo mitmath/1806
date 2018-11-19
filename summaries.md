@@ -714,10 +714,32 @@ are the same things except with the opposites signs, i.e. "< 0" or "≤ 0" above
 
 **Further reading:** Strang, sections 6.3–6.5, 9.2; video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/), [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/), and [lecture 26](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/).
 
-## Upcoming Lecture 28 (November 19)
+## Lecture 28 (November 19)
+
+* [SVD and eigenproblems](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/SVD-eigenproblem.ipynb)
 
 ### Eigenvalues and the SVD
 
 Connection of SVD to eigenvalues:  showed that the singular values σ² are the *nonzero eigenvalues* of *either* AᵀA *or* AAᵀ, the right singular vectors v are corresponding eigenvectors of  AᵀA, and the left singular vectors are eigenvectors of AAᵀ.   Long ago, we already showed that rank(AᵀA)=rank(AAᵀ)=rank(A)=rank(Aᵀ).   Now, showed that AᵀA and AAᵀ always have the *same nonzero eigenvalues*.  They can have different numbers of *zero* eigenvalues because N(AᵀA)=N(A) ≠ N(Aᵀ)=N(AAᵀ) in general.
 
+### Positive-definiteness and oscillating modes
+
+As an application of real-symmetric and positive-definite matrices, I returned
+to the system of masses and springs from lecture 25, but this time I considered
+n masses m and n+1 springs.   I showed that Newton's laws take the form:
+
+* mẍ = -DᵀKDx ⟹ ẍ = Ax, where D is an bidiagonal "difference" matrix, K is a diagonal matrix of spring constants, and A=-DᵀWD where W=K/m.
+
+A is obviously real-symmetric, so its eigenvalues λ are real.  With a little more work, we saw that it must be negative-definite.  In particular, take any eigensolution Ax=λx for x≠0.  We showed that xᵀAx=λxᵀx<0, which implies λ<0.  The reason is that xᵀAx=-xᵀDᵀWDx=-(Dx)ᵀWDx=-yᵀWy where y=Dx, and (i) y≠0 since D is full column rank (Dᵀ is upper triangular so we could just "read off" its rank), and (ii) W is a diagonal matrix of positive entries so it is automatically positive-definite, or alternatively we can just write out yᵀWy and see that it is positive for y≠0.
+
+The fact that A is negative definite allowed us to derive that *any* such system of masses and springs has *orthogonal oscillating solutions* called the [normal modes](https://en.wikipedia.org/wiki/Normal_mode). In particular, given the eigenvectors qⱼ (chosen orthonormal), satisfying Aqⱼ=λⱼqⱼ with λⱼ>0, we expanded the solution x(t)=∑ⱼcⱼqⱼ in the basis of these eigenvectors.  For each eigenvector component, the matrix A acts just like a number λ, allowing us to easily solve the equation c̈ⱼ=-λⱼcⱼ to get sines and cosines, and hence to get the general solution:
+
+* x(t) = ∑ⱼ [αⱼ cos(ωⱼt) + βⱼ sin(ωⱼt)] qⱼ
+
+where ωⱼ=√-λⱼ, and αⱼ and βⱼ are determined from the initial conditions x(0) and ẋ(0).  (You solved a similar problem in homework, except that there the matrix A had no special structure.)
+
+The key point is that the **structure** of the problem told us that λⱼ<0 and
+hence that the **frequencies** ωⱼ are **real** numbers.  (If they were complex, we would have exponentially growing or decaying solutions, which would make no physical sense for a system of lossless springs and masses.)  The moral of this story is that Hermitian and definite matrices don't just fall down out of the sky, they arise from how the matrix was constructed, and that these matrix properties are often the key to understanding the physical properties of real problems.
+
 **Further reading:** Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/)
+Strang, section 10.2.  See also [these notes on the springs-and-masses problem](http://math.mit.edu/~stevenj/18.303/lecture-5.5.pdf) from [18.303](http://math.mit.edu/~stevenj/18.303/) (you can ignore the last two pages, which go beyond 18.06, and ignore the Δx factor which is used in 18.303 to connect the discrete problem to a continuous problem).
