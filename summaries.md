@@ -743,3 +743,13 @@ hence that the **frequencies** ωⱼ are **real** numbers.  (If they were comple
 
 **Further reading:** Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/)
 Strang, section 10.2.  See also [these notes on the springs-and-masses problem](http://math.mit.edu/~stevenj/18.303/lecture-5.5.pdf) from [18.303](http://math.mit.edu/~stevenj/18.303/) (you can ignore the last two pages, which go beyond 18.06, and ignore the Δx factor which is used in 18.303 to connect the discrete problem to a continuous problem).
+
+## Exam 3 (Nov 30, 11am in 54-100)
+
+Exam 3 will cover the material through **lecture 28** and **pset 12**: exam-1 and exam-2 material, determinants, eigenvalues/eigenvectors, diagonalization, similar matrices, matrix powers and linear recurrences xₙ=Aⁿx₀, linear ODEs, matrix exponentials, complex matrices and the adjoint Aᴴ, real-symmetric/Hermitian matrices, positive-definite and semidefinite matrices, SVDs.
+
+* Review session: TBA
+
+* Practice problems: [Fall 2017 exam 3](https://github.com/stevengj/1806/blob/fall17/exams/exam3.pdf) ([solutions](https://github.com/stevengj/1806/blob/fall17/exams/exam3-sol.pdf)); [Spring 2009 exam 3](http://web.mit.edu/18.06/www/Spring09/examsS09.html); [Spring 2014 exam 3](http://web.mit.edu/18.06/www/Spring14/oldS14.html) ([solutions](http://web.mit.edu/18.06/www/Spring09/quiz3-s09-soln.pdf)); [Fall 2013 exam 2, problem 3](http://web.mit.edu/18.06/www/Fall13/exam2_f13.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall13/exam2_f13_sol.pdf)); [Fall 2013 exam 3](http://web.mit.edu/18.06/www/Fall13/oldF13.html) ([solutions](http://web.mit.edu/18.06/www/Fall13/exam3_f13_sol.pdf)); [Fall 2012 exam 3, problems 1, 3, 4](http://web.mit.edu/18.06/www/Fall12/oldF12.html) ([solutions](http://web.mit.edu/18.06/www/Fall12/Exam%203/quiz3-1806-f12-solution.pdf)); [Spring 2012 exam 3](http://web.mit.edu/18.06/www/Spring12/oldS12.html) ([solutions](http://web.mit.edu/18.06/www/Spring12/q3_sp12_sol.pdf)); [Fall 2011 exam 3, problems 1.1–1.2, 2, 3](http://web.mit.edu/18.06/www/Fall11/oldF11.html) ([solutions](http://web.mit.edu/18.06/www/Fall11/q3_f11_sol.pdf)); [Fall 2011 exam 2, problem 3](http://web.mit.edu/18.06/www/Fall11/q2_f11.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall11/q2_f11_sol.pdf)); [Fall 2007 exam 3](http://web.mit.edu/18.06/www/Fall07/examsF07.html) ([solutions](http://web.mit.edu/18.06/www/Fall07/quiz3-1806-F07-sol.pdf))
+
+* [Exam 3](exams/exam3.pdf) and [solutions](exams/exam3-sol.pdf).
