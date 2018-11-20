@@ -615,7 +615,7 @@ Began discussing **symmetric matrices**.  A real-symmetric matrix A
 (i.e. a real A where A = Aᵀ), has three key properties:
 
 * All the eigenvalues λ are **real**.  (It follows that the eigenvectors are real too.)
-* Eigenvalues for different λ are **orthogonal** (and hence eigenvectors can be chosen to be **orthonormal**).
+* Eigenvectors for different λ are **orthogonal** (and hence eigenvectors can be chosen to be **orthonormal**).
 * The matrix is always **diagonalizable** (no funny defective case).
 
 This is extremely important.  Just by looking at the *structure* of such a matrix,
