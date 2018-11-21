@@ -615,7 +615,7 @@ Began discussing **symmetric matrices**.  A real-symmetric matrix A
 (i.e. a real A where A = Aᵀ), has three key properties:
 
 * All the eigenvalues λ are **real**.  (It follows that the eigenvectors are real too.)
-* Eigenvalues for different λ are **orthogonal** (and hence eigenvectors can be chosen to be **orthonormal**).
+* Eigenvectors for different λ are **orthogonal** (and hence eigenvectors can be chosen to be **orthonormal**).
 * The matrix is always **diagonalizable** (no funny defective case).
 
 This is extremely important.  Just by looking at the *structure* of such a matrix,
@@ -759,3 +759,12 @@ Gave some examples (see notebook), and closed with the [eigen-walker data](http:
 
 **Further reading**: Strang book, sections 7.3, 12.1, 12.2.  Googling "principal components analysis" or looking it up in any applied-statistics textbook will give you a lot more detail and examples.
 
+## Exam 3 (Nov 30, 11am in 54-100)
+
+Exam 3 will cover the material through **lecture 28** and **pset 12**: exam-1 and exam-2 material, determinants, eigenvalues/eigenvectors, diagonalization, similar matrices, matrix powers and linear recurrences xₙ=Aⁿx₀, linear ODEs, matrix exponentials, complex matrices and the adjoint Aᴴ, real-symmetric/Hermitian matrices, positive-definite and semidefinite matrices, SVDs.
+
+* Review session: TBA
+
+* Practice problems: [Fall 2017 exam 3](https://github.com/stevengj/1806/blob/fall17/exams/exam3.pdf) ([solutions](https://github.com/stevengj/1806/blob/fall17/exams/exam3-sol.pdf)); [Spring 2009 exam 3](http://web.mit.edu/18.06/www/Spring09/examsS09.html); [Spring 2014 exam 3](http://web.mit.edu/18.06/www/Spring14/oldS14.html) ([solutions](http://web.mit.edu/18.06/www/Spring09/quiz3-s09-soln.pdf)); [Fall 2013 exam 2, problem 3](http://web.mit.edu/18.06/www/Fall13/exam2_f13.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall13/exam2_f13_sol.pdf)); [Fall 2013 exam 3](http://web.mit.edu/18.06/www/Fall13/oldF13.html) ([solutions](http://web.mit.edu/18.06/www/Fall13/exam3_f13_sol.pdf)); [Fall 2012 exam 3, problems 1, 3, 4](http://web.mit.edu/18.06/www/Fall12/oldF12.html) ([solutions](http://web.mit.edu/18.06/www/Fall12/Exam%203/quiz3-1806-f12-solution.pdf)); [Spring 2012 exam 3](http://web.mit.edu/18.06/www/Spring12/oldS12.html) ([solutions](http://web.mit.edu/18.06/www/Spring12/q3_sp12_sol.pdf)); [Fall 2011 exam 3, problems 1.1–1.2, 2, 3](http://web.mit.edu/18.06/www/Fall11/oldF11.html) ([solutions](http://web.mit.edu/18.06/www/Fall11/q3_f11_sol.pdf)); [Fall 2011 exam 2, problem 3](http://web.mit.edu/18.06/www/Fall11/q2_f11.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall11/q2_f11_sol.pdf)); [Fall 2007 exam 3](http://web.mit.edu/18.06/www/Fall07/examsF07.html) ([solutions](http://web.mit.edu/18.06/www/Fall07/quiz3-1806-F07-sol.pdf))
+
+* [Exam 3](exams/exam3.pdf) and [solutions](exams/exam3-sol.pdf).
