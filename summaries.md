@@ -743,3 +743,19 @@ hence that the **frequencies** ωⱼ are **real** numbers.  (If they were comple
 
 **Further reading:** Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/)
 Strang, section 10.2.  See also [these notes on the springs-and-masses problem](http://math.mit.edu/~stevenj/18.303/lecture-5.5.pdf) from [18.303](http://math.mit.edu/~stevenj/18.303/) (you can ignore the last two pages, which go beyond 18.06, and ignore the Δx factor which is used in 18.303 to connect the discrete problem to a continuous problem).
+
+# Lecture 28 (Nov. 21)
+
+* [Statistics and PCA](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Statistics-and-PCA.ipynb)
+* [Eigen-walker demo](https://www.biomotionlab.ca/Demos/BMLwalker.html)
+* pset 11 solutions coming soon
+* pset 12 coming soon
+
+Discussed the relationship of mean, variance, and covariance/correlation to linear algebra, expressing them in terms of dot products and projections.  Given an m×n matrix A whose rows are a bunch of different datasets, with the means subtracted, defined the covariance matrix S=AAᵀ/(n-1).   The eigenvectors of S define a coordinate system of *uncorrelated variables*, with the eigenvalues λ=σ² being the variances in each uncorrelated direction.   This is called **principal components analysis** in statistics, and allows us to identify the *uncorrelated variables that are responsible for most of the variation* (biggest σ²) in the data.
+
+Showed that PCA is exactly what the SVD of A gives us.  The left singular vectors of A are precisely the orthonormal eigenvectors of AAᵀ, and the singular values σ are precisely the square roots of the variances (if you normalize correctly).
+
+Gave some examples (see notebook), and closed with the [eigen-walker data](http://blogs.mathworks.com/cleve/2016/04/11/the-eigenwalker-model-of-the-human-gait/): PCA from a real experiment measuring human gaits, resulting in the cool animation of the singular vectors linked above.
+
+**Further reading**: Strang book, sections 7.3, 12.1, 12.2.  Googling "principal components analysis" or looking it up in any applied-statistics textbook will give you a lot more detail and examples.
+
