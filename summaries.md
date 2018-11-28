@@ -783,6 +783,9 @@ The main complication with functions is understanding when the operator is "diag
 
 # Lecture 31 (Nov. 28)
 
+* [pset 12 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset12sol.ipynb)
+* pset 13 coming soon (due Dec. 5)
+
 Similar to last lecture, if we solve ü=∂²u/∂t²=∂²u/∂x² (the [wave equation](https://en.wikipedia.org/wiki/Wave_equation)), it is essentially the same as ẍ=Ax from the previous mass-and-spring lecture: the solutions are **oscillating** with real frequencies ω=√-λ because the eigenvalues λ of ∂²/∂x² are < 0.
 
 The wonderful thing about this approach is that it allows us to derive real λ<0 and orthogonal eigenfunctions even in cases that we can't solve.  e.g. a slight variation is to consider the operator Bu=(cu′)′ for some given real function c(x)>0.  In this case, we can't find the eigenfunctions or eigenvalues analytically for most c(x), but essentially the same derivation again shows B=Bᴴ and negative-definite, so we know that the eigenvalues are real and positive and the eigenfunctions are orthogonal (an orthogonal basis).  In a diffusion equation u̇=(cu′)′, the function c(x) represents a variable "diffusivity" (or thermal conductivity) representing how easy it is to diffuse in different materials.  Even though we can no longer solve this problem analytically, we *still* know it has decaying solutions.  Or, in a wave equation ü=(cu′)′, the function c(x) could represent a variable "springiness" at different points in space (different materials), and we *still* know it has *oscillating* solutions.   This is an extremely powerful way to understand PDEs (which usually cannot be solved in closed form) by looking at their *structure*.
