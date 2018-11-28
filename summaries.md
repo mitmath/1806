@@ -744,7 +744,7 @@ hence that the **frequencies** ωⱼ are **real** numbers.  (If they were comple
 **Further reading:** Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/)
 Strang, section 10.2.  See also [these notes on the springs-and-masses problem](http://math.mit.edu/~stevenj/18.303/lecture-5.5.pdf) from [18.303](http://math.mit.edu/~stevenj/18.303/) (you can ignore the last two pages, which go beyond 18.06, and ignore the Δx factor which is used in 18.303 to connect the discrete problem to a continuous problem).
 
-# Lecture 28 (Nov. 21)
+# Lecture 29 (Nov. 21)
 
 * [Statistics and PCA](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Statistics-and-PCA.ipynb)
 * [Eigen-walker demo](https://www.biomotionlab.ca/Demos/BMLwalker.html)
@@ -759,7 +759,7 @@ Gave some examples (see notebook), and closed with the [eigen-walker data](http:
 
 **Further reading**: Strang book, sections 7.3, 12.1, 12.2.  Googling "principal components analysis" or looking it up in any applied-statistics textbook will give you a lot more detail and examples.
 
-# Lecture 29 (Nov. 26)
+# Lecture 30 (Nov. 26)
 
 Examined the analogues of Hermitian positive-definite matrices, matrix exponentials, etcetera, for *infinite-dimensional* linear algebra.  (This material will *not* be on the final.)   It turns out that this is tremendously important for understanding [partial differential equations (PDEs)](https://en.wikipedia.org/wiki/Partial_differential_equation) arising in science and engineering.
 
