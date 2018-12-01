@@ -784,7 +784,7 @@ The main complication with functions is understanding when the operator is "diag
 # Lecture 31 (Nov. 28)
 
 * [pset 12 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset12sol.ipynb)
-* pset 13 coming soon (due Dec. 5)
+* [pset 13](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset13.ipynb) (due Dec. 5 at 10:55am)
 
 Similar to last lecture, if we solve ü=∂²u/∂t²=∂²u/∂x² (the [wave equation](https://en.wikipedia.org/wiki/Wave_equation)), it is essentially the same as ẍ=Ax from the previous mass-and-spring lecture: the solutions are **oscillating** with real frequencies ω=√-λ because the eigenvalues λ of ∂²/∂x² are < 0.
 
