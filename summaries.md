@@ -815,3 +815,26 @@ Most matrices are diagonalizable.  (*Any* n×n matrix with n distinct eigenvalue
 To understand what happens with defective matrices, I introduce Jordan vectors (also called [generalized eigenvectors](https://en.wikipedia.org/wiki/Generalized_eigenvector) and Jordan chains.  I don't focus on formal proofs of the *existence* of these chains and the theoretical construct of the "Jordan form" of a matrix.  Instead, I want to explore their *consequences* for the Aⁿx and dx/dt=Ax types of problems that we have spent a lot of time on.  We show that, for a defective A, Aⁿx gives an extra term that grows as n×λⁿ, not just λⁿ!  And dx/dt=Ax gives an extra term that grows as t×exp(λt), not just exp(λt).
 
 **Further reading**: Strang book, section 8.3.  Going far beyond 18.06, there is a nice book, *Spectra and Pseudospectra* by Trefethen and Embree, entirely devoted to cases where diagonalization fails (or nearly fails).
+
+# Upcoming Lecture 33 (Dec 5)
+
+* [Errors and condition numbers](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Conditioning.ipynb)
+
+When doing numerical calculations, we keep running into little roundoff errors that arise from the computer only keeping a finite number of digits in its arithmetic.   Mostly, we've been ignoring these or waving our hands, but a huge branch of mathematics is devoted to the origin and propagation of **errors** in calculations.
+
+In this lecture, we take a first step in that subject by asking a simple question: if we solve Ax=b and have a little error Δb in b (either due to roundoff, or measurement errors, or something else), how big is the resulting error in Δx?   This deceptively simple question leads to lots of interesting topics, e.g. induced **matrix norms** and matrix **condition numbers**.
+
+**Further reading**: Strang, section 9.2.   For a much more thorough discussion of these topics, see classes like 18.335 or (to a lesser extent) 18.330, as well as more advanced textbooks like *Numerical Linear Algebra* by Trefethen and Bau.
+
+# Upcoming Lecture 34 (Dec 7)
+
+* [pset 12 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall17/psets/pset12-sol.ipynb)
+
+* [Dense and sparse linear algebra](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Dense-and-Sparse.ipynb)
+* [Power method for eigenproblems](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Power-Method.ipynb)
+
+Large-scale linear algebra: the computational techniques (but not the *conceptual approaches*) of linear algebra completely change when one looks at large-scale matrix problems (100000×100000 or more).  There, the focus turns to exploiting matrix **sparsity** (matrices that are mostly zero) and other structures that let you multiply matrices by vectors quickly (and let you avoid storing the whole matrix).
+
+This material will not be on the final exam, but is still very useful for practical applications of linear algebra!
+
+**Further reading**: Textbook, section 11.3 has some discussion of iterative methods.  More advanced treatments include the book *Numerical Linear Algebra* by Trefethen and Bao, and surveys of algorithms can be found in the *Templates* books for [Ax=b](http://www.netlib.org/linalg/html_templates/Templates.html) and [Ax=λx](http://web.cs.ucdavis.edu/~bai/ET/contents.html).  Sparse-direct solvers are described in detail by the book *Direct Methods for Sparse Linear Systems* by Davis.  The course 18.335 spends much more time on these methods.
