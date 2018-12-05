@@ -816,9 +816,10 @@ To understand what happens with defective matrices, I introduce Jordan vectors (
 
 **Further reading**: Strang book, section 8.3.  Going far beyond 18.06, there is a nice book, *Spectra and Pseudospectra* by Trefethen and Embree, entirely devoted to cases where diagonalization fails (or nearly fails).
 
-# Upcoming Lecture 33 (Dec 5)
+# Lecture 33 (Dec 5)
 
 * [Errors and condition numbers](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Conditioning.ipynb)
+* [pset 13 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/psets/pset13sol.ipynb)
 
 When doing numerical calculations, we keep running into little roundoff errors that arise from the computer only keeping a finite number of digits in its arithmetic.   Mostly, we've been ignoring these or waving our hands, but a huge branch of mathematics is devoted to the origin and propagation of **errors** in calculations.
 
