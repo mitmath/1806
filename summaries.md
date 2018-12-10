@@ -827,15 +827,33 @@ In this lecture, we take a first step in that subject by asking a simple questio
 
 **Further reading**: Strang, section 9.2.   For a much more thorough discussion of these topics, see classes like 18.335 or (to a lesser extent) 18.330, as well as more advanced textbooks like *Numerical Linear Algebra* by Trefethen and Bau.
 
-# Upcoming Lecture 34 (Dec 7)
+# Lecture 34 (Dec 7)
 
 * [pset 12 solutions](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall17/psets/pset12-sol.ipynb)
 
-* [Dense and sparse linear algebra](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Dense-and-Sparse.ipynb)
 * [Power method for eigenproblems](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Power-Method.ipynb)
+* [Dense and sparse linear algebra](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Dense-and-Sparse.ipynb)
 
 Large-scale linear algebra: the computational techniques (but not the *conceptual approaches*) of linear algebra completely change when one looks at large-scale matrix problems (100000×100000 or more).  There, the focus turns to exploiting matrix **sparsity** (matrices that are mostly zero) and other structures that let you multiply matrices by vectors quickly (and let you avoid storing the whole matrix).
+
+Discussed the example of the [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm used by Google and others.   This is essentially an enormous Markov matrix (# web pages by # web pages, whose entries indicate links), too big to even store, but it is mostly zero (each web page only links to a few other pages).  However, you can multiply by it much more quickly, and because of that the power method (and related methods) can be used to approximately find the steady state.
 
 This material will not be on the final exam, but is still very useful for practical applications of linear algebra!
 
 **Further reading**: Textbook, section 11.3 has some discussion of iterative methods.  More advanced treatments include the book *Numerical Linear Algebra* by Trefethen and Bao, and surveys of algorithms can be found in the *Templates* books for [Ax=b](http://www.netlib.org/linalg/html_templates/Templates.html) and [Ax=λx](http://web.cs.ucdavis.edu/~bai/ET/contents.html).  Sparse-direct solvers are described in detail by the book *Direct Methods for Sparse Linear Systems* by Davis.  The course 18.335 spends much more time on these methods.
+
+# Upcoming Lecture 35 (Dec 10)
+
+* [Dense and sparse linear algebra](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Dense-and-Sparse.ipynb)
+
+Continued material from last lecture.
+
+# Final Exam
+
+* **Review session**: TBA
+
+* Potential topics: all topics from exams 1–3, through lecture 31 and pset 13, including SVDs, potentially including function spaces and operators on functions.
+
+* Not covered: physics (i.e. you don't need to know any physics, but if you are *given* an equation from physics etcetera, you should of course be able to express/analyze it in linear-algebra form), Newton's method, statistics, sparse/iterative solvers (except for the [power method](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall17/lectures/Power-Method.ipynb), which is essentially exam-3 material), condition numbers and error bounds, Jordan vectors and defective matrices.
+
+* Practice problems: practice problems from exams 1–3.  [fall 2017 final](https://github.com/stevengj/1806/blob/fall17/exams/final.pdf) and [solutions](https://github.com/stevengj/1806/blob/fall17/exams/final-sol.pdf); [spring 2017 final](https://github.com/stevengj/1806/blob/spring17/exams/final.pdf) and [solutions](https://github.com/stevengj/1806/blob/spring17/exams/final-sol.pdf), [2016 ASE](https://github.com/stevengj/1806/blob/spring17/exams/2016-ase.pdf) and [solutions](https://github.com/stevengj/1806/blob/spring17/exams/2016-ase-sol.pdf); [spring 2009 final](http://web.mit.edu/18.06/www/Spring09/final-s09.pdf) and [solutions](http://web.mit.edu/18.06/www/Spring09/final-s09-soln.pdf); [fall 2007 practice final](http://web.mit.edu/18.06/www/Fall07/practicefinal-sol.pdf); [fall 2015 final](http://web.mit.edu/18.06/www/Fall15/FinalSols.pdf), problems 1–5,7; [spring 2013 final](http://web.mit.edu/18.06/www/Spring13/Examfblank.pdf) and [solutions](http://web.mit.edu/18.06/www/Spring13/final_s13_sol.pdf), problems 2,3,4,5,7; [spring 2007](http://web.mit.edu/18.06/www/Spring07/final.pdf) problems 1–5.  Also review your homework problems.
