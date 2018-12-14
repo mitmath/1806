@@ -856,7 +856,7 @@ Continued material from last lecture.
 
 # Final Exam
 
-* **Review session**: TBA
+* **Review session**: Dec 13, 3:30pm in 2-190.  Covered some problems from the fall 2017 final.
 
 * Potential topics: all topics from exams 1–3, through lecture 31 and pset 13, including SVDs, potentially including function spaces and operators on functions.
 
