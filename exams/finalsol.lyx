@@ -1,0 +1,1777 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{(\roman{enumii})}
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MIT 18.06 Final Exam, Fall 2018: Solutions
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 (5+10 points):
+\end_layout
+
+\begin_layout Standard
+The matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ has the diagonalization 
+\begin_inset Formula $A=X\Lambda X^{-1}$
+\end_inset
+
+ with 
+\begin_inset Formula 
+\[
+X=\left(\begin{array}{cccc}
+1 & 1 & -1 & 0\\
+ & 1 & 2 & 1\\
+ &  & 1 & 0\\
+ &  &  & 1
+\end{array}\right),\;\Lambda=\left(\begin{array}{cccc}
+1\\
+ & 2\\
+ &  & -2\\
+ &  &  & -1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Give a basis for the nullspace 
+\begin_inset Formula $N(M)$
+\end_inset
+
+ of the matrix 
+\begin_inset Formula $M=A^{4}-2A^{2}-8I$
+\end_inset
+
+.
+ (Hint: not much calculation required!)
+\end_layout
+
+\begin_layout Enumerate
+Write down the solution 
+\begin_inset Formula $x(t)$
+\end_inset
+
+ to the ODE 
+\begin_inset Formula $\frac{dx}{dt}=Ax$
+\end_inset
+
+ for 
+\begin_inset Formula $x(0)=\left(\begin{array}{c}
+2\\
+3\\
+1\\
+-1
+\end{array}\right).$
+\end_inset
+
+ Your final answer should contain no matrix exponentials or matrix inverses,
+ just a sum of vectors (whose components you give explicitly as numbers)
+ multiplied by given scalar coefficients (that may depend on
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $t$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+The eigenvalues of 
+\begin_inset Formula $A$
+\end_inset
+
+ are 
+\begin_inset Formula $\lambda=1,2,-2,-1$
+\end_inset
+
+, from 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+.
+ The eigenvalues of 
+\begin_inset Formula $M$
+\end_inset
+
+ are then 
+\begin_inset Formula $\lambda^{4}-2\lambda^{2}-8$
+\end_inset
+
+, with the same corresponding eigenvectors.
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ therefore has two zero eigenvalues (which come from the 
+\begin_inset Formula $\pm2$
+\end_inset
+
+ eigenvalues of 
+\begin_inset Formula $A$
+\end_inset
+
+), and so the corresponding eigenvectors are a basis for 
+\begin_inset Formula $N(M)$
+\end_inset
+
+, i.e.
+\begin_inset Formula 
+\[
+N(M)=\text{span of }\begin{pmatrix}1\\
+1\\
+0\\
+0
+\end{pmatrix},\begin{pmatrix}-1\\
+2\\
+1\\
+0
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+We know that the general solution to the ODE may be written as
+\begin_inset Formula 
+\[
+x(t)=c_{1}e^{t}\begin{pmatrix}1\\
+0\\
+0\\
+0
+\end{pmatrix}+c_{2}e^{2t}\begin{pmatrix}1\\
+1\\
+0\\
+0
+\end{pmatrix}+c_{3}e^{-2t}\begin{pmatrix}-1\\
+2\\
+1\\
+0
+\end{pmatrix}+c_{4}e^{-t}\begin{pmatrix}0\\
+1\\
+0\\
+1
+\end{pmatrix}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $c_{1},c_{2},c_{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{4}$
+\end_inset
+
+ are constants that are determined by the initial condition: 
+\begin_inset Formula $Xc=x(0)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $X$
+\end_inset
+
+ is upper triangular, we can solve for 
+\begin_inset Formula $c$
+\end_inset
+
+ by backsubstitution:
+\begin_inset Formula 
+\begin{align*}
+c_{1}+c_{2}-c_{3} & =2,\\
+c_{2}+2c_{3}+c_{4} & =3,\\
+c_{3} & =1,\\
+c_{4} & =-1.
+\end{align*}
+
+\end_inset
+
+Backsubstitution gives 
+\begin_inset Formula $c_{1}=1,c_{2}=2,c_{3}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{4}=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Problem 2 (3+3+3+3+3 points):
+\end_layout
+
+\begin_layout Standard
+The real 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ has a QR factorization 
+\begin_inset Formula $A=QR$
+\end_inset
+
+ of the form
+\begin_inset Formula 
+\[
+Q=\left(\begin{array}{cccccc}
+q_{1} & q_{2} & q_{3} & q_{4} & q_{5} & q_{6}\end{array}\right),\;R=\left(\begin{array}{cccccc}
+1 & -2 & 2 & 0 & 0 & 0\\
+ & 2 & -3 & 0 & 0 & 0\\
+ &  & 1 & 0 & 0 & 0\\
+ &  &  & 3 & 1 & -1\\
+ &  &  &  & 1 & 2\\
+ &  &  &  &  & 1
+\end{array}\right).
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $q_{1},\ldots,q_{6}$
+\end_inset
+
+ are six orthonormal vectors in 
+\begin_inset Formula $\mathbb{R}^{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Give as much true information as possible about 
+\begin_inset Formula $m$
+\end_inset
+
+, 
+\begin_inset Formula $n$
+\end_inset
+
+, and the rank of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $a_{5}$
+\end_inset
+
+ is the 5th column of 
+\begin_inset Formula $A$
+\end_inset
+
+, write it in the basis 
+\begin_inset Formula $q_{1},\ldots,q_{6}$
+\end_inset
+
+, i.e.
+ write it as 
+\begin_inset Formula $a_{5}=c_{1}q_{1}+c_{2}q_{2}+\cdots+c_{6}q_{6}$
+\end_inset
+
+, by giving the numerical values of the coefficients 
+\begin_inset Formula $c_{1},\cdots,c_{6}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Enumerate
+What is 
+\begin_inset Formula $\Vert a_{5}\Vert$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+This pattern of zero entries in 
+\begin_inset Formula $R$
+\end_inset
+
+ means that columns ..........
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+ must be ..........
+ to columns ..........
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ is a square matrix, what is 
+\begin_inset Formula $|\det A|$
+\end_inset
+
+ (the absolute value of the determinant)?
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $R$
+\end_inset
+
+ is 
+\begin_inset Formula $6\times6$
+\end_inset
+
+ , 
+\begin_inset Formula $A$
+\end_inset
+
+ must have 6 columns so that 
+\begin_inset Formula $n=6$
+\end_inset
+
+.
+ The column space of 
+\begin_inset Formula $A$
+\end_inset
+
+ is spanned by 6 orthonormal vectors, so the rank of 
+\begin_inset Formula $A$
+\end_inset
+
+ is 6.
+ The number of rows must be greater than or equal to the rank, so 
+\begin_inset Formula $m\geq6$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+From the QR factorization we see that 
+\begin_inset Formula $a_{5}=q_{4}+q_{5}$
+\end_inset
+
+: this is just 
+\begin_inset Formula $Q$
+\end_inset
+
+ multiplied by the 5th column of 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Vert a_{5}\Vert^{2}=a_{5}^{T}a_{5}=(q_{4}+q_{5})^{T}(q_{4}+q_{5})=\Vert q_{4}\Vert^{2}+\Vert q_{5}\Vert^{2}=2$
+\end_inset
+
+ (from orthonormality of the 
+\begin_inset Formula $q$
+\end_inset
+
+'s) and so 
+\begin_inset Formula $\Vert a_{5}\Vert=\sqrt{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+This pattern of zero entries in 
+\begin_inset Formula $R$
+\end_inset
+
+ means that columns 1–3 of 
+\begin_inset Formula $A$
+\end_inset
+
+ must be orthogonal to columns 4–6 of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ (Columns 1–3 of 
+\begin_inset Formula $A$
+\end_inset
+
+ are spanned by 
+\begin_inset Formula $q_{1},q_{2},q_{3}$
+\end_inset
+
+, whereas columns 4–6 are spanned by 
+\begin_inset Formula $q_{4},q_{5},q_{6}$
+\end_inset
+
+.
+ Equivalently, to get that 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ block of zeros in the upper-right corner of 
+\begin_inset Formula $R$
+\end_inset
+
+, a Gram–Schmidt process must have encountered dot products that were already
+ zero when projecting columns 4–6 to be orthogonal to the first three columns.)
+ 
+\end_layout
+
+\begin_layout Enumerate
+By properties of the determinant, we know that 
+\begin_inset Formula $\det{A}=\det{Q}\det{R}$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $Q$
+\end_inset
+
+ is an orthogonal matrix, we know that 
+\begin_inset Formula $\det{Q}=\pm1$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $R$
+\end_inset
+
+ is an upper triangular matrix, we know that 
+\begin_inset Formula $\det{R}$
+\end_inset
+
+ is the product of the diagonal elements of 
+\begin_inset Formula $R$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $\det{R}=6$
+\end_inset
+
+.
+ Hence, 
+\begin_inset Formula $\vert\det{A}\vert=6$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Problem 3 (8+3+4 points):
+\end_layout
+
+\begin_layout Standard
+You are given the matrix 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cccc}
+1 & 2 & 1 & 0\\
+2 & 5 & 1 & 1\\
+0 & 1 & 1 & 3
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Give bases for the four fundamental subspaces of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Which of 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ or 
+\begin_inset Formula $A^{T}y=c$
+\end_inset
+
+ will 
+\emph on
+not
+\emph default
+ have 
+\emph on
+unique
+\emph default
+ solutions for 
+\begin_inset Formula $x$
+\end_inset
+
+ or 
+\begin_inset Formula $y$
+\end_inset
+
+ (assuming a solution exists)? 
+\end_layout
+
+\begin_layout Enumerate
+Which of 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ or 
+\begin_inset Formula $A^{T}y=c$
+\end_inset
+
+ may 
+\emph on
+not have a solution
+\emph default
+? For that equation, 
+\series bold
+give a right-hand side
+\series default
+ (
+\begin_inset Formula $b$
+\end_inset
+
+ or 
+\begin_inset Formula $c$
+\end_inset
+
+) for which a solution exists, and that has only 
+\emph on
+two nonzero
+\emph default
+ entries in the right-hand side.
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+We can use row operations to put 
+\begin_inset Formula $A$
+\end_inset
+
+ into reduced row echelon form (rref):
+\begin_inset Formula 
+\[
+A\rightarrow\begin{pmatrix}1 & 0 & 0 & -5\\
+0 & 1 & 0 & 2\\
+0 & 0 & 1 & 1
+\end{pmatrix}.
+\]
+
+\end_inset
+
+From here we can see that 
+\begin_inset Formula $A$
+\end_inset
+
+ is a rank 3 matrix: The column space of 
+\begin_inset Formula $A$
+\end_inset
+
+ is three dimensional, but the column space of 
+\begin_inset Formula $A$
+\end_inset
+
+ is a subspace of 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+.
+ So any three, linearly independent vectors in 
+\begin_inset Formula $\mathbb{{R}}^{3}$
+\end_inset
+
+ will form a basis for 
+\begin_inset Formula $C(A)$
+\end_inset
+
+.
+ For example, we can use the standard basis, or we could use the columns
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+ that correspond to the pivot columns:
+\begin_inset Formula 
+\begin{align*}
+C(A) & =\text{span of }\begin{pmatrix}1\\
+0\\
+0
+\end{pmatrix},\begin{pmatrix}0\\
+1\\
+0
+\end{pmatrix},\begin{pmatrix}0\\
+0\\
+1
+\end{pmatrix}\\
+ & =\text{span of }\begin{pmatrix}1\\
+2\\
+0
+\end{pmatrix},\begin{pmatrix}2\\
+5\\
+1
+\end{pmatrix},\begin{pmatrix}1\\
+1\\
+1
+\end{pmatrix}.
+\end{align*}
+
+\end_inset
+
+The row space is also three dimensional.
+ Since the row space is preserved by row operations, we can use the rows
+ of the rref matrix (this is useful for part
+\begin_inset space ~
+\end_inset
+
+c):
+\begin_inset Formula 
+\[
+C(A^{T})=\text{span of }\begin{pmatrix}1\\
+0\\
+0\\
+-5
+\end{pmatrix},\begin{pmatrix}0\\
+1\\
+0\\
+2
+\end{pmatrix},\begin{pmatrix}0\\
+0\\
+1\\
+1
+\end{pmatrix}.
+\]
+
+\end_inset
+
+The nullspace has dimension 
+\begin_inset Formula $4-3=1$
+\end_inset
+
+.
+ So there is a single special solution to 
+\begin_inset Formula $Ax=0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+N(A)=\text{span of }\begin{pmatrix}5\\
+-2\\
+-1\\
+1
+\end{pmatrix}.
+\]
+
+\end_inset
+
+Finally, the left nullspace has dimension 
+\begin_inset Formula $3-3=0$
+\end_inset
+
+ , and so is a trivial vector space only containing the zero vector, i.e.
+\begin_inset Formula 
+\[
+N(A^{T})=\left\{ \vec{0}\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $\mbox{dim}(N(A))>0$
+\end_inset
+
+ , 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ does not have a unique solution: we can add any nonzero vector from the
+ nullspace to a particular solution of the system to get a different solution.
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $C(A^{T})\neq\mathbb{{R}}^{4}$
+\end_inset
+
+ , 
+\begin_inset Formula $A^{T}y=c$
+\end_inset
+
+ may not have a solution.
+ In fact, it will only have a solution if 
+\begin_inset Formula $c\in C(A^{T})$
+\end_inset
+
+.
+ To give an example of such a 
+\begin_inset Formula $c$
+\end_inset
+
+ with only two nonzero entries, we can use any of the three basis vectors
+ we wrote down in part
+\begin_inset space ~
+\end_inset
+
+(a), e.g.
+\begin_inset Formula 
+\[
+c=\begin{pmatrix}1\\
+0\\
+0\\
+-5
+\end{pmatrix}.
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Alternatively, we can use the fact that 
+\begin_inset Formula $C(A^{T})=N(A)^{\perp}$
+\end_inset
+
+: we only have a solution if 
+\begin_inset Formula $c\perp\begin{pmatrix}5\\
+-2\\
+-1\\
+1
+\end{pmatrix}$
+\end_inset
+
+, where we used the 
+\begin_inset Formula $N(A)$
+\end_inset
+
+ basis from (a).
+ So, for example, if we look for a 
+\begin_inset Formula $c$
+\end_inset
+
+ of the form 
+\begin_inset Formula $\begin{pmatrix}c_{1}\\
+c_{2}\\
+0\\
+0
+\end{pmatrix}$
+\end_inset
+
+, we get the condition 
+\begin_inset Formula $5c_{1}-2c_{2}=0$
+\end_inset
+
+.
+ For example, we could use 
+\begin_inset Formula $c=\begin{pmatrix}2\\
+5\\
+0\\
+0
+\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Problem 4 (5+10 points):
+\end_layout
+
+\begin_layout Standard
+A vector 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ minimizes 
+\begin_inset Formula $\Vert Ax-b\Vert$
+\end_inset
+
+ over all possible vectors 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\hat{x}=0$
+\end_inset
+
+, then 
+\begin_inset Formula $b$
+\end_inset
+
+ must be in which fundamental subspace of 
+\begin_inset Formula $A$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+1 & 2\\
+0 & 0\\
+0 & 0
+\end{array}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $b=\left(\begin{array}{c}
+1\\
+1\\
+1
+\end{array}\right)$
+\end_inset
+
+, what is the minimum possible 
+\begin_inset Formula $\Vert Ax-b\Vert$
+\end_inset
+
+? Describe (with as much detail as you can) 
+\emph on
+all possible
+\emph default
+ 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ that give this minimum.
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\hat{{x}}$
+\end_inset
+
+ minimizes 
+\begin_inset Formula $\Vert Ax-b\Vert$
+\end_inset
+
+ over all possible vectors 
+\begin_inset Formula $x$
+\end_inset
+
+, then 
+\begin_inset Formula $A^{T}A\hat{{x}}=A^{T}b$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\hat{{x}}=0$
+\end_inset
+
+, then 
+\begin_inset Formula $A^{T}b=0$
+\end_inset
+
+, and so 
+\begin_inset Formula $b\in N(A^{T})$
+\end_inset
+
+.
+ Another way to see this is that if 
+\begin_inset Formula $\hat{{x}}=0$
+\end_inset
+
+, then the projection of 
+\begin_inset Formula $b$
+\end_inset
+
+ onto the column space of 
+\begin_inset Formula $A$
+\end_inset
+
+ is the zero vector, which means that 
+\begin_inset Formula $b$
+\end_inset
+
+ must be orthogonal to 
+\begin_inset Formula $C(A)$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $b\in N(A^{T})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The minimum possible 
+\begin_inset Formula $\Vert Ax-b\Vert$
+\end_inset
+
+ occurs when 
+\begin_inset Formula $p=Ax$
+\end_inset
+
+ is the projection of 
+\begin_inset Formula $b$
+\end_inset
+
+ onto the column space of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ The column space of 
+\begin_inset Formula $A$
+\end_inset
+
+ is one dimensional, and is spanned by the vector 
+\begin_inset Formula $\begin{pmatrix}1\\
+0\\
+0
+\end{pmatrix}$
+\end_inset
+
+, and so we can compute this projection easily using the projection formula:
+\begin_inset Formula 
+\[
+p=\frac{{\begin{pmatrix}1\\
+0\\
+0
+\end{pmatrix}^{T}\begin{pmatrix}1\\
+1\\
+1
+\end{pmatrix}}}{\begin{pmatrix}1\\
+0\\
+0
+\end{pmatrix}^{T}\begin{pmatrix}1\\
+0\\
+0
+\end{pmatrix}}\begin{pmatrix}1\\
+0\\
+0
+\end{pmatrix}=\begin{pmatrix}1\\
+0\\
+0
+\end{pmatrix}.
+\]
+
+\end_inset
+
+So the minimum value of 
+\begin_inset Formula $\Vert Ax-b\Vert$
+\end_inset
+
+ is given by 
+\begin_inset Formula $\left\Vert \begin{pmatrix}1\\
+0\\
+0
+\end{pmatrix}-\begin{pmatrix}1\\
+1\\
+1
+\end{pmatrix}\right\Vert =\sqrt{2}$
+\end_inset
+
+.
+ To find a particular 
+\begin_inset Formula $\hat{{x}}$
+\end_inset
+
+ that gives this minimum, we firstly find an 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ that satisfies 
+\begin_inset Formula $A\hat{x}=p$
+\end_inset
+
+ , for instance 
+\begin_inset Formula $\hat{{x}}=\begin{pmatrix}1\\
+0
+\end{pmatrix}$
+\end_inset
+
+.
+ We can then add to this any multiple of a vector in 
+\begin_inset Formula $N(A)$
+\end_inset
+
+, which is spanned by 
+\begin_inset Formula $\begin{pmatrix}2\\
+-1
+\end{pmatrix}$
+\end_inset
+
+.
+ The most general 
+\begin_inset Formula $\hat{{x}}$
+\end_inset
+
+ then takes the form:
+\begin_inset Formula 
+\[
+\hat{{x}}=\begin{pmatrix}1\\
+0
+\end{pmatrix}+c\begin{pmatrix}2\\
+-1
+\end{pmatrix},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $c$
+\end_inset
+
+ is some constant.
+\end_layout
+
+\begin_layout Subsection*
+Problem 5 (5+10 points):
+\end_layout
+
+\begin_layout Standard
+Suppose that 
+\begin_inset Formula $A=A^{T}$
+\end_inset
+
+ is a real-symmetric 
+\begin_inset Formula $10\times10$
+\end_inset
+
+ matrix whose eigenvalues are 
+\begin_inset Formula $11,10,9,8,7,6,5,4,3,2$
+\end_inset
+
+.
+ Corresponding eigenvectors of 
+\begin_inset Formula $A$
+\end_inset
+
+, each normalized to have length 
+\begin_inset Formula $\Vert x\Vert=1$
+\end_inset
+
+, are (to three significant digits) the columns of the matrix:
+\begin_inset Formula 
+\[
+X=\begin{pmatrix}-0.179 & 0.415 & -0.173 & 0.115 & -0.125 & 0.079 & -0.676 & -0.066 & 0.3 & -0.423\\
+-0.239 & -0.168 & -0.53 & -0.08 & 0.232 & -0.281 & -0.386 & -0.223 & -0.353 & 0.413\\
+-0.35 & 0.116 & -0.201 & -0.41 & 0.547 & 0.197 & 0.182 & 0.373 & 0.38 & 0.029\\
+-0.399 & -0.238 & -0.079 & -0.46 & -0.279 & -0.139 & 0.259 & -0.427 & -0.028 & -0.468\\
+-0.378 & -0.132 & 0.013 & 0.28 & -0.374 & -0.332 & 0.096 & 0.056 & 0.582 & 0.4\\
+-0.227 & 0.352 & 0.195 & 0.336 & 0.388 & 0.137 & 0.242 & -0.657 & 0.042 & 0.109\\
+-0.404 & 0.327 & 0.566 & -0.143 & 0.024 & -0.399 & -0.123 & 0.277 & -0.371 & 0.03\\
+-0.001 & 0.628 & -0.369 & -0.162 & -0.46 & 0.172 & 0.3 & 0.05 & -0.202 & 0.261\\
+-0.303 & -0.07 & -0.331 & 0.6 & 0.07 & -0.052 & 0.288 & 0.329 & -0.29 & -0.389\\
+-0.425 & -0.285 & 0.195 & 0.047 & -0.213 & 0.732 & -0.194 & 0.051 & -0.194 & 0.195
+\end{pmatrix}.
+\]
+
+\end_inset
+
+ (That is, the first column of 
+\begin_inset Formula $X$
+\end_inset
+
+ is an eigenvector for 
+\begin_inset Formula $\lambda=11$
+\end_inset
+
+, and so on.) 
+\end_layout
+
+\begin_layout Standard
+Consider the recurrence relation 
+\begin_inset Formula $x_{n+1}-x_{n}=-\alpha Ax_{n}$
+\end_inset
+
+ on vectors 
+\begin_inset Formula $x_{n}\in\mathbb{R}^{10}$
+\end_inset
+
+, where 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+ is some positive real number.
+\end_layout
+
+\begin_layout Enumerate
+For what values of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ (if any) can the recurrence have solutions that 
+\emph on
+diverge
+\emph default
+ in magnitude as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $\alpha=1$
+\end_inset
+
+, give a good approximation for the vector 
+\begin_inset Formula $x_{100}$
+\end_inset
+
+ given 
+\begin_inset Formula $x_{0}=\left(\begin{array}{c}
+1\\
+0\\
+0\\
+0\\
+0\\
+0\\
+0\\
+0\\
+0\\
+0
+\end{array}\right)$
+\end_inset
+
+.
+ You can leave your answer in the form of some vector times some coefficient(s)
+ without carrying out the multiplications, but give all the numbers in your
+ coefficients and vectors to 3 significant digits.
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+We can rewrite the recurrence relation as 
+\begin_inset Formula $x_{n+1}=(I-\alpha A)x_{n}$
+\end_inset
+
+.
+ The solutions 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+ can diverge provided 
+\begin_inset Formula $I-\alpha A$
+\end_inset
+
+ has at least one eigenvalue with 
+\emph on
+absolute value
+\emph default
+ greater than 1.
+ The eigenvalues of 
+\begin_inset Formula $I-\alpha A$
+\end_inset
+
+ are 
+\begin_inset Formula $1-\alpha\lambda,$
+\end_inset
+
+ where 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is an eignvalue of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+, and all the eigenvalues are positive, divergence can first occur when
+ 
+\begin_inset Formula $1-11\alpha<-1$
+\end_inset
+
+, i.e.
+ when 
+\begin_inset Formula $\alpha>\frac{{2}}{11}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Suppose 
+\begin_inset Formula $\alpha=1$
+\end_inset
+
+.
+ We know that 
+\begin_inset Formula $x_{100}=(I-A)^{100}x_{0}.$
+\end_inset
+
+ We can write any 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ in terms of the eigenvector basis as 
+\begin_inset Formula $x_{0}=\sum_{i=1}^{10}c_{i}v_{i}$
+\end_inset
+
+, where 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ is the 
+\begin_inset Formula $i$
+\end_inset
+
+th column of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ The eigenvalue of 
+\begin_inset Formula $(I-A)$
+\end_inset
+
+ with largest absolute value is 
+\begin_inset Formula $1-11=-10$
+\end_inset
+
+, with eigenvector 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+, and so 
+\begin_inset Formula $x_{100}\approx c_{1}(-10)^{100}v_{1}.$
+\end_inset
+
+ Since the eigenvectors are orthogonal (
+\begin_inset Formula $A$
+\end_inset
+
+ is real-symmetric with distinct 
+\begin_inset Formula $\lambda$
+\end_inset
+
+'s), we can compute 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ using projection:
+\begin_inset Formula 
+\[
+c_{1}=\frac{v_{1}^{T}x_{0}}{v_{1}^{T}v_{1}}=-0.179,
+\]
+
+\end_inset
+
+(where 
+\begin_inset Formula $v_{1}^{T}v_{1}=1$
+\end_inset
+
+ since you were told that the columns are normalized) and so:
+\begin_inset Formula 
+\[
+x_{100}\approx-0.179\times(-10)^{100}v_{1}=0.179\times10^{100}\begin{pmatrix}0.179\\
+0.239\\
+0.35\\
+0.399\\
+0.378\\
+0.227\\
+0.404\\
+0.001\\
+0.303\\
+0.425
+\end{pmatrix}.
+\]
+
+\end_inset
+
+(Indeed, we could write down the 
+\begin_inset Quotes eld
+\end_inset
+
+exact
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $x_{100}$
+\end_inset
+
+ by including all of the other eigenvectors.
+ But you actually 
+\emph on
+gain no accuracy
+\emph default
+ by doing so: you were only given the eigenvectors to three significant
+ digits, but 
+\begin_inset Formula $9^{100}$
+\end_inset
+
+ is more than 
+\begin_inset Formula $10^{4}$
+\end_inset
+
+ times smaller than 
+\begin_inset Formula $10^{100}$
+\end_inset
+
+, so all of the 
+\begin_inset Quotes eld
+\end_inset
+
+corrections
+\begin_inset Quotes erd
+\end_inset
+
+ from the other eigenvectors are too small to be distinguished from the
+ unknown digits of our coefficients.)
+\end_layout
+
+\begin_layout Subsection*
+Problem 6 (5+10 points):
+\end_layout
+
+\begin_layout Standard
+You are trying to fit of a sequence of four data points 
+\begin_inset Formula $(t_{k},y_{k})=(1,6),(4,7),(9,12),(16,14)$
+\end_inset
+
+ to a function of the form 
+\begin_inset Formula $y(t)=\alpha+\beta\sqrt{t}$
+\end_inset
+
+ for unknown coefficients 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Enumerate
+Write down a minimization problem of the form 
+\begin_inset Quotes eld
+\end_inset
+
+minimize .............
+ over all possible 
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ that we could solve for a 
+\begin_inset Quotes eld
+\end_inset
+
+best fit
+\begin_inset Quotes erd
+\end_inset
+
+ curve using 18.06 techniques.
+ (Don't solve it.)
+\end_layout
+
+\begin_layout Enumerate
+Write down a 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ system of equations of the form 
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+\text{some}\\
+\text{matrix}
+\end{array}\right)\left(\begin{array}{c}
+\alpha\\
+\beta
+\end{array}\right)=\left(\begin{array}{c}
+\text{some}\\
+\text{vector}
+\end{array}\right)
+\]
+
+\end_inset
+
+whose solution gives the 
+\begin_inset Quotes eld
+\end_inset
+
+best
+\begin_inset Quotes erd
+\end_inset
+
+ fit coefficients 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ for your minimization problem from part (a).
+ You don't need to solve it! You can leave the matrix and vector as a product
+ of other matrices/vectors/transposes, but give the numerical values of
+ each of the terms (no matrix inverses allowed).
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+The thing we know how to do in 18.06 is to find the least-squares fit of
+ our data.
+ For a function of the form 
+\begin_inset Formula $y(t)=\alpha+\beta\sqrt{t}$
+\end_inset
+
+, we therefore want to minimize
+\begin_inset Formula 
+\[
+\sum_{k=1}^{4}(y_{k}-\alpha-\beta\sqrt{{t_{k}}})^{2},
+\]
+
+\end_inset
+
+over all (real) 
+\begin_inset Formula $\alpha$
+\end_inset
+
+and 
+\begin_inset Formula $\beta.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+We can write the minimization problem in matrix form as
+\begin_inset Formula 
+\[
+\min_{x}\Vert Ax-b\Vert^{2},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\[
+A=\begin{pmatrix}1 & \sqrt{{1}}\\
+1 & \sqrt{{4}}\\
+1 & \sqrt{9}\\
+1 & \sqrt{{16}}
+\end{pmatrix}=\begin{pmatrix}1 & 1\\
+1 & 2\\
+1 & 3\\
+1 & 4
+\end{pmatrix},\;\;\;x=\begin{pmatrix}\alpha\\
+\beta
+\end{pmatrix},\;\;\;b=\begin{pmatrix}6\\
+7\\
+12\\
+14
+\end{pmatrix}.
+\]
+
+\end_inset
+
+The solution to this minimization problem is then given by 
+\begin_inset Formula $\hat{{x}}$
+\end_inset
+
+, where 
+\begin_inset Formula $\hat{{x}}$
+\end_inset
+
+ satisfies the normal equations:
+\begin_inset Formula 
+\[
+A^{T}A\hat{{x}}=A^{T}b.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Problem 7 (10 points):
+\end_layout
+
+\begin_layout Standard
+Suppose that you want to multiply each of the three matrices 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cc}
+1 & 2\\
+3 & 4
+\end{array}\right),\;B=\left(\begin{array}{cc}
+1 & 1\\
+-1 & 0\\
+0 & 1
+\end{array}\right),\;C=\left(\begin{array}{cc}
+4 & 5\end{array}\right),
+\]
+
+\end_inset
+
+by each of the two vectors 
+\begin_inset Formula $x,y\in\mathbb{R}^{2}$
+\end_inset
+
+.
+ That is, you want to compute the 
+\emph on
+six
+\emph default
+ vectors 
+\begin_inset Formula $x_{A}=Ax$
+\end_inset
+
+, 
+\begin_inset Formula $x_{B}=Bx$
+\end_inset
+
+, 
+\begin_inset Formula $x_{C}=Cx$
+\end_inset
+
+, 
+\begin_inset Formula $y_{A}=Ay$
+\end_inset
+
+, 
+\begin_inset Formula $y_{B}=By$
+\end_inset
+
+, and 
+\begin_inset Formula $y_{C}=Cy$
+\end_inset
+
+.
+ Write 
+\emph on
+all
+\emph default
+ of these products in the form of a 
+\emph on
+single
+\emph default
+ matrix–matrix multiplication:
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+\text{some matrix in terms of}\\
+x_{A},x_{B},x_{C},y_{A},y_{B},y_{C}
+\end{array}\right)=\left(\begin{array}{c}
+\text{some matrix in terms of}\\
+A,B,C
+\end{array}\right)\left(\begin{array}{cc}
+x & y\end{array}\right).
+\]
+
+\end_inset
+
+Note that the third matrix here is the 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix whose columns are 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ That is, 
+\series bold
+give the sizes of the other two matrices and how their contents are arranged.
+\end_layout
+
+\begin_layout Standard
+[For example, a possible but wrong(!) answer for the second matrix would
+ be the 
+\begin_inset Formula $2\times6$
+\end_inset
+
+ matrix 
+\begin_inset Formula $\left(\begin{array}{ccc}
+A & B^{T} & C^{T}\end{array}\right)$
+\end_inset
+
+.]
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Standard
+We can write all of these products as the following single matrix-matrix
+ multiplication:
+\begin_inset Formula 
+\[
+\begin{pmatrix}x_{A} & y_{A}\\
+x_{B} & y_{B}\\
+x_{C} & y_{C}
+\end{pmatrix}=\begin{pmatrix}A\\
+B\\
+C
+\end{pmatrix}\begin{pmatrix}x & y\end{pmatrix}.
+\]
+
+\end_inset
+
+The first and second matrices are both 
+\begin_inset Formula $6\times2$
+\end_inset
+
+ matrices, while the third is a 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix.
+ 
+\end_layout
+
+\end_body
+\end_document
