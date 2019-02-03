@@ -1,5 +1,5 @@
 # Spring 2019 [18.06](https://web.mit.edu/18.06/www/) Lecture Summaries <br>
- [Prof. Steven G. Johnson](http://math.mit.edu/~stevenj)
+ [Prof. Alan Edelman](http://math.mit.edu/~edelman)
 
 This document is a *brief* summary of what was covered in each 18.06
 lecture, along with links and suggestions for further reading.  It is
