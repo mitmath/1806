@@ -1,4 +1,4 @@
-# Fall 2018 [18.06](https://web.mit.edu/18.06/www/) Lecture Summaries <br>
+# Spring 2019 [18.06](https://web.mit.edu/18.06/www/) Lecture Summaries <br>
  [Prof. Steven G. Johnson](http://math.mit.edu/~stevenj)
 
 This document is a *brief* summary of what was covered in each 18.06
