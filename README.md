@@ -1,4 +1,4 @@
-# MIT Course 18.06, Fall 2018
+# MIT Course 18.06, Spring 2019 
 
 This is a repository for the course [18.06: Linear Algebra](http://web.mit.edu/18.06) at MIT in Fall 2018.
 (See also the [Stellar 18.06 page](https://stellar.mit.edu/S/course/18/fa18/18.06/index.html).)
