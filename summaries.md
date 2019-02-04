@@ -42,7 +42,7 @@ Prerequisites: 18.02 is considered a prerequisite for 18.06.  We believe that st
 |	36	|	W	|	5/8	|
 |	37	|	F	|	5/10	|
 |	38	|	M	|	5/13	|
-|	39	|	W	|	5/15	|
+|	39	|	W	|	5/15	| Tropical Numbers |
 
 
 
