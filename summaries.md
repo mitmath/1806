@@ -1,7 +1,7 @@
 | [18.06 front page](http://web.mit.edu/18.06)  |
 [juliabox](http://www.juliabox.com) |
 [piazza](https://piazza.com/class/jrpkrwivp6x6v8) |
-[grdescope](https://www.gradescope.com/courses/40389) |
+[gradescope](https://www.gradescope.com/courses/40389) |
 [Julia](https://julialang.org/) |
 [VMLS text](http://vmls-book.stanford.edu/vmls.pdf) |
 [VMLS Julia Companion](http://vmls-book.stanford.edu/vmls-julia-companion.pdf) |
