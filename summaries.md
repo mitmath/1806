@@ -1,4 +1,5 @@
-Prerequisites: 18.02 is considered a prerequisite for 18.06.  We believe that students should have a little familiarity with multiplying matrices, matrix times vector, and perhaps partial derivatives.  
+Prerequisites: 18.02 is considered a prerequisite for 18.06.  We believe that students should have a little familiarity with multiplying matrices, matrix times vector, and perhaps the basics of partial derivatives.  
+A read of Chapter 1 of Strang is worth doing early.
 
 # Spring 2019 18.06 Syllabus <br>
 
@@ -6,7 +7,7 @@ Prerequisites: 18.02 is considered a prerequisite for 18.06.  We believe that st
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
-|1| W|2/6|  The Structure of Matrices | ??|
+|1| W|2/6| A modern view of Linear Algebra   | ??|
 |	2	|	F	|	2/8	|
 |	3	|	M	|	2/11	|
 |	4	|	W	|	2/13	||| HW1 due |
