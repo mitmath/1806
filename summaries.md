@@ -13,9 +13,8 @@ A read of Chapter 1 of Strang is worth doing early.
 |-|-|------|------|-----|--|
 |0||| Prereqs: 18.02 | We assume familiarity with the very basics in the readings, or that you can pick it up as you go |Strang Chapter 1, VMLS 1.1-1.4, 2.1, 3.1, 6.1, 10.1 |
 |0||| Not a Pre-req | We assume no familiarity with computing or Julia.  
-Some homework problems will use Julia as a calculator.  Tests will be 
-traditional paper and pencil. | Try logging into juliabox and typing the commands on pages 1,2,and 3 of the VMLS Julia Companion |
-|1| W|2/6| A modern view of Linear Algebra   | ??|
+Some homework problems will use Julia as a calculator.  Tests will be traditional paper and pencil. | Try logging into juliabox and typing the commands on pages 1,2,and 3 of the VMLS Julia Companion
+ | |1| W|2/6| A modern view of Linear Algebra   | ??|
 |	2	|	F	|	2/8	|||Optional Julia Tutorial 5pm-7pm Prof. Steven Johnson 32-141|
 |	3	|	M	|	2/11	|
 |	4	|	W	|	2/13	||| HW1 due |
