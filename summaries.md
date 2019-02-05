@@ -74,7 +74,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
  [Prof. Alan Edelman](http://math.mit.edu/~edelman)
 
 This document will contain   a *brief* summary of what was covered in each 18.06
-lecture.  It is unlikely that old videos or other notes will be enough to learn this semester's 18.06.
+lecture.  It is unlikely that old videos or other notes will be enough to learn this semester's 18.06. We recommend attending lectures but will most summaries as a guide.
 
 (You can also look at summaries from [Fall 2017](https://github.com/stevengj/1806/blob/fall17/summaries.md) and [Spring 2018](https://github.com/stevengj/1806/blob/spring18/summaries.md) but this is not the same class.)
 
