@@ -1,9 +1,14 @@
 Prerequisites: 18.02 is considered a prerequisite for 18.06.  We believe that students should have a little familiarity with multiplying matrices, matrix times vector, and perhaps partial derivatives.  
 
 # Spring 2019 18.06 Syllabus <br>
+|#|Day| Date |  Topic | Reading| HW |
+|-|-|------|------|-----|--|
+|1| W|2/6|  The Structure of Matrices | ??|
+
+
 
 |#|Day| Date |  Topic | Reading| HW |
-|-|-|------|------|-----|
+|-|-|------|------|-----|--|
 |1| W|2/6|  The Structure of Matrices | ??|
 |	2	|	F	|	2/8	|
 |	3	|	M	|	2/11	|
