@@ -27,7 +27,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |-|-|------|------|-----|--|
 |0||| Prereqs: 18.02 |  We assume familiarity with the very basics in the readings, or that you can pick it up as you go: Strang Chapter 1, [VMLS](http://vmls-book.stanford.edu/vmls.pdf)  1.1-1.4, 2.1, 3.1, 6.1, 10.1 |
 |0||| Not a Pre-req | We assume no familiarity with computing or Julia.  Some homework problems will use Julia (kind of) as a calculator. This is not a programming class. On occasion, Julia programming may be demonstrated if it helps understand linear algebra, but Julia syntax will never be tested.  Tests will be traditional paper and pencil. | (On your own, nothing to hand in.) Try logging into [Juliabox](http://www.juliabox.com)  and typing the commands in Section 1.1  pages 1,2,and 3 (pdf pages 11-13)  of the [VMLS Julia Companion](http://vmls-book.stanford.edu/vmls-julia-companion.pdf).  If this is painless, then you will be okay for the rest of the semester.  |
- |1| W|2/6| A modern (personal) view of Linear Algebra   | ??|
+ |1| W|2/6| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground   | ??|
 |	2	|	F	|	2/8	|Matrix Factorizations, Multiplication and Block Matrices| We will see (mostly) 2x2 versions of LU, LDU, Cholesky, SVD and Eig. See class slides. Also Strang 2.4 |Optional Julia Tutorial 5pm-7pm Prof. Steven Johnson 32-141|
 |	3	|	M	|	2/11	|Norm, Distance and Complexity| Chapters 3 and  6 of [VMLS](http://vmls-book.stanford.edu/vmls.pdf) |
 |	4	|	W	|	2/13	||| HW1 due |
