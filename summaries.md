@@ -1,4 +1,5 @@
 |[18.06 front page](http://web.mit.edu/18.06)  |
+[juliabox](http://www.juliabox.com) |
 
 Prerequisites: 18.02 is considered a prerequisite for 18.06.  We believe that students should have a little familiarity with multiplying matrices, matrix times vector, and perhaps the basics of partial derivatives.  
 A read of Chapter 1 of Strang is worth doing early.
