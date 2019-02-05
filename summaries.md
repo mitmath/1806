@@ -11,7 +11,7 @@ Prerequisites: 18.02 is considered a prerequisite for 18.06.  We believe that st
 |	3	|	M	|	2/11	|
 |	4	|	W	|	2/13	||| HW1 due |
 |	5	|	F	|	2/15	|
-|	6	|	T	|	2/19	|
+|	6	|	T	|	2/19 (Pres Day+1)	|
 |	7	|	W	|	2/20	|||HW2 due |
 |	8	|	F	|	2/22	|
 |	9	|	M	|	2/25	||
