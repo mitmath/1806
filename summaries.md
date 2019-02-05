@@ -11,7 +11,7 @@ A read of Chapter 1 of Strang is worth doing early.
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
 |1| W|2/6| A modern view of Linear Algebra   | ??|
-|	2	|	F	|	2/8	|
+|	2	|	F	|	2/8	|||Optional Julia Tutorial 5pm-7pm Prof. Steven Johnson 32-141|
 |	3	|	M	|	2/11	|
 |	4	|	W	|	2/13	||| HW1 due |
 |	5	|	F	|	2/15	|
