@@ -19,23 +19,23 @@ Prerequisites: 18.02 is considered a prerequisite for 18.06.  We believe that st
 |	11	|	F	|	3/1	| **Exam 1** |
 |	12	|	M	|	3/4	|
 |	13	|	W	|	3/6	|||HW 4 due|
-|	14	|	F	|	3/8	|
+|	14	|	F	|	3/8 (add date)	|
 |	15	|	M	|	3/11	|
 |	16	|	W	|	3/13	|||HW 5 due|
 |	17	|	F	|	3/15	|
 |	18	|	M	|	3/18	|
 |	19	|	W	|	3/20	|||HW 6 due|
-|	20	|	F	|	3/22	|
+|	20	|	F	|	3/22 (Spring Break next week)	|
 |	21	|	M	|	4/1	|
 |	22	|	W	|	4/3	|review||shorter HW 7 due|
 |	23	|	F	|	4/5	| **Exam 2**|
 |	24	|	M	|	4/8	|
 |	25	|	W	|	4/10	|||HW 8 due|
-|	26	|	F	|	4/12	|
+|	26	|	F	|	4/12 (CPW. Pats Day next week)	|
 |	27	|	W	|	4/17	|||HW 9 due|
 |	28	|	F	|	4/19	|
 |	29	|	M	|	4/22	|
-|	30	|	W	|	4/24	|||HW 10 due|
+|	30	|	W	|	4/24 (Drop date tomorrow)	|||HW 10 due|
 |	31	|	F	|	4/26	|
 |	32	|	M	|	4/29	|
 |	33	|	W	|	5/1	|review|
