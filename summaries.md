@@ -11,6 +11,7 @@ A read of Chapter 1 of Strang is worth doing early.
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
+|0||| Prereqs: 18.02 | We assume familiarity with the very basics in the readings, or that you can pick it up as you go |Strang Chapter 1, VMLS 1.1-1.4, 2.1, 3.1, 6.1, 10.1 |
 |1| W|2/6| A modern view of Linear Algebra   | ??|
 |	2	|	F	|	2/8	|||Optional Julia Tutorial 5pm-7pm Prof. Steven Johnson 32-141|
 |	3	|	M	|	2/11	|
