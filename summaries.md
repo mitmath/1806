@@ -2,12 +2,12 @@ Prerequisites: 18.02 is considered a prerequisite for 18.06.  We believe that st
 
 # Spring 2019 18.06 Syllabus <br>
 
-|#|Day| Date |  Topic | Reading|
+|#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|
 |1| W|2/6|  The Structure of Matrices | ??|
 |	2	|	F	|	2/8	|
 |	3	|	M	|	2/11	|
-|	4	|	W	|	2/13	|
+|	4	|	W	|	2/13	|| HW1 due |
 |	5	|	F	|	2/15	|
 |	6	|	T	|	2/19	|
 |	7	|	W	|	2/20	|
