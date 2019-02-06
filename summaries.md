@@ -20,7 +20,7 @@ Some high schools teach a few matrix operations.  You might  understandably thin
 If you come back in 5 years and said, "wow Linear Algebra prepared me more than I could have imagined while I was taking  the class," we would be most pleased.
 
 
-
+<iframe width="989" height="511" src="https://www.youtube.com/embed/NGmdBOcnBCE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 |#|Day| Date |  Topic | Reading| HW |
