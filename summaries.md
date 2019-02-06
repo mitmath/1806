@@ -25,7 +25,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
-|0||| Prereqs: 18.02 |  We assume familiarity with the very basics in the readings, or that you can pick it up as you go: Strang Chapter 1, [VMLS](http://vmls-book.stanford.edu/vmls.pdf)  1.1-1.4, 2.1, 3.1, 6.1, 10.1 | HW0 is a practice class workflow.  It is to be handed in by Sunday 2/10  at 4:55pm, but will not be graded.
+|0||| Prereqs: 18.02 |  We assume familiarity with the very basics in the readings, or that you can pick it up as you go: Strang Chapter 1, [VMLS](http://vmls-book.stanford.edu/vmls.pdf)  1.1-1.4, 2.1, 3.1, 6.1, 10.1 | [HW0](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset0.ipynb) is a practice class workflow.  It is to be handed in by Sunday 2/10  at 4:55pm, but will not be graded. 
 |0||| Not a Pre-req | We assume no familiarity with computing or Julia.  Some homework problems will use Julia (kind of) as a calculator. This is not a programming class. On occasion, Julia programming may be demonstrated if it helps understand linear algebra, but Julia syntax will never be tested.  Tests will be traditional paper and pencil. | 
  |1| W|2/6| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground   | ??|
 |	2	|	F	|	2/8	|Matrix Factorizations, Multiplication and Block Matrices| We will see (mostly) 2x2 versions of LU, LDU, Cholesky, SVD and Eig. See class slides. Also Strang 2.4 |Optional Julia Tutorial 5pm-7pm Prof. Steven Johnson 32-141|
