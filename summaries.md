@@ -13,7 +13,9 @@ We will not use Stellar for much this semester.
 
 # Spring 2019 18.06 Syllabus <br>
 
-This semester we are modernizing the class after several decades.  We will keep the best, but the needs of machine learning, data science, statistics,  engineering, and computation make linear algebra a critical subject.  Hand computation helps us understand, when possible, but computers do the work,
+This semester we are modernizing the class after several decades.  We will keep the best, but the needs of machine learning, data science, statistics,  engineering, and computation make linear algebra a critical subject.  So as not to convey the wrong impression, this modernization is as valuable for science and the non computer-science subjects as well.  
+
+Hand computation helps us understand, when possible, but computers do the work,
 and not everything, not even small problems,  are  readily done by hand. Neural networks, matrix and vector differentiation are hot.  The Singular Value Decomposition takes a life of its own.  Eigenvalues are losing their place in line, but still key.  By spending less time on hand computation, we can spend more time on big concepts and abstractions like vector spaces and linear transformations.  This may be your first math class that does this.  We hope you enjoy the intellectual activity to follow. 
 
 Some high schools teach a few matrix operations.  You might  understandably think  that linear algebra is  the topic that manipulates tables of numbers.  In the real world, most matrices are not even represented as tables of numbers.  You will grow to learn that so much of the fabric of mathematics, science, and engineering, and computation is best understood with linear algebra.
