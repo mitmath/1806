@@ -28,7 +28,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
  |1| W|2/6| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground   | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit?usp=sharing)|
 |	2	|	F	|	2/8	|Matrix Factorizations, Multiplication and Block Matrices| We will see (mostly) 2x2 versions of LU, LDU, Cholesky, SVD and Eig. See class slides. Also Strang 2.4 |Optional Julia Tutorial 5pm-7pm Prof. Steven Johnson 32-141|
 |	3	|	M	|	2/11	|Norm, Distance and Complexity| Chapters 3 and  6 of [VMLS](http://vmls-book.stanford.edu/vmls.pdf) |
-|	4	|	W	|	2/13	||| HW1 due |
+|	4	|	W	|	2/13	||| [HW1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1.ipynb)  due |
 |	5	|	F	|	2/15	|
 |	6	|	T	|	2/19 (Pres Day+1)	|
 |	7	|	W	|	2/20	|||HW2 due |
