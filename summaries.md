@@ -93,6 +93,6 @@ Topics we will cover are:
 <li> Markov Matrices </li>
 <li> Positive Definite Matrices </li>
 <li> Linear Transformations </li>
+</ul>
 
-<li> </li>
 
