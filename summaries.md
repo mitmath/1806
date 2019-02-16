@@ -37,7 +37,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	8	|	F	|	2/22	|
 |	9	|	M	|	2/25	||
 |	10	|	W	|	2/27	|review||shorter HW 3 due|
-|	11	|	F	|	3/1	| **Exam 1** |
+|	11	|	F	|	3/1	| **Exam 1** Walker, closed book, no exam makeup (paper alternative) |
 |	12	|	M	|	3/4	|
 |	13	|	W	|	3/6	|||HW 4 due|
 |	14	|	F	|	3/8 (add date)	|
