@@ -35,8 +35,8 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	6	|	T	|	2/19 (Pres Day+1)	|SVD |<li>  The SVD: Strang mentions the SVD in Chapter 7.  I find the definition in terms of AᵀA a mixed bag.  It's straightforward if you know eigenvalues, but the SVD's true identity is lost in the  eigenworld.  I will not follow the eigenworld approach. </li>|
 |	7	|	W	|	2/20	| | Nullspace, Column Space, the complete solution to Ax=b all through the SVD|HW2 due |
 |	8	|	F	|	2/22	|
-|	9	|	M	|	2/25	||
-|	10	|	W	|	2/27	|review||shorter HW 3 due|
+|	9	|	M	|	2/25	|review|
+|	10	|	W	|	2/27	|guest lecturer||shorter HW 3 due|
 |	11	|	F	|	3/1	| **Exam 1** Walker, during lecture hour,  closed book, includes material up to Friday 2/22,  grades visible probably in 24 hours,  no exam makeup (paper alternative - once per semester for emergencies) |
 |	12	|	M	|	3/4	|
 |	13	|	W	|	3/6	|||HW 4 due|
