@@ -33,7 +33,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	4	|	W	|	2/13	|LU,QR|[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g4f8407bb15_279_0)<ul><li>A. LU factorization: page 563 of Strang has a table of factorizations, Section 2.6 of Strang has more computation than we will do right now (we are not doing pivots and elimination), VMLS almost mentions LU on page 208, but kind of doesn't </li> <li> B. QR factorization: Strang mentions QR a bit too quickly on page 239, VMLS in Section 10.4 </li>   </ul>| [HW1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1.ipynb)  due |
 |	5	|	F	|	2/15	| QR Applications| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g4f8407bb15_357_0) QR is mentioned in Strang 239| [HW2](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset2.ipynb?flush_cache=true) released 2/14.|
 |	6	|	T	|	2/19 (Pres Day+1)	|SVD |<li>  The SVD: Strang mentions the SVD in Chapter 7.  I find the definition in terms of AᵀA a mixed bag.  It's straightforward if you know eigenvalues, but the SVD's true identity is lost in the  eigenworld.  I will not follow the eigenworld approach. </li>|
-|	7	|	W	|	2/20	|||HW2 due |
+|	7	|	W	|	2/20	| | Nullspace, Column Space, the complete solution to Ax=b all through the SVD|HW2 due |
 |	8	|	F	|	2/22	|
 |	9	|	M	|	2/25	||
 |	10	|	W	|	2/27	|review||shorter HW 3 due|
