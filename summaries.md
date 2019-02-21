@@ -36,7 +36,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	7	|	W	|	2/20	|  Nullspace, Column Space, the complete solution to Ax=b all through the SVD||HW2 due |
 |	8	|	F	|	2/22	|Linear Independence, Span, Basis|Section 3.4 of Strang, 5.1-5.3 of VMLS |
 |	9	|	M	|	2/25	|review|
-|	10	|	W	|	2/27	|guest lecturer||shorter HW 3 due|
+|	10	|	W	|	2/27	|guest lecturer [Sam Turton](https://math.mit.edu/directory/profile.php?pid=1732) projections||shorter HW 3 due|
 |	11	|	F	|	3/1	| **Exam 1** Walker, during lecture hour,  closed book, includes material up to Friday 2/22,  grades visible probably in 24 hours,  no exam makeup (paper alternative - once per semester for emergencies) |
 |	12	|	M	|	3/4	|
 |	13	|	W	|	3/6	|||HW 4 due|
