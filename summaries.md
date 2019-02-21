@@ -41,7 +41,7 @@ HW3 (coming tonight) | | February 27, 10:55am |
 |	4	|	W	|	2/13	|LU,QR|[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g4f8407bb15_279_0)<ul><li>A. LU factorization: page 563 of Strang has a table of factorizations, Section 2.6 of Strang has more computation than we will do right now (we are not doing pivots and elimination), VMLS almost mentions LU on page 208, but kind of doesn't </li> <li> B. QR factorization: Strang mentions QR a bit too quickly on page 239, VMLS in Section 10.4 </li>   </ul>| [HW1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1.ipynb)  due |
 |	5	|	F	|	2/15	| QR Applications| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g4f8407bb15_357_0) QR is mentioned in Strang 239| [HW2](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset2.ipynb?flush_cache=true) released 2/14.|
 |	6	|	T	|	2/19 (Pres Day+1)	|SVD |<li>  The SVD: Strang mentions the SVD in Chapter 7.  I find the definition in terms of AᵀA a mixed bag.  It's straightforward if you know eigenvalues, but the SVD's true identity is lost in the  eigenworld.  I will not follow the eigenworld approach. </li>|
-|	7	|	W	|	2/20	|  Nullspace, Column Space, the complete solution to Ax=b all through the SVD||HW2 due |
+|	7	|	W	|	2/20	|  Image Compression, Nullspace, Column Space ||HW2 due |
 |	8	|	F	|	2/22	|Linear Independence, Span, Basis|Section 3.4 of Strang, 5.1-5.3 of VMLS |
 |	9	|	M	|	2/25	|review|
 |	10	|	W	|	2/27	|guest lecturer [Sam Turton](https://math.mit.edu/directory/profile.php?pid=1732) projections||shorter HW 3 due|
@@ -88,12 +88,10 @@ It is unlikely that old videos or other notes will be enough to learn this semes
 (You can also look at summaries from [Fall 2017](https://github.com/stevengj/1806/blob/fall17/summaries.md) and [Spring 2018](https://github.com/stevengj/1806/blob/spring18/summaries.md) but this is not the same class.)
 
 
-Topics we will cover are:  
+Further Topics we will cover are:  
 <ul>
 <li> Matrix Calculus, gradients  </li>
 <li> Bases </li>
-<li> The Four Fundamental Subspaces </li>
-<li> Orthogonality </li>
 <li> Least Squares </li>
 <li> Applications </li>
 <li> Determinants </li>
