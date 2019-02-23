@@ -42,11 +42,11 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	5	|	F	|	2/15	| QR Applications| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g4f8407bb15_357_0) QR is mentioned in Strang 239| [HW2](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset2.ipynb) released 2/14.|
 |	6	|	T	|	2/19 (Pres Day+1) |SVD	| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g4fba4ef7dd_77_0)  <li>  The SVD: Strang mentions the SVD in Chapter 7.  I find the definition in terms of AᵀA a mixed bag.  It's straightforward if you know eigenvalues, but the SVD's true identity is lost in the  eigenworld.  I will not follow the eigenworld approach. </li>|
 |	7	|	W	|	2/20	|  [Image Compression](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/Compressing%20an%20Image%20with%20the%20svd.ipynb), Nullspace, Column Space ||HW2 due |
-|	8	|	F	|	2/22	|Linear Independence, Span, Basis|Section 3.4 of Strang, 5.1-5.3 of VMLS |[HW3](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset3.ipynb) released 2/21.
+|	8	|	F	|	2/22	|| [HW3](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset3.ipynb) released 2/21.
 |	9	|	M	|	2/25	|review|
 |	10	|	W	|	2/27	|guest lecturer [Sam Turton](https://math.mit.edu/directory/profile.php?pid=1732) projections| Section 4.2 of Strang|shorter HW 3 due|
 |	11	|	F	|	3/1	| **Exam 1** Walker, during lecture hour,  closed book, includes material up to Friday 2/22,  grades visible probably in 24 hours,  no exam makeup (paper alternative - once per semester for emergencies) |
-|	12	|	M	|	3/4	|
+|	12	|	M	|	3/4	| Linear Independence, Span, Basis|Section 3.4 of Strang, 5.1-5.3 of VMLS |
 |	13	|	W	|	3/6	|||HW 4 due|
 |	14	|	F	|	3/8 (add date)	|
 |	15	|	M	|	3/11	|
