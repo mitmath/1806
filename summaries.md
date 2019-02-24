@@ -27,6 +27,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 [HW1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1.ipynb) | [HW1 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1sol.ipynb)     | February 13, 10:55am |
 [HW2](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset2.ipynb)|[HW2 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset2sol.ipynb)  | February 20, 10:55am|
 [HW3](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset3.ipynb)  | | February 27, 10:55am |
+[Practice Exam Problems](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%201%20practice%20problems.ipynb)
 
 
 
