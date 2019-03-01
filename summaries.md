@@ -47,7 +47,7 @@ HW4  (Expected Release Saturday night)|| March 6, 10:55am
 |	8	|	F	|	2/22	| SVD full form | [HW3](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset3.ipynb) released 2/21.
 |	9	|	M	|	2/25	|review|
 |	10	|	W	|	2/27	|guest lecturer [Sam Turton](https://math.mit.edu/directory/profile.php?pid=1732) projections| Section 4.2 of Strang|shorter HW 3 due|
-|	11	|	F	|	3/1	| **Exam 1** Walker, during lecture hour (ends 11:55am as another class is entering for an exam  and we must be respectful),  closed book, includes material up to Friday 2/22,  grades visible probably in 24 hours,  no exam makeup (paper alternative - once per semester for emergencies) |
+|	11	|	F	|	3/1	| **Exam 1** Walker, during lecture hour (ends 11:55am as another class is entering for an exam  and we must be respectful),  closed book, includes material up to Friday 2/22,  grades visible probably in 24 hours,  no exam makeup (paper alternative - once per semester for emergencies, grade approximate cutoffs available monday) |
 |	12	|	M	|	3/4	| Linear Independence, Span, Basis|Section 3.4 of Strang, 5.1-5.3 of VMLS |
 |	13	|	W	|	3/6	|||HW 4 due|
 |	14	|	F	|	3/8 (add date)	|
