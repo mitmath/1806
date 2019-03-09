@@ -47,7 +47,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	7	|	W	|	2/20	|  rank k approximation, [Image Compression](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/Compressing%20an%20Image%20with%20the%20svd.ipynb), Nullspace, Column Space ||HW2 due |
 |	8	|	F	|	2/22	| SVD full form | [HW3](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset3.ipynb) released 2/21.
 |	9	|	M	|	2/25	|review|
-|	10	|	W	|	2/27	|[slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g523a8d570c_37_0) guest lecturer [Sam Turton](https://math.mit.edu/directory/profile.php?pid=1732) projections| Section 4.2 of Strang|shorter HW 3 due|
+|	10	|	W	|	2/27	| guest lecturer [Sam Turton](https://math.mit.edu/directory/profile.php?pid=1732) projections| [slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g523a8d570c_37_0) Section 4.2 of Strang|shorter HW 3 due|
 |	11	|	F	|	3/1	| **Exam 1** Walker, during lecture hour (ends 11:55am as another class is entering for an exam  and we must be respectful),  closed book, includes material up to Friday 2/22,  grades visible probably in 24 hours,  no exam makeup (paper alternative - once per semester for emergencies, grade approximate cutoffs available monday) |
 |	12	|	M	|	3/4	| Linear Independence, Span, Basis|Section 3.4 of Strang, 5.1-5.3 of VMLS |
 |	13	|	W	|	3/6	| The Complete Solution to Ax=b|Section 3.3 of Strang |HW 4 due|
