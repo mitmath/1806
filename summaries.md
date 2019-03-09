@@ -30,7 +30,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 [Practice Exam Problems](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%201%20practice%20problems.ipynb)| [Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/midterm_1_practice_problems.ipynb)
 [HW4](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset4.ipynb)|| Extended due date: March 8, 10:55am
 [Quiz 1](https://github.com/mitmath/1806/raw/master/psets/quiz1-1806-S19.pdf) | [Quiz 1 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz1_solns.pdf) |
-
+[HW5 Under Construction](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset5.ipynb) | March 13, 10:55am|
 
 
 
