@@ -57,7 +57,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	17	|	F	|	3/15	|
 |	18	|	M	|	3/18	|
 |	19	|	W	|	3/20	|||HW 6 due|
-|	20	|	F	|	3/22 (Spring Break next week)	|
+|	20	|	F	|	3/22 (Spring Break next week)	| Guest Lecturer |
 |	21	|	M	|	4/1	|
 |	22	|	W	|	4/3	|review|||
 |	23	|	F	|	4/5	| **Exam 2**|
