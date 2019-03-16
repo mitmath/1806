@@ -31,7 +31,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 [HW4](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset4.ipynb)|[HW4 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset4sol.ipynb)| Extended due date: March 8, 10:55am
 [Quiz 1](https://github.com/mitmath/1806/raw/master/psets/quiz1-1806-S19.pdf) | [Quiz 1 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz1_solns.pdf) |
 [HW5](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset5.ipynb) || March 13, 10:55am|
-[HW6 Problems 1-8, (9-10 under construction)](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset6.ipynb) || March 20, 10:55am|
+[HW6](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset6.ipynb) || March 20, 10:55am|
 
 Recitation Materials (Review materials offered by our great TAs)
 
