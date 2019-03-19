@@ -40,7 +40,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |[week 3 review session](https://github.com/mitmath/1806/raw/master/recitation-materials/wk3session.pdf)|
 | [Andrew's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials/Andrew) |
 | [Sam's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials/Sam) |
-| [Sveta's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials/Sam) |
+| [Sveta's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials/Sveta) |
 
 
 
