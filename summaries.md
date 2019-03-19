@@ -28,9 +28,19 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 [HW2](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset2.ipynb)|[HW2 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset2sol.ipynb)  | February 20, 10:55am|
 [HW3](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset3.ipynb)  | [HW3 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset3sol.ipynb)| February 27, 10:55am |
 [Practice Exam Problems](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%201%20practice%20problems.ipynb)| [Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/midterm_1_practice_problems.ipynb)
-[HW4](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset4.ipynb)|| Extended due date: March 8, 10:55am
+[HW4](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset4.ipynb)|[HW4 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset4sol.ipynb)| Extended due date: March 8, 10:55am
 [Quiz 1](https://github.com/mitmath/1806/raw/master/psets/quiz1-1806-S19.pdf) | [Quiz 1 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz1_solns.pdf) |
+[HW5](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset5.ipynb) || March 13, 10:55am|
+[HW6](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset6.ipynb) || March 20, 10:55am|
 
+
+|Recitation Materials|
+|--|
+|[Linear Algebra 101](https://github.com/mitmath/1806/raw/master/recitation-materials/Linear_algebra_101.pdf)|
+|[week 3 review session](https://github.com/mitmath/1806/raw/master/recitation-materials/wk3session.pdf)|
+| [Andrew's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials/Andrew) |
+| [Sam's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials/Sam) |
+| [Sveta's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials/Sveta) |
 
 
 
@@ -44,20 +54,20 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	4	|	W	|	2/13	|LU,QR|[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g4f8407bb15_279_0)<ul><li>A. LU factorization: page 563 of Strang has a table of factorizations, Section 2.6 of Strang has more computation than we will do right now (we are not doing pivots and elimination), VMLS almost mentions LU on page 208, but kind of doesn't </li> <li> B. QR factorization: Strang mentions QR a bit too quickly on page 239, VMLS in Section 10.4 </li>   </ul>| [HW1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1.ipynb)  due |
 |	5	|	F	|	2/15	| QR Applications| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g4f8407bb15_357_0) QR is mentioned in Strang 239| [HW2](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset2.ipynb) released 2/14.|
 |	6	|	T	|	2/19 (Pres Day+1) |SVD overview, rank r format, and column space	| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g4fba4ef7dd_77_0)  <li>  The SVD: Strang mentions the SVD in Chapter 7.  I find the definition in terms of AᵀA a mixed bag.  It's straightforward if you know eigenvalues, but the SVD's true identity is lost in the  eigenworld.  I will not follow the eigenworld approach. </li>|
-|	7	|	W	|	2/20	|  rank k approximation, [Image Compression](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/Compressing%20an%20Image%20with%20the%20svd.ipynb), Nullspace, Column Space ||HW2 due |
-|	8	|	F	|	2/22	| SVD full form | [HW3](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset3.ipynb) released 2/21.
+|	7	|	W	|	2/20	|   rank k approximation, [Image Compression](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/Compressing%20an%20Image%20with%20the%20svd.ipynb), Nullspace, Column Space |[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g4fba4ef7dd_248_50)|HW2 due |
+|	8	|	F	|	2/22	| SVD full form | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g4fba4ef7dd_325_1) [HW3](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset3.ipynb) released 2/21.
 |	9	|	M	|	2/25	|review|
-|	10	|	W	|	2/27	|guest lecturer [Sam Turton](https://math.mit.edu/directory/profile.php?pid=1732) projections| Section 4.2 of Strang|shorter HW 3 due|
+|	10	|	W	|	2/27	| guest lecturer [Sam Turton](https://math.mit.edu/directory/profile.php?pid=1732) projections| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g523a8d570c_37_0) Section 4.2 of Strang|shorter HW 3 due|
 |	11	|	F	|	3/1	| **Exam 1** Walker, during lecture hour (ends 11:55am as another class is entering for an exam  and we must be respectful),  closed book, includes material up to Friday 2/22,  grades visible probably in 24 hours,  no exam makeup (paper alternative - once per semester for emergencies, grade approximate cutoffs available monday) |
-|	12	|	M	|	3/4	| Linear Independence, Span, Basis|Section 3.4 of Strang, 5.1-5.3 of VMLS |
-|	13	|	W	|	3/6	| The Complete Solution to Ax=b||HW 4 due|
-|	14	|	F	|	3/8 (add date)	| Intuition on what a Matrix is deep down, the Four Fundamental Subspaces|
-|	15	|	M	|	3/11	|
-|	16	|	W	|	3/13	|||HW 5 due|
-|	17	|	F	|	3/15	|
-|	18	|	M	|	3/18	|
-|	19	|	W	|	3/20	|||HW 6 due|
-|	20	|	F	|	3/22 (Spring Break next week)	|
+|	12	|	M	|	3/4	| Linear Independence, Span, Basis| [Slides ](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g523a8d570c_37_5)Section 3.4 of Strang, 5.1-5.3 of VMLS |
+|	13	|	W	|	3/6	| The Complete Solution to Ax=b| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g51fe9f1957_24_0)Section 3.3 of Strang |HW 4 due|
+|	14	|	F	|	3/8 (add date)	|Intuition on what a Matrix is deep down, the Four Fundamental Subspaces, Orthonormal Bases| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g51fe9f1957_59_76) Section 3.5, 4.4 of Strang |
+|	15	|	M	|	3/11	| Orthonormal Subspaces | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g51fe9f1957_59_121) Section 4.1 of Strang |
+|	16	|	W	|	3/13	| Completion of Chapters 1 through 4 of Strang based on SVD rather than elimination.  Note: only the svd has been assumed and everything else was proved in this class.| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5283288fb6_268_5)|HW 5 due|
+|	17	|	F	|	3/15	| Linear Transformations and Matrix Calculus | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5283288fb6_268_0) Section 8.1 of Strang |
+|	18	|	M	|	3/18	| Linear Transformations and Matrix Calculus Continued | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g54c2f1d34e_123_0) |
+|	19	|	W	|	3/20	| Determinants | 5.1 of Strang |HW 6 due|
+|	20	|	F	|	3/22 (Spring Break next week)	| Guest Lecturer [Zachary Remscrim](https://math.mit.edu/directory/profile.php?pid=1952): Permutations and Cofactors | 5.2 of Strang|
 |	21	|	M	|	4/1	|
 |	22	|	W	|	4/3	|review|||
 |	23	|	F	|	4/5	| **Exam 2**|
