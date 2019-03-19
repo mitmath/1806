@@ -34,6 +34,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 [HW6](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset6.ipynb) || March 20, 10:55am|
 
 Recitation Materials (Review materials offered by our great TAs)
+
 |Item|
 |[Linear Algebra 101](https://github.com/mitmath/1806/raw/master/recitation-materials/Linear_algebra_101.pdf)|
 
