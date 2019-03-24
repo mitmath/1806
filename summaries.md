@@ -68,8 +68,8 @@ HW7 and a practice for Quiz2 will be released this weekend|
 |	16	|	W	|	3/13	| Completion of Chapters 1 through 4 of Strang based on SVD rather than elimination.  Note: only the svd has been assumed and everything else was proved in this class.| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5283288fb6_268_5)|HW 5 due|
 |	17	|	F	|	3/15	| Linear Transformations and Matrix Calculus | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5283288fb6_268_0) Section 8.1 of Strang |
 |	18	|	M	|	3/18	| Linear Transformations and Matrix Calculus Continued | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g54c2f1d34e_123_0) |
-|	19	|	W	|	3/20	| Determinants | 5.1 of Strang |HW 6 due|
-|	20	|	F	|	3/22 (Spring Break next week)	| Guest Lecturer [Zachary Remscrim](https://math.mit.edu/directory/profile.php?pid=1952): Permutations and Cofactors | 5.2 of Strang|
+|	19	|	W	|	3/20	| Determinants |[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5446ee59a2_262_0) 5.1 of Strang |HW 6 due|
+|	20	|	F	|	3/22 (Spring Break next week)	| Guest Lecturer [Zachary Remscrim](https://math.mit.edu/directory/profile.php?pid=1952): Permutations and Cofactors | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5446ee59a2_347_0) 5.2 of Strang|
 |	21	|	M	|	4/1	|
 |	22	|	W	|	4/3	|review|||
 |	23	|	F	|	4/5	| **Exam 2**|
