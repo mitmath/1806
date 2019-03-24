@@ -72,7 +72,7 @@ HW7 and a practice for Quiz2 will be released this weekend|
 |	20	|	F	|	3/22 (Spring Break next week)	| Guest Lecturer [Zachary Remscrim](https://math.mit.edu/directory/profile.php?pid=1952): Permutations and Cofactors | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5446ee59a2_347_0) 5.2 of Strang|
 |	21	|	M	|	4/1	|
 |	22	|	W	|	4/3	|review|||
-|	23	|	F	|	4/5	| **Exam 2**|
+|	23	|	F	|	4/5	| **Exam 2** (includes material up to Friday March 22) |
 |	24	|	M	|	4/8	|
 |	25	|	W	|	4/10	|||HW 7 due|
 |	26	|	F	|	4/12 (CPW. Pats Day next week)	|
