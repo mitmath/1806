@@ -32,8 +32,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 [Quiz 1](https://github.com/mitmath/1806/raw/master/psets/quiz1-1806-S19.pdf) | [Quiz 1 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz1_solns.pdf) |
 [HW5](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset5.ipynb) |[HW5 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset5sol.ipynb)| March 13, 10:55am|
 [HW6](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset6.ipynb) | | March 20, 10:55am|
-A practice for Quiz2 will be released this weekend (there is no hw7 until after the exam  but
-the practice will be worth doing) |
+A practice for Quiz2 will be released this weekend (there is no hw7 until after the exam  but the practice will be worth doing) |
 
 
 |Recitation Materials|
