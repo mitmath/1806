@@ -44,6 +44,7 @@ A practice for Quiz2 will be released this weekend (there is no hw7 until after 
 | [Kyeongsu's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials/Kyeongsu) |
 | [Sam's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials/Sam) |
 | [Sveta's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials/Sveta) |
+| [Zach's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials/Zach)
 
 
 
