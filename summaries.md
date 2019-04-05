@@ -75,7 +75,7 @@ A practice for Quiz2 will be released this weekend (there is no hw7 until after 
 |	21	|	M	|	4/1	| Applications of Determinants|
 |	22	|	W	|	4/3	|review|||
 |	23	|	F	|	4/5	| **Exam 2** (includes material up to Friday March 22) |
-|	24	|	M	|	4/8	|
+|	24	|	M	|	4/8	| Cofactors and Cramer's Rule | Strang 5.2, 5.3
 |	25	|	W	|	4/10	|||HW 7 due|
 |	26	|	F	|	4/12 (CPW. Pats Day next week)	|
 |	27	|	W	|	4/17	|||HW 8 due|
