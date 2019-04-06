@@ -34,7 +34,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 [HW6](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset6.ipynb) |[HW6 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset6sol.ipynb)| March 20, 10:55am|
 A practice for Quiz2 will be released this weekend (there is no hw7 until after the exam  but the practice will be worth doing) |
 [Quiz2 practice ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%202%20Practice%20.ipynb)|[Quiz2 practice solutions (draft)](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/midterm_2_practice_problems_solns.ipynb)| |
-HW7 will be released today |
+HW7 will be released today (saturday) and will be due Friday |
 
 
 |Recitation Materials|
@@ -77,8 +77,8 @@ HW7 will be released today |
 |	22	|	W	|	4/3	|review|||
 |	23	|	F	|	4/5	| **Exam 2** (includes material up to Friday March 22) |
 |	24	|	M	|	4/8	| Cofactors and Cramer's Rule | Strang 5.2, 5.3
-|	25	|	W	|	4/10	|||HW 7 due|
-|	26	|	F	|	4/12 (CPW. Pats Day next week)	|
+|	25	|	W	|	4/10	||
+|	26	|	F	|	4/12 (CPW. Pats Day next week)	||HW 7 Due|
 |	27	|	W	|	4/17	|||HW 8 due|
 |	28	|	F	|	4/19	|
 |	29	|	M	|	4/22	|
