@@ -35,7 +35,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 A practice for Quiz2 will be released this weekend (there is no hw7 until after the exam  but the practice will be worth doing) |
 [Quiz2 practice ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%202%20Practice%20.ipynb)|[Quiz2 practice solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/midterm_2_practice_problems_solns.ipynb)| |
 [Quiz 2](https://github.com/mitmath/1806/raw/master/psets/quiz2-1806-S19.pdf) | [Quiz 2 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz2-1806-S19_solns.pdf) |
-[HW7](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset7.ipynb)  will be due Friday |
+[HW7](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset7.ipynb) | | Extended due date: April 12, 10:55am
 
 
 
