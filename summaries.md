@@ -73,7 +73,7 @@ A practice for Quiz2 will be released this weekend (there is no hw7 until after 
 |	18	|	M	|	3/18	| Linear Transformations and Matrix Calculus Continued | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g54c2f1d34e_123_0) |
 |	19	|	W	|	3/20	| Determinants |[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5446ee59a2_262_0) 5.1 of Strang |HW 6 due|
 |	20	|	F	|	3/22 (Spring Break next week)	| Guest Lecturer [Zachary Remscrim](https://math.mit.edu/directory/profile.php?pid=1952): Permutations and Cofactors | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5446ee59a2_347_0) 5.2 of Strang|
-|	21	|	M	|	4/1	| Applications of Determinants|
+|	21	|	M	|	4/1	| Applications of Determinants| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g55faa85cad_78_3)
 |	22	|	W	|	4/3	|review|||
 |	23	|	F	|	4/5	| **Exam 2** (includes material up to Friday March 22) |
 |	24	|	M	|	4/8	| Cofactors and Cramer's Rule | Strang 5.2, 5.3
