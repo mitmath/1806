@@ -1,0 +1,47 @@
+\documentclass[tikz]{standalone}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Math}
+\usetikzlibrary{graphs}
+\usetikzlibrary{graphdrawing}
+
+% from: https://tex.stackexchange.com/questions/453132/fresh-install-of-tl2018-no-tikz-graph-drawing-libraries-found
+\usepackage{luacode}
+\begin{luacode*}
+	function pgf_lookup_and_require(name)
+	local sep = package.config:sub(1,1)
+	local function lookup(name)
+	local sub = name:gsub('%.',sep)  
+	if kpse.find_file(sub, 'lua') then
+	require(name)
+	elseif kpse.find_file(sub, 'clua') then
+	collectgarbage('stop') 
+	require(name)
+	collectgarbage('restart')
+	else
+	return false
+	end
+	return true
+	end
+	return
+	lookup('pgf.gd.' .. name .. '.library') or
+	lookup('pgf.gd.' .. name) or
+	lookup(name .. '.library') or
+	lookup(name) 
+	end
+\end{luacode*}
+
+\usegdlibrary{layered}
+\begin{document}
+\begin{tikzpicture}[]
+\graph [layered layout, ] {
+1/"1" [],
+2/"2" [],
+3/"3" [],
+4/"4" [],
+;
+1 -> [,] 2;
+2 -> [,] 3;
+};
+
+\end{tikzpicture}
+\end{document}
