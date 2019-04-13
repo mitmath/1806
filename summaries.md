@@ -77,7 +77,7 @@ A practice for Quiz2 will be released this weekend (there is no hw7 until after 
 |	21	|	M	|	4/1	| Applications of Determinants| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g55faa85cad_78_3)
 |	22	|	W	|	4/3	|review|||
 |	23	|	F	|	4/5	| **Exam 2** (includes material up to Friday March 22) |
-|	24	|	M	|	4/8	| Cofactors and Cramer's Rule | Strang 5.2, 5.3
+|	24	|	M	|	4/8	| Cofactors and Cramer's Rule | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g57c9828bc0_13_43) Strang 5.2, 5.3
 |	25	|	W	|	4/10	|Inverses and Volumes| Strang 5.2,5.3
 |	26	|	F	|	4/12 (CPW. Pats Day next Monday)	| Hypercubes, Maps, and Jacobians ||HW 7 Due|
 |	27	|	W	|	4/17	|||HW 8 due|
