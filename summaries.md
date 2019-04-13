@@ -78,8 +78,8 @@ A practice for Quiz2 will be released this weekend (there is no hw7 until after 
 |	22	|	W	|	4/3	|review|||
 |	23	|	F	|	4/5	| **Exam 2** (includes material up to Friday March 22) |
 |	24	|	M	|	4/8	| Cofactors and Cramer's Rule | Strang 5.2, 5.3
-|	25	|	W	|	4/10	||
-|	26	|	F	|	4/12 (CPW. Pats Day next Monday)	|||HW 7 Due|
+|	25	|	W	|	4/10	|Inverses and Volumes|
+|	26	|	F	|	4/12 (CPW. Pats Day next Monday)	| Hypercubes, Maps, and Jacobians ||HW 7 Due|
 |	27	|	W	|	4/17	|||HW 8 due|
 |	28	|	F	|	4/19	|
 |	29	|	M	|	4/22	|
