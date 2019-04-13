@@ -32,7 +32,6 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 [Quiz 1](https://github.com/mitmath/1806/raw/master/psets/quiz1-1806-S19.pdf) | [Quiz 1 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz1_solns.pdf) |
 [HW5](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset5.ipynb) |[HW5 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset5sol.ipynb)| March 13, 10:55am|
 [HW6](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset6.ipynb) |[HW6 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset6sol.ipynb)| March 20, 10:55am|
-A practice for Quiz2 will be released this weekend (there is no hw7 until after the exam  but the practice will be worth doing) |
 [Quiz2 practice](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%202%20Practice%20.ipynb)|[Quiz2 practice solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/midterm_2_practice_problems_solns.ipynb)| |
 [HW7](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset7.ipynb) |[HW7 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset7sol.ipynb)| April 12, 11:59pm|
 [HW8 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset8.ipynb)
