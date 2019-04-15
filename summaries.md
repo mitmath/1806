@@ -80,7 +80,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	24	|	M	|	4/8	| Cofactors and Cramer's Rule | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g57c9828bc0_13_43) Strang 5.2, 5.3
 |	25	|	W	|	4/10	|Inverses and Volumes| Strang 5.2,5.3
 |	26	|	F	|	4/12 (CPW. Pats Day next Monday)	| Hypercubes, Maps, and Jacobians ||HW 7 Due|
-|	27	|	W	|	4/17	|||HW 8 due|
+|	27	|	W	|	4/17	|Eigenvalues||HW 8 due|
 |	28	|	F	|	4/19	|
 |	29	|	M	|	4/22	|
 |	30	|	W	|	4/24 (Drop date tomorrow)	|||HW 9  due|
