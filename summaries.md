@@ -84,10 +84,10 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	28	|	F	|	4/19	||Strang 6.2|HW 8 due|
 |	29	|	M	|	4/22	|Markov Matrices|Strang 6.2,10.3|
 |	30	|	W	|	4/24 (Drop date tomorrow)	||Strang 6.3|
-|	31	|	F	|	4/26	||Strang 6.4|HW9 Due|
-|	32	|	M	|	4/29	|Strang 6.5|
+|	31	|	F	|	4/26	||Strang 6.4,6.5|HW9 Due|
+|	32	|	M	|	4/29	|||
 |	33	|	W	|	5/1	|review|
-|	34	|	F	|	5/3	|**Exam 3** |
+|	34	|	F	|	5/3	|**Exam 3** covers material up to Lecture 31 |
 |	35	|	M	|	5/6	|
 |	36	|	W	|	5/8	| || HW 10 due|
 |	37	|	F	|	5/10	|
