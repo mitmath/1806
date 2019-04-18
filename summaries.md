@@ -88,11 +88,11 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	32	|	M	|	4/29	|||
 |	33	|	W	|	5/1	|review|
 |	34	|	F	|	5/3	|**Exam 3** covers material up to Lecture 31 |
-|	35	|	M	|	5/6	|
-|	36	|	W	|	5/8	| || HW 10 due|
-|	37	|	F	|	5/10	|
+|	35	|	M	|	5/6	| LU, QR, and SVD how are they computed anyway? |
+|	36	|	W	|	5/8	| 
+|	37	|	F	|	5/10	||HW 10 Due|
 |	38	|	M	|	5/13	|
-|	39	|	W	|	5/15	| Tropical Numbers |
+|	39	|	W	|	5/15	|  |
 
 
 
