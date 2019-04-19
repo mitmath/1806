@@ -81,10 +81,10 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	24	|	M	|	4/8	| Cofactors and Cramer's Rule | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g57c9828bc0_13_43) Strang 5.2, 5.3
 |	25	|	W	|	4/10	|Inverses and Volumes| Strang 5.2,5.3
 |	26	|	F	|	4/12 (CPW. Pats Day next Monday)	| Hypercubes, Maps, and Jacobians | Completion up to Chapter 5 of Strang|HW 7 Due|
-|	27	|	W	|	4/17	|Eigenvalues (Guest Lecture David Sanders)| Strang 6.1|
+|	27	|	W	|	4/17	|Eigenvalues | Strang 6.1|
 |	28	|	F	|	4/19	||Strang 6.2|HW 8 due|
 |	29	|	M	|	4/22	|Markov Matrices|Strang 6.2,10.3|
-|	30	|	W	|	4/24 (Drop date tomorrow)	||Strang 6.3|
+|	30	|	W	|	4/24 (Drop date tomorrow)	| Guest Lecture David Sanders |Strang 6.3|
 |	31	|	F	|	4/26	||Strang 6.4,6.5|HW9 Due|
 |	32	|	M	|	4/29	|||
 |	33	|	W	|	5/1	|review|
