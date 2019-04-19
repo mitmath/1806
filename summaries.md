@@ -80,7 +80,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	23	|	F	|	4/5	| **Exam 2** (includes material up to Friday March 22) |
 |	24	|	M	|	4/8	| Cofactors and Cramer's Rule | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g57c9828bc0_13_43) Strang 5.2, 5.3
 |	25	|	W	|	4/10	|Inverses and Volumes| Strang 5.2,5.3
-|	26	|	F	|	4/12 (CPW. Pats Day next Monday)	| Hypercubes, Maps, and Jacobians ||HW 7 Due|
+|	26	|	F	|	4/12 (CPW. Pats Day next Monday)	| Hypercubes, Maps, and Jacobians | Completion up to Chapter 5 of Strang|HW 7 Due|
 |	27	|	W	|	4/17	|Eigenvalues| Strang 6.1|
 |	28	|	F	|	4/19	||Strang 6.2|HW 8 due|
 |	29	|	M	|	4/22	|Markov Matrices|Strang 6.2,10.3|
