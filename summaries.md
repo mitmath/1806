@@ -35,7 +35,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 [Quiz2 practice](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%202%20Practice%20.ipynb)|[Quiz2 practice solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/midterm_2_practice_problems_solns.ipynb)| |
 [Quiz 2](https://github.com/mitmath/1806/raw/master/psets/quiz2-1806-S19.pdf) | [Quiz 2 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz2-1806-S19_solns.pdf) |
 [HW7](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset7.ipynb) |[HW7 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset7sol.ipynb)| April 12, 11:59pm|
-[HW8 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset8.ipynb) |[HW8 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset8sol.ipynb)| Extended to April 19 11:59 pm|
+[HW8 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset8.ipynb) | | Extended to April 19 11:59 pm|
 [HW9 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset9.ipynb) || April 26, 11:59pm| 
 
 
@@ -81,7 +81,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	24	|	M	|	4/8	| Cofactors and Cramer's Rule | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g57c9828bc0_13_43) Strang 5.2, 5.3
 |	25	|	W	|	4/10	|Inverses and Volumes| Strang 5.2,5.3
 |	26	|	F	|	4/12 (CPW. Pats Day next Monday)	| Hypercubes, Maps, and Jacobians | Completion up to Chapter 5 of Strang|HW 7 Due|
-|	27	|	W	|	4/17	|Eigenvalues | Strang 6.1|
+|	27	|	W	|	4/17	|Eigenvalues | [Interactive Eigenvectors](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/materials/Action%20of%20a%20matrix%20and%20eigenvectors.ipynb)trang 6.1|
 |	28	|	F	|	4/19	||Strang 6.2|HW 8 due|
 |	29	|	M	|	4/22	|Diagonalizing|Strang 6.2|
 |	30	|	W	|	4/24 (Drop date tomorrow)	| Guest Lecture David Sanders |Strang 6.3|
