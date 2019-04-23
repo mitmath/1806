@@ -86,13 +86,13 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	29	|	M	|	4/22	|Diagonalizing|[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5122562dff_15_15) Strang 6.2|
 |	30	|	W	|	4/24 (Drop date tomorrow)	| Differential Equations: Guest Lecture David Sanders |Strang 6.3|
 |	31	|	F	|	4/26	|Markov Matrices|Strang 6.4,6.5,10.3|HW9 Due|
-|	32	|	M	|	4/29	|||
+|	32	|	M	|	4/29	|Positive Definite Matrices| Strang 6.5|
 |	33	|	W	|	5/1	|review|
 |	34	|	F	|	5/3	|**Exam 3** covers material up to Lecture 31 |
-|	35	|	M	|	5/6	| LU, QR, and SVD, Eigenvalues how are they computed anyway? | Strang 11.1 |
-|	36	|	W	|	5/8	| 
+|	35	|	M	|	5/6	|Principal Components, Why divide by  n-1 in sample variance,stats|Strang 7.2|
+|	36	|	W	|	5/8	|Infinite Dimensional Vector Space and Fourier | Strang 10.5 | 
 |	37	|	F	|	5/10	||HW 10 Due|
-|	38	|	M	|	5/13	|
+|	38	|	M	|	5/13	|LU, QR, and SVD, Eigenvalues how are they computed anyway? | Strang 11.1 |
 |	39	|	W	|	5/15	|  |
 
 
