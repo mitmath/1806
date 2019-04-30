@@ -27,17 +27,17 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 [HW1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1.ipynb) | [HW1 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1sol.ipynb)     | February 13, 10:55am |
 [HW2](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset2.ipynb)|[HW2 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset2sol.ipynb)  | February 20, 10:55am|
 [HW3](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset3.ipynb)  | [HW3 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset3sol.ipynb)| February 27, 10:55am |
-[Practice Quiz 1  Problems](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%201%20practice%20problems.ipynb)| [Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/midterm_1_practice_problems.ipynb)
+[Practice Quiz 1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%201%20practice%20problems.ipynb)| [Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/midterm_1_practice_problems.ipynb)
 [HW4](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset4.ipynb)|[HW4 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset4sol.ipynb)| Extended due date: March 8, 10:55am
 [Quiz 1](https://github.com/mitmath/1806/raw/master/psets/quiz1-1806-S19.pdf) | [Quiz 1 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz1_solns.pdf) |
 [HW5](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset5.ipynb) |[HW5 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset5sol.ipynb)| March 13, 10:55am|
 [HW6](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset6.ipynb) |[HW6 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset6sol.ipynb)| March 20, 10:55am|
-[Quiz2 practice](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%202%20Practice%20.ipynb)|[Quiz2 practice solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/midterm_2_practice_problems_solns.ipynb)| |
+[Practice Quiz 2](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%202%20Practice%20.ipynb)|[Quiz2 practice solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/midterm_2_practice_problems_solns.ipynb)| |
 [Quiz 2](https://github.com/mitmath/1806/raw/master/psets/quiz2-1806-S19.pdf) | [Quiz 2 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz2-1806-S19_solns.pdf) |
 [HW7](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset7.ipynb) |[HW7 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset7sol.ipynb)| April 12, 11:59pm|
 [HW8 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset8.ipynb) |[HW8 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset8sol.ipynb) | Extended to April 19 11:59 pm|
 [HW9 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset9.ipynb) |[HW9 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset9sol.ipynb)| April 26, 11:59pm| 
-[Practice Quiz 3 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%203%20Practice%20.ipynb)
+[Practice Quiz 3 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%203%20Practice%20.ipynb)| [Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam3Practice-sol.ipynb)
 
 
 |Recitation Materials|
