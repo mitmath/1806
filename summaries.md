@@ -95,7 +95,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	36	|	W	|	5/8	|Infinite Dimensional Vector Space and Fourier | Strang 10.5 | 
 |	37	|	F	|	5/10	||HW 10 Due|
 |	38	|	M	|	5/13	|LU, QR, and SVD, Eigenvalues how are they computed anyway? | Strang 11.1 |
-|	39	|	W	|	5/15	|  |
+|	39	|	W	|	5/15	| Linear Transformations of Corgis and more fun  |
 
 
 
