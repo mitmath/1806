@@ -37,7 +37,8 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 [HW7](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset7.ipynb) |[HW7 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset7sol.ipynb)| April 12, 11:59pm|
 [HW8 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset8.ipynb) |[HW8 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset8sol.ipynb) | Extended to April 19 11:59 pm|
 [HW9 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset9.ipynb) |[HW9 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset9sol.ipynb)| April 26, 11:59pm| 
-[Practice Quiz 3 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%203%20Practice%20.ipynb)| [Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam3Practice-sol.ipynb)
+[Practice Quiz 3 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%203%20Practice%20.ipynb)| [Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam3Practice-sol.ipynb)|
+[Quiz 3](https://github.com/mitmath/1806/raw/master/psets/quiz3-1806.pdf) | [Quiz 3 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz3-1806-sol.pdf) |
 [HW10](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset10.ipynb)|| May 10, 11:59pm
 
 
