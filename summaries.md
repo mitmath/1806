@@ -27,16 +27,19 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 [HW1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1.ipynb) | [HW1 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1sol.ipynb)     | February 13, 10:55am |
 [HW2](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset2.ipynb)|[HW2 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset2sol.ipynb)  | February 20, 10:55am|
 [HW3](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset3.ipynb)  | [HW3 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset3sol.ipynb)| February 27, 10:55am |
-[Practice Quiz 1  Problems](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%201%20practice%20problems.ipynb)| [Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/midterm_1_practice_problems.ipynb)
+[Practice Quiz 1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%201%20practice%20problems.ipynb)| [Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/midterm_1_practice_problems.ipynb)
 [HW4](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset4.ipynb)|[HW4 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset4sol.ipynb)| Extended due date: March 8, 10:55am
 [Quiz 1](https://github.com/mitmath/1806/raw/master/psets/quiz1-1806-S19.pdf) | [Quiz 1 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz1_solns.pdf) |
 [HW5](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset5.ipynb) |[HW5 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset5sol.ipynb)| March 13, 10:55am|
 [HW6](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset6.ipynb) |[HW6 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset6sol.ipynb)| March 20, 10:55am|
-[Quiz2 practice](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%202%20Practice%20.ipynb)|[Quiz2 practice solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/midterm_2_practice_problems_solns.ipynb)| |
+[Practice Quiz 2](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%202%20Practice%20.ipynb)|[Quiz2 practice solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/midterm_2_practice_problems_solns.ipynb)| |
 [Quiz 2](https://github.com/mitmath/1806/raw/master/psets/quiz2-1806-S19.pdf) | [Quiz 2 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz2-1806-S19_solns.pdf) |
 [HW7](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset7.ipynb) |[HW7 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset7sol.ipynb)| April 12, 11:59pm|
-[HW8 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset8.ipynb) | | Extended to April 19 11:59 pm|
-[HW9 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset9.ipynb) || April 26, 11:59pm| 
+[HW8 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset8.ipynb) |[HW8 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset8sol.ipynb) | Extended to April 19 11:59 pm|
+[HW9 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset9.ipynb) |[HW9 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset9sol.ipynb)| April 26, 11:59pm| 
+[Practice Quiz 3 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%203%20Practice%20.ipynb)| [Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam3Practice-sol.ipynb)|
+[Quiz 3](https://github.com/mitmath/1806/raw/master/psets/quiz3-1806.pdf) | [Quiz 3 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz3-1806-sol.pdf) |
+[HW10](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset10.ipynb)|| May 10, 11:59pm
 
 
 |Recitation Materials|
@@ -82,18 +85,19 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	25	|	W	|	4/10	|Inverses and Volumes| Strang 5.2,5.3
 |	26	|	F	|	4/12 (CPW. Pats Day next Monday)	| Hypercubes, Maps, and Jacobians |[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g57e4cd3ac9_0_73)  Completion up to Chapter 5 of Strang|HW 7 Due|
 |	27	|	W	|	4/17	|Eigenvalues |[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5810e9ab8b_417_0)  [Interactive Eigenvectors](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/materials/Action%20of%20a%20matrix%20and%20eigenvectors.ipynb) Strang 6.1|
-|	28	|	F	|	4/19	| Hand Computation of Eigenvalues/Eigenvectors Special Cases |Strang 6.2|HW 8 due|
-|	29	|	M	|	4/22	|Diagonalizing|Strang 6.2|
-|	30	|	W	|	4/24 (Drop date tomorrow)	| Differential Equations: Guest Lecture David Sanders |Strang 6.3|
-|	31	|	F	|	4/26	|Markov Matrices|Strang 6.4,6.5,10.3|HW9 Due|
-|	32	|	M	|	4/29	|||
+|	28	|	F	|	4/19	| Hand Computation of Eigenvalues/Eigenvectors Special Cases |[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5122562dff_73_0)Strang 6.2|HW 8 due|
+|	29	|	M	|	4/22	|Diagonalizing|[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5122562dff_15_15) Strang 6.2|
+|	30	|	W	|	4/24 (Drop date tomorrow)	| Differential Equations: Guest Lecture David Sanders |[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g56d1fbeb37_69_0) Strang 6.3|
+|	31	|	F	|	4/26	|Symmetric  Matrices and Diagonalizing |Strang 6.4,|HW9 Due|
+|	32	|	M	|	4/29	|Markov Matrices| Strang 10.3|
 |	33	|	W	|	5/1	|review|
 |	34	|	F	|	5/3	|**Exam 3** covers material up to Lecture 31 |
-|	35	|	M	|	5/6	| LU, QR, and SVD, Eigenvalues how are they computed anyway? | Strang 11.1 |
-|	36	|	W	|	5/8	| 
-|	37	|	F	|	5/10	||HW 10 Due|
-|	38	|	M	|	5/13	|
-|	39	|	W	|	5/15	|  |
+|	35	|	M	|	5/6	|Positive Definite Matrices | Strang 6.5 |
+|	36	|	W	|	5/8	|Principal Components, Why divide by  n-1 in sample variance,stats|Strang 7.2
+and parts of Chapter 12 also [why n-1 in sample variance notebook?](https://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Sample%20Variance%20division%20by%20n-1.ipynb)|
+|	37	|	F	|	5/10	|Change of Basis|8.3|  HW 10 Due|
+|	38	|	M	|	5/13	|LU, QR, and SVD, Eigenvalues how are they computed anyway? | Strang 11.1 |
+|	39	|	W	|	5/15	| Linear Transformations of Corgis and more fun  |
 
 
 
