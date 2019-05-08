@@ -89,11 +89,12 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	29	|	M	|	4/22	|Diagonalizing|[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5122562dff_15_15) Strang 6.2|
 |	30	|	W	|	4/24 (Drop date tomorrow)	| Differential Equations: Guest Lecture David Sanders |[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g56d1fbeb37_69_0) Strang 6.3|
 |	31	|	F	|	4/26	|Symmetric  Matrices and Diagonalizing |Strang 6.4,|HW9 Due|
-|	32	|	M	|	4/29	|Markov and Positive Definite Matrices| Strang 10.3, 6.5|
+|	32	|	M	|	4/29	|Markov Matrices| Strang 10.3|
 |	33	|	W	|	5/1	|review|
 |	34	|	F	|	5/3	|**Exam 3** covers material up to Lecture 31 |
-|	35	|	M	|	5/6	|Principal Components, Why divide by  n-1 in sample variance,stats|Strang 7.2|
-|	36	|	W	|	5/8	|Infinite Dimensional Vector Space and Fourier | Strang 10.5 | 
+|	35	|	M	|	5/6	|Positive Definite Matrices | Strang 6.5 |
+|	36	|	W	|	5/8	|Principal Components, Why divide by  n-1 in sample variance,stats|Strang 7.2
+and parts of Chapter 12|
 |	37	|	F	|	5/10	||HW 10 Due|
 |	38	|	M	|	5/13	|LU, QR, and SVD, Eigenvalues how are they computed anyway? | Strang 11.1 |
 |	39	|	W	|	5/15	| Linear Transformations of Corgis and more fun  |
