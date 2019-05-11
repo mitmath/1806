@@ -82,7 +82,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	22	|	W	|	4/3	|review|||
 |	23	|	F	|	4/5	| **Exam 2** (includes material up to Friday March 22) |
 |	24	|	M	|	4/8	| Cofactors and Cramer's Rule | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g57c9828bc0_13_43) Strang 5.2, 5.3
-|	25	|	W	|	4/10	|Inverses and Volumes| Strang 5.2,5.3
+|	25	|	W	|	4/10	|Inverses and Volumes| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g57e4cd3ac9_0_48)  Strang 5.2,5.3
 |	26	|	F	|	4/12 (CPW. Pats Day next Monday)	| Hypercubes, Maps, and Jacobians |[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g57e4cd3ac9_0_73)  Completion up to Chapter 5 of Strang|HW 7 Due|
 |	27	|	W	|	4/17	|Eigenvalues |[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5810e9ab8b_417_0)  [Interactive Eigenvectors](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/materials/Action%20of%20a%20matrix%20and%20eigenvectors.ipynb) Strang 6.1|
 |	28	|	F	|	4/19	| Hand Computation of Eigenvalues/Eigenvectors Special Cases |[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5122562dff_73_0)Strang 6.2|HW 8 due|
