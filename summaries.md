@@ -93,10 +93,9 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	33	|	W	|	5/1	|review|
 |	34	|	F	|	5/3	|**Exam 3** covers material up to Lecture 31 |
 |	35	|	M	|	5/6	|Positive Definite Matrices | Strang 6.5 |
-|	36	|	W	|	5/8	|Principal Components, Why divide by  n-1 in sample variance,stats|Strang 7.2
-and parts of Chapter 12 also [why n-1 in sample variance notebook?](https://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Sample%20Variance%20division%20by%20n-1.ipynb)|
-|	37	|	F	|	5/10	|Change of Basis|8.3|  HW 10 Due|
-|	38	|	M	|	5/13	|LU, QR, and SVD, Eigenvalues how are they computed anyway? | Strang 11.1 |
+|	36	|	W	|	5/8	|Why divide by  n-1 in sample variance?| [why n-1 in sample variance notebook?](https://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Sample%20Variance%20division%20by%20n-1.ipynb)|
+|	37	|	F	|	5/10	|Principal Components |Strang 7.2 and Parts of 12|  HW 10 Due|
+|	38	|	M	|	5/13	| |  |
 |	39	|	W	|	5/15	| Linear Transformations of Corgis and more fun  |
 
 
