@@ -88,7 +88,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	28	|	F	|	4/19	| Hand Computation of Eigenvalues/Eigenvectors Special Cases |[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5122562dff_73_0)Strang 6.2|HW 8 due|
 |	29	|	M	|	4/22	|Diagonalizing|[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5122562dff_15_15) Strang 6.2|
 |	30	|	W	|	4/24 (Drop date tomorrow)	| Differential Equations: Guest Lecture David Sanders |[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g56d1fbeb37_69_0) Strang 6.3|
-|	31	|	F	|	4/26	|[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g56e77651a0_283_0) |Symmetric  Matrices and Diagonalizing |Strang 6.4,|HW9 Due|
+|	31	|	F	|	4/26	|Symmetric Matrices and Diagonalizing | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g56e77651a0_283_0) |Strang 6.4,|HW9 Due|
 |	32	|	M	|	4/29	|Markov Matrices|[Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g56e77651a0_283_53)  Strang 10.3|
 |	33	|	W	|	5/1	|review|
 |	34	|	F	|	5/3	|**Exam 3** covers material up to Lecture 31 |
