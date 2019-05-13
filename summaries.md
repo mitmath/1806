@@ -100,7 +100,7 @@ Final | May 21 9am-12pm | Johnson ice rink | Covers the semester up to Lecture 3
 |	38	|	M	|	5/13	| Complex Matrices and the Discrete Fourier Transform  |  |
 |	39	|	W	|	5/15	| Linear Transformations of Corgis and more fun  |
 
-Final | May 21 9am-12pm | Johnson ice rink | Covers the semester up to Lecture 3
+|Final | May 21 9am-12pm | Johnson ice rink | Covers the semester up to Lecture 3
 5 on May 6 (covers material covered in Exams 1,2 and 3, pos definite and Markov
 Matrices
 
