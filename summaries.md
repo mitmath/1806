@@ -43,7 +43,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 
 |||||
 |-|-|-|-|
-|Final | May 21 9am-12pm | Johnson ice rink | Covers the semester up to Lecture 35 on May 6 (covers material covered in Exams 1,2 and 3, pos definite and Markov Matrices 
+|Final | May 21 9am-12pm | Johnson ice rink | Covers the semester up to Lecture 35 on May 6 (Exams 1,2 and 3, pos definite and Markov Matrices, all hws) 
 
 |Recitation Materials|
 |--|
