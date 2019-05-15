@@ -98,7 +98,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	35	|	M	|	5/6	|Positive Definite Matrices | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5724e911eb_244_0) Strang 6.5 |
 |	36	|	W	|	5/8	|Semidef + Why divide by  n-1 in sample variance?| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5724e911eb_334_41) [why n-1 in sample variance notebook?](https://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Sample%20Variance%20division%20by%20n-1.ipynb)|
 |	37	|	F	|	5/10	| Statistics and Principal Components | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5724e911eb_332_0) Strang 7.2 and Parts of 12|  HW 10 Due|
-|	38	|	M	|	5/13	| Complex Matrices and the Discrete Fourier Transform  |  |
+|	38	|	M	|	5/13	| Complex Matrices and the Discrete Fourier Transform  | Strang Chapter 9  |
 |	39	|	W	|	5/15	| Linear Transformations of Corgis and more fun  |
 
 
