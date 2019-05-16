@@ -39,8 +39,12 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 [HW9 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset9.ipynb) |[HW9 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset9sol.ipynb)| April 26, 11:59pm| 
 [Practice Quiz 3 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%203%20Practice%20.ipynb)| [Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam3Practice-sol.ipynb)|
 [Quiz 3](https://github.com/mitmath/1806/raw/master/psets/quiz3-1806.pdf) | [Quiz 3 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz3-1806-sol.pdf) |
-[HW10](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset10.ipynb)|| May 10, 11:59pm
+[HW10](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset10.ipynb)|[HW10 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset10sol.ipynb)| May 10, 11:59pm |
+[Final exam practice problems](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/finalpractice.ipynb)|Solutions will be posted on Saturday| |
 
+|||||
+|-|-|-|-|
+|Final | May 21 9am-12pm | Johnson ice rink | Covers the semester up to Lecture 35 on May 6 (Exams 1,2 and 3, pos definite and Markov Matrices, all hws) 
 
 |Recitation Materials|
 |--|
@@ -93,10 +97,11 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 |	33	|	W	|	5/1	|review|
 |	34	|	F	|	5/3	|**Exam 3** covers material up to Lecture 31 |
 |	35	|	M	|	5/6	|Positive Definite Matrices | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5724e911eb_244_0) Strang 6.5 |
-|	36	|	W	|	5/8	|Why divide by  n-1 in sample variance?| [why n-1 in sample variance notebook?](https://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Sample%20Variance%20division%20by%20n-1.ipynb)|
-|	37	|	F	|	5/10	|Principal Components |Strang 7.2 and Parts of 12|  HW 10 Due|
-|	38	|	M	|	5/13	| Complex Matrices and the Discrete Fourier Transform  |  |
-|	39	|	W	|	5/15	| Linear Transformations of Corgis and more fun  |
+|	36	|	W	|	5/8	|Semidef + Why divide by  n-1 in sample variance?| [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5724e911eb_334_41) [why n-1 in sample variance notebook?](https://nbviewer.jupyter.org/github/stevengj/1806/blob/spring18/lectures/Sample%20Variance%20division%20by%20n-1.ipynb)|
+|	37	|	F	|	5/10	| Statistics and Principal Components | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g5724e911eb_332_0) Strang 7.2 and Parts of 12|  HW 10 Due|
+|	38	|	M	|	5/13	| Complex Matrices and the Discrete Fourier Transform  | Strang Chapter 9  |
+|	39	|	W	|	5/15	| Linear Transformations of Corgis and more fun and  some of Strang Chapter 11  |
+
 
 
 
