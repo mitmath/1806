@@ -40,7 +40,7 @@ If you come back in 5 years and said, "wow Linear Algebra prepared me more than 
 [Practice Quiz 3 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%203%20Practice%20.ipynb)| [Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam3Practice-sol.ipynb)|
 [Quiz 3](https://github.com/mitmath/1806/raw/master/psets/quiz3-1806.pdf) | [Quiz 3 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz3-1806-sol.pdf) |
 [HW10](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset10.ipynb)|[HW10 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset10sol.ipynb)| May 10, 11:59pm |
-[Final exam practice problems](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/finalpractice.ipynb)|[Final practice solutions DRAFT](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/finalpracticesol.ipynb)| |
+[Final exam practice problems](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/finalpractice.ipynb)|[Final practice solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/finalpracticesol.ipynb)| |
 [Sam's Inventory of past exams](https://github.com/mitmath/1806/raw/master/examinventory.pdf)|
 
 |||||
