@@ -8,7 +8,7 @@
 [VMLS Julia Companion](http://vmls-book.stanford.edu/vmls-julia-companion.pdf) |
 
 
-* Under construction: right now copies from 2019.  Will be updated today.*
+# Under construction: right now copies from 2019.  Will be updated today.
 
 You can change sections on [Stellar](https://learning-modules.mit.edu/class/index.html?uuid=/course/18/sp19/18.06#dashboard)  until full.
 Further questions please direct to Theresa Cummings (tcumming at mit dot .edu)
