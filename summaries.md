@@ -41,10 +41,10 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
-|0||| Prereqs: 18.02 |  We assume familiarity with the very basics, or that you can pick it up as you go (many students have): Strang Chapter 1, [VMLS](http://vmls-book.stanford.edu/vmls.pdf)  1.1-1.4, 2.1, 3.1, 6.1, 10.1 | [HW0](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset0.ipynb) is a practice class workflow.  It is to be handed in by Sunday 2/10  at 4:55pm, but will not be graded.  <a href="https://youtu.be/NGmdBOcnBCE">Video of HW0 workflow by Jonathan Edelman who didn't quite make it to the last step</a> <a href="https://youtu.be/NGmdBOcnBCE"><img src="https://i.ytimg.com/vi/NGmdBOcnBCE/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA7ZvHBB2I15pyz78RXIz5dKyH_hg"></a>  WARNING: How you download matters.  "Save LINK as" seems to always work when you download.
-|0||| Not a Pre-req | We assume no familiarity with computing or Julia.  Some homework problems will use Julia (kind of) as a calculator. This is not a programming class. On occasion, Julia programming may be demonstrated if it helps understand linear algebra, but Julia syntax will never be tested.  Tests will be traditional paper and pencil. |
- |1| W|2/6| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground   | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit?usp=sharing)| [HW1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1.ipynb) released 2/7.  A sample solution to a 2x2 factorization problem has been added to the end. |
- 
+|0||| Prereqs: 18.02 |  We assume familiarity with the very basics, or that you can pick it up as you go (many students have): Strang Chapter 1, [VMLS](http://vmls-book.stanford.edu/vmls.pdf)  1.1-1.4, 2.1, 3.1, 6.1, 10.1 |
+|0||| Not a Pre-req | We assume no familiarity with computing or Julia.  Some homework problems will use Julia (kind of) as a calculator. T On occasion, Julia  may be demonstrated if it helps understand linear algebra, but Julia syntax will never be tested.  Tests will be traditional paper and pencil. |
+ |1| W|2/6| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground   | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit?usp=sharing)| [HW1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1.ipynb) released 2/7.  |
+
 
 <!-- (Below still under construction.)
 |Problem Set | Solutions | Due Date |
