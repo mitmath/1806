@@ -17,15 +17,15 @@ We will not use Stellar for much this semester.
 # Spring 2020 18.06 Syllabus <br>
 
 
-Testing
+
 
 
  Linear Algebra is everywhere: data science, machine learning, physics, indeed all of engineering and science.
 Strang's book and OCW will be great references but WARNING: we are not following the book and OCW directly.
 Rather you are getting an updated course that throws away echelon forms (never used), and favors the singular
 value decomposition (dished out slowly over the whole semester), linear transformations, and matrix calculus.
-We will do less hand computation, but there will still be some.
-Eigenvalues are losing their place in line, but still key.
+We will do less hand computation, but there will still be some.  Eigenvalues are losing their place in line, but still key.
+(See [Spring 2019 Syllabus](https://github.com/mitmath/1806/blob/spring19/summaries.md) for a feel for the course.)
 
 Some of you may think mathematics is about executing an algorithm with pencil and paper.  
 For some of you, this may be your first experience with big concepts and abstractions
