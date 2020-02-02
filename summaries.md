@@ -16,7 +16,9 @@ We will not use Stellar for much this semester.
 
 # Spring 2020 18.06 Syllabus <br>
 
+
 Testing
+
 
  Linear Algebra is everywhere: data science, machine learning, physics, indeed all of engineering and science.
 Strang's book and OCW will be great references but WARNING: we are not following the book and OCW directly.
@@ -37,7 +39,7 @@ after the class is over, the students come back to thank me.  This has happened 
 I have received emails sometimes  5 or 10  years after 18.06 was over with students saying, "wow, your  Linear Algebra class  prepared me more than I could have imagined while I was taking  the class."
 
 
-(Below still under construction.)
+<!-- (Below still under construction.)
 |Problem Set | Solutions | Due Date |
 |-|-|-|
 [HW0 Practice Workflow](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset0.ipynb) || February 10, 4:55pm |
@@ -146,4 +148,4 @@ Further Topics we will cover are:
 <li> Markov Matrices </li>
 <li> Positive Definite Matrices </li>
 <li> Linear Transformations </li>
-</ul>
+</ul> -->
