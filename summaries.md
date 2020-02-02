@@ -10,7 +10,7 @@
 
 
 
-You can change sections on [Stellar](https://learning-modules.mit.edu/class/index.html?uuid=/course/18/sp19/18.06#dashboard)  until full.
+You can change sections on [Stellar](https://learning-modules.mit.edu/class/index.html?uuid=/course/18/sp20/18.06#dashboard)  until full.
 Further questions please direct to Theresa Cummings (tcumming at mit dot .edu)
 We will not use Stellar for much this semester.
 
