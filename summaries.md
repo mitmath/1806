@@ -7,20 +7,32 @@
 [VMLS text](http://vmls-book.stanford.edu/vmls.pdf) |
 [VMLS Julia Companion](http://vmls-book.stanford.edu/vmls-julia-companion.pdf) |
 
-You can change sections on [Stellar](https://learning-modules.mit.edu/class/index.html?uuid=/course/18/sp19/18.06#dashboard)  until full.
+You can change sections on [Stellar](https://learning-modules.mit.edu/class/index.html?uuid=/course/18/sp20/18.06#dashboard)  until full.
 Further questions please direct to Theresa Cummings (tcumming at mit dot .edu)
 We will not use Stellar for much this semester.
 
-# Spring 2019 18.06 Syllabus <br>
+# Spring 2020 18.06 Syllabus <br>
 
-This semester we are modernizing the class after several decades.  We will keep the best, but the needs of machine learning, data science, statistics,  engineering, and computation make linear algebra a critical subject.  So as not to convey the wrong impression, this modernization is as valuable for science and the non computer-science subjects as well.  
+Linear Algebra is everywhere: data science, machine learning, physics, indeed all of engineering and science.
+Strang's book and OCW will be great references but WARNING: we are not following the book and OCW directly.
+Rather you are getting an updated course that throws away echelon forms (never used), and favors the singular
+value decomposition (dished out slowly over the whole semester), linear transformations, and matrix calculus.
+We will do less hand computation, but there will still be some.
+Eigenvalues are losing their place in line, but still key.
 
-Hand computation helps us understand, when possible, but computers do the work,
-and not everything, not even small problems,  are  readily done by hand. Neural networks, matrix and vector differentiation are hot.  The Singular Value Decomposition takes a life of its own.  Eigenvalues are losing their place in line, but still key.  By spending less time on hand computation, we can spend more time on big concepts and abstractions like vector spaces and linear transformations.  This may be your first math class that does this.  We hope you enjoy the intellectual activity to follow. 
+Some of you may think mathematics is about executing an algorithm with pencil and paper.  
+For some of you, this may be your first experience with big concepts and abstractions
+like linear transformations and vecotr spaces.
+This may be your first math class that does this.  We hope you enjoy the intellectual activity to follow. 
 
-Some high schools teach a few matrix operations.  You might  understandably think  that linear algebra is  the topic that manipulates tables of numbers.  In the real world, most matrices are not even represented as tables of numbers.  You will grow to learn that so much of the fabric of mathematics, science, and engineering, and computation is best understood with linear algebra.
-If you come back in 5 years and said, "wow Linear Algebra prepared me more than I could have imagined while I was taking  the class," we would be most pleased.
+We will do a little computing with Julia.  Some students complain that Julia is not python.  Others that Julia
+is not R.  This complaint has always been loud the first two weeks, then disappears, and often within a semester
+after the class is over, the students come back to thank me.  This has happened year after year.
 
+I have received emails sometimes  5 or 10  years after 18.06 was over with students saying, "wow, your  Linear Algebra class  prepared me more than I could have imagined while I was taking  the class." 
+
+
+(Below still under construction.)
 |Problem Set | Solutions | Due Date |
 |-|-|-|
 [HW0 Practice Workflow](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset0.ipynb) || February 10, 4:55pm |
