@@ -41,7 +41,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
-|0||| Prereqs: 18.02 |  We assume familiarity with the very basics, or that you can pick it up as you go (many students have): Strang Chapter 1, [VMLS](http://vmls-book.stanford.edu/vmls.pdf)  1.1-1.4, 2.1, 3.1, 6.1, 10.1 |
+|0||| Prereqs: 18.02 |  We assume familiarity with the very basics, or that you can pick it up as you go (many students have): Strang Chapter 1. |
 |0||| Not a Pre-req | We assume no familiarity with computing or Julia.  Some homework problems will use Julia (kind of) as a calculator. T On occasion, Julia  may be demonstrated if it helps understand linear algebra, but Julia syntax will never be tested.  Tests will be traditional paper and pencil. |
  |1| W|2/6| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground   | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit?usp=sharing)| [HW1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1.ipynb) released 2/7.  |
 
