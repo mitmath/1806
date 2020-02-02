@@ -1,14 +1,16 @@
 
 | [18.06 front page](http://web.mit.edu/18.06)  |
-[juliabox](http://www.juliabox.com) |
+<!-- [juliabox](http://www.juliabox.com) | -->
 [piazza](https://piazza.com/class/jrpkrwivp6x6v8) |
 [gradescope](https://www.gradescope.com/courses/40389) |
 [Julia](https://julialang.org/) |
-[VMLS text](http://vmls-book.stanford.edu/vmls.pdf) |
+<!-- [VMLS text](http://vmls-book.stanford.edu/vmls.pdf) | -->
 [VMLS Julia Companion](http://vmls-book.stanford.edu/vmls-julia-companion.pdf) |
 
 
+# Welcome to the 18.06 Linear Algebra 2020 page
 
+Basic course information may be found on the [18.06 front page](http://web.mit.edu/18.06).
 
 You can change sections on [Stellar](https://learning-modules.mit.edu/class/index.html?uuid=/course/18/sp20/18.06#dashboard)  until full.
 Further questions please direct to Theresa Cummings (tcumming at mit dot .edu)
@@ -41,7 +43,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
-|0||| Prereqs: 18.02 |  We assume familiarity with the very basics from 18.02, or that you can pick it up as you go: Strang Chapter 1.  [Watch Gil Strang OCW Video](https://youtu.be/ZK3O402wf1c?t=1) |
+|0||| Prereqs: 18.02 |  We assume familiarity with the very basics from 18.02, or that you can pick it up as you go: Strang Chapter 1.  [Watch Gil Strang OCW Video #1](https://youtu.be/ZK3O402wf1c?t=1) |
 |0||| Not a Pre-req | We assume no familiarity with computing or Julia.  Some homework problems will use Julia (kind of) as a calculator.  On occasion, Julia  may be demonstrated if it helps understand linear algebra, but Julia syntax will never be tested.  Tests will be traditional paper and pencil. |
  |1| W|2/6| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground   | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit?usp=sharing)|
  <!-- [HW1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1.ipynb) released 2/7. -->
