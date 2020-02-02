@@ -13,7 +13,7 @@ We will not use Stellar for much this semester.
 
 # Spring 2020 18.06 Syllabus <br>
 
-Linear Algebra is everywhere: data science, machine learning, physics, indeed all of engineering and science.
+ Linear Algebra is everywhere: data science, machine learning, physics, indeed all of engineering and science.
 Strang's book and OCW will be great references but WARNING: we are not following the book and OCW directly.
 Rather you are getting an updated course that throws away echelon forms (never used), and favors the singular
 value decomposition (dished out slowly over the whole semester), linear transformations, and matrix calculus.
