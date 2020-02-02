@@ -7,7 +7,10 @@
 [VMLS text](http://vmls-book.stanford.edu/vmls.pdf) |
 [VMLS Julia Companion](http://vmls-book.stanford.edu/vmls-julia-companion.pdf) |
 
-You can change sections on [Stellar](https://learning-modules.mit.edu/class/index.html?uuid=/course/18/sp20/18.06#dashboard)  until full.
+
+# Under construction: right now copies from 2019.  Will be updated today.
+
+You can change sections on [Stellar](https://learning-modules.mit.edu/class/index.html?uuid=/course/18/sp19/18.06#dashboard)  until full.
 Further questions please direct to Theresa Cummings (tcumming at mit dot .edu)
 We will not use Stellar for much this semester.
 
@@ -25,13 +28,13 @@ Eigenvalues are losing their place in line, but still key.
 Some of you may think mathematics is about executing an algorithm with pencil and paper.  
 For some of you, this may be your first experience with big concepts and abstractions
 like linear transformations and vecotr spaces.
-This may be your first math class that does this.  We hope you enjoy the intellectual activity to follow. 
+This may be your first math class that does this.  We hope you enjoy the intellectual activity to follow.
 
 We will do a little computing with Julia.  Some students complain that Julia is not python.  Others that Julia
 is not R.  This complaint has always been loud the first two weeks, then disappears, and often within a semester
 after the class is over, the students come back to thank me.  This has happened year after year.
 
-I have received emails sometimes  5 or 10  years after 18.06 was over with students saying, "wow, your  Linear Algebra class  prepared me more than I could have imagined while I was taking  the class." 
+I have received emails sometimes  5 or 10  years after 18.06 was over with students saying, "wow, your  Linear Algebra class  prepared me more than I could have imagined while I was taking  the class."
 
 
 (Below still under construction.)
@@ -50,7 +53,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [Quiz 2](https://github.com/mitmath/1806/raw/master/psets/quiz2-1806-S19.pdf) | [Quiz 2 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz2-1806-S19_solns.pdf) |
 [HW7](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset7.ipynb) |[HW7 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset7sol.ipynb)| April 12, 11:59pm|
 [HW8 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset8.ipynb) |[HW8 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset8sol.ipynb) | Extended to April 19 11:59 pm|
-[HW9 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset9.ipynb) |[HW9 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset9sol.ipynb)| April 26, 11:59pm| 
+[HW9 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset9.ipynb) |[HW9 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset9sol.ipynb)| April 26, 11:59pm|
 [Practice Quiz 3 ](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam%203%20Practice%20.ipynb)| [Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/Exam3Practice-sol.ipynb)|
 [Quiz 3](https://github.com/mitmath/1806/raw/master/psets/quiz3-1806.pdf) | [Quiz 3 Solutions](https://github.com/mitmath/1806/raw/master/psets/quiz3-1806-sol.pdf) |
 [HW10](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset10.ipynb)|[HW10 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset10sol.ipynb)| May 10, 11:59pm |
@@ -60,7 +63,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 
 |||||
 |-|-|-|-|
-|Final | May 21 9am-12pm | Johnson ice rink | Covers the semester up to Lecture 35 on May 6 (Exams 1,2 and 3, pos definite and Markov Matrices, all hws) 
+|Final | May 21 9am-12pm | Johnson ice rink | Covers the semester up to Lecture 35 on May 6 (Exams 1,2 and 3, pos definite and Markov Matrices, all hws)
 
 |Recitation Materials|
 |--|
@@ -77,7 +80,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
 |0||| Prereqs: 18.02 |  We assume familiarity with the very basics, or that you can pick it up as you go (many students have): Strang Chapter 1, [VMLS](http://vmls-book.stanford.edu/vmls.pdf)  1.1-1.4, 2.1, 3.1, 6.1, 10.1 | [HW0](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset0.ipynb) is a practice class workflow.  It is to be handed in by Sunday 2/10  at 4:55pm, but will not be graded.  <a href="https://youtu.be/NGmdBOcnBCE">Video of HW0 workflow by Jonathan Edelman who didn't quite make it to the last step</a> <a href="https://youtu.be/NGmdBOcnBCE"><img src="https://i.ytimg.com/vi/NGmdBOcnBCE/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA7ZvHBB2I15pyz78RXIz5dKyH_hg"></a>  WARNING: How you download matters.  "Save LINK as" seems to always work when you download.
-|0||| Not a Pre-req | We assume no familiarity with computing or Julia.  Some homework problems will use Julia (kind of) as a calculator. This is not a programming class. On occasion, Julia programming may be demonstrated if it helps understand linear algebra, but Julia syntax will never be tested.  Tests will be traditional paper and pencil. | 
+|0||| Not a Pre-req | We assume no familiarity with computing or Julia.  Some homework problems will use Julia (kind of) as a calculator. This is not a programming class. On occasion, Julia programming may be demonstrated if it helps understand linear algebra, but Julia syntax will never be tested.  Tests will be traditional paper and pencil. |
  |1| W|2/6| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground   | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit?usp=sharing)| [HW1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1.ipynb) released 2/7.  A sample solution to a 2x2 factorization problem has been added to the end. |
 |	2	|	F	|	2/8	|Linear Combinations, Vector Spaces, Elementwise Operations e.g. nonlinear neural net |  [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g4f6d86d03d_1_0)  Linear Combinations are mentioned already on page 1 of Strang. Vector Spaces are on page 123.   |Optional Julia Tutorial 5pm-7pm Prof. Steven Johnson 32-141|
 |	3	|	M	|	2/11	|Transpose, Inverse, Block Matrices  | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit#slide=id.g4f6d86d03d_210_0) <ul> <li> A.  Transpose: 109-113 of Strang, Section 6.3.1 of VMLS.  </li> <li> B. Inverses: 83-85,89-90 of Strang, Chapters 11.1,11.2 of VMLS. </li> <li> C. Orthogonal Matrices: 233-235 of Strang, and 189 of VMLS. </li> <li> D. Block Matrices: 74 of Strang, bottom of page 179 of VMLS. </li>  </ul>|
@@ -144,5 +147,3 @@ Further Topics we will cover are:
 <li> Positive Definite Matrices </li>
 <li> Linear Transformations </li>
 </ul>
-
-
