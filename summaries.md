@@ -1,11 +1,11 @@
 
-| [18.06 front page](http://web.mit.edu/18.06)  |
-<!-- [juliabox](http://www.juliabox.com) | -->
-[piazza](https://piazza.com/class/jrpkrwivp6x6v8) |
+| [18.06 front page](http://web.mit.edu/18.06)  |[piazza (be polite, and math questions only plesase)](https://piazza.com/class/jrpkrwivp6x6v8) |
 [gradescope](https://www.gradescope.com/courses/40389) |
 [Julia](https://julialang.org/) |
+<!-- [juliabox](http://www.juliabox.com) | -->
+
 <!-- [VMLS text](http://vmls-book.stanford.edu/vmls.pdf) | -->
-[VMLS Julia Companion](http://vmls-book.stanford.edu/vmls-julia-companion.pdf) |
+<!-- [VMLS Julia Companion](http://vmls-book.stanford.edu/vmls-julia-companion.pdf) | -->
 
 
 # Welcome to the 18.06 Linear Algebra 2020 page
