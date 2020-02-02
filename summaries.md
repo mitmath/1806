@@ -8,7 +8,7 @@
 [VMLS Julia Companion](http://vmls-book.stanford.edu/vmls-julia-companion.pdf) |
 
 
-# Under construction: right now copies from 2019.  Will be updated today.
+
 
 You can change sections on [Stellar](https://learning-modules.mit.edu/class/index.html?uuid=/course/18/sp19/18.06#dashboard)  until full.
 Further questions please direct to Theresa Cummings (tcumming at mit dot .edu)
@@ -16,7 +16,8 @@ We will not use Stellar for much this semester.
 
 # Spring 2020 18.06 Syllabus <br>
 
-
+(See [Spring 2019 Syllabus](https://github.com/mitmath/1806/blob/spring19/summaries.md) for a feel for the course.
+The "Branch" button in the upper left, lets you browse other semesters.)
 
 
 
@@ -25,7 +26,7 @@ Strang's book and OCW will be great references but WARNING: we are not following
 Rather you are getting an updated course that throws away echelon forms (never used), and favors the singular
 value decomposition (dished out slowly over the whole semester), linear transformations, and matrix calculus.
 We will do less hand computation, but there will still be some.  Eigenvalues are losing their place in line, but still key.
-(See [Spring 2019 Syllabus](https://github.com/mitmath/1806/blob/spring19/summaries.md) for a feel for the course.)
+
 
 Some of you may think mathematics is about executing an algorithm with pencil and paper.  
 For some of you, this may be your first experience with big concepts and abstractions
