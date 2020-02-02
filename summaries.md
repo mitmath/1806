@@ -23,22 +23,28 @@ The "Branch" button in the upper left, lets you browse other semesters.)
 
  Linear Algebra is everywhere: data science, machine learning, physics, indeed all of engineering and science.
 Strang's book and OCW will be great references but WARNING: we are not following the book and OCW directly.
-Rather you are getting an updated course that throws away echelon forms (never used), and favors the singular
+Rather you are getting an updated course that throws away echelon forms (practically never used), and favors the singular
 value decomposition (dished out slowly over the whole semester), linear transformations, and matrix calculus.
 We will do less hand computation, but there will still be some.  Eigenvalues are losing their place in line, but still key.
 
 
 Some of you may think mathematics is about executing an algorithm with pencil and paper.  
 For some of you, this may be your first experience with big concepts and abstractions
-like linear transformations and vecotr spaces.
+like linear transformations and vector spaces.
 This may be your first math class that does this.  We hope you enjoy the intellectual activity to follow.
 
 We will do a little computing with Julia.  Some students complain that Julia is not python.  Others that Julia
 is not R.  This complaint has always been loud the first two weeks, then disappears, and often within a semester
 after the class is over, the students come back to thank me.  This has happened year after year.
 
-I have received emails sometimes  5 or 10  years after 18.06 was over with students saying, "wow, your  Linear Algebra class  prepared me more than I could have imagined while I was taking  the class."
+I have received emails sometimes  5 or 10  years after 18.06 was over with students saying, "wow, your  Linear Algebra class  prepared me more than I could have imagined while I was taking  the class."  We hope you will say this too.
 
+|#|Day| Date |  Topic | Reading| HW |
+|-|-|------|------|-----|--|
+|0||| Prereqs: 18.02 |  We assume familiarity with the very basics, or that you can pick it up as you go (many students have): Strang Chapter 1, [VMLS](http://vmls-book.stanford.edu/vmls.pdf)  1.1-1.4, 2.1, 3.1, 6.1, 10.1 | [HW0](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset0.ipynb) is a practice class workflow.  It is to be handed in by Sunday 2/10  at 4:55pm, but will not be graded.  <a href="https://youtu.be/NGmdBOcnBCE">Video of HW0 workflow by Jonathan Edelman who didn't quite make it to the last step</a> <a href="https://youtu.be/NGmdBOcnBCE"><img src="https://i.ytimg.com/vi/NGmdBOcnBCE/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA7ZvHBB2I15pyz78RXIz5dKyH_hg"></a>  WARNING: How you download matters.  "Save LINK as" seems to always work when you download.
+|0||| Not a Pre-req | We assume no familiarity with computing or Julia.  Some homework problems will use Julia (kind of) as a calculator. This is not a programming class. On occasion, Julia programming may be demonstrated if it helps understand linear algebra, but Julia syntax will never be tested.  Tests will be traditional paper and pencil. |
+ |1| W|2/6| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground   | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit?usp=sharing)| [HW1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1.ipynb) released 2/7.  A sample solution to a 2x2 factorization problem has been added to the end. |
+ 
 
 <!-- (Below still under construction.)
 |Problem Set | Solutions | Due Date |
