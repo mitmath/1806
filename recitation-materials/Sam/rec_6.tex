@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=35pt,vmargin=35pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\pagenumbering{gobble} 
+\newcommand{\diff}{\,\mathrm{d}}
+\renewcommand*{\vec}[1]{\mathbf{#1}}
+
+\title{18.06 - Recitation 6}
+\author{Sam Turton}
+\date{April 2, 2019}                                      
+\begin{document}
+\maketitle
+
+\section{Review problems for midterm 2}
+
+\noindent \textbf{Problem 1.}\\
+The matrix $A$ has a nullspace $N(A)$ spanned by 
+$$\begin{pmatrix} 1 \\ 0 \\ -1 \end{pmatrix}$$
+and a left nullspace $N(A^T)$ spanned by
+$$\begin{pmatrix} 1 \\ 1 \\ 1 \\ 1 \end{pmatrix}, \;\; \begin{pmatrix} 1 \\ 1 \\ -1 \\ -1 \end{pmatrix}.$$
+\begin{enumerate}[(a)]
+\item What is the \textbf{shape} of the matrix $A$ and what is its \textbf{rank}?
+\item If we consider the vector 
+$$b = \begin{pmatrix} -1 \\ \alpha \\ 0 \\ \beta \end{pmatrix},$$
+for \textbf{what value(s)} of $\alpha$ and $\beta$ (if any) is $Ax = b$ solvable? Will the solution (if any) be \textbf{unique}?
+\item Give the orthogonal \textbf{projections} of 
+$$y = \begin{pmatrix} 1 \\ 2 \\ -3 \end{pmatrix}$$
+onto \textbf{two} of the four fundamental subspaces of $A$. 
+\end{enumerate}
+
+\newpage
+
+\noindent \textbf{Problem 2.}\\
+You have a matrix
+$$A = \begin{pmatrix} 1 & 2 & 1 \\ 0 & 1 & 0 \\ 1 & 1 & 1 \\ 1 & 0 & 1 \end{pmatrix}.$$
+\begin{enumerate}[(a)]
+\item Give the \textbf{ranks} of $A$, $A^T$, and $A^TA$, and also give \textbf{bases} for $C(A)$, $N(A)$, and $N(A^TA)$. (Look carefully at the columns of $A$, since very little calculation is needed!)
+\item Suppose we are looking for a least squares solution $\hat{x}$ that minimizes $\Vert b- Ax\Vert$ for $b=\begin{pmatrix} 0 \\ 2 \\ 1 \\ -1 \end{pmatrix}$. At this minimum, $p=A\hat{x}$ will be the projection of $b$ onto ............ ? \textbf{Find $p$}.
+\end{enumerate}
+
+\newpage 
+
+\noindent \textbf{Problem 3.}\\
+\begin{enumerate}[(a)]
+\item Show that the trace of $A^T A$ must always be $\ge 0$ by deriving a simple formula for $\mbox{trace}(A^T A)$ in terms of the matrix entries $a_{ij}$ (i-th row, j-th column) of $A$.  This is called the \emph{Frobenius norm} $$\Vert A \Vert_F = \sqrt{\mbox{trace}(A^T A)}$$ of the matrix.
+\item Using the compact SVD $A = U\Sigma V^T$, derive a simple relationship between the Frobenius norm $\Vert A \Vert_F$ and the singular values $\sigma_1, \ldots, \sigma_r$ of $A$.  
+\end{enumerate}
+
+\vskip 200pt
+
+\noindent \textbf{Problem 4.}\\
+\begin{enumerate}
+\item If $Q$ is an orthogonal matrix ($Q^T = Q^{-1}$), explain why it follows from the rules for determinants that $\det Q$ must be ........ or ........?
+\item If $P$ is a $3\times 3$ projection matrix onto a 2d subspace, then its determinant must be ........?
+\item An anti-symmetric matrix is a $n\times n$ matrix $A$ with $A^T=-A$. What is $\det A$ when $n$ is odd? 
+\end{enumerate}
+
+\end{document}  

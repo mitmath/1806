@@ -1,0 +1,91 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=35pt,vmargin=35pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\pagenumbering{gobble} 
+\newcommand{\diff}{\,\mathrm{d}}
+\renewcommand*{\vec}[1]{\mathbf{#1}}
+
+\title{18.06 - Recitation 7}
+\author{Sam Turton}
+\date{April 9, 2019}                                      
+\begin{document}
+\maketitle
+
+\section{Lecture review}
+Let $A$ be a square $n\times n$ matrix.
+\begin{enumerate}
+\item The \emph{determinant} of $A$ is the unique function $\det : \mathbb{R}^{n\times n} \to \mathbb{R}$ for which
+\begin{itemize}
+\item $\det I = 1$ for the identity matrix of any dimension
+\item $\det A$ changes sign when any two rows of $A$ are interchanged.
+\item $\det A$ is a linear transformation of each row of $A$.
+\end{itemize}
+\item The determinant of a $2\times 2$ matrix has a simple formula:
+$$\boxed{A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \;\;\; \implies \;\;\; \det A = ad-bc}$$
+\item Two very useful rules for determinants:
+$$\boxed{\det A^T = \det A, \;\;\; \det AB = \det A \det B}$$
+\item The \emph{cofactor} $C_{ij}$ is defined by
+$$\boxed{C_{ij} = (-1)^{i+j} \det M_{ij}}$$
+where $M_{ij}$ is the $(n - 1) \times (n - 1)$ matrix obtained by removing the $i$th row and $j$th column from $A$.
+\item \textbf{Compute determinant by cofactors:} For any $1 \leq i \leq n$, 
+$$\boxed{\det A=a_{i1}C_{i1} +a_{i2}C_{i2} + ... +a_{in}C_{in}.}$$
+\item If $A$ is invertible, then
+$$\boxed{A^{-1}= \frac{1}{\det A} C^T.}$$
+In terms of entries, $(A^{-1})_{ij} = \frac{C_{ji}}{ \det A}$.
+\item \textbf{Cramer's Rule:} If $A$ is invertible and $Ax = b$, then
+$$\boxed{x_i = \frac{\det B_i}{ \det A},}$$
+where $B_i$ is the matrix $A$ with the $i$th column replace by $b$. 
+\end{enumerate}
+
+\newpage
+
+\section{Problems}
+
+\noindent \textbf{Problem 1.}\\
+\begin{enumerate}
+\item Let $A$ be $n\times n$. Explain using the full form SVD why $\det A\neq 0$ if and only if the rank of $A$ is $n$.
+\item If $I$ is the $n \times n$ identity matrix  and $a$ is a scalar, what is $\det(aI)$?
+\item Using the cofactor formula, explain why the determinant of an upper triangular matrix is the product of the elements along the diagonal.
+\item Find $\det A$ and $A^{-1}$ explicitly, where
+$$A = \begin{pmatrix} 1 & 2 & 0 \\ 1 & 1 & -1 \\ 0 & 1 & 2 \end{pmatrix}$$
+\end{enumerate}
+
+\vskip 250pt
+
+\noindent \textbf{Problem 2.}\\
+If $A$ is $n \times n$ and invertible and $C$ is its cofactor matrix, show that
+\begin{enumerate}
+\item $AC^T = \det(A)I$,
+\item $\det C = (\det A)^{n-1}$.
+\end{enumerate}
+
+\newpage
+
+\noindent \textbf{Problem 3.}\\
+Let $Q$ be a square, orthogonal matrix. Find the cofactor matrix of $Q$ up to sign. Explain how the sign is affected by the sign of $\det Q$.
+
+\vskip 250pt
+
+\noindent \textbf{Problem 4.}\\
+Compute the determinant of the tridiagonal matrix
+$$A = \begin{pmatrix} 1 & 1 & & & \\ -1 & 1 & 1 & & \\ & -1 & 1 & \cdot & \\ & & \cdot & \cdot & 1 \\ & & & -1 & 1 \end{pmatrix} $$
+by using the cofactor expansion. 
+
+\newpage
+
+\noindent \textbf{Problem 5.}\\
+Suppose $A$ is an invertible $n \times n$ square matrix and $B$ is a known $n \times m$ matrix.
+\begin{enumerate}
+\item If you want to solve
+$$AX = B$$
+where $X$ is an $n \times m$ unknown matrix using Cramer's rule, in general how many determinants do you need to compute?
+\item How many determinants do you need to compute $A^{-1}$ by cofactors?
+\item Compare (6a) and (6b). In particular, how is (6b) a special case of (6a)?
+\end{enumerate}
+
+
+
+\end{document}  

@@ -1,0 +1,153 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=35pt,vmargin=35pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\pagenumbering{gobble} 
+\newcommand{\diff}{\,\mathrm{d}}
+\renewcommand*{\vec}[1]{\mathbf{#1}}
+
+\title{18.06 R08 - Recitation 3 - SOLUTIONS}
+\author{Sam Turton}
+\date{March 5, 2019}                                      
+\begin{document}
+\maketitle
+
+\section{Problems}
+
+\noindent \textbf{Problem 1.}\\
+Can a set of linearly independent vectors contain the zero vector?
+
+\vskip 5pt
+
+\noindent \textbf{Solution:}\\
+A sequence of vectors $v_1, ..., v_n$ is linearly independent when
+$$a_1v_1+a_2v_2 + .... + a_nv_n = 0, \;\;\; a_1=a_2=...=a_n=0$$
+Suppose one of these vectors is the zero vector, say $v_1=0$ . Then $a_1$ can be any real number, while the other coefficients are zero. But then we have found a non trivial linear combination that gives the zero vector. So a set of vectors containing the zero vector can never be linearly independent.
+
+\vskip 20pt
+
+\noindent \textbf{Problem 2.}\\
+Find a basis for the following vector spaces and state the dimension of the vector space\footnote{To attempt these kinds of questions you should do the following: firstly write down the most general vector in your vector space. Then deconstruct this vector into a set of vectors that you can be certain spans the vector space. Then finally test whether they are linearly independent. If they \emph{are} linearly independent then you're all set. If they are not, then try to use your intuition to figure out how to make them independent.}:
+\begin{enumerate}
+\item The set of all polynomials with degree $\leq 3$. 
+\item The set of all vectors in $\mathbb{R}^3$ whose components are equal.
+\item The set of all vectors in $\mathbb{R}^3$ whose components average to zero.
+\item The set of all $3\times 3$ antisymmetric matrices.
+\end{enumerate}
+
+\vskip 5pt
+
+\noindent \textbf{Solution:}\\
+\begin{enumerate}
+\item The most general polynomial of degree $\leq 3$ takes the form $ax^3+bx^2+cx+d$. We can therefore right any such polynomial as a linear combination of the functions in the set $\{x^3,x^2,x,1\}$. This set therefore spans the vector space. Furthermore, an arbitrary linear combination of these spanning vectors yields the zero function, i.e. $ax^3+bx^2+cx+d = 0$, only if $a=b=c=d=0$. Hence this set is also linearly independent. The set 
+$$\boxed{\{x^3,x^2,x,1\}}$$
+ is therefore a basis for this vector space, and the vector space has dimension $\boxed{3}$.
+ \item The most general vector in $\mathbb{R}^3$ whose components are equal is
+ $$\begin{pmatrix} a \\ a \\ a \end{pmatrix} = a \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}$$.
+ Therefore the set 
+ $$\boxed{\left\{\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}\right\}}$$
+ spans this vector space. Furthermore, any set containing only one nonzero vector is a linearly independent set. So this is a basis for this vector space, which has dimension $\boxed{1}$. 
+ \item The most general vector in $\mathbb{R}^3$ whose components all average to zero takes the form 
+ $$\begin{pmatrix} a \\ b \\ -(a+b) \end{pmatrix} = a \begin{pmatrix} 1 \\ 0 \\ -1 \end{pmatrix} + b \begin{pmatrix} 0 \\ 1 \\ -1 \end{pmatrix}.$$ 
+ The set 
+ $$\boxed{\left\{\begin{pmatrix} 1 \\ 0 \\ -1 \end{pmatrix} ,  \begin{pmatrix} 0 \\ 1 \\ -1 \end{pmatrix} \right\}}$$
+ therefore spans the vector space. It is also a linear independent set, since the only linear combination that gives the zero vector is when $a=b=0$. This set is then a basis for the vector space, which has dimension $\boxed{2}$. 
+ \item The most general $3\times 3$ anti-symmetric matrix takes the form
+ $$\begin{pmatrix} 0 & a & b \\ -a & 0 & c \\ -b & -c & 0 \end{pmatrix}=
+    a\begin{pmatrix} 0 & 1 & 0 \\ -1 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix} 
+ + b \begin{pmatrix} 0 & 0 & 1 \\ 0 & 0 & 0 \\ -1 & 0 & 0 \end{pmatrix} 
+ + c  \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & -1 & 0 \end{pmatrix} $$
+ The set
+ $$\boxed{\left\{\begin{pmatrix} 0 & 1 & 0 \\ -1 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}, \begin{pmatrix} 0 & 0 & 1 \\ 0 & 0 & 0 \\ -1 & 0 & 0 \end{pmatrix} , \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & 1 \\ 0 & -1 & 0 \end{pmatrix} \right\}}$$
+ therefore spans this vector space. This set is also linearly independent, since the only way a linear combination of these matrices will give the zero matrix is if $a=b=c=0$. This set is then a basis for the vector space, which has dimension $\boxed{3}$. 
+\end{enumerate}
+
+\newpage
+
+\noindent \textbf{Problem 3.}\\
+Consider the following four full SVDs:
+\begin{align*}
+A_1 &= \begin{pmatrix}  -0.1965 &  -0.3551 &  -0.7175 & 0.5661 \\-0.2649  & -0.7272  & 0.5976 & 0.2094 \\ -0.4527 &  -0.3208  & -0.3224 & -0.7669 \\-0.8284  &  0.4921  &  0.1553 & 0.2179 \end{pmatrix}
+		\begin{pmatrix} 11.0304    &  0  &  0 \\ 0  &  3.2142   &  0 \\  0  & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}
+		\begin{pmatrix} -0.0318 &  -0.8159 &  -0.5774\\ -0.7225  & -0.3804   & 0.5774\\ -0.6907 &   0.4355  & -0.5774 \end{pmatrix}^T\\
+		\\
+A_2 &= \begin{pmatrix} -0.1408  &  0.8944  &  0.4245 \\ 0.2816  &  0.4472 &  -0.8489 \\  -0.9492 &  0 & -0.3148 \end{pmatrix}
+		\begin{pmatrix}  4.0600  &  0  &  0 & 0  \\  0 &   1.7321  &    0  & 0  \\  0 &   0   & 1.2315 & 0 \end{pmatrix}
+		\begin{pmatrix} -0.2685  & 0.5164  &  0.0890 & -0.8083 \\ -0.1644  &  0.2582  & -0.9450 & 0.1155 \\ -0.8054  &  0.2582 &   0.2671 & 0.4619  \\  0.5022 &   0.7746 &   0.1666 & 0.3464 \end{pmatrix}^T\\
+		\\
+A_3 &= \begin{pmatrix} -0.7503 & -0.5300 & 0.3951\\-0.4961  &  0.8464  &  0.1935 \\ -0.4370  & -0.0509  & -0.8980 \end{pmatrix}
+		\begin{pmatrix} 6.4901 & 0 &  0\\ 0 & 4.6650 &  0 \\  0 &  0 & 1.0569\end{pmatrix}
+		\begin{pmatrix} -0.4796 & 0.4089  & -0.7764 \\ -0.6043   & 0.4876  &  0.6301  \\ -0.6363  & -0.7714 &  -0.0132 \end{pmatrix}^T \\
+		\\
+A_4 &= \begin{pmatrix} -0.5647 & -0.1174 &  0.6460 & -0.5000 \\ 0.0779   & 0.6453 &   0.5723 & 0.5000 \\ -0.1627 &   0.7548 &  -0.3921 & -0.5000 \\ -0.8053 &  -0.0078 &  -0.3184 & 0.5000 \end{pmatrix}
+		\begin{pmatrix} 3.9255 & 0 & 0 \\ 0 &  2.1292 & 0 \\ 0 & 0 & 0.2393 \\ 0 & 0 & 0 \end{pmatrix}
+		\begin{pmatrix}    -0.0216  &  0.6576   & 0.7531 \\ -0.9446   & 0.2332  & -0.2308 \\ 0.3274  &  0.7164  & -0.6161 \end{pmatrix}^T
+\end{align*}
+
+Decide which of the above matrices corresponds to each of the following situations. In each case state a $b$ for which $Ax = b$ has a solution.
+\begin{enumerate}
+\item $Ax=b$ has 0 or 1 solutions, depending on $b$
+\item $Ax =b$ has infinitely many solutions, regardless of $b$
+\item $Ax = b$ has 0 or infinitely many solutions, depending on $b$
+\item $Ax=b$ has a unique solution, regardless of $b$. 
+\end{enumerate}
+
+\vskip 10pt 
+
+\noindent \textbf{Solution}\\
+\begin{enumerate}
+\item The matrix $A_4$ is a $4\times 3$ matrix with rank $r=3$. The system $A_4x = b$ can then have 0 or 1 solution depending on whether or not $b\in C(A)$. This will happen when $b$ can be expressed as a linear combination of the first 3 columns of $U$. This matrix only has the zero vector in its nullspace, since $A$ has full column rank, and so when solutions exist they are necessarily unique. 
+\item The matrix $A_2$ is a $3\times 4$ matrix with rank $r=3$. The system $A_2x = b$ will always have a solution, since $A_2$ has full row rank, and so every $b$ is in $C(A)$. However, $A_2$ does not have full column rank, and so has a non trivial nullspace. Therefore this system will have infinitely many solutions, regardless of $b$
+\item The matrix $A_1$ is a $4\times 3$ matrix with rank $r=2$. The system $A_1x =b$ does not necessarily have a solution, but if it does have a solution it will not be unique since $A$ has a nontrivial subspace. This system therefore has $0$ or infinitely many solutions.
+\item The matrix $A_3$ is a $3\times 3$ matrix with rank $r=3$. The system $A_3x =b$ always has a unique solution, since $A_3$ is then an invertible matrix. 
+\end{enumerate}
+The first column of $U$ for each of these examples will always be in the column space, and so this will always be a possible $b$ for which $Ax = b$ is solvable. 
+
+\newpage
+
+\noindent \textbf{Problem 4.}\\
+\begin{enumerate}
+\item Find the projection $p$ of the vector $b$ onto the column space of $A$, where
+\begin{align*}
+A = \begin{pmatrix} 1 & 1 \\ 1 & 1 \\ 0 & 1 \end{pmatrix}, \;\;\; \text{and} \;\;\; b = \begin{pmatrix} 3 \\ 4 \\ 3\end{pmatrix}.
+\end{align*}
+Verify that $e =b - p$ is orthogonal to the columns of $A$.
+
+\item ****If $P$ is a projection matrix, then show that $(I-P)^T=(I-P)$ and $(I-P)^2 = I -P$ (so $I-P$ is also a projection matrix). If $P$ projects onto the column space of a matrix $A$, then $I-P$ projects onto which subspace? If $P=QQ^T$, where $Q$ is orthogonal, show that $B = I-2P$ is orthogonal. 
+\end{enumerate}
+
+\vskip 10pt 
+
+\noindent \textbf{Solution}\\
+\begin{enumerate}
+\item One way to approach this is to recall that the projection of a vector $b$ onto the column space of $A$ (provided $A$ has independent columns), will be given by 
+$$p=A(A^TA)^{-1}A^Tb.$$
+In practice, however, we very rarely want to \emph{explicitly} calculate an inverse. Therefore, it is usually better to solve the system
+$$A^TA\hat{x} = A^Tb,$$
+and then the projection is 
+$$p=A\hat{x}.$$
+Formally these two processes are the same, but numerically it is usually much easier to solve $A^TA\hat{x}=A^Tb$ than it is to explicitly find $(A^TA)^{-1}$. In this problem
+$$A^TA = \begin{pmatrix} 2 & 2 \\ 2 & 3 \end{pmatrix}, \;\;\; A^Tb = \begin{pmatrix} 7 \\ 10 \end{pmatrix}.$$
+We can then solve the $2\times 2$ system $A^TA\hat{x} = A^Tb$ using whatever method we like, to find that
+$$\boxed{\hat{x} = \begin{pmatrix} 1/2 \\ 3 \end{pmatrix}}$$
+Finally we can compute
+$$\boxed{p = A\hat{x} =   \begin{pmatrix} 1 & 1 \\ 1 & 1 \\ 0 & 1 \end{pmatrix} \begin{pmatrix} 1/2 \\ 3 \end{pmatrix} = \begin{pmatrix} -1/2 \\ 1/2 \\ 0 \end{pmatrix}}$$
+\item The first part is on your problem set. If $P$ projects onto the column space of a matrix $A$, then $I-P$ projects onto the left nullspace. If $P=QQ^T$, where $Q$ is orthogonal, then
+\begin{align*}
+B^TB &= (I-2P)^T(I-2P)\\
+&= I - 2P^T-2P+4P^TP\\
+&= I - 2QQ^T - 2QQ^T + 4QQ^T\\
+&= I,
+\end{align*}
+and so $B$ is orthogonal. 
+\end{enumerate}
+
+
+
+
+
+
+
+\end{document}  

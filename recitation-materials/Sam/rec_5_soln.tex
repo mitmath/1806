@@ -1,0 +1,157 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=35pt,vmargin=35pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\pagenumbering{gobble} 
+\newcommand{\diff}{\,\mathrm{d}}
+\renewcommand*{\vec}[1]{\mathbf{#1}}
+
+\title{18.06 - Recitation 5 SOLUTIONS}
+\author{Sam Turton}
+\date{March 19, 2019}                                      
+\begin{document}
+\maketitle
+
+
+\noindent \textbf{Problem 1.}\\
+Determine which of the following describe a linear transformation. For those that do, find a matrix that describes the transformation with respect to the standard bases for the underlying vector spaces:
+\begin{enumerate}
+\item $T_1:\mathbb{R}^2\to\mathbb{R}^2$ where
+$$T_1\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 2x+y \\ 0 \end{pmatrix}$$
+\item $T_2:\mathbb{R}^2\to\mathbb{R}^2$ where
+$$T_2\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x+y \\ xy \end{pmatrix}$$
+\item $T_3:\mathbb{R}^{2\times 2}\to \mathbb{R}^{3\times2}$ where
+$$T_3\begin{pmatrix} a & b \\ c & d \end{pmatrix} = \begin{pmatrix} a+b & 2d \\ 2b-d & -3c \\ 2b-c & -3a \end{pmatrix}$$
+\item Let $P_4$ be the vector space of polynomials of degree less than or equal to 4, and let $T_4 :P_4\to P_4$, where
+$$T_4(f)(x) = f(x) - x - 1$$
+\item Let $T_5 :P_3\to P_5$ where 
+$$T_5(f)(x) = (x^2-2)f(x)$$. 
+\end{enumerate}
+
+\
+
+\noindent \textbf{Solution}\\
+\begin{enumerate}
+\item This is a linear transformation. We can verify this explicitly: 
+$$T_1\left(c_1\begin{pmatrix} x_1 \\ y_1 \end{pmatrix} + c_2\begin{pmatrix} x_2 \\ y_2 \end{pmatrix}\right) = c_1 \begin{pmatrix} 2x_1 + y_1 \\ 0 \end{pmatrix} +  c_2 \begin{pmatrix} 2x_2 + y_2 \\ 0 \end{pmatrix}.$$
+We can represent this transformation using a matrix by using the standard basis for $\mathbb{R}^2$, $\{e_1,e_2\}$, where
+$$e_1 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \;\; e_2 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}.$$
+Then $T_1(e_1) = 2e_1$ and $T_1(e_2) = e_1$, and so this linear transformation can be represented by the matrix
+$$A = \begin{pmatrix} 2 & 1 \\ 0 & 0 \end{pmatrix}$$
+
+\item This is \emph{not} a linear transformation. Notice that
+$$T_2\left(c \begin{pmatrix} x \\ y \end{pmatrix} \right) = \begin{pmatrix} c (x+y) \\ c^2xy \end{pmatrix} \neq c  \begin{pmatrix} x+y \\ xy \end{pmatrix}$$
+
+\item This is a linear transformation. We can verify explicitly that
+$$ T_3\left(\lambda_1 \begin{pmatrix} a_1 & b_1 \\ c_1 & d_1 \end{pmatrix} + \lambda_2 \begin{pmatrix} a_2 & b_2 \\ c_2 & d_2 \end{pmatrix} \right) 
+              = \lambda_1 \begin{pmatrix} a_1+b_1 & 2d_1 \\ 2b_1-d_1 & -3c_1 \\ 2b_1-c_1 & -3a_1 \end{pmatrix} + \lambda_2 \begin{pmatrix} a_2+b_2 & 2d_2 \\ 2b_2-d_2 & -3c_2 \\ 2b_2-c_2 & -3a_2 \end{pmatrix} $$
+To write a matrix to describe this linear transformation, we need to provide a basis for both the input and output vector spaces. The standard basis for $\mathbb{R}^{2\times2}$ is the set $\{e_1,e_2,e_3,e_4\}$, where
+$$e_1 = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}, \;\; e_2  = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}, \;\; e_3 = \begin{pmatrix} 0 & 0 \\  1& 0 \end{pmatrix}, \;\; e_4 = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}.$$
+The standard basis for $\mathbb{R}^{3\times2}$ is the set $\{f_1,f_2,f_3,f_4,f_5,f_6\}$, where
+$$f_1 = \begin{pmatrix} 1 & 0 \\ 0 & 0 \\ 0 & 0 \end{pmatrix}, \;\; f_2 = \begin{pmatrix} 0 & 1 \\ 0 & 0 \\ 0 & 0 \end{pmatrix}, \;\; f_3 = \begin{pmatrix} 0 & 0 \\ 1 & 0 \\ 0 & 0 \end{pmatrix}, \;\; f_4 = \begin{pmatrix} 0 & 0 \\ 0 & 1 \\ 0 & 0 \end{pmatrix}, \;\; f_5 = \begin{pmatrix} 0 & 0 \\ 0 & 0 \\ 1 & 0 \end{pmatrix}, \;\; f_6 = \begin{pmatrix} 0 & 0 \\ 0 & 0 \\ 0 & 1 \end{pmatrix}.$$
+We can represent the linear transformation $T_3$ as a matrix with respect to these bases by considering the action of $T_3$ on each of the input basis elements. For example, $T_3(e_1) = \begin{pmatrix}1 & 0 \\ 0 & 0 \\ 0 & -3 \end{pmatrix} = f_1 - 3f_6$, and so the first column of $A$ is given by the column vector
+$$\begin{pmatrix} 1 \\ 0 \\ 0 \\ 0 \\ 0 \\ -3 \end{pmatrix}$$
+Repeating this for the other three basis elements yields the $6\times 4$ matrix for this linear transformation 
+$$A = \begin{pmatrix} 1 & 1 & 0 & 0 \\ 0 & 0 & 0 & 2 \\ 0 & 2 & 0 & -1 \\ 0 & 0 & -3 & 0 \\ 0 & 2 & -1 & 0 \\ -3 & 0 & 0 & 0 \end{pmatrix} $$
+
+\item This is \emph{not} a linear transformation. This transformation maps the zero polynomial $0(x)$ onto $-x-1 \neq 0 $. 
+
+\item This is a linear transformation, since
+$$T_5(c_1f_1 + c_2f_2)(x) = (x^2 - 2)(c_1f_1(x)+c_2f_2(x)) = c_1 (x^2-2)f_1(x) +  c_2 (x^2-2)f_2(x)$$
+The standard basis for $P_3$ is given by the polynomials $\{x^3, x^2,x,1\}$ and the standard basis for $P_5$ is given by the polynomials $\{x^5,x^,x^3, x^2,x,1\}$. We can construct a matrix that describes this linear transformation with respect to these bases by considering the action of the linear transformation on each of the input basis elements. For example:
+$$T_5(x^3) = (x^2-2)x^3 = x^5 - 2x^3,$$
+and so the first column in a matrix representation of this transformation is given by
+$$\begin{pmatrix} 1 \\ 0 \\ -2 \\ 0 \\ 0 \\ 0 \end{pmatrix}.$$
+We can repeat this for each of the input basis elements to derive the matrix
+$$A = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ -2 & 0 & 1 & 0 \\ 0 & -2 & 0 & 1 \\ 0 & 0 & -2 & 0 \\ 0 & 0 & 0 & -2 \end{pmatrix}$$
+\end{enumerate}
+
+\
+
+\noindent \textbf{Problem 2.}\\
+\begin{enumerate}
+\item Show that $f(A) = x^T A y$, where $x\in \mathbb{R}^m$ and $y\in \mathbb{R}^n$ are constant vectors, is a linear transformation from the vector space of $m\times n$ matrices to the real numbers.
+\item If $f(A)$ is a scalar function of an $m\times n$ matrix $A = \begin{pmatrix} a_{11} & a_{12} & \cdots \\ a_{21} & a_{22} & \cdots \\ \vdots & \vdots & \ddots \end{pmatrix}$, then it is useful to define the gradient \emph{with respect to the matrix} as another $m\times n$ matrix:
+$$
+\nabla_A f = \begin{pmatrix} \frac{\partial f}{\partial a_{11}} & \frac{\partial f}{\partial a_{12}} & \cdots \\ \frac{\partial f}{\partial a_{21}} & \frac{\partial f}{\partial a_{22}} & \cdots \\ \vdots & \vdots & \ddots \end{pmatrix}
+$$
+Given this definition, give a matrix expression (not in terms of individual components) for $\nabla_A f$ with $f(A) = x^T A y$ as before.
+\end{enumerate}
+
+\
+
+\noindent \textbf{Solution}\\
+\begin{enumerate}
+\item To show this is a linear transformation, we consider $f(cA+dB)$:
+$$f(cA+dB) = x^T(cA +dB) y = c x^TAy + dx^TBy = cf(A) + df(B).$$
+\item We have $f(A) = x^TAy = \sum_{p = 1}^m\sum_{q = 1}^n x_p a_{pq} y_q$. It then follows that $\frac{\partial f}{\partial a_{ij}} = x_iy_j$. We can then write 
+$$
+\nabla_A f = \begin{pmatrix} x_1y_1 & x_1y_2 & \cdots \\ x_2y_1 & x_2y_2 & \cdots \\ \vdots & \vdots & \ddots \end{pmatrix}
+$$
+We can then identify this matrix as 
+$$
+\nabla_A f = \begin{pmatrix} x_1 \\ \vdots \\ x_m\end{pmatrix} \begin{pmatrix} y_1 & \cdots & y_n \end{pmatrix} = xy^T
+$$
+\end{enumerate}
+
+\newpage
+
+\noindent \textbf{Problem 3.}\\
+Consider the vector space of polynomials of degree less than or equal 2. Let us define a dot product on this vector space\footnote{You may find it useful to recall that $\int_0^{\infty} x^n e^{-x}\,\diff x = n!$}:
+$$f(x)\cdot g(x) = \int_0^{\infty} f(x)g(x) e^{-x} \, \diff x$$
+\begin{enumerate}
+\item Show that the set of polynomials $\{1, x-1,x^2-4x+2 \}$ form an orthogonal basis for the vector space of polynomials of degree less than or equal 2.
+\item Normalize these basis polynomials so that $\Vert f(x) \Vert^2 = f(x)\cdot f(x) = 1$ for each element in the basis.
+\item Consider the function $f(x) = \begin{cases} x & x < 1 \\ 0 & x \ge 1 \end{cases}$.   Find the slope $\alpha$ of the straight line $\alpha x$ that is the \emph{best fit} to $f(x)$ in the sense of minimizing
+$$
+\Vert f - \alpha x \Vert^2 = \int_0^\infty \left[ f(x) - \alpha x \right]^2 e^{-x} dx
+$$
+In particular, find $\alpha$ by performing the orthogonal projection (with this dot product) of $f(x)$ onto ................?
+\end{enumerate}
+
+\
+
+\noindent \textbf{Solution}\\
+\begin{enumerate}
+\item This set of polynomials is clearly linearly independent and it spans the vector space of polynomials. It is therefore definitely a basis. To show that it is orthogonal, we just have to check that the dot product between any two of the basis elements is 0:
+\begin{align*}
+1\cdot (x-1) 	&=  \int_0^{\infty} (x-1) e^{-x} \, \diff x\\
+			&=  \int_0^{\infty} x e^{-x} \, \diff x -  \int_0^{\infty}e^{-x} \, \diff x\\
+			&= 1! - 0! \\
+			&= 0\\
+1\cdot (x^2-4x+2) 	&=  \int_0^{\infty} x^2 e^{-x} \, \diff x	- 4\int_0^{\infty}x e^{-x} \, \diff x	+ 2 \int_0^{\infty}e^{-x} \, \diff x\\
+				&= 2! - 4\cdot 1! + 2\cdot 0! \\
+				&= 0\\
+(x-1) \cdot (x^2-4x+2) 	&= \int_0^{\infty} (x^3 -5x^2 + 6 x -2)  e^{-x} \, \diff x \\
+					&= 3! - 5\cdot 2! + 6\cdot 1! -2\cdot 0!\\
+					&= 0.			
+\end{align*}
+\item We can find the norm of each of these basis elements:
+\begin{align*}
+\Vert 1 \Vert^2 		&=  \int_0^{\infty} e^{-x} \, \diff x = 1 \\
+\Vert (x-1) \Vert^2 	&=  \int_0^{\infty} (x-1)^2 e^{-x} \, \diff x = 1 \\
+\Vert (x^2 - 4x + 2 )\Vert ^2 &= \int_0^{\infty} (x^2-4x+2)^2 e^{-x} \, \diff x = 4.
+\end{align*}
+So an orthonormal basis for this vector space with respect to this dot product is given by 
+$$\left\{1, x-1,\frac{x^2-4x+2}{2} \right\}$$
+\item We find $\alpha$ by calculating the orthogonal projection of $f(x)$ onto the function $x$, so that 
+\begin{align}
+\alpha = \frac{x\cdot f(x)}{x\cdot x}
+\end{align}
+Now $x\cdot x = \int_0^{\infty} x^2 e^{-x} dx = 2$, and 
+\begin{align}
+x\cdot f(x) &= \int_0^{\infty} xf(x) e^{-x} dx  \\
+&= \int_0^1 x^2 e^{-x} dx\\
+&= 2 - 5e^{-1}
+\end{align}
+So that 
+\begin{align}
+\alpha = 1 - 5/2e^{-1}.
+\end{align}
+\end{enumerate}
+
+\
+
+\end{document}  

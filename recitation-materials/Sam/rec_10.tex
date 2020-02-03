@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=35pt,vmargin=35pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\pagenumbering{gobble} 
+\newcommand{\diff}{\,\mathrm{d}}
+\renewcommand*{\vec}[1]{\mathbf{#1}}
+
+\title{18.06 - Recitation 10}
+\author{Sam Turton}
+\date{May 7, 2019}                                      
+\begin{document}
+\maketitle
+
+\section{Lecture Review}
+\begin{itemize}
+\item A symmetric matrix $A$ is positive definite if, and only if, any of the following are true:
+\begin{enumerate}
+\item All of the eigenvalues of $A$ are strictly positive
+\item All upper left determinants are strictly positive
+\item $x^TAx > 0 $ for all nonzero vectors $x$
+\item $A = B^TB$, where $B$ has independent columns, but $B$ is not necessarily square.   
+\end{enumerate}
+\item A \emph{Markov matrix} has non-negative entries and the elements of each column sum to 1. It always has one eigenvalue equal to 1, and every other eigenvalue has absolute value less than or equal to 1.
+\item A \emph{positive Markov matrix} has strictly positive entries and the elements of each column sum to 1. It always has one eigenvalue equal to 1, and every other eigenvalue has absolute value strictly less than 1.
+\item The eigenvector of a Markov matrix corresponding to $\lambda = 1$ is called the \emph{steady state} vector.
+\end{itemize}
+
+\section{Problems}
+\noindent \textbf{Problem 1.}\\
+Consider the matrix $A = \begin{pmatrix} x & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{pmatrix}$ with parameter $x\in\mathbb{R}$:
+\begin{enumerate}
+\item Specify all numbers $x$, if any, for which $A$ is positive definite. (Explain briefly.)
+\item Specify all numbers $x$, if any, for which $e^A$ is positive definite. (Explain briefly.)
+\item Find an $x$, if any, for which $4I - A$ is positive definite. (Explain briefly.)
+\end{enumerate}
+
+\newpage
+
+\noindent \textbf{Problem 2.}\\
+True or false? Justify your answer either way.
+\begin{enumerate}
+\item If $A$ and $B$ are invertible, then so is $(A+B)/2$.
+\item If $A$ and $B$ are Markov, then so is $(A+B)/2$.
+\item If $A$ and $B$ are positive definite, then so is $(A+B)/2$.
+\item If $A$ and $B$ are diagonalizable, then so is $(A+B)/2$.
+\item If $A$ and $B$ are rank 1, then so is $(A+B)/2$.
+\end{enumerate}
+
+\vskip 180pt 
+
+\noindent \textbf{Problem 3.}\\
+We are told that $A$ is a symmetric Markov matrix. It has an eigenvalue $y$, where $-1<y<1$. 
+\begin{enumerate}
+\item Find the matrix $A$ in terms of $y$. 
+\item Find the eigenvectors of $A$.
+\item What is $\lim_{n\to\infty} A^n$ in its simplest form?
+\end{enumerate}
+
+\newpage
+
+\noindent \textbf{Problem 4.}\\
+\begin{enumerate}
+\item If $A$ is symmetric then which of these four matrices are necessarily positive definite
+$$A^3, \;\; (A^2+I)^{-1}, \;\; A+I, \;\; e^A.$$
+\item Suppose $C$ is positive definite and that $A$ has independent columns. Show that $x^TA^TCAx > 0$ for all $x\neq 0$. Hence $S = A^TCA$ is positive definite. 
+\end{enumerate}
+
+\end{document}  

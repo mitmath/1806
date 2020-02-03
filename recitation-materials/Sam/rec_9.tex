@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=35pt,vmargin=35pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\pagenumbering{gobble} 
+\newcommand{\diff}{\,\mathrm{d}}
+\renewcommand*{\vec}[1]{\mathbf{#1}}
+
+\title{18.06 - Recitation 9}
+\author{Sam Turton}
+\date{April 30, 2019}                                      
+\begin{document}
+\maketitle
+
+\noindent \textbf{Problem 1.}\\
+The matrix $B$ has eigenvalues $\lambda_1 = 2, \lambda_2 = 0$, and $\lambda_3 = 1$, with corresponding eigenvectors $x_1 = \begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix}$, $x_2 = \begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix}$, and $x_3 = \begin{pmatrix} 1 \\ 2 \\ -5 \end{pmatrix}$.
+\begin{enumerate}
+\item Find $B$ using the diagonalization formula $B = X\Lambda X^{-1}$. You can leave your answer as a product of the three matrices, as long as you write down each matrix explicitly (Hint: look at the eigenvectors. Finding $X^{-1}$ should require minimal computation).
+\item Let $C=(I-B)(I+B)^{-1}$. What are the eigenvalues of C? (Hint: $B$ and $C$ have the same eigenvectors. Proving this will help you find the eigenvalues).
+\end{enumerate}
+
+\vskip 150 pt 
+
+\noindent \textbf{Problem 2.}\\
+The matrix $A$ has diagonalization $A=X\Lambda X^{-1}$ with 
+$$X = \begin{pmatrix} 1 & 1 & -1 & 0 \\ & 1 & 2 & 1 \\ & & 1 & 0 \\ & & & 1 \end{pmatrix}, \;\; \Lambda = \begin{pmatrix} 1 & & & \\ & 2 & & \\ & & -2 & \\ & & & -1 \end{pmatrix}.$$
+Give a basis for the nullspace $N(M)$ of the matrix $M = A^4 - 2A^2 - 8I$.
+
+\newpage
+
+\noindent \textbf{Problem 3.}\\
+Let $A,B,C$ and $D$ be $2\times 2$ matrices
+\begin{enumerate}
+\item Use the cofactor expansion to prove that the following block determinant expression holds:
+$$\begin{vmatrix} A & 0 \\ C & D \end{vmatrix} = \vert A \vert \vert D \vert$$
+\item Verify that if $A^{-1}$ exists, then
+$$\begin{pmatrix} I & 0 \\ -CA^{-1} & I \end{pmatrix} \begin{pmatrix} A & B \\ C & D \end{pmatrix}  = \begin{pmatrix} A & B \\ 0 & D-CA^{-1} B\end{pmatrix} $$
+\item Prove that
+$$ \begin{vmatrix} A & B \\ C & D \end{vmatrix} = \vert AD - C B \vert $$
+provided that $AC=CA$. 
+\end{enumerate}
+
+\newpage
+
+\noindent \textbf{Problem 4.}\\
+Recall that the matrix exponential of $A$ is defined via the infinite series
+$$e^A = \sum_{n=0}^{\infty} \frac{A^n}{n!}.$$
+\begin{enumerate}
+\item Explain why $e^A$ is always an invertible matrix (hint: use eigenvalues). 
+\item There is a result that says that whenever $AB=BA$, it holds that $e^{A+B}=e^{A}e^{B}$. Use this result to find the inverse of $e^{A}$. 
+\item Suppose $A$ is a real, antisymmetric matrix so that $A^T=-A$. Show that $U= e^A$ is an orthogonal matrix.
+\item If $x(t)$ satisfies 
+$$\frac{dx}{dt} = Ax,$$
+then explain why $\Vert x(t) \Vert = \Vert x(0) \Vert$ for all $t$.
+\end{enumerate}
+
+\vskip 200pt 
+
+\noindent \textbf{Problem 5.}\\
+A $3\times 3$ matrix $B$ is known to have eigenvalues $0,1,2$. This is enough information to determine 3 of the following. Which are true and what are their values:
+\begin{enumerate}
+\item The rank of $B$.
+\item The determinant of $B^TB$.
+\item The eigenvalues of $B^TB$.
+\item The eigenvalues of $(B^2+I)^{-1}$. 
+\end{enumerate}
+
+
+\end{document}  

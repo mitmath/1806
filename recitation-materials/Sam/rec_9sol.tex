@@ -1,0 +1,164 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=35pt,vmargin=35pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\pagenumbering{gobble} 
+\newcommand{\diff}{\,\mathrm{d}}
+\renewcommand*{\vec}[1]{\mathbf{#1}}
+
+\title{18.06 - Recitation 9 - SOLUTIONS}
+\author{Sam Turton}
+\date{April 30, 2019}                                      
+\begin{document}
+\maketitle
+
+\noindent \textbf{Problem 1.}\\
+The matrix $B$ has eigenvalues $\lambda_1 = 2, \lambda_2 = 0$, and $\lambda_3 = 1$, with corresponding eigenvectors $x_1 = \begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix}$, $x_2 = \begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix}$, and $x_3 = \begin{pmatrix} 1 \\ 2 \\ -5 \end{pmatrix}$.
+\begin{enumerate}
+\item Find $B$ using the diagonalization formula $B = X\Lambda X^{-1}$. You can leave your answer as a product of the three matrices, as long as you write down each matrix explicitly (Hint: look at the eigenvectors. Finding $X^{-1}$ should require minimal computation).
+\item Let $C=(I-B)(I+B)^{-1}$. What are the eigenvalues of C? (Hint: $B$ and $C$ have the same eigenvectors. Proving this will help you find the eigenvalues).
+\end{enumerate}
+
+\
+
+\noindent \textbf{Solution}\\
+\begin{enumerate}
+\item $B = X\Lambda X^{-1}$, where 
+$$\boxed{\Lambda = \begin{pmatrix} 2 & & \\ & 0 & \\ & & 1 \end{pmatrix}}$$
+To find $X$ and $X^{-1}$ we can normalize the eigenvectors so that they form an orthonormal set:
+$$q_1 = \frac{1}{\sqrt{6}}\begin{pmatrix} 1 \\ 2 \\ 1 \end{pmatrix}, \;\; q_2 = \frac{1}{\sqrt{5}}\begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix}, \;\; q_3 = \frac{1}{\sqrt{30}} \begin{pmatrix} 1 \\ 2 \\ -5 \end{pmatrix}$$.
+Then we can let 
+$$X = \begin{pmatrix} \frac{1}{\sqrt{6}} & \frac{-2}{\sqrt{5}} & \frac{1}{\sqrt{30}} \\  \frac{2}{\sqrt{6}} & \frac{1}{\sqrt{5}} & \frac{2}{\sqrt{30}} \\  \frac{1}{\sqrt{6}} &0 & \frac{-5}{\sqrt{30}} \end{pmatrix},$$
+so that $X$ is an orthogonal matrix for which $X^{-1} = X^T$. Then $B=X\Lambda X^T$. 
+\item Let $Bx = \lambda x$. We can then show that:
+\begin{align}
+(I+B)x &= x+\lambda x = (1+\lambda) x\\
+(I-B)x &= x - \lambda x = (1-\lambda) x
+\end{align}
+so that $x$ is an eigenvector of $I\pm B$. By inverting the first of these equations, we also have that $(I+B)^{-1} x = \frac{1}{1+\lambda} x$. Putting this all together we can then show that
+$$Cx = (I-B)(I+B)^{-1} x = \frac{1-\lambda}{1+\lambda} x$$
+So then the eigenvalues of $C$ are
+$$ \frac{1-\lambda_1}{1+\lambda_1} = -\frac{1}{3}, \;\; \frac{1-\lambda_2}{1+\lambda_2} =1, \;\; \frac{1-\lambda_3}{1+\lambda_3} = 0$$
+\end{enumerate}
+
+\
+
+\noindent \textbf{Problem 2.}\\
+The matrix $A$ has diagonalization $A=X\Lambda X^{-1}$ with 
+$$X = \begin{pmatrix} 1 & 1 & -1 & 0 \\ & 1 & 2 & 1 \\ & & 1 & 0 \\ & & & 1 \end{pmatrix}, \;\; \Lambda = \begin{pmatrix} 1 & & & \\ & 2 & & \\ & & -2 & \\ & & & -1 \end{pmatrix}.$$
+Give a basis for the nullspace $N(M)$ of the matrix $M = A^4 - 2A^2 - 8I$.
+
+\
+
+\noindent \textbf{Solution}\\
+The eigenvalues of $A$ are $\lambda = 1, 2, -2, -1$. The eigenvalues of $M$ are then $\lambda^4 - 2\lambda^2 - 8$, with the same corresponding eigenvectors. $M$ therefore has two zero eigenvalues (which come from the $\pm 2$ eigenvalues of $A$), and so the corresponding eigenvectors are a basis for $N(M)$, i.e.
+$$\left\{\begin{pmatrix} 1 \\ 1 \\ 0 \\ 0 \end{pmatrix} ,\;\; \begin{pmatrix} -1 \\ 2 \\ 1 \\ 0 \end{pmatrix} \right\}$$
+
+\
+
+\noindent \textbf{Problem 3.}\\
+Let $A,B,C$ and $D$ be $2\times 2$ matrices
+\begin{enumerate}
+\item Use the cofactor expansion to prove that the following block determinant expression holds:
+$$\begin{vmatrix} A & 0 \\ C & D \end{vmatrix} = \vert A \vert \vert D \vert$$
+\item Verify that if $A^{-1}$ exists, then
+$$\begin{pmatrix} I & 0 \\ -CA^{-1} & I \end{pmatrix} \begin{pmatrix} A & B \\ C & D \end{pmatrix}  = \begin{pmatrix} A & B \\ 0 & D-CA^{-1} B\end{pmatrix} $$
+\item Prove that
+$$ \begin{vmatrix} A & B \\ C & D \end{vmatrix} = \vert AD - C B \vert $$
+provided that $AC=CA$. 
+\end{enumerate}
+
+\
+
+\noindent \textbf{Solution}\\
+\begin{enumerate}
+\item Let\footnote{You don't really need all the components to show this, but I figured it would be a little bit more transparent to write everything out.}
+$$A=\begin{pmatrix} a & b \\ c & d \end{pmatrix} \;\; C = \begin{pmatrix} \alpha & \beta \\ \gamma & \delta \end{pmatrix}, \;\; D = \begin{pmatrix} u & v \\ w & x \end{pmatrix} $$
+Then
+\begin{align*}
+\begin{vmatrix} A & 0 \\ C & D \end{vmatrix} &= \begin{vmatrix} a & b & 0 & 0 \\ c & d & 0 & 0 \\ \alpha & \beta & u & v \\ \gamma & \delta & w & x \end{vmatrix}\\
+&= a \begin{vmatrix} d & 0 & 0 \\ \beta & u & v \\  \delta & w & x \end{vmatrix} - b\begin{vmatrix} c  & 0 & 0 \\ \alpha & u & v \\ \gamma & w & x \end{vmatrix}\\
+&= ad  \begin{vmatrix}  u & v \\ w & x \end{vmatrix} - bc \begin{vmatrix}  u & v \\ w & x \end{vmatrix}\\
+&= (ad-bc) \vert D \vert \\
+&= \vert A \vert \vert D \vert
+\end{align*}
+Note that a similar process allows us to show that 
+$$\begin{vmatrix} A & B \\ 0 & D \end{vmatrix} = \vert A \vert \vert D \vert$$
+which we will need in the last part.
+\item Multiplying out the left hand side gives the same as the right hand side (Be careful to do matrix multiplication in the correct order!)
+\item Taking the determinant of both sides of the equation in part (2) shows that
+\begin{align*}
+\begin{vmatrix} I & 0 \\ -CA^{-1} & I \end{vmatrix} \begin{vmatrix} A & B \\ C & D \end{vmatrix}  &= \begin{vmatrix} A & B \\ 0 & D-CA^{-1} B\end{vmatrix} \\
+\implies \begin{vmatrix} A & B \\ C & D \end{vmatrix} & = \vert A \vert \vert D-CA^{-1} B \vert \\
+\implies \begin{vmatrix} A & B \\ C & D \end{vmatrix} & = \vert A \left(D-CA^{-1} B\right) \vert \\
+&= \vert AD - ACA^{-1}B \vert\\
+&= \vert AD - CB \vert
+\end{align*}
+where the last line holds provided that $AC=CA$. 
+\end{enumerate}
+
+\
+
+\noindent \textbf{Problem 4.}\\
+Recall that the matrix exponential of $A$ is defined via the infinite series
+$$e^A = \sum_{n=0}^{\infty} \frac{A^n}{n!}.$$
+\begin{enumerate}
+\item Explain why $e^A$ is always an invertible matrix (hint: use eigenvalues). 
+\item There is a result that says that whenever $AB=BA$, it holds that $e^{A+B}=e^{A}e^{B}$. Use this result to find the inverse of $e^{A}$. 
+\item Suppose $A$ is a real, antisymmetric matrix so that $A^T=-A$. Show that $U= e^A$ is an orthogonal matrix.
+\item If $x(t)$ satisfies 
+$$\frac{dx}{dt} = Ax,$$
+then explain why $\Vert x(t) \Vert = \Vert x(0) \Vert$ for all $t$.
+\end{enumerate}
+
+\
+
+\noindent \textbf{Solution} \\
+\begin{enumerate}
+\item Suppose that $Ax = \lambda x$. Then we can show that 
+$$e^A x =  \left(\sum_{n=0}^{\infty} \frac{A^n}{n!}\right) x = \sum_{n=0}^{\infty} \frac{A^n x}{n!} = \left(\sum_{n=0}^{\infty} \frac{\lambda^n }{n!} \right) x = e^{\lambda} x $$
+So the eigenvalues of $e^A$ are given by $e^{\lambda}$ for each eigenvalue $\lambda$ of $A$. Hence $e^A$ can never have a zero eigenvalue (since $\vert e^{\lambda} \vert >0 \;\; \forall \lambda \in \mathbb{C}$). Therefore $e^A$ is always invertible for any matrix $A$.
+\item Notice that 
+$$e^{-A}e^{A} = e^{-A + A} = e^{0} = I$$
+and so 
+$$\left(e^A\right)^{-1} = e^{-A}$$
+\item Notice that
+$$U^T = \left(e^A\right)^T =  \left(\sum_{n=0}^{\infty} \frac{A^n}{n!}\right)^T = \left(\sum_{n=0}^{\infty} \frac{(A^T)^n}{n!}\right) = \left(\sum_{n=0}^{\infty} \frac{(-A)^n}{n!}\right) = e^{-A} = U^{-1}$$
+and so $U^TU = I$. Therefore $U$ is an orthogonal matrix.
+\item Recall that the solution of a matrix ODE $\frac{dx}{dt} = Ax$ is
+$$x(t) = e^{At} x(0).$$
+Therefore
+$$\Vert x(t) \Vert ^2 = \left(e^{At} x(0)\right)^Te^{At} x(0) = x^T(0) \left(e^{At}\right)^T e^{At} x(0) = x^T(0) e^{-At} e^{At} x(0) = x^T(0) x(0) = \Vert x(0) \Vert^2 $$
+\end{enumerate}
+
+\
+
+\noindent \textbf{Problem 5.}\\
+A $3\times 3$ matrix $B$ is known to have eigenvalues $0,1,2$. This is enough information to determine 3 of the following. Which are true and what are their values:
+\begin{enumerate}
+\item The rank of $B$.
+\item The determinant of $B^TB$.
+\item The eigenvalues of $B^TB$.
+\item The eigenvalues of $(B^2+I)^{-1}$. 
+\end{enumerate}
+
+\
+
+\noindent \textbf{Solution} \\
+\begin{enumerate}
+\item Since $B$ has 3 distinct eigenvalues, exactly one of which is 0, we know that the dimension of the nullspace is 1. Since $B$ is $3\times 3$, we can deduce that $r = 3-1 = 2$ .
+\item The determinant of $B^TB$ is 
+$$\vert B^TB \vert = \vert B^T \vert \vert B\vert = \vert B \vert^2$$
+But we know that $\vert B \vert = 0$, since the determinant of a matrix is the product of its eigenvalues. Therefore $\vert B^TB \vert = 0$.
+\item The eigenvalues of $B^TB$ cannot be determined from this information.
+\item Suppose $Bx = \lambda x$ so that $\lambda$ is an eigenvalue of $B$ with eigenvector $x$. Then
+$$(B^2 + I)x = B^2x + x = \lambda^2 x + x = (\lambda^2 +1)x$$
+and so $x$ is also an eigenvector of $B^2+I$, but with eigenvalue $\lambda^2 + 1$. By inverting this equation, we then also have that
+$$(B^2+I)^{-1} x = \frac{1}{\lambda^2 +1}.$$
+Hence if $B$ has eigenvalues $0,1,2$, then $(B^2+I)^{-1}$ must have eigenvalues $1,1/2, 1/5$.
+\end{enumerate}
+
+
+\end{document}  

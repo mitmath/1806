@@ -1,0 +1,89 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=50pt,vmargin=50pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\pagenumbering{gobble} 
+\newcommand{\diff}{\,\mathrm{d}}
+\renewcommand*{\vec}[1]{\mathbf{#1}}
+
+\title{18.06 - Review for final exam}
+\author{Sam Turton}
+\date{May 14, 2019}                                      
+\begin{document}
+\maketitle
+
+\noindent \textbf{(Fall 2018 final, Q2):} The real $m \times n$ matrix $A$ has a $QR$ factorization $A = QR$ of the form
+$$Q = \begin{pmatrix} q_1 & q_2 & q_3 & q_4 & q_5 & q_6 \end{pmatrix}, \;\;\;
+    R = \begin{pmatrix} 1 & -2 & 2 & 0 & 0 & 0 \\ & 2 & -3 & 0 & 0 & 0 \\ & & 1 & 0 & 0 & 0 \\ & & & 3 & 1 & -1 \\ & & & & 1 & 2 \\ & & & & & 1 \end{pmatrix},$$
+where $q_1, ... , q_6$ are six orthonormal vectors in $\mathbb{R}^m$.
+\begin{enumerate}[(a)]
+\item Give as much true information as possible about $m, n$, and the rank of $A$.
+\item If $a_5$ is the 5th column of $A$, write it in the basis $q_1, ... , q_6$, i.e. write it as $a_5 = c_1q_1 + c_2q_2 + ... + c_6q_6$, by giving the numerical values of the coefficients $c_1,... , c_6$.
+\item  What is $\Vert a_5 \Vert$?
+\item This pattern of zero entries in $R$ means that columns .......... of $A$ must be .......... to columns .......... of $A$.
+\item If $A$ is a square matrix, what is $\vert \det A \vert$ (the absolute value of the determinant)?
+\end{enumerate}
+
+\newpage
+
+\begin{enumerate}[(a)]
+\item \textbf{(Spring 2018 exam 2, Q3):} The compact singular value decomposition of a rank $r$, $m \times n$ matrix $A$ is $U\Sigma V^T$ where $\Sigma$ is square $r$ by $r$ with positive diagonal entries, $U$ is $m \times r$ and $V$ is $n \times r$. Write down projection matrices for the four fundamental subspaces of $A$, in terms of one of $U$, $\Sigma$, or $V$ in each expression. Be sure to clearly identify which fundamental subspace of $A$ goes with which projection matrix.
+\item \textbf{(Fall 2013 final, Q1): } Project $b$ onto the column space of $A$. Do \textbf{not} compute a projection matrix for either:
+\begin{itemize}
+\item $A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \\ 0 & 0 \end{pmatrix}$ and $b = \begin{pmatrix} 2 \\ 3 \\ 4 \end{pmatrix}$.
+\item $A = \begin{pmatrix} 1 & 1 \\ 1 & 1 \\ 0 & 1  \end{pmatrix}$ and $b = \begin{pmatrix} 4 \\ 4 \\ 6 \end{pmatrix}$.
+\end{itemize}
+\end{enumerate}
+
+\newpage
+
+%\noindent \textbf{(Spring 2017 final, Q2):} Suppose you have 100 data points $(x_i,y_i)$ for $i=1,2,...,100$, and you want to fit them to a power-law curve $y(x) = ax^b$ for some $a$ and $b$. Equivalently, you want to fit $\log y_i$ to $\log y = \log (ax^b) = b\log x + \log a$. Describe how to find $a$ and $b$ to minimize the sum of the squares of the errors:
+%$$s(a,b) = \sum_{i=1}^{100} \left(b\log x_i+\log a - \log y_i\right)^2.$$
+%Write down a $2\times 2$ system of equations for the vector $z = \begin{pmatrix} b \\ \log a \end{pmatrix}$; you can leave yourr equations in the form of a product of matrices/vectors as long as you say what the matrices/vectors are. (Hint: rewrite it as an 18.06-style least-squares problem with matrices/vectors.)
+%\newpage
+
+\noindent \textbf{(Spring 2017 exam 1, Q2):} Circle which of the following statements might possibly be true. Give an example of a possible matrix $A$ for each possibly true statement.
+\begin{enumerate}[(a)]
+\item $Ax = b$ has a unique solution for a $5 \times 3$ matrix $A$.
+\item $Ax = b$ has a unique solution for a $3 \times 5$ matrix $A$.
+\item  $Ax = b$ is not solvable for any $b$.
+\item $Ax = b$ is not solvable for any $b \neq 0$.
+\end{enumerate}
+
+\newpage
+
+\noindent \textbf{(Spring 2018 exam 3, Q2, adapted):} Prove that $\sum_{i} \sigma_i^2 = \sum_{i,j} a_{ij}^2$ (Hint: Consider $\text{Tr}(A^TA)$). In all cases find a two by two matrix which has the given eigenvalues and the given singular values or explain why it is impossible. 
+\begin{enumerate}
+\item $\lambda = 0, 1$, $\sigma = 1, 1$.
+\item  $\lambda = 0, 1$,  $\sigma = 0, \sqrt{2}$. 
+\item $\lambda = 0, 0$,  $\sigma = 0, 2018$.
+\item  $\lambda = 4, 4$,  $\sigma = 3, 5$.
+\end{enumerate}
+
+\newpage
+
+\noindent \textbf{(Fall 2014 exam 2, Q2):}  Let $A = \begin{pmatrix} 1 & 1 & 2 \\  1 & 2 & 1 \\ 2 & 1 & 1 \end{pmatrix}$
+\begin{enumerate}[(a)]
+\item Calculate the determinant $\det(A)$.
+\item Explain why $A$ is an invertible matrix. Find the entry $(2, 3)$ of the inverse matrix $A^{-1}$.
+\item Notice that all sums of entries in rows of $A$ are the same. Explain why this implies that $\begin{pmatrix} 1 \\ 1 \\1 \end{pmatrix}$ is an eigenvector of $A$. What is the corresponding eigenvalue $\lambda_1$?
+\item Find two other eigenvalues $\lambda_2$ and $\lambda_3$ of $A$.
+\item Find the projection matrix $P$ for the projection onto the column space of $A$.
+\end{enumerate}
+
+\newpage
+
+\noindent \textbf{(Spring 2019 exam 2, Q2):}   
+\begin{enumerate}
+\item Compute the gradient of $f(x)=x^Tx+\text{sum}(x)$ without the use of indices.
+\item Consider the nonlinear matrix function $f(A) = A^TA$. It is possible to write $df$ as a linear transformation of $dA$. What is that linear transformation?
+\end{enumerate}
+
+
+
+
+
+
+\end{document}  

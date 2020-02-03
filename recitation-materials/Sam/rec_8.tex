@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=35pt,vmargin=35pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\pagenumbering{gobble} 
+\newcommand{\diff}{\,\mathrm{d}}
+\renewcommand*{\vec}[1]{\mathbf{#1}}
+
+\title{18.06 - Recitation 8}
+\author{Sam Turton}
+\date{April 23, 2019}                                      
+\begin{document}
+\maketitle
+
+\section{Lecture review}
+\begin{enumerate}
+\item If we have that
+$$Ax = \lambda x, \;\;\; x \neq 0,$$
+then $\lambda$ is an \textbf{eigenvalue} of $A$, and $x$ is the corresponding \textbf{eigenvector}. 
+\item The eigenvalues are solutions of the $n$-th degree polynomial equation
+$$\det (A-\lambda I) = 0.$$
+This is known as the \emph{characteristic equation}.
+\item Warning: The eigenvalues and eigenvectors need not be real, even if all the entries of $A$ are real !
+\item $A$ is invertible if, and only if, $0$ is \textbf{not} an eigenvalue.
+\item Powers of $A$ have the same eigenvectors as $A$; the corresponding eigenvalues are raised to the same power, i.e.
+$$ Ax = \lambda x \;\; \implies \;\; A^n x = \lambda^n x$$
+\item The eigenvalues of a triangular matrix are on the diagonal.
+\item The determinant of $A$ is equal to the product of all of its eigenvalues. 
+\item The trace of $A$ is equal to the sum of its eigenvalues. 
+\item \textbf{Diagonalisation:} Suppose $A$ has $n$-independent eigenvectors $x_1, x_2,...,x_n$, with corresponding eigenvalues $\lambda_1, \lambda_2,...,\lambda_n$. Let $X$ be a matrix whose columns are the eigenvectors in this order, and $\Lambda$ be a diagonal matrix with the corresponding eigenvalues along its diagonal. Then we can write
+$$\boxed{A=X\Lambda X^{-1}}$$
+\item Diagonalisation is always possible if $A$ has $n$ distinct eigenvalues; it may or may not be possible if it has repeated eigenvalues.
+\end{enumerate}
+
+\newpage
+
+\section{Problems}
+\noindent \textbf{Problem 1.}\\
+The $2\times 2$ matrix $A = \begin{pmatrix} 1 & 4 \\ 2 & 3 \end{pmatrix}$ has eigenvalues $\lambda_1 = 5$ and $\lambda_2 = -1$, with corresponding eigenvectors $x_1 = \begin{pmatrix} 1\\1\end{pmatrix}$ and $x_2 = \begin{pmatrix} -2\\1\end{pmatrix}$. Find the eigenvalues and eigenvectors of $B = 2A + 3I$. (Before you jump into solving quadratic equations, think about what happens if you multiply $B$ by $x_1$ or $x_2$.)
+
+\vskip 150pt
+
+\noindent \textbf{Problem 2.}\\
+\begin{enumerate}
+\item If the eigenvectors of $A$ are the columns of $I$ then A is a ........ matrix.
+\item If the eigenvector matrix $X$ is invertible and upper triangular, then why must $A$ also be upper triangular?  (Note: the inverse of an upper-triangular matrix is upper triangular.)
+\end{enumerate}
+
+\newpage
+
+\noindent \textbf{Problem 3.}\\
+Suppose we form a sequence of numbers $g_0,g_1,g_2,g_3$ by the rule
+$$ g_{k+2} = (1-w) g_{k+1} + w g_k $$
+for some scalar $w$.  We concentrate on the case where $0 < w < 1$, so that $g_{k+2}$ could be thought of as a \emph{weighted average} of the previous two values in the sequence.  For example, for $w = 0.5$ (equal weights) and with $g_0=0$ and $g_1 = 1$, this produces the sequence
+$$ g_0,g_1,g_2,g_3,\ldots = 0, 1, \frac{1}{2}, \frac{3}{4}, \frac{5}{8}, \frac{11}{16}, \frac{21}{32}, \frac{43}{64}, \frac{85}{128}, \frac{171}{256}, \frac{341}{512}, \frac{683}{1024}, \frac{1365}{2048}, \frac{2731}{4096}, \frac{5461}{8192}, \frac{10923}{16384}, \frac{21845}{32768}, \ldots $$
+\begin{enumerate}
+\item If we define $x_k = \begin{pmatrix} g_{k+1} \\ g_k \end{pmatrix}$, then write the rule for the sequence in matrix form: $x_{k+1} = A x_k$.  In particular, what is $A$?
+\item Find the eigenvalues of A (your answers could be a function of $w$) by computing the characteristic equation. Check that $A$ has corresponding eigenvectors $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$ and $\begin{pmatrix} w \\ -1 \end{pmatrix}$.
+\item What happens to the eigenvalues and eigenvectors as $w$ gets closer and closer to $-1$?  Is there a still a basis of eigenvectors and a diagonalization of $A$ for $w=-1$?
+\item  Show that $x_n = A^n x_0$. Find the limit as $n\to\infty$ of $A^n$ (for $0 < w < 1$) from the diagonalization of $A$. 
+\item For $w=0.5$, if $g_0 = 0$ and $g_1 = 1$, i.e. $x_0 = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$, then show that the sequence $g_k$ approaches 2/3.
+\end{enumerate} 
+
+
+\end{document}  

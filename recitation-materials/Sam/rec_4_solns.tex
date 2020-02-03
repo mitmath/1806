@@ -1,0 +1,137 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=35pt,vmargin=35pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\pagenumbering{gobble} 
+\newcommand{\diff}{\,\mathrm{d}}
+\renewcommand*{\vec}[1]{\mathbf{#1}}
+
+\title{18.06 - Recitation 4 SOLUTIONS}
+\author{Sam Turton}
+\date{March 12, 2019}                                      
+\begin{document}
+\maketitle
+
+\noindent \textbf{Problem 1.}\\
+Let $A$ be an $m\times m$ invertible matrix. Describe in words as much as you can about the null space and left nullspace (e.g. dimension, possibly a basis, etc.) of the following:
+\begin{enumerate}[(a)]
+\item The matrix $A$
+\item The matrix $B = \begin{pmatrix} A \\ A \end{pmatrix}$
+\item The matrix $C =\begin{pmatrix} A & 2A \end{pmatrix}$
+\item The matrix $D = \begin{pmatrix} I & A \end{pmatrix}$
+\end{enumerate}
+
+\
+
+\noindent \textbf{Solution.\footnote{I skipped over this problem in recitation, but it's a useful additional problem to think about}}\\
+\begin{enumerate}[(a)]
+\item The matrix $A$ is square and invertible with rank $r=m$. This means that both the nullspace and the left nullspace only contain the zero vector.
+\item The matrix $B = \begin{pmatrix} A \\ A \end{pmatrix}$ is a $2m\times m$ matrix with rank $r=m$. This means that the matrix has full column rank, and so the nullspace just contains the zero vector. The left nullspace will have dimension $2m-m =m$. The left nullspace has a basis of the form
+$$\left\{\begin{pmatrix} 1 \\ 0 \\ \vdots \\ -1 \\0\\ \vdots \end{pmatrix}, \; \begin{pmatrix} 0 \\ 1 \\  \vdots \\ 0 \\ -1\\ \vdots \end{pmatrix}, ... , \begin{pmatrix} 0 \\ \vdots \\ 1 \\ 0 \\ \vdots \\ -1 \end{pmatrix}\right\}$$
+\item The matrix $C =\begin{pmatrix} A & 2A \end{pmatrix}$ is a $m\times 2m$ matrix with rank $r=m$. This means that the matrix has full row rank, and so the left nullspace just contains the zero vector. The null space will have dimension $2m-m=m$. The nullspace has a basis of the form 
+$$\left\{\begin{pmatrix} 2 \\ 0 \\ \vdots \\ -1 \\0\\ \vdots \end{pmatrix}, \; \begin{pmatrix} 0 \\ 2 \\  \vdots \\ 0 \\ -1\\ \vdots \end{pmatrix}, ... , \begin{pmatrix} 0 \\ \vdots \\ 2 \\ 0 \\ \vdots \\ -1 \end{pmatrix}\right\}$$
+\item The matrix $D = \begin{pmatrix} I & A \end{pmatrix}$ is a $m\times 2m$ matrix with rank $r=m$. This means that the matrix has full row rank, and so the left nullspace just contains the zero vector. The null space will have dimension $2m-m=m$. A basis for the nullspace can be written in terms of the rows of $A^{-1}$, but this is not so interesting. 
+\end{enumerate}
+
+\
+
+\noindent \textbf{Problem 2.}\\
+\begin{enumerate}[(a)]
+\item If $AB=0$, then the columns of $B$ are in which fundamental subspace of $A$? The rows of $A$ are in which fundamental subspace of $B$? With $AB=0$, why can't $A$ and $B$ be $3\times 3$ matrices of rank $2$?
+\item If $Ax = b$ has a solution and $A^Ty = 0$, then which of the following is true: $y^Tx = 0$ \emph{or} $y^Tb = 0$?
+\item If $A^TAx = 0$, then why must $Ax=0$? Why does this result mean that $N(A^TA)=N(A)$?
+\end{enumerate}
+
+\noindent \textbf{Solution. }\\
+\begin{enumerate}[(a)]
+\item The columns of $B$ must be contained in the nullspace of $A$, while the rows of $A$ must be contained in the left nullspace of $B$. If $A$ and $B$ are both $3\times 3$ matrices of rank $2$, then the column space of $B$ will have dimension $2$, while the nullspace of $A$ will have dimension $3-2=1$. But if $AB=0$ and $B$ is rank 2, then there must be at least two independent vectors in the nullspace of $A$, which contradicts $A$ having rank 2.
+\item if $Ax=b$ has a solution, then $b\in C(A)$. if $A^Ty = 0$, then $y\in N(A^T)$. Since $C(A)$ and $N(A^T)$ are orthogonal vector spaces, this means that $y^Tb = 0$. 
+\item if $A^TAx=0$, then $Ax \in N(A^T)$. But we also know that $Ax\in C(A)$ by definition. However, $C(A)$ and $N(A^T)$ are orthogonal vector spaces, and so this means $Ax$ must be orthogonal to itself. The only vector which can be orthogonal to itself is the zero vector, and so $Ax =0$ also. We have therefore shown that if $x\in N(A^TA)$, then $x\in N(A)$. Furthermore, if $y\in N(A)$, then $Ay = 0$ and so necessarily $A^TAy = 0$, meaning that $y\in N(A^TA)$. Hence $N(A)=N(A^TA)$. 
+\end{enumerate}
+
+\newpage
+
+\noindent \textbf{Problem 3.}\\
+Write down the complete solution to the following linear systems:
+\begin{enumerate}
+\item $A_1 x = b_1$, where:
+\begin{align*}
+A_1 &= \begin{pmatrix} 1 & 0 & 0 \\ 1 & 1 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 2 \end{pmatrix}, \;\; b_1  = \begin{pmatrix} 0 \\ 1 \\ 1 \\ 1 \end{pmatrix}, \;\;\; \text{and the full of SVD of $A_1$ is} \\
+A_1&= \begin{pmatrix}  0  &  0.4082  &  -0.7071 & 0.5774 \\ 0 & 0.8165 & 0  & -0.5774 \\ 0  &  0.4082 &   0.7071  &  0.5774 \\ 1 &  0 & 0 & 0 \end{pmatrix}
+           \begin{pmatrix}  2.0000 &  0 & 0 \\ 0 & 1.7321 &  0  \\ 0 &  0  & 1.0000 \\ 0  & 0  &  0 \end{pmatrix}
+           \begin{pmatrix}        0 &   0.7071  & -0.7071 \\ 0  &  0.7071  &  0.7071 \\ 1.0000  &       0     &    0 \end{pmatrix}^T\\
+\end{align*}
+\item  $A_2 x = b_2$, where
+\begin{align*}
+A_2 &= \begin{pmatrix} 2 & 1 & 0 & 1 \\ 1 & 1 & 1 & 0 \\ 0 & 1 & 0 & -1 \end{pmatrix}, \;\; b_2  = \begin{pmatrix} 1 \\ 1 \\ -1 \end{pmatrix}, \;\;\; \text{and the full of SVD of $A_2$ is} \\
+A_2 &= \begin{pmatrix} 0.8411  & -0.3507 &  -0.4117 \\ 0.5332  & 0.4105  &  0.7397 \\ 0.0903  &  0.8417 &  -0.5323 \end{pmatrix} 
+		\begin{pmatrix}  2.8110  &   0 &  0 & 0 \\ 0  & 1.5773 &  0  &  0 \\ 0 & 0  & 0.7813 & 0 \end{pmatrix} 
+	 	\begin{pmatrix} 0.7881  & -0.1844 &  -0.1072  &  0.5774 \\  0.5211  &  0.5716 &  -0.2616 &  -0.5774 \\ 0.1897  &  0.2603 &   0.9467   & -0.0000 \\ 0.2671  & -0.7560 &   0.1543   & -0.5774 \end{pmatrix}^T 
+\end{align*}
+\item $A_3 x = b_3$, where
+\begin{align*}
+A_3 &= \begin{pmatrix} 1 & 0 & -1 \\ 1 & 1 & 1 \\ 0 & 0 & 0 \end{pmatrix}, \;\; b_3 = \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}, \;\;\; \text{and the full of SVD of $A_3$ is} \\
+A_3 &=  \begin{pmatrix}  0  &  1 &  0 \\ 1  & 0  & 0 \\ 0 &   0 & -1 \end{pmatrix} 
+              \begin{pmatrix} 1.7321 &  0   &   0 \\ 0  &  1.4142     &    0 \\ 0     &    0 &  0 \end{pmatrix}
+              \begin{pmatrix}0.5774  &  0.7071  &  0.4082 \\ 0.5774  & -0.0000  & -0.8165 \\  0.5774 7 & -0.7071 &   0.4082 \end{pmatrix}^T
+\end{align*}
+\end{enumerate}
+
+\
+
+\noindent \textbf{Solution. }
+\begin{enumerate}
+\item This linear system has full column rank, but not full row rank. We therefore know that this system will either have a unique solution, or no solution at all. However, we can see that $b_1$ can be written as a linear combination of the second and third columns of $A_1$, so the complete solution to this system is 
+$$\boxed{x = \begin{pmatrix} 0 \\ 1 \\ 1/2 \end{pmatrix}.}$$
+\item This linear system has full row rank, but not full column rank. The system will always have infinitely many solutions. A particular solution to this system can be found by noting that $b_2$ is the sum of the third and fourth columns of $A_2$. The nullspace of $A_2$ is all vectors parallel to the fourth column of $V$. Therefore the complete solution to this linear system is 
+$$\boxed{x = \begin{pmatrix} 0 \\ 0 \\ 1 \\ 1 \end{pmatrix} + \alpha \begin{pmatrix} 0.5774 \\ -0.5774 \\ 0 \\ -0.5774 \end{pmatrix}.}$$
+\item This linear system has neither full row nor column rank. The system will therefore have either no solutions or infinitely many solutions. Since $b_3$ is identical to the first column of $A_3$, we see that we are in the latter case. The complete solution to this linear system is then
+$$\boxed{x = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} + \beta \begin{pmatrix} 0.4082 \\ -0.8165 \\ 0.4082 \end{pmatrix}.}$$
+\end{enumerate}
+
+\noindent \textbf{Problem 4.}\\
+Construct matrices with each of the following properties, or explain why it is impossible:
+\begin{enumerate}
+\item Column space contains $\begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}, \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$, and row space contains $\begin{pmatrix} 1 \\ 2 \end{pmatrix}, \begin{pmatrix} 2 \\ 5 \end{pmatrix}$.
+\item Column space has basis $\begin{pmatrix} 1 \\ 1 \\ 3 \end{pmatrix}$, nullspace has basis $\begin{pmatrix} 3 \\ 1 \\ 1 \end{pmatrix}$.
+\item Dimension of nullspace = 1 + dimension of left nullspace.
+\item Nullspace contains $\begin{pmatrix} 1 \\ 3 \end{pmatrix}$, column space contains $\begin{pmatrix} 3 \\ 1 \end{pmatrix}$.
+\item Row space = column space, nullspace $\neq$ left nullspace.
+\end{enumerate}
+
+\
+
+\noindent \textbf{Solution.} \\
+\begin{enumerate}
+\item The matrix $A = \begin{pmatrix} 1 & 0 \\ 1 & 0 \\ 0 & 1 \end{pmatrix}$ clearly has a column space containing  $\begin{pmatrix} 1\\1\\0 \end{pmatrix}$ and $\begin{pmatrix} 0\\0\\1 \end{pmatrix}$. The row space is spanned by $\begin{pmatrix} 1 \\ 0 \end{pmatrix}$ and $\begin{pmatrix} 0 \\ 1 \end{pmatrix}$. Since this is a basis for $\mathbb{R}^2$, the row space will certainly contain $\begin{pmatrix} 1\\2 \end{pmatrix}$ and $\begin{pmatrix} 2 \\5 \end{pmatrix}$.
+
+\item This is impossible. If both the column space and the nullspace are subspaces of $\mathbb{R}^3$, then the matrix would have to be a $3 \times 3$ matrix. If the column space has basis $\begin{pmatrix} 1 \\ 1 \\ 3 \end{pmatrix}$, then the rank of the matrix is 1. But the dimension of the nullspace is then necessarily $3-1=2$, so the nullspace cannot also only have one element in its basis.
+
+\item If dimension of nullspace = 1 + dimension of left nullspace, then we know that (number of columns - r) = 1 + (number of rows - r). So such a matrix would necessarily have one more column than it has rows. For example the $1 \times 2$ matrix 
+\begin{align}
+A = \begin{pmatrix} 1 & 2 \end{pmatrix}
+\end{align}
+has a nullspace that is spanned by $\begin{pmatrix} -2 \\ 1 \end{pmatrix}$, and so has dimension 1, while the left null space has dimension $0$
+
+\item We can construct such a matrix by setting one of the columns equal to $\begin{pmatrix} 3\\1 \end{pmatrix}$, and then constructing the second column so that $\begin{pmatrix} 1\\3 \end{pmatrix}$ is in the nullspace. For example, $A = \begin{pmatrix} 9 & -3 \\ 3 & -1 \end{pmatrix}$ has a nullspace containing $\begin{pmatrix} 1\\3 \end{pmatrix}$, and a column space containing $\begin{pmatrix} 3\\1 \end{pmatrix}$.
+
+\item This is impossible. The nullspace can be characterized as the orthogonal complement of the row space, and the left nullspace can be characterized as the orthogonal complement of the column space. But if the row space and the column space are equal, then so are their orthogonal complements, so the nullspace and left nullspace would need to coincide as well.
+\end{enumerate}
+
+\
+
+\noindent \textbf{Problem 5. (Challenge problem)}\\
+Write down the $QR$ factorization of an arbitrary $3\times 3$ upper triangular matrix:
+$$A = \begin{pmatrix} a & b & c \\ 0 & d & e \\ 0 & 0 & f \end{pmatrix}.$$
+What conditions are there on possibly $a,b,c,d,e$ and/or $f$ for the $QR$ to exist? How does this generalize to an arbitrary $n\times n$ upper triangular matrix?\footnote{Some hints to get started: Are the columns of $A$ linearly independent? What is the column space of $A$? Can you identify an orthonormal basis for $C(A)$?}
+
+\
+
+\noindent \textbf{Solution.} \\
+Notice that the columns of a $3\times 3$ upper triangular matrix span all of $\mathbb{R}^3$, so $C(A)=\mathbb{R}^3$, provided that $a,d,f\neq 0$. The $QR$ factorization of $A$ is thus simply
+$$A=\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}  \begin{pmatrix} a & b & c \\ 0 & d & e \\ 0 & 0 & f \end{pmatrix}.$$
+The generalization to an $n\times n$ follows the same pattern: provided that none of the elements on the diagonal of $A$ are zero, then $Q=I$ and $R=A$. 
+
+\end{document}  

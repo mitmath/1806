@@ -1,0 +1,171 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=50pt,vmargin=50pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\pagenumbering{gobble} 
+\newcommand{\diff}{\,\mathrm{d}}
+\renewcommand*{\vec}[1]{\mathbf{#1}}
+
+\title{18.06 - Review for final exam}
+\author{Sam Turton}
+\date{May 14, 2019}                                      
+\begin{document}
+\maketitle
+
+\emph{This is a non-exhaustive list of material we have covered this semester. It is posted on github and I will update it as I think of more things. Please email me (seturton@mit.edu) if you think there are sections I should add!} 
+
+\section{Vectors}
+\begin{itemize}
+\item The \emph{length} (or \emph{magnitude}) of a vector $\vec{v}\in\mathbb{R}^n$ is written $\Vert \vec{v} \Vert$. It is given by the following formula:
+$$\boxed{\Vert \vec{v} \Vert^2 = v_1^2 + v_2^2 +...+ v_n^2 =  \sum_{i=1}^n v_i^2}$$
+\item A \emph{unit vector} $\vec{n}$ is a vector with length $\Vert\vec{n}\Vert =1$. 
+\item Suppose you have two $n$-dimensional vectors, $\vec{u}$ and $\vec{v}$:
+$$\vec{u} = \begin{pmatrix} u_1 \\ u_2 \\ \vdots \\ u_n \end{pmatrix}, \;\; \vec{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix}$$
+Then the \emph{dot product} (or \emph{inner product}) of these two vectors, $\vec{u}\cdot\vec{v}$, is given by the following formula:
+$$\boxed{\vec{u}\cdot\vec{v} = u_1v_1 + u_2v_2 + ... + u_nv_n}$$
+\item The \emph{angle} between two vectors $\vec{u}$ and $\vec{v}$ is given by the following formula:
+$$\boxed{\cos{\theta} = \frac{\vec{u}\cdot\vec{v}}{\Vert \vec{u}\Vert\Vert\vec{v}\Vert}}$$
+\item We say that a nonzero vector $\vec{u}$ is \emph{parallel} to a nonzero vector $\vec{v}$ if $\boxed{\vec{u} = a\vec{v}}$ for some scalar $a\neq 0$. We sometimes say that $\vec{u}$ and $\vec{v}$ are in the same direction.
+\item We say that a vector $\vec{u}$ is \emph{perpendicular}, or \emph{orthogonal}, to a vector $\vec{v}$ if $\boxed{\vec{u}\cdot\vec{v} = 0}$. 
+\end{itemize}
+
+\newpage
+
+\section{Matrices}
+\begin{itemize}
+\item A \emph{matrix} is an $m \times n$ array of numbers. An $m\times n$ matrix has $m$ \emph{rows} and $n$ \emph{columns}. A matrix is \emph{square} if $m=n$.  
+\item Suppose $A$ is a $m\times n$ matrix and $B$ is a $p\times q$ matrix. We can only multiply these matrices if the dimensions make sense. We can multiply $AB$ only if $n=p$; we can multiply $BA$ only if $m=q$.
+\item Suppose $A$ and $B$ are two $n\times n$ square matrices. In general $\boxed{AB \neq BA}$. Matrix multiplication does not \emph{commute}. 
+\item A \emph{diagonal} matrix is a matrix which only has entries along its diagonal.
+\item We can compute the product of three matrices $ABC$ either as $(AB)C$ (multiply $AB$ and then multiply on the right by $C$), or as $A(BC)$ (multiply $BC$ and then multiply on the left by $A$). Matrix multiplication is \emph{associative}. 
+\item Matrix multiplication is \emph{distributive}. This means that $(A+B)C = AC + BC$. 
+\item The \emph{transpose} of a matrix $A$ is denoted by $A^T$. The transpose is the matrix formed by taking the columns of $A$ and making them the rows of $A^T$. 
+\item If $A$ has components $a_{ij}$, then $A^T$ has components $a_{ji}$.
+\item If $A$ is $m\times n$, then $A^T$ is $n\times m$.
+\item $A^TA$ and $AA^T$ can always be computed. They are both square matrices, even if $A$ is rectangular. If $A$ is $m\times n$, then $A^TA$ is $m\times m$ and $AA^T$ is $n\times n$.
+\item $\boxed{(AB)^T = B^TA^T}$.
+\item $\boxed{(AB)^{-1} = B^{-1}A^{-1}}$ provided $A^{-1}$ and $B^{-1}$ exist.
+\item If $A$ is a square matrix and $A^{-1}$ exists, then $\boxed{(A^T)^{-1} = (A^{-1})^T}$. 
+\item A $n\times n$ square matrix $Q$ is \emph{orthogonal} if $\boxed{Q^TQ=I}$. A rectangular matrix for which $Q^TQ=I$ we will usually refer to as a \emph{tall skinny orthogonal} matrix. 
+\item An equivalent definition: suppose a matrix $Q$ has $n$ columns given by the vectors $\vec{q}_1, ..., \vec{q}_n$. Then $Q$ is orthogonal if the column vectors are orthonormal. This means that $q_i^Tq_j = 0$ for $i\neq j$, and $\Vert q_i \Vert = 1$. 
+\item If $Q$ is square and orthogonal, then we also have that $QQ^T = I$, and so $Q^{-1}=Q^T$.
+\item If $Q$ obey $Q^TQ=I$, but is not square, then $QQ^T \neq I$ generally! 
+\end{itemize}
+
+\newpage
+
+\section{Vector spaces, independence and bases}
+\begin{itemize}
+\item A \textbf{vector subspace}, $X$, is a set of vectors that satisfies the following requirement: \emph{If $v$ and $w$ are vectors in $X$, and $c$ is any scalar, then}
+\begin{enumerate}
+\item \emph{$v+w$ is in $X$}
+\item \emph{$cv$ is in $X$}
+\end{enumerate}
+\item A set of vectors $v_1, v_2, ..., v_n$ is linearly independent if 
+$$\boxed{a_1v_1 + a_2v_2 + ... + a_n v_n = 0 \iff a_1=a_2=...=a_n=0}$$
+\item A set of vector $v_1, v_2, ..., v_n$ \emph{spans} a vector space if every element of the space can be written as a linear combination of these $n$ vectors.
+\item A set of vector $v_1, v_2, ..., v_n$ is a \emph{basis} if the vectors are linearly independent and span the space. 
+\item The \emph{dimension} of a vector space is the number of elements in a basis for the vector space (this number is well-defined). 
+\item The \emph{standard basis} for $\mathbb{R}^n$ is the set of vectors $e_1, e_2, ..., e_n$. The vectors $e_i$ have a 1 in their $i$-th component, and every other component is zero. 
+\end{itemize}
+
+\newpage
+
+\section{Linear systems}
+\begin{itemize}
+\item We say that an $m\times n$ matrix $A$ has full column rank if $r=n$, and full row rank if $r=m$. The rank is always less than or equal to the minimum of $m$ and $n$.
+\item There are four possibilities for a linear system $Ax = b$: 
+\begin{enumerate}
+\item $Ax = b$ has a unique solution for all $b$. This can only happen if $r=m=n$ (full column and row rank)
+\item $Ax=b$ has either a unique solution or no solution, depending on $b$. This can only happen if $r=n$, but $m>n$ (full column rank, not full row rank).
+\item $Ax=b$ has infinitely many solutions for all $b$. This can only happen if $r=m$, but $n>m$ (full row rank, not full column rank).
+\item $Ax = b$ has either no solution or infinitely many solutions, depending on $b$. This can only happen if $r<\text{min}(m,n)$ (neither full column nor row rank). 
+\end{enumerate}
+\end{itemize}
+
+\section{The four fundamental subspaces}
+\begin{itemize}
+\item Let $A=U\Sigma V^T$ be the full SVD for the $m\times n$ matrix $A$. 
+\item The \textbf{column space} $C(A)$ is the set of vectors in $\mathbb{R}^m$ which are spanned by the columns of $A$. Equivalently, it is all vectors $u\in\mathbb{R}^m$ that can be written $u=Ax$ for any $x\in\mathbb{R}^n$. The first $r$ columns of $U$ are a basis for $C(A)$.
+\item The \textbf{row space} $\text{row}(A)=C(A^T)$ is the set of vectors in $\mathbb{R}^n$ which are spanned by the rows of $A$. Equivalently, it is all vectors $v\in\mathbb{R}^n$ that can be written $v=A^Tx$ for any $x\in\mathbb{R}^m$. The first $r$ columns of $V$ are a basis for $C(A)$.
+\item The \textbf{null space} $N(A)$ is the set of vectors in $\mathbb{R}^n$ which satisfy $Ax = 0$. The last $n-r$ columns of $V$ are a basis for $N(A)$.
+\item The \textbf{left null space} $N(A^T)$ is the set of vectors in $\mathbb{R}^m$ which satisfy $A^Tx=0$. The last $m-r$ columns of $U$ are a basis for $N(A^T)$.
+\item Vectors in $C(A)$ are orthogonal to vectors in $N(A^T)$. Vectors in $C(A^T)$ are orthogonal to vectors in $N(A)$. 
+\end{itemize}
+
+\newpage
+
+\section{Linear transformations}
+\begin{itemize}
+\item A \emph{linear transformation} $T$ takes vectors $v\in V$ to vectors $T(v)\in W$, where $V$ and $W$ are vector spaces. Linearity requires
+$$\boxed{T(cv_1+dv_2) = cT(v_1) + dT(v_2)}$$
+for any vectors $v_1, v_2 \in V$ and scalars $c,d \in \mathbb{R}$. Note that $T(0)=0$ necessarily.
+\item A linear transformation is uniquely defined by its action on a basis, i.e. if $\{v_1,...,v_n\}$ is a basis for a vector space, then any vector can be written as $v=c_1v_1 + ... + c_nv_n$. Therefore 
+$$T(v) = c_1T(v_1)+...+c_nT(v_n),$$
+and so knowing $T(v_1),..., T(v_n)$ allows us to determine $T(v)$ for any $v$ in the vector space.
+\item A linear transformation $T(v)$ can be described by a matrix, i.e. $T(v) = Av$. Column $j$ in the matrix $A$ comes from applying $T$ to the basis vector $v_j$, where $\{v_1,v_2, ... , v_n\}$ is a basis for the vector space $V$. 
+\end{itemize}
+
+\section{Determinants, cofactors and inverses}
+Let $A$ be a square $n\times n$ matrix.
+\begin{itemize}
+\item The \emph{determinant} of $A$ is the unique function $\det : \mathbb{R}^{n\times n} \to \mathbb{R}$ for which
+\begin{itemize}
+\item $\det I = 1$ for the identity matrix of any dimension
+\item $\det A$ changes sign when any two rows of $A$ are interchanged.
+\item $\det A$ is a linear transformation of each row of $A$.
+\end{itemize}
+\item The determinant of a $2\times 2$ matrix has a simple formula:
+$$\boxed{A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \;\;\; \implies \;\;\; \det A = ad-bc}$$
+\item Two very useful rules for determinants:
+$$\boxed{\det A^T = \det A, \;\;\; \det AB = \det A \det B}$$
+\item The \emph{cofactor} $C_{ij}$ is defined by
+$$\boxed{C_{ij} = (-1)^{i+j} \det M_{ij}}$$
+where $M_{ij}$ is the $(n - 1) \times (n - 1)$ matrix obtained by removing the $i$th row and $j$th column from $A$.
+\item \textbf{Compute determinant by cofactors:} For any $1 \leq i \leq n$, 
+$$\boxed{\det A=a_{i1}C_{i1} +a_{i2}C_{i2} + ... +a_{in}C_{in}.}$$
+\item If $A$ is invertible, then
+$$\boxed{A^{-1}= \frac{1}{\det A} C^T.}$$
+In terms of entries, $(A^{-1})_{ij} = \frac{C_{ji}}{ \det A}$.
+\item \textbf{Cramer's Rule:} If $A$ is invertible and $Ax = b$, then
+$$\boxed{x_i = \frac{\det B_i}{ \det A},}$$
+where $B_i$ is the matrix $A$ with the $i$th column replace by $b$. 
+\end{itemize}
+
+\section{Eigenvalues, eigenvectors and diagonalisation}
+\begin{itemize}
+\item If we have that
+$$Ax = \lambda x, \;\;\; x \neq 0,$$
+then $\lambda$ is an \textbf{eigenvalue} of $A$, and $x$ is the corresponding \textbf{eigenvector}. 
+\item The eigenvalues are solutions of the $n$-th degree polynomial equation
+$$\det (A-\lambda I) = 0.$$
+This is known as the \emph{characteristic equation}.
+\item Warning: The eigenvalues and eigenvectors need not be real, even if all the entries of $A$ are real !
+\item $A$ is invertible if, and only if, $0$ is \textbf{not} an eigenvalue.
+\item Powers of $A$ have the same eigenvectors as $A$; the corresponding eigenvalues are raised to the same power, i.e.
+$$ Ax = \lambda x \;\; \implies \;\; A^n x = \lambda^n x$$
+\item The eigenvalues of a triangular matrix are on the diagonal.
+\item The determinant of $A$ is equal to the product of all of its eigenvalues. 
+\item The trace of $A$ is equal to the sum of its eigenvalues. 
+\item \textbf{Diagonalisation:} Suppose $A$ has $n$-independent eigenvectors $x_1, x_2,...,x_n$, with corresponding eigenvalues $\lambda_1, \lambda_2,...,\lambda_n$. Let $X$ be a matrix whose columns are the eigenvectors in this order, and $\Lambda$ be a diagonal matrix with the corresponding eigenvalues along its diagonal. Then we can write
+$$\boxed{A=X\Lambda X^{-1}}$$
+\item Diagonalisation is always possible if $A$ has $n$ distinct eigenvalues; it may or may not be possible if it has repeated eigenvalues.
+\end{itemize}
+
+\section{Positive definiteness and Markov matrices}
+\begin{itemize}
+\item A symmetric matrix $A$ is positive definite if, and only if, any of the following are true:
+\begin{enumerate}
+\item All of the eigenvalues of $A$ are strictly positive
+\item All upper left determinants are strictly positive
+\item $x^TAx > 0 $ for all nonzero vectors $x$
+\item $A = B^TB$, where $B$ has independent columns, but $B$ is not necessarily square.   
+\end{enumerate}
+\item A \emph{Markov matrix} has non-negative entries and the elements of each column sum to 1. It always has one eigenvalue equal to 1, and every other eigenvalue has absolute value less than or equal to 1.
+\item A \emph{positive Markov matrix} has strictly positive entries and the elements of each column sum to 1. It always has one eigenvalue equal to 1, and every other eigenvalue has absolute value strictly less than 1.
+\item The eigenvector of a Markov matrix corresponding to $\lambda = 1$ is called the \emph{steady state} vector.
+\end{itemize}
+
+\end{document}  

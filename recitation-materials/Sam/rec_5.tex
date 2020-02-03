@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=35pt,vmargin=35pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\pagenumbering{gobble} 
+\newcommand{\diff}{\,\mathrm{d}}
+\renewcommand*{\vec}[1]{\mathbf{#1}}
+
+\title{18.06 - Recitation 5}
+\author{Sam Turton}
+\date{March 19, 2019}                                      
+\begin{document}
+\maketitle
+
+\section{Lecture review}
+\subsection{Linear transformations}
+\begin{itemize}
+\item A \emph{linear transformation} $T$ takes vectors $v\in V$ to vectors $T(v)\in W$, where $V$ and $W$ are vector spaces. Linearity requires
+$$\boxed{T(cv_1+dv_2) = cT(v_1) + dT(v_2)}$$
+for any vectors $v_1, v_2 \in V$ and scalars $c,d \in \mathbb{R}$. Note that $T(0)=0$ necessarily.
+\item A linear transformation is uniquely defined by its action on a basis, i.e. if $\{v_1,...,v_n\}$ is a basis for a vector space, then any vector can be written as $v=c_1v_1 + ... + c_nv_n$. Therefore 
+$$T(v) = c_1T(v_1)+...+c_nT(v_n),$$
+and so knowing $T(v_1),..., T(v_n)$ allows us to determine $T(v)$ for any $v$ in the vector space.
+\item A linear transformation $T(v)$ can be described by a matrix, i.e. $T(v) = Av$. Column $j$ in the matrix $A$ comes from applying $T$ to the basis vector $v_j$. 
+\end{itemize}
+
+\newpage
+\section{Problems}
+
+\noindent \textbf{Problem 1.}\\
+Determine which of the following describe a linear transformation. For those that do, find a matrix that describes the transformation with respect to the standard bases for the underlying vector spaces:
+\begin{enumerate}
+\item $T_1:\mathbb{R}^2\to\mathbb{R}^2$ where
+$$T_1\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 2x+y \\ 0 \end{pmatrix}$$
+\item $T_2:\mathbb{R}^2\to\mathbb{R}^2$ where
+$$T_2\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x+y \\ xy \end{pmatrix}$$
+\item $T_3:\mathbb{R}^{2\times 2}\to \mathbb{R}^{3\times2}$ where
+$$T_3\begin{pmatrix} a & b \\ c & d \end{pmatrix} = \begin{pmatrix} a+b & 2d \\ 2b-d & -3c \\ 2b-c & -3a \end{pmatrix}$$
+\item Let $P_4$ be the vector space of polynomials of degree less than or equal to 4, and let $T_4 :P_4\to P_4$, where
+$$T_4(f)(x) = f(x) - x - 1$$
+\item Let $T_5 :P_3\to P_5$ where 
+$$T_5(f)(x) = (x^2-2)f(x)$$. 
+\end{enumerate}
+
+\newpage
+
+\noindent \textbf{Problem 2.}\\
+\begin{enumerate}
+\item Show that $f(A) = x^T A y$, where $x\in \mathbb{R}^m$ and $y\in \mathbb{R}^n$ are constant vectors, is a linear transformation from the vector space of $m\times n$ matrices to the real numbers.
+\item If $f(A)$ is a scalar function of an $m\times n$ matrix $A = \begin{pmatrix} a_{11} & a_{12} & \cdots \\ a_{21} & a_{22} & \cdots \\ \vdots & \vdots & \ddots \end{pmatrix}$, then it is useful to define the gradient \emph{with respect to the matrix} as another $m\times n$ matrix:
+$$
+\nabla_A f = \begin{pmatrix} \frac{\partial f}{\partial a_{11}} & \frac{\partial f}{\partial a_{12}} & \cdots \\ \frac{\partial f}{\partial a_{21}} & \frac{\partial f}{\partial a_{22}} & \cdots \\ \vdots & \vdots & \ddots \end{pmatrix}
+$$
+Given this definition, give a matrix expression (not in terms of individual components) for $\nabla_A f$ with $f(A) = x^T A y$ as before.
+\end{enumerate}
+
+\newpage
+
+\noindent \textbf{Problem 3.}\\
+Consider the vector space of polynomials of degree less than or equal 2. Let us define a dot product on this vector space\footnote{You may find it useful to recall that $\int_0^{\infty} x^n e^{-x}\,\diff x = n!$}:
+$$f(x)\cdot g(x) = \int_0^{\infty} f(x)g(x) e^{-x} \, \diff x$$
+\begin{enumerate}
+\item Show that the set of polynomials $\{1, x-1,x^2-4x+2 \}$ form an orthogonal basis for the vector space of polynomials of degree less than or equal 2.
+\item Normalize these basis polynomials so that $\Vert f(x) \Vert^2 = f(x)\cdot f(x) = 1$.
+\item Consider the function $f(x) = \begin{cases} x & x < 1 \\ 0 & x \ge 1 \end{cases}$.   Find the slope $\alpha$ of the straight line $\alpha x$ that is the \emph{best fit} to $f(x)$ in the sense of minimizing
+$$
+\Vert f - \alpha x \Vert^2 = \int_0^\infty \left[ f(x) - \alpha x \right]^2 e^{-x} dx
+$$
+In particular, find $\alpha$ by performing the orthogonal projection (with this dot product) of $f(x)$ onto ................?
+\end{enumerate}
+
+\end{document}  

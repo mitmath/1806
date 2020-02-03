@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=40pt,vmargin=40pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\pagenumbering{gobble} 
+\newcommand{\diff}{\,\mathrm{d}}
+\renewcommand*{\vec}[1]{\mathbf{#1}}
+
+\title{18.06 R08 - Recitation 2}
+\author{Sam Turton}
+\date{February 26, 2019}                                      
+\begin{document}
+\maketitle
+
+\section{Practice problems for midterm 1}
+
+\noindent \textbf{Problem 1. (LU factorization)}\\
+\begin{enumerate}[(a)]
+\item Compute the $LU$ factorization of an arbitrary $2\times 2$ matrix, i.e. find $x, u,v$ and $w$ for which
+$$\begin{pmatrix} a & b \\ c & d \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ x & 1 \end{pmatrix}\begin{pmatrix} u & v \\ 0 & w \end{pmatrix}.$$
+Are there any conditions on $a,b,c$ and/or $d$ for this factorization to exist?
+\item Find an $LU$ factorization for the following $4\times 4$ matrix:
+$$A = \begin{pmatrix} 1 & 2 & 0 & 0 \\ 2 & 3 & 0 & 0 \\ 0 & 0 & 1 & -1 \\ 0 & 0 & -2 & 5 \end{pmatrix}$$
+\end{enumerate}
+\vskip 100pt
+
+\noindent \textbf{Problem 2. (Vector spaces)}\\
+Are the following sets examples of vector spaces? If yes, then show that an arbitrary linear combination of two elements in the set is also in the set. If not, then explain why.
+\begin{enumerate}[(a)]
+\item The set of all solutions, $x$, to the equation $Ax = \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}$; where $x\in\mathbb{R}^5$ and $A$ is a $3\times 5$ matrix. 
+\item The set of all $3\times 2$ matrices $X$ for which $AX = 0$, where $A$ is a fixed $5\times 3$ matrix. 
+\item The set of all $2\times 2$ matrices $A$ for which $A^{-1}$ does \emph{not} exist. 
+\item The set of all differentiable functions $f(x)$ for which $f'(0) = 2f(0)$. 
+\item The set of all functions $f(x)$ for which $f(x+y)=f(x)f(y)$.\footnote{Aside for those interested: which continuous functions obey this rule?} 
+\end{enumerate}
+
+\vskip 100pt
+
+\noindent \textbf{Problem 3. (QR factorization)}\\
+Consider the following $3\times 2$ matrix $A$:
+$$A = \begin{pmatrix} 1 & 0 \\ 1 & 1 \\ -1 & 1 \end{pmatrix}$$
+\begin{enumerate}[(a)]
+\item Write $A=QR$, where $Q$ is an orthogonal matrix ($Q^TQ=I$) and $R$ is a square, upper triangular matrix. What is $R^{-1}$? Is $Q$ invertible? 
+\item Consider the linear system
+$$Ax = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}.$$
+Can we express the right hand side of this linear system as a linear combination of the columns of $A$?
+\item Check that $QQ^T\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix} \neq \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}$. 
+\item Find explicitly the vector $\hat{x}$ that minimizes $\Vert Ax - b \Vert^2$. 
+\end{enumerate}
+
+\vskip 100pt
+
+\noindent \textbf{Problem 4. (SVD)}\\
+Consider the $3\times 3 $ matrix $A$ with the following full SVD:
+$$A  = \begin{pmatrix} 1/\sqrt{2} &  1/\sqrt{2} & 0 \\  1/\sqrt{2} & - 1/\sqrt{2} & 0 \\ 0 & 0 & 1 \end{pmatrix} \begin{pmatrix} 10 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{pmatrix} \begin{pmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1  & 0 \end{pmatrix}^T$$
+\begin{enumerate}[(a)]
+\item Describe each of the four fundamental subspaces of $A$ (column space, row space, nullspace, and left nullspace)
+\item Find the best rank-1 approximation to $A$. Write your answer as a $3\times 3$ matrix.
+\item Does $Ax = \begin{pmatrix} 1 \\ 2 \\ 3 \end{pmatrix}$ have a solution?
+\item Does $Ax = \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix}$ have a solution? 
+\end{enumerate}
+
+\newpage
+
+\noindent \textbf{Problem 5. (Vector algebra)}\\
+Consider two vectors $u$ and $v$. Find a new vector $w$ which is in the direction of $v$, and for which $w-u$ is orthogonal to $v$. Your answer should be given in terms of the vectors $u$ and $v$.\footnote{Your answer $w$ is known as the \emph{projection} of $u$ onto $v$. More on this in class tomorrow}
+
+\vskip 200pt
+
+\noindent \textbf{Problem 6. (Least squares)}\\
+Suppose we are conducting an experiment and obtain the following $m$ data points $\{(a_1,b_1), (a_2,b_2), ..., (a_m,b_m)\}$. We think that our data is close to lying on a curve of the form $f(a) = x_1 + x_2 a + x_3 (a-1)^2$. How would we obtain the best fit coefficients $\hat{x}_1, \hat{x}_2$ and $\hat{x}_3$? What quantity does the best fit vector $\hat{x} = \begin{pmatrix} \hat{x}_1 \\ \hat{x}_2 \\ \hat{x}_3 \end{pmatrix}$ minimize? 
+
+\vskip 100pt
+
+
+
+\end{document}  

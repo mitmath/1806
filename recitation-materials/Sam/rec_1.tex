@@ -1,0 +1,114 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=40pt,vmargin=40pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\pagenumbering{gobble} 
+\newcommand{\diff}{\,\mathrm{d}}
+\renewcommand*{\vec}[1]{\mathbf{#1}}
+
+\title{18.06 R08 - Recitation 1}
+\author{Sam Turton}
+\date{February 12, 2019}                                      
+\begin{document}
+\maketitle
+
+
+\rule{\textwidth}{1pt}
+\section{Important information}
+Welcome to recitations for 18.06! 
+\begin{itemize}
+\item Recitation leader: Sam Turton
+\item Office: 2-333C 
+\item Email: seturton@mit.edu
+\item Office hours: Tuesdays, 3:30-5:30pm, 2-361
+\end{itemize}
+
+\noindent We are \emph{not} using stellar for this class (apart from recitation sign-up):
+\begin{itemize}
+\item All course materials, lecture summaries, psets, pset solutions, \emph{etc.} will be posted on the course website (https://mitmath.github.io/1806/).
+\item HW should be submitted on gradescope (https://www.gradescope.com/courses/40389).
+\end{itemize}
+ 
+\section{Lecture summary}
+\begin{enumerate}
+\item In essence, a \textbf{vector space} is a set $V$ of vectors for which any linear combination of vectors in $V$ is also in $V$. Examples:
+\begin{itemize}
+\item vectors in $\mathbb{R}^n$.
+\item matrices in $\mathbb{R}^{m\times n}$
+\item real valued functions $f(x)$
+\end{itemize}
+\item A \textbf{vector subspace}, $X$, is a set of vectors that satisfies the following requirement: \emph{If $v$ and $w$ are vectors in $X$, and $c$ is any scalar, then}
+\begin{itemize}
+\item \emph{$v+w$ is in $X$}
+\item \emph{$cv$ is in $X$}
+\end{itemize}
+\item A \textbf{linear system} is an equation of the form $Ax=b$, where $A$ is an $m\times n$ matrix, $x$ is a vector in $\mathbb{R}^n$, and $b$ is a vector in $\mathbb{R}^m$. Much of the purpose of linear algebra is understanding when this equation has solutions, and what these solutions look like. 
+\item If $m=n$, then it is possible that $A$ will have an \textbf{inverse} $A^{-1}$, so that $A^{-1}A=A^{-1}A = I$. \textbf{This does not always exist}. If it does exist, then $x=A^{-1}b$. But this is usually still not a good way to find a solution.... 
+\item If $Q$ is a square matrix with \emph{orthonormal} columns, then $QQ^T=Q^TQ = I$ and we say that $Q$ is an \textbf{orthogonal} matrix. In particular, $Q^{-1}=Q^T$. 
+\end{enumerate}
+
+\newpage
+
+\section{Problems}
+
+\noindent \textbf{Problem 1. (Vector spaces)}\\
+$\mathbb{R}^3$ is the vector space of all vectors of the form $b = (b_1 , b_2 , b_3 )$. Which of the following are subspaces of $\mathbb{R}^3$?
+\begin{enumerate}[(a)]
+\item The set of all vectors $(b_1, b_2, b_3)$ where $b_1 = b_2$. 
+\item The set of all vectors with $b_1 = 1$.
+\item The set of all vectors with $b_1b_2b_3 = 0$.
+\item All linear combinations of $v = (1, 4, 0)$ and $w = (2, 2, 2)$.
+\item All vectors that satisfy $b_1 + b_2 + b_3 = 0$. 
+\item All vectors with $b_1 \leq b_2 \leq b_3$.
+\end{enumerate}
+
+\vskip 100pt
+
+\noindent \textbf{Problem 2. (Linear systems and block matrices)}\\
+\begin{enumerate}[(a)]
+\item Consider the simultaneous equations
+\begin{align*}
+ax + by &= e\\
+cx + dy &= f,
+\end{align*}
+where $a,b,c,d,e$ and $f$ are real numbers and $x,y$ are scalar unknowns. Write these equations as a single matrix equation $Az = g$. What are $A, z$ and $g$? What are their dimensions?
+\item If you have two coupled systems of equations
+\begin{align*}
+Bx + Cy &= c\\
+Dx + Ey &= d,
+\end{align*}
+where $B, C, D$ and $E$ are $3 \times 3$ matrices and $x, y, c$ and $d$ are 3-component vectors, can you write this
+as a single system of equations,
+$$Az = b,$$
+where $z = \begin{pmatrix} x \\ y \end{pmatrix}$ is the 6-component vector of $x$ on top of $y$? What are $A$ and $b$? What are their dimensions?
+\end{enumerate}
+
+\newpage 
+
+\noindent \textbf{Problem 3. (LU factorization)}\\
+\begin{enumerate}[(a)]
+\item Consider the linear system $Ax = b$, where
+$$A = \begin{pmatrix} 1 & -1 & 2 \\ 0 & 1 & 3 \\ 0 & 0 & 1 \end{pmatrix}, \;\;\; b = \begin{pmatrix} -1 \\ 3 \\ 2 \end{pmatrix}, \;\;\; x = \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}.$$
+Write the system as three simultaneous equations for the unknowns $x_1, x_2$ and $x_3$. Solve these equations explicitly in order to find a solution to the linear system.
+\item Consider the two $3\times 3$ matrices $L$ and $U$, where
+$$L = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ -1 & 1 & 1 \end{pmatrix}, \;\;\; U = \begin{pmatrix} 1 & -1 & -2 \\ 0 & 1 & 1 \\0 & 0 & 2 \end{pmatrix}.$$
+Compute $B = LU$.
+\item Consider the linear system $Bx = b$, where $B=LU$ is what you computed in the previous part, $b$ is the same vector as in part (a), and $x$ is an unknown vector. Find the solution to this linear system using the following steps:
+\begin{itemize}
+\item Explicitly solve the  linear system $Ly = b$ to find $y$.
+\item Using the $y$ you found in the previous step, explicitly solve $Ux = y$ for $x$.
+\item Then this $x$ solves the linear system $Bx = b$. Check this! Why does this work?\footnote{Hint: Note that $Bx = b$ is the same as $LUx = L(Ux) = b$.}
+\end{itemize}
+\end{enumerate}
+
+\newpage 
+
+\noindent \textbf{Problem 4. (More matrix factorization)}\\
+Under what conditions on $a,b,c$ and $d$ can a $2\times 2$ matrix $A=\begin{pmatrix} a & b \\ c & d\end{pmatrix}$ be written as $A=X^TX$, where $X=\begin{pmatrix} p & 0 \\ q & r \end{pmatrix}$? What are $p,q$ and $r$ in terms of $a,b,c$ and $d$?
+
+
+
+
+\end{document}  
