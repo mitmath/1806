@@ -46,15 +46,53 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |0||| Prereqs: 18.02 |  We assume familiarity with the very basics from 18.02, or that you can pick it up as you go: Strang Chapter 1.  [Watch Gil Strang OCW Video #1](https://youtu.be/ZK3O402wf1c?t=1) |
 |0||| Not a Pre-req | We assume no familiarity with computing or Julia.  Some homework problems will use Julia (kind of) as a calculator.  On occasion, Julia  may be demonstrated if it helps understand linear algebra, but Julia syntax will never be tested.  Tests will be traditional paper and pencil. |
  |1| M |2/3| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground   | [2019 Slides (will be updated for 2020)](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit?usp=sharing)| HW0 will be released today (Monday), will be due Wednesday night and will not be graded|
- |2| W |2/5|
+ |2| W |2/5| HW0 due, HW1 released |
  |3| F |2/7|
 |4| M |2/10|
-|5| W |2/12|
+|5| W |2/12| HW1 due, HW2 released |
 |6| F |2/14|
 || M |2/17| President's Day (no class)|
 |7| T |2/18| Monday Schedule (no recitation)|
-|8| W |2/19|
+|8| W |2/19| HW2 due, HW3 released |
 |9| F |2/21|
+|10| M |2/24|
+|11| W |2/26| HW3 due, HW4 released |
+|12| F |2/28| Exam 1
+|13| M |3/2|
+|14| W |3/4|  HW5 released |
+|15| F |3/6| HW4 due (extended date), Add Date |
+|16| M |3/9|
+|17| W |3/11|  HW5 due, HW6 released |
+|18| F |3/13|
+|19| M |3/16|
+|20| W |3/18|  HW6 due |
+|21| F |3/20|
+| | | Spring Break|
+|22| M |3/30|
+|23| W |4/1|  HW7  released |
+|24| F |4/3| Exam 2|
+|25| M |4/6|
+|26| W |4/8|   HW7 due , HW8 released|
+|27| F |4/10| |
+|28| M |4/13|
+|29| W |4/15| HW8 due, HW 9 released |
+|30| F |4/17|
+|  | M |4/20| Patriots Day (no class)|
+|31| W |4/22| HW9 Due |
+|32| F |4/24|
+|33| M |4/27|
+|34| W |4/29| HW10 Released |
+|35| F |5/1| Exam 3|
+|36| M |5/4|
+|37| W |5/6| HW10 Due |
+|38| F |5/8|
+|39| M |5/11|
+
+
+
+
+
+
 
 
 
