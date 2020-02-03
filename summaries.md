@@ -39,6 +39,7 @@ We will do a little computing with Julia.  Some students complain that Julia is 
 is not R.  This complaint has always been loud the first two weeks, then disappears, and often within a semester
 after the class is over, the students come back to thank me.  This has happened year after year.
 (For help or questions about Julia, visit the Julia Lab on the 7th Floor of the Gates Tower of Stata (building 32G))
+([Last year's teaching with digital technology award](docs/digtechaward.pdf))
 
 I have received emails sometimes  5 or 10  years after 18.06 was over with students saying, "wow, your  Linear Algebra class  prepared me more than I could have imagined while I was taking  the class."  We hope you will say this too.
 
