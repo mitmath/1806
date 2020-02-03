@@ -45,9 +45,18 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |-|-|------|------|-----|--|
 |0||| Prereqs: 18.02 |  We assume familiarity with the very basics from 18.02, or that you can pick it up as you go: Strang Chapter 1.  [Watch Gil Strang OCW Video #1](https://youtu.be/ZK3O402wf1c?t=1) |
 |0||| Not a Pre-req | We assume no familiarity with computing or Julia.  Some homework problems will use Julia (kind of) as a calculator.  On occasion, Julia  may be demonstrated if it helps understand linear algebra, but Julia syntax will never be tested.  Tests will be traditional paper and pencil. |
- |1| M |2/2| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground   | [2019 Slides (will be updated for 2020)](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit?usp=sharing)|
- |2| W |2/4|
- |3| F |2/6|
+ |1| M |2/3| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground   | [2019 Slides (will be updated for 2020)](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit?usp=sharing)| HW0 will be released today (Monday), will be due Wednesday night and will not be graded|
+ |2| W |2/5|
+ |3| F |2/7|
+|4| M |2/10|
+|5| W |2/12|
+|6| F |2/14|
+|| M |2/17| President's Day (no class)|
+|7| T |2/18| Monday Schedule (no recitation)|
+|8| W |2/19|
+|9| F |2/21|
+
+
 
  <!-- [HW1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1.ipynb) released 2/7. -->
    |
