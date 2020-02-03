@@ -1,5 +1,5 @@
 
-| [18.06 front page](http://web.mit.edu/18.06)  |[piazza (be polite, and math questions only plesase)](https://piazza.com/class/jrpkrwivp6x6v8) |
+| [18.06 front page](http://web.mit.edu/18.06)  |[piazza (be polite, and math questions only plesase)](piazza.com/mit/spring2020/1806) |
 [gradescope](https://www.gradescope.com/courses/87639) |
 [Julia](https://julialang.org/) |
 <!-- [juliabox](http://www.juliabox.com) | -->
@@ -45,7 +45,10 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |-|-|------|------|-----|--|
 |0||| Prereqs: 18.02 |  We assume familiarity with the very basics from 18.02, or that you can pick it up as you go: Strang Chapter 1.  [Watch Gil Strang OCW Video #1](https://youtu.be/ZK3O402wf1c?t=1) |
 |0||| Not a Pre-req | We assume no familiarity with computing or Julia.  Some homework problems will use Julia (kind of) as a calculator.  On occasion, Julia  may be demonstrated if it helps understand linear algebra, but Julia syntax will never be tested.  Tests will be traditional paper and pencil. |
- |1| W|2/6| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground   | [Slides](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit?usp=sharing)|
+ |1| M |2/2| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground   | [2019 Slides (will be updated for 2020)](https://docs.google.com/presentation/d/1znZ9IuK7Th3bjMRttfuCbWT1gSQmwKLtLx-XLlbjp8k/edit?usp=sharing)|
+ |2| W |2/4|
+ |3| F |2/6|
+
  <!-- [HW1](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets/pset1.ipynb) released 2/7. -->
    |
 
