@@ -49,7 +49,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |0||| Not a Pre-req | We assume no familiarity with computing or Julia.  Some homework problems will use Julia (kind of) as a calculator.  On occasion, Julia  may be demonstrated if it helps understand linear algebra, but Julia syntax will never be tested.  Tests will be traditional paper and pencil. |
  |1| M |2/3| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground, Linear Transformations   | [Lecture 1 Slides](https://docs.google.com/presentation/d/1IQ7TJvlYK_KJC_9m9J-6BdLJkl03YU3ecy0dOFCaJM4/edit?usp=sharing), [2d linear transformations](https://observablehq.com/@yurivish/example-of-2d-linear-transforms)| [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit?usp=sharing)   will be due Wednesday night and will not be graded|
  |2| W |2/5| Linear Combinations, Vector Spaces, Elementwise Operations|  [Lecture 2 Slides](https://docs.google.com/presentation/d/1yVevIJZ98sQoDw9qPPunLA1uvDBNwBVtVzhfM7lNJSI/edit?usp=sharing) |  HW0 due, HW1 released (by midnight)
- |3| F |2/7| Optional Julia Tutorial by Prof. Steven Johnson 5pm-7pm, Stata first floor (exact room TBA)
+ |3| F |2/7| Optional Julia Tutorial by Prof. Steven Johnson 5pm-7pm, Stata 32-141
 |4| M |2/10|
 |5| W |2/12| HW1 due, HW2 released |
 |6| F |2/14|
