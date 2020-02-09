@@ -50,7 +50,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
  |1| M |2/3| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground, Linear Transformations   | [Lecture 1 Slides](https://docs.google.com/presentation/d/1IQ7TJvlYK_KJC_9m9J-6BdLJkl03YU3ecy0dOFCaJM4/edit?usp=sharing), [2d linear transformations](https://observablehq.com/@yurivish/example-of-2d-linear-transforms)| [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit?usp=sharing)   will be due Wednesday night and will not be graded|
  |2| W |2/5| Linear Combinations, Vector Spaces, Elementwise Operations|  [Lecture 2 Slides](https://docs.google.com/presentation/d/1yVevIJZ98sQoDw9qPPunLA1uvDBNwBVtVzhfM7lNJSI/edit?usp=sharing) |  HW0 due, [HW1](https://docs.google.com/document/d/1K2WtQb9JCJT6YjEz3K-hqb99hj2L_Bp-19nJLKGRF9c/edit?usp=sharing)  released.
  |3| F |2/7| Solving Ax=b | Lecture 3 Slides (under construction)  |
-|4| M |2/10| Gaussian Elimination, Transposes,Inverses, Block Matrices |
+|4| M |2/10| Gaussian Elimination, Transposes, Inverses, Block Matrices | test |
 |5| W |2/12| LU and QR | HW1 due, HW2 released |
 |6| F |2/14|
 || M |2/17| President's Day (no class)|
