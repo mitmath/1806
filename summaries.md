@@ -43,6 +43,11 @@ after the class is over, the students come back to thank me.  This has happened 
 
 I have received emails sometimes  5 or 10  years after 18.06 was over with students saying, "wow, your  Linear Algebra class  prepared me more than I could have imagined while I was taking  the class."  We hope you will say this too.
 
+|Recitation Materials|
+|--|
+|[Week 1 Linear Algebra 101](https://github.com/mitmath/1806/raw/master/recitation-materials/Linear_algebra_101.pdf)|
+|[Week 2](https://github.com/mitmath/1806/raw/master/recitation-materials/2020/rec2.pdf)|
+
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
 |0||| Prereqs: 18.02 |  We assume familiarity with the very basics from 18.02, or that you can pick it up as you go: Strang Chapter 1.  [Watch Gil Strang OCW Video #1](https://youtu.be/ZK3O402wf1c?t=1), Work through the first pages of [Linear Algebra 101](https://github.com/mitmath/1806/raw/master/recitation-materials/Linear_algebra_101.pdf) |
