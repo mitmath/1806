@@ -46,7 +46,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |Recitation Materials|
 |--|
 |[Week 1 2/4 Linear Algebra 101](https://github.com/mitmath/1806/raw/master/recitation-materials/Linear_algebra_101.pdf)|
-|[Week 2 2/11](https://github.com/mitmath/1806/raw/master/recitation-materials/2020/rec2.pdf)|
+|[Week 2 2/11](https://github.com/mitmath/1806/raw/master/recitation-materials/2020/rec2.pdf) Vector Spaces, Transposes, Inverses, Block matmul|
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
