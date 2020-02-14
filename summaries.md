@@ -50,6 +50,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 
 
 |Homeworks|
+|--|
 | [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit) |
 | [HW1](https://docs.google.com/document/d/1K2WtQb9JCJT6YjEz3K-hqb99hj2L_Bp-19nJLKGRF9c/edit) |
 | [HW2](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset2%2018.06%20Spring%202020.ipynb) |
