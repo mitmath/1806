@@ -48,6 +48,12 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |[Week 1 2/4 Linear Algebra 101](https://github.com/mitmath/1806/raw/master/recitation-materials/Linear_algebra_101.pdf)|
 |[Week 2 2/11](https://github.com/mitmath/1806/raw/master/recitation-materials/2020/rec2.pdf) Vector Spaces, Transposes, Inverses, Block matmul|
 
+
+|Homeworks|
+| [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit) |
+| [HW1](https://docs.google.com/document/d/1K2WtQb9JCJT6YjEz3K-hqb99hj2L_Bp-19nJLKGRF9c/edit) |
+| [HW2](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset2%2018.06%20Spring%202020.ipynb) |
+
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
 |0||| Prereqs: 18.02 |  We assume familiarity with the very basics from 18.02, or that you can pick it up as you go: Strang Chapter 1.  [Watch Gil Strang OCW Video #1](https://youtu.be/ZK3O402wf1c?t=1), Work through the first pages of [Linear Algebra 101](https://github.com/mitmath/1806/raw/master/recitation-materials/Linear_algebra_101.pdf) |
