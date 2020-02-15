@@ -1,0 +1,398 @@
+\documentclass[10pt]{amsart} 
+
+
+\usepackage{amsmath, amssymb, mathrsfs} 
+
+\usepackage[mathscr]{euscript} 
+ 
+\newlength{\mylength}
+\setlength{\mylength}{0.25cm}
+
+\usepackage{enumitem}
+\setlist{listparindent=\parindent, itemsep=0cm, parsep=\mylength, topsep=0cm}
+
+\usepackage[final]{todonotes}
+\usepackage[final]{showkeys} 
+
+\usepackage[breaklinks=true]{hyperref} 
+\usepackage{comment} 
+
+\usepackage{url}
+
+\usepackage{tikz-cd}
+
+\usepackage{amsthm}
+
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \topsep6\p@\@plus6\p@\relax
+	\noindent\emph{#1.} 
+	\ignorespaces
+}{%
+\popQED\endtrivlist\@endpefalse
+}
+\makeatother
+
+\newtheoremstyle{mythm}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{\itshape}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\bfseries}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\newtheoremstyle{myrmk}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\itshape}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\theoremstyle{mythm} 
+%\newtheorem{thm}[subsubsection]{Theorem}
+%\newtheorem*{claim}{Claim}
+%\newtheorem*{thm}{Theorem} 
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma} 
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{prop}[thm]{Proposition}
+%\newtheorem*{mthm}{Main Theorem}
+
+%\newtheorem{prop}[subsubsection]{Proposition} 
+%\newtheorem*{prop}{Proposition} 
+%\newtheorem*{lem}{Lemma}
+%\newtheorem*{klem}{Key Lemma}
+%\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+%\newtheorem{defn}[subsubsection]{Definition}
+\newtheorem*{defn}{Definition} 
+\newtheorem{prob}[thm]{Problem}
+%\newtheorem{que}[subsubsection]{Question}
+
+\theoremstyle{myrmk} 
+%\newtheorem{rmk}[subsubsection]{Remark}
+\newtheorem*{rmk}{Remark}
+%\newtheorem{note}[subsubsection]{Note} 
+\newtheorem*{ex}{Example}
+
+\newcommand{\nc}{\newcommand} 
+\nc{\on}{\operatorname}
+\nc{\rnc}{\renewcommand} 
+
+\rnc{\setminus}{\smallsetminus} 
+
+\nc{\wt}{\widetilde}
+\nc{\wh}{\widehat} 
+\nc{\ol}{\overline} 
+
+\nc{\Frob}{\on{Frob}}
+\nc{\Gal}{\on{Gal}}
+
+\nc{\BN}{\mathbb{N}}
+\nc{\BZ}{\mathbb{Z}}
+\nc{\BQ}{\mathbb{Q}}
+\nc{\BR}{\mathbb{R}}
+\nc{\BC}{\mathbb{C}}
+
+\nc{\id}{\on{id}}
+\nc{\Id}{\on{Id}}
+\nc{\Tr}{\on{Tr}}
+
+\nc{\la}{\langle}
+\nc{\ra}{\rangle} 
+\nc{\lV}{\lVert}
+\nc{\rV}{\rVert}
+\nc{\mb}{\mathbf}
+\nc{\mf}{\mathfrak}
+%\nc{\cur}{\mathscr}
+\nc{\mc}{\mathscr}
+
+\nc{\ira}{\hookrightarrow}
+\nc{\hra}{\hookrightarrow}
+\nc{\sra}{\twoheadrightarrow} 
+
+\rnc{\Re}{\on{Re}}
+
+\nc{\coker}{\on{coker}}
+\nc{\End}{\on{End}}
+\rnc{\Im}{\on{Im}}
+%\rnc{\Re}{\on{Re}}
+
+\nc{\Hom}{\on{Hom}}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage{marginnote}
+\nc{\acts}{\curvearrowright}
+
+\nc{\Mat}{\on{Mat}}
+
+\newenvironment{cd}{\begin{equation*}\begin{tikzcd}}{\end{tikzcd}\end{equation*}\ignorespacesafterend}
+
+\nc{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\nc{\e}[1]{\begin{align*} #1 \end{align*}}
+
+\usepackage[margin=1in]{geometry}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+%\renewcommand*{\arraystretch}{1.4}
+
+\setlength{\parskip}{0.25cm}
+
+\title{Spring 18.06 - Week 2 Recitation} 
+\author{James Tao}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\fancyhead[L]{James Tao}
+\fancyhead[C]{Spring 18.02 -- Week 2 Recitation}
+\fancyhead[R]{Feb.\ 11, 2020}
+\fancyfoot[C]{Page \thepage}
+
+
+\begin{document}
+	\thispagestyle{fancy}
+	\noindent Topics: Vector spaces, solving $Ax=b$, matrix transpose and inverse, orthogonal matrices, block matrices. 
+	
+	\section{Recognizing vector spaces} 
+	
+	A (real) vector space is a set $V$ equipped with two operations: 
+	\begin{itemize}
+		\item An operation $+$ (vector addition) which takes $v_1, v_2 \in V$ and outputs $v_1 + v_2 \in V$. 
+		\item An operation $\cdot$ (scalar multiplication) which takes $c \in \BR$ and $v \in V$ and outputs $c \cdot v \in V$. 
+	\end{itemize}
+	(NB: Part of these requirements is that the sum must actually lie in $V$, in which case we say that ``$V$ is closed under addition,'' and similarly $V$ must be ``closed under scalar multiplication.'') These operations must also satisfy some axioms.\footnote{For a full list, see \url{https://en.wikipedia.org/wiki/Vector_space\#Definition}.} Here are two of them: 
+	\begin{itemize}
+		\item Existence of a `zero': there must exist $v_0 \in V$ such that $v_0 + v = v$ for all $v \in V$. 
+		\item Existence of additive inverses: for any $v \in V$, there must exist $v' \in V$ such that $v+v' = v_0$. 
+	\end{itemize}
+	The `zero' vector $v_0$ is usually just denoted $0$, and the additive inverse of $v$ is usually denoted $-v$. 
+	\begin{prob}
+		In the vector space consisting of all functions on the real line, what is the zero vector? 
+	\end{prob}
+	\begin{prob}
+		Consider the set $V$ consisting of pairs $(a, b)$ of real numbers satisfying $a + 2b = 0$. How should one define the operations of  `vector addition' and `(real) scalar multiplication' on $V$? Does this make $V$ into a vector space? What about when $V$ is the set of pairs $(a, b)$ of real numbers satisfying $a \ge 0$? 
+	\end{prob}
+	
+	\section{Solving $Ax = b$}
+	\noindent
+	\begin{minipage}[t]{.5\textwidth}
+	The following four problems are equivalent: 
+	\bigskip
+	\begin{itemize}
+		\item Basic math: find $x, y \in \BR$ such that 
+		\e{
+			x + 2y &= 5 \\
+			4x + y &= 6
+		} 
+		\item Matrix form: find $\begin{pmatrix}
+		x \\ y
+		\end{pmatrix} \in \BR^2$ such that 
+		\[
+			\begin{pmatrix}
+			1 & 2 \\ 4 & 1
+			\end{pmatrix} \begin{pmatrix}
+			x \\ y
+			\end{pmatrix} = \begin{pmatrix}
+			5 \\ 6 
+			\end{pmatrix} 
+		\]
+		\item Column view: find $x, y \in \BR$ such that 
+		\[
+			x \begin{pmatrix}
+			1 \\ 4
+			\end{pmatrix} + y \begin{pmatrix}
+			2 \\ 1
+			\end{pmatrix} = \begin{pmatrix}
+			5 \\6 
+			\end{pmatrix}
+		\]
+		\item Row view: find $\begin{pmatrix}
+		x \\ y 
+		\end{pmatrix} \in \BR^2$ such that 
+		\begin{itemize}
+			\item Its dot product with $\begin{pmatrix}
+			1  \\ 2
+			\end{pmatrix}$ is equal to $5$. 
+			\item Its dot product with $\begin{pmatrix}
+			4 \\ 1
+			\end{pmatrix}$ is equal to $6$. 
+		\end{itemize}
+	\end{itemize}
+	\end{minipage}
+	\begin{minipage}[t]{.5\textwidth}
+		One way to measure the complexity of an algorithm is to count the number of arithmetic operations (plus, subtract, multiply, divide) that go into it. 
+		\begin{prob}
+			Consider a 2-variable system of equations  
+			\e{
+				a_{11} x_1 + a_{12} x_2 &= b_1 \\ 
+				a_{21} x_2 &= b_2
+			} 
+			where $x_1, x_2$ are the unknowns. Solve it using back substitution, i.e.\ solve for $x_2$, then substitute to find $x_1$. How many arithmetic operations do you need? Can you guess how many operations are needed for an $n$-variable system of the same ``upper triangular'' shape? 
+		\end{prob}
+	\end{minipage}
+	
+	\newpage
+	
+	\section{Matrix transpose and inverse} 
+	
+	Given an $m \times n$ matrix $A$, the transpose $A^\top$ is an $n \times m$ matrix whose rows are the columns of $A$. We have $(AB)^\top = B^\top A^\top$. 
+	
+	The matrix $A$ is \emph{orthogonal} if $A^\top A = I_{n \times n}$. Nonobvious fact: this implies that $m \ge n$, i.e.\ $A$ is square or `tall and skinny'. If the $n$ columns of $A$ are thought of as individual column vectors $v_1, \ldots, v_n$, then $A$ is orthogonal if and only if 
+	\[
+		v_i \cdot v_j = \begin{cases}
+		1 & \text{if } i = j \\
+		0 & \text{otherwise}.
+		\end{cases}
+	\]
+	In this case, $v_1, \ldots, v_n$ are called an \emph{orthonormal} collection of vectors. 
+	
+	\begin{prob}
+		Find an orthogonal matrix $Q$ whose rows do not form an orthonormal collection of vectors. 
+	\end{prob}
+	
+	\begin{prob}
+		Fill in the question marks to make an orthogonal matrix: 
+		\[
+			\begin{pmatrix}
+				\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{3}} & ? \\
+				\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{3}} & ? \\
+				0 & -\frac{1}{\sqrt{3}} & ?
+			\end{pmatrix}
+		\]
+		How many ways are there? 
+	\end{prob}
+	
+	Given an $n \times n$ matrix $A$, an $n \times n$ matrix $B$ satisfying $AB = I_{n \times n}$ is called an \emph{inverse} of $A$. (Nonobvious fact: this condition implies $BA=I_{n \times n}$, and vice versa.) Any square matrix either has a unique inverse or no inverse at all. The inverse, if it exists, is denoted $A^{-1}$, and we say that $A$ is \emph{invertible}. 
+	
+	Nonobvious fact: a square matrix $A$ is invertible if and only if $\det(A) \neq 0$. 
+	
+	\begin{prob}
+		Given \emph{invertible} $n \times n$ matrices $A$ and $B$, show that $(AB)^{-1}$ exists and equals $B^{-1}A^{-1}$. 
+	\end{prob}
+	
+	\begin{prob}
+		Show that a square orthogonal matrix $A$ is invertible, and satisfies $AA^{\top} = I_{n\times n}$ and $A^{-1} = A^{\top}$.  
+	\end{prob}
+	
+	\begin{prob}
+		Show that the rows of a \emph{square} orthogonal matrix form an orthonormal collection of vectors. 
+	\end{prob}
+	
+	\section{Block matrices} 
+	
+	A \emph{block decomposition} of an $m \times n$ matrix $A$ is a way of writing $A$ as a `matrix of matrices': 
+	\[
+		A = \begin{pmatrix}
+			B_{11} & \cdots & B_{1n} \\
+			\vdots & \ddots & \vdots \\
+			B_{n1} & \cdots & B_{nn} 
+		\end{pmatrix}    
+	\]
+	where each $B_{ij}$ is a matrix. The $B_{ij}$ don't need to all have the same size, but they need to be sized so as to fit together into an $m \times n$ grid. 
+	
+	Fact. Bock decompositions are compatible with matrix multiplication, for example: 
+	\begin{itemize}
+		\item[] If $A = \begin{pmatrix}
+		B_{11} & B_{12} \\ B_{21} & B_{22} 
+		\end{pmatrix}$ and $C = \begin{pmatrix}
+		D_{11} & D_{12} \\ D_{21} & D_{22}
+		\end{pmatrix}$, 
+		\item[] then $AC = \begin{pmatrix}
+		B_{11} & B_{12} \\ B_{21} & B_{22} 
+		\end{pmatrix}\begin{pmatrix}
+		D_{11} & D_{12} \\ D_{21} & D_{22}
+		\end{pmatrix} = \begin{pmatrix}
+		B_{11}D_{11} + B_{12}D_{21} & B_{11}D_{12} + B_{12}D_{22} \\ B_{21}D_{11}+B_{22}D_{21} & B_{21}D_{12} + B_{22}D_{22}
+		\end{pmatrix}$, 
+	\end{itemize}
+	provided that the blocks are the right sizes for the matrix multiplications to be possible. 
+	\begin{prob}
+		Does there exist some block decomposition of some matrix whose set of blocks is as follows: $\begin{pmatrix}
+		1 \\2
+		\end{pmatrix}, \begin{pmatrix}
+		3 & 4
+		\end{pmatrix}, \begin{pmatrix}
+		5 & 6
+		\end{pmatrix}$. 
+	\end{prob}
+	\begin{prob}
+		If $A = \begin{pmatrix}
+		B_{11} & B_{12} \\ B_{21} & B_{22} 
+		\end{pmatrix}$ is a block decomposition, what is the corresponding block decomposition of $A^\top$? 
+	\end{prob}
+	
+	\newpage
+	
+	\section{Solutions}
+	
+	\begin{enumerate}
+		\item The zero vector is the function which always outputs zero, i.e.\ $f(x) = 0$. 
+		\item Addition is $(a_1, b_1) + (a_2, b_2) := (a_1+a_2, b_1+b_2)$. Scalar multiplication is $c(a, b) := (ca, cb)$. This does make $V$ into a vector space, because $a_1 + 2b_1 = 0$ and $a_2 + 2b_2 = 0$ implies 
+		\[
+			(a_1 + a_2) + 2(b_1 + b_2) = 0
+		\]
+		so $V$ is closed under addition. Similarly, $a + 2b = 0$ implies that $(ca) + 2(cb) = 0$, so $V$ is closed under scalar multiplication. The zero element is $(0, 0)$, and the additive inverse of $(a,b)$ is $(-1)(a,b) = (-a, -b)$. 
+		
+		On the other hand, the set of pairs $(a, b)$ with $a \ge 0$ is not a vector space. For example, it is not closed under scalar multiplication, because $(-1) (1, 0) = (-1, 0)$, which lies outside the indicated set. 
+		\item The second equation gives $x_2 = b_2 / a_{21}$. This uses one operation (division). Next, we solve for $x_1$ as follows: 
+		\[
+			x_1 = \frac{b_1 - a_{12} x_2}{a_{11}}. 
+		\]
+		Since we already know $x_2$, we don't need to redo the division from before. So this involves a multiplication, a subtraction, and a division by $a_{11}$, which is three operations. Thus, four operations are required. 
+		
+		A similar $n$-variable upper-triangular system of equations would require $n^2$ operations to solve. 
+		\item In fact, any non-square orthogonal matrix works. This is because a non-square orthogonal matrix $Q$ must be of size $m \times n$ with $m > n$ (by the `nonobvious fact'), so $Q^\top$ is of size $n \times m$, so it cannot be orthogonal (again by the `nonobvious fact'), so its columns are not an orthonormal collection. But the columns of $Q^\top$ are the rows of $Q$, so we conclude that the rows of $Q$ are not an orthonormal collection. 
+		
+		On the other hand, see Problem 8, which says that if $Q$ is square orthogonal, then the rows \emph{are} an orthonormal collection. 
+		\item Label the unknown entries as follows: 
+		\[
+		\begin{pmatrix}
+			\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{3}} & a \\
+			\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{3}} & b \\
+			0 & -\frac{1}{\sqrt{3}} & c
+		\end{pmatrix}
+		\]
+		If this matrix is to be orthogonal, then the dot product of the third column with either of the first two columns must be zero. This gives the equations $a + b = 0$ and $a - b - c = 0$ (upon clearing denominators). We conclude that $b = -a$ and $c = 2a$. 
+		
+		Furthermore, the dot product of the third column with itself must be one. This gives $6a^2 = 1$, so $a = \pm \frac{1}{\sqrt6}$. Either solution works, so there are two ways to make such an orthogonal matrix. 
+		\item We have 
+		\e{
+			(AB)(B^{-1}A^{-1}) &= A(BB^{-1})A^{-1} \\
+			&= A I_{n \times n} A^{-1} \\
+			&= AA^{-1} \\
+			&= I_{n \times n}
+		} 
+		where we have used the associativity of matrix multiplication. This shows that $B^{-1}A^{-1}$ is a one-sided inverse to $AB$, and by the `nonobvious fact' we know that $B^{-1}A^{-1}$ is the unique two-sided inverse to $AB$, since $AB$ is a square matrix. 
+		\item Since $A$ is orthogonal, we have $A^\top A = I_{n \times n}$. Since $A$ is square, we conclude that $A^{\top}$ is the inverse of $A$. By the `nonobvious fact', the equation $A^\top A = I_{n \times n}$ also implies $AA^{\top} = I_{n \times n}$, i.e.\ a one-sided inverse is a two-sided inverse. 
+		\item From the previous problem, we know that a square orthogonal matrix $A$ also satisfies $AA^\top = I_{n \times n}$. By viewing $A$ as built out of row vectors, we see that this matrix multiplication involves taking the dot products of those row vectors, and so this equation says that the rows of $A$ are an orthonormal collection. 
+		\item No. Although it is possible to arrange these little matrices into a grid, e.g.\ 
+		\[
+			\begin{pmatrix}
+				1 & 3 & 4 \\ 
+				2 & 5 & 6
+			\end{pmatrix}
+		\]
+		the definition of `block decomposition' requires that the blocks $B_{ij}$ themselves are arranged in a (smaller) grid. In other words, the lines separating the $B_{ij}$ from each other must go all the way from the top to the bottom of the matrix, and all the way from the left to the right. 
+		\item We have 
+		\[
+			A^\top = \begin{pmatrix}
+			B_{11}^\top & B_{21}^\top \\
+			B_{12}^\top & B_{22}^\top
+			\end{pmatrix}. 
+		\]
+	\end{enumerate}
+\end{document} 
