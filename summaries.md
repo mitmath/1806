@@ -45,7 +45,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 
 |Office Hours|
 |--|
-| See [18.06 front page](http://web.mit.edu/18.06) |
+| See [18.06 front page](http://web.mit.edu/18.06) for the office hour schedule |
 | On Tuesday February 18, Monday (and not Tuesday) Office Hours will be held |
 
 |Recitation Materials|
