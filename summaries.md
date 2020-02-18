@@ -43,6 +43,10 @@ after the class is over, the students come back to thank me.  This has happened 
 
 I have received emails sometimes  5 or 10  years after 18.06 was over with students saying, "wow, your  Linear Algebra class  prepared me more than I could have imagined while I was taking  the class."  We hope you will say this too.
 
+|Office Hours|
+|--|
+| See [18.06 front page](http://web.mit.edu/18.06) |
+
 |Recitation Materials|
 |--|
 |[Week 1 2/4 Linear Algebra 101](https://github.com/mitmath/1806/raw/master/recitation-materials/Linear_algebra_101.pdf)|
