@@ -107,7 +107,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |39| M |5/11|
 
 
-[4]:[https://docs.google.com/presentation/d/10J64Kk3v3ZfuPOuLEF9lmKI28XFdrzShqxsDZXeBJSk/edit?usp=sharing]
+[4]:(https://docs.google.com/presentation/d/10J64Kk3v3ZfuPOuLEF9lmKI28XFdrzShqxsDZXeBJSk/edit?usp=sharing)
 
 
 
