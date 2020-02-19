@@ -75,7 +75,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |9| F |2/21|
 |10| M |2/24|
 |11| W |2/26| HW3 due, HW4 released |
-|12| F |2/28| Exam 1 Walker
+|12| F |2/28| Exam 1 Walker 11:05-11:55 |
 |13| M |3/2|
 |14| W |3/4|  HW5 released |
 |15| F |3/6| HW4 due (extended date), Add Date |
