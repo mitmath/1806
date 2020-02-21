@@ -74,8 +74,8 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |8| W |2/19| <ul> <li> HW2 due, [HW3][HW3] released  </li><li> Computing  and interpreting QR </li> </ul>|
 |9| F |2/21| The Singular Value Decomposition |
 |10| M |2/24|
-|11| W |2/26| HW3 due, HW4 released |
-|12| F |2/28| Exam 1 Walker 11:05-11:55 |
+|11| W |2/26| HW3 due, HW4 released | Review |
+|12| F |2/28| Exam 1 Walker 11:05-11:55 | The 2020 Class spent more time on LU and Gaussian Elimination.  We have not yet covered rank,spaces,projections etc. They are coming.|
 |13| M |3/2|
 |14| W |3/4|  HW5 released |
 |15| F |3/6| HW4 due (extended date), Add Date |
@@ -88,7 +88,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 | | | Spring Break|
 |22| M |3/30|
 |23| W |4/1|  HW7  released |
-|24| F |4/3| Exam 2 Walker|
+|24| F |4/3| Exam 2 Walker 11:05-11:55|
 |25| M |4/6|
 |26| W |4/8|   HW7 due , HW8 released|
 |27| F |4/10| |
@@ -100,7 +100,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |32| F |4/24|
 |33| M |4/27|
 |34| W |4/29| HW10 Released |
-|35| F |5/1| Exam 3 Walker|
+|35| F |5/1| Exam 3 Walker 11:05-11:55|
 |36| M |5/4|
 |37| W |5/6| HW10 Due |
 |38| F |5/8|
