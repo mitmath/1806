@@ -72,7 +72,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 || M |2/17| President's Day (no class)|
 |7| T |2/18| <ul> <li> Monday Schedule (no recitation, yes Monday office hours) </li> <li> The QR Factorization and least squares </li> </ul> |<ul> <li> [Lecture 7 Slides](https://docs.google.com/presentation/d/1JGsUzUs0CURyjS_4dhhoIGv48GH53mxgV5T4JUOTFMo/edit?usp=sharing)<li> GS pages 239--240 shows the computation of QR for a 3x3 example </li> <li> The applications to least squares are on GS 223--227. Theory will come later.  </li> <li> [Nice interactive for least squares](http://setosa.io/ev/ordinary-least-squares-regression/) </li> <li> [QR notebook](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/materials/QR%20Factorization%20Examples%20in%20Julia.ipynb) </ul>
 |8| W |2/19| <ul> <li> HW2 due, [HW3][HW3] released  </li><li> Computing  and interpreting QR </li> </ul>|
-|9| F |2/21| The Singular Value Decomposition |
+|9| F |2/21| The Singular Value Decomposition | <ul> <li> [Lecture 9 Slides][9] </li> </ul> |
 |10| M |2/24|
 |11| W |2/26| HW3 due, HW4 released | Review |
 |12| F |2/28| Exam 1 Walker 11:05-11:55 | The 2020 Class spent more time on LU and Gaussian Elimination.  We have not yet covered rank,spaces,projections etc. They are coming.|
@@ -109,6 +109,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 
 
 [4]:https://docs.google.com/presentation/d/10J64Kk3v3ZfuPOuLEF9lmKI28XFdrzShqxsDZXeBJSk/edit?usp=sharing
+[9]:https://docs.google.com/presentation/d/1SVWaLOE3_qf4T-8AM-_KvDDWg4T9jWBiMCPOfiJLAuo/edit?usp=sharing
 [HW1S]:https://github.com/mitmath/1806/raw/master/psets%20spring%202020/Pset%201%2018.06%20Spring%202020%20solution.pdf
 [HW3]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset3%2018.06%20%20Spring%202020.ipynb
 
