@@ -1,5 +1,5 @@
 
-| [18.06 front page](http://web.mit.edu/18.06)  |[piazza (be polite, and math questions only plesase)](piazza.com/mit/spring2020/1806) |
+| [18.06 front page](http://web.mit.edu/18.06)  |[piazza (be polite, and math questions only please)](piazza.com/mit/spring2020/1806) |
 [gradescope](https://www.gradescope.com/courses/87639) |
 [Julia](https://julialang.org/) |
 <!-- [juliabox](http://www.juliabox.com) | -->
