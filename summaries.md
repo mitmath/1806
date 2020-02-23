@@ -55,6 +55,13 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |[Week 2 2/11](https://github.com/mitmath/1806/raw/master/recitation-materials/2020/rec2.pdf) Vector Spaces, Transposes, Inverses, Block matmul|
 | [2019 Week 3 Review](https://github.com/mitmath/1806/raw/master/recitation-materials/wk3session.pdf) Matmul, Orthogonal, Rotation |
 
+
+|Quizzes|
+|--|
+| [Quiz 1 Study Questions][Q1S] (may add more soon) |
+
+[Q1S]:http://localhost:8888/notebooks/git/1806/psets%20spring%202020/quiz1%20study%20questions.ipynb
+
 |Homeworks||||
 |--|--|--|--|
 | <ul><li> [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit) </li><li> [HW0 Solutions](https://docs.google.com/document/d/1U3SUNlnFdgyYqVEn8PB9ECvARMiQ8dw-UAOuojnzHXE/edit?usp=sharing)| <ul> <li> [HW1](https://docs.google.com/document/d/1K2WtQb9JCJT6YjEz3K-hqb99hj2L_Bp-19nJLKGRF9c/edit)  </li>  <li> [HW1 Solutions][HW1S] </li> </ul> | <ul> <li>[HW2][HW2]  </li> <li> [HW2 Solutions][HW2S] </li></ul>| [HW3][HW3] |
