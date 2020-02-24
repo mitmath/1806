@@ -60,7 +60,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |--|
 | [Quiz 1 Study Questions][Q1S] (may add more soon) |
 
-[Q1S]:http://localhost:8888/notebooks/git/1806/psets%20spring%202020/quiz1%20study%20questions.ipynb
+[Q1S]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/quiz1%20study%20questions.ipynb
 
 |Homeworks||||
 |--|--|--|--|
