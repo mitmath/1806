@@ -1,0 +1,373 @@
+\documentclass[10pt]{amsart} 
+
+
+\usepackage{amsmath, amssymb, mathrsfs} 
+
+\usepackage[mathscr]{euscript} 
+ 
+\newlength{\mylength}
+\setlength{\mylength}{0.25cm}
+
+\usepackage{enumitem}
+\setlist{listparindent=\parindent, itemsep=0cm, parsep=\mylength, topsep=0cm}
+
+\usepackage[final]{todonotes}
+\usepackage[final]{showkeys} 
+
+\usepackage[breaklinks=true]{hyperref} 
+\usepackage{comment} 
+
+\usepackage{url}
+
+\usepackage{tikz-cd}
+
+\usepackage{amsthm}
+
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \topsep6\p@\@plus6\p@\relax
+	\noindent\emph{#1.} 
+	\ignorespaces
+}{%
+\popQED\endtrivlist\@endpefalse
+}
+\makeatother
+
+\newtheoremstyle{mythm}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{\itshape}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\bfseries}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\newtheoremstyle{myrmk}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\itshape}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\theoremstyle{mythm} 
+%\newtheorem{thm}[subsubsection]{Theorem}
+%\newtheorem*{claim}{Claim}
+%\newtheorem*{thm}{Theorem} 
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma} 
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{prop}[thm]{Proposition}
+%\newtheorem*{mthm}{Main Theorem}
+
+%\newtheorem{prop}[subsubsection]{Proposition} 
+%\newtheorem*{prop}{Proposition} 
+%\newtheorem*{lem}{Lemma}
+%\newtheorem*{klem}{Key Lemma}
+%\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+%\newtheorem{defn}[subsubsection]{Definition}
+\newtheorem*{defn}{Definition} 
+\newtheorem{prob}[thm]{Problem}
+%\newtheorem{que}[subsubsection]{Question}
+
+\theoremstyle{myrmk} 
+%\newtheorem{rmk}[subsubsection]{Remark}
+\newtheorem*{rmk}{Remark}
+%\newtheorem{note}[subsubsection]{Note} 
+\newtheorem*{ex}{Example}
+
+\newcommand{\nc}{\newcommand} 
+\nc{\on}{\operatorname}
+\nc{\rnc}{\renewcommand} 
+
+\rnc{\setminus}{\smallsetminus} 
+
+\nc{\wt}{\widetilde}
+\nc{\wh}{\widehat} 
+\nc{\ol}{\overline} 
+
+\nc{\Frob}{\on{Frob}}
+\nc{\Gal}{\on{Gal}}
+
+\nc{\BN}{\mathbb{N}}
+\nc{\BZ}{\mathbb{Z}}
+\nc{\BQ}{\mathbb{Q}}
+\nc{\BR}{\mathbb{R}}
+\nc{\BC}{\mathbb{C}}
+
+\nc{\id}{\on{id}}
+\nc{\Id}{\on{Id}}
+\nc{\Tr}{\on{Tr}}
+
+\nc{\la}{\langle}
+\nc{\ra}{\rangle} 
+\nc{\lV}{\lVert}
+\nc{\rV}{\rVert}
+\nc{\mb}{\mathbf}
+\nc{\mf}{\mathfrak}
+%\nc{\cur}{\mathscr}
+\nc{\mc}{\mathscr}
+
+\nc{\ira}{\hookrightarrow}
+\nc{\hra}{\hookrightarrow}
+\nc{\sra}{\twoheadrightarrow} 
+
+\rnc{\Re}{\on{Re}}
+
+\nc{\coker}{\on{coker}}
+\nc{\End}{\on{End}}
+\rnc{\Im}{\on{Im}}
+%\rnc{\Re}{\on{Re}}
+
+\nc{\Hom}{\on{Hom}}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage{marginnote}
+\nc{\acts}{\curvearrowright}
+
+\nc{\Mat}{\on{Mat}}
+
+\newenvironment{cd}{\begin{equation*}\begin{tikzcd}}{\end{tikzcd}\end{equation*}\ignorespacesafterend}
+
+\nc{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\nc{\e}[1]{\begin{align*} #1 \end{align*}}
+
+\usepackage[margin=1in]{geometry}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+%\renewcommand*{\arraystretch}{1.4}
+
+\setlength{\parskip}{0.25cm}
+
+\title{Spring 18.06 - Week 4 Recitation} 
+\author{James Tao}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\fancyhead[L]{James Tao}
+\fancyhead[C]{Spring 18.06 -- Week 4 Recitation}
+\fancyhead[R]{Feb.\ 25, 2020}
+\fancyfoot[C]{Page \thepage}
+
+
+\begin{document}
+	\thispagestyle{fancy}
+	\noindent Topics: column space (etc.), $QR$ decomposition, SVD decomposition
+	
+	\section{Vector spaces associated to a matrix $A$} 
+	
+	Given an $m \times n$ matrix $A$, we have the following four vector spaces: 
+	\begin{itemize}
+		\item Column space (col$(A)$): all vectors in $\BR^m$ of form $Ax$ for some $x \in \BR^n$. 
+		\item Nullspace (null$(A)$): all vectors $x \in \BR^n$ such that $Ax = 0$. 
+		\item Row space (row$(A)$): column space of $A^\top$. 
+		\item Left nullspace (leftnull$(A)$): nullspace of $A^\top$. 
+	\end{itemize}
+	We define $\on{rank}(A)$ to be the dimension of $\on{col}(A)$. Facts which can be proved by SVD: 
+	\begin{itemize}
+		\item $\on{rank}(A) = \on{rank}(A^\top) \le \min(m, n)$
+		\item $\on{rank}(A) + (\text{dimension of } \on{null}(A)) = n$
+		\item Let $A$ be square, so $n = m$. Then $(A \text{ is invertible}) \Leftrightarrow (\on{rank}(A) = n) \Leftrightarrow (\det(A) \neq 0)$. 
+	\end{itemize}
+	(Idea: SVD allows one to reduce to the case where $A$ is an $m \times n$ diagonal matrix.) 
+	
+	\begin{prob}
+		Let $A$ be a matrix. Explain why the following are true: 
+		\begin{enumerate}
+			\item (For any $b \in \BR^m$, there exists $x \in \BR^n$ such that $Ax= b$) if and only if $\on{col}(A) = \BR^m$. 
+			\item (The only solution to $Ax = 0$ is $x = 0$) if and only if $\on{null}(A) = \{0\}$. 
+			\item If $A$ is square (so $m=n$) and invertible, then $\on{col}(A) = \on{row}(A) = \BR^n$ and $\on{null}(A) = \on{leftnull}(A) = \{0\}$. 
+			\item Let $B$ be an $n \times n$ invertible matrix. Then $\on{col}(A) = \on{col}(AB)$ and $\on{rank}(A) =\on{rank}(AB)$. 
+			\item Let $B$ be an $m \times m$ invertible matrix. Then $\on{row}(A) = \on{row}(BA)$ and $\on{rank}(A) = \on{rank}(BA)$. 
+			\item If $A$ is orthogonal (so $m \ge n$), then $\on{null}(A) = \{0\}$ and $\on{rank}(A) = n$. 
+		\end{enumerate}
+	\end{prob}
+	
+	\begin{prob}
+		Let $Q$ be a square orthogonal matrix. Show that $\det(Q) = \pm 1$. (Hint: for any square matrix $A$, we have $\det(A) = \det(A^\top)$, and if $A$ is invertible then $\det(A^{-1}) = \det(A)^{-1}$.) 
+	\end{prob}
+	
+	\section{$QR$ decomposition}
+	
+	Given an $m \times n$ matrix $A$ with $m \ge n$, a $QR$-decomposition of $A$ is an equation  
+	\[
+		A = QR
+	\]
+	where $Q$ is an $m \times n$ orthogonal matrix and $R$ is an \emph{invertible} $n \times n$ upper-triangular matrix. The existence of such a decomposition implies the following:  
+	\begin{itemize}
+		\item $\on{rank}(A) = m$, and $\on{null}(A) = \{0\}$. 
+		\item The columns of $Q$ are an orthonormal basis in the space $\on{col}(A)$. 
+		\item Let $b \in \BR^m$ be a vector. Then there is a unique vector $x \in \BR^n$ which minimizes $\lVert Ax-b \rVert$, and that $x$ is given by $x = R^{-1}Q^\top b$. The minimum possible value of $\lVert Ax-b \rVert$ is given by $\lVert QQ^\top b - b \rVert$. 
+	\end{itemize}
+	\begin{prob}
+		Let $v$ be the third column of $A$. What is $\lVert v \rVert$ in terms of the entries of $R$? 
+	\end{prob}
+	\begin{prob}
+		Assume that $A$ is a square matrix, and let $A = QR$ be a $QR$ decomposition. Show that $\det(A) = \pm \det(R)$. 
+	\end{prob}
+	\begin{prob}
+		Assume $m > n$. Let $A = \left(\begin{array}{cc}
+		R \\ \hline Z
+		\end{array}\right)$ be a block matrix, where $R$ is an $n \times n$ invertible upper-triangular matrix and $Z$ is the all-zero $(m-n) \times n$ matrix. Write down a $QR$ decomposition for $A$. 
+	\end{prob}
+	\begin{prob}
+		Does the matrix $A = \begin{pmatrix}
+		1 & 0 \\ 0 & 0
+		\end{pmatrix}$ have a $QR$ decomposition? 
+	\end{prob}
+	
+	\section{Singular value decomposition (SVD)} 
+	
+	Given an $m \times n$ matrix $A$, the (large-format) SVD of $A$ is an equation 
+	\[
+		A = U\Sigma V^\top
+	\] 
+	where $U$ is an $m \times m$ orthogonal matrix, $\Sigma$ is an $m \times n$ diagonal matrix with entries in (weakly) decreasing order, and $V$ is an $n \times n$ orthogonal matrix. The entries of $\Sigma$ are the \emph{singular values} of $A$, the columns of $U$ are the \emph{left-singular vectors}, and the columns of $V$ are the \emph{right-singular vectors}. Every matrix admits at least one SVD. 
+	
+	Since $U$ and $V$ are invertible, we apply Problem 1, parts (4) and (5), to find 
+	\[
+		\on{rank}(A) = \on{rank}(\Sigma) = (\text{number of nonzero entries of $\Sigma$}).
+	\]
+	
+	Let $r = \on{rank}(A)$. We define some smaller matrices in order to get rid of the zeros in $\Sigma$. 
+	\begin{itemize}
+		\item $U'$ is obtained by truncating $U$ to size $m \times r$ (starting from top-left entry). 
+		\item $\Sigma'$ is obtained by truncating $\Sigma$ to size $r \times r$. 
+		\item $V'$ is obtained by truncating $V'$ to size $n \times r$. 
+	\end{itemize}
+	\begin{prob}
+		Explain why the following are true: 
+		\begin{enumerate}
+			\item $U'$ and $V'$ are orthogonal. 
+			\item $\Sigma'$ is invertible. 
+			\item $A = U'\Sigma' (V')^\top$. 
+		\end{enumerate}
+	\end{prob}
+	The expression $A = U' \Sigma' (V')^{\top}$ is the small-format SVD of $A$. 
+	
+	\begin{prob}
+		Assume that $A$ is a square matrix, and let $A = U \Sigma V^\top$ be an SVD. Show that $\det(A) = \pm \det(\Sigma)$. 
+	\end{prob}
+	
+	\begin{prob}
+		Given $A = U \Sigma V^\top$ as above, find the SVDs of the matrices $A^\top, A^\top A$, and $AA^\top$. Using your answers, determine the ranks of these matrices. Assuming that $A$ is square and invertible, find the SVDs of $A^{-1}$ and $(A^{-1})^\top$. 
+	\end{prob}
+	
+	\begin{prob}
+		Let $A = U' \Sigma' (V')^{\top}$ be a small-format SVD of $A$. Explain why the following are true: 
+		\begin{enumerate}
+			\item $\on{col}((V')^{\top}) = \BR^r$. (Hint: find an SVD of $(V')^{\top}$)
+			\item $\on{col}(\Sigma' (V')^{\top}) = \BR^r$. 
+			\item $\on{col}(A) = \on{col}(U')$. 
+			\item $\on{row}(A) = \on{col}(V')$. 
+		\end{enumerate}
+	\end{prob}
+	
+	\begin{prob}
+		Find an SVD of the matrix $A = \begin{pmatrix}
+			0 & 0 & 0 & 1 \\ 2 & 0 & 0 & 0 \\ 0 & 3 & 0 & 0 \\ 0 & 0 & 4 & 0
+		\end{pmatrix}$. \\ (Hint: permutation matrices are orthogonal.) 
+	\end{prob}
+	
+	\newpage
+	
+	\section{Solutions} 
+	\begin{enumerate}[label=\arabic*.]
+		\item \begin{enumerate}[label=(\arabic*)]
+			\item The condition in parentheses exactly says that every vector in $\BR^m$ is of the form $Ax$ for some $x \in \BR^n$. 
+			\item $\on{null}(A)$ is defined to be the space of solutions to $Ax = 0$, so the condition in parentheses exactly says that $\on{null}(A) = \{0\}$. 
+			\item If $A$ is invertible, then any vector $b$ is of the form $Ax$ because we can take $x = A^{-1}b$. Therefore $\on{col}(A) = \BR^n$. Since $A^\top$ is invertible as well, we also conclude $\on{row}(A) = \BR^n$. If $Ax = 0$, then applying $A^{-1}$ yields $x = A^{-1}0 = 0$, so the criterion of the previous part implies that $\on{null}(A) = \{0\}$. Applying this reasoning to $A^\top$ in place of $A$ yields $\on{leftnull}(A) = \{0\}$. 
+			\item If $b \in \on{col}(A)$, then $b = Ax$ for some $x$. Then $b = AB(B^{-1}x)$, so $b \in \on{col}(AB)$. The other direction is similar. 
+			\item Take the transpose of the previous part. 
+			\item An SVD of $A$ is 
+			\[
+				A = A \on{Id}_{n \times n} \on{Id}_{n \times n}
+			\]
+			The `key fact' from the SVD section tells us that $\on{rank}(A) = \on{rank}(\on{Id}_{n \times n}) = n$. (One could also use a $QR$ decomposition instead.) 
+			
+			To show that $\on{null}(A) = \{0\}$, suppose that $Ax = 0$ for some $x \in \BR^n$. Write $x = (x_1, \ldots, x_n)$, and let $v_1, \ldots, v_n$ be the columns of $A$, which form an orthonormal collection since $A$ is orthogonal. By our hypothesis that $Ax = 0$, we know that
+			\[
+				x_1v_1 + \cdots + x_n v_n = 0
+			\]
+			as vectors in $\BR^n$. Take the dot product with $v_i$ to obtain 
+			\e{
+				0 &= 0 \cdot v_i \\
+				&= (x_1v_1 + \cdots + x_n v_n) \cdot v_i \\
+				&= x_1v_1 \cdot v_i + \cdots + x_n v_n \cdot v_i \\
+				&= x_i
+			} 
+			where we use that $v_j \cdot v_i = 0$ if $j \neq i$ and $v_i \cdot v_i = 1$, by definition of orthonormality. Hence, $x_i = 0$ for all $i$, so $x = 0$, and this shows that $\on{null}(A) = \{0\}$. 
+		\end{enumerate}
+		\item Since $Q^{-1} = Q^\top$, we have 
+		\e{
+			\det(Q) &= \det(Q^\top) \\
+			&= \det(Q^{-1}) \\
+			&= \det(Q)^{-1}
+		} 
+		using the hint. Thus $\det(Q)^2 = 1$, so $\det(Q) = \pm 1$. 
+		\item $\lVert v \rVert = \sqrt{R_{13}^2 + R_{23}^2 + R_{33}^2}$ 
+		\item We have 
+		\e{
+			\det(A) &= \det(Q) \det(R) \\
+			&= \pm \det(R)
+		} 
+		using the result of Problem 2. 
+		\item A $QR$ decomposition is given by 
+		\[
+			A = \left( \begin{array}{cc} \on{Id}_{n \times n} \\ \hline Z \end{array} \right) \, R, 
+		\]
+		where $Z$ is as defined in the problem. 
+		\item No, because $\on{rank}(A) = 1$, while any $2 \times 2$ matrix with a $QR$ decomposition (in the sense defined in class) has rank $2$. 
+		\item \begin{enumerate}[label=(\arabic*)]
+			\item Start with the identity $U^\top U = \on{Id}_{n \times n}$. Break $U$ into an $m \times r$ block (namely $U'$) and an $m \times (m-r)$ block, and look at the result of block multiplication. Similarly for $V$.  
+			\item $\Sigma'$ is a diagonal matrix with nonzero diagonal entries. Its inverse is given by the diagonal matrix whose entries are the reciprocals of the diagonal entries of $\Sigma'$. 
+			\item Take $A = U \Sigma V^\top$ and look at the result of block multiplication as in the first part. 
+		\end{enumerate}
+		\item This follows from $\det(U) = \pm 1$ and $\det(V) = \pm 1$. 
+		\item We have 
+		\e{
+			A^\top &= V \Sigma^\top U^\top \\
+			A^\top A &= V (\Sigma^\top \Sigma) V^\top \\
+			AA^\top &= U(\Sigma \Sigma^\top)U^\top.
+		} 
+		These matrices all have the same rank as $A$. 
+		
+		If $A$ is square and invertible, so is $\Sigma$, and we have 
+		\e{
+			A^{-1} &= V \Sigma^{-1} U^\top \\
+			(A^{-1})^\top &= U \Sigma^{-1} V^\top. 
+		} 
+		\item \begin{enumerate}[label=(\arabic*)]
+			\item An SVD of $(V')^\top$ is 
+			\[
+			(V')^{\top} = \on{Id}_{r \times r} \on{Id}_{r \times r} (V')^{\top}, 
+			\]
+			so $\on{rank}((V')^\top) = r$. Hence $\on{col}((V')^\top) = \BR^r$. 
+			\item Since $\Sigma'$ is invertible, we have $\on{col}(\Sigma'B) = \on{col}(B)$ for any matrix $B$. (Compare Problem 1(4).) 
+			\item See Lecture 7 slides. 
+			\item Apply the previous part to $A^\top$ in place of $A$. 
+		\end{enumerate}
+		\item We have 
+		\[
+			A = \on{Id}_{4 \times 4} \begin{pmatrix}
+			1 & 0 & 0 & 0 \\ 0 & 2 & 0 & 0 \\ 0 & 0 & 3 & 0 \\ 0 & 0 & 0 & 4
+			\end{pmatrix} \begin{pmatrix}
+			0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & 1 & 0  & 0 \\ 0 & 0 & 1 & 0 \end{pmatrix}
+		\]
+	\end{enumerate}
+	
+	
+\end{document} 
