@@ -87,7 +87,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |11| W |2/26| HW3 due, HW4 released | In class Review |
 || W  |2/26|  | Additional Review Wednesday 7-8:30pm 4-270|
 || H  |2/27|  | Additional Review Thursday 7-8:30pm 4-270|
-|12| F |2/28| Exam 1 Walker 11:05-11:55 | Material up to Lecture 9. The 2020 Class spent more time on LU and Gaussian Elimination.  We have not yet covered rank,spaces,projections etc. They are coming.|
+|12| F |2/28| Exam 1 Walker 11:05-11:55 | Material up to Lecture 9. The 2020 Class spent more time on LU and Gaussian Elimination.  We have not yet covered spaces,projections etc. They are coming.|
 |13| M |3/2|
 |14| W |3/4|  HW5 released |
 |15| F |3/6| HW4 due (extended date), Add Date |
