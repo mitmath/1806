@@ -127,7 +127,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [HW2]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset2%2018.06%20Spring%202020.ipynb
 [HW2S]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset2Solution.ipynb
 [HW3]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset3%2018.06%20%20Spring%202020.ipynb
-[HW3S]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/d9fda2d5330c64bcab4698e18f88c4f162695735/psets%20spring%202020/Pset3%2018.06%20%20Spring%202020%20sols.ipynb
+[HW3S]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/8534b2579d07a162c25626fb0a0ed3d44bb2df8e/psets%20spring%202020/Pset3%2018.06%20%20Spring%202020%20sols.ipynb
 [svdimagedemo]:http://timbaumann.info/svd-image-compression-demo/
 [svdgolub]:https://www.mathworks.com/company/newsletters/articles/professor-svd.html
 [svd_walking_demo]:https://www.biomotionlab.ca/html5-bml-walker/
