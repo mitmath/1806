@@ -71,6 +71,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
+|| [Blackboard Images][BB]
 |0||| Prereqs: 18.02 |  We assume familiarity with the very basics from 18.02, or that you can pick it up as you go: Strang Chapter 1.  [Watch Gil Strang OCW Video #1](https://youtu.be/ZK3O402wf1c?t=1), Work through the first pages of [Linear Algebra 101](https://github.com/mitmath/1806/raw/master/recitation-materials/Linear_algebra_101.pdf) |
 |0||| Not a Pre-req | We assume no familiarity with computing or Julia.  Some homework problems will use Julia (kind of) as a calculator.  On occasion, Julia  may be demonstrated if it helps understand linear algebra, but Julia syntax will never be tested.  Tests will be traditional paper and pencil. |
  |1| M |2/3| A modern (personal) view of Linear Algebra: Head in the Clouds; Feet on the Ground, Linear Transformations   | [Lecture 1 Slides](https://docs.google.com/presentation/d/1IQ7TJvlYK_KJC_9m9J-6BdLJkl03YU3ecy0dOFCaJM4/edit?usp=sharing), [2d linear transformations](https://observablehq.com/@yurivish/example-of-2d-linear-transforms)| [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit?usp=sharing)   will be due Wednesday night and will not be graded|
@@ -81,13 +82,13 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |6| F |2/14| Full Story of A = LU, Block Matrices |  <ul> <li> [Lecture 6 Slides](https://docs.google.com/presentation/d/1GbrA8kJMTpo5A8umo0DN_oqXphkt-nmV9p9IAfnpOO4/edit?usp=sharing) </li> <li> [Fun algebra videos](http://www.whyu.org/whyuchapters.php?currentchapter=1&currentbook=4&prefix=AL&youtubeid=GYlhVuGBl5E) especially those numbered in the 40s and 50s, and most especially [number 56](http://www.whyu.org/whyuplayer.php?youtubeid=bnC848ie16Q&chapterhead=56.%20A%20Geometrical%20View%20of%20Gauss-Jordan%20Elimination&sequence=56&bookname=Algebra&prefix=AL&currentbook=4) </li>  <li> We are finishing chapter 2 today.  Though we covered the material in a different order, it is reasonable to read chapter 2 from start to finish at this point. </li> <li> Exam 1 will be two weeks from today </li> </ul>
 || M |2/17| President's Day (no class)|
 |7| T |2/18| <ul> <li> Monday Schedule (no recitation, yes Monday office hours) </li> <li> The QR Factorization and least squares </li> </ul> |<ul> <li> [Lecture 7 Slides](https://docs.google.com/presentation/d/1JGsUzUs0CURyjS_4dhhoIGv48GH53mxgV5T4JUOTFMo/edit?usp=sharing)<li> GS pages 239--240 shows the computation of QR for a 3x3 example </li> <li> The applications to least squares are on GS 223--227. Theory will come later.  </li> <li> [Nice interactive for least squares](http://setosa.io/ev/ordinary-least-squares-regression/) </li> <li> [QR notebook](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/materials/QR%20Factorization%20Examples%20in%20Julia.ipynb) </ul>
-|8| W |2/19| <ul> <li> HW2 due, [HW3][HW3] released  </li><li> Computing  and interpreting QR </li> </ul>| <ul> <li> Lecture 8 Slides </li> <li> GS page 240 </li> </ul> |
+|8| W |2/19| <ul> <li> HW2 due, [HW3][HW3] released  </li><li> Computing  and interpreting QR </li> </ul>| <ul> <li> [Lecture 8 Slides][8] </li> <li> GS page 240 </li> </ul> |
 |9| F |2/21| The Singular Value Decomposition | <ul> <li> [Lecture 9 Slides][9] </li>   <li> [Browser SVD Image Compression Demo][svdimagedemo] </li><li> [Julia SVD Image Demo][svdimagejulia] </li> <li> [Cleve Moler tribute to Gene Golub "Professor SVD"][svdgolub] </li><li>  Human walking motion: ([Demo][svd_walking_demo])([Paper][svd_walking_paper]) </li><li> [SVD for genome processing paper][svd_genome]</li> <li> [Quora Intuitive SVD](svd_int)</li></ul> |
 |10| M |2/24| Fundamental Subspaces using the SVD |[Lecture 10 Slides][10]|
-|11| W |2/26| HW3 due, HW4 released | In class Review |
+|11| W |2/26| HW3 due| In class Review |
 || W  |2/26|  | Additional Review Wednesday 7-8:30pm 4-270|
 || H  |2/27|  | Additional Review Thursday 7-8:30pm 4-270|
-|12| F |2/28| Exam 1 Walker 11:05-11:55 | Material up to Lecture 9. The 2020 Class spent more time on LU and Gaussian Elimination.  We have not yet covered spaces,projections etc. They are coming.|
+|12| F |2/28| Exam 1 Walker 11:05-11:55 | Material up to Lecture 9. The 2020 Class spent more time on LU and Gaussian Elimination.  We have not yet covered spaces,projections etc. They are coming. HW4 released tonight|
 |13| M |3/2|
 |14| W |3/4|  HW5 released |
 |15| F |3/6| HW4 due (extended date), Add Date |
@@ -119,8 +120,9 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |39| M |5/11|
 || F |5/15| 9am Final Exam  JNSN-Ice Rink |
 
-
+[BB]:https://drive.google.com/drive/folders/1fVWjMiOVLYaVhcqEYzSuODxD6nAyAojY?usp=sharing
 [4]:https://docs.google.com/presentation/d/10J64Kk3v3ZfuPOuLEF9lmKI28XFdrzShqxsDZXeBJSk/edit?usp=sharing
+[8]:https://docs.google.com/presentation/d/1tKVPDoXZ5c38Lckzcyr8-0gsQj-zFHJoQSQ08Vf0fW8/edit?usp=sharing
 [9]:https://docs.google.com/presentation/d/1SVWaLOE3_qf4T-8AM-_KvDDWg4T9jWBiMCPOfiJLAuo/edit?usp=sharing
 [10]:https://docs.google.com/presentation/d/1ilpm2QwQZ9sitAVb2QdfqjcuLeHqjRsZfMgnU6A9gsc/edit?usp=sharing
 [HW1S]:https://github.com/mitmath/1806/raw/master/psets%20spring%202020/Pset%201%2018.06%20Spring%202020%20solution.pdf
