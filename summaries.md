@@ -60,12 +60,13 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |--|
 | [Quiz 1 Study Questions][Q1S]  |
 | [Quiz 1 Study Questions Solutions][Q1SS] |
-| Quiz1  (available Sunday)|
+| [Quiz1][Q1]  |
 | Quiz1 Solutions (available Sunday) |
 
 
 [Q1S]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/quiz1%20study%20questions.ipynb
 [Q1SS]:https://github.com/mitmath/1806/raw/master/psets%20spring%202020/practice%20exam%201%20solutions.pdf
+[Q1]:https://github.com/mitmath/1806/raw/master/psets%20spring%202020/quiz1-1806-S20.pdf
 
 |Homeworks|||||
 |--|--|--|--|--|
