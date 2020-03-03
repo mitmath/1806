@@ -1,0 +1,250 @@
+\documentclass[10pt]{amsart} 
+
+
+\usepackage{amsmath, amssymb, mathrsfs} 
+
+\usepackage[mathscr]{euscript} 
+ 
+\newlength{\mylength}
+\setlength{\mylength}{0.25cm}
+
+\usepackage{enumitem}
+\setlist{listparindent=\parindent, itemsep=0cm, parsep=\mylength, topsep=0cm}
+
+\usepackage[final]{todonotes}
+\usepackage[final]{showkeys} 
+
+\usepackage[breaklinks=true]{hyperref} 
+\usepackage{comment} 
+
+\usepackage{url}
+
+\usepackage{tikz-cd}
+
+\usepackage{amsthm}
+
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \topsep6\p@\@plus6\p@\relax
+	\noindent\emph{#1.} 
+	\ignorespaces
+}{%
+\popQED\endtrivlist\@endpefalse
+}
+\makeatother
+
+\newtheoremstyle{mythm}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{\itshape}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\bfseries}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\newtheoremstyle{myrmk}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\itshape}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\theoremstyle{mythm} 
+%\newtheorem{thm}[subsubsection]{Theorem}
+%\newtheorem*{claim}{Claim}
+%\newtheorem*{thm}{Theorem} 
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma} 
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{prop}[thm]{Proposition}
+%\newtheorem*{mthm}{Main Theorem}
+
+%\newtheorem{prop}[subsubsection]{Proposition} 
+%\newtheorem*{prop}{Proposition} 
+%\newtheorem*{lem}{Lemma}
+%\newtheorem*{klem}{Key Lemma}
+%\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+%\newtheorem{defn}[subsubsection]{Definition}
+\newtheorem*{defn}{Definition} 
+\newtheorem{prob}[thm]{Problem}
+%\newtheorem{que}[subsubsection]{Question}
+
+\theoremstyle{myrmk} 
+%\newtheorem{rmk}[subsubsection]{Remark}
+\newtheorem*{rmk}{Remark}
+%\newtheorem{note}[subsubsection]{Note} 
+\newtheorem*{ex}{Example}
+
+\newcommand{\nc}{\newcommand} 
+\nc{\on}{\operatorname}
+\nc{\rnc}{\renewcommand} 
+
+\rnc{\setminus}{\smallsetminus} 
+
+\nc{\wt}{\widetilde}
+\nc{\wh}{\widehat} 
+\nc{\ol}{\overline} 
+
+\nc{\Frob}{\on{Frob}}
+\nc{\Gal}{\on{Gal}}
+
+\nc{\BN}{\mathbb{N}}
+\nc{\BZ}{\mathbb{Z}}
+\nc{\BQ}{\mathbb{Q}}
+\nc{\BR}{\mathbb{R}}
+\nc{\BC}{\mathbb{C}}
+
+\nc{\id}{\on{id}}
+\nc{\Id}{\on{Id}}
+\nc{\Tr}{\on{Tr}}
+
+\nc{\la}{\langle}
+\nc{\ra}{\rangle} 
+\nc{\lV}{\lVert}
+\nc{\rV}{\rVert}
+\nc{\mb}{\mathbf}
+\nc{\mf}{\mathfrak}
+%\nc{\cur}{\mathscr}
+\nc{\mc}{\mathscr}
+
+\nc{\ira}{\hookrightarrow}
+\nc{\hra}{\hookrightarrow}
+\nc{\sra}{\twoheadrightarrow} 
+
+\rnc{\Re}{\on{Re}}
+
+\nc{\coker}{\on{coker}}
+\nc{\End}{\on{End}}
+\rnc{\Im}{\on{Im}}
+%\rnc{\Re}{\on{Re}}
+
+\nc{\Hom}{\on{Hom}}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage{marginnote}
+\nc{\acts}{\curvearrowright}
+
+\nc{\Mat}{\on{Mat}}
+
+\newenvironment{cd}{\begin{equation*}\begin{tikzcd}}{\end{tikzcd}\end{equation*}\ignorespacesafterend}
+
+\nc{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\nc{\e}[1]{\begin{align*} #1 \end{align*}}
+
+\usepackage[margin=1in]{geometry}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+%\renewcommand*{\arraystretch}{1.4}
+
+\setlength{\parskip}{0.25cm}
+
+\title{Spring 18.06 - Week 5 Recitation} 
+\author{James Tao}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\fancyhead[L]{James Tao}
+\fancyhead[C]{Spring 18.06 -- Week 5 Recitation}
+\fancyhead[R]{Mar.\ 2, 2020}
+\fancyfoot[C]{}
+
+
+\begin{document}
+	\thispagestyle{fancy}
+	
+	Topic: four subspaces associated to a matrix. 
+	
+	\begin{enumerate}[label=(\arabic*), itemsep = 0.6in]
+		\item Let $A$ be an $n \times n$ invertible matrix. Then $\on{col}(A) = \BR^n$ and $\on{null}(A) = \{0\}$. 
+		\item Let $A$ and $B$ be matrices such that $A$ is invertible and $AB$ makes sense. Then 
+		\e{
+			\on{null}(AB) &= \on{null}(B) \\
+			\on{col}(AB) &= \{Ax \text{ for } x \in \on{col}(B)\} \\
+			\on{rank}(AB) &= \on{rank}(B). 
+		} 
+		\item Let $A$ and $B$ be matrices such that $A$ is invertible and $BA$ makes sense. Then 
+		\e{
+			\on{col}(BA) &= \on{col}(B) \\
+			\on{null}(BA) &= \{A^{-1}x \text{ for } x \in \on{null}(B)\} \\
+			\on{rank}(BA) &= \on{rank}(B). 
+		} 
+		\item Let $A$ be an $n \times n$ invertible matrix. Let $r \le n$, and let $B$ be the $n \times r$ matrix built from the first $r$ columns of $A$. Then 
+		\[
+			B = A\left( \begin{array}{c} \on{Id}_{r \times r} \\ \hline 0_{(n-r) \times r}\end{array} \right). 
+		\]
+		Use (2) to deduce $\on{null}(B) = 0$ and $\on{rank}(B) = r$. 
+		\item Let $A$ be an $n \times n$ invertible matrix. Let $r \le n$, and let $B$ be the $r \times n$ matrix built from the first $r$ rows of $A$. Then 
+		\[
+			B = \left( \begin{array}{c|c} \on{Id}_{r \times r} & 0_{(n-r) \times r}\end{array} \right) A. 
+		\]
+		Use (3) to deduce $\on{col}(B) = \BR^n$ and $\on{null}(B)$ is the span of the last $(n-r)$ columns of $A^{-1}$. 
+		\item Let $A$ be an $n \times m$ matrix, and fix an integer $r \le n, m$.  Assume that $A = EFG$ where $E$ is an $n \times r$ matrix arising from the construction in (4), $F$ is an invertible $r \times r$ matrix, and $G$ is an $r \times m$ matrix arising from the construction in (5). Then 
+		\e{
+			\on{col}(A) &= \on{col}(E) \\
+			\on{rank}(A) &= r \\
+			\on{null}(A) &= \on{null}(G). 
+		}
+		\item Suppose $P$ is a square matrix such that $P^2 = P$. Then $b \in \on{col}(P)$ if and only if $Pb = b$. 
+		\item Let $Q$ be an orthogonal matrix. Then $b \in \on{col}(Q)$ if and only if $QQ^\top b = b$. 
+		\item Let $A = QR$ be a $QR$ decomposition (where $R$ is invertible). Then $b \in \on{col}(A)$ if and only if $Q Q^\top b = b$. 
+		\item\footnote{Thanks to Sungwoo for this problem idea.} Let $A = U\Sigma V^\top$ be a rank-$r$ SVD. Then $b \in \on{col}(A)$ if and only if $UU^\top b = b$. 
+		\item Determine the column space, null space, and rank of the matrix 
+		\[
+			A = \begin{pmatrix}
+			1 & 0 & 0 \\ 2 & 1 & 0 \\ 5 & 3 & 1
+			\end{pmatrix}
+			\begin{pmatrix}
+			1 & 4 & 2 & 3 \\ 0 & 0 & 1 & 5 \\ 0 & 0 & 0 & 0
+			\end{pmatrix}. 
+		\]
+		\item Determine the column space, null space, and rank of the matrix 
+		\[
+			A = \begin{pmatrix}
+			\frac{1}{\sqrt2} & \frac{1}{\sqrt2}  & 0 \\ 
+			\frac{1}{\sqrt2} & -\frac{1}{\sqrt2}  & 0 \\
+			0 & 0 & 0 \\
+			0 & 0 & 1 
+			\end{pmatrix} \begin{pmatrix}
+			1 & 2 & 3 \\ 
+			0 & 6 & 8 \\
+			0 & 0 & 7
+			\end{pmatrix}. 
+		\]
+		
+		\item Consider the following full SVD of a matrix:  
+		\[
+			A = \begin{pmatrix}
+			\frac{1}{\sqrt2} & \frac{1}{\sqrt2}  & 0 \\ 
+			\frac{1}{\sqrt2} & -\frac{1}{\sqrt2}  & 0 \\
+			0 & 0 & 1
+			\end{pmatrix}
+			\begin{pmatrix}
+				6 & 0 & 0 \\
+				0 & 1 & 0 \\
+				0 & 0 & 0 
+			\end{pmatrix}
+			\begin{pmatrix}
+				0 & 0 & 1 \\
+				0 & 1 & 0 \\
+				1 & 0 & 0 
+			\end{pmatrix}
+		\]
+		Write down the rank-$r$ SVD for this matrix, and determine its column space, null space, and rank.
+		\item Any $n \times m$ matrix can be expressed as the sum of (at most) $\on{min}(m, n)$ rank-1 matrices. 
+	\end{enumerate}
+	
+\end{document} 
