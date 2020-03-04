@@ -93,7 +93,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 || W  |2/26|  | Additional Review Wednesday 7-8:30pm 4-270|
 || H  |2/27|  | Additional Review Thursday 7-8:30pm 4-270|
 |12| F |2/28| Exam 1 Walker 11:05-11:55 | Material up to Lecture 9. The 2020 Class spent more time on LU and Gaussian Elimination.  We have not yet covered spaces,projections etc. They are coming. [HW4][HW4] released tonight due Friday|
-|13| M |3/2| Fundamental Subspaces, Full Form of the SVD | <ul> <li> [Lecture 13 slides][13] We use the SVD so this class will not use echelon forms (never used anymore) nor "free variables" nor "pivot variables" </li> [SVD Machine Learning Python link][https://machinelearningmastery.com/singular-value-decomposition-for-machine-learning/#:~:text=Perhaps%20the%20most%20known%20and,methods%2C%20such%20as%20the%20eigendecomposition]</li> </ul>|
+|13| M |3/2| Fundamental Subspaces, Full Form of the SVD | <ul> <li> [Lecture 13 slides][13] We use the SVD so this class will not use echelon forms (never used anymore) nor "free variables" nor "pivot variables" </li> <li>[SVD Machine Learning Python link][https://machinelearningmastery.com/singular-value-decomposition-for-machine-learning/#:~:text=Perhaps%20the%20most%20known%20and,methods%2C%20such%20as%20the%20eigendecomposition]</li> </ul>|
 |14| W |3/4| Projections, Orthogonal Subspaces,  HW5 released |
 |15| F |3/6| Basis, Span, Independence, Complete Solution to Ax=b | HW4 due (extended date), Add Date |
 |16| M |3/9|
