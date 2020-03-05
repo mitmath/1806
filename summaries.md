@@ -69,9 +69,9 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [Q1]:https://github.com/mitmath/1806/raw/master/psets%20spring%202020/quiz1-1806-S20.pdf
 [Q1Sol]:https://github.com/mitmath/1806/raw/master/psets%20spring%202020/quiz1solution-1806-S20.pdf
 
-|Homeworks|||||
-|--|--|--|--|--|
-| <ul><li> [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit) </li><li> [HW0 Solutions](https://docs.google.com/document/d/1U3SUNlnFdgyYqVEn8PB9ECvARMiQ8dw-UAOuojnzHXE/edit?usp=sharing)| <ul> <li> [HW1](https://docs.google.com/document/d/1K2WtQb9JCJT6YjEz3K-hqb99hj2L_Bp-19nJLKGRF9c/edit)  </li>  <li> [HW1 Solutions][HW1S] </li> </ul> | <ul> <li>[HW2][HW2]  </li> <li> [HW2 Solutions][HW2S] </li></ul>| <ul> <li> [HW3][HW3]  </li> <li> [HW3 Solutions][HW3S] </ul>| [HW4 due Friday night March 6][HW4] |
+|Homeworks||||||
+|--|--|--|--|--|--|
+| <ul><li> [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit) </li><li> [HW0 Solutions](https://docs.google.com/document/d/1U3SUNlnFdgyYqVEn8PB9ECvARMiQ8dw-UAOuojnzHXE/edit?usp=sharing)| <ul> <li> [HW1](https://docs.google.com/document/d/1K2WtQb9JCJT6YjEz3K-hqb99hj2L_Bp-19nJLKGRF9c/edit)  </li>  <li> [HW1 Solutions][HW1S] </li> </ul> | <ul> <li>[HW2][HW2]  </li> <li> [HW2 Solutions][HW2S] </li></ul>| <ul> <li> [HW3][HW3]  </li> <li> [HW3 Solutions][HW3S] </ul>| [HW4 due Friday night March 6][HW4] | [Hw5 due Wednesday night March 11][Hw5]|
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
@@ -94,7 +94,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 || H  |2/27|  | Additional Review Thursday 7-8:30pm 4-270|
 |12| F |2/28| Exam 1 Walker 11:05-11:55 | Material up to Lecture 9. The 2020 Class spent more time on LU and Gaussian Elimination.  We have not yet covered spaces,projections etc. They are coming. [HW4][HW4] released tonight due Friday|
 |13| M |3/2| Fundamental Subspaces, Full Form of the SVD | <ul> <li> [Lecture 13 slides][13] We use the SVD so this class will not use echelon forms (never used anymore) nor "free variables" nor "pivot variables" </li> <li>[SVD Machine Learning Python link](https://machinelearningmastery.com/singular-value-decomposition-for-machine-learning/#:~:text=Perhaps%20the%20most%20known%20and,methods%2C%20such%20as%20the%20eigendecomposition)</li> </ul>|
-|14| W |3/4| Nullspace,  HW5 released | <ul> <li> [SVD Computation Notebook][svdcn] </li> <li> Strang Section 3.2 covers nullspaces differenty from our class. Good to know the definition (p. 135) and perhaps to read up on rank one matrices (p140) but not anything about pivots, echelon forms, free variables, etc. </li>
+|14| W |3/4| Nullspace,  [HW5 released][HW5] | <ul> <li> [SVD Computation Notebook][svdcn] </li> <li> Strang Section 3.2 covers nullspaces differenty from our class. Good to know the definition (p. 135) and perhaps to read up on rank one matrices (p140) but not anything about pivots, echelon forms, free variables, etc. </li>
 <li> The four fundamental subspaces are defined on p. 181, but then again the book deviates into other directions. </li> </ul> |
 |15| F |3/6| Basis, Span, Independence, Complete Solution to Ax=b | <ul><li> HW4 due (extended date),</li><li>  Add Date  </li> <li> Strang Chapter 3.4 </li></ul>|
 |16| M |3/9|
@@ -138,6 +138,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [HW3]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset3%2018.06%20%20Spring%202020.ipynb
 [HW3S]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/8534b2579d07a162c25626fb0a0ed3d44bb2df8e/psets%20spring%202020/Pset3%2018.06%20%20Spring%202020%20sols.ipynb
 [HW4]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset4%2018.06%20Spring%202020.ipynb
+[HW5]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset%205%2018.06%202020.ipynb
 
 [svdimagedemo]:http://timbaumann.info/svd-image-compression-demo/
 [svdgolub]:https://www.mathworks.com/company/newsletters/articles/professor-svd.html
