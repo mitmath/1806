@@ -94,7 +94,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 || H  |2/27|  | Additional Review Thursday 7-8:30pm 4-270|
 |12| F |2/28| Exam 1 Walker 11:05-11:55 | Material up to Lecture 9. The 2020 Class spent more time on LU and Gaussian Elimination.  We have not yet covered spaces,projections etc. They are coming. [HW4][HW4] released tonight due Friday|
 |13| M |3/2| Fundamental Subspaces, Full Form of the SVD | <ul> <li> [Lecture 13 slides][13] We use the SVD so this class will not use echelon forms (never used anymore) nor "free variables" nor "pivot variables" </li> <li>[SVD Machine Learning Python link](https://machinelearningmastery.com/singular-value-decomposition-for-machine-learning/#:~:text=Perhaps%20the%20most%20known%20and,methods%2C%20such%20as%20the%20eigendecomposition)</li> </ul>|
-|14| W |3/4| Projections, Orthogonal Subspaces,  HW5 released |
+|14| W |3/4| Projections, Orthogonal Subspaces,  HW5 released | <ul> <li> [SVD Computation Notebook][svdcn] </li> </ul> |
 |15| F |3/6| Basis, Span, Independence, Complete Solution to Ax=b | HW4 due (extended date), Add Date |
 |16| M |3/9|
 |17| W |3/11|  HW5 due, HW6 released |
@@ -145,6 +145,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [svd_genome]:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC27718/   
 [svd_int]:https://www.quora.com/What-is-an-intuitive-explanation-of-the-singular-values-from-an-SVD
 [svdimagejulia]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/Compressing%20an%20Image%20with%20the%20svd.ipynb
+[svdcn]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/1198f7ca51d3a99cf842866d3ed95ea153581cc8/materials/rank-r%20and%20full%20svds.ipynb
 
 
 <!-- (Below still under construction.)
