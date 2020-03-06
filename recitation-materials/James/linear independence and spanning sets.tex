@@ -1,0 +1,271 @@
+\documentclass[10pt]{amsart} 
+
+
+\usepackage{amsmath, amssymb, mathrsfs} 
+
+\usepackage[mathscr]{euscript} 
+ 
+\newlength{\mylength}
+\setlength{\mylength}{0.25cm}
+
+\usepackage{enumitem}
+\setlist{listparindent=\parindent, itemsep=0cm, parsep=\mylength, topsep=0cm}
+
+\usepackage[final]{todonotes}
+\usepackage[final]{showkeys} 
+
+\usepackage[breaklinks=true]{hyperref} 
+\usepackage{comment} 
+
+\usepackage{url}
+
+\usepackage{tikz-cd}
+
+\usepackage{amsthm}
+
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \topsep6\p@\@plus6\p@\relax
+	\noindent\emph{#1.} 
+	\ignorespaces
+}{%
+\popQED\endtrivlist\@endpefalse
+}
+\makeatother
+
+\newtheoremstyle{mythm}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{\itshape}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\bfseries}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\newtheoremstyle{myrmk}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\itshape}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\theoremstyle{mythm} 
+%\newtheorem{thm}[subsubsection]{Theorem}
+%\newtheorem*{claim}{Claim}
+%\newtheorem*{thm}{Theorem} 
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma} 
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{prop}[thm]{Proposition}
+%\newtheorem*{mthm}{Main Theorem}
+
+%\newtheorem{prop}[subsubsection]{Proposition} 
+%\newtheorem*{prop}{Proposition} 
+%\newtheorem*{lem}{Lemma}
+%\newtheorem*{klem}{Key Lemma}
+%\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+%\newtheorem{defn}[subsubsection]{Definition}
+\newtheorem*{defn}{Definition} 
+\newtheorem{prob}[thm]{Problem}
+%\newtheorem{que}[subsubsection]{Question}
+
+\theoremstyle{myrmk} 
+%\newtheorem{rmk}[subsubsection]{Remark}
+\newtheorem*{rmk}{Remark}
+%\newtheorem{note}[subsubsection]{Note} 
+\newtheorem*{ex}{Example}
+
+\newcommand{\nc}{\newcommand} 
+\nc{\on}{\operatorname}
+\nc{\rnc}{\renewcommand} 
+
+\rnc{\setminus}{\smallsetminus} 
+
+\nc{\wt}{\widetilde}
+\nc{\wh}{\widehat} 
+\nc{\ol}{\overline} 
+
+\nc{\Frob}{\on{Frob}}
+\nc{\Gal}{\on{Gal}}
+
+\nc{\BN}{\mathbb{N}}
+\nc{\BZ}{\mathbb{Z}}
+\nc{\BQ}{\mathbb{Q}}
+\nc{\BR}{\mathbb{R}}
+\nc{\BC}{\mathbb{C}}
+
+\nc{\id}{\on{id}}
+\nc{\Id}{\on{Id}}
+\nc{\Tr}{\on{Tr}}
+
+\nc{\la}{\langle}
+\nc{\ra}{\rangle} 
+\nc{\lV}{\lVert}
+\nc{\rV}{\rVert}
+\nc{\mb}{\mathbf}
+\nc{\mf}{\mathfrak}
+%\nc{\cur}{\mathscr}
+\nc{\mc}{\mathscr}
+
+\nc{\ira}{\hookrightarrow}
+\nc{\hra}{\hookrightarrow}
+\nc{\sra}{\twoheadrightarrow} 
+
+\rnc{\Re}{\on{Re}}
+
+\nc{\coker}{\on{coker}}
+\nc{\End}{\on{End}}
+\rnc{\Im}{\on{Im}}
+%\rnc{\Re}{\on{Re}}
+
+\nc{\Hom}{\on{Hom}}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage{marginnote}
+\nc{\acts}{\curvearrowright}
+
+\nc{\Mat}{\on{Mat}}
+
+\newenvironment{cd}{\begin{equation*}\begin{tikzcd}}{\end{tikzcd}\end{equation*}\ignorespacesafterend}
+
+\nc{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\nc{\e}[1]{\begin{align*} #1 \end{align*}}
+
+\usepackage[margin=1in]{geometry}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+%\renewcommand*{\arraystretch}{1.4}
+
+\setlength{\parskip}{0.25cm}
+
+\newenvironment{myproof}{\color{blue}\begin{proof}}{\end{proof}} 
+
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\fancyhead[L]{James Tao}
+\fancyhead[C]{18.06 -- Linear independence, spans, and bases}
+\fancyhead[R]{Mar.\ 6, 2020}
+\fancyfoot[C]{}
+
+\newcounter{part-count}
+\setcounter{part-count}{0}
+
+\newenvironment{me}{\begin{enumerate}\setcounter{enumi}{\value{part-count}}}{\setcounter{part-count}{\value{enumi}}\end{enumerate}}
+
+
+\begin{document}
+	\thispagestyle{fancy}
+
+	Let $V$ be a vector space. For any nonempty subset $S \subseteq V$, we make the following definitions: 
+	\begin{me}
+		\item If every element of $V$ can be expressed as a linear combination of elements from $S$ in \underline{at most} one way, then $S$ is \emph{linearly independent}.\footnote{If $S$ is not linearly independent, we say that it is \emph{linearly dependent}. It would be more grammatically correct to say that the \emph{elements} of $S$ are linearly dependent or are linearly independent.} 
+		\item If every element of $V$ can be expressed as a linear combination of elements from $S$ in \underline{at least} one way, then $S$ \emph{spans} $V$. We also say that $S$ is a \emph{spanning subset} of $V$. 
+		\item \label{3} If both are true, then $S$ is a \emph{basis} of $V$. 
+		\item $V$ is \emph{finite-dimensional} if it has a finite spanning subset. 
+		
+		In this case, any two bases of $V$ have the same (finite) size. This number is called the \emph{dimension} of $V$, denoted $\on{dim}(V)$. Any vector subspace of a finite-dimensional vector space is finite-dimensional. 
+		\item The \emph{span} of $S$, denoted $\on{span}(S)$, is the subset of all linear combinations of elements of $S$. It is a vector subspace of $V$. 
+	\end{me}
+	Key facts about linear independence: 
+	\begin{me}
+		\item If $S \subseteq T$ and $T$ is linearly independent, then $S$ is linearly independent. 
+		\item Any linearly independent subset of $V$ is contained in a basis of $V$. 
+		\label{99} 
+		
+		Therefore, if $S$ is linearly independent, then $|S| \le \dim(V)$. 
+		\item \label{9} The following statements about a nonempty subset $S \subseteq V$ are equivalent:  
+		\begin{enumerate}[label=(\alph*)]
+			\item $S$ is linearly independent. 
+			\item Any nontrivial linear combination of elements in $S$ is nonzero. 
+			\item $\dim(\on{span}(S)) = |S|$. 
+			\item The span of any proper subset of $S$ is smaller than $\on{span}(S)$. 
+			\item $S$ is a basis for the vector space $\on{span}(S)$. 
+		\end{enumerate}
+		\item If $S$ is linearly independent, and $v \in V$ is a vector, then $S \cup \{v\}$ is linearly independent if and only if $v \notin \on{span}(S)$. In this case, $\dim(\on{span}(S \cup \{v\})) = \dim(\on{span}(S)) +1$. 
+	\end{me}
+	Key facts about spanning subsets: 
+	\begin{me}
+		\item If $S \subseteq T$ and $S$ spans, then $T$ spans. 
+		\item Any spanning subset of $V$ contains a basis of $V$. 
+		 \label{13} 
+		 
+		 Therefore, if $S$ spans, then $|S| \ge \dim (V)$. 
+	\end{me}
+	Key facts about bases: 
+	\begin{me}
+		\item The following statements about a nonempty subset $S \subseteq V$ are equivalent:  
+		\begin{enumerate}[label=(\alph*)]
+			\item $S$ is a basis. 
+			\item $S$ is a linearly independent subset of size $\dim (V)$. 
+			
+			(By~(\ref{99}), this is the largest possible size for a linearly independent subset.) 
+			\item $S$ is a spanning subset of size $\dim(V)$. 
+			
+			(By~(\ref{13}), this is the smallest possible size for a spanning subset.) 
+		\end{enumerate} 
+		\item Let $\{v_1, \ldots, v_n\}$ be a basis. Then every element of $V$ can be expressed uniquely as a linear combination of $v_1, \ldots, v_n$, so there is a bijection $V \simeq \BR^n$ defined as follows: 
+		\[
+		(\lambda_1, \ldots, \lambda_n) \text{ in } \BR^n \qquad \text{ matches up with } \qquad \lambda_1v_1 + \cdots + \lambda_n v_n \text{ in } V,
+		\]
+		for any $\lambda_1, \ldots, \lambda_n \in \BR$. 
+	\end{me}
+	These concepts are related to the column space and null space of matrices. Let $A$ be an $n \times m$ matrix, and let $v_1, \ldots, v_m \in \BR^n$ be the columns of $A$. 
+	\begin{me}
+		\item \label{14} $\on{span}(\{v_1, \ldots, v_m\}) = \on{col}(A)$. 
+		\begin{myproof}
+			By definition, $\on{col}(A) \subseteq \BR^n$ is the set of all linear combinations of the columns of $A$, which are the $v_1, \ldots, v_m$. 
+		\end{myproof}
+		\item \label{15} 
+		The following are equivalent: 
+		\begin{enumerate}[label=(\alph*)]
+			\item $v_1, \ldots, v_m$ are linearly independent. 
+			\item $\on{rank}(A) = m$. 
+			\item $\on{null}(A) = \{0\}$. 
+		\end{enumerate} 
+		\begin{myproof}
+			We have 
+			\e{
+				\on{rank}(A) &= \dim(\on{col}(A)) \\
+				&= \dim(\on{span}(\{v_1, \ldots, v_m\}))
+			} 
+			by (\ref{14}). Applying the statement (a) $\Leftrightarrow$ (c) in (\ref{9}), we conclude that $v_1, \ldots, v_m$ are linearly independent if and only if this number equals $m$. 
+		\end{myproof} 
+		\item \label{16} The following are equivalent: 
+		\begin{enumerate}[label=(\alph*)]
+			\item $v_1, \ldots, v_m$ are a spanning subset of $\BR^n$.  
+			\item $\on{rank}(A) = n$. 
+			\item $\on{col}(A) = \BR^n$. 
+		\end{enumerate}
+		\begin{myproof}
+			$\on{rank}(A) = n$ if and only if $\on{col}(A) = \BR^n$. Thus the statement follows from~(\ref{14}). 
+		\end{myproof}
+		\item $v_1, \ldots, v_m$ are a basis if and only if $A$ is invertible. 
+		\begin{myproof}
+			By (\ref{3}), (\ref{14}), and (\ref{15}), we see that $v_1, \ldots, v_m$ are a basis if and only if $A$ is square and $\on{rank}(A) = n$. But this is true if and only if $A$ is invertible, as can be seen from the SVD. 
+		\end{myproof}
+	\end{me}
+	\noindent Orthonormality implies linear independence: 
+	\begin{me}
+		\item If $v_1, \ldots, v_m \in \BR^n$ are an orthonormal collection of vectors, then they are linearly independent. 
+		\begin{myproof}
+			The $v_1, \ldots, v_m$ are the columns of an $n \times m$ orthogonal matrix $Q$. We've seen that $\on{rank}(Q) = m$, so the claim follows from (\ref{15}).  
+		\end{myproof}
+	\end{me}
+	
+	
+\end{document} 
