@@ -1,0 +1,221 @@
+\documentclass[10pt]{amsart} 
+
+
+\usepackage{amsmath, amssymb, mathrsfs} 
+
+\usepackage[mathscr]{euscript} 
+ 
+\newlength{\mylength}
+\setlength{\mylength}{0.25cm}
+
+\usepackage{enumitem}
+\setlist{listparindent=\parindent, itemsep=0cm, parsep=\mylength, topsep=0cm}
+
+\usepackage[final]{todonotes}
+\usepackage[final]{showkeys} 
+
+\usepackage[breaklinks=true]{hyperref} 
+\usepackage{comment} 
+
+\usepackage{url}
+
+\usepackage{tikz-cd}
+
+\usepackage{amsthm}
+
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \topsep6\p@\@plus6\p@\relax
+	\noindent\emph{#1.} 
+	\ignorespaces
+}{%
+\popQED\endtrivlist\@endpefalse
+}
+\makeatother
+
+\newtheoremstyle{mythm}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{\itshape}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\bfseries}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\newtheoremstyle{myrmk}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\itshape}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\theoremstyle{mythm} 
+%\newtheorem{thm}[subsubsection]{Theorem}
+%\newtheorem*{claim}{Claim}
+%\newtheorem*{thm}{Theorem} 
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma} 
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{prop}[thm]{Proposition}
+%\newtheorem*{mthm}{Main Theorem}
+
+%\newtheorem{prop}[subsubsection]{Proposition} 
+%\newtheorem*{prop}{Proposition} 
+%\newtheorem*{lem}{Lemma}
+%\newtheorem*{klem}{Key Lemma}
+%\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+%\newtheorem{defn}[subsubsection]{Definition}
+\newtheorem*{defn}{Definition} 
+\newtheorem{prob}[thm]{Problem}
+%\newtheorem{que}[subsubsection]{Question}
+
+\theoremstyle{myrmk} 
+%\newtheorem{rmk}[subsubsection]{Remark}
+\newtheorem*{rmk}{Remark}
+%\newtheorem{note}[subsubsection]{Note} 
+\newtheorem*{ex}{Example}
+
+\newcommand{\nc}{\newcommand} 
+\nc{\on}{\operatorname}
+\nc{\rnc}{\renewcommand} 
+
+\rnc{\setminus}{\smallsetminus} 
+
+\nc{\wt}{\widetilde}
+\nc{\wh}{\widehat} 
+\nc{\ol}{\overline} 
+
+\nc{\Frob}{\on{Frob}}
+\nc{\Gal}{\on{Gal}}
+
+\nc{\BN}{\mathbb{N}}
+\nc{\BZ}{\mathbb{Z}}
+\nc{\BQ}{\mathbb{Q}}
+\nc{\BR}{\mathbb{R}}
+\nc{\BC}{\mathbb{C}}
+
+\nc{\id}{\on{id}}
+\nc{\Id}{\on{Id}}
+\nc{\Tr}{\on{Tr}}
+
+\nc{\la}{\langle}
+\nc{\ra}{\rangle} 
+\nc{\lV}{\lVert}
+\nc{\rV}{\rVert}
+\nc{\mb}{\mathbf}
+\nc{\mf}{\mathfrak}
+%\nc{\cur}{\mathscr}
+\nc{\mc}{\mathscr}
+
+\nc{\ira}{\hookrightarrow}
+\nc{\hra}{\hookrightarrow}
+\nc{\sra}{\twoheadrightarrow} 
+
+\rnc{\Re}{\on{Re}}
+
+\nc{\coker}{\on{coker}}
+\nc{\End}{\on{End}}
+\rnc{\Im}{\on{Im}}
+%\rnc{\Re}{\on{Re}}
+
+\nc{\Hom}{\on{Hom}}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage{marginnote}
+\nc{\acts}{\curvearrowright}
+
+\nc{\Mat}{\on{Mat}}
+
+\newenvironment{cd}{\begin{equation*}\begin{tikzcd}}{\end{tikzcd}\end{equation*}\ignorespacesafterend}
+
+\nc{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\nc{\e}[1]{\begin{align*} #1 \end{align*}}
+
+\usepackage[margin=1in]{geometry}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+%\renewcommand*{\arraystretch}{1.4}
+
+\setlength{\parskip}{0.25cm}
+
+\newenvironment{myproof}{\color{blue}\begin{proof}}{\end{proof}} 
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\fancyhead[L]{James Tao}
+\fancyhead[C]{18.06 -- Proof of existence of SVD}
+\fancyhead[R]{Mar.\ 6, 2020}
+\fancyfoot[C]{}
+
+
+\begin{document}
+	\thispagestyle{fancy}
+	
+	{\color{blue} The material in this document will not be used or required in the class. } 
+	
+	Let $A$ be an $n \times m$ matrix. We prove that $A$ has a (full) SVD $A = U\Sigma V^\top$. 
+	
+	First, we reduce our problem to finding an orthonormal basis of $\BR^m$ whose property of orthogonality is preserved under the transformation defined by $A$. 
+	
+	\begin{lem}
+		Assume there exists an orthonormal basis $v_1, \ldots, v_m \in \BR^m$ such that the vectors $Av_i$ are pairwise orthogonal, meaning that $(Av_i) \cdot (Av_j) = 0$ for all $i \neq j$. Then $A$ has an SVD. 
+	\end{lem}
+	\begin{proof}
+		Some of the $Av_i$'s may be zero. Reorder the $v_i$'s so that those ones come last. Hence, for some $r$, we may assume that 
+		\begin{itemize}
+			\item $Av_1, \ldots, Av_r$ are nonzero and of weakly decreasing length. 
+			\item $Av_{r+1}, \ldots, Av_m$ are zero. 
+		\end{itemize}
+		Let $V$ be the $m \times m$ orthogonal matrix built from $v_1, \ldots, v_m$. Let $\Sigma$ be the $n \times m$ diagonal matrix whose first $r$ diagonal entries are $\lVert Av_1\rVert, \ldots, \lVert Av_r\rVert$, and whose remaining entries are zero. Let $U$ be an $n \times n$ orthogonal matrix whose first $r$ columns are given by the orthonormal collection $\frac{1}{\lVert Av_1\rVert} Av_1, \ldots, \frac{1}{\lVert Av_r\rVert} Av_r$, and whose remaining columns are arbitrary. Then we have 
+		\[
+			Av_i = \lVert Av_i \rVert \, (i\text{-th column of } U)
+		\]
+		for all $i = 1, \ldots, m$. Therefore $AV = U \Sigma$, so $A = U \Sigma V^\top$, as desired. 
+	\end{proof}
+	
+	Next, we show that this `good' orthonormal basis exists. 
+	
+	\begin{lem} \label{l2} 
+		Let $v \in \BR^m$ be a unit vector which maximizes $\lVert Av \rVert^2$. Then, for any $w \in \BR^m$ such that $w \cdot v = 0$, we have $(Aw) \cdot (Av) = 0$. 
+	\end{lem}
+	\begin{proof}
+		The maximality property of $v$ implies that $t = 0$ is a global maximum of the function 
+		\[
+			f(t) = \left\lVert A\left( \tfrac{v + tw}{\lVert v + tw \rVert} \right) \right \rVert^2, 
+		\]
+		because $\frac{v + tw}{\lVert v + tw \rVert}$ is a unit vector. Therefore, $f'(0) = 0$. 
+		
+		This derivative is computed as follows. First, note that 
+		\e{
+			f(t) &= \tfrac{1}{\lVert v + tw \rVert^2} \, (v + tw)^\top A^\top A (v + tw) \\
+			&= \tfrac{1}{1 + t^2 \lVert w \rVert^2} \, \left( \lVert Av \rVert^2 + 2t\,  (Aw) \cdot (Av) + t^2\, \lVert Aw \rvert^2 \right) 
+		}
+		where we have used that $\lVert v \rVert = 1$ and $v \cdot w = 0$. By looking at the $t$ coefficient and ignoring higher powers of $t$, we see that $f'(0) = 2\, (Aw) \cdot (Av)$. Therefore $(Aw) \cdot (Av) = 0$, as desired. 		
+	\end{proof}
+	
+	\begin{lem}
+		Let $A$ be an $n \times m$ matrix. There exists an orthonormal basis $v_1, \ldots, v_m \in \BR^m$ such that the vectors $Av_i$ are pairwise orthogonal. 
+	\end{lem}
+	\begin{proof}
+		Proceed by induction on $m$. For the base case $m = 1$, just take $v_1$ to be any unit vector. 
+		
+		Assume $m \ge 2$. Let $v_m$ be a unit vector\footnote{Such a $v_m$ exists because any continuous function on a compact domain attains its maximum. Indeed, a unit vector $v$ varies on the unit sphere in $\BR^m$, which is compact, and the map $v \mapsto \lVert Av \rVert^2$ is continuous.}  which maximizes $\lVert Av_m \rVert^2$. Consider the $(m-1)$-dimensional subspace $W \subset \BR^m$ consisting of all vectors $w$ such that $w \cdot v = 0$. By choosing an orthonormal basis of $W$, we obtain an $m \times (m-1)$ orthogonal matrix $Q$ whose column space is $W$. Applying the inductive hypothesis to the $n \times (m-1)$ matrix $AQ$, we obtain orthonormal vectors $x_1, \ldots, x_{m-1} \in \BR^{m-1}$ such that the $AQx_i$ are pairwise orthogonal. Since $Q$ is an orthogonal matrix, the vectors $Qx_i$ are orthonormal. 
+		
+		Set $v_i = Qx_i$ for $i = 1, \ldots, m-1$. Then the $v_1, \ldots, v_{m-1}$ are orthonormal, and $Av_1, \ldots, Av_{m-1}$ are pairwise orthogonal. Since $v_1, \ldots, v_{m-1} \in W$ by construction, the set $v_1, \ldots, v_m$ is an orthonormal basis, and Lemma~\ref{l2} implies that $Av_m$ is orthogonal to the $Av_1, \ldots, Av_{m-1}$. Therefore $v_1, \ldots, v_m$ has the desired properties, so the inductive step is proved. 
+	\end{proof}
+	
+\end{document} 
