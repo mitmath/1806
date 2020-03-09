@@ -96,8 +96,8 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |13| M |3/2| Fundamental Subspaces, Full Form of the SVD | <ul> <li> [Lecture 13 slides][13] We use the SVD so this class will not use echelon forms (never used anymore) nor "free variables" nor "pivot variables" </li> <li>[SVD Machine Learning Python link](https://machinelearningmastery.com/singular-value-decomposition-for-machine-learning/#:~:text=Perhaps%20the%20most%20known%20and,methods%2C%20such%20as%20the%20eigendecomposition)</li> </ul>|
 |14| W |3/4| Nullspace,  [HW5 released][HW5] | <ul> <li> [SVD Computation Notebook][svdcn] </li> <li> Strang Section 3.2 covers nullspaces differenty from our class. Good to know the definition (p. 135) and perhaps to read up on rank one matrices (p140) but not anything about pivots, echelon forms, free variables, etc. </li><li> The four fundamental subspaces are defined on p. 181, but then again the book deviates into other directions. </li> </ul> |
 |15| F |3/6|  Independence | <ul><li>[Lecture 15 Slides][15]<li> HW4 due (extended date),</li><li>  Add Date  </li> <li> Strang Chapter 3.4 </li></ul>|
-|16| M |3/9| Span, Complete Solution to Ax=b |
-|17| W |3/11|  HW5 due, HW6 released |
+|16| M |3/9| Span, Data View of Rank |
+|17| W |3/11| Complete Solution to Ax=b | <ul> <li>  HW5 due, HW6 released  </li> <li> Completion of our svd based chapter 3 </li> </ul> |
 |18| F |3/13|
 |19| M |3/16|
 |20| W |3/18|  HW6 due |
