@@ -11,7 +11,9 @@
 
 Announcement:  Video lectures will be posted before 11am during class days for the remainder of the semester.  They will be publicly visible.
 They can be watched any time (they won't be live).
-Office hours will be held virtually.  Links will appear on this page.  
+Office hours will be held virtually.  Links will appear on this page.
+You can try out this [test video](https://video.odl.mit.edu/videos/0d941b4b60d24d44a80a8cabde91ebde/).
+Office hours may be with google hangouts.  
 
 
 # Welcome to the 18.06 Linear Algebra 2020 page
