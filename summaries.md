@@ -7,6 +7,11 @@
 <!-- [VMLS text](http://vmls-book.stanford.edu/vmls.pdf) | -->
 <!-- [VMLS Julia Companion](http://vmls-book.stanford.edu/vmls-julia-companion.pdf) | -->
 
+# 18.06 Goes Online starting Wednesday March 11
+
+Announcement:  Video lectures will be posted before 11am during class days for the remainder of the semester.  They will be publicly visible.
+Office hours will be held virtually.  Links will appear on this page.
+
 
 # Welcome to the 18.06 Linear Algebra 2020 page
 
