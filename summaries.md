@@ -13,7 +13,7 @@ Announcement:  Video lectures will be posted before 11am during class days for t
 They can be watched any time (they won't be live).
 Office hours will be held virtually.  Links will appear on this page.
 You can try out this [test video](https://video.odl.mit.edu/videos/0d941b4b60d24d44a80a8cabde91ebde/).
-Office hours may be with google hangouts.  
+Office hours may be with google hangouts.  Stay tuned for a  possible time change.  HW5 is now due March 18.
 
 
 # Welcome to the 18.06 Linear Algebra 2020 page
@@ -79,7 +79,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 
 |Homeworks||||||
 |--|--|--|--|--|--|
-| <ul><li> [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit) </li><li> [HW0 Solutions](https://docs.google.com/document/d/1U3SUNlnFdgyYqVEn8PB9ECvARMiQ8dw-UAOuojnzHXE/edit?usp=sharing)| <ul> <li> [HW1](https://docs.google.com/document/d/1K2WtQb9JCJT6YjEz3K-hqb99hj2L_Bp-19nJLKGRF9c/edit)  </li>  <li> [HW1 Solutions][HW1S] </li> </ul> | <ul> <li>[HW2][HW2]  </li> <li> [HW2 Solutions][HW2S] </li></ul>| <ul> <li> [HW3][HW3]  </li> <li> [HW3 Solutions][HW3S] </ul>| [HW4 due Friday night March 6][HW4] | [Hw5 due Wednesday night March 11][Hw5]|
+| <ul><li> [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit) </li><li> [HW0 Solutions](https://docs.google.com/document/d/1U3SUNlnFdgyYqVEn8PB9ECvARMiQ8dw-UAOuojnzHXE/edit?usp=sharing)| <ul> <li> [HW1](https://docs.google.com/document/d/1K2WtQb9JCJT6YjEz3K-hqb99hj2L_Bp-19nJLKGRF9c/edit)  </li>  <li> [HW1 Solutions][HW1S] </li> </ul> | <ul> <li>[HW2][HW2]  </li> <li> [HW2 Solutions][HW2S] </li></ul>| <ul> <li> [HW3][HW3]  </li> <li> [HW3 Solutions][HW3S] </ul>| [HW4 due Friday night March 6][HW4] | [Hw5 due Wednesday night March 11 (New due date March 18)][Hw5]|
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
