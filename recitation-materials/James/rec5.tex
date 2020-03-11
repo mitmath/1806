@@ -1,0 +1,293 @@
+\documentclass[10pt]{amsart} 
+
+
+\usepackage{amsmath, amssymb, mathrsfs} 
+
+\usepackage[mathscr]{euscript} 
+ 
+\newlength{\mylength}
+\setlength{\mylength}{0.25cm}
+
+\usepackage{enumitem}
+\setlist{listparindent=\parindent, itemsep=0cm, parsep=\mylength, topsep=0cm}
+
+\usepackage[final]{todonotes}
+\usepackage[final]{showkeys} 
+
+\usepackage[breaklinks=true]{hyperref} 
+\usepackage{comment} 
+
+\usepackage{url}
+
+\usepackage{tikz-cd}
+
+\usepackage{amsthm}
+
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \topsep6\p@\@plus6\p@\relax
+	\noindent\emph{#1.} 
+	\ignorespaces
+}{%
+\popQED\endtrivlist\@endpefalse
+}
+\makeatother
+
+\newtheoremstyle{mythm}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{\itshape}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\bfseries}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\newtheoremstyle{myrmk}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\itshape}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\theoremstyle{mythm} 
+%\newtheorem{thm}[subsubsection]{Theorem}
+%\newtheorem*{claim}{Claim}
+%\newtheorem*{thm}{Theorem} 
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma} 
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{prop}[thm]{Proposition}
+%\newtheorem*{mthm}{Main Theorem}
+
+%\newtheorem{prop}[subsubsection]{Proposition} 
+%\newtheorem*{prop}{Proposition} 
+%\newtheorem*{lem}{Lemma}
+%\newtheorem*{klem}{Key Lemma}
+%\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+%\newtheorem{defn}[subsubsection]{Definition}
+\newtheorem*{defn}{Definition} 
+\newtheorem{prob}[thm]{Problem}
+%\newtheorem{que}[subsubsection]{Question}
+
+\theoremstyle{myrmk} 
+%\newtheorem{rmk}[subsubsection]{Remark}
+\newtheorem*{rmk}{Remark}
+%\newtheorem{note}[subsubsection]{Note} 
+\newtheorem*{ex}{Example}
+
+\newcommand{\nc}{\newcommand} 
+\nc{\on}{\operatorname}
+\nc{\rnc}{\renewcommand} 
+
+\rnc{\setminus}{\smallsetminus} 
+
+\nc{\wt}{\widetilde}
+\nc{\wh}{\widehat} 
+\nc{\ol}{\overline} 
+
+\nc{\Frob}{\on{Frob}}
+\nc{\Gal}{\on{Gal}}
+
+\nc{\BN}{\mathbb{N}}
+\nc{\BZ}{\mathbb{Z}}
+\nc{\BQ}{\mathbb{Q}}
+\nc{\BR}{\mathbb{R}}
+\nc{\BC}{\mathbb{C}}
+
+\nc{\id}{\on{id}}
+\nc{\Id}{\on{Id}}
+\nc{\Tr}{\on{Tr}}
+
+\nc{\la}{\langle}
+\nc{\ra}{\rangle} 
+\nc{\lV}{\lVert}
+\nc{\rV}{\rVert}
+\nc{\mb}{\mathbf}
+\nc{\mf}{\mathfrak}
+%\nc{\cur}{\mathscr}
+\nc{\mc}{\mathscr}
+
+\nc{\ira}{\hookrightarrow}
+\nc{\hra}{\hookrightarrow}
+\nc{\sra}{\twoheadrightarrow} 
+
+\rnc{\Re}{\on{Re}}
+
+\nc{\coker}{\on{coker}}
+\nc{\End}{\on{End}}
+\rnc{\Im}{\on{Im}}
+%\rnc{\Re}{\on{Re}}
+
+\nc{\Hom}{\on{Hom}}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage{marginnote}
+\nc{\acts}{\curvearrowright}
+
+\nc{\Mat}{\on{Mat}}
+
+\newenvironment{cd}{\begin{equation*}\begin{tikzcd}}{\end{tikzcd}\end{equation*}\ignorespacesafterend}
+
+\nc{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\nc{\e}[1]{\begin{align*} #1 \end{align*}}
+
+\usepackage[margin=1in]{geometry}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+%\renewcommand*{\arraystretch}{1.4}
+
+\setlength{\parskip}{0.25cm}
+
+\newenvironment{myproof}{\color{blue}\begin{proof}}{\end{proof}} 
+
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\fancyhead[L]{James Tao}
+\fancyhead[C]{18.06 -- Week 6 Recitation}
+\fancyhead[R]{Mar.\ 10, 2020}
+\fancyfoot[C]{}
+
+\newcounter{part-count}
+\setcounter{part-count}{0}
+
+\newenvironment{me}[1]{\begin{enumerate}[#1]\setcounter{enumi}{\value{part-count}}}{\setcounter{part-count}{\value{enumi}}\end{enumerate}}
+
+
+\begin{document}
+	\thispagestyle{fancy}
+	
+	\noindent Determine whether or not these objects exist. If so, write down an example. If not, explain why not. 
+	
+	\begin{me}{itemsep = 0.2cm}
+		\item A $3 \times 2$ matrix whose columns are linearly independent. 
+		\item A $2 \times 3$ matrix whose columns are linearly independent. 
+		\item A noninvertible $4 \times 4$ matrix whose columns span $\BR^4$. 
+		\item A basis of the vector space $\on{null}(\begin{pmatrix}
+		1 & 1 & 2
+		\end{pmatrix})$. 
+		\item An orthogonal matrix whose rows are linearly dependent. 
+		\item A nonidentity matrix which equals its own inverse. 
+		\item A matrix $A$ such that $\on{null}(A) = \on{col}(A)$. 
+		\item A basis $\{v_1, v_2, v_3\} \in \BR^3$ such that $\lVert v_i - v_j \rVert =1 $ for all $i \neq j$. 
+		\item An orthogonal matrix $Q$ such that $\on{null}(QQ^\top) \cap \on{col}(QQ^\top)$ is larger than $\{0\}$. 
+		\item A $3 \times 2$ matrix $A$ and a $2 \times 3$ matrix $B$ such that $AB = \on{Id}_{3 \times 3}$. 
+		\item Two matrices $A, B$ such that $AB = \begin{pmatrix}
+		1 & 0 \\ 0 & 1 \\ 0 & 0 
+		\end{pmatrix}$ and $\on{null}(B)$ is larger than $\{0\}$. 
+		\item Two matrices $A, B$ such that $AB = \begin{pmatrix}
+		1 & 0 & 0 \\ 0 & 1 & 0 
+		\end{pmatrix}$ and $\on{null}(B)$ is larger than $\{0\}$. 
+		\item Two linearly independent vectors in $\on{null}(\begin{pmatrix}
+		1 & 0 & 0 
+		\end{pmatrix})$ which are both perpendicular to $\begin{pmatrix}
+		1 \\ 1 \\ 1
+		\end{pmatrix}$. 
+		\item A rank-one matrix whose columns are linearly independent. 
+		\item An nonzero upper-triangular matrix whose columns are linearly dependent. 
+		\item Two matrices $A, B$ such that $AB = \on{Id}_{4 \times 4}$, the matrix $A$ is not invertible, and the columns of $B$ are linearly independent. 
+		\item A diagonal matrix $\Sigma$ such that $P\Sigma P$ is not diagonal, where $P = \begin{pmatrix}
+		0 & 1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0
+		\end{pmatrix}$. 
+		\item A $3 \times 4$ matrix $A$ and a $3$-vector $b$ such that $Ax = b$ has a unique solution. 
+		\item A spanning set $v_1, v_2, v_3, v_4, v_5 \in \BR^4$ with $v_i + v_j + v_k = 0$ whenever $i, j, k$ are all different. 
+		\item Nonzero $2\times 2$ projection matrices $P, Q, R$ satisfying $P + Q+ R = \on{Id}_{2 \times 2}$. 
+		\item Nonzero $2 \times 2$ projection matrices $P, Q, R$ satisfying $P + Q + R = \frac32 \on{Id}_{2 \times 2}$. 
+	\end{me}
+	
+	\newpage
+	
+	\section*{Solutions} 
+	
+	\noindent DNE stands for `does not exist.' 
+	
+	\begin{enumerate}
+		\item $\begin{pmatrix}
+			1 & 0 \\ 0 & 1 \\ 0 & 0 
+		\end{pmatrix}$
+		\item DNE. If the columns were independent, the rank would be $3$, but the rank of a $2 \times 3$ matrix is $\le 2$. 
+		\item DNE. If the columns span $\BR^4$, then the rank is 4, so the matrix is invertible (e.g.\ because $\Sigma$ in the full SVD is invertible). 
+		\item $\begin{pmatrix}
+		1 \\ 0 \\ -\frac12
+		\end{pmatrix}$ and $\begin{pmatrix}
+		0 \\ 1 \\ -\frac12
+		\end{pmatrix}$. 
+		\item Any $n \times m$ orthogonal matrix with $n > m$ works. 
+		\item $\begin{pmatrix}
+		1 & 0 \\ 0 & -1
+		\end{pmatrix}$. 
+		\item $\begin{pmatrix}
+		0 & 1 \\ 0 & 0 
+		\end{pmatrix}$. 
+		\item $\begin{pmatrix}
+		\frac{1}{\sqrt2} \\ 0 \\ 0 
+		\end{pmatrix}$, $\begin{pmatrix}
+		0 \\ \frac{1}{\sqrt2} \\ 0 
+		\end{pmatrix}$, and $\begin{pmatrix}
+		0 \\ 0 \\ \frac{1}{\sqrt2}
+		\end{pmatrix}$. 
+		\item DNE. If $P^2 = P$, then $\on{null}(P) \cap \on{col}(P) = \{0\}$. Indeed, any $x$ which lies in the intersection must satisfy $Px = 0$ and $x = Py$ for some $y$. But applying $P$ to the second equation gives $0 = Px = Py = x$, so $x = 0$. Now apply this to $P = QQ^\top$. 
+		\item DNE. Since $B$ is $2 \times 3$, its null space has dimension $\ge 3-2 = 1$. Since $\on{null}(AB) \supseteq \on{null}(B)$, the former has dimension $ \ge 1$. But $\on{null}(\on{Id}_{3 \times 3}) = \{0\}$, contradiction. 
+		\item DNE. Since $\on{null}(AB)\supseteq \on{null}(B)$, we conclude that $\on{null}(B) = \{0\}$ since the nullspace of $\begin{pmatrix}
+		1 & 0 \\ 0 & 1 \\ 0 & 0 
+		\end{pmatrix}$ is $\{0\}$. 
+		\item Take $A = \begin{pmatrix}
+		1 & 0 \\ 0 & 1 
+		\end{pmatrix}$ and $B = \begin{pmatrix}
+		1 & 0 & 0 \\ 0 & 1 & 0 
+		\end{pmatrix}$.  
+		\item DNE. The two vectors must lie in the nullspace of $\begin{pmatrix}
+		1 & 0 & 0 \\ 1 & 1 & 1 
+		\end{pmatrix}$. 
+		Since this nullspace is 1-dimensional, it cannot contain two linearly independent vectors. 
+		\item Any nonzero matrix of size $1 \times 1$ works. 
+		\item $\begin{pmatrix}
+		1 & 1 \\ 0 & 0
+		\end{pmatrix}$.  
+		\item Take $B$ to be any $5 \times 4$ orthogonal matrix, and take $A = B^\top$. 
+		\item DNE. For the multiplication to make sense, $\Sigma$ must be a $4 \times 3$ diagonal matrix, and one can check that $P \Sigma P = \Sigma$ by directly doing the multiplication. 
+		\item DNE. Since $\on{null}(A)$ is bigger than $\{0\}$ (it has dimension $ \ge 4 - 3= 1$), a solution to $Ax = b$ is never unique; if $x$ is a solution, then $x + v$ is another solution, for any $v \in \on{null}(A)$. 
+		\item DNE. By using $v_1 = -v_2 - v_3$, we conclude that 
+		\[
+			\on{span}(v_1, v_2, v_3, v_4, v_5) = \on{span}(v_2, v_3, v_4, v_5). 
+		\]
+		By using $v_2 = -v_3 - v_4$, we conclude that 
+		\[
+			\on{span}(v_2, v_3, v_4, v_5) = \on{span}(v_3, v_4, v_5). 
+		\]
+		But the latter has dimension $\le 3$, so it cannot equal $\BR^4$. 
+		\item DNE.	Since $P, Q, R$ are nonzero, each must have rank 1 or 2. We break into two cases. 
+		
+		Case 1. Suppose at least one of $P, Q, R$ has rank 2, e.g.\ $P$ has rank $2$. Then $P$ is invertible, so $P^2 = P$ implies that $P = \on{Id}_{2 \times 2}$, and hence $Q + R = 0$. But then setting $Q = -R$ in $Q^2 = Q$ yields $R^2 = -R$, which contradicts $R^2 = R$ since $R$ is nonzero. So this case can't happen. 
+		
+		Case 2. Suppose each of $P, Q, R$ has rank 1. Then $Q + R = \on{Id}_{2 \times 2} - P$. Define $\tilde{P} := \on{Id}_{2 \times 2} - P$, and observe that $\tilde{P}$ is a projection matrix of rank 1. Let $v \in \on{null}(\tilde{P})$ be a nonzero vector. The relation $Q + R = \tilde{P}$ implies that $Qv = -Rv$, and now we break into two subcases. 
+		
+		Subcase 2a. Assume that $Qv = 0$, so $Rv = 0$. This implies that $\on{null}(Q) = \on{null}(R) = \on{null}(\tilde{P})$. For any $x \in \BR^2$ not in $\on{null}(\tilde{P})$, we have 
+		\e{
+			Qx - x & \in \on{null}(Q) = \on{null}(\tilde{P})  \\
+			Rx - x & \in \on{null}(R) = \on{null}(\tilde{P}) \\
+			-\tilde{P} x + x & \in \on{null}(\tilde{P}). 
+		} 
+		Adding these and using $Q + R = \tilde{P}$ shows that $-x \in \on{null}(\tilde{P})$, contradicting our choice of $x$. So this subcase can't happen. 
+		
+		Subcase 2b. Assume that $Qv \neq 0$, so $Rv \neq 0$. This implies that $\on{col}(Q) = \on{col}(R) = \on{col}(\tilde{P})$. For any nonzero $x \in \on{col}(\tilde{P})$, we have $Qx = Rx = \tilde{P}x = x$, but then the relation $Q + R = \tilde{P}$ implies that $2x = x$, contradicting our choice of $x$. So this subcase can't happen. 
+		
+		A simpler solution can be given by looking at the trace of these matrices -- the sum of the diagonal entries. The key idea is that the trace of a projection matrix is equal to its rank. 
+		\item Take three 1-dimensional subspaces of $\BR^2$ at $60^\circ$-angles to one another, and let $P, Q, R$ be orthogonal projections onto those subspaces. 
+	\end{enumerate}
+	
+\end{document} 
