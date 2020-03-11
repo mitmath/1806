@@ -107,9 +107,9 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |16| M |3/9| Span, Data View of Rank | <li> [Lecture 16 Slides][16] </li> |
 |17| W |3/11| Complete Solution to Ax=b | <ul> <li>  HW5 due, HW6 released  </li> <li> Completion of our svd based chapter 3 </li> </ul> |
 |18| F |3/13|
-|19| M |3/16|
-|20| W |3/18|  HW6 due |
-|21| F |3/20|
+|19| M |3/16| Classes cancelled |
+|20| W |3/18|  Classes cancelled, HW5 now due |
+|21| F |3/20| Classes cancelled |
 | | | Spring Break|
 |22| M |3/30|
 |23| W |4/1|  HW7  released |
