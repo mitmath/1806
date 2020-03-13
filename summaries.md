@@ -106,10 +106,10 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |15| F |3/6|  Independence | <ul><li>[Lecture 15 Slides][15]<li> HW4 due (extended date),</li><li>  Add Date  </li> <li> Strang Chapter 3.4 </li></ul>|
 |16| M |3/9| Span, Data View of Rank | <li> [Lecture 16 Slides][16] </li> |
 |17| W |3/11| Complete Solution to Ax=b | <ul> <li> [Video: Complete solution to Ax=b][video:complete]  </li> <li>  HW5 postponed  </li> <li> Completion of our svd based chapter 3 </li> </ul> |
-|18| F |3/13|
-|19| M |3/16| Classes cancelled |
-|20| W |3/18|  Classes cancelled, HW5 now due |
-|21| F |3/20| Classes cancelled |
+|18| F |3/13| Class cancelled
+|19| M |3/16| Class cancelled |
+|20| W |3/18|  Class cancelled, HW5 now due |
+|21| F |3/20| Class cancelled |
 | | | Spring Break|
 |22| M |3/30|
 |23| W |4/1|  HW7  released |
