@@ -105,7 +105,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |14| W |3/4| Nullspace,  [HW5 released][HW5] | <ul> <li> [SVD Computation Notebook][svdcn] </li> <li> Strang Section 3.2 covers nullspaces differenty from our class. Good to know the definition (p. 135) and perhaps to read up on rank one matrices (p140) but not anything about pivots, echelon forms, free variables, etc. </li><li> The four fundamental subspaces are defined on p. 181, but then again the book deviates into other directions. </li> </ul> |
 |15| F |3/6|  Independence | <ul><li>[Lecture 15 Slides][15]<li> HW4 due (extended date),</li><li>  Add Date  </li> <li> Strang Chapter 3.4 </li></ul>|
 |16| M |3/9| Span, Data View of Rank | <li> [Lecture 16 Slides][16] </li> |
-|17| W |3/11| Complete Solution to Ax=b | <ul> <li> [Video: Complete solution to Ax=b][video:complete]  </li> <li>  HW5 postponed  </li> <li> Completion of our svd based chapter 3 </li> </ul> |
+|17| W |3/11| Complete Solution to Ax=b | <ul> <li> [Video: Complete solution to Ax=b][video:complete]  </li> <li> [Lecture 17 slides][17] <li>  HW5 postponed  </li> <li> Completion of our svd based chapter 3 </li> </ul> |
 |18| F |3/13| Class cancelled
 |19| M |3/16| Class cancelled |
 |20| W |3/18|  Class cancelled, HW5 now due |
@@ -143,6 +143,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [13]:https://docs.google.com/presentation/d/1rBgP0vZapfkrXNGCZlWoMex8PBUp2duJ2BftNsAfo7o/edit?usp=sharing
 [15]:https://docs.google.com/presentation/d/1WGQ5beDnnZhqHZdOnp75Au8mg3EWxBDy6BtdIFgtqWw/edit?usp=sharing
 [16]:https://docs.google.com/presentation/d/10A4vNeIG6ytb5khDAm-42z1zpFkfJneVRE2_dsb9BBc/edit?usp=sharing
+[17]:https://docs.google.com/presentation/d/1S9p9Yy6LXUJT72h5tGAuCfUJJ0zzy4P2nyt6qwlx7GM/edit?usp=sharing
 
 [HW1S]:https://github.com/mitmath/1806/raw/master/psets%20spring%202020/Pset%201%2018.06%20Spring%202020%20solution.pdf
 [HW2]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset2%2018.06%20Spring%202020.ipynb
