@@ -1,0 +1,439 @@
+\documentclass[10pt]{amsart} 
+
+
+\usepackage{amsmath, amssymb, mathrsfs} 
+
+\usepackage[mathscr]{euscript} 
+
+\newlength{\mylength}
+\setlength{\mylength}{0.25cm}
+
+\usepackage{enumitem}
+\setlist{listparindent=\parindent, itemsep=0cm, parsep=\mylength, topsep=0cm}
+
+\usepackage[final]{todonotes}
+\usepackage[final]{showkeys} 
+
+\usepackage[breaklinks=true]{hyperref} 
+\usepackage{comment} 
+
+\usepackage{url}
+
+\usepackage{tikz-cd}
+
+\usepackage{amsthm}
+
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \topsep6\p@\@plus6\p@\relax
+	\noindent\emph{#1.} 
+	\ignorespaces
+}{%
+\popQED\endtrivlist\@endpefalse
+}
+\makeatother
+
+\newtheoremstyle{mythm}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{\itshape}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\bfseries}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\newtheoremstyle{myrmk}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\itshape}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\theoremstyle{mythm} 
+%\newtheorem{thm}[subsubsection]{Theorem}
+%\newtheorem*{claim}{Claim}
+%\newtheorem*{thm}{Theorem} 
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma} 
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{prop}[thm]{Proposition}
+%\newtheorem*{mthm}{Main Theorem}
+
+%\newtheorem{prop}[subsubsection]{Proposition} 
+%\newtheorem*{prop}{Proposition} 
+%\newtheorem*{lem}{Lemma}
+%\newtheorem*{klem}{Key Lemma}
+%\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+%\newtheorem{defn}[subsubsection]{Definition}
+\newtheorem*{defn}{Definition} 
+\newtheorem{prob}[thm]{Problem}
+%\newtheorem{que}[subsubsection]{Question}
+
+\theoremstyle{myrmk} 
+%\newtheorem{rmk}[subsubsection]{Remark}
+\newtheorem*{rmk}{Remark}
+%\newtheorem{note}[subsubsection]{Note} 
+\newtheorem*{ex}{Example}
+
+\newcommand{\nc}{\newcommand} 
+\nc{\on}{\operatorname}
+\nc{\rnc}{\renewcommand} 
+
+\rnc{\setminus}{\smallsetminus} 
+
+\nc{\wt}{\widetilde}
+\nc{\wh}{\widehat} 
+\nc{\ol}{\overline} 
+
+\nc{\Frob}{\on{Frob}}
+\nc{\Gal}{\on{Gal}}
+
+\nc{\BN}{\mathbb{N}}
+\nc{\BZ}{\mathbb{Z}}
+\nc{\BQ}{\mathbb{Q}}
+\nc{\BR}{\mathbb{R}}
+\nc{\BC}{\mathbb{C}}
+
+\nc{\id}{\on{id}}
+\nc{\Id}{\on{Id}}
+\nc{\Tr}{\on{Tr}}
+
+\nc{\la}{\langle}
+\nc{\ra}{\rangle} 
+\nc{\lV}{\lVert}
+\nc{\rV}{\rVert}
+\nc{\mb}{\mathbf}
+\nc{\mf}{\mathfrak}
+%\nc{\cur}{\mathscr}
+\nc{\mc}{\mathscr}
+
+\nc{\ira}{\hookrightarrow}
+\nc{\hra}{\hookrightarrow}
+\nc{\sra}{\twoheadrightarrow} 
+
+\nc{\rank}{\on{rank}}
+
+\rnc{\Re}{\on{Re}}
+
+\nc{\coker}{\on{coker}}
+\nc{\End}{\on{End}}
+\rnc{\Im}{\on{Im}}
+%\rnc{\Re}{\on{Re}}
+
+\nc{\Hom}{\on{Hom}}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage{marginnote}
+\nc{\acts}{\curvearrowright}
+
+\nc{\Mat}{\on{Mat}}
+
+\newenvironment{cd}{\begin{equation*}\begin{tikzcd}}{\end{tikzcd}\end{equation*}\ignorespacesafterend}
+\nc{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\nc{\e}[1]{\begin{align*} #1 \end{align*}}
+\usepackage[margin=1in]{geometry}
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+%\renewcommand*{\arraystretch}{1.4}
+\setlength{\parskip}{0.25cm}
+\newenvironment{myproof}{\color{blue}\begin{proof}}{\end{proof}} 
+\title{Spring 18.06 - Week 5 Recitation} 
+\author{James Tao}
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\fancyhead[L]{James Tao}
+\fancyhead[C]{Spring 18.06 -- Week 5 Recitation}
+\fancyhead[R]{Mar.\ 3, 2020}
+\fancyfoot[C]{}
+\begin{document}
+	\thispagestyle{fancy}
+	
+	This document has been substantially revised. 
+	
+	\section{Vector subspaces} 
+	
+	What does it mean to have a vector space inside another vector space, such as a tilted plane sitting inside three-dimensional space? 
+	
+	\begin{defn}
+		Let $V$ be a vector space. Then a nonempty subset $W \subseteq V$ is a \emph{vector subspace} of $V$ if any linear combination of elements of $W$ is again in $W$.\footnote{Equivalently, we could require that $W$ is closed under addition and scalar multiplication.} 
+	\end{defn}
+	
+	Note that any vector subspace of $V$ is a vector space in its own right. The addition and scalar multiplication operations on $W$ are inherited from $V$. In particular, every vector subspace contains $0 \in V$. 
+	
+	If $W \subseteq \BR^n$ is a vector subspace, how can we specify what $W$ is? In general, there are two ways: 
+	\begin{itemize}
+		\item We can write down some vectors $v_1, \ldots, v_s \in \BR^n$ such that $W$ is the set of all linear combinations of $v_1, \ldots, v_s$. In other words, $W = \on{col}(A)$ where $A$ is the $n \times s$ matrix whose columns are $v_1, \ldots, v_s$. When giving your answer in this form, you should try to use as few vectors as possible. (The number of vectors needed is equal to the dimension of $W$, denoted $\dim(W)$.) 
+		\item We can write down some equations that a vector $(x_1, \ldots, x_n) \in \BR^n$ must satisfy in order to belong to $W$. I.e., we can try to find numbers $a_{ij}$ such that 
+		\[
+		\begin{pmatrix}
+		x_1 \\ \vdots \\ x_n 
+		\end{pmatrix} \in W \quad \text{ if and only if } \quad \begin{aligned}
+		a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n &= 0 \\
+		a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n &= 0 \\ 
+		&\vdots \\
+		a_{s1}x_1 + a_{s2}x_2 + \cdots + a_{sn}x_n &= 0 \\
+		\end{aligned}
+		\]
+		In other words, if $A = (a_{ij})$ is the $s \times n$ matrix consisting of the $a_{ij}$'s, we have expressed $W = \on{null}(A)$. 
+		When giving your answer in this form (e.g.\ for Problem 5b in Homework 4), you should try to use as few equations as possible. (The number of equations needed is equal to $n - \on{dim}(W)$.) 
+	\end{itemize}
+	
+	For example, let $W = \on{col}\left( \begin{pmatrix}
+	1 & 1 & 2 \\  1& 0 & 0 \\ 1 & 0 & 0 
+	\end{pmatrix}\right)$, which is a vector subspace of $\BR^3$. 
+	\begin{itemize}
+		\item In the first format, we could say that 
+		\[
+		W = \on{col}\left( \begin{pmatrix}
+		0 & 1 \\ 1 & 0 \\ 1 & 0 
+		\end{pmatrix}\right). 
+		\]
+		This is equivalent to saying that 
+		\[
+		W = \left\{ \begin{pmatrix}
+		y \\ x \\ x 
+		\end{pmatrix} \text{ for all } x, y \in \BR \right\}. 
+		\]
+		Since $\dim(W) = 2$, we need to take all linear combinations of \emph{two} vectors. 
+		\item In the second format, we could say that 
+		\[
+		W = \on{null}\left( \begin{pmatrix}
+		0 & 1 & -1
+		\end{pmatrix}\right). 
+		\]
+		This is equivalent to saying that 
+		\[
+		W = \left\{ \begin{pmatrix}
+		x_1 \\ x_2 \\ x_3
+		\end{pmatrix} \text{ such that } x_2 - x_3 = 0 \right\}. 
+		\]
+		Since $\dim(W) = 2$, we need \emph{one} equation to cut out $W$. 
+	\end{itemize}
+	
+	\section{Computing the column space and null space}
+	
+	We have the following facts: 
+	\begin{enumerate}[label=(\arabic*)]
+		\item If $A$ is an $n \times n$ invertible matrix, then $\on{null}(A) = \{0\}$ and $\on{col}(A) = \BR^n$. 
+		\begin{myproof}
+			If $x \in \on{null}(A)$, then $Ax = 0$, so $A^{-1}Ax = 0$, so $x = 0$. Therefore $\on{null}(A)$ contains only the zero vector. Any vector $b$ lies in $\on{col}(A)$ because we can write $b = A(A^{-1}b)$. 
+		\end{myproof}
+		\item Let $A$ be an $n \times m$ matrix, and let $B$ be an $m \times p$ matrix. 
+		\begin{enumerate}[label=(\roman*)]
+			\item We have $\on{col}(AB) = \{Ax \text{ for } x \in \on{col}(B)\} \subseteq \on{col}(A)$. 
+			\item If $\on{col}(B) = \BR^m$, then $\on{col}(AB) = \on{col}(A)$, so $\on{rank}(AB) = \on{rank}(A)$. 
+			\item We have $\on{null}(AB) = \{x \text{ such that } Bx \in \on{null}(A)\} \supseteq \on{null}(B)$. 
+			\item If $\on{null}(A) = \{0\}$, then $\on{null}(AB) = \on{null}(B)$, and $\on{rank}(AB) = \on{rank}(B)$. 
+			\item If $B$ is invertible, then $\on{null}(AB) = \{B^{-1}y \text{ for } y \in \on{null}(A)\}$. 
+		\end{enumerate}
+		\begin{myproof}
+			For (i), note that the set of vectors which $AB$ can output is given by taking all the vectors that $B$ can output and feeding them into $A$. 
+			
+			For (ii), use part (i), and then observe that $\{Ax \text{ for } x \in \BR^m\}$ is $\on{col}(A)$ by definition. 
+			
+			For (iii), note that the set of vectors killed by $AB$ is given by taking all the vectors $x$ such that $Bx$ is killed by $A$. 
+			
+			Next we prove (iv). For the statement $\on{null}(AB) = \on{null}(B)$, use part (iii), and then observe that $\{x \text{ such that } Bx \in \{0\}\}$ is $\on{null}(B)$ by definition. 
+			
+			For the statement $\rank(AB) = \rank(B)$, we claim that $A : \BR^m \to \BR^n$ (defined by $x \mapsto Ax$) is a one-to-one map. Indeed, if $Ax_1 = Ax_2$, then $A(x_1 - x_2) = 0$, so $(x_1 - x_2) \in \on{null}(A) = \{0\}$, so $x_1 = x_2$. This one-to-one property implies that feeding an $r$-dimensional vector space through $A$ yields another $r$-dimensional vector space. Hence, if $\on{col}(B)$ has dimension $r$, then part (i) tells us that $\on{col}(AB)$ has dimension $r$ as well. 
+			
+			For (v), note that, for any subspace $W \subseteq \BR^p$, we have 
+			\[
+			\{x \text{ such that } Bx \in W\} = \{B^{-1}y \text{ for } y \in W\}. 
+			\]
+			Now take $W = \on{null}(A)$ and use part (iii). 
+		\end{myproof}
+		\item Let $\Sigma$ be a diagonal $n \times m$ matrix, whose first $r$ entries are nonzero, and all other entries are zero. 
+		\e{
+			\on{col}(\Sigma) &= \{(y_1, \ldots, y_r, 0, \ldots, 0) \in \BR^n \text{ for } y_1, \ldots, y_r \in \BR\} \\
+			\on{null}(\Sigma) &= \{(0, \ldots, 0, x_{r+1}, \ldots, x_m) \in \BR^m \text{ for } x_{r+1}, \ldots, x_m \in \BR\} \\
+			\on{rank}(\Sigma) &= r.
+		}
+		\item Let $A$ be an $n \times m$ matrix. Then $\on{rank}(A) + \on{dim}(\on{null}(A)) = m$. 
+		\begin{myproof}
+			Let $A = U \Sigma V^\top$ be a full SVD. 
+			
+			Since $V^\top$ is invertible, (1) tells us that $\on{col}(V^\top) = \BR^m$. Then (2.ii) tells us that $\on{rank}(U\Sigma V^\top) = \on{rank}(U\Sigma)$. Next, since $U$ is invertible, (1) tells us that $\on{null}(U) = \{0\}$. Then (2.iv) tells us that $\on{rank}(U \Sigma) = \on{rank}(\Sigma)$. We conclude that $\on{rank}(A) = \on{rank}(\Sigma)$. 
+			
+			Similarly, since $U$ is invertible, (1) tells us that $\on{null}(U) = \{0\}$, so $\on{null}(U \Sigma V^\top) = \on{null}(\Sigma V^\top)$. Since $V^\top$ is invertible, (2.v) tells us that $\on{null}(\Sigma V^\top)$ is related to $\on{null}(\Sigma)$ by applying the invertible matrix $V = (V^\top)^{-1}$, which doesn't change the dimension. Therefore $\on{dim}(\on{null}(A)) = \on{dim}(\on{null}(\Sigma))$. 
+			
+			Now the desired result follows from (3) applied to $\Sigma$. 
+		\end{myproof}
+		\item Let $A$ be an invertible $n \times n$ matrix, and let $A_1$ be the $n \times r$ matrix built from the first $r$ columns of $A$. Then 
+		\e{
+			\on{rank}(A_1) &= r \\
+			\on{null}(A_1) &= \{0\} \\
+			\on{col}(A_1^\top) &= \BR^r \\
+			\on{null}(A_1^\top) &= \on{col}\left( \parbox{1.5in}{\begin{center} The $n \times (n-r)$ matrix built from the \emph{last} $n-r$ columns of $(A^\top)^{-1}$. \end{center}} \right).
+		}
+		\begin{myproof}
+			We have 
+			\[
+			A_1 = A \underbrace{\left( \begin{array}{c} \on{Id}_{r \times r} \\ \hline 0_{(n-r) \times r}\end{array} \right)}_B, 
+			\]
+			where $A$ is multiplied by an $n \times r$ matrix $B$ whose top $r \times r$ block is the identity matrix, and whose bottom $(n-r) \times r$ block is zero. 
+			
+			Since $A$ is invertible, (1) tells us that $\on{null}(A) = \{0\}$. Then (2.iv) implies that $\on{rank}(AB) = \on{rank}(B)$, which equals $r$ by (3), since $B$ is diagonal. Therefore $\on{rank}(A_1) = r$. 
+			
+			Similarly, since $A$ is invertible, (1) and (2.iv) imply that $\on{null}(AB) = \on{null}(B)$, which equals $\{0\}$ by (3). Therefore $\on{null}(A_1) = \{0\}$. 
+			
+			Starting from $A_1 = AB$ and taking transposes, we find that $A_1^\top = B^\top A^\top$. 
+			
+			Since $A^\top$ is invertible, (1) tells us that $\on{col}(A^\top) = \BR^n$. Then (2.ii) implies that $\on{col}(B^\top A^\top) = \on{col}(B^\top)$, which equals $\BR^r$ by (3). Therefore $\on{col}(A_1^\top) = \BR^r$. 
+			
+			Since $A^\top$ is invertible, (2.v) implies that 
+			\[
+				\on{null}(B^\top A^\top) = \{(A^\top)^{-1}y \text{ for } y \in \on{null}(B^\top)\}. 
+			\]
+			Point (3) tells us that 
+			\[
+				\on{null}(B^\top) = \{(0, \ldots, 0, x_{r+1}, \ldots, x_n) \in \BR^n \text{ for } x_{r+1}, \ldots, x_n \in \BR^n\}. 
+			\]
+			Multiplying these vectors by $(A^\top)^{-1}$ gives all linear combinations of the \emph{last} $n-r$ columns of $(A^\top)^{-1}$, and this shows the final statement of (5). 			
+		\end{myproof}
+		\item Suppose $A$ is an $n \times m$ matrix, and $A = U_1\Sigma_1 V_1^\top$ is a rank-$r$ SVD. Then 
+		\e{
+			\on{rank}(A) &= r \\
+			\on{col}(A) &= \on{col}(U_1) \\
+			\on{null}(A) &= \on{col}(V_2) \\
+			\on{row}(A) &= \on{col}(V_1) \\
+			\on{null}(A^\top) &= \on{col}(U_2). 
+		} 
+		Here $U_2$ and $V_2$ are matrices such that $U := \left( \begin{array}{c|c} U_1 & U_2 \end{array} \right)$ and $V := \left( \begin{array}{c|c} V_1 & V_2 \end{array} \right)$ are \emph{square} orthogonal matrices. 
+		\begin{myproof}
+			By (5) applied to $U$, we know that $\on{rank}(U_1) = r$ and $\on{null}(U_1) = \{0\}$. 
+			
+			By (5) applied to $V$, we know that $\on{col}(V_1^\top) = \BR^r$ and $\on{null}(V_1^\top) = \on{col}(V_2)$. Indeed, $V_2$ is the $m \times (m-r)$ matrix built from the last $m-r$ columns of $(V^\top)^{-1} = V$, since $V$ is orthogonal. 
+			
+			Since $\on{col}(V_1^\top) = \BR^r$, (2.ii) implies that $\on{col}(U_1\Sigma_1V_1^\top) = \on{col}(U_1\Sigma_1)$. Since $\Sigma_1$ is invertible, (1) implies that $\on{col}(\Sigma_1) = \BR^r$, so (2.ii) implies that $\on{col}(U_1\Sigma_1)= \on{col}(U_1)$. This shows that $\on{col}(A) = \on{col}(U_1)$. Since $\on{rank}(U_1) = r$, we may also conclude $\on{rank}(A) = r$. 
+			
+			Since $\on{null}(U_1) = \{0\}$, (2.iv) implies that $\on{null}(U_1\Sigma_1V_1^\top) = \on{null}(\Sigma_1V_1^\top)$. Since $\Sigma_1$ is invertible, (1) implies that $\on{null}(\Sigma_1) = \{0\}$, so (2.iv) implies that $\on{null}(\Sigma_1V_1^\top) = \on{null}(V_1^\top)$. Now $\on{null}(V_1^\top) = \on{col}(V_2)$ implies that $\on{null}(A) = \on{col}(V_2)$. 
+			
+			The conclusions about $\on{row}(A)$ and $\on{null}(A^\top)$ follow from the already-proven statements by considering the rank-$r$ SVD given by $A^\top = V_1 \Sigma_1^\top U_1^\top$. Since $\Sigma_1$ is a square diagonal matrix, $\Sigma_1 = \Sigma_1^\top$. 
+		\end{myproof}
+		\item Every rank $r$ matrix can be expressed (nonuniquely) as the sum of $r$ rank-one matrices. 
+		\begin{myproof}
+			See Lecture 9 slides. 
+		\end{myproof}
+		\item Suppose $A$ is an $n \times m$ matrix, and $A = QR$ where $Q$ is orthogonal (and $R$ is not necessarily invertible). Then 
+		\e{
+			\on{rank}(A) &= \on{rank}(R) \\
+			\on{null}(A) &= \on{null}(R). 
+		} 
+		\begin{myproof}
+			Since $Q$ is orthogonal, $n \ge m$. We can find an $(n-m) \times n$ matrix $Q_2$ such that $\left( \begin{array}{c|c} Q & Q_2 \end{array} \right)$ is an $n \times n$ orthogonal matrix (see next section). Applying (5) to this square orthogonal matrix implies that $\on{null}(Q) = \{0\}$. Then (2.iv) implies that $\on{null}(QR) = \on{null}(R)$ and $\on{rank}(QR) = \on{rank}(R)$, as desired. 
+		\end{myproof}
+		\item Let $U$ be an $n \times m$ matrix in \emph{row echelon form}, \footnote{See \url{https://en.wikipedia.org/wiki/Row_echelon_form}. The nonzero rows of $U$ must come before the zero rows, and the number of zeros at the beginning of each nonzero row must be strictly increasing. This means that $U$ looks like a staircase.} with $r$ nonzero rows. Then 
+		\e{
+			\on{col}(U) &= \{(x_1, \ldots, x_r, 0, \ldots, 0) \text{ for } x_1, \ldots, x_r \in \BR\} \\
+			\on{rank}(U) &= r. 
+		} 
+		\begin{myproof}
+			By doing column operations on $U$ (including swaps), we can turn it into an $n \times m$ diagonal matrix $\Sigma$ whose first $r$ entries are nonzero, and all other entries of $\Sigma$ are zero. Therefore we can write $U = \Sigma C$ where $C$ is an $m \times m$ invertible matrix that keeps track of the column operations performed. 
+			
+			Since $C$ is invertible, (1) implies that $\on{col}(C) = \BR^m$. Then (2.ii) implies that $\on{col}(\Sigma C) = \on{col}(\Sigma)$. The description of $\on{col}(\Sigma)$ follows from (3). 
+		\end{myproof}
+		\item Suppose $A$ is an $n \times m$ matrix, and $A = LU$ where $L$ is invertible and $U$ is in row echelon form with $r$ nonzero rows. Then 
+		\e{
+			\on{col}(A) &= \on{col}(L_1) \\
+			\on{rank}(A) &= r \\
+			\on{null}(A) &= \on{null}(U). 
+		} 
+		Here $L_1$ is the $n \times r$ matrix built from the first $r$ columns of $L$. 
+		\begin{myproof}
+			As observed in (9), we can write $U = \Sigma C$ where $C$ is an $m \times m$ invertible matrix, and $\Sigma$ is an $n \times m$ diagonal matrix whose first $r$ entries are nonzero, and all other entries of $\Sigma$ are zero. Then $A = L\Sigma C$. 
+			
+			Since $C$ is invertible, (1) implies that $\on{col}(C) = \BR^m$. Then (2.ii) implies that $\on{col}(L\Sigma C) = \on{col}(L\Sigma)$. The matrix $L \Sigma$ is $L_1$ padded with some zeros on the right, so $\on{col}(L \Sigma) = \on{col}(L_1)$. We conclude that $\on{col}(A) = \on{col}(L_1)$. 
+			
+			Since $L$ is invertible, (5) implies that $\on{rank}(L_1) = r$. Therefore $\on{rank}(A) = r$. 
+			
+			Since $L$ is invertible, (1) implies that $\on{null}(L) = \{0\}$. Then (2.iv) implies that $\on{null}(LU) = \on{null}(U)$. 
+		\end{myproof}
+		\item Let $A$ be an $n \times m$ matrix. Then 
+		\e{
+			\on{null}(A^\top A) &= \on{null}(A) \\
+			\on{rank}(A^\top A) &= \on{rank}(A). 
+		} 
+		\begin{myproof}
+			By (2.iii), we have $\on{null}(A^\top A) \supseteq \on{null}(A)$. To show the reverse inclusion, suppose that $x \in \on{null}(A^\top A)$. Then $A^\top Ax = 0$, so $(Ax)^\top Ax =0$. This says that the vector $Ax$ has length zero, so $Ax = 0$, so $x \in \on{null}(A)$, as desired. 
+			
+			By (4), we have 
+			\e{
+				\on{rank}(A) &= m - \on{dim}(\on{null}(A))\\
+				\on{rank}(A^\top A) &= m-  \on{dim}(\on{null}(A^\top A)). 
+			} 
+			Since we know the nullspaces of $A$ and $A^\top A$ agree, so do the ranks. 
+		\end{myproof}
+		\item Let $P$ be an $n \times n$ matrix satisfying $P^2 = P$. Then 
+		\[
+		\on{col}(P) = \on{null}(P - \on{Id}_{n \times n}). 
+		\]
+		\begin{myproof}
+			If $x \in \on{null}(P - \on{Id}_{n \times n})$, then $Px = x$, so $x \in \on{col}(P)$. Conversely, if $x \in \on{col}(P)$, we have $x = Py$ for some $y$. Applying $P$, we find that $Px = Py$, so we can write $x = Px$. Therefore $x \in \on{null}(P - \on{Id}_{n \times n})$, as desired. 
+		\end{myproof}
+		\item Let $Q$ be an $n \times m$ orthogonal matrix. Then 
+		\[
+		\on{col}(Q) = \on{col}(QQ^\top) = \on{null}(Q Q^\top - \on{Id}_{n \times n}). 
+		\]
+		\begin{myproof}
+			As in (8), we can find an $(n-m) \times n$ matrix $Q_2$ such that $\left( \begin{array}{c|c} Q & Q_2 \end{array} \right)$ is an $n \times n$ orthogonal matrix. Applying (5) to this square orthogonal matrix implies that $\on{col}(Q^\top) = \BR^m$. Then (2.ii) implies that $\on{col}(Q) = \on{col}(QQ^\top)$. 
+			
+			The second equality follows from (2). Indeed, we may take $P = QQ^\top$, because $(QQ^\top)^2 = QQ^\top QQ^\top = QQ^\top$ since $Q$ is orthogonal. 
+		\end{myproof}
+		\item Let $A = QR$ where $Q$ is an $n \times m$ orthogonal matrix, and $\on{col}(R) = \BR^m$. Then 
+		\[
+		\on{col}(A) = \on{null}(QQ^\top - \on{Id}_{n \times n}). 
+		\]
+		\begin{myproof}
+			Since $\on{col}(R) = \BR^m$, (2.ii) implies that $\on{col}(QR) = \on{col}(Q)$. This equals the RHS by (13). 
+		\end{myproof}
+		\item Let $A = U_1\Sigma_1 V_1^\top$ be a rank-$r$ SVD. Then 
+		\[
+		\on{col}(A) = \on{null}(U_1 U_1^\top - \on{Id}_{n \times n}). 
+		\]
+		\begin{myproof}
+			By (6), $\on{col}(A) = \on{col}(U_1)$. Now apply (13) to the orthogonal matrix $U_1$. 
+		\end{myproof}
+	\end{enumerate}
+	
+	\newpage
+	
+	\section{Completing an orthogonal matrix to a square orthogonal matrix} 
+	
+	In the proof of (8), we wanted to complete an orthogonal $n \times m$ matrix $Q$ to a square orthogonal matrix $Q' := \left( \begin{array}{c|c} Q & Q_2 \end{array} \right)$ by finding some $(n-m) \times m$ matrix $Q_2$. Equivalently, if $v_1, \ldots, v_m$ are the columns of $Q$, which form an orthonormal collection, we want to find additional vectors $v_{m+1}, \ldots, v_n$ (which will be the columns of $Q_2$) such that $v_1, \ldots, v_m, v_{m+1}, \ldots,  v_n$ is an orthonormal collection. 
+	
+	We explain how to do this inductively. Assume that $v_1, \ldots, v_s$ is an orthonormal collection of vectors, and let us attempt to find $v_{s+1}$ such that $v_1, \ldots, v_{s}, v_{s+1}$ is still orthonormal. Take any vector $x \in \BR^n$ which is not a linear combination of the $v_1, \ldots, v_s$. (Assuming that $s < n$, this is always possible.) Then, define a new vector 
+	\[
+	y = x - (x \cdot v_1)v_1 - (x \cdot v_2)v_2\cdots - (x \cdot v_s)v_s. 
+	\]
+	By dotting with $v_1, \ldots, v_s$, we see that $y$ is orthogonal to all of those vectors. Indeed, 
+	\e{
+		y \cdot v_i &= x \cdot v_i - (x \cdot v_i) (v_i \cdot v_i)  \qquad \text{(since $v_j \cdot v_i = 0$ when $j \neq i$)}\\
+		&= x \cdot v_i - x \cdot v_i \qquad \qquad\qquad  \text{(since $v_i \cdot v_i = 1$)} \\
+		&= 0. 
+	}	
+	Since $x$ is not a linear combination of the $v_1, \ldots, v_s$, we know that $y$ is nonzero. Therefore, we may define a new vector 
+	\[
+	z = \frac{1}{\lVert y \rVert} y. 
+	\]
+	This vector is orthogonal to the $v_1, \ldots, v_s$, and it has length 1. We may now take $v_{s+1} := z$ and complete the inductive step. 
+	
+	This is a version of the Gram--Schmidt process. 
+	
+	
+	
+	
+	
+	
+\end{document}
