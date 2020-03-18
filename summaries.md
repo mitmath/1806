@@ -114,29 +114,29 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |17| W |3/11| Complete Solution to Ax=b | <ul> <li> [Video: Complete solution to Ax=b][video:complete]  </li> <li> [Video: Backslash][video:backslash]<li> [Lecture 17 slides][17] <li>  HW5 postponed  </li> <li> Completion of our svd based chapter 3 </li> </ul> |
 |18| F |3/13| Class cancelled
 |19| M |3/16| Class cancelled |
-|20| W |3/18|  Class cancelled, HW5 now due |
+|20| W |3/18|  Class cancelled, HW5 now optionally due, it will be graded, it will not count, and can be handed in late |
 |21| F |3/20| Class cancelled |
 | | | Spring Break|
 |22| M |3/30|
 |23| W |4/1|  HW7  released |
-|24| F |4/3| Exam 2 Walker 11:05-11:55|
+|24| F |4/3| (tentative, all up in the air right now ) Exam 2  11:05-11:55|
 |25| M |4/6|
-|26| W |4/8|   HW7 due , HW8 released|
+|26| W |4/8|   |
 |27| F |4/10| |
 |28| M |4/13|
-|29| W |4/15| HW8 due, HW 9 released |
+|29| W |4/15|  |
 |30| F |4/17|
 |  | M |4/20| Patriots Day (no class)|
-|31| W |4/22| HW9 Due |
+|31| W |4/22|  |
 |32| F |4/24|
 |33| M |4/27|
-|34| W |4/29| HW10 Released |
-|35| F |5/1| Exam 3 Walker 11:05-11:55|
+|34| W |4/29|  |
+|35| F |5/1| (tentative, all up in the air right now ) Exam 3  11:05-11:55|
 |36| M |5/4|
-|37| W |5/6| HW10 Due |
+|37| W |5/6|  |
 |38| F |5/8|
 |39| M |5/11|
-|| F |5/15| 9am Final Exam  JNSN-Ice Rink |
+|| F |5/15| (tentative, all up in the air right now )  9am Final Exam   |
 
 
 [video:complete]:https://video.odl.mit.edu/videos/38553aca62ae456482dcc9635a36c1e3/
