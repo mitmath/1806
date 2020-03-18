@@ -85,7 +85,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 
 |Homeworks||||||
 |--|--|--|--|--|--|
-| <ul><li> [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit) </li><li> [HW0 Solutions](https://docs.google.com/document/d/1U3SUNlnFdgyYqVEn8PB9ECvARMiQ8dw-UAOuojnzHXE/edit?usp=sharing)| <ul> <li> [HW1](https://docs.google.com/document/d/1K2WtQb9JCJT6YjEz3K-hqb99hj2L_Bp-19nJLKGRF9c/edit)  </li>  <li> [HW1 Solutions][HW1S] </li> </ul> | <ul> <li>[HW2][HW2]  </li> <li> [HW2 Solutions][HW2S] </li></ul>| <ul> <li> [HW3][HW3]  </li> <li> [HW3 Solutions][HW3S] </ul>| [HW4 due Friday night March 6][HW4] | [Hw5 due Wednesday night March 11 (New due date March 18)][Hw5]|
+| <ul><li> [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit) </li><li> [HW0 Solutions](https://docs.google.com/document/d/1U3SUNlnFdgyYqVEn8PB9ECvARMiQ8dw-UAOuojnzHXE/edit?usp=sharing)| <ul> <li> [HW1](https://docs.google.com/document/d/1K2WtQb9JCJT6YjEz3K-hqb99hj2L_Bp-19nJLKGRF9c/edit)  </li>  <li> [HW1 Solutions][HW1S] </li> </ul> | <ul> <li>[HW2][HW2]  </li> <li> [HW2 Solutions][HW2S] </li></ul>| <ul> <li> [HW3][HW3]  </li> <li> [HW3 Solutions][HW3S] </ul>| [HW4 due Friday night March 6][HW4] | [Hw5 due Wednesday night March 11 (Recommended due date March 18, but may be handed in later, and is optional)][Hw5]|
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
