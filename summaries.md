@@ -111,7 +111,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |14| W |3/4| Nullspace,  [HW5 released][HW5] | <ul> <li> [SVD Computation Notebook][svdcn] </li> <li> Strang Section 3.2 covers nullspaces differenty from our class. Good to know the definition (p. 135) and perhaps to read up on rank one matrices (p140) but not anything about pivots, echelon forms, free variables, etc. </li><li> The four fundamental subspaces are defined on p. 181, but then again the book deviates into other directions. </li> </ul> |
 |15| F |3/6|  Independence | <ul><li>[Lecture 15 Slides][15]<li> HW4 due (extended date),</li><li>  Add Date  </li> <li> Strang Chapter 3.4 </li></ul>|
 |16| M |3/9| Span, Data View of Rank | <li> [Lecture 16 Slides][16] </li> |
-|17| W |3/11| Complete Solution to Ax=b | <ul> <li> [Video: Complete solution to Ax=b][video:complete]  </li> <li> [Video: Backslash][video:backslash]<li> [Lecture 17 slides][17] <li>  HW5 postponed  </li> <li> Completion of our svd based chapter 3 </li> </ul> |
+|17| W |3/11| Complete Solution to Ax=b | <ul> <li> [Video: Complete solution to Ax=b][video:complete]  </li> <li> [Video: Backslash][video:backslash]</li><li>[Video: Dimension][vide:dimension]</li><li> [Lecture 17 slides][17] <li>  HW5 postponed  </li> <li> Completion of our svd based chapter 3 </li> </ul> |
 |18| F |3/13| Class cancelled
 |19| M |3/16| Class cancelled |
 |20| W |3/18|  Class cancelled, HW5 now optionally due, it will be graded, it will not count, and can be handed in late |
@@ -141,6 +141,8 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 
 [video:complete]:https://video.odl.mit.edu/videos/38553aca62ae456482dcc9635a36c1e3/
 [video:backslash]:https://video.odl.mit.edu/videos/3bb09f687d0148f881a8b5cd97ccca15/
+[video:dimension]:https://video.odl.mit.edu/videos/e6f3203edb2d42ec8a12733b47164deb/
+
 
 [BB]:https://drive.google.com/drive/folders/1fVWjMiOVLYaVhcqEYzSuODxD6nAyAojY?usp=sharing
 [4]:https://docs.google.com/presentation/d/10J64Kk3v3ZfuPOuLEF9lmKI28XFdrzShqxsDZXeBJSk/edit?usp=sharing
