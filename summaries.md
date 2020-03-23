@@ -65,10 +65,10 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 
 |Recitation Materials 2020|Recitation Zoom Link| Office Hour Zoom Link|
 |--|--|--|
-| [James's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/James) |--|--|
+| [James's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/James) | | |
 | [Pan's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/pan) |Tu 3pm [Zoom Link](https://mit.zoom.us/j/561964174)|Tu 1-3pm [Zoom link](https://mit.zoom.us/j/900359968)|
-| [Sungwoo's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/Sungwoo)|--|--|
-| [Yau Wing's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/YauWing)|--|--|
+| [Sungwoo's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/Sungwoo)| | |
+| [Yau Wing's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/YauWing)| | |
 
 
 |Quizzes|
