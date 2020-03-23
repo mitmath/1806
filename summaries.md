@@ -68,6 +68,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 | [James's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/James) |
 | [Pan's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/pan) |
 | [Sungwoo's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/Sungwoo)|
+| [Yau Wing's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/YauWing)|
 
 
 |Quizzes|
