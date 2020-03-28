@@ -122,8 +122,8 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |22| M |3/30|
 |23| W |4/1|  Orthogonality |   <ul> <li> [Strang: Orthogonal Vectors and Subspaces][Strang14] </li> </ul>
 |24| F |4/3|   Projections |  <ul><li> [Strang: Projections Onto Subspaces][Strang15]</li> </ul> |
-|25| M |4/6| Determinants |
-|26| W |4/8|  Matrix Calculus |
+|25| M |4/6| Determinants |  <ul><li> [Strang: Determinant Properties][Strang18] </li> <li> [Strang:  Determinant Formulas and Cofactors][strang17] </li>  </ul> |
+|26| W |4/8|  Matrix Calculus  <ul><li> [Strang: Volumes at 28:07][Strang20]</li> </ul> |
 |27| F |4/10|  Matrix Calculus |
 |28| M |4/13| Eigenvalues and Eigenvectors |
 |29| W |4/15|  Diagonalization |
@@ -142,6 +142,9 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 
 [strang14]:https://youtu.be/YzZUIYRCE38
 [strang15]:https://www.youtube.com/watch?v=Y_Ac6KiQ1t0
+[strang18]:https://www.youtube.com/watch?v=srxexLishgY&t=2s
+[strang17]:
+[strang20]:https://youtu.be/QNpj-gOXW9M?list=PL49CF3715CB9EF31D&t=1687
 
 [video:complete]:https://video.odl.mit.edu/videos/38553aca62ae456482dcc9635a36c1e3/
 [video:backslash]:https://video.odl.mit.edu/videos/3bb09f687d0148f881a8b5cd97ccca15/
