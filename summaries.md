@@ -140,7 +140,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |39| M |5/11|  Errors and Condition Numbers |
 
 
-[strang14]:https://youtu.be/YzZUIYRCE38
+[strang14]:https://youtu.be/YzZUIYRCE38?t=1
 [strang15]:https://www.youtube.com/watch?v=Y_Ac6KiQ1t0
 [strang18]:https://www.youtube.com/watch?v=srxexLishgY&t=2s
 [strang17]:
