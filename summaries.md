@@ -120,26 +120,28 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |21| F |3/20| Class cancelled |
 | | | Spring Break|
 |22| M |3/30|
-|23| W |4/1|  HW7  released |
-|24| F |4/3| (tentative, all up in the air right now ) Exam 2  11:05-11:55|
-|25| M |4/6|
-|26| W |4/8|   |
-|27| F |4/10| |
-|28| M |4/13|
-|29| W |4/15|  |
-|30| F |4/17|
+|23| W |4/1|  Orthogonality |   <ul> <li> [Strang: Orthogonal Vectors and Subspaces][Strang14] </li> </ul>
+|24| F |4/3|   Projections |  <ul><li> [Strang: Projections Onto Subspaces][Strang 15]</li> </ul> |
+|25| M |4/6| Determinants |
+|26| W |4/8|  Matrix Calculus |
+|27| F |4/10|  Matrix Calculus |
+|28| M |4/13| Eigenvalues and Eigenvectors |
+|29| W |4/15|  Diagonalization |
+|30| F |4/17| Markov Matrices |
 |  | M |4/20| Patriots Day (no class)|
-|31| W |4/22|  |
-|32| F |4/24|
-|33| M |4/27|
-|34| W |4/29|  |
-|35| F |5/1| (tentative, all up in the air right now ) Exam 3  11:05-11:55|
-|36| M |5/4|
-|37| W |5/6|  |
-|38| F |5/8|
-|39| M |5/11|
-|| F |5/15| (tentative, all up in the air right now )  9am Final Exam   |
+|31| W |4/22|  Differential Equations |
+|32| F |4/24| Symmetric Matrices |
+|33| M |4/27| Positive Definite Matrices |
+|34| W |4/29|  Similar Matrices |
+|35| F |5/1|  Statistics and PCA |
+|36| M |5/4| Infinite Dimensional Space |
+|37| W |5/6|  Fourier  |
+|38| F |5/8|  Linear Transformations |
+|39| M |5/11|  Errors and Condition Numbers |
 
+
+[strang14]:https://youtu.be/YzZUIYRCE38
+[strang15]:https://www.youtube.com/watch?v=Y_Ac6KiQ1t0
 
 [video:complete]:https://video.odl.mit.edu/videos/38553aca62ae456482dcc9635a36c1e3/
 [video:backslash]:https://video.odl.mit.edu/videos/3bb09f687d0148f881a8b5cd97ccca15/
