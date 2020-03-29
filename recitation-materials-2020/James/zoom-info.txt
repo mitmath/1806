@@ -1,0 +1,29 @@
+Dear 18.06 students, 
+
+I will hold virtual office hours and recitations at the usual times. 
+Office hours: Mondays 12 pm - 2 pm ET
+Recitations: (R05) Tuesdays 12 pm ET, (R06) Tuesdays 1 pm ET
+
+We will use MIT's Zoom license for these meetings. The links are as follows: 
+Office hours: https://mit.zoom.us/j/835098896
+Recitations: https://mit.zoom.us/j/813869588
+
+In order to join, you will need to enter MIT Touchstone credentials associated with your @mit.edu address. No other password will be required. 
+
+I checked on Gradescope and saw that everyone is registered under an @mit.edu address. If you can't log in using MIT Touchstone credentials, e.g. because you are cross-registered, please let me know via e-mail - jamestao@mit.edu.
+
+For both meetings, you will not be able to join before I do. 
+
+For office hours, your video and mic will be on by default. If you feel uncomfortable sharing this data, e.g. for privacy reasons, feel free to turn your mic or video off and interact using the text-based chat. However, do leave your speakers on: I will answer questions from the chat verbally. 
+
+For recitations, your video and mic will be off by default. Feel free to ask and answer questions via the text-based chat at any time. If you wish to speak, toggle the "raise hand" marker and I will unmute you. 
+
+Both meetings will not be recorded, so as not to discourage participation. For students who can't attend, e.g. due to time zones, I will continue to make recitation handouts, to be posted in the usual folder. 
+
+E-mail me if you wish to see specific topics or examples covered in recitation. Also, let me know if you would prefer a more problem-solving or lecture-based format for recitations. I know that being online changes the dynamics of collaborative problem solving.  
+
+Remarks for future meetings (excluding March 30 and 31). I'm aware that some students may not want their full legal name and MIT account to be visible to all participants. One way to avoid this is to require a password (rather than MIT Touchstone credentials) to join a meeting. I'm thinking about distributing the password using the e-mail announcement feature on Stellar. If you're not registered there, please e-mail me directly, and I will include you in this mailing list. 
+
+Best, 
+
+James 
