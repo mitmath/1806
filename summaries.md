@@ -120,10 +120,10 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |21| F |3/20| Class cancelled |
 | | | Spring Break|
 |22| M |3/30|
-|23| W |4/1|  Orthogonality |   <ul> <li> [Strang: Orthogonal Vectors and Subspaces][Strang14] </li> </ul>
-|24| F |4/3|   Projections |  <ul><li> [Strang: Projections Onto Subspaces][Strang15]</li> </ul> |
-|25| M |4/6| Determinants |  <ul><li> [Strang: Determinant Properties][Strang18] </li> <li> [Strang:  Determinant Formulas and Cofactors][strang19] </li>  </ul> |
-|26| W |4/8|  Matrix Calculus  | <ul><li> [Strang: Volumes at 28:07][Strang20]</li> </ul> |
+|23| W |4/1|  Orthogonality |   <ul> <li> [Strang: Orthogonal Vectors and Subspaces][Strang14] </li> <li> Strang Section 4.1 </li>   <li> [The Fundamental Theorem of Linear Algebra](fundamental)</li> <li> [Lecture Slides Fundamental Subspaces][23]</ul>
+|24| F |4/3|   Projections |  <ul><li> [Strang: Projections Onto Subspaces][Strang15]</li> <li> Strang Section 4.2 </li> </ul> |
+|25| M |4/6| Determinants |  <ul><li> [Strang: Determinant Properties][Strang18] </li> <li> [Strang:  Determinant Formulas and Cofactors][strang19] </li>  <li> Strang Section 5.1-5.2 </li> </ul> |
+|26| W |4/8|  Matrix Calculus  | <ul><li> [Strang: Volumes at 28:07][Strang20]</li> <li> Strang 276--283 </li> </ul> |
 |27| F |4/10|  Matrix Calculus |
 |28| M |4/13| Eigenvalues and Eigenvectors |
 |29| W |4/15|  Diagonalization |
@@ -145,6 +145,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [strang18]:https://www.youtube.com/watch?v=srxexLishgY&t=2s
 [strang19]:https://www.youtube.com/watch?v=23LLB9mNJvc
 [strang20]:https://youtu.be/QNpj-gOXW9M?list=PL49CF3715CB9EF31D&t=1687
+[fundamental]:http://home.engineering.iastate.edu/~julied/classes/CE570/Notes/strangpaper.pdf
 
 [video:complete]:https://video.odl.mit.edu/videos/38553aca62ae456482dcc9635a36c1e3/
 [video:backslash]:https://video.odl.mit.edu/videos/3bb09f687d0148f881a8b5cd97ccca15/
@@ -160,6 +161,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [15]:https://docs.google.com/presentation/d/1WGQ5beDnnZhqHZdOnp75Au8mg3EWxBDy6BtdIFgtqWw/edit?usp=sharing
 [16]:https://docs.google.com/presentation/d/10A4vNeIG6ytb5khDAm-42z1zpFkfJneVRE2_dsb9BBc/edit?usp=sharing
 [17]:https://docs.google.com/presentation/d/1S9p9Yy6LXUJT72h5tGAuCfUJJ0zzy4P2nyt6qwlx7GM/edit?usp=sharing
+[23]:https://docs.google.com/presentation/d/1DTYozuGlOe8qBh1KXmCULwAr9fW33zY5m-aWI9xj6q4/edit#slide=id.g7f5f1919c3_0_18
 
 [HW1S]:https://github.com/mitmath/1806/raw/master/psets%20spring%202020/Pset%201%2018.06%20Spring%202020%20solution.pdf
 [HW2]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset2%2018.06%20Spring%202020.ipynb
