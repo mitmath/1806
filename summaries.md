@@ -120,7 +120,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |21| F |3/20| Class cancelled |
 | | | Spring Break|
 |22| M |3/30|
-|23| W |4/1|  Orthogonality |   <ul> <li> [Strang: Orthogonal Vectors and Subspaces][Strang14] </li> <li> Strang Section 4.1 </li>   <li> [The Fundamental Theorem of Linear Algebra](fundamental)</li> <li> [Lecture Slides Fundamental Subspaces][23]</ul>
+|23| W |4/1|  Orthogonality |   <ul> <li> [Strang: Orthogonal Vectors and Subspaces][Strang14] </li> <li> Strang Section 4.1 </li>   <li> [The Fundamental Theorem of Linear Algebra](fundamental)</li> <li> [Lecture Slides Fundamental Subspaces][23] </li> <li> [Video: Fundamental Subspaces](Coming Soon)</ul>
 |24| F |4/3|   Projections |  <ul><li> [Strang: Projections Onto Subspaces][Strang15]</li> <li> Strang Section 4.2 </li> </ul> |
 |25| M |4/6| Determinants |  <ul><li> [Strang: Determinant Properties][Strang18] </li> <li> [Strang:  Determinant Formulas and Cofactors][strang19] </li>  <li> Strang Section 5.1-5.2 </li> </ul> |
 |26| W |4/8|  Matrix Calculus  | <ul><li> [Strang: Volumes at 28:07][Strang20]</li> <li> Strang 276--283 </li> </ul> |
