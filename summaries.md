@@ -67,7 +67,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |--|--|--|
 | [James's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/James) |Tu 12pm, Tu 1pm [Zoom link](https://mit.zoom.us/j/813869588) |M 12pm-2pm [Zoom link](https://mit.zoom.us/j/835098896) [(info)](https://github.com/mitmath/1806/raw/master/recitation-materials-2020/James/zoom-info.txt) |
 | [Kai's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/Kai)|||
-| [Pan's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/pan) |Tu 3pm [Zoom Link](https://mit.zoom.us/j/561964174)|Tu 1-3pm [Zoom link](https://mit.zoom.us/j/900359968)|
+| [Pan's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/Pan) |Tu 3pm [Zoom Link](https://mit.zoom.us/j/561964174)|Tu 1-3pm [Zoom link](https://mit.zoom.us/j/900359968)|
 | [Sungwoo's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/Sungwoo)| Tu 10, Tu 11 [Zoom Link](https://mit.zoom.us/j/418364886)|Wed 9am-11am [Zoom Link](https://mit.zoom.us/j/3462291272) |
 | [Yau Wing's recitation](https://github.com/mitmath/1806/tree/master/recitation-materials-2020/YauWing)|Tu 10, Tu 12 [Zoom Link](https://mit.zoom.us/j/357455638)| M 2-4pm [Zoom Link](https://mit.zoom.us/j/127672120 )|
 
