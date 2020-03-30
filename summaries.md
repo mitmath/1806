@@ -119,25 +119,25 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |20| W |3/18|  Class cancelled, HW5 now optionally due, it will be graded, it will not count, and can be handed in late |
 |21| F |3/20| Class cancelled |
 | | | Spring Break|
-|22| M |3/30|
-|23| W |4/1|  Orthogonality |   <ul> <li> [Strang: Orthogonal Vectors and Subspaces][Strang14] </li> <li> Strang Section 4.1 </li>   <li> [The Fundamental Theorem of Linear Algebra](fundamental)</li> <li> [Lecture Slides Fundamental Subspaces][23] </li> <li> [Video: Fundamental Subspaces](Coming Soon)</ul>
-|24| F |4/3|   Projections |  <ul><li> [Strang: Projections Onto Subspaces][Strang15]</li> <li> Strang Section 4.2 </li> </ul> |
-|25| M |4/6| Determinants |  <ul><li> [Strang: Determinant Properties][Strang18] </li> <li> [Strang:  Determinant Formulas and Cofactors][strang19] </li>  <li> Strang Section 5.1-5.2 </li> </ul> |
-|26| W |4/8|  Matrix Calculus  | <ul><li> [Strang: Volumes at 28:07][Strang20]</li> <li> Strang 276--283 </li> </ul> |
-|27| F |4/10|  Matrix Calculus |
-|28| M |4/13| Eigenvalues and Eigenvectors |
-|29| W |4/15|  Diagonalization |
-|30| F |4/17| Markov Matrices |
+|22| M |3/30|  Orthogonality  (HW6 Released)|   <ul> <li> [Strang: Orthogonal Vectors and Subspaces][Strang14] </li> <li> Strang Section 4.1 </li>   <li> [The Fundamental Theorem of Linear Algebra](fundamental)</li> <li> [Lecture Slides Fundamental Subspaces][23] </li> <li> [Video: Fundamental Subspaces](Coming Soon)</ul>
+|23| W |4/1|  Projections |  <ul><li> [Strang: Projections Onto Subspaces][Strang15]</li> <li> Strang Section 4.2 </li> </ul> |
+|24| F |4/3|  Determinants |  <ul><li> [Strang: Determinant Properties][Strang18] </li> <li> [Strang:  Determinant Formulas and Cofactors][strang19] </li>  <li> Strang Section 5.1-5.2 </li> </ul> |
+|25| M |4/6| Matrix Calculus  (HW7 Released, HW6 Due)| <ul><li> [Strang: Volumes at 28:07][Strang20]</li> <li> Strang 276--283 </li> </ul> |
+|26| W |4/8|  Matrix Calculus |
+|27| F |4/10|  Eigenvalues and Eigenvectors |
+|28| M |4/13| Diagonalization (HW7 Due, EXTENDED HW A Released) |
+|29| W |4/15|  Markov Matrices |
+|30| F |4/17|  Differential Equations |
 |  | M |4/20| Patriots Day (no class)|
-|31| W |4/22|  Differential Equations |
+|31| W |4/22|  Differential Equations (covid19 spread simulation)  (HW8, Released HW A Due )|
 |32| F |4/24| Symmetric Matrices |
-|33| M |4/27| Positive Definite Matrices |
+|33| M |4/27| Positive Definite Matrices  (HW8 Due, HW9 Released)|
 |34| W |4/29|  Similar Matrices |
 |35| F |5/1|  Statistics and PCA |
-|36| M |5/4| Infinite Dimensional Space |
+|36| M |5/4| Infinite Dimensional Space (HW9 Due, Extended HWB Released)|
 |37| W |5/6|  Fourier  |
 |38| F |5/8|  Linear Transformations |
-|39| M |5/11|  Errors and Condition Numbers |
+|39| M |5/11|  Errors and Condition Numbers (Extended HWB Due)|
 
 
 [strang14]:https://youtu.be/YzZUIYRCE38?t=1
