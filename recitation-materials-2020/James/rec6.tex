@@ -1,0 +1,282 @@
+\documentclass[10pt]{amsart} 
+
+
+\usepackage{amsmath, amssymb, mathrsfs} 
+
+\usepackage[mathscr]{euscript} 
+ 
+\newlength{\mylength}
+\setlength{\mylength}{0.25cm}
+
+\usepackage{enumitem}
+\setlist{listparindent=\parindent, itemsep=0cm, parsep=\mylength, topsep=0cm}
+
+\usepackage[final]{todonotes}
+\usepackage[final]{showkeys} 
+
+\usepackage[breaklinks=true]{hyperref} 
+\usepackage{comment} 
+
+\usepackage{url}
+
+\usepackage{tikz-cd}
+
+\usepackage{amsthm}
+
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \topsep6\p@\@plus6\p@\relax
+	\noindent\emph{#1.} 
+	\ignorespaces
+}{%
+\popQED\endtrivlist\@endpefalse
+}
+\makeatother
+
+\newtheoremstyle{mythm}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{\itshape}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\bfseries}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\newtheoremstyle{myrmk}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\itshape}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\theoremstyle{mythm} 
+%\newtheorem{thm}[subsubsection]{Theorem}
+%\newtheorem*{claim}{Claim}
+%\newtheorem*{thm}{Theorem} 
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma} 
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{prop}[thm]{Proposition}
+%\newtheorem*{mthm}{Main Theorem}
+
+%\newtheorem{prop}[subsubsection]{Proposition} 
+%\newtheorem*{prop}{Proposition} 
+%\newtheorem*{lem}{Lemma}
+%\newtheorem*{klem}{Key Lemma}
+%\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+%\newtheorem{defn}[subsubsection]{Definition}
+\newtheorem*{defn}{Definition} 
+\newtheorem{prob}[thm]{Problem}
+%\newtheorem{que}[subsubsection]{Question}
+
+\theoremstyle{myrmk} 
+%\newtheorem{rmk}[subsubsection]{Remark}
+\newtheorem*{rmk}{Remark}
+%\newtheorem{note}[subsubsection]{Note} 
+\newtheorem*{ex}{Example}
+
+\newcommand{\nc}{\newcommand} 
+\nc{\on}{\operatorname}
+\nc{\rnc}{\renewcommand} 
+
+\rnc{\setminus}{\smallsetminus} 
+
+\nc{\wt}{\widetilde}
+\nc{\wh}{\widehat} 
+\nc{\ol}{\overline} 
+
+\nc{\Frob}{\on{Frob}}
+\nc{\Gal}{\on{Gal}}
+
+\nc{\BN}{\mathbb{N}}
+\nc{\BZ}{\mathbb{Z}}
+\nc{\BQ}{\mathbb{Q}}
+\nc{\BR}{\mathbb{R}}
+\nc{\BC}{\mathbb{C}}
+
+\nc{\id}{\on{id}}
+\nc{\Id}{\on{Id}}
+\nc{\Tr}{\on{Tr}}
+
+\nc{\la}{\langle}
+\nc{\ra}{\rangle} 
+\nc{\lV}{\lVert}
+\nc{\rV}{\rVert}
+\nc{\mb}{\mathbf}
+\nc{\mf}{\mathfrak}
+%\nc{\cur}{\mathscr}
+\nc{\mc}{\mathscr}
+
+\nc{\ira}{\hookrightarrow}
+\nc{\hra}{\hookrightarrow}
+\nc{\sra}{\twoheadrightarrow} 
+
+\rnc{\Re}{\on{Re}}
+
+\nc{\coker}{\on{coker}}
+\nc{\End}{\on{End}}
+\rnc{\Im}{\on{Im}}
+%\rnc{\Re}{\on{Re}}
+
+\nc{\Hom}{\on{Hom}}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage{marginnote}
+\nc{\acts}{\curvearrowright}
+
+\nc{\Mat}{\on{Mat}}
+
+\newenvironment{cd}{\begin{equation*}\begin{tikzcd}}{\end{tikzcd}\end{equation*}\ignorespacesafterend}
+
+\nc{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\nc{\e}[1]{\begin{align*} #1 \end{align*}}
+
+\usepackage[margin=1in]{geometry}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+%\renewcommand*{\arraystretch}{1.4}
+
+\setlength{\parskip}{0.25cm}
+
+\newenvironment{myproof}{\color{blue}\begin{proof}}{\end{proof}} 
+
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\fancyhead[L]{James Tao}
+\fancyhead[C]{18.06 -- Week 7 Recitation}
+\fancyhead[R]{Mar.\ 31, 2020}
+\fancyfoot[C]{}
+
+\newcounter{part-count}
+\setcounter{part-count}{0}
+
+\newenvironment{me}[1]{\begin{enumerate}[#1]\setcounter{enumi}{\value{part-count}}}{\setcounter{part-count}{\value{enumi}}\end{enumerate}}
+
+
+\begin{document}
+	\thispagestyle{fancy}
+	
+	\noindent Determine whether or not these objects exist. If so, write down an example. If not, explain why not. 
+	
+	\begin{me}{itemsep = 0.2cm}
+		\item A $2 \times 4$ matrix $A$ such that $\on{null}(A) = \left\{ \begin{pmatrix}
+		x \\ 0 \\ 0 \\ 0 
+		\end{pmatrix} \text{ for all } x \in \BR\right\}$. 
+		\item An invertible matrix of the following form: 
+		\[
+		\begin{pmatrix}
+			? & ? & ? & ? \\ 
+			? & ? & ? & ? \\
+			? & 0 & 0 & 0 \\
+			? & 0 & 0 & 0
+		\end{pmatrix}
+		\]
+		\item Let $A = \begin{pmatrix}
+		1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 
+		\end{pmatrix}$. A matrix $B$ such that $\on{col}(B) = \on{row}(A)$ and $\on{null}(B) = \on{null}(A^\top)$. 
+		\item A matrix $A = \begin{pmatrix}
+			a_{11} & a_{12} \\ a_{21} & a_{22} 
+		\end{pmatrix}$ such that the system 
+		\e{
+			a_{11}x + a_{12}y &= 1 \\
+			a_{21}x + a_{22}y &= 2
+		} 
+		has no solution, the system 
+		\e{
+			a_{11}x + a_{12}y &= 1 \\
+			a_{21}x + a_{22}y &= 1
+		} 
+		has exactly one solution, and the system 
+		\e{
+			a_{11}x + a_{12}y &= 1 \\
+			a_{21}x + a_{22}y &= 0
+		} 
+		has infinitely many solutions. 
+		\item Two subspaces $V_1, V_2 \subseteq \BR^3$ such that $\dim(V_1) = \dim(V_2) = 2$ and $V_1 \cap V_2 = \{0\}$. 
+		\item Let $A = \begin{pmatrix}
+		1 & 1 & 1
+		\end{pmatrix}$. A basis $\{v_1, v_2, v_3\} \subset \BR^3$ such that $v_1 \in \on{null}(A)$ and $v_2, v_3 \in \on{row}(A)$. 
+		\item Let $A = \begin{pmatrix}
+		1 & 1 & 1
+		\end{pmatrix}$. A basis $\{v_1, v_2, v_3\} \subset \BR^3$ such that $v_1, v_2 \in \on{null}(A)$ and $v_3 \in \on{row}(A)$.  
+		\item An $n \times n$ matrix $P$ such that $P^2 = P$, $\on{rank}(P) = n$, and $P \neq \on{Id}_{n \times n}$. 
+		\item An $n \times n$ matrix $A$ such that all singular values of $A$ are equal to 1, and $A \neq \on{Id}_{n \times n}$. 
+		\item Two subspaces $V_1, V_2 \subseteq \BR^3$ such that $V_1 \cap V_2 = \{0\}$ and $V_1^\perp \cap V_2^\perp = \{0\}$. 
+		\item A $3 \times 5$ matrix $A$ such that $\dim(\on{null}(A)) + \dim(\on{null}(A^\top)) = 5$. 
+		\item Matrices $A$ and $B$ such that $\on{pinv}(A) = \on{pinv}(B)$ and $A \neq B$. 
+		\item Matrices $A$ and $B$ such that $A^\top A = B^\top B$ and $A \neq B$. 
+		\item A square matrix $A$ such that $A^\top A + AA^\top$ is noninvertible. 
+		\item An $m \times n$ matrix $A$ and a nonzero vector $v \in \on{row}(A)$ such that $Av \in \on{null}(A^\top)$. 
+	\end{me}
+	
+	\newpage
+	
+	\section*{Solutions} 
+	
+	\noindent DNE stands for `does not exist.' 
+	
+	\begin{enumerate}
+		\item DNE. Combine the relation $\on{rank}(A) + \dim(\on{null}(A)) = 4$ with $\on{rank}(A) \le 2$ and $\dim(\on{null}(A)) = 1$ to get a contradiction. 
+		\item DNE. The last three columns of $A$ provide three vectors in a 2-dimensional space, so they can't be linearly independent. 
+		\item Take $B = A^\top$. 
+		\item DNE. If $\on{null}(A) > 0$, then every system of the form $A\mb{x} = \mb{b}$ has either zero or infinitely many solutions. If $\on{null}(A) = 0$, then every such system has either zero or one solution. 
+		\item DNE. Suppose such $V_1, V_2$ did exist. Take a basis $\{v_1, v_2\}$ for $V_1$ and a basis $\{w_1, w_2\}$ for $V_2$. Since $\{v_1, v_2, w_1, w_2\}$ is a list of four vectors in $\BR^3$, they must satisfy some nontrivial linear relation. If this linear relation involves both $\{v_1, v_2\}$ and $\{w_1, w_2\}$, then we can rearrange it to look as follows: 
+		\[
+			c_1v_1 + c_2v_2 = d_1w_1 + d_2w_2
+		\]
+		where $c_1$ and $c_2$ are not both zero, and $d_1$ and $d_2$ are not both zero. This contradicts $V_1 \cap V_2 = \{0\}$ because the LHS lies in $V_1 \setminus \{0\}$ while the RHS lies in $V_2 \setminus \{0\}$. 
+		
+		The only remaining possibilities are that the linear relation only involves $\{v_1, v_2\}$ or only involves $\{w_1, w_2\}$. Neither is possible, because these are bases. 
+		\item DNE. Since $\{v_1, v_2, v_3\}$ is a basis, $\{v_2, v_3\}$ must be linearly independent. But $\on{row}(A)$ is one-dimensional, so it doesn't contain a pair of linearly independent vectors. 
+		\item One may take  
+		\[
+			v_1 = \begin{pmatrix}
+			1 \\ -1 \\ 0 
+			\end{pmatrix}, \qquad v_2 = \begin{pmatrix}
+			1 \\ 0 \\ -1
+			\end{pmatrix}, \qquad v_3 = \begin{pmatrix}
+			1 \\ 1 \\ 1
+			\end{pmatrix}. 
+		\]
+		\item DNE. Since $\on{rank}(P) = n$, we know that $\on{col}(P) = \BR^n$. Therefore any vector in $\BR^n$ can be written as $Px$ for some $x \in \BR^n$. 
+		
+		Next, we claim that $Py = y$ for all $y \in \BR^n$. To see this, write $y = Px$ for some $x$, after which the equation becomes $P^2x = Px$ which is part of the hypothesis. 
+		
+		This implies that $P = \on{Id}_{n \times n}$. 
+		\item Take $A$ to be any square orthogonal matrix which is not the identity. 
+		\item Take 
+		\[
+			V_1 = \on{span}\left( \begin{pmatrix}
+			1 \\ 0 \\ 0
+			\end{pmatrix} \right) \qquad \text{ and } \qquad V_2 = \on{span}\left( \begin{pmatrix}
+			0 \\ 1 \\ 0
+			\end{pmatrix}, \begin{pmatrix}
+			0 \\ 0 \\ 1 
+			\end{pmatrix}\right)
+		\]
+		Then $V_1^\perp = V_2$ and $V_1 \cap V_2 = 0$, from which it also follows that $V_1^\perp \cap V_2^\perp = \{0\}$. 
+		\item DNE. If $r$ is the rank of $A$, we have $\dim(\on{null}(A)) = 5-r$ and $\dim(\on{null}(A^\top)) = 3-r$, so the desired equation implies $8-2r=5$. This is impossible since the RHS can't even. 
+		\item DNE. The construction of the pseudoinverse mentioned in class (based on the SVD) implies that $\on{pinv}(\on{pinv}(A)) = A$ for any matrix $A$. Therefore, if $\on{pinv}(A) = \on{pinv}(B)$, applying $\on{pinv}(-)$ to both sides implies that $A = B$. 
+		\item Take $A$ to be any nonidentity orthogonal matrix, and take $B$ to be the identity. 
+		\item Take $A = \begin{pmatrix}
+		1 & 0 \\ 0 & 0 
+		\end{pmatrix}$. 
+		\item DNE. Since $Av \in \on{null}(A^\top)$ by hypothesis and $Av \in \on{col}(A)$ by definition, we conclude that $Av \in \on{null}(A^\top) \cap \on{col}(A) = \{0\}$, so $Av = 0$. Therefore $v \in \on{null}(A)$ by definition. Thus, $v \in \on{row}(A) \cap \on{null}(A) = \{0\}$, which contradicts that $v$ is nonzero. 
+	\end{enumerate} 
+	
+\end{document} 
