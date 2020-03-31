@@ -170,7 +170,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [HW3S]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/8534b2579d07a162c25626fb0a0ed3d44bb2df8e/psets%20spring%202020/Pset3%2018.06%20%20Spring%202020%20sols.ipynb
 [HW4]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset4%2018.06%20Spring%202020.ipynb
 [HW5]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset%205%2018.06%202020.ipynb
-[HW6]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset6%2018.06%20Spring%202020.ipynb
+[HW6]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset%206%2018.06%202020.ipynb
 
 [svdimagedemo]:http://timbaumann.info/svd-image-compression-demo/
 [svdgolub]:https://www.mathworks.com/company/newsletters/articles/professor-svd.html
