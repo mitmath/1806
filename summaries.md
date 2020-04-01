@@ -119,8 +119,8 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |20| W |3/18|  Class cancelled, HW5 now optionally due, it will be graded, it will not count, and can be handed in late |
 |21| F |3/20| Class cancelled |
 | | | Spring Break|
-|22| M |3/30|  Orthogonality  (HW6 Released)|   <ul> <li> [Strang: Orthogonal Vectors and Subspaces][Strang14] </li> <li> Strang Section 4.1 </li>   <li> [The Fundamental Theorem of Linear Algebra by Gil Strang][fundamental]</li> <li> [Lecture Slides Fundamental Subspaces][23] </li> <li> [Video: Fundamental Subspaces][video:fundamental]</ul>
-|23| W |4/1|  Projections |  <ul><li> [Strang: Projections Onto Subspaces][Strang15]</li> <li> Strang Section 4.2 </li> </ul> |
+|22| M |3/30|  Orthogonality  (HW6 Released)|   <ul> <li> [Strang: Orthogonal Vectors and Subspaces][Strang14] </li> <li> Strang Section 4.1 </li>   <li> [The Fundamental Theorem of Linear Algebra by Gil Strang][fundamental]</li> <li> [Lecture Slides: Fundamental Subspaces][22] </li> <li> [Video: Fundamental Subspaces][video:fundamental]</ul>
+|23| W |4/1|  Projections |  <ul><li> [Strang: Projections Onto Subspaces][Strang15]</li> <li> Strang Section 4.2 </li> [Lecture Slides: Projections][23]<li> </li> </ul> |
 |24| F |4/3|  Determinants |  <ul><li> [Strang: Determinant Properties][Strang18] </li> <li> [Strang:  Determinant Formulas and Cofactors][strang19] </li>  <li> Strang Section 5.1-5.2 </li> </ul> |
 |25| M |4/6| Matrix Calculus  (HW7 Released, HW6 Due)| <ul><li> [Strang: Volumes at 28:07][Strang20]</li> <li> Strang 276--283 </li> </ul> |
 |26| W |4/8|  Matrix Calculus |
@@ -161,7 +161,8 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [15]:https://docs.google.com/presentation/d/1WGQ5beDnnZhqHZdOnp75Au8mg3EWxBDy6BtdIFgtqWw/edit?usp=sharing
 [16]:https://docs.google.com/presentation/d/10A4vNeIG6ytb5khDAm-42z1zpFkfJneVRE2_dsb9BBc/edit?usp=sharing
 [17]:https://docs.google.com/presentation/d/1S9p9Yy6LXUJT72h5tGAuCfUJJ0zzy4P2nyt6qwlx7GM/edit?usp=sharing
-[23]:https://docs.google.com/presentation/d/1DTYozuGlOe8qBh1KXmCULwAr9fW33zY5m-aWI9xj6q4/edit#slide=id.g7f5f1919c3_0_18
+[22]:https://docs.google.com/presentation/d/1DTYozuGlOe8qBh1KXmCULwAr9fW33zY5m-aWI9xj6q4/edit#slide=id.g7f5f1919c3_0_18
+[23]:https://docs.google.com/presentation/d/1Jap0s_HTBIuxwlhsoySJgaaM3vPArU1Doj08UBsi7-Q/edit?usp=sharing
 
 [HW1S]:https://github.com/mitmath/1806/raw/master/psets%20spring%202020/Pset%201%2018.06%20Spring%202020%20solution.pdf
 [HW2]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset2%2018.06%20Spring%202020.ipynb
