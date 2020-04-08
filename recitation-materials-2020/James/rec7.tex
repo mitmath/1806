@@ -1,0 +1,279 @@
+\documentclass[10pt]{amsart} 
+
+
+\usepackage{amsmath, amssymb, mathrsfs} 
+
+\usepackage[mathscr]{euscript} 
+ 
+\newlength{\mylength}
+\setlength{\mylength}{0.25cm}
+
+\usepackage{enumitem}
+\setlist{listparindent=\parindent, itemsep=0cm, parsep=\mylength, topsep=0cm}
+
+\usepackage[final]{todonotes}
+\usepackage[final]{showkeys} 
+
+\usepackage[breaklinks=true]{hyperref} 
+\usepackage{comment} 
+
+\usepackage{url}
+
+\usepackage{tikz-cd}
+
+\usepackage{amsthm}
+
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \topsep6\p@\@plus6\p@\relax
+	\noindent\emph{#1.} 
+	\ignorespaces
+}{%
+\popQED\endtrivlist\@endpefalse
+}
+\makeatother
+
+\newtheoremstyle{mythm}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{\itshape}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\bfseries}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\newtheoremstyle{myrmk}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\itshape}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\theoremstyle{mythm} 
+%\newtheorem{thm}[subsubsection]{Theorem}
+%\newtheorem*{claim}{Claim}
+%\newtheorem*{thm}{Theorem} 
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma} 
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{prop}[thm]{Proposition}
+%\newtheorem*{mthm}{Main Theorem}
+
+%\newtheorem{prop}[subsubsection]{Proposition} 
+%\newtheorem*{prop}{Proposition} 
+%\newtheorem*{lem}{Lemma}
+%\newtheorem*{klem}{Key Lemma}
+%\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+%\newtheorem{defn}[subsubsection]{Definition}
+\newtheorem*{defn}{Definition} 
+\newtheorem{prob}[thm]{Problem}
+%\newtheorem{que}[subsubsection]{Question}
+
+\theoremstyle{myrmk} 
+%\newtheorem{rmk}[subsubsection]{Remark}
+\newtheorem*{rmk}{Remark}
+%\newtheorem{note}[subsubsection]{Note} 
+\newtheorem*{ex}{Example}
+
+\newcommand{\nc}{\newcommand} 
+\nc{\on}{\operatorname}
+\nc{\rnc}{\renewcommand} 
+
+\rnc{\setminus}{\smallsetminus} 
+
+\nc{\wt}{\widetilde}
+\nc{\wh}{\widehat} 
+\nc{\ol}{\overline} 
+
+\nc{\Frob}{\on{Frob}}
+\nc{\Gal}{\on{Gal}}
+
+\nc{\BN}{\mathbb{N}}
+\nc{\BZ}{\mathbb{Z}}
+\nc{\BQ}{\mathbb{Q}}
+\nc{\BR}{\mathbb{R}}
+\nc{\BC}{\mathbb{C}}
+
+\nc{\id}{\on{id}}
+\nc{\Id}{\on{Id}}
+\nc{\Tr}{\on{Tr}}
+
+\nc{\la}{\langle}
+\nc{\ra}{\rangle} 
+\nc{\lV}{\lVert}
+\nc{\rV}{\rVert}
+\nc{\mb}{\mathbf}
+\nc{\mf}{\mathfrak}
+%\nc{\cur}{\mathscr}
+\nc{\mc}{\mathscr}
+
+\nc{\ira}{\hookrightarrow}
+\nc{\hra}{\hookrightarrow}
+\nc{\sra}{\twoheadrightarrow} 
+
+\rnc{\Re}{\on{Re}}
+
+\nc{\coker}{\on{coker}}
+\nc{\End}{\on{End}}
+\rnc{\Im}{\on{Im}}
+%\rnc{\Re}{\on{Re}}
+
+\nc{\Hom}{\on{Hom}}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage{marginnote}
+\nc{\acts}{\curvearrowright}
+
+\nc{\Mat}{\on{Mat}}
+
+\newenvironment{cd}{\begin{equation*}\begin{tikzcd}}{\end{tikzcd}\end{equation*}\ignorespacesafterend}
+
+\nc{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\nc{\e}[1]{\begin{align*} #1 \end{align*}}
+
+\usepackage[margin=1in]{geometry}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+%\renewcommand*{\arraystretch}{1.4}
+
+\setlength{\parskip}{0.25cm}
+
+\newenvironment{myproof}{\color{blue}\begin{proof}}{\end{proof}} 
+
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\fancyhead[L]{James Tao}
+\fancyhead[C]{18.06 -- Week 8 Recitation}
+\fancyhead[R]{Apr.\ 7, 2020}
+\fancyfoot[C]{}
+
+\newcounter{part-count}
+\setcounter{part-count}{0}
+
+\newenvironment{me}[1]{\begin{enumerate}[#1]\setcounter{enumi}{\value{part-count}}}{\setcounter{part-count}{\value{enumi}}\end{enumerate}}
+
+
+\begin{document}
+	\thispagestyle{fancy}
+	
+	\noindent Determine whether or not these objects exist. If so, write down an example. If not, explain why not. 
+	
+	\begin{me}{itemsep = 0.2cm}
+		\item A $2 \times 2$ matrix $P$ satisfying $P^2 = P$, $\begin{pmatrix}
+		1 \\ 1 
+		\end{pmatrix} \in \on{col}(P)$, and $\begin{pmatrix}
+		1 \\ 2
+		\end{pmatrix} \in \on{null}(P)$. 
+		\item An invertible matrix $V$ such that 
+		\[
+			V \begin{pmatrix}
+			1 & 2 \\ 3 & 4 
+			\end{pmatrix} V^{-1} = \begin{pmatrix}
+			4 & 3 \\ 1 & 2
+			\end{pmatrix}. 
+		\]
+		\item Two vectors $v, w \in \BR^2$ such that $v \cdot w = 1$ and $vv^\top + ww^\top = \on{Id}_{2 \times 2}$. 
+		\item A square orthogonal matrix $Q$ such that $Q^3 = \on{Id}$, but neither $Q$ nor $Q^2$ equal the identity. 
+		\item An upper triangular\footnote{This means that the entries of $U$ lying \emph{strictly} below the main diagonal are zero.} matrix $U$ such that $U^3 = \on{Id}$, but but neither $U$ nor $U^2$ equal the identity. 
+		\item A square orthogonal matrix $Q$ such that $\det(Q) < 0$. 
+		\item An orthogonal matrix such that $\det(QQ^\top) < 0$. 
+		\item A symmetric matrix $A$ such that $\det(A) < 0$. 
+		\item A matrix $A$ such that $\det(A^\top A) < 0$. 
+		\item A real number $a$ such that the matrix 
+		\[
+			A = \begin{pmatrix}
+			3 & a \\
+			a & 1
+			\end{pmatrix}
+		\]
+		transforms a shape with area 1 into a shape with area 4. 
+		\item A $2 \times 2$ matrix which transforms the parallelogram with vertices $(1, 1), (2, -1), (-2, 1), (-1, -1)$ into a square of area 4. 
+		\item A $2 \times 2$ matrix $A$ such that $\det(A) = 1$ and $A$ transforms the square with vertices $(1, 1), (1, -1), (-1, 1), (-1, -1)$ into a shape which lies inside the unit disk $D := \{v \in \BR^2 \text{ such that } \lVert v \rVert \le 1\}$. 
+	\end{me}
+	
+	\newpage
+	
+	\section*{Solutions} 
+	
+	\noindent DNE stands for `does not exist.' 
+	
+	\begin{enumerate}
+		\item $P = \begin{pmatrix}
+		2 & -1 \\ 2 & -1
+		\end{pmatrix}$. 
+		\item DNE. We have 
+		\[
+			\det\left( V \begin{pmatrix}
+			1 & 2 \\ 3 & 4 
+			\end{pmatrix} V^{-1} \right) = \det(V) \cdot (-2) \cdot \det(V)^{-1} = -2, 
+		\]
+		which contradicts the RHS. 
+		\item DNE. The second condition would imply 
+		\[
+			vv^\top v + ww^\top v = v. 
+		\]
+		The first condition implies $w^\top v = 1$, so 
+		\[
+			vv^\top v + ww^\top v = \lVert v \rVert^2 \, v + w. 
+		\]
+		Therefore $v$ and $w$ are linearly dependent. By a homework problem, this implies that 
+		\[
+			\on{rank}(vv^\top + ww^\top) < 2. 
+		\]
+		This contradicts $\on{rank}(\on{Id}_{2 \times 2}) = 2$. 
+		\item Let $Q$ be a rotation matrix with angle $2\pi / 3$. 
+		\item DNE. First, $U$ cannot be $1 \times 1$ because $U^3 = 1$ would imply that $U = 1$, contradiction. 
+		
+		Next, let $U$ be an $n \times n$ upper-triangular matrix. We prove, by induction on $n$, that $U^3 = \on{Id}_{n \times n}$ implies $U = \on{Id}_{n \times n}$. Fix $n \ge 2$ and assume the result holds for $n-1$. Decompose $U$ into blocks of these sizes: 
+		\[
+			\left( \begin{array}{c|c}
+				(n-1)\times (n-1) & (n-1) \times 1 \\ \hline
+				1 \times (n-1) & 1 \times 1
+			\end{array} \right). 
+		\]
+		Since $U$ is upper-triangular, the bottom-left block is zero. This implies that the top-left block of $U^3$ is the cube of the top-left block of $U$. By the inductive hypothesis, the top-left block must equal $\on{Id}_{(n-1)\times (n-1)}$. Similarly, the bottom-right block of $U^3$ is the cube of the bottom-right block of $U$, so it equals 1. Thus, $U$ looks like 
+		\[
+			U =  \left(\begin{array}{c|c}
+			\on{Id}_{(n-1) \times (n-1)} & b \\ \hline
+			0_{1 \times (n-1)} & 1
+			\end{array} \right)
+		\]
+		where $b$ is a $(n-1) \times 1$ matrix. Direct multiplication shows that 
+		\[
+			U^3 = \left( \begin{array}{c|c}
+			\on{Id}_{(n-1) \times (n-1)} & 3b \\ \hline
+			0_{1 \times (n-1)} & 1
+			\end{array} \right), 
+		\]
+		so $U^3 = \on{Id}_{n \times n}$ implies that $b = 0$, hence $U = \on{Id}_{n \times n}$. This completes the induction. 
+		\item Take $Q = (-1)$. 
+		\item DNE. If $Q$ is square, then $\det(QQ^\top) = \det(Q)^2 \ge 0$. If $Q$ is $n \times m$ with $m < n$, then $\on{null}(Q^\top) > 0$, so $QQ^\top$ is not invertible, so its determinant equals zero. These are the only two possibilities for the size of $Q$. 
+		\item Take $A = (-1)$. 
+		\item DNE. If $\on{null}(A) > 0$, then $A^\top A$ is not invertible, so its determinant equals zero. If $\on{null}(A) = 0$, then we can write $A = QR$ where $Q$ is orthogonal and $R$ is invertible. Then 
+		\[
+			\det(A^\top A) = \det(R^\top R) = \det(R)^2 \ge 0. 
+		\]
+		\item Take $a = \sqrt7$, so $\det(A) = -4$. This matrix will transform a shape of are 1 into a shape of area 4. The negative sign on the determinant indicates that $A$ reverses orientation, i.e.\ it transforms a clockwise loop into a counterclockwise loop. 
+		\item Take $A = \begin{pmatrix}
+		\frac23 & \frac13 \\
+		0 & 1
+		\end{pmatrix}$. 
+		\item DNE. The image of the given square under $A$ is a parallelogram which lies inside the unit disk $D$. The largest possible area of such a parallelogram is 2, which is attained by a square inscribed in the unit circle. Thus $\det(A) \le \frac12$. 
+	\end{enumerate} 
+	
+\end{document} 
