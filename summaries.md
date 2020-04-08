@@ -123,7 +123,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |23| W |4/1|  Projections |  <ul><li> [Strang: Projections Onto Subspaces][Strang15]</li> <li> Strang Section 4.2 </li> <li> [Lecture Slides: Projections][23]</li> </ul> |
 |24| F |4/3|  Determinants |  <ul><li> [Strang: Determinant Properties][Strang18] </li> <li> [Strang:  Determinant Formulas and Cofactors][strang19] </li>  <li> Strang Section 5.1-5.2 </li><li> [Lecture Slides][24] </li> </ul> |
 |25| M |4/6| Applications of Determinants  (HW7 Released, HW6 Due)| <ul> <li> Strang 276--283 </li> <li> [Lecture Slides (15 puzzle)][25] </li> <li> [Video: Applications of Determinants][video:DetApps] </li></ul> |
-|26| W |4/8| Volumes  |  <ul> <li> [Strang: Volumes at 28:07][Strang20]</li> <li> Stay tuned, video coming by tonight </li> <li> [Lecture notes in progress][26] </li> </ul> |
+|26| W |4/8| Volumes  |  <ul> <li> [Strang: Volumes at 28:07][Strang20]</li> <li> Stay tuned, video coming by tonight </li> <li> [Lecture notes in progress][26] </li> <li> [3 Blue 1 Brown Video Essence Episode 6](https://youtu.be/Ip3X9LOh2dk) </li> </ul> |
 |27| F |4/10|  Matrix Calculus |
 |28| M |4/13| Diagonalization (HW7 Due, EXTENDED HW A Released) |
 |29| W |4/15|  Markov Matrices |
