@@ -123,7 +123,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |23| W |4/1|  Projections |  <ul><li> [Strang: Projections Onto Subspaces][Strang15]</li> <li> Strang Section 4.2 </li> <li> [Lecture Slides: Projections][23]</li> </ul> |
 |24| F |4/3|  Determinants |  <ul><li> [Strang: Determinant Properties][Strang18] </li> <li> [Strang:  Determinant Formulas and Cofactors][strang19] </li>  <li> Strang Section 5.1-5.2 </li><li> [Lecture Slides][24] </li> </ul> |
 |25| M |4/6| Applications of Determinants  (HW7 Released, HW6 Due)| <ul> <li> Strang 276--283 </li> <li> [Lecture Slides (15 puzzle)][25] </li> <li> [Video: Applications of Determinants][video:DetApps] </li></ul> |
-|26| W |4/8| Volumes  |  <ul> <li> [Strang: Volumes at 28:07][Strang20]</li> <li> Stay tuned, video coming by tonight </li> </ul> |
+|26| W |4/8| Volumes  |  <ul> <li> [Strang: Volumes at 28:07][Strang20]</li> <li> Stay tuned, video coming by tonight </li> <li> [Lecture notes in progress][26] </li> </ul> |
 |27| F |4/10|  Matrix Calculus |
 |28| M |4/13| Diagonalization (HW7 Due, EXTENDED HW A Released) |
 |29| W |4/15|  Markov Matrices |
@@ -166,6 +166,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [23]:https://docs.google.com/presentation/d/1Jap0s_HTBIuxwlhsoySJgaaM3vPArU1Doj08UBsi7-Q/edit?usp=sharing
 [24]:https://docs.google.com/presentation/d/13yE0xVATP-yFCienB88eiAcVXcugY5VEgtUh5sK9dKM/edit?usp=sharing
 [25]:https://docs.google.com/presentation/d/10CEbPez-XT69ddGNQzuIqKN_sVe1DpSHqzW2d_ONNdw/edit?usp=sharing
+[26]:https://docs.google.com/presentation/d/1MmlqmiQosjG_HCAXvOWwbaBDmHt6FViW2ZW86hKnfyo/edit?usp=sharing
 
 [HW1S]:https://github.com/mitmath/1806/raw/master/psets%20spring%202020/Pset%201%2018.06%20Spring%202020%20solution.pdf
 [HW2]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset2%2018.06%20Spring%202020.ipynb
