@@ -124,7 +124,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |23| W |4/1|  Projections |  <ul><li> [Strang: Projections Onto Subspaces][Strang15]</li> <li> Strang Section 4.2 </li> <li> [Lecture Slides: Projections][23]</li> </ul> |
 |24| F |4/3|  Determinants |  <ul><li> [Strang: Determinant Properties][Strang18] </li> <li> [Strang:  Determinant Formulas and Cofactors][strang19] </li>  <li> Strang Section 5.1-5.2 </li><li> [Lecture Slides][24] </li> </ul> |
 |25| M |4/6| Applications of Determinants  (HW7 Released, HW6 Due)| <ul> <li> Strang 276--283 </li> <li> [Lecture Slides (15 puzzle)][25] </li> <li> [Video: Applications of Determinants (puzzle starts at 14:58)][video:DetApps] </li></ul> |
-|26| W |4/8| Volumes  |  <ul> <li> [Strang: Volumes at 28:07][Strang20]</li> <li> Stay tuned, video coming by tonight </li> <li> [Lecture notes on volumes][26] </li> <li> [3 Blue 1 Brown Video Essence Episode 6](https://youtu.be/Ip3X9LOh2dk) </li> </ul> |
+|26| W |4/8| Volumes  |  <ul> <li> [Strang: Volumes at 28:07][Strang20]</li> <li> [Video:Volumes][Video:volumes] </li> <li> [Lecture notes on volumes][26] </li> <li> [3 Blue 1 Brown Video Essence Episode 6](https://youtu.be/Ip3X9LOh2dk) </li> </ul> |
 |27| F |4/10|  Matrix Calculus |
 |28| M |4/13| Diagonalization (HW7 Due, EXTENDED HW A Released) |
 |29| W |4/15|  Markov Matrices |
@@ -153,6 +153,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [video:dimension]:https://video.odl.mit.edu/videos/e6f3203edb2d42ec8a12733b47164deb/
 [video:fundamental]:https://video.odl.mit.edu/videos/4bdeb7334d394ba38908146de8728e43/
 [video:detapps]:https://video.odl.mit.edu/videos/6ecc249e7c294980bc5ae4dbb3fc002d/
+[video:volumes]:https://video.odl.mit.edu/videos/008f9ae5d2ce42f5bdf168506afdaccf/
 
 [BB]:https://drive.google.com/drive/folders/1fVWjMiOVLYaVhcqEYzSuODxD6nAyAojY?usp=sharing
 [4]:https://docs.google.com/presentation/d/10J64Kk3v3ZfuPOuLEF9lmKI28XFdrzShqxsDZXeBJSk/edit?usp=sharing
