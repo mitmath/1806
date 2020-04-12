@@ -133,7 +133,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |31| W |4/22|  Differential Equations (covid19 spread simulation)  (HW8, Released HW A Due )|
 |32| F |4/24| Symmetric Matrices |<ul> <li>  Strang 6.4 </li> <li>[Strang:sym and pos def][strang25]</li></ul>|
 |33| M |4/27| Positive Definite Matrices  (HW8 Due, HW9 Released)|<ul> <li>  Strang 6.5 </li> </ul>|  
-|34| W |4/29|  Similar Matrices |<ul> <li>  Strang 307-312  </li> </ul>|
+|34| W |4/29|  Similar Matrices |<ul> <li>  Strang 307-312  </li> <li>[Strang:similar matrices ][strang28] </li> </ul>|
 |35| F |5/1|  Statistics and PCA |<ul> <li>  Strang 7.3 </li> </ul>|
 |36| M |5/4| Infinite Dimensional Space (HW9 Due, Extended HWB Released)|<ul> <li>  Strang 10.5 </li> </ul>|
 |37| W |5/6|  Fourier  Transform  | <ul> <li>  Strang 9.3 </li> </ul>|
@@ -150,6 +150,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [strang24]:https://youtu.be/lGGDIGizcQ0
 [strang23]:https://youtu.be/IZqwi0wJovM
 [strang25]:https://youtu.be/UCc9q_cAhho
+[strang28]:https://youtu.be/TSdXJw83kyA
 [fundamental]:http://home.engineering.iastate.edu/~julied/classes/CE570/Notes/strangpaper.pdf
 
 [video:complete]:https://video.odl.mit.edu/videos/38553aca62ae456482dcc9635a36c1e3/
