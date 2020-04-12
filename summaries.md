@@ -125,7 +125,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |24| F |4/3|  Determinants |  <ul><li> [Strang: Determinant Properties][Strang18] </li> <li> [Strang:  Determinant Formulas and Cofactors][strang19] </li>  <li> Strang Section 5.1-5.2 </li><li> [Lecture Slides][24] </li> </ul> |
 |25| M |4/6| Applications of Determinants  (HW7 Released, HW6 Due)| <ul> <li> Strang 276--283 </li> <li> [Lecture Slides (15 puzzle)][25] </li> <li> [Video: Applications of Determinants (puzzle starts at 14:58)][video:DetApps] </li></ul> |
 |26| W |4/8| Volumes  |  <ul> <li> [Strang: Volumes at 28:07][Strang20]</li> <li> [Video:Volumes][Video:volumes] </li> <li> [Lecture notes on volumes][26] </li> <li> [3 Blue 1 Brown Video Essence Episode 6](https://youtu.be/Ip3X9LOh2dk) </li> </ul> |
-|27| F |4/10|  Matrix Calculus | coming soon|
+|27| F |4/10|  Matrix Calculus |  <ul><li> [Lecture notes on matrix calculus in progress][27]</li></ul>|
 |28| M |4/13| Eigenvalues and Diagonalization (HW7 Due, EXTENDED HW A Released) | <ul> <li>  Strang 6.1-6.2 </li> <li>[Strang:Diagonalization and Powers][strang22]  </li></ul>|
 |29| W |4/15|  Markov Matrices |<ul> <li>  Strang 10.3 </li>  <li> [Strang:Markov Matrices (first 35 minutes)][strang23]</ul>|
 |30| F |4/17|  Differential Equations |<ul> <li>  Strang 6.3 </li> <li> [Strang:Differential Equations][strang22]</ul>|
@@ -174,6 +174,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [24]:https://docs.google.com/presentation/d/13yE0xVATP-yFCienB88eiAcVXcugY5VEgtUh5sK9dKM/edit?usp=sharing
 [25]:https://docs.google.com/presentation/d/10CEbPez-XT69ddGNQzuIqKN_sVe1DpSHqzW2d_ONNdw/edit?usp=sharing
 [26]:https://docs.google.com/presentation/d/1MmlqmiQosjG_HCAXvOWwbaBDmHt6FViW2ZW86hKnfyo/edit?usp=sharing
+[27]:https://docs.google.com/presentation/d/1PVOF0X9Iyx_UCyMeePLfPZg3Na6HDwVzps7x80ChsL4/edit?usp=sharing
 
 [HW1S]:https://github.com/mitmath/1806/raw/master/psets%20spring%202020/Pset%201%2018.06%20Spring%202020%20solution.pdf
 [HW2]:https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset2%2018.06%20Spring%202020.ipynb
