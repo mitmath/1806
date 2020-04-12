@@ -126,19 +126,19 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |25| M |4/6| Applications of Determinants  (HW7 Released, HW6 Due)| <ul> <li> Strang 276--283 </li> <li> [Lecture Slides (15 puzzle)][25] </li> <li> [Video: Applications of Determinants (puzzle starts at 14:58)][video:DetApps] </li></ul> |
 |26| W |4/8| Volumes  |  <ul> <li> [Strang: Volumes at 28:07][Strang20]</li> <li> [Video:Volumes][Video:volumes] </li> <li> [Lecture notes on volumes][26] </li> <li> [3 Blue 1 Brown Video Essence Episode 6](https://youtu.be/Ip3X9LOh2dk) </li> </ul> |
 |27| F |4/10|  Matrix Calculus | coming soon|
-|28| M |4/13| Diagonalization (HW7 Due, EXTENDED HW A Released) |
-|29| W |4/15|  Markov Matrices |
-|30| F |4/17|  Differential Equations |
+|28| M |4/13| Diagonalization (HW7 Due, EXTENDED HW A Released) | <ul> <li>  Strang 6.1-6.2 </li> </ul>|
+|29| W |4/15|  Markov Matrices |<ul> <li>  Strang 10.3 </li> </ul>|
+|30| F |4/17|  Differential Equations |<ul> <li>  Strang 6.3 </li> </ul>|
 |  | M |4/20| Patriots Day (no class)|
 |31| W |4/22|  Differential Equations (covid19 spread simulation)  (HW8, Released HW A Due )|
-|32| F |4/24| Symmetric Matrices |
-|33| M |4/27| Positive Definite Matrices  (HW8 Due, HW9 Released)|
-|34| W |4/29|  Similar Matrices |
-|35| F |5/1|  Statistics and PCA |
-|36| M |5/4| Infinite Dimensional Space (HW9 Due, Extended HWB Released)|
-|37| W |5/6|  Fourier  |
-|38| F |5/8|  Linear Transformations |
-|39| M |5/11|  Errors and Condition Numbers (Extended HWB Due)|
+|32| F |4/24| Symmetric Matrices |<ul> <li>  Strang 6.4 </li> </ul>|
+|33| M |4/27| Positive Definite Matrices  (HW8 Due, HW9 Released)|<ul> <li>  Strang 6.5 </li> </ul>|  
+|34| W |4/29|  Similar Matrices |<ul> <li>  Strang 307-312  </li> </ul>|
+|35| F |5/1|  Statistics and PCA |<ul> <li>  Strang 7.3 </li> </ul>|
+|36| M |5/4| Infinite Dimensional Space (HW9 Due, Extended HWB Released)|<ul> <li>  Strang 10.5 </li> </ul>|
+|37| W |5/6|  Fourier  Transform  | <ul> <li>  Strang 9.3 </li> </ul>|
+|38| F |5/8|  Linear Transformations | <ul> <li>  Strang 8.1-8.3 </li> </ul>|
+|39| M |5/11|  Errors and Condition Numbers (Extended HWB Due)| <ul> <li>  Strang 11.2 </li> </ul>|
 
 
 [strang14]:https://youtu.be/YzZUIYRCE38?t=1
