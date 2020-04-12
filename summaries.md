@@ -131,7 +131,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |30| F |4/17|  Differential Equations |<ul> <li>  Strang 6.3 </li> <li> [Strang:Differential Equations][strang22]</ul>|
 |  | M |4/20| Patriots Day (no class)|
 |31| W |4/22|  Differential Equations (covid19 spread simulation)  (HW8, Released HW A Due )|
-|32| F |4/24| Symmetric Matrices |<ul> <li>  Strang 6.4 </li> </ul>|
+|32| F |4/24| Symmetric Matrices |<ul> <li>  Strang 6.4 </li> <li>[Strang:sym and pos def][strang25]</li></ul>|
 |33| M |4/27| Positive Definite Matrices  (HW8 Due, HW9 Released)|<ul> <li>  Strang 6.5 </li> </ul>|  
 |34| W |4/29|  Similar Matrices |<ul> <li>  Strang 307-312  </li> </ul>|
 |35| F |5/1|  Statistics and PCA |<ul> <li>  Strang 7.3 </li> </ul>|
@@ -149,6 +149,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [strang22]:https://youtu.be/13r9QY6cmjc
 [strang24]:https://youtu.be/lGGDIGizcQ0
 [strang23]:https://youtu.be/IZqwi0wJovM
+[strang25]:https://youtu.be/UCc9q_cAhho
 [fundamental]:http://home.engineering.iastate.edu/~julied/classes/CE570/Notes/strangpaper.pdf
 
 [video:complete]:https://video.odl.mit.edu/videos/38553aca62ae456482dcc9635a36c1e3/
