@@ -126,7 +126,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |25| M |4/6| Applications of Determinants  (HW7 Released, HW6 Due)| <ul> <li> Strang 276--283 </li> <li> [Lecture Slides (15 puzzle)][25] </li> <li> [Video: Applications of Determinants (puzzle starts at 14:58)][video:DetApps] </li></ul> |
 |26| W |4/8| Volumes  |  <ul> <li> [Strang: Volumes at 28:07][Strang20]</li> <li> [Video:Volumes][Video:volumes] </li> <li> [Lecture notes on volumes][26] </li> <li> [3 Blue 1 Brown Video Essence Episode 6](https://youtu.be/Ip3X9LOh2dk) </li> </ul> |
 |27| F |4/10|  Matrix Calculus | coming soon|
-|28| M |4/13| Diagonalization (HW7 Due, EXTENDED HW A Released) | <ul> <li>  Strang 6.1-6.2 </li> [Strang:Diagoanlization and Powers][strang22] <li> </li></ul>|
+|28| M |4/13| Diagonalization (HW7 Due, EXTENDED HW A Released) | <ul> <li>  Strang 6.1-6.2 </li> <li>[Strang:Diagonalization and Powers][strang22]  </li></ul>|
 |29| W |4/15|  Markov Matrices |<ul> <li>  Strang 10.3 </li> </ul>|
 |30| F |4/17|  Differential Equations |<ul> <li>  Strang 6.3 </li> </ul>|
 |  | M |4/20| Patriots Day (no class)|
