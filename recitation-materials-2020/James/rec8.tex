@@ -1,0 +1,289 @@
+\documentclass[10pt]{amsart} 
+
+
+\usepackage{amsmath, amssymb, mathrsfs} 
+
+\usepackage[mathscr]{euscript} 
+ 
+\newlength{\mylength}
+\setlength{\mylength}{0.25cm}
+
+\usepackage{enumitem}
+\setlist{listparindent=\parindent, itemsep=0cm, parsep=\mylength, topsep=0cm}
+
+\usepackage[final]{todonotes}
+\usepackage[final]{showkeys} 
+
+\usepackage[breaklinks=true]{hyperref} 
+\usepackage{comment} 
+
+\usepackage{url}
+
+\usepackage{tikz-cd}
+
+\usepackage{amsthm}
+
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \topsep6\p@\@plus6\p@\relax
+	\noindent\emph{#1.} 
+	\ignorespaces
+}{%
+\popQED\endtrivlist\@endpefalse
+}
+\makeatother
+
+\newtheoremstyle{mythm}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{\itshape}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\bfseries}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\newtheoremstyle{myrmk}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\itshape}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\theoremstyle{mythm} 
+%\newtheorem{thm}[subsubsection]{Theorem}
+%\newtheorem*{claim}{Claim}
+%\newtheorem*{thm}{Theorem} 
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma} 
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{prop}[thm]{Proposition}
+%\newtheorem*{mthm}{Main Theorem}
+
+%\newtheorem{prop}[subsubsection]{Proposition} 
+%\newtheorem*{prop}{Proposition} 
+%\newtheorem*{lem}{Lemma}
+%\newtheorem*{klem}{Key Lemma}
+%\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+%\newtheorem{defn}[subsubsection]{Definition}
+\newtheorem*{defn}{Definition} 
+\newtheorem{prob}[thm]{Problem}
+%\newtheorem{que}[subsubsection]{Question}
+
+\theoremstyle{myrmk} 
+%\newtheorem{rmk}[subsubsection]{Remark}
+\newtheorem*{rmk}{Remark}
+%\newtheorem{note}[subsubsection]{Note} 
+\newtheorem*{ex}{Example}
+
+\newcommand{\nc}{\newcommand} 
+\nc{\on}{\operatorname}
+\nc{\rnc}{\renewcommand} 
+
+\rnc{\setminus}{\smallsetminus} 
+
+\nc{\wt}{\widetilde}
+\nc{\wh}{\widehat} 
+\nc{\ol}{\overline} 
+
+\nc{\Frob}{\on{Frob}}
+\nc{\Gal}{\on{Gal}}
+
+\nc{\BN}{\mathbb{N}}
+\nc{\BZ}{\mathbb{Z}}
+\nc{\BQ}{\mathbb{Q}}
+\nc{\BR}{\mathbb{R}}
+\nc{\BC}{\mathbb{C}}
+
+\nc{\id}{\on{id}}
+\nc{\Id}{\on{Id}}
+\nc{\Tr}{\on{Tr}}
+
+\nc{\la}{\langle}
+\nc{\ra}{\rangle} 
+\nc{\lV}{\lVert}
+\nc{\rV}{\rVert}
+\nc{\mb}{\mathbf}
+\nc{\mf}{\mathfrak}
+%\nc{\cur}{\mathscr}
+\nc{\mc}{\mathscr}
+
+\nc{\ira}{\hookrightarrow}
+\nc{\hra}{\hookrightarrow}
+\nc{\sra}{\twoheadrightarrow} 
+
+\rnc{\Re}{\on{Re}}
+
+\nc{\coker}{\on{coker}}
+\nc{\End}{\on{End}}
+\rnc{\Im}{\on{Im}}
+%\rnc{\Re}{\on{Re}}
+
+\nc{\Hom}{\on{Hom}}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage{marginnote}
+\nc{\acts}{\curvearrowright}
+
+\nc{\Mat}{\on{Mat}}
+
+\newenvironment{cd}{\begin{equation*}\begin{tikzcd}}{\end{tikzcd}\end{equation*}\ignorespacesafterend}
+
+\nc{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\nc{\e}[1]{\begin{align*} #1 \end{align*}}
+
+\usepackage[margin=1in]{geometry}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+%\renewcommand*{\arraystretch}{1.4}
+
+\setlength{\parskip}{0.25cm}
+
+\newenvironment{myproof}{\color{blue}\begin{proof}}{\end{proof}} 
+
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\fancyhead[L]{James Tao}
+\fancyhead[C]{18.06 -- Week 9 Recitation}
+\fancyhead[R]{Apr.\ 14, 2020}
+\fancyfoot[C]{}
+
+\newcounter{part-count}
+\setcounter{part-count}{0}
+
+\newenvironment{me}[1]{\begin{enumerate}[#1]\setcounter{enumi}{\value{part-count}}}{\setcounter{part-count}{\value{enumi}}\end{enumerate}}
+
+
+\begin{document}
+	\thispagestyle{fancy}
+	
+	Let $A$ be an $n \times n$ matrix. 
+	
+	The eigenvalues of $A$ are the roots of the characteristic polynomial $\det(A - \lambda \Id_{n \times n})$. If an eigenvalue $\lambda_0$ corresponds to a root with multiplicity $r$ in this polynomial, meaning that $(\lambda-\lambda_0)^r$ is a factor of the polynomial, then we say that the eigenvalue $\lambda_0$ has \emph{algebraic multiplicity} $r$. Since the characteristic polynomial is degree $n$, there are $n$ eigenvalues, counted according to algebraic multiplicity. 
+	
+	If $\lambda_0$ is an eigenvalue, then $\on{null}(A - \lambda_0 \Id_{n \times n})> 0$, i.e.\ there exists a nonzero vector $v$ such that $Av = \lambda_0 v$. We say that $v$ is an \emph{eigenvector} for the eigenvalue $\lambda_0$, and $\on{null}(A - \lambda_0 \Id_{n \times n})$ is the \emph{eigenspace} for eigenvalue $\lambda_0$. The dimension of $\on{null}(A - \lambda_0 \Id_{n \times n})$ is called the \emph{geometric multiplicity}, and we have 
+	\[
+		1 \le (\text{geometric multiplicity of } \lambda_0) \le (\text{algebraic multiplicity of } \lambda_0). 
+	\]
+	
+	The matrix $A$ is \emph{diagonalizable} if we can write $A = VD V^{-1}$ where $V$ is invertible and $D$ is diagonal. If $d_1, \ldots, d_n$ are the diagonal entries of $D$, and $v_1, \ldots, v_n$ are the columns of $V$, this equation is equivalent to asserting that $Av_i = d_i v_i $ for all $i \in \{1, \ldots, n\}$. In other words, this equation says that the $v_1, \ldots, v_n$ are eigenvectors, and $v_i$ has eigenvector $d_i$. A matrix is diagonalizable if and only if, for each eigenvalue $\lambda_0$, its geometric multiplicity equals its algebraic multiplicity. In particular, a matrix is diagonalizable if it has $n$ distinct eigenvalues, because then the algebraic multiplicities are all equal to 1. 
+	
+	\section*{Problems}
+	
+	\begin{enumerate}[label=(\arabic*)]
+		\item Find the eigenvalues, their geometric and algebraic multiplicities, and eigenvectors for the matrix $A = \begin{pmatrix}
+		0 & 1 & 0 & 0 \\
+		0 & 0 & 1 & 0 \\
+		0 & 0 & 0 & 1 \\
+		0 & 0 & 0 & 0
+		\end{pmatrix}$. 
+		\item If the eigenvalues, their geometric and algebraic multiplicities, and eigenvectors for $A$ are known, what are the corresponding data for $A + t \on{Id}_{n \times n}$, where $t$ is a given scalar? 
+		\item Find the eigenvalues, their geometric and algebraic multiplicities, and eigenvectors for the matrix $A = \begin{pmatrix}
+		3 & 1 & 0 & 0 \\
+		0 & 3 & 1 & 0 \\
+		0 & 0 & 3 & 1 \\
+		0 & 0 & 0 & 3
+		\end{pmatrix}$. 
+		\item Show that the eigenvalues of $A^2$ are the squares of the eigenvalues of $A$, and that this correspondence respects algebraic multiplicity. Does it always respect geometric multiplicity? What about for higher powers of $A$? 
+		\item Diagonalize the matrix $A = \begin{pmatrix}
+		1 & 2 \\ 3 & 4 
+		\end{pmatrix}$. Write down a closed-form expression for $A^n$. Does there exist $B$ such that $B^2 = A$ and $B$ has real eigenvalues? 
+		\item Suppose all eigenvalues of $A$ are equal to $r$, and $A$ is diagonalizable. Show that $A = r \Id_{n \times n}$. 
+		\item Does there exist a $2 \times 2$ matrix $A$ such that $(A^n)_{12} = n$ for all $n \ge 1$, and $A$ is diagonalizable? 
+		\item Let $v_1, v_2$ be linearly independent eigenvectors of $A$. If $v_1 + v_2$ is an eigenvector, what can you conclude about the eigenvalues of $v_1, v_2$, and $v_1 + v_2$? 
+	\end{enumerate}
+	
+	\newpage
+	
+	\section*{Solutions}
+	
+	\begin{enumerate}[label=(\arabic*)]
+		\item There is only the eigenvalue $\lambda = 0$, with algebraic multiplicity 4 and geometric multiplicity 1. The corresponding eigenspace is $\left\{\begin{pmatrix}
+		x \\ 0 \\ 0 \\ 0 
+		\end{pmatrix} \text{ for arbitrary } x \right\}$. 
+		\item The eigenvalues are modified by adding $t$, while the other data (multiplicities and eigenspaces) stay the same. This is essentially because 
+		\[
+			(A + t \Id_{n \times n}) - \lambda \Id_{n \times n} = A - (\lambda - t) \Id_{n \times n}. 
+		\]
+		\item By (1) and (2), there is only the eigenvalue $\lambda = 3$, with algebraic multiplicity 4 and geometric multiplicity 1. The corresponding eigenspace is $\left\{\begin{pmatrix}
+		x \\ 0 \\ 0 \\ 0 
+		\end{pmatrix} \text{ for arbitrary } x \right\}$. 
+		\item Let $P(\lambda)$ be the characteristic polynomial of $A$. Note that 
+		\e{
+			\det(A^2 - \lambda \Id_{2 \times 2}) &= \det((A - \sqrt{\lambda} \Id_{2 \times 2})(A + \sqrt{\lambda} \Id_{2 \times 2})) \\
+			&= \det(A - \sqrt{\lambda} \Id_{2 \times 2})\ \det(A + \sqrt{\lambda} \Id_{2 \times 2}) \\ 
+			&= P(\sqrt{\lambda})\ P(-\sqrt{\lambda}). 
+		} 
+		Suppose for notational simplicity that $A$ is $2 \times 2$. Then we can write $P(\lambda) = (\lambda - \lambda_0)(\lambda - \lambda_1)$, and the preceding expression equals 
+		\e{
+			&(\sqrt{\lambda} - \lambda_0)(\sqrt{\lambda} - \lambda_1)(-\sqrt{\lambda} - \lambda_0)(-\sqrt{\lambda} - \lambda_1) \\
+			&\qquad = (\lambda - \lambda_0^2)(\lambda - \lambda_1^2). 
+		} 
+		Therefore, the eigenvalues of $A^2$ are the squares of the eigenvalues of $A$, and algebraic multiplicity is preserved. The general $n \times n$ case is identical. 
+		
+		Squaring the matrix doesn't always preserve geometric multiplicity. Look at the matrix $A = \begin{pmatrix}
+		0 & 1 \\ 0 & 0
+		\end{pmatrix}$. The geometric multiplicity of $\lambda = 0$ is 1, but the geometric multiplicity of $\lambda = 0$ for $A^2$ is 2, because $A^2$ is the zero matrix. 
+		
+		Similar conclusions apply for $A^3, A^4$, and so on. Instead of using a `difference of squares' factorization, one uses the factorizations 
+		\[
+			a^n - b^n = (a-b)(a-\zeta b) \cdots (a - \zeta^{n-1})
+		\]
+		where $\zeta = e^{\frac{2\pi i}{n}}$ is a primitive $n$-th root of unity. 
+		\item We have $A = VDV^{-1}$ where 
+		\e{
+			V &= \begin{pmatrix}
+				2 & 2 \\ \frac{3+\sqrt{33}}{2} & \frac{3 - \sqrt{33}}{2} 
+			\end{pmatrix} \\
+			D &= \begin{pmatrix}
+				\frac{5 + \sqrt{33}}{2} & 0 \\ 0 & \frac{5 - \sqrt{33}}{2}
+			\end{pmatrix}. 
+		} 
+		Using that 
+		\[
+			V^{-1} = -\frac{1}{2\sqrt{33}} \begin{pmatrix}
+				\frac{3 - \sqrt{33}}{2} & -2 \\
+				\frac{-3-\sqrt{33}}{2} & 2
+			\end{pmatrix}, 
+		\]
+		and the fact that $A^n = VD^nV^{-1}$, we find that 
+		\[
+			A^n = -\frac{1}{2\sqrt{33}} \begin{pmatrix}
+				(3 - \sqrt{33}) (\tfrac{5 + \sqrt{33}}{2})^n  + (-3 - \sqrt{33})(\tfrac{5 - \sqrt{33}}{2})^n  & -4 (\tfrac{5 + \sqrt{33}}{2})^n + 4 (\tfrac{5 - \sqrt{33}}{2})^n  \\
+				-3(5 + \sqrt{33})^n + 3(5 - \sqrt{33})^n & (-3 - \sqrt{33}) (\tfrac{5 + \sqrt{33}}{2})^n + (3 - \sqrt{33}) (\tfrac{5 - \sqrt{33}}{2})^n
+			\end{pmatrix}. 
+		\]
+		
+		Note that one of the eigenvalues of $A$ is negative. Therefore, (4) implies that the desired matrix $B$ doesn't exist. 
+		\item We can write $A = VDV^{-1}$ where $D = r \Id_{n \times n}$. This implies that $A = r \Id_{n \times n}$. 
+		\item No. Suppose such an $A$ exists, and write $A = VDV^{-1}$. Then $A^n = VD^n V^{-1}$ for all $n \ge 1$. If $D = \begin{pmatrix}
+		d_1 & 0 \\ 0 & d_2
+		\end{pmatrix}$, then each entry of $A^n$ can be expressed as $c_1 d_1^n + c_2 d_2^n$ for some scalars $c_1, c_2$. (The solution to (5) gives an example of this.) There do not exist scalars $c_1, c_2, d_1, d_2$ such that $c_1d_1^n + c_2 d_2^n = n$ for all $n \ge 1$. This gives the contradiction. 
+		\item Suppose $v_1, v_2, v_1+v_2$ have eigenvalues $\lambda_1, \lambda_2, \lambda_3$, respectively. Note that 
+		\e{
+			\lambda_1 v_1 + \lambda_2 v_2 &= Av_1 + Av_2 \\
+			&= A(v_1 + v_2) \\
+			&= \lambda_3 v_1 + \lambda_3 v_2. 
+		} 
+		Since $v_1, v_2$ are linearly independent, we conclude that $\lambda_1 = \lambda_2 = \lambda_3$. 
+	\end{enumerate}
+	
+	
+	
+	
+	
+\end{document} 
