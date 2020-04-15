@@ -127,8 +127,8 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |26| W |4/8| Volumes  |  <ul> <li> [Strang: Volumes at 28:07][Strang20]</li> <li> [Video:Volumes][Video:volumes] </li> <li> [Lecture notes on volumes][26] </li> <li> [3 Blue 1 Brown Video Essence Episode 6](https://youtu.be/Ip3X9LOh2dk) </li> </ul> |
 |27| F |4/10|  Matrix Calculus |  <ul><li> [Lecture notes on matrix calculus in progress][27]</li></ul>|
 |28| M |4/13| Eigenvalues and Diagonalization (HW7 Due, EXTENDED HW A Released) | <ul> <li>  Strang 6.1-6.2 </li> <li>[Strang:Diagonalization and Powers][strang22]  </li></ul>|
-|29| W |4/15|  Markov Matrices |<ul> <li>  Strang 10.3 </li>  <li> [Strang:Markov Matrices (first 35 minutes)][strang23]</ul>|
-|30| F |4/17|  Differential Equations |<ul> <li>  Strang 6.3 </li> <li> [Strang:Differential Equations][strang22]</ul>|
+|29| W |4/15|  Markov Matrices |<ul> <li>  Strang 10.3 </li>  <li> [Strang:Markov Matrices (first 35 minutes)][strang24]</ul>|
+|30| F |4/17|  Differential Equations |<ul> <li>  Strang 6.3 </li> <li> [Strang:Differential Equations][strang23]</ul>|
 |  | M |4/20| Patriots Day (no class)|
 |31| W |4/22|  Differential Equations (covid19 spread simulation)  (HW8, Released HW A Due )|
 |32| F |4/24| Symmetric Matrices |<ul> <li>  Strang 6.4 </li> <li>[Strang:sym and pos def][strang25]</li></ul>|
