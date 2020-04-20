@@ -1,0 +1,299 @@
+\documentclass[10pt]{amsart} 
+
+
+\usepackage{amsmath, amssymb, mathrsfs} 
+
+\usepackage[mathscr]{euscript} 
+ 
+\newlength{\mylength}
+\setlength{\mylength}{0.25cm}
+
+\usepackage{enumitem}
+\setlist{listparindent=\parindent, itemsep=0cm, parsep=\mylength, topsep=0cm}
+
+\usepackage[final]{todonotes}
+\usepackage[final]{showkeys} 
+
+\usepackage[breaklinks=true]{hyperref} 
+\usepackage{comment} 
+
+\usepackage{url}
+
+\usepackage{tikz-cd}
+
+\usepackage{amsthm}
+
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \topsep6\p@\@plus6\p@\relax
+	\noindent\emph{#1.} 
+	\ignorespaces
+}{%
+\popQED\endtrivlist\@endpefalse
+}
+\makeatother
+
+\newtheoremstyle{mythm}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{\itshape}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\bfseries}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\newtheoremstyle{myrmk}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\itshape}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\theoremstyle{mythm} 
+%\newtheorem{thm}[subsubsection]{Theorem}
+%\newtheorem*{claim}{Claim}
+%\newtheorem*{thm}{Theorem} 
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma} 
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{prop}[thm]{Proposition}
+%\newtheorem*{mthm}{Main Theorem}
+
+%\newtheorem{prop}[subsubsection]{Proposition} 
+%\newtheorem*{prop}{Proposition} 
+%\newtheorem*{lem}{Lemma}
+%\newtheorem*{klem}{Key Lemma}
+%\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+%\newtheorem{defn}[subsubsection]{Definition}
+\newtheorem*{defn}{Definition} 
+\newtheorem{prob}[thm]{Problem}
+%\newtheorem{que}[subsubsection]{Question}
+
+\theoremstyle{myrmk} 
+%\newtheorem{rmk}[subsubsection]{Remark}
+\newtheorem*{rmk}{Remark}
+%\newtheorem{note}[subsubsection]{Note} 
+\newtheorem*{ex}{Example}
+
+\newcommand{\nc}{\newcommand} 
+\nc{\on}{\operatorname}
+\nc{\rnc}{\renewcommand} 
+
+\rnc{\setminus}{\smallsetminus} 
+
+\nc{\wt}{\widetilde}
+\nc{\wh}{\widehat} 
+\nc{\ol}{\overline} 
+
+\nc{\Frob}{\on{Frob}}
+\nc{\Gal}{\on{Gal}}
+
+\nc{\BN}{\mathbb{N}}
+\nc{\BZ}{\mathbb{Z}}
+\nc{\BQ}{\mathbb{Q}}
+\nc{\BR}{\mathbb{R}}
+\nc{\BC}{\mathbb{C}}
+
+\nc{\id}{\on{id}}
+\nc{\Id}{\on{Id}}
+\nc{\Tr}{\on{Tr}}
+
+\nc{\la}{\langle}
+\nc{\ra}{\rangle} 
+\nc{\lV}{\lVert}
+\nc{\rV}{\rVert}
+\nc{\mb}{\mathbf}
+\nc{\mf}{\mathfrak}
+%\nc{\cur}{\mathscr}
+\nc{\mc}{\mathscr}
+
+\nc{\ira}{\hookrightarrow}
+\nc{\hra}{\hookrightarrow}
+\nc{\sra}{\twoheadrightarrow} 
+
+\rnc{\Re}{\on{Re}}
+
+\nc{\coker}{\on{coker}}
+\nc{\End}{\on{End}}
+\rnc{\Im}{\on{Im}}
+%\rnc{\Re}{\on{Re}}
+
+\nc{\Hom}{\on{Hom}}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage{marginnote}
+\nc{\acts}{\curvearrowright}
+
+\nc{\Mat}{\on{Mat}}
+
+\newenvironment{cd}{\begin{equation*}\begin{tikzcd}}{\end{tikzcd}\end{equation*}\ignorespacesafterend}
+
+\nc{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\nc{\e}[1]{\begin{align*} #1 \end{align*}}
+
+\usepackage[margin=1in]{geometry}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+%\renewcommand*{\arraystretch}{1.4}
+
+\setlength{\parskip}{0.25cm}
+
+\definecolor{myblue}{rgb}{0,0.15,0.45}
+\newenvironment{myproof}{\color{myblue}\begin{proof}}{\end{proof}} 
+
+
+\usepackage{bm}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\fancyhead[L]{James Tao}
+\fancyhead[C]{18.06 -- Week 10 Recitation}
+\fancyhead[R]{Apr.\ 21, 2020}
+\fancyfoot[C]{}
+
+\newcounter{part-count}
+\setcounter{part-count}{0}
+
+\newenvironment{me}[1]{\begin{enumerate}[#1]\setcounter{enumi}{\value{part-count}}}{\setcounter{part-count}{\value{enumi}}\end{enumerate}}
+
+\nc{\myhead}[1]{\noindent\emph{#1}.}
+
+
+\begin{document}
+	\thispagestyle{fancy}
+	
+	\section{Markov matrices} 
+	
+	\myhead{Definition} We say a matrix or vector is \emph{positive} if its entries are positive. 
+	
+	\myhead{Theorem} (Perron--Frobenius) If $A$ is a \emph{positive} square matrix, then it has an eigenvalue $\lambda_{\on{max}}$ with the following properties: 
+	\begin{enumerate}[label=(\roman*)]
+		\item $\lambda_{\on{max}}$ is a positive real number. 
+		\item The algebraic multiplicity of $\lambda_{\on{max}}$ is 1, and all other eigenvalues have absolute value $< \lambda_{\on{max}}$. 
+		\item There is a \emph{positive} vector $x$ with eigenvalue $\lambda_{\on{max}}$. 
+		\item $x$ and its multiples are the only \emph{positive} eigenvectors of $A$. 
+	\end{enumerate}
+	
+	\myhead{Definition} A square matrix $A$ is \emph{Markov} if it is positive and each column has entries summing to 1. 
+	
+	Let $\mathbf{1}$ be the all-ones column vector. The condition that each column of $A$ has entries summing to $1$ can be expressed as $\mathbf{1}^\top A = \mathbf{1}^\top$. 
+	
+	\myhead{Lemma} If $A$ is Markov, and $v$ is any vector, then the sum of entries of $v$ equals that of $Av$. 
+	\begin{myproof}
+		Since $A$ is Markov, $\mathbf{1}^\top A = \mathbf{1}^\top$. Therefore 
+		$
+			\mathbf{1}^\top (Av) = \mathbf{1}^\top v,
+		$
+		as desired. 
+	\end{myproof}
+	
+	\myhead{Proposition} If $A$ is Markov, then $\lambda_{\on{max}} = 1$. 
+	\begin{myproof}
+		Let $x$ be the corresponding eigenvector, so $Ax = \lambda_{\on{max}}x$. The previous lemma implies that 
+		\[
+			\mathbf{1}^\top x = \mathbf{1}^{\top} Ax = \lambda_{\on{max}} \mathbf{1}^\top x. 
+		\]
+		Since $x$ is positive, $\mathbf{1}^\top x$ is nonzero, and dividing gives $1 = \lambda_{\on{max}}$. 
+	\end{myproof}
+	
+	In recitation, we will explain how Markov matrices can be interpreted as transition probabilities in diagrams called \emph{Markov chains}. We will also discuss the example 
+	\[
+		A = \begin{pmatrix}
+		\frac12 & \frac14  & \frac14 \vspace{1mm} \\
+			\frac14 & \frac12  & \frac14 \vspace{1mm} \\
+				\frac14 & \frac14  & \frac12  
+		\end{pmatrix}
+	\]
+	from Problem 3 in Section 10.3 on page 480 of Strang's book. 
+	
+	\section{Differential equations} 
+	
+	A path in $\BR^n$ can be thought of as a rule which assigns, to every time $t$, an $n$-vector $\bm{u}(t)$. A path may be the solution to a differential equation 
+	\[
+		\frac{d}{dt} \, \bm{u}(t) = A\, \bm{u}(t). 
+	\]
+	This says that, at time $t$, the velocity vector of the path equals the matrix $A$ times the position $\mb{u}(t)$ of the path at that time. It tells you the direction the point must travel, given its current location. 
+	
+	\myhead{Definition} If $A$ is a square matrix, then 
+	\[
+		e^A := \on{Id} + A + \frac{1}{2} A^2 + \cdots + \frac{1}{n!} A^n + \cdots , 
+	\]
+	just like the usual series for the exponential function. For any $A$, it converges absolutely. 
+	
+	If we plug in the matrix $At$, we find 
+	\[
+		e^{At} = \on{Id} + At + \frac{1}{2} A^2 t^2 + \cdots + \frac{1}{n!} A^n t^n + \cdots . 
+	\]
+	This is an equality of square matrices whose entries depend on $t$. Differentiating, we find 
+	\e{
+		\frac{d}{dt}\, e^{At} &= A + A^2 t + \frac{1}{2} A^3\, t^2 + \cdots + \frac{1}{(n-1)!} A^n t^{n-1} + \cdots \\
+		&= A \left( \on{Id} + At + \frac{1}{2} A^2 t^2 + \cdots + \frac{1}{(n-1)!} A^{n-1} t^{n-1} + \cdots  \right) \\ 
+		&= A\, e^{At}. 
+	} 
+	
+	If $AB = BA$, then one can show $e^A e^B = e^{A + B}$ with the usual power series manipulations. This implies, for example, that $e^{At_1}e^{At_2} = e^{A(t_1+t_2)}$ and $e^{\Id} e^{A} = e^{\Id + A}$. Note that $e^{\Id} = e\, \Id$. 
+	
+	\myhead{Problem} What is the inverse of $e^{A}$? 
+	
+	\myhead{Problem} Compute $e^{At}$ when $A = \begin{pmatrix}
+	0 & 1 \\ -1 & 0 
+	\end{pmatrix}$. (See Example 5 in Section 6.3 on page 328 of Strang's book.) 
+	
+	\myhead{Problem} Compute $e^{At}$ when $A = \begin{pmatrix}
+	1 & 2 \\ 0 & 1 
+	\end{pmatrix}$. (Cf.\ Example 4 in Section 6.3 on page 327 of Strang's book.) 
+	
+	The matrix exponential allows us to solve the differential equation from before. If we take 
+	\[
+		\bm{u}(t) = e^{At} v
+	\]
+	for any fixed $v \in \BR^n$, then 
+	\e{
+		\frac{d}{dt}\, \bm{u}(t) &= \frac{d}{dt} \, e^{At} v \\
+		&= A\, e^{At} v \\
+		&= A\, \bm{u}(t), 
+	} 
+	as desired. Note that $\bm{u}(0) = e^{A0} v = v$, so $v$ is the `starting point' of our solution path. 
+	
+	\myhead{Problem} Convert the one-variable second-order linear differential equation 
+	\[
+		\frac{d^2}{dt^2} \, y(t) + y(t) = 0
+	\]
+	to a two-variable system of first order linear differential equations, and solve it. 
+	
+	(See Example 3 in Section 6.3 on page 323 of Strang's book.) 
+	
+	\myhead{Problem} If $v$ is an eigenvector of $A$ with eigenvalue $\lambda$, show that $v$ is also an eigenvector of $e^{At}$ with eigenvalue $e^{\lambda t}$. Describe the behavior of $e^{\lambda t} v$ as $t \to \infty$, based on where $\lambda$ lies in the complex plane. 
+	
+	\myhead{Problem} If $A$ satisfies $A^\top = -A$, show that $e^{At}$ is orthogonal, and deduce that any solution to 
+	\[
+	\frac{d}{dt} \, \bm{u}(t) = A\, \bm{u}(t). 
+	\]
+	must satisfy $\lVert \bm{u}(t) \rVert = \lVert \bm{u}(0) \rVert$ for all $t$. 
+	
+	(See page 328 of Strang's book.) 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document} 
