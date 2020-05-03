@@ -130,7 +130,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |29| W |4/15|  Markov Matrices |<ul> <li>  Strang 10.3 </li>  <li> [Strang:Markov Matrices (first 35 minutes)][strang24]</ul>|
 |30| F |4/17|  Differential Equations |<ul> <li>  Strang 6.3 </li> <li> [Strang:Differential Equations][strang23]</ul>|
 |  | M |4/20| Patriots Day (no class)|
-|31| W |4/22|  Differential Equations (covid19 spread simulation)  ( HW A Due , HW 8 Released by tomorrow)|
+|31| W |4/22|  Differential Equations  ( HW A Due , HW 8 Released by tomorrow)|
 |32| F |4/24| Symmetric Matrices |<ul> <li>  Strang 6.4 </li> <li>[Strang:sym and pos def][strang25]</li></ul>|
 |33| M |4/27| Positive Definite Matrices  |<ul> <li>  Strang 6.5 </li> </ul>|  
 |34| W |4/29|  Similar Matrices |<ul> <li>  Strang 307-312   (Hw 8 due) </li> <li>[Strang:similar matrices ][strang28] </li> </ul>|
