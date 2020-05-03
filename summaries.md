@@ -9,12 +9,7 @@
 
 # 18.06 Goes Online starting Wednesday March 11
 
-Announcement:  Video lectures will be posted before 11am during class days for the remainder of the semester.  They will be publicly visible.
-They can be watched any time (they won't be live).
-Office hours will be held virtually.  Links will appear on this page.
-You can try out this [test video](https://video.odl.mit.edu/videos/0d941b4b60d24d44a80a8cabde91ebde/).
-Office hours may be with google hangouts.  Stay tuned for a  possible time change.  HW5 is now due March 18.
-
+Psets A and B are in lieu of exams and are not droppable.
 
 # Welcome to the 18.06 Linear Algebra 2020 page
 
@@ -133,7 +128,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |31| W |4/22|  Differential Equations (covid19 spread simulation)  ( HW A Due , HW 8 Released by tomorrow)|
 |32| F |4/24| Symmetric Matrices |<ul> <li>  Strang 6.4 </li> <li>[Strang:sym and pos def][strang25]</li></ul>|
 |33| M |4/27| Positive Definite Matrices  |<ul> <li>  Strang 6.5 </li> </ul>|  
-|34| W |4/29|  Similar Matrices |<ul> <li>  Strang 307-312   (Hw 8 due) </li> <li>[Strang:similar matrices ][strang28] </li> </ul>|
+|34| W |4/29|  Similar Matrices |<ul> <li>  Strang 307-312   (Hw 8 due) </li> <li>[Strang:similar matrices ][strang28] </li>  <li>[Video:Abstractions in Linear Algebra][coming soon] </li></ul>|
 |35| F |5/1|  Statistics and PCA |<ul> <li>  Strang 7.3 </li> </ul>|
 |36| M |5/4| Infinite Dimensional Space ( Extended HWB Released)|<ul> <li>  Strang 10.5 </li> </ul>|
 |37| W |5/6|  Fourier  Transform  | <ul> <li>  Strang 9.3 </li> </ul>|
