@@ -82,8 +82,8 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 
 |Homeworks||||||
 |--|--|--|--|--|--|
-| <ul><li> [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit) </li><li> [HW0 Solutions](https://docs.google.com/document/d/1U3SUNlnFdgyYqVEn8PB9ECvARMiQ8dw-UAOuojnzHXE/edit?usp=sharing)| <ul> <li> [HW1](https://docs.google.com/document/d/1K2WtQb9JCJT6YjEz3K-hqb99hj2L_Bp-19nJLKGRF9c/edit)  </li>  <li> [HW1 Solutions][HW1S] </li> </ul> | <ul> <li>[HW2][HW2]  </li> <li> [HW2 Solutions][HW2S] </li></ul>| <ul> <li> [HW3][HW3]  </li> <li> [HW3 Solutions][HW3S] </ul>|<ul> <li> [HW4][HW4] </li> <li> [HW4 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset4%20Solution.ipynb)</ul> | <ul> <li>[Hw5 (Recommended due date March 18, but may be handed in later, and is optional)][Hw5] </li> <li> [HW5 Solutions](https://github.com/mitmath/1806/raw/master/psets%20spring%202020/Pset5%20solutions.pdf)</ul>|
- |<ul> <li>[HW6][HW6] </li> <li> [HW6 Solutions](https://github.com/mitmath/1806/raw/master/psets%20spring%202020/HW6%20solution.pdf)</ul> |<ul> <li>[HW7][HW7] </li> <li>[HW7 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/PSET7withSol.ipynb)</ul> |   [HWA][HWA]  |   [HW8][HW8]|||||
+| <ul><li> [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit) </li><li> [HW0 Solutions](https://docs.google.com/document/d/1U3SUNlnFdgyYqVEn8PB9ECvARMiQ8dw-UAOuojnzHXE/edit?usp=sharing)| <ul> <li> [HW1](https://docs.google.com/document/d/1K2WtQb9JCJT6YjEz3K-hqb99hj2L_Bp-19nJLKGRF9c/edit)  </li>  <li> [HW1 Solutions][HW1S] </li> </ul> | <ul> <li>[HW2][HW2]  </li> <li> [HW2 Solutions][HW2S] </li></ul>| <ul> <li> [HW3][HW3]  </li> <li> [HW3 Solutions][HW3S] </ul>|<ul> <li> [HW4][HW4] </li> <li> [HW4 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset4%20Solution.ipynb)</ul> | <ul> <li>[Hw5 (Recommended due date March 18, but may be handed in later, and is optional)][Hw5] </li> <li> [HW5 Solutions](https://github.com/mitmath/1806/raw/master/psets%20spring%202020/Pset5%20solutions.pdf)</ul>| 
+ |<ul> <li>[HW6][HW6] </li> <li> [HW6 Solutions](https://github.com/mitmath/1806/raw/master/psets%20spring%202020/HW6%20solution.pdf)</ul> |<ul> <li>[HW7][HW7] </li> <li>[HW7 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/PSET7withSol.ipynb)</ul> |   <ul> <li>[HWA][HWA] </li> <li> [HW A Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset%20A%20Solution.ipynb)</ul> |  <ul> <li> [HW8][HW8] </li> <li> [HW8 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset%208%2018.06%202020%20solution.ipynb)</ul>|||||
 
 |#|Day| Date |  Topic | Reading| HW |
 |-|-|------|------|-----|--|
@@ -125,7 +125,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |29| W |4/15|  Markov Matrices |<ul> <li>  Strang 10.3 </li>  <li> [Strang:Markov Matrices (first 35 minutes)][strang24]</ul>|
 |30| F |4/17|  Differential Equations |<ul> <li>  Strang 6.3 </li> <li> [Strang:Differential Equations][strang23]</ul>|
 |  | M |4/20| Patriots Day (no class)|
-|31| W |4/22|  Differential Equations (covid19 spread simulation)  ( HW A Due , HW 8 Released by tomorrow)|
+|31| W |4/22|  Differential Equations  ( HW A Due , HW 8 Released by tomorrow)|
 |32| F |4/24| Symmetric Matrices |<ul> <li>  Strang 6.4 </li> <li>[Strang:sym and pos def][strang25]</li></ul>|
 |33| M |4/27| Positive Definite Matrices  |<ul> <li>  Strang 6.5 </li> </ul>|  
 |34| W |4/29|  Similar Matrices |<ul> <li>  Strang 307-312   (Hw 8 due) </li> <li>[Strang:similar matrices ][strang28] </li>  <li>[Video:Abstractions in Linear Algebra][coming soon] </li></ul>|
