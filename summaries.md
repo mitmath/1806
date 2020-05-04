@@ -131,10 +131,10 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |30| F |4/17|  Differential Equations |<ul> <li>  Strang 6.3 </li> <li> [Strang:Differential Equations][strang23]</ul>|
 |  | M |4/20| Patriots Day (no class)|
 |31| W |4/22|  Differential Equations  ( HW A Due , HW 8 Released by tomorrow)|
-|32| F |4/24| Symmetric Matrices |<ul> <li>  Strang 6.4 </li> <li>[Strang:sym and pos def][strang25]</li> <li>[Lecture notes on PCA][35]   </li>   </ul>|
+|32| F |4/24| Symmetric Matrices |<ul> <li>  Strang 6.4 </li> <li>[Strang:sym and pos def][strang25]</li>    </ul>|
 |33| M |4/27| Positive Definite Matrices  |<ul> <li>  Strang 6.5 </li> </ul>|  
 |34| W |4/29|  Similar Matrices |<ul> <li>  Strang 307-312   (Hw 8 due) </li> <li>[Strang:similar matrices ][strang28] </li>  <li>[Video:Abstractions in Linear Algebra][video:abstractions] </li></ul>|
-|35| F |5/1|  Statistics and PCA |<ul> <li>  Strang 7.3 </li> <li> [Rigollet:PCA][rigollet] </ul>|
+|35| F |5/1|  Statistics and PCA |<ul> <li>  Strang 7.3 </li>  <li>[Lecture notes on PCA][35]   </li>   <li> [Rigollet:PCA][rigollet] </li>  </ul> |
 |36| M |5/4| Infinite Dimensional Space ( Extended HWB Released)|<ul> <li>  Strang 10.5 </li> </ul>|
 |37| W |5/6|  Fourier  Transform  | <ul> <li>  Strang 9.3 </li> </ul>|
 |38| F |5/8|  Linear Transformations | <ul> <li>  Strang 8.1-8.3 </li> </ul>|
