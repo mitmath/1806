@@ -1,0 +1,282 @@
+\documentclass[10pt]{amsart} 
+
+
+\usepackage{amsmath, amssymb, mathrsfs} 
+
+\usepackage[mathscr]{euscript} 
+ 
+\newlength{\mylength}
+\setlength{\mylength}{0.25cm}
+
+\usepackage{enumitem}
+\setlist{listparindent=\parindent, itemsep=0cm, parsep=\mylength, topsep=0cm}
+
+\usepackage[final]{todonotes}
+\usepackage[final]{showkeys} 
+
+\usepackage[breaklinks=true]{hyperref} 
+\usepackage{comment} 
+
+\usepackage{graphicx}
+
+\usepackage{url}
+
+\usepackage{tikz-cd}
+
+\usepackage{amsthm}
+
+\makeatletter
+\renewenvironment{proof}[1][\proofname]{\par
+	\pushQED{\qed}%
+	\normalfont \topsep6\p@\@plus6\p@\relax
+	\noindent\emph{#1.} 
+	\ignorespaces
+}{%
+\popQED\endtrivlist\@endpefalse
+}
+\makeatother
+
+\newtheoremstyle{mythm}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{\itshape}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\bfseries}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\newtheoremstyle{myrmk}% name of the style to be used
+{\mylength}% measure of space to leave above the theorem. E.g.: 3pt
+{0pt}% measure of space to leave below the theorem. E.g.: 3pt
+{}% name of font to use in the body of the theorem
+{0pt}% measure of space to indent
+{\itshape}% name of head font
+{.\ }% punctuation between head and body
+{ }% space after theorem head; " " = normal interword space
+{\thmname{#1}\thmnumber{ #2}\thmnote{ (#3)}}
+
+\theoremstyle{mythm} 
+%\newtheorem{thm}[subsubsection]{Theorem}
+%\newtheorem*{claim}{Claim}
+%\newtheorem*{thm}{Theorem} 
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma} 
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{prop}[thm]{Proposition}
+%\newtheorem*{mthm}{Main Theorem}
+
+%\newtheorem{prop}[subsubsection]{Proposition} 
+%\newtheorem*{prop}{Proposition} 
+%\newtheorem*{lem}{Lemma}
+%\newtheorem*{klem}{Key Lemma}
+%\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+%\newtheorem{defn}[subsubsection]{Definition}
+\newtheorem*{defn}{Definition} 
+\newtheorem{prob}[thm]{Problem}
+%\newtheorem{que}[subsubsection]{Question}
+
+\theoremstyle{myrmk} 
+%\newtheorem{rmk}[subsubsection]{Remark}
+\newtheorem*{rmk}{Remark}
+%\newtheorem{note}[subsubsection]{Note} 
+\newtheorem*{ex}{Example}
+
+\newcommand{\nc}{\newcommand} 
+\nc{\on}{\operatorname}
+\nc{\rnc}{\renewcommand} 
+
+\rnc{\setminus}{\smallsetminus} 
+
+\nc{\wt}{\widetilde}
+\nc{\wh}{\widehat} 
+\nc{\ol}{\overline} 
+
+\nc{\Frob}{\on{Frob}}
+\nc{\Gal}{\on{Gal}}
+
+\nc{\BN}{\mathbb{N}}
+\nc{\BZ}{\mathbb{Z}}
+\nc{\BQ}{\mathbb{Q}}
+\nc{\BR}{\mathbb{R}}
+\nc{\BC}{\mathbb{C}}
+
+\nc{\id}{\on{id}}
+\nc{\Id}{\on{Id}}
+\nc{\Tr}{\on{Tr}}
+
+\nc{\la}{\langle}
+\nc{\ra}{\rangle} 
+\nc{\lV}{\lVert}
+\nc{\rV}{\rVert}
+\nc{\mb}{\mathbf}
+\nc{\mf}{\mathfrak}
+%\nc{\cur}{\mathscr}
+\nc{\mc}{\mathscr}
+
+\nc{\ira}{\hookrightarrow}
+\nc{\hra}{\hookrightarrow}
+\nc{\sra}{\twoheadrightarrow} 
+
+\rnc{\Re}{\on{Re}}
+
+\nc{\coker}{\on{coker}}
+\nc{\End}{\on{End}}
+\rnc{\Im}{\on{Im}}
+%\rnc{\Re}{\on{Re}}
+
+\nc{\Hom}{\on{Hom}}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage{marginnote}
+\nc{\acts}{\curvearrowright}
+
+\nc{\Mat}{\on{Mat}}
+
+\newenvironment{cd}{\begin{equation*}\begin{tikzcd}}{\end{tikzcd}\end{equation*}\ignorespacesafterend}
+
+\nc{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\nc{\e}[1]{\begin{align*} #1 \end{align*}}
+
+\usepackage[margin=1in]{geometry}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+%\renewcommand*{\arraystretch}{1.4}
+
+\setlength{\parskip}{0.25cm}
+
+\definecolor{myblue}{rgb}{0,0.15,0.45}
+\newenvironment{myproof}{\color{myblue}\begin{proof}}{\end{proof}} 
+
+
+\usepackage{bm}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\fancyhead[L]{James Tao}
+\fancyhead[C]{18.06 -- Week 12 Recitation}
+\fancyhead[R]{May 5, 2020}
+\fancyfoot[C]{}
+
+\newcounter{part-count}
+\setcounter{part-count}{0}
+
+\newenvironment{me}[1]{\begin{enumerate}[#1]\setcounter{enumi}{\value{part-count}}}{\setcounter{part-count}{\value{enumi}}\end{enumerate}}
+
+\nc{\myhead}[1]{\noindent\emph{#1}.}
+
+
+\begin{document}
+	\thispagestyle{fancy}
+	
+	\section{Statistics and SVD} 
+	
+	See Section 7.3 of Strang's book. 
+	
+	Suppose we do $n$ trials of an experiment, and each trial results in a measurement $\bm{v}_i \in \BR^m$. We obtain a data set which is an $n$-tuple of $m$-vectors: $\bm{v}_1, \ldots, \bm{v}_n$. 
+	\begin{itemize}
+		\item \emph{Example}. On $n$ different days, we measure the temperature and humidity. The measurement for day $i$ is a two-vector $\bm{v}_i = (\text{temp on day } i, \text{humidity on day } i) \in \BR^2$. 
+	\end{itemize}
+	The \emph{average} measurement is 
+	\[
+		\bm{\mu} = \frac{\bm{v}_1 + \cdots + \bm{v}_n}{n}. 
+	\]
+		
+	Let $A$ be the $m \times n$ matrix whose $i$-th column is $\bm{v}_i - \bm{\mu}$. (So each row of $A$ sums to zero, by an earlier homework problem.) Then 
+	\e{
+		S &= \frac{AA^\top}{n-1} \\
+		&= \frac{(\bm{v}_1 - \bm{\mu})(\bm{v}_1 - \bm{\mu})^\top + \cdots+ (\bm{v}_n - \bm{\mu})(\bm{v}_n - \bm{\mu})^\top}{n-1}
+	}
+	is the \emph{sample covariance matrix}.\footnote{We will briefly discuss why the denominator is $n-1$ and not $n$, as would usually be the case for a statistical average.} The entry $S_{j_1j_2}$ is large if the $j_1$ and $j_2$ coordinates tend to have the same sign, and it is negative if these coordinates tend to have the opposite sign. The diagonal entry $S_{jj}$ is a sum of squares, hence positive; it measures how much the $j$-th coordinate tends to vary. 
+	\begin{itemize}
+		\item In the previous example, $S$ would be a $2 \times 2$ matrix. The entries $S_{11}$ and $S_{22}$ tell you the variance of the temperature and humidity, respectively. The entry $S_{12}$ tells you how temperature correlates with humidity. 
+	\end{itemize}
+	The `correlation' between two measured variables, such as temperature and humidity, is more frequently expressed by drawing a `line of best fit' on a scatter plot. The SVD of $A$ will tell us how to do this. 
+	
+	Let $\bm{u}_1, \bm{u}_2, \ldots \in \BR^m$ be the (orthonormal) singular vectors of $A$ (the columns of $U$), and let $\sigma_1^2, \sigma_2^2, \ldots$ be their singular values (the entries of $\Sigma$). Assume $\sigma_1 > \sigma_2 > \cdots$. 
+	\begin{itemize}
+		\item \emph{The statistical meaning of the SVD}. The `main theorem of linear algebra in statistics' is that our data looks as if it's generated in this way: 
+		\begin{enumerate}
+			\item On step $i$, choose new values for the scalars $z_1, z_2, \ldots$ based on a bell curve centered at zero with variance 1. 
+			\item Set $\bm{v}_i = \bm{\mu} + z_1 \sigma_1 \bm{u}_1 + z_2 \sigma_2 \bm{u}_2 + \cdots$. 
+		\end{enumerate}
+		The `total variance' is $\sigma_1^2 + \sigma_2^2 + \cdots$, and the `amount of variance explained by $\bm{u}_i$' is $\sigma_i^2$. 
+	\end{itemize}
+	Since $\sigma_1$ is relatively large, $\bm{u}_1$ is the direction in which the data fluctuate away from the mean $\bm{\mu}$ most wildly. The line through $\mu$ parallel to $\bm{u}_1$ is the line of best fit (which minimizes the \emph{perpendicular} distances to the points in the data set). 
+	
+	We will look at the following example: 
+	\[
+		A = \begin{pmatrix}
+		6 & 5 & -4 & -3 \\
+		3 & 4 & -5 & -6
+		\end{pmatrix}. 
+	\]
+	
+	\newpage 
+	
+	\section{Fourier series} 
+	
+	See Section 10.5 in Strang's book. 
+	
+	We focus on Example 3 from that section. 
+	\begin{itemize}
+		\item \emph{Problem}. Express the square wave function 
+		\[
+			f(x) = \begin{cases}
+				1 & \text{ if } \lfloor \tfrac{x}{\pi} \rfloor \text{ is even} \\
+				-1 & \text{ otherwise}
+			\end{cases}
+		\]
+		as an infinite linear combination of the functions $\sin(x), \cos(x), \sin(2x), \cos(2x), \ldots$. 
+	\end{itemize}
+	The crux of the computation is the integral 
+	\e{
+		\int_{0}^{2\pi} f(x) \, \sin(nx)\, dx  &= \int_{0}^\pi \sin (nx)\, dx - \int_{\pi}^{2\pi} \sin (nx)\, dx \\
+		&= \left[ -\tfrac{1}{n} \cos(nx) \right]_{x=0}^\pi - \left[ -\tfrac{1}{n} \cos(nx) \right]_{x=\pi}^{2\pi} \\
+		&= \begin{cases}
+			\tfrac{4}{n} &\text{ if $n$ is odd} \\
+			0 & \text{ otherwise}. 
+		\end{cases}
+	} 
+	We also need the `orthonormality' relations 
+	\e{
+		\int_0^{2\pi} \sin(nx) \sin(mx)\, dx &= \tfrac12 \left( \int_0^{2\pi} \cos((n-m)x)\, dx - \int_0^{2\pi} \cos((n+m)x)\, dx \right) \\
+		&= \begin{cases}
+			\pi & \text{ if } n = m \\
+			0 & \text{ otherwise}. 
+		\end{cases}
+	}
+	assuming that $n$ and $m$ are positive integers. 
+	
+	Once we find the answer for $f(x)$, taking the derivatives gives the Taylor series for $f'(x)$, which is an infinite sum of $\delta$-functions. 
+	
+	Another phenomenon to ponder: (pointwise) multiplication by $\sin(x)$ yields a linear map 
+	\[
+		(\text{functions with period } 2\pi) \to (\text{functions with period } 2\pi)
+	\]
+	which is not invertible, but has nullspace $= \{0\}$. Hence, some of the facts we learned in the finite-dimensional setting break down in this infinite-dimensional vector space. 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document} 
