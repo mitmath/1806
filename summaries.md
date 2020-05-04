@@ -82,7 +82,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 
 |Homeworks||||||
 |--|--|--|--|--|--|
-| <ul><li> [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit) </li><li> [HW0 Solutions](https://docs.google.com/document/d/1U3SUNlnFdgyYqVEn8PB9ECvARMiQ8dw-UAOuojnzHXE/edit?usp=sharing)| <ul> <li> [HW1](https://docs.google.com/document/d/1K2WtQb9JCJT6YjEz3K-hqb99hj2L_Bp-19nJLKGRF9c/edit)  </li>  <li> [HW1 Solutions][HW1S] </li> </ul> | <ul> <li>[HW2][HW2]  </li> <li> [HW2 Solutions][HW2S] </li></ul>| <ul> <li> [HW3][HW3]  </li> <li> [HW3 Solutions][HW3S] </ul>|<ul> <li> [HW4][HW4] </li> <li> [HW4 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset4%20Solution.ipynb)</ul> | <ul> <li>[Hw5 (Recommended due date March 18, but may be handed in later, and is optional)][Hw5] </li> <li> [HW5 Solutions](https://github.com/mitmath/1806/raw/master/psets%20spring%202020/Pset5%20solutions.pdf)</ul>| 
+| <ul><li> [HW0](https://docs.google.com/document/d/1br60e7-_dxuyyLEw24HSyO0tkZZ9am-9aN6_5Ups7Fo/edit) </li><li> [HW0 Solutions](https://docs.google.com/document/d/1U3SUNlnFdgyYqVEn8PB9ECvARMiQ8dw-UAOuojnzHXE/edit?usp=sharing)| <ul> <li> [HW1](https://docs.google.com/document/d/1K2WtQb9JCJT6YjEz3K-hqb99hj2L_Bp-19nJLKGRF9c/edit)  </li>  <li> [HW1 Solutions][HW1S] </li> </ul> | <ul> <li>[HW2][HW2]  </li> <li> [HW2 Solutions][HW2S] </li></ul>| <ul> <li> [HW3][HW3]  </li> <li> [HW3 Solutions][HW3S] </ul>|<ul> <li> [HW4][HW4] </li> <li> [HW4 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset4%20Solution.ipynb)</ul> | <ul> <li>[Hw5 (Recommended due date March 18, but may be handed in later, and is optional)][Hw5] </li> <li> [HW5 Solutions](https://github.com/mitmath/1806/raw/master/psets%20spring%202020/Pset5%20solutions.pdf)</ul>|
  |<ul> <li>[HW6][HW6] </li> <li> [HW6 Solutions](https://github.com/mitmath/1806/raw/master/psets%20spring%202020/HW6%20solution.pdf)</ul> |<ul> <li>[HW7][HW7] </li> <li>[HW7 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/PSET7withSol.ipynb)</ul> |   <ul> <li>[HWA][HWA] </li> <li> [HW A Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset%20A%20Solution.ipynb)</ul> |  <ul> <li> [HW8][HW8] </li> <li> [HW8 Solutions](https://nbviewer.jupyter.org/github/mitmath/1806/blob/master/psets%20spring%202020/Pset%208%2018.06%202020%20solution.ipynb)</ul>|||||
 
 |#|Day| Date |  Topic | Reading| HW |
@@ -129,7 +129,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |32| F |4/24| Symmetric Matrices |<ul> <li>  Strang 6.4 </li> <li>[Strang:sym and pos def][strang25]</li></ul>|
 |33| M |4/27| Positive Definite Matrices  |<ul> <li>  Strang 6.5 </li> </ul>|  
 |34| W |4/29|  Similar Matrices |<ul> <li>  Strang 307-312   (Hw 8 due) </li> <li>[Strang:similar matrices ][strang28] </li>  <li>[Video:Abstractions in Linear Algebra][coming soon] </li></ul>|
-|35| F |5/1|  Statistics and PCA |<ul> <li>  Strang 7.3 </li> </ul>|
+|35| F |5/1|  Statistics and PCA |<ul> <li>  Strang 7.3 </li> <li> [Rigollet:PCA][rigollet] </ul>|
 |36| M |5/4| Infinite Dimensional Space ( Extended HWB Released)|<ul> <li>  Strang 10.5 </li> </ul>|
 |37| W |5/6|  Fourier  Transform  | <ul> <li>  Strang 9.3 </li> </ul>|
 |38| F |5/8|  Linear Transformations | <ul> <li>  Strang 8.1-8.3 </li> </ul>|
@@ -147,6 +147,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 [strang25]:https://youtu.be/UCc9q_cAhho
 [strang28]:https://youtu.be/TSdXJw83kyA
 [fundamental]:http://home.engineering.iastate.edu/~julied/classes/CE570/Notes/strangpaper.pdf
+[rigollet]:https://youtu.be/WW3ZJHPwvyg
 
 [video:complete]:https://video.odl.mit.edu/videos/38553aca62ae456482dcc9635a36c1e3/
 [video:backslash]:https://video.odl.mit.edu/videos/3bb09f687d0148f881a8b5cd97ccca15/
