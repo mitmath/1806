@@ -201,14 +201,17 @@
 	\end{itemize}
 	The `correlation' between two measured variables, such as temperature and humidity, is more frequently expressed by drawing a `line of best fit' on a scatter plot. The SVD of $A$ will tell us how to do this. 
 	
-	Let $\bm{u}_1, \bm{u}_2, \ldots \in \BR^m$ be the (orthonormal) singular vectors of $A$ (the columns of $U$), and let $\sigma_1^2, \sigma_2^2, \ldots$ be their singular values (the entries of $\Sigma$). Assume $\sigma_1 > \sigma_2 > \cdots$. 
+	The matrix $S$ is symmetric and positive definite, so it admits an orthonormal basis of eigenvectors, each with positive eigenvalue. Let $\bm{u}_1, \bm{u}_2, \ldots, \in \BR^m$ be the eigenvectors, and let $\sigma_1^2 > \sigma_2^2 > \cdots$ be the corresponding eigenvalues. 
 	\begin{itemize}
-		\item \emph{The statistical meaning of the SVD}. The `main theorem of linear algebra in statistics' is that our data looks as if it's generated in this way: 
+		\item \emph{Relation with the SVD of $A$}. The vector $\bm{u}_i$ is also a singular vector of $A$ with singular value $(n-1)\sigma_i$. This relationship between the SVD of a matrix $A$ and the eigendecomposition of the matrix $AA^\top$ is used in one of the proofs that an SVD always exists. 
+		\item \emph{The statistical meaning}. What do these eigenvectors and eigenvalues tell us? Consider the following `multivariate Gaussian distribution': 
 		\begin{enumerate}
 			\item On step $i$, choose new values for the scalars $z_1, z_2, \ldots$ based on a bell curve centered at zero with variance 1. 
 			\item Set $\bm{v}_i = \bm{\mu} + z_1 \sigma_1 \bm{u}_1 + z_2 \sigma_2 \bm{u}_2 + \cdots$. 
 		\end{enumerate}
 		The `total variance' is $\sigma_1^2 + \sigma_2^2 + \cdots$, and the `amount of variance explained by $\bm{u}_i$' is $\sigma_i^2$. 
+		
+		The assertion is that our measurements $\bm{v}_i$ `look like' they are generated in this way. 
 	\end{itemize}
 	Since $\sigma_1$ is relatively large, $\bm{u}_1$ is the direction in which the data fluctuate away from the mean $\bm{\mu}$ most wildly. The line through $\mu$ parallel to $\bm{u}_1$ is the line of best fit (which minimizes the \emph{perpendicular} distances to the points in the data set). 
 	
@@ -219,8 +222,6 @@
 		3 & 4 & -5 & -6
 		\end{pmatrix}. 
 	\]
-	
-	\newpage 
 	
 	\section{Fourier series} 
 	
