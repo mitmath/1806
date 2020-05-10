@@ -134,7 +134,7 @@ I have received emails sometimes  5 or 10  years after 18.06 was over with stude
 |36| M |5/4| Infinite Dimensional Space ( Extended HWB Released)|<ul> <li>  Strang 10.5 </li> </ul>|
 |37| W |5/6|  Fourier  Transform  | <ul> <li>  Strang 9.3 </li> </ul>|
 |38| F |5/8|  Linear Transformations | <ul> <li>  Strang 8.1-8.3 </li> </ul>|
-|39| M |5/11|  Errors and Condition Numbers (Extended HWB Due)| <ul> <li>  Strang 11.2 </li> </ul>|
+|39| M |5/11|  Errors and Condition Numbers (Extended HWB Due Tuesday May 12)| <ul> <li>  Strang 11.2 </li> </ul>|
 
 
 [strang14]:https://youtu.be/YzZUIYRCE38?t=1
