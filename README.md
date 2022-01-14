@@ -1,6 +1,6 @@
 # MIT Course 18.06, Spring 2022
 
-This is a repository for the course [18.06: Linear Algebra](http://web.mit.edu/18.06) at MIT in Spring 2022.
+This is a repository for the course [18.06: Linear Algebra](http://web.mit.edu/18.06) at MIT in Spring 2022.   See [other branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/viewing-branches-in-your-repository) of this repository for previous semesters.
 
 **Instructor**: [Prof. Steven G. Johnson](http://math.mit.edu/~stevenj).
 
