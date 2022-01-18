@@ -4,6 +4,8 @@ This is a repository for the course [18.06: Linear Algebra](http://web.mit.edu/1
 
 **Instructor**: [Prof. Steven G. Johnson](http://math.mit.edu/~stevenj).
 
+**Resources**: [Piazza discussion forum](https://piazza.com/mit/spring2022/1806), [math learning center](https://math.mit.edu/learningcenter/), [TSR^2 study/resource room](https://ome.mit.edu/programs/talented-scholars-resource-room-tsr2), [pset partners](https://psetpartners.mit.edu/).
+
 This document is a *brief* summary of what was covered in each 18.06
 lecture, along with links and suggestions for further reading.  It is
 *not* a good substitute for attending lecture, but may provide a
