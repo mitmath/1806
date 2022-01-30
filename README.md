@@ -14,7 +14,7 @@ useful study guide.  (You can also look at the analogous summaries from [Fall 20
 ## Lecture 1 (Jan 31)
 
 * [course overview
-slides](https://github.com/stevengj/1806/blob/master/lectures/1806overview.pdf) (not yet updated for Spring 2022!)
-* pset 1: to be posted *here* (submit your solutions on Canvas).
+slides](https://docs.google.com/presentation/d/1ivbV1nr67XfasBdXezZF9UWILzDoQtQev8vSqRKBfu0/edit?usp=sharing)
+* pset 0: coming soon, due **Friday Feb 4 at 11am** (submit your solutions on Canvas).
 
-Went over the slides giving the syllabus and the "big picture" of what 18.06 is about.
+Slides giving the syllabus and the "big picture" of what 18.06 is about.  Introduction to thinking about matrices as linear operations, not just as "bags of numbers".
