@@ -4,6 +4,12 @@ This is a repository for the course [18.06: Linear Algebra](http://web.mit.edu/1
 
 **Instructor**: [Prof. Steven G. Johnson](http://math.mit.edu/~stevenj).
 
+**Recitations**:
+ * [Gary Choi](https://math.mit.edu/~ptchoi/): T2, T3 (office hours W10 virtual, R11 in-person)
+ * [Haushuo Fu](https://math.mit.edu/directory/profile.php?pid=2229): T11, T12 (office hours R1 virtual, W1 in-person)
+ * [Sergei Korotkikh](https://math.mit.edu/directory/profile.php?pid=2113): T11, T1 (office hours W6 virtual, R6 in-person)
+ * [Yair Shenfeld](https://www.yairshenfeld.com/): T9, T10 (office hours W5 virtual, R5 in-person)
+
 **Resources**: [Piazza discussion forum](https://piazza.com/mit/spring2022/1806), [math learning center](https://math.mit.edu/learningcenter/), [TSR^2 study/resource room](https://ome.mit.edu/programs/talented-scholars-resource-room-tsr2), [pset partners](https://psetpartners.mit.edu/).
 
 This document is a *brief* summary of what was covered in each 18.06
