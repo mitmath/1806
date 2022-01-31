@@ -13,8 +13,19 @@ useful study guide.  (You can also look at the analogous summaries from [Fall 20
 
 ## Lecture 1 (Jan 31)
 
-* [course overview
-slides](https://docs.google.com/presentation/d/1ivbV1nr67XfasBdXezZF9UWILzDoQtQev8vSqRKBfu0/edit?usp=sharing)
-* pset 0: coming soon, due **Friday Feb 4 at 11am** (submit your solutions on Canvas).
+* [course overview/syllabus](https://docs.google.com/presentation/d/1ivbV1nr67XfasBdXezZF9UWILzDoQtQev8vSqRKBfu0/edit?usp=sharing)
+* [pset 0](pset0.ipynb): due **Friday Feb 4 at 11am** (submit your solutions on Canvas).
 
 Slides giving the syllabus and the "big picture" of what 18.06 is about.  Introduction to thinking about matrices as linear operations, not just as "bags of numbers".
+
+## Lecture 2 (Feb 2)
+
+TBA.
+
+## *Optional* Julia Tutorial (Feb 2 @ 5pm): [Zoom](https://mit.zoom.us/j/92693276240?pwd=TmhwQmRWcmJWVm51eTQ4Szg4cWI4dz09)
+
+A basic overview of the Julia programming environment for numerical computations that we will use in 18.06 for simple computational exploration.   This (Zoom-based) tutorial will cover what Julia is and the basics of interaction, scalar/vector/matrix arithmetic, and plotting — we'll be using it as just a "fancy calculator" and no "real programming" will be required.
+
+* [Tutorial materials](https://github.com/mitmath/julia-mit)
+
+If possible, try to install Julia on your laptop beforehand using the instructions at the above link.  Failing that, you can run Julia in the cloud (see instructions above).
