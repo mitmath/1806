@@ -14,7 +14,7 @@ useful study guide.  (You can also look at the analogous summaries from [Fall 20
 ## Lecture 1 (Jan 31)
 
 * [course overview/syllabus](https://docs.google.com/presentation/d/1ivbV1nr67XfasBdXezZF9UWILzDoQtQev8vSqRKBfu0/edit?usp=sharing)
-* [pset 0](pset0.ipynb): due **Friday Feb 4 at 11am** (submit your solutions on Canvas).
+* [pset 0](psets/pset0.ipynb): due **Friday Feb 4 at 11am** (submit your solutions on Canvas).
 
 Slides giving the syllabus and the "big picture" of what 18.06 is about.  Introduction to thinking about matrices as linear operations, not just as "bags of numbers".
 
