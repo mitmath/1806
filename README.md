@@ -21,7 +21,7 @@ useful study guide.  (You can also look at the analogous summaries from [Fall 20
 
 * [course overview/syllabus](https://docs.google.com/presentation/d/1ivbV1nr67XfasBdXezZF9UWILzDoQtQev8vSqRKBfu0/edit?usp=sharing)
 * [pset 0](psets/pset0.ipynb): due **Friday Feb 4 at 11am** (submit your solutions on Canvas).
-* [video](https://mit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=736d43c9-8adc-4e5b-803d-ae2e00f05c67)
+* [video](https://mit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=736d43c9-8adc-4e5b-803d-ae2e00f05c67) — note: videos are also viewable via Canvas under the "Panopto Video" link.
 
 Slides giving the syllabus and the "big picture" of what 18.06 is about.  Introduction to thinking about matrices as linear operations, not just as "bags of numbers".
 
