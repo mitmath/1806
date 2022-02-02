@@ -32,7 +32,7 @@ Slides giving the syllabus and the "big picture" of what 18.06 is about.  Introd
 ## Lecture 2 (Feb 2)
 
 * handwritten notes: see link above (at beginning)
-* Gaussian-elimination [Julia notebook](http://nbviewer.jupyter.org/github/mitmath/1806/blob/master/notes/Gaussian-elimination.ipynb)
+* Gaussian-elimination [Julia notebook](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Gaussian-elimination.ipynb)
 
 (Started with quick review of matrix–matrix multiplication from the end of lecture 1.)
 
