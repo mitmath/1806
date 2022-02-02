@@ -31,7 +31,28 @@ Slides giving the syllabus and the "big picture" of what 18.06 is about.  Introd
 
 ## Lecture 2 (Feb 2)
 
-TBA.
+* handwritten notes: see link above (at beginning)
+* Gaussian-elimination [Julia notebook](http://nbviewer.jupyter.org/github/mitmath/1806/blob/master/notes/Gaussian-elimination.ipynb)
+
+(Started with quick review of matrix–matrix multiplication from the end of lecture 1.)
+
+[Gaussian
+elimination](https://en.wikipedia.org/wiki/Gaussian_elimination) for **Ax=b**:  I
+started with the grade-school/high-school viewpoint of writing out three equations
+in three unknowns, adding/subtracting multiples of equations until we
+were left with one equation in one unknown.  Then, I wrote the
+same equations in matrix form, and renamed this process "Gaussian
+elimination": we add/subtract multiples of matrix rows to introduce
+zeros below the diagonal, i.e. to make the matrix [upper
+triangular](https://en.wikipedia.org/wiki/Triangular_matrix) **U**.  We then do the same row operations to the right hand side **b** to get a new vector **c**.  Finally, we solve **Ux=c** for x by working from bottom (1 equation in 1 variable) to top, a process called "backsubstitution".
+
+To do the same operations to both **A** and **b**, a useful trick for hand calculations is to [augment](https://en.wikipedia.org/wiki/Augmented_matrix) the matrix with a new column representing the right-hand side, forming **[A b]** before starting Gaussian elimination.
+
+What comes next?  The problem with expressing Gaussian elimination this way, as operations on individual numbers in the matrix, is that it is impossible to follow the process in detail for anything except a very tiny matrix.   We need a higher-level "algebraic" way to express the process, both to help us understand it and also to help us to *use* it (e.g. to perform additional algebraic transformations afterwards).   To do this, we want to express the process, not as operations on individual numbers, but as matrix operations.
+
+Rewrote Gaussian elimination in matrix form: we multiply a matrix A on the *left* by a sequence of **lower**-triangular "elimination matrices" Eₙ to arrive at an **upper**-triangular matrix U = EA.  To solve Ax=b, we can think of the earlier process as multiplying *both sides* on the *left* by **E**, the linear operator representing the composition (product) of all of the elimination steps, yielding Ux=EAx on the left and c=Eb on the right.
+
+**Further reading:** Textbook sections 2.1, 2.2, 2.3.  Strang [lecture 2 video](https://www.youtube.com/watch?v=QVKj3LADCnA&list=PLE7DDD91010BC51F8&index=3).
 
 ## *Optional* Julia Tutorial (Feb 2 @ 5pm): [Zoom](https://mit.zoom.us/j/92693276240?pwd=TmhwQmRWcmJWVm51eTQ4Szg4cWI4dz09)
 
