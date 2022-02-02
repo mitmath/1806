@@ -4,6 +4,8 @@ This is a repository for the course [18.06: Linear Algebra](http://web.mit.edu/1
 
 **Instructor**: [Prof. Steven G. Johnson](http://math.mit.edu/~stevenj).
 
+**Lectures**: MWF11 in 10-250.  [Recorded](https://mit.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=68796547-c661-4d78-a50e-ae2e00efcbba), with [handwritten notes](https://www.dropbox.com/s/q6ff0kfu7jyjiuz/18.06%20Spring%202022.pdf?dl=0) postedd online, and other materials (slides, further reading) posted below.
+
 **Recitations**:
  * [Gary Choi](https://math.mit.edu/~ptchoi/): T2 in 2-136, T3 in 2-136 (office hours W10 [virtual](https://mit.zoom.us/j/99599310644), R11 in-person 2-246C)
  * [Haushuo Fu](https://math.mit.edu/directory/profile.php?pid=2229): T11 in 2-136, T12 in 2-136 (office hours R1 [virtual](https://mit.zoom.us/j/99599310644), W1 in-person 2-238)
@@ -21,9 +23,11 @@ useful study guide.  (You can also look at the analogous summaries from [Fall 20
 
 * [course overview/syllabus](https://docs.google.com/presentation/d/1ivbV1nr67XfasBdXezZF9UWILzDoQtQev8vSqRKBfu0/edit?usp=sharing)
 * [pset 0](psets/pset0.ipynb): due **Friday Feb 4 at 11am** (submit your solutions on Canvas).
-* [video](https://mit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=736d43c9-8adc-4e5b-803d-ae2e00f05c67) — note: videos are also viewable via Canvas under the "Panopto Video" link.
+* video: see recordings link above.
 
 Slides giving the syllabus and the "big picture" of what 18.06 is about.  Introduction to thinking about matrices as linear operations, not just as "bags of numbers".
+
+**Further reading**: Strang, chapter 1, and section 8.1 on linear transformations.
 
 ## Lecture 2 (Feb 2)
 
