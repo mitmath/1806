@@ -12,6 +12,8 @@ This is a repository for the course [18.06: Linear Algebra](http://web.mit.edu/1
  * [Sergei Korotkikh](https://math.mit.edu/directory/profile.php?pid=2113): T11 in 2-131, T1 in 2-136 (office hours W6 [virtual](https://mit.zoom.us/j/99599310644), R6 in-person 2-231D)
  * [Yair Shenfeld](https://www.yairshenfeld.com/): T9 in 2-132, T10 in 2-132 (office hours W5 [virtual](https://mit.zoom.us/j/99599310644), R5 in-person 2-231)
 
+**Undergraduate Assistants**: [Subha Pushpita](https://snpushpi.mit.edu/) (snpushpi ατ mit.edu), Isaac M Lopez (imlopez ατ mit.edu), Gaurav Arya (aryag ατ mit.edu).
+
 **Resources**: [Piazza discussion forum](https://piazza.com/mit/spring2022/1806), [math learning center](https://math.mit.edu/learningcenter/), [TSR^2 study/resource room](https://ome.mit.edu/programs/talented-scholars-resource-room-tsr2), [pset partners](https://psetpartners.mit.edu/).
 
 This document is a *brief* summary of what was covered in each 18.06
