@@ -65,3 +65,10 @@ A basic overview of the Julia programming environment for numerical computations
 * [Tutorial materials](https://github.com/mitmath/julia-mit) (and links to other resources)
 
 If possible, try to install Julia on your laptop beforehand using the instructions at the above link.  Failing that, you can run Julia in the cloud (see instructions above).
+
+## Lecture 3 (Feb 4)
+
+* handwritten notes
+* [Matrix inverse and LU notebook](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Inverses-LU-intro.ipynb)
+* pset 0 solutions: coming soon
+* pset 1 (due Feb 11): coming soon
