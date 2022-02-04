@@ -70,5 +70,5 @@ If possible, try to install Julia on your laptop beforehand using the instructio
 
 * handwritten notes
 * [Matrix inverse and LU notebook](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Inverses-LU-intro.ipynb)
-* pset 0 solutions: coming soon
+* [pset 0 solutions](psets/pset0sol.ipynb)
 * pset 1 (due Feb 11): coming soon
