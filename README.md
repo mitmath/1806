@@ -140,7 +140,7 @@ Permutation matrices P are a great example of a linear operator that is often ea
 * [Computational complexity](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Complexity.ipynb)
 * [Singular matrices and rank](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall18/lectures/Singular.ipynb)
 * [pset 1 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset1sol.ipynb)
-* [pset 2](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset2.ipynb)
+* [pset 2](psets/pset2.ipynb)
 
 Complexity of matrix operations: why matrix × vector or backsubstitution scale like n² for n×n matrices, while matrix × matrix or Gaussian elimination (LU factorization) scale like n³.   Matrices much bigger than a few thousand square quickly become impractical, and really large problems are only tractable because they have special structure like [sparsity](https://en.wikipedia.org/wiki/Sparse_matrix).
 
