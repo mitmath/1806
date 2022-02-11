@@ -139,7 +139,14 @@ Permutation matrices P are a great example of a linear operator that is often ea
 * handwritten notes
 * [Computational complexity](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Complexity.ipynb)
 * [Singular matrices and rank](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall18/lectures/Singular.ipynb)
-* pset 1 solutions: coming soon
+* [pset 1 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset1sol.ipynb)
 * pset 2: coming soon
 
 Complexity of matrix operations: why matrix × vector or backsubstitution scale like n² for n×n matrices, while matrix × matrix or Gaussian elimination (LU factorization) scale like n³.   Matrices much bigger than a few thousand square quickly become impractical, and really large problems are only tractable because they have special structure like [sparsity](https://en.wikipedia.org/wiki/Sparse_matrix).
+
+Began talking about singular matrices.  With a relatively simple example, showed that singular matrices (matrices with not enough pivots) A can still have solutions to Ax=b, but only for certain right hand sides.  And when they do have solutions, they have *infinitely many* solutions.
+As a measure of *how* singular a matrix is, we talk about its **rank r**, equal to the number of pivots that we have after elimination.   It will turn out that this number **r** is closely related to the *geometry* of solutions to singular (and non-square) matrix problems.   The solvable right-hand sides live in "**r** dimensions", a *subspace* of all possible right-hand sides — in our example, we had r=2 for a 3×3 matrix, so the allowed right-hand sides lived in a 2d *plane*.   And if the solutions exist to an n×n system with rank r, then we will see that the solutions "live" in n–r dimensions, e.g. a 1d line in our example.
+
+To make this precise, we first have to go back and generalize our notion of a "vector" to a more abstract notion called a "vector space", and from this we can define "subspaces", and see how certain key subspaces related to a matrix A tell us the geometry of its solutions.
+
+**Further reading:** Textbook sections 2.6 ("The cost of elimination") and 11.1.   For next time, textbook sections 3.1 and 3.2.
