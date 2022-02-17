@@ -6,6 +6,8 @@ This is a repository for the course [18.06: Linear Algebra](http://web.mit.edu/1
 
 **Lectures**: MWF11 in 10-250.  See [recordings](https://mit.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=68796547-c661-4d78-a50e-ae2e00efcbba) and [handwritten notes](https://www.dropbox.com/s/q6ff0kfu7jyjiuz/18.06%20Spring%202022.pdf?dl=0) posted online, along with other materials (slides, further reading) posted below.
 
+**Exams**: 11am in 10-250, on Fridays **2/25**, **4/1**, and **5/6**.  Final exam: 9–12 in 10–250 on Wednesday **5/18**.
+
 **Recitations**:
  * [Gary Choi](https://math.mit.edu/~ptchoi/): T2 in 2-136, T3 in 2-136 (office hours W10 [virtual](https://mit.zoom.us/j/99599310644), R11 in-person 2-246C)
  * [Haushuo Fu](https://math.mit.edu/directory/profile.php?pid=2229): T11 in 2-136, T12 in 2-136 (office hours M4 [virtual](https://mit.zoom.us/j/99599310644), W1 in-person 2-238)
