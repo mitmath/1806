@@ -192,7 +192,7 @@ I used a 3×4 example matrix A (similar in spirit to one in the textbook, sectio
 
 * handwritten notes
 * pset 2 solutions: coming soon
-* *short* pset 3 (due **Wed** Feb 23): coming soon
+* *short* [pset 3](psets/pset3.ipynb) (due **Wed** Feb 23)
 
 ### Linear independence and C(A)
 
