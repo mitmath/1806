@@ -140,7 +140,7 @@ Permutation matrices P are a great example of a linear operator that is often ea
 
 * handwritten notes
 * [Computational complexity](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Complexity.ipynb)
-* [Singular matrices and rank](http://nbviewer.jupyter.org/github/stevengj/1806/blob/fall18/lectures/Singular.ipynb)
+* [Singular matrices and rank](http://nbviewer.jupyter.org/github/stevengj/1806/blob/master/lectures/Singular.ipynb)
 * [pset 1 solutions](https://github.com/mitmath/1806/blob/master/psets/pset1sol.ipynb)
 * [pset 2](psets/pset2.ipynb)
 
