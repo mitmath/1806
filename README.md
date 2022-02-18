@@ -191,7 +191,7 @@ I used a 3×4 example matrix A (similar in spirit to one in the textbook, sectio
 ## Lecture 9 (Feb 18)
 
 * handwritten notes
-* [pset 2 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset2sol.ipynb)
+* [pset 2 solutions](psets/pset2sol.ipynb)
 * *short* [pset 3](psets/pset3.ipynb) (due **Wed** Feb 23)
 
 ### Linear independence and C(A)
