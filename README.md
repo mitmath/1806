@@ -239,6 +239,18 @@ Cases (1)-(3) are called **full rank**: the rank is as big as possible given the
 
 **Further reading:** Textbook sections 3.3–3.4, [lecture 9](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-9-independence-basis-and-dimension/).
 
+## Lecture 10 (Feb 22)
+
+* handwritten notes
+* [slides](https://docs.google.com/presentation/d/1SXAmVB07xdLRa8eBQFF5wI0RDpjC1u1-zHd1oPEtkXM/edit?usp=sharing)
+* [notebook](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Newton-Thomson-example.ipynb): Newton's method example
+
+Reviewed and broadened differential calculus (18.01 and 18.02) from the perspective of 18.06, where we view a derivative f′(x) as a **linear operator** acting on a small change in the input (dx) to give you the change in the output (df) to *first order* in dx ("linearized").   This viewpoint makes it easy to generalize derivatives, to scalar-valued functions of vectors where f′(x) is the transposed gradient (∇f)ᵀ, to vector-valued functions of vectors where f′(x) is the [Jacobian matrix](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant), and even to matrix-valued functions of matrices like f(x)=A⁻¹ where f′(x) is the linear operator f′(x)[dA]=–A⁻¹dAA⁻¹.
+
+Derivatives viewed as linear approximations have many important applications in science, machine learning, statistics, and engineering. For example, went over the **multidimensional Newton** algorithm for finding roots f(x)=0 of systems of nonlinear equations. At each step, you just solve a *linear* system of equations with the Jacobian matrix of f(x), and it converges incredibly rapidly.   Gave an example demo where we solved a 2d version of the famous [Thomson problem](https://en.wikipedia.org/wiki/Thomson_problem) to find the equilibrium position of N repulsive "point charges" constrained to lie on a circle (more generally, a sphere or hypersphere).
+
+**Further reading**: This material was presented in much greater depth in our [18.S096: Matrix Calculus](https://github.com/mitmath/matrixcalc) course in IAP 2022.    The viewpoint of derivatives as linear operators (also called [Fréchet derivatives](https://en.wikipedia.org/wiki/Fr%C3%A9chet_derivative)) was covered in lectures 1 and 2, Newton's method was covered in lecture 4, and automatic differentiation was covered in lecture 5 — see the posted lecture materials and the further-reading links therein.
+
 ## Exam 1 (Feb 25, in class)
 
 Exam 1 will cover the material through **lecture 9** and **pset 3**, including: linear operators, matrix–matrix and matrix–vector operations and interpretations thereof, writing/working with equations in matrix form, solving systems of equations with one or more right-hand sides, Gaussian elimination, back/forward-substitution and triangular matrices, LU factorization and PA=LU, permutation matrices, matrix inverses and Gauss–Jordan, singular matrices, computational costs (which operations are ~ m² or ~ m³ etc and arranging calculations efficiently), rank of a matrix (= number of pivots), vector space & subspaces, null space & special solutions, pivot/free columns column spaces, bases and dimensions of vector spaces, checking whether Ax=b is solvabe, complete solutions to Ax=b (including non-square matrices).
