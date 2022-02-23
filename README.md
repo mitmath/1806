@@ -281,20 +281,21 @@ Taking the orthogonal complements of C(A) and N(A) leads us to the **four fundam
 * N(A)<sup>⟂</sup> = row space C(Aᵀ) ⊆ ℝⁿ, dimension r
 
 **Further reading:** Textbook sections 3.5, 4.1; video
-[lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/), video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/)
+[lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/), video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/).  Julia [notebook on transposes and orthogonality](https://github.com/mitmath/1806/blob/master/notes/Transposes.ipynb).
 
 ## Exam 1 (Feb 25, in class)
 
 Exam 1 will cover the material through **lecture 9** and **pset 3**, including: linear operators, matrix–matrix and matrix–vector operations and interpretations thereof, writing/working with equations in matrix form, solving systems of equations with one or more right-hand sides, Gaussian elimination, back/forward-substitution and triangular matrices, LU factorization and PA=LU, permutation matrices, matrix inverses and Gauss–Jordan, singular matrices, computational costs (which operations are ~ m² or ~ m³ etc and arranging calculations efficiently), rank of a matrix (= number of pivots), vector space & subspaces, null space & special solutions, pivot/free columns column spaces, bases and dimensions of vector spaces, checking whether Ax=b is solvabe, complete solutions to Ax=b (including non-square matrices).
 
-* (Optional) review session: Thursday 2/24 4–5pm in 3-270.
+* (Optional) **review session**: Thursday 2/24 4–5pm in 3-270.  Practice problems from review session: [spring 2017 problem 2](http://web.mit.edu/18.06/www/Spring17/exam1.pdf) ([solution](http://web.mit.edu/18.06/www/Spring17/exam1-sol.pdf)), [fall 2017 problem 1](https://github.com/stevengj/1806/blob/fall17/exams/exam1.pdf) ([solution](https://github.com/stevengj/1806/blob/fall17/exams/exam1-sol.pdf)), [spring 2008 problem 4](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08-soln.pdf)), [spring 2017 final problem 5(b–c)](https://github.com/mitmath/1806/blob/spring17/exams/final.pdf) ([solution](https://github.com/mitmath/1806/blob/spring17/exams/final-sol.pdf)),
+[fall 2013 problem 3](http://web.mit.edu/18.06/www/Fall13/exam1_f13.pdf) ([solution](http://web.mit.edu/18.06/www/Fall13/exam1_f13_sol.pdf))
 
 Practice problems: [spring 2017 exam 1](http://web.mit.edu/18.06/www/Spring17/exam1.pdf) problems 1–4 ([solutions](http://web.mit.edu/18.06/www/Spring17/exam1-sol.pdf)); [fall 2017 exam 1](https://github.com/stevengj/1806/blob/fall17/exams/exam1.pdf) problems 1-4 ([solutions](https://github.com/stevengj/1806/blob/fall17/exams/exam1-sol.pdf)); [fall 2017 exam 1](https://github.com/stevengj/1806/blob/fall17/exams/exam2.pdf) problem 1a,b ([solutions](https://github.com/stevengj/1806/blob/fall17/exams/exam2-sol.pdf));
-[fall 2014 exam 1](http://web.mit.edu/18.06/www/Fall14/midterm1_F14.pdf) problems 1, 2, 3a, 3b, 3c  ([solutions](http://web.mit.edu/18.06/www/Fall14/Midterm1solF14.pdf);
+[fall 2014 exam 1](http://web.mit.edu/18.06/www/Fall14/midterm1_F14.pdf) problems 1, 2, 3a, 3b, 3c  ([solutions](http://web.mit.edu/18.06/www/Fall14/Midterm1solF14.pdf));
 [fall 2012 exam 1](http://web.mit.edu/18.06/www/Fall12/Exam%201/quiz1-1806-f12.pdf) problems 1–4 ([solutions](http://web.mit.edu/18.06/www/Fall12/Exam%201/quiz1-1806-f12-solution.pdf));
 [spring 2008 exam 1](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08.pdf) problems 1–4 ([solutions](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08-soln.pdf));  [fall 2011 exam 1](http://web.mit.edu/18.06/www/Fall11/q1_f11.pdf) problem 1a, 1b, 2 ([solutions](http://web.mit.edu/18.06/www/Fall11/q1_f11_solution.pdf));
 [spring 2012 exam 1](http://web.mit.edu/18.06/www/Spring12/q1_sp12.pdf) problems 1–4 ([solutions](http://web.mit.edu/18.06/www/Spring12/q1_sp12_sol.pdf));
-[fall 2013 exam 1](http://web.mit.edu/18.06/www/Fall13/exam1_f13.pdf) problems 1, 2, 3, 5 ([solutions](http://web.mit.edu/18.06/www/Fall13/exam1_f13_sol.pdf);
+[fall 2013 exam 1](http://web.mit.edu/18.06/www/Fall13/exam1_f13.pdf) problems 1, 2, 3, 5 ([solutions](http://web.mit.edu/18.06/www/Fall13/exam1_f13_sol.pdf));
 [fall 2009 exam 1](http://web.mit.edu/18.06/www/Fall09/exam1.pdf) problems 1, 2, 3a–3d, 4 ([solutions](http://web.mit.edu/18.06/www/Fall09/exam1soln.pdf));
 [spring 2008 exam 1](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08.pdf) problems 1, 3, 4
 ([solutions](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08-soln.pdf))
