@@ -285,7 +285,7 @@ Taking the orthogonal complements of C(A) and N(A) leads us to the **four fundam
 
 ## Exam 1 (Feb 25, 11am ~~in 10-250~~ online, due 2pm)
 
-**Update**: due to the snow emergency, MIT is closed and the **exam will be virtual**.  It will be posted on github at 11am, and you will have **until 2pm** to submit your solutions on Canvas.   (It is the *same 1-hour exam* that we would have used in person, but you may use all the time you want between 11am and 2pm … just leave yourself time to submit!)
+**Update**: due to the snow emergency, MIT is closed and the **exam will be virtual**.  It will be posted on github at 11am, and you will have **until 2pm** to submit your solutions on Canvas.   (It is the *same 1-hour exam* that we would have used in person, but you may use all the time you want between 11am and 2pm … just leave yourself time to submit!)  The exam is **closed-book/closed-notes** and must be completed **on your own**.
 
 * Virtual exam 1: to be posted here.
 
