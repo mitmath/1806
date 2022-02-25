@@ -287,7 +287,7 @@ Taking the orthogonal complements of C(A) and N(A) leads us to the **four fundam
 
 **Update**: due to the snow emergency, MIT is closed and the **exam will be virtual**.  It will be posted on github at 11am, and you will have **until 2pm** to submit your solutions on Canvas.   (It is the *same 1-hour exam* that we would have used in person, but you may use all the time you want between 11am and 2pm … just leave yourself time to submit!)  The exam is **closed-book/closed-notes** and must be completed **on your own**.
 
-* Virtual exam 1: to be posted here.
+* Virtual [exam 1](exams/exam1.pdf).  Solutions: to be posted.
 
 Exam 1 will cover the material through **lecture 9** and **pset 3**, including: linear operators, matrix–matrix and matrix–vector operations and interpretations thereof, writing/working with equations in matrix form, solving systems of equations with one or more right-hand sides, Gaussian elimination, back/forward-substitution and triangular matrices, LU factorization and PA=LU, permutation matrices, matrix inverses and Gauss–Jordan, singular matrices, computational costs (which operations are ~ m² or ~ m³ etc and arranging calculations efficiently), rank of a matrix (= number of pivots), vector space & subspaces, null space & special solutions, pivot/free columns column spaces, bases and dimensions of vector spaces, checking whether Ax=b is solvabe, complete solutions to Ax=b (including non-square matrices).
 
