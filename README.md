@@ -255,6 +255,7 @@ Derivatives viewed as linear approximations have many important applications in 
 
 * handwritten notes
 * [pset 3 solutions](psets/pset3sol.ipynb)
+* [pset 4](psets/pset4.ipynb): due Friday March 4
 
 Briefly discussed the end of lecture 10's [slides](https://docs.google.com/presentation/d/1SXAmVB07xdLRa8eBQFF5wI0RDpjC1u1-zHd1oPEtkXM/edit?usp=sharing): another important use of linear approximation via derivatives is for optimization.  The gradient gives you the "uphill" direction, so you can maximize/minimize a function by "walking uphill/downhill", leading to a family of algorithms known as [gradient ascent/descent](https://en.wikipedia.org/wiki/Gradient_descent), respectively.  There are lots of details I won't go into, but the upshot is that you can optimize functions of *millions* of variables (or more!), which is the key to machine learning (e.g. deep neural nets), large-scale engineering optimization, and more.
 
