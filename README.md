@@ -304,3 +304,28 @@ Practice problems: [spring 2017 exam 1](http://web.mit.edu/18.06/www/Spring17/ex
 [fall 2009 exam 1](http://web.mit.edu/18.06/www/Fall09/exam1.pdf) problems 1, 2, 3a–3d, 4 ([solutions](http://web.mit.edu/18.06/www/Fall09/exam1soln.pdf));
 [spring 2008 exam 1](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08.pdf) problems 1, 3, 4
 ([solutions](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08-soln.pdf))
+
+## Lecture 12 (Feb 28)
+
+* handwritten notes
+
+Continued discussion of 4 fundamental subspaces.
+
+In particular, since elimination multiplies A on the *left*, it multiplies Aᵀ on the *right*
+by an invertible matrix.  Therefore, C(Aᵀ) = C(Uᵀ), and the *pivot rows of
+U* (not A!) are a basis for C(Aᵀ).   More importantly, this tells us a very non-obvious
+fact: rank(Aᵀ) = rank(A).   (That is, if you did elimination on Aᵀ, you
+would get the *same number of pivots*.)
+
+Talked about the viewpoint that solving Ax=b when A has full column rank (i.e. independent columns) is equivalent to a change of basis, or writing b in a "new coordinate system".
+
+However, viewing the columns of A as a basis or "coordinate system", it becomes clear that some bases are nicer than others.  If the basis vectors are *nearly linearly independent* (e.g. nearly parallel), or equivalently if *A is nearly singular*, then the new coordinate system can be difficult and confusing to use, e.g. tiny vectors can have huge coordinates (coefficients) in the new basis.
+
+A *much nicer* "coordinate system" is an [orthonormal basis](https://en.wikipedia.org/wiki/Orthonormal_basis): vectors q₁,q₂,…,qₙ that are orthogonal to one another and have length 1.   One way of looking at this: **to change "coordinates" to an orthonormal basis just involves dot products.**
+  - If you have a non-orthonormal basis a₁,a₂,…, then to write an arbitrary vector b in this basis, i.e. b = a₁x₁ + a₂x₂ + ⋯ with coefficients x₁,x₂,…, you need to solve a linear system Ax=b for x.  Hard!  (∼m³).
+  - For an orthonormal basis q₁,q₂,… then to write b = q₁x₁ + q₂x₂ + ⋯ you can **just take dot products** xᵢ=qᵢᵀb.  For example, if you take the dot product q₁ᵀb, then you get x₁ (the coefficient of q₁), because all the other terms have dot product *zero*.
+
+Next lecture, we will put these q₁,q₂,…,qₙ into a matrix Q and talk about its properties, leading us to the important concept of "orthogonal" or "unitary" matrices.
+
+**Further reading:** 3blue1brown has a [nice video on changes of basis](https://www.youtube.com/watch?v=P2LTAUO1TdA).  Textbook sections 3.5, 4.1; video
+[lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/), video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/).
