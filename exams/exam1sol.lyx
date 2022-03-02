@@ -1,0 +1,1296 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{(\roman{enumii})}
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MIT 18.06 Exam 1 
+\series bold
+Solutions
+\series default
+, Spring 2022
+\begin_inset Newline newline
+\end_inset
+
+Johnson
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 (26 points):
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cccc}
+1 & 2 & 1 & 2\\
+2 & 4 & 2 & 5\\
+1 & 2 & 1 & 1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Give a basis for 
+\begin_inset Formula $N(A)$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+We proceed by elimination to reduce 
+\begin_inset Formula $A$
+\end_inset
+
+ to upper-triangular form: 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cccc}
+\boxed{1} & 2 & 1 & 2\\
+2 & 4 & 2 & 5\\
+1 & 2 & 1 & 1
+\end{array}\right)\stackrel{\begin{array}{c}
+r_{2}-2r_{1}\\
+r_{3}-r_{1}
+\end{array}}{\longrightarrow}\left(\begin{array}{cccc}
+\boxed{1} & 2 & 1 & 2\\
+ &  &  & \boxed{1}\\
+ &  &  & -1
+\end{array}\right)\stackrel{r_{3}+r_{1}}{\longrightarrow}\left(\begin{array}{cccc}
+\boxed{1} & 2 & 1 & 2\\
+ &  &  & \boxed{1}\\
+ &  &  & 0
+\end{array}\right)=U,
+\]
+
+\end_inset
+
+which immediately tells us that 
+\begin_inset Formula $A$
+\end_inset
+
+ is rank 2, and that the 1st and 4th columns are the pivot columns.
+ We will then solve equations by dividing the variables into pivot and free
+ variables, 
+\begin_inset Formula $x=[p_{1},f_{1},f_{2},p_{2}]$
+\end_inset
+
+.
+ The nullspace will therefore be 
+\begin_inset Formula $4-2=2$
+\end_inset
+
+ dimensional, and our basis will need 
+\series bold
+2 vectors
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+To find our usual basis for 
+\begin_inset Formula $N(A)$
+\end_inset
+
+, the special solutions, we will set the free variables to 
+\begin_inset Formula $[1,0]$
+\end_inset
+
+ and 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ and solve for the pivot variables, which leads to the upper-triangular
+ systems: 
+\begin_inset Formula 
+\[
+\left(\begin{array}{cc}
+1 & 2\\
+ & 1
+\end{array}\right)\left(\begin{array}{c}
+p_{1}\\
+p_{2}
+\end{array}\right)=\left(\begin{array}{c}
+-2\\
+0
+\end{array}\right)\text{ or }\left(\begin{array}{c}
+-1\\
+0
+\end{array}\right),
+\]
+
+\end_inset
+
+where the left-hand-side is the upper-triangular matrix in the pivot columns
+ of 
+\begin_inset Formula $U$
+\end_inset
+
+ and the right-hand-side is minus the free columns.
+ By backsubstitution, we get 
+\begin_inset Formula $p_{2}=0$
+\end_inset
+
+ in both cases and 
+\begin_inset Formula $p_{1}=-2\text{ or }-1$
+\end_inset
+
+, respectively.
+ Plugging these into 
+\begin_inset Formula $x=[p_{1},f_{1},f_{2},p_{2}]$
+\end_inset
+
+, we get our 
+\begin_inset Quotes eld
+\end_inset
+
+special
+\begin_inset Quotes erd
+\end_inset
+
+ basis for 
+\begin_inset Formula $N(A)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+N(A)=\text{span of }\boxed{\left(\begin{array}{c}
+-2\\
+1\\
+0\\
+0
+\end{array}\right),\left(\begin{array}{c}
+-1\\
+0\\
+1\\
+0
+\end{array}\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For what value or values (if any) of 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ does 
+\begin_inset Formula $Ax=\left(\begin{array}{c}
+1\\
+2\alpha\\
+\alpha
+\end{array}\right)$
+\end_inset
+
+ have any solution 
+\begin_inset Formula $x$
+\end_inset
+
+?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+To check whether a solution exists, we apply the same elimination steps
+ from 
+\begin_inset Formula $A\rightarrow U$
+\end_inset
+
+ to this right-hand-side, and check if it is zero in the 3rd row (matching
+ the row of zeros in 
+\begin_inset Formula $U$
+\end_inset
+
+), which is ensures that it is in 
+\begin_inset Formula $C(A)$
+\end_inset
+
+.
+ Hence: 
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+1\\
+2\alpha\\
+\alpha
+\end{array}\right)\stackrel{\begin{array}{c}
+r_{2}-2r_{1}\\
+r_{3}-r_{1}
+\end{array}}{\longrightarrow}\left(\begin{array}{c}
+1\\
+2\alpha-2\\
+\alpha-1
+\end{array}\right)\stackrel{r_{3}+r_{1}}{\longrightarrow}\left(\begin{array}{c}
+1\\
+2\alpha-2\\
+3\alpha-3
+\end{array}\right),
+\]
+
+\end_inset
+
+giving the condition 
+\begin_inset Formula $3\alpha-3=0$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $\boxed{\alpha=1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 2 (24 points):
+\end_layout
+
+\begin_layout Standard
+Give a 
+\series bold
+basis
+\series default
+ for the 
+\series bold
+nullspace
+\series default
+ 
+\begin_inset Formula $N(A)$
+\end_inset
+
+ and a basis for the 
+\series bold
+column space
+\series default
+ 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ for each of the following matrices:
+\end_layout
+
+\begin_layout Enumerate
+The one-column matrix 
+\begin_inset Formula $A=\left(\begin{array}{c}
+1\\
+2\\
+3\\
+4
+\end{array}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+This matrix is obviously rank 1 (full column rank), so 
+\begin_inset Formula $N(A)=\{\vec{0}\}$
+\end_inset
+
+ and the basis for 
+\begin_inset Formula $N(A)$
+\end_inset
+
+ is the 
+\series bold
+empty set {}
+\series default
+: the nullspace is zero-dimensional so it needs 
+\emph on
+no
+\emph default
+ basis vectors.
+ A basis for 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ is just 
+\begin_inset Formula $\boxed{\left(\begin{array}{c}
+1\\
+2\\
+3\\
+4
+\end{array}\right)}$
+\end_inset
+
+, the first column of 
+\begin_inset Formula $A$
+\end_inset
+
+ (which is also the pivot column).
+\end_layout
+
+\begin_layout Enumerate
+The one-row matrix 
+\begin_inset Formula $A=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\end{array}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+This matrix is also rank 1 (full row rank), with 1 pivot column and 3 free
+ columns.
+ We can read off the special solutions, so the 3-dimensional nullspace 
+\begin_inset Formula $N(A)$
+\end_inset
+
+ has the basis 
+\begin_inset Formula 
+\[
+\boxed{\left(\begin{array}{c}
+-2\\
+1\\
+0\\
+0
+\end{array}\right),\left(\begin{array}{c}
+-3\\
+0\\
+1\\
+0
+\end{array}\right),\left(\begin{array}{c}
+-4\\
+0\\
+0\\
+1
+\end{array}\right)}.
+\]
+
+\end_inset
+
+More explicitly, the special solutions are of the form 
+\begin_inset Formula $(p_{1},f_{1},f_{2},f_{3})$
+\end_inset
+
+, where we set the free variables to 
+\begin_inset Formula $(1,0,0)$
+\end_inset
+
+, 
+\begin_inset Formula $(0,1,0)$
+\end_inset
+
+, and 
+\begin_inset Formula $(0,0,1)$
+\end_inset
+
+ (the columns of 
+\begin_inset Formula $I$
+\end_inset
+
+) and solve for 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+, but since this is one equation in one variable we can do it by inspection:
+ 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ is just equal minus the free column.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Since it has full row rank, the column space 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ is all of 
+\begin_inset Formula $\mathbb{R}^{1}$
+\end_inset
+
+, and is spanned by the pivot column 
+\begin_inset Formula $\boxed{\left(\begin{array}{c}
+1\end{array}\right)}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Note that in 18.06 we sometimes gloss over the distinction between 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ (scalars) and 
+\begin_inset Formula $\mathbb{R}^{1}$
+\end_inset
+
+ (1-component column vectors) and 
+\begin_inset Formula $\mathbb{R}^{1\times1}$
+\end_inset
+
+ (
+\begin_inset Formula $1\times1$
+\end_inset
+
+ matrices).
+ If you think of 
+\begin_inset Formula $A$
+\end_inset
+
+ here as a 
+\begin_inset Quotes eld
+\end_inset
+
+row vector
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+covector
+\begin_inset Quotes erd
+\end_inset
+
+ that takes dot products with 
+\begin_inset Formula $[1,2,3,4]$
+\end_inset
+
+, then the output is in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ rather than 
+\begin_inset Formula $\mathbb{R}^{1}$
+\end_inset
+
+ and you might say that a basis is the number 
+\begin_inset Formula $\boxed{1}$
+\end_inset
+
+.
+ I
+\begin_inset space ~
+\end_inset
+
+will accept that answer as well.
+\end_layout
+
+\begin_layout Enumerate
+The 100-row matrix 
+\begin_inset Formula $A=\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\\
+1 & 2 & 3 & 4\\
+\vdots & \vdots & \vdots & \vdots\\
+1 & 2 & 3 & 4
+\end{array}\right)$
+\end_inset
+
+ in which every row is 
+\begin_inset Formula $\left(\begin{array}{cccc}
+1 & 2 & 3 & 4\end{array}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+This also has rank 1—after elimination, all the rows after the first will
+ be zero.
+ So 
+\begin_inset Formula $N(A)$
+\end_inset
+
+ will be 3-dimensional and 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ will be 1-dimensional.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The first thing to realize is that we are doing the same operation as in
+ part
+\begin_inset space ~
+\end_inset
+
+(b), but we are 
+\emph on
+repeating the output
+\emph default
+ 100 times.
+ This 
+\emph on
+doesn't change the nullspace
+\emph default
+, since if the first row of the output is zero then all of the rows are
+ zero.
+ So the nullspace basis is the same as in part
+\begin_inset space ~
+\end_inset
+
+(b), i.e.
+ 
+\begin_inset Formula $N(A)$
+\end_inset
+
+ is spanned by the special solutions
+\begin_inset Formula 
+\[
+\boxed{\left(\begin{array}{c}
+-2\\
+1\\
+0\\
+0
+\end{array}\right),\left(\begin{array}{c}
+-3\\
+0\\
+1\\
+0
+\end{array}\right),\left(\begin{array}{c}
+-4\\
+0\\
+0\\
+1
+\end{array}\right)}.
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The column space 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ is spanned by the pivot column—the first column, here—of 
+\begin_inset Formula $A$
+\end_inset
+
+, which is simply 
+\begin_inset Formula 
+\[
+\boxed{\left(\begin{array}{c}
+1\\
+1\\
+\vdots\\
+1
+\end{array}\right)\in\mathbb{R}^{100}},
+\]
+
+\end_inset
+
+i.e.
+ 
+\series bold
+100 rows of 1's
+\series default
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 3 (25 points):
+\end_layout
+
+\begin_layout Standard
+Suppose that we are solving 
+\begin_inset Formula $Ax=\left(\begin{array}{c}
+1\\
+2\\
+3
+\end{array}\right)$
+\end_inset
+
+ .
+ In each of the parts below, a 
+\series bold
+complete
+\series default
+ solution 
+\begin_inset Formula $x$
+\end_inset
+
+ is proposed.
+ For each possibility, say 
+\series bold
+impossible
+\series default
+ if that could 
+\emph on
+not
+\emph default
+ be a 
+\emph on
+complete
+\emph default
+ solution to such an equation, 
+\series bold
+or
+\series default
+ give the the 
+\series bold
+size
+\series default
+ 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ and the 
+\series bold
+rank
+\series default
+ of the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ if 
+\begin_inset Formula $x$
+\end_inset
+
+ is possible.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{x}=\left(\begin{array}{c}
+1\\
+2\\
+3\\
+4
+\end{array}\right)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Impossible
+\series default
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ would need to be a 
+\begin_inset Formula $3\times4$
+\end_inset
+
+ matrix, but such a matrix would have rank 
+\begin_inset Formula $\le3$
+\end_inset
+
+ and hence could not have unique solutions (could not be full column rank).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{x}=\left(\begin{array}{c}
+1\\
+2\\
+3\\
+4
+\end{array}\right)+\alpha_{1}\left(\begin{array}{c}
+1\\
+-1\\
+5\\
+17
+\end{array}\right)+\alpha_{2}\left(\begin{array}{c}
+1\\
+0\\
+0\\
+1
+\end{array}\right)$
+\end_inset
+
+ for all real numbers 
+\begin_inset Formula $\alpha_{1},\alpha_{2}\in\mathbb{R}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Possible
+\series default
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+would need to be a 
+\begin_inset Formula $3\times4$
+\end_inset
+
+ matrix of rank 
+\begin_inset Formula $2$
+\end_inset
+
+, in order to have a 2d nullspace.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{x}=\left(\begin{array}{c}
+1\\
+2
+\end{array}\right)+\alpha\left(\begin{array}{c}
+1\\
+2
+\end{array}\right)$
+\end_inset
+
+ for all real numbers 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Impossible
+\series default
+.
+ For 
+\begin_inset Formula $\alpha=-1$
+\end_inset
+
+, this would give 
+\begin_inset Formula $\vec{x}=\vec{0}$
+\end_inset
+
+, which could not be a solution with a nonzero right-hand side.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{x}=\left(\begin{array}{c}
+1\\
+2
+\end{array}\right)+\alpha\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right)$
+\end_inset
+
+ for all real numbers 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Possible
+\series default
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ would need to be a 
+\begin_inset Formula $3\times2$
+\end_inset
+
+ matrix of rank 1, in order to have a 1d nullspace.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{x}=\left(\begin{array}{c}
+1\\
+2
+\end{array}\right)+\alpha_{1}\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right)+\alpha_{2}\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right)$
+\end_inset
+
+ for all real numbers 
+\begin_inset Formula $\alpha_{1},\alpha_{2}\in\mathbb{R}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Possible
+\series default
+: 
+\begin_inset Formula $3\times2$
+\end_inset
+
+ of rank 1.
+ Since the second two vectors are the same, 
+\begin_inset Formula $\alpha_{2}$
+\end_inset
+
+ is redundant with 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ and this is equivalent to the previous part with 
+\begin_inset Formula $\alpha=\alpha_{1}+\alpha_{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Note: 
+\series default
+There was a typographical error in this problem: I had 
+\emph on
+meant
+\emph default
+ to make the two vectors linearly independent, i.e.
+ to ask something like 
+\begin_inset Formula $\vec{x}=\left(\begin{array}{c}
+1\\
+2
+\end{array}\right)+\alpha_{1}\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right)+\alpha_{2}\left(\begin{array}{c}
+1\\
+1
+\end{array}\right)$
+\end_inset
+
+.
+
+\series bold
+ 
+\series default
+In this case the solution would have been 
+\series bold
+impossible
+\series default
+: 
+\begin_inset Formula $A$
+\end_inset
+
+ would need to be a 
+\begin_inset Formula $3\times2$
+\end_inset
+
+ matrix, but to have a 2d nullspace it would need to have rank
+\begin_inset space ~
+\end_inset
+
+0, which means that no non-zero right-hand-side could have a solution.
+ Equivalently, the second two vectors form a basis for 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ if they are linearly independent, so there is some value of 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha_{2}$
+\end_inset
+
+ that cancels the 
+\begin_inset Formula $(1,2)$
+\end_inset
+
+ vector and gives 
+\begin_inset Formula $\vec{x}=\vec{0}$
+\end_inset
+
+, which cannot be a solution with a nonzero right-hand side.
+ 
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 4 (25 points):
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula 
+\[
+B=\left(\begin{array}{ccc}
+1\\
+1 & 1\\
+1 & 1 & 1
+\end{array}\right),\qquad C=\left(\begin{array}{ccc}
+2 & -1 & -1\\
+ & 2 & -1\\
+ &  & 2
+\end{array}\right),\qquad b=\left(\begin{array}{c}
+5\\
+-8\\
+-4
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\series bold
+Compute:
+\series default
+ 
+\begin_inset Formula 
+\[
+(CB)^{-1}b.
+\]
+
+\end_inset
+
+ (Hint: Remember what I said in class about inverting matrices!)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution:
+\series default
+ As usual, we don't want to compute matrix inverses explicitly, we want
+ to solve linear systems.
+ In this case 
+\begin_inset Formula 
+\[
+(CB)^{-1}b=\underbrace{B^{-1}\underbrace{C^{-1}b}_{y}}_{x},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $y=C^{-1}b$
+\end_inset
+
+ is computed by solving 
+\begin_inset Formula $Cy=b$
+\end_inset
+
+ using 
+\series bold
+backsubstitution
+\series default
+ (since 
+\begin_inset Formula $C$
+\end_inset
+
+ is upper-triangular), and then 
+\begin_inset Formula $x=B^{-1}y$
+\end_inset
+
+ is computed by solving 
+\begin_inset Formula $Bx=y$
+\end_inset
+
+ using 
+\series bold
+forward-substitution
+\series default
+ (since 
+\begin_inset Formula $B$
+\end_inset
+
+ is lower-triangular).
+ No Gaussian elimination is required! Proceeding, we have
+\begin_inset Formula 
+\[
+\underbrace{\left(\begin{array}{ccc}
+2 & -1 & -1\\
+ & 2 & -1\\
+ &  & 2
+\end{array}\right)}_{C}\underbrace{\left(\begin{array}{c}
+y_{1}\\
+y_{2}\\
+y_{3}
+\end{array}\right)}_{y}=\underbrace{\left(\begin{array}{c}
+5\\
+-8\\
+-4
+\end{array}\right)}_{b}\implies\begin{array}{c}
+2y_{1}=5+y_{2}+y_{3}=-2\implies y_{1}=-1\\
+2y_{2}=-8+y_{3}=-10\implies y_{2}=-5\\
+2y_{3}=-4\implies y_{3}=-2
+\end{array},
+\]
+
+\end_inset
+
+and hence
+\begin_inset Formula 
+\[
+\underbrace{\left(\begin{array}{ccc}
+1\\
+1 & 1\\
+1 & 1 & 1
+\end{array}\right)}_{B}\underbrace{\left(\begin{array}{c}
+x_{1}\\
+x_{2}\\
+x_{3}
+\end{array}\right)}_{x}=\underbrace{\left(\begin{array}{c}
+-1\\
+-5\\
+-2
+\end{array}\right)}_{y}\implies\begin{array}{c}
+x_{1}=-1\\
+x_{2}=-5-x_{1}=-4\\
+x_{3}=-2-x_{1}-x_{2}=3
+\end{array},
+\]
+
+\end_inset
+
+giving us our solution 
+\begin_inset Formula 
+\[
+x=(CB)^{-1}b=\boxed{\left(\begin{array}{c}
+-1\\
+-4\\
+3
+\end{array}\right)}\,.
+\]
+
+\end_inset
+
+
+\series bold
+Alternative solutions
+\series default
+: You could, of course, solve this in other ways.
+ You could multiply 
+\begin_inset Formula $CB$
+\end_inset
+
+ together to obtain 
+\begin_inset Formula $CB=\left(\begin{array}{ccc}
+0 & -2 & -1\\
+1 & 1 & -1\\
+2 & 2 & 2
+\end{array}\right)$
+\end_inset
+
+, and then laboriously invert this, e.g.
+ with Gauss–Jordan, to obtain 
+\begin_inset Formula $(CB)^{-1}=\left(\begin{array}{ccc}
+\frac{1}{2} & \frac{1}{4} & \frac{3}{8}\\
+-\frac{1}{2} & \frac{1}{4} & -\frac{1}{8}\\
+0 & -\frac{1}{2} & \frac{1}{4}
+\end{array}\right),$
+\end_inset
+
+ and finally multiply this by 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ But this is a 
+\emph on
+lot
+\emph default
+ more work than doing a single backsolve followed by a single forward-solve,
+ and is much more error-prone.
+ In class, I repeatedly emphasized that you 
+\series bold
+almost never need to compute matrix inverses explicitly
+\series default
+, and if you do so then you are probably making a mistake.
+ Inverses are useful for algebraic manipulations, but when it comes time
+ to finally 
+\emph on
+calculate
+\emph default
+ something you should read them as 
+\begin_inset Quotes eld
+\end_inset
+
+solving a linear system.
+\begin_inset Quotes erd
+\end_inset
+
+ Another way of viewing this is that, for 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ matrices, back/forward solves take 
+\begin_inset Formula $\sim n^{2}$
+\end_inset
+
+ operations, but both multiplying 
+\begin_inset Formula $CB$
+\end_inset
+
+ and inverting the matrix take 
+\begin_inset Formula $\sim n^{3}$
+\end_inset
+
+ operations, so if I had given you a larger matrix then the penalty of doing
+ it the slow way would have been even more dramatic.
+\end_layout
+
+\end_body
+\end_document
