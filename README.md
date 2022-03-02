@@ -329,3 +329,34 @@ Next lecture, we will put these q₁,q₂,…,qₙ into a matrix Q and talk abou
 
 **Further reading:** 3blue1brown has a [nice video on changes of basis](https://www.youtube.com/watch?v=P2LTAUO1TdA).  Textbook sections 3.5, 4.1; video
 [lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/), video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/).
+
+## Lecture 13 (Mar 2)
+
+* handwritten notes
+
+Orthonormal bases, matrices Q with orthonormal columns q₁,q₂,… (QᵀQ = I):
+
+* Saying that the columns of Q are orthonormal vectors is *equivalent* to saying QᵀQ = I.
+  - It follows that ‖Qx‖=‖x‖, and more generally (Qx)ᵀ(Qy) = xᵀy: dot products and lengths are preserved.
+* The projection matrix onto C(Q) is just QQᵀ=q₁q₁ᵀ+q₂q₂ᵀ+⋯.  (The rank-1 matrix q₁q₁ᵀ is projection onto the line αq₁.)  In general, the **q component of a vector can be found just by a dot product.**
+  - Similarly, the least-squares solution x̂ minimizing ‖b-Qx‖ is just x̂=Qᵀb.
+
+If a matrix Q with orthonormal columns is square, then it is called **orthogonal** (or **unitary**).  In this case, QᵀQ=I means that Qᵀ = Q⁻¹. It also follows that QQᵀ = I: a unitary matrix has orthonormal rows *and* columns.
+
+The way we've been finding a basis for C(A) etcetera is a conceptually nice way to understand the relationships between rank and dimensions.  But it isn't a practical tool.  Instead, the main tool for this kind of thing, both in practice and in theory, is the **singular value decomposition (SVD)**.   The key observation is this: orthonormal bases are ideal, but if you multiply *most* orthonormal bases by a matrix A the result is no longer orthogonal.  Miraculously, it turns out that there is a *special* orthonormal basis v₁,…,vᵣ of C(Aᵀ) such that Av₁,…,Avᵣ *are* orthogonal, and this basis leads to the SVD (next time).
+
+To warm up, we saw that Ax for any x can be written as (Av₁v₁ᵀ + ⋯ Avᵣvᵣᵀ)x, where v₁,…,vᵣ is *any* orthonormal basis of C(Aᵀ).  That is, all that matters to A is the "projection" (components) of x along the v₁,…,vᵣ directions, and we can write A=Av₁v₁ᵀ + ⋯ + Avᵣvᵣᵀ as a sum of rank-1 matrices.  In general, these Av₁,…,Avᵣ are not orthogonal, however.
+
+As an aside, considered **rank-1 matrices** abᵀ for a∈ℝᵐ and b∈ℝⁿ: if a and b are nonzero, then abᵀ is an m×n matrix of rank 1.   This is easy to see: every column is a multiple of a, so C(abᵀ)=C(b) is 1d, and similarly the row space is the 1d subspace spanned by b.  Since the dimension of the column/row space is the rank, then the rank is 1.
+
+**Further reading:** Strang, section 4.4, and video [lecture 17](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/).
+
+
+## Lecture 14 (Mar 4)
+
+* handwritten notes
+* [SVD introduction](https://nbviewer.org/github/stevengj/1806/blob/master/notes/SVD-intro.ipynb)
+
+Introduction to the [singular value decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition) (**SVD**) and its application to [low rank approximation](https://en.wikipedia.org/wiki/Low-rank_approximation).
+
+**Further reading:** Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/).  Note, however, that the connection of SVD to eigenvalues/eigenvectors of AᵀA is something that we won't cover until later in 18.06.
