@@ -351,12 +351,30 @@ As an aside, considered **rank-1 matrices** abᵀ for a∈ℝᵐ and b∈ℝⁿ:
 
 **Further reading:** Strang, section 4.4, and video [lecture 17](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/).
 
-
 ## Lecture 14 (Mar 4)
 
 * handwritten notes
 * [SVD introduction](https://nbviewer.org/github/stevengj/1806/blob/master/notes/SVD-intro.ipynb)
+* pset 4 solutions: coming soon
+* pset 5 (due Mar 11): coming soon
 
 Introduction to the [singular value decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition) (**SVD**) and its application to [low rank approximation](https://en.wikipedia.org/wiki/Low-rank_approximation).
 
-**Further reading:** Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/).  Note, however, that the connection of SVD to eigenvalues/eigenvectors of AᵀA is something that we won't cover until later in 18.06.
+Started talking about **orthogonal projection**: for any subspace S ⊆ V, any vector b ∈ S can be written as a sum of two vectors, one in S and one in S<sup>⟂</sup>.   The former is the orthogonal projection Pb of b onto S, where P is the *projection matrix*, and the latter is b–Pb=(I–P)b (the orthogonal projection of b onto S<sup>⟂</sup>).
+
+Derived the projection matrix P = aaᵀ/aᵀa onto 1d subspaces with a basis vector a.   For a normalized vector q=a/‖a‖, this is just qqᵀ.  (In the discussion of the SVD, we saw lots of these projections!)
+
+**Further reading:** Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/).  Note, however, that the connection of SVD to eigenvalues/eigenvectors of AᵀA is something that we won't cover until later in 18.06.   A cool example that uses the SVD to pull out a few key vectors from a big pile of data is the [eigenwalker demo](https://www.biomotionlab.ca/html5-bml-walker/).  The name for this technique in statistics is [principal component analysis (PCA)](https://en.wikipedia.org/wiki/Principal_component_analysis).  Strang section 4.2 on orthogonal projection.
+
+## Lecture 15 (Mar 7)
+
+Orthogonal projection onto C(A) and other subspaces, and the projection matrix P.
+
+* Projection matrix P = aaᵀ/aᵀa onto 1d subspaces with a basis vector a.
+* Projection matrix P = A(AᵀA)⁻¹Aᵀ onto n-dimensional subspaces C(A), where A is m×n with full column rank (rank n).
+* Projection onto C(Q), i.e. a subspace with an orthonormal basis is simply QQᵀ.  For example, SVD AV=UΣ ⥰ A=A(VVᵀ + (I-VVᵀ))=UΣVᵀ.
+* Key properties P²=P, P=Pᵀ, C(P)=C(A), N(P)=C(A)<sup>⟂</sup>=N(Aᵀ).
+* Projection I-P onto the orthogonal complement of C(A), i.e onto N(Aᵀ).
+* Equivalence between orthogonal projection and least-squares: minimizing ‖b-Ax‖ is equivalent to minimizing ‖b-y‖ over y∈C(A), and the solution is y=Ax̂=Pb, where AᵀAx̂=Aᵀb.
+
+**Further reading:** Textbook 4.2; video [lecture 15](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-15-projections-onto-subspaces/).
