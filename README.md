@@ -356,7 +356,7 @@ As an aside, considered **rank-1 matrices** abᵀ for a∈ℝᵐ and b∈ℝⁿ:
 * handwritten notes
 * [SVD introduction](https://nbviewer.org/github/stevengj/1806/blob/master/notes/SVD-intro.ipynb)
 * pset 4 solutions: coming soon
-* pset 5 (due Mar 11): coming soon
+* [pset 5](pset/pset5.ipynb): coming soon
 
 Introduction to the [singular value decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition) (**SVD**) and its application to [low rank approximation](https://en.wikipedia.org/wiki/Low-rank_approximation).
 
