@@ -394,7 +394,7 @@ Derived the fact that minimizing ‖b-Ax‖ or ‖b-Ax‖² (least squares) corr
 ## Lecture 17 (Mar 11)
 
 * handwritten notes
-* pset 5 solutions: coming soon
+* [pset 5 solutions](psets/pset5sol.ipynb)
 * [pset 6](psets/pset6.ipynb): due March 18, 11am
 
 Showed that N(AᵀA)=N(A), and hence AᵀA is invertible whenever A has full column rank, and AᵀAx̂=Aᵀb is always solvable.
