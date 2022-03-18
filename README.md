@@ -462,3 +462,13 @@ Started explaining **determinants** and their properties.  Considering how centr
 **Further reading (Fourier):** Strang, section 10.5 (Fourier series) and these [18.06 sine-series notes](http://web.mit.edu/18.06/www/Spring09/sines.pdf).  There is a [3blue1brown video](https://youtu.be/r6sGWTCMz2k) on Fourier series, along with many, many other resources and videos you can find online… Fourier series and their generalizations are vastly important for lots of applications as well as being a deep and beautiful mathematical subject for their own sake!
 
 **Further reading (determinants):** Strang, section 5.1; video [lecture 18](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants).  (We will mostly skip Strang, section 5.2 and 5.3, because the formulas in those sections are not so useful in practice except for tiny matrices.)
+
+## Exam 2 (April 1): 11am in 10-250
+
+Exam 2 will cover the material through **lecture 20** and **pset 7**: it will include exam-1 material, but will focus mainly on **everything to do with orthogonality**.  Transposes and dot products, orthogonal subspaces/complements, projections, least-square solutions, orthogonal/orthonormal bases, Gram–Schmidt and QR factorization, orthogonal functions, and the SVD.
+
+(*Not* covered: determinants and subsequent material.)
+
+*Note:* The average on exam 2 is typically quite a bit lower than on exam 1.  We take this into account in the grading, but don't be complacent if you did well on exam 1!  Exam 2 contains a lot of new material even for people who had seen some linear algebra before.
+
+**Practice problems:** To be posted.
