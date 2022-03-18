@@ -450,7 +450,7 @@ Another wonderful and far-reaching application of these ideas is to realize that
 
 * [Fourier sine series](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Sine-series.ipynb)
 * [Determinants](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Determinants.ipynb)
-* pset 6 solutions: coming soon
+* [pset 6 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset6sol.ipynb)
 * [pset 7](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset7.ipynb) (3 problems): due **Wednesday** March 30
 
 Showed another important example of orthogonal functions: Fourier series, and in particular the [Fourier sine series](https://en.wikipedia.org/wiki/Fourier_sine_and_cosine_series).
