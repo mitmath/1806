@@ -467,7 +467,7 @@ Followed notes through the 3 axioms (defining properties) of determinants: det(I
 
 ## Exam 2 (April 1): 11am in 10-250
 
-Exam 2 will cover the material through **lecture 20** and **pset 7**: it will include exam-1 material, but will focus mainly on **everything to do with orthogonality**.  Transposes and dot products, orthogonal subspaces/complements, projections, least-square solutions, orthogonal/orthonormal bases, Gram–Schmidt and QR factorization, orthogonal functions, and the SVD.
+Exam 2 will cover the material through **lecture 20** and **pset 7**: it will include exam-1 material, but will focus mainly on **everything to do with orthogonality**.  Transposes and dot products, orthogonal subspaces/complements, projections, least-square solutions, orthogonal/orthonormal bases, Gram–Schmidt and QR factorization, orthogonal functions, and the SVD.   Matrix-calculus topics may also be included.
 
 (*Not* covered: determinants and subsequent material.)
 
