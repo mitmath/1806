@@ -480,6 +480,7 @@ The trick is to figure out for **what λ an eigenvector exists**, and the key is
 
 ## Lecture 22 (Mar 30)
 
+* handwritten notes
 * [Eigenvalues and polynomials](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Eigenvalue-Polynomials.ipynb)
 * [pset 7 solutions](psets/pset7sol.ipynb)
 * pset 8: coming soon
