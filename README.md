@@ -510,6 +510,8 @@ Applied this process to the 2×2 matrix from the notebook, expanding the vector 
 
 ## Exam 2 (April 1): 11am in 10-250
 
+* exam 2 and solutions: to be posted Monday (Apr 4) evening
+
 Exam 2 will cover the material through **lecture 20** and **pset 7**: it will include exam-1 material, but will focus mainly on **everything to do with orthogonality**.  Transposes and dot products, orthogonal subspaces/complements, projections, least-square solutions, orthogonal/orthonormal bases, Gram–Schmidt and QR factorization, orthogonal functions, and the SVD.   Matrix-calculus topics may also be included.
 
 (*Not* covered: determinants and subsequent material.)
