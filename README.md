@@ -526,7 +526,6 @@ Exam 2 will cover the material through **lecture 20** and **pset 7**: it will in
 
 * handwritten notes
 * [Diagonalization](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Diagonalization.ipynb)
-* [Recurrences and Fibonacci numbers](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Fibonacci.ipynb)
 
 Covered **diagonalization** of a matrix: the process of expanding a vector in the basis of eigenvectors, then multiplying each one by λ, then adding up the eigenvectors with the new coefficients, can be thought of as the matrix factorization A=XΛX⁻¹, where X is the matrix whose columns are the eigenvectors.   This only works if X is invertible: i.e. when for an m×m matrix A we have m eigenvalues (possibly repeated) and m independent eigenvectors (a *basis* of eigenvectors).  Such a matrix is called **diagonalizable**.
 
@@ -540,6 +539,16 @@ see that det(A) is the *product* of the eigenvalues and tr(A) is the *sum* of th
 
 For a 2×2 matrix, it follows that det(A-λI)=λ²-λtr(A)+det(A), which is a useful formula when solving 2×2 eigenproblems.
 
+**Further reading:** Strang, section 6.2; video [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/) and video [lecture 28](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-28-similar-matrices-and-jordan-form/).
+
+## Lecture 24 (April 6)
+
+* [Recurrences and Fibonacci numbers](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Fibonacci.ipynb)
+* [Markov matrices](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Markov.ipynb)
+* [Analyzing Chutes & Ladders](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Chutes-and-Ladders.ipynb)
+
 As an application of matrix powers, considered the famous [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number) 1,1,2,3,5,8,13,21,….  The n-th Fibonacci number fₙ satisfies the [linear recurrence relation](http://mathworld.wolfram.com/LinearRecurrenceEquation.html) fₙ=fₙ₋₁+fₙ₋₂, which we can express in terms of multiplication by a 2×2 matrix F that gives (fₙ,fₙ₋₁) from (fₙ₋₁,fₙ₋₂).  We found that the eigenvalues of F are (1±√5)/2.  The larger of these eigenvalues, (1+√5)/2≈1.618, is the so-called [golden ratio](https://en.wikipedia.org/wiki/Golden_ratio), and it means that the Fibonacci numbers blow up exponentially fast for large n.  Furthermore, we showed that the *ratio* fₙ/fₙ₋₁ of successive Fibonacci numbers goes to the golden ratio for large n.   Checked these facts numerically with a Julia notebook.
 
-**Further reading:** Strang, section 6.2; video [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/) and video [lecture 28](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-28-similar-matrices-and-jordan-form/).
+As another example of matrix powers, considered [Markov matrices](https://en.wikipedia.org/wiki/Stochastic_matrix) (particularly positive Markov matrices), their eigenvalues, and the *steady state* solution.  These have lots of fun applications in statistics, including analyzing simple games such as Chutes & Ladders.
+
+**Further reading:** Strang, section 10.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).
