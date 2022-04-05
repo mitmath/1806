@@ -78,16 +78,17 @@
     
     \newpage
     \item \begin{enumerate}[(a)]
-        \item As $b \in C(A)$, we can write $b$ as
+        \item As $b \in C(A) = C(Q)$, we can write $b$ as
         \[
-        b = (q_1^T b) q_1 +  (q_2^T b) q_2 + (q_3^T b) q_3 =  \boxed{3\sqrt{2} q_1 -4q_2 + 8 q_3}.
+        b = QQ^T b = q_1 (q_1^T b) +   q_2 (q_2^T b) + q_3 (q_3^T b) =  \boxed{3\sqrt{2} q_1 -4q_2 + 8 q_3} \, ,
         \]
-        since the coefficients of an orthonormal basis are obtained merely by dot products (i.e. projections $qq^T$).
+        recalling that the coefficients of an orthonormal basis are obtained merely by dot products (i.e. projections $qq^T$).
         
         \item Since $N(A^T) = C(A)^{\perp}$, we can get the orthogonal projection of $y = \begin{pmatrix} 2 \\ -2 \\ 2 \\ -2 \end{pmatrix}$ onto $N(A^T)$ by simply subtracting the projection of $y$ onto the $q$'s. In other words, the orthogonal projection of $y$ onto $N(A^T)$ is
-        \[
-        y - (q_1^T y) q_1 - (q_2^T y) q_2 - (q_3^T y) q_3 =  \begin{pmatrix} 2 \\ -2 \\ 2 \\ -2 \end{pmatrix} -0\begin{pmatrix} \frac{1}{\sqrt{2}} \\ 0 \\ 0 \\ \frac{1}{\sqrt{2}} \end{pmatrix} - 2\begin{pmatrix} \frac{1}{2} \\ \frac{1}{2} \\ \frac{1}{2} \\ -\frac{1}{2} \end{pmatrix} - 2\begin{pmatrix} \frac{1}{2} \\ -\frac{1}{2} \\ -\frac{1}{2} \\ -\frac{1}{2} \end{pmatrix} = \boxed{\begin{pmatrix} 0 \\ -2 \\ 2 \\ 0 \end{pmatrix}}.
-        \]
+        \begin{align*}
+        (I- QQ^T) y &= y -  q_1 (q_1^T y) -  q_2(q_2^T y) -q_3 (q_3^T y)  \\
+        &=  \begin{pmatrix} 2 \\ -2 \\ 2 \\ -2 \end{pmatrix} -0\begin{pmatrix} \frac{1}{\sqrt{2}} \\ 0 \\ 0 \\ \frac{1}{\sqrt{2}} \end{pmatrix} - 2\begin{pmatrix} \frac{1}{2} \\ \frac{1}{2} \\ \frac{1}{2} \\ -\frac{1}{2} \end{pmatrix} - 2\begin{pmatrix} \frac{1}{2} \\ -\frac{1}{2} \\ -\frac{1}{2} \\ -\frac{1}{2} \end{pmatrix} = \boxed{\begin{pmatrix} 0 \\ -2 \\ 2 \\ 0 \end{pmatrix}}.
+        \end{align*}
         %Since $N(A^T) = C(A)^{\perp}$, the dimension of $N(A^T)$ is $4-3 = 1$. Note that $a = \begin{pmatrix} 0 \\ 1 \\ -1 \\ 0 \end{pmatrix}$ is a vector orthogonal to $q_1, q_2, q_3$ and hence $N(A^T) = \text{span}\{a\}$. Therefore, the orthogonal projection of $y = \begin{pmatrix} 2 \\ -2 \\ 2 \\ -2 \end{pmatrix}$ onto $N(A^T)$ is
         %\[\frac{a a^T}{a^T a}y = a \frac{a^T y}{a^T a} =  \begin{pmatrix} 0 \\ 1 \\ -1 \\ 0 \end{pmatrix} \frac{-2-2}{1+1} = \boxed{\begin{pmatrix} 0 \\ -2 \\ 2 \\ 0 \end{pmatrix}}.\]
         
@@ -98,7 +99,8 @@
         Another way of seeing the same thing is to recall the Gram--Schmidt process.  By construction, $q_1$ is parallel to $a_1$, so $q_2$ and $q_3$ must be $\perp a_1$.  $a_2$ is in the span of $q_1$ and $q_2$, so we must also have $q_3 \perp a_2$.  \hfill $\blacksquare$
     \end{enumerate}
     
-    \item For $f(x) = (b - Ax)^T M (b-Ax)$, recall that we saw in class that $d(y^T M y) = dy^T M y + y^T M dy = 2 dy^T M y$ (using $M = M^T$). For $y = b - Ax$, we have $dy = -Adx$, giving:
+    \pagebreak
+    \item For $f(x) = (b - Ax)^T M (b-Ax)$, recall from class that $d(y^T M y) = dy^T M y + y^T M dy = 2 dy^T M y$ (using $M = M^T$). For $y = b - Ax$, we have $dy = -Adx$. Combining these equations yields:
     \[
     df = 2 dy^T M y = 2 (-Adx)^T M (b - Ax) = dx^T \underbrace{[-2 A^T M A (b - Ax)]}_{\nabla f} \, ,
     \]
