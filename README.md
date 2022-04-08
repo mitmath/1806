@@ -557,7 +557,7 @@ As another example of matrix powers, considered [Markov matrices](https://en.wik
 
 * [Complex eigenvalues](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Complex-Eigenvalues.ipynb)
 * [pset 8 solutions](psets/pset8sol.ipynb)
-* pset 9: coming soon
+* [pset 9](psets/pset9.ipynb): due Friday 4/15
 
 Went over Chutes & Ladders Markov-matrix example from the previous lecture.
 
