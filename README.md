@@ -552,3 +552,21 @@ As an application of matrix powers, considered the famous [Fibonacci numbers](ht
 As another example of matrix powers, considered [Markov matrices](https://en.wikipedia.org/wiki/Stochastic_matrix) (particularly positive Markov matrices), their eigenvalues, and the *steady state* solution.  These have lots of fun applications in statistics, including analyzing simple games such as Chutes & Ladders.
 
 **Further reading:** Strang, section 10.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).
+
+## Lecture 25 (April 8)
+
+* [Complex eigenvalues](Complex-Eigenvalues.ipynb)
+* [pset 8 solutions](psets/pset8sol.ipynb)
+* pset 9: coming soon
+
+Went over Chutes & Ladders Markov-matrix example from the previous lecture.
+
+Briefly reviewed **complex numbers**, including the [complex conjugate](https://en.wikipedia.org/wiki/Complex_conjugate) z̄, the magnitude |z|=√zz̄, and the [polar form](https://en.wikipedia.org/wiki/Polar_coordinate_system#Complex_numbers) re<sup>iϕ</sup> using [Euler's formula](https://en.wikipedia.org/wiki/Euler%27s_formula) e<sup>iϕ</sup>=cos(ϕ)+isin(ϕ).
+
+Discussed complex eigenvalues of **real** matrices A, and showed:
+
+* The complex eigenvalues and corresponding eigenvectors come in *complex-conjugate pairs*.
+* Expanding an arbitrary **real** vector x in the eigenvector basis (c=X⁻¹x) leads to *complex-conjugate* coefficients of the corresponding complex eigenvectors, and hence terms 2Re[cₖxₖ] in the expansion.
+* Matrix powers Aⁿ lead to exponential growth/decay determined by the *magnitude* |λₖ| of the eigenvalues.  For complex eigenvalues, the *phase* e<sup>iϕₖ</sup> leads to *oscillating* terms.
+
+**Further reading** This [brief review of complex numbers](https://web.stanford.edu/~boyd/ee102/complex-primer.pdf) (from Stephen Boyd at Stanford) is at about the level of my lecture.  There are many more basic reviews, e.g. from [Khan academy](https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:complex), that you can find online.  Chapter 9 of Strang's textbook discusses complex vectors and matrices.
