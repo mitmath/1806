@@ -555,7 +555,7 @@ As another example of matrix powers, considered [Markov matrices](https://en.wik
 
 ## Lecture 25 (April 8)
 
-* [Complex eigenvalues](Complex-Eigenvalues.ipynb)
+* [Complex eigenvalues](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Complex-Eigenvalues.ipynb)
 * [pset 8 solutions](psets/pset8sol.ipynb)
 * pset 9: coming soon
 
