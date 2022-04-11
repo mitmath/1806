@@ -580,6 +580,8 @@ Each eigenvector is multiplied by exp(λt) (where exp(x)=eˣ), so that solutions
 if the eigenvalues have *negative real parts* (and approach a nonzero steady state
 if one eigenvalue is *zero*).
 
+Covered notebook (above), stopping just before the "Overdamping" section.
+
 (Soon, we will also express this in terms of a new
 Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential).)
 
