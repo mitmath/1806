@@ -570,3 +570,17 @@ Discussed complex eigenvalues of **real** matrices A, and showed:
 * Matrix powers Aⁿ lead to exponential growth/decay determined by the *magnitude* |λₖ| of the eigenvalues.  For complex eigenvalues, the *phase* e<sup>iϕₖ</sup> leads to *oscillating* terms.
 
 **Further reading** This [brief review of complex numbers](https://web.stanford.edu/~boyd/ee102/complex-primer.pdf) (from Stephen Boyd at Stanford) is at about the level of my lecture.  There are many more basic reviews, e.g. from [Khan academy](https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:complex), that you can find online.  Chapter 9 of Strang's textbook discusses complex vectors and matrices.
+
+## Lecture 26 (April 11)
+
+* [Ordinary differential equations (ODEs)](https://nbviewer.org/github/mitmath/1806/blob/master/notes/ODEs.ipynb).
+
+We can now solve systems of ODEs dx/dt = Ax in terms of eigenvectors and eigenvalues.
+Each eigenvector is multiplied by exp(λt) (where exp(x)=eˣ), so that solutions decay
+if the eigenvalues have *negative real parts* (and approach a nonzero steady state
+if one eigenvalue is *zero*).
+
+(Soon, we will also express this in terms of a new
+Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential).)
+
+**Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).
