@@ -637,7 +637,7 @@ Now, for a Hermitian matrix A=Aᴴ (= real-symmetric if A is real) we have:
 
 * All the eigenvalues λ are **real**.  (The eigenvectors are *not* generally real unless A is real.)_
 * The matrix is always **diagonalizable** (no funny defective case).
-* Eigenvalues for different λ are **orthogonal** (and hence eigenvectors can be chosen to be **an orthonormal basis**).
+* Eigenvectors for different λ are **orthogonal** (and hence eigenvectors can be chosen to be **an orthonormal basis**).
 
 I didn't prove diagonalizability.  (There are various proofs you can easily find online.  See e.g. [this video](https://www.youtube.com/watch?v=_2gGqEGA_IY) if you are curious, but
 they seem slightly too tricky for 18.06.)
