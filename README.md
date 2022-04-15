@@ -655,6 +655,12 @@ the coefficients c we had to solve Xx=x, or c=X⁻¹x.   Now, to write x=∑ₖc
 the coefficients are just **cₖ=qₖᴴx**, or x=∑ₖqₖ(qₖᴴx).  *Expressing a vector
 in an orthonormal basis is easy.*
 
+**Further reading:** Strang, sections 6.4, 9.2;  [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/), and [lecture 26](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/).
+
+## Lecture 29 (April 20)
+
+* handwritten notes
+
 ### Positive-definite/semidefinite matrices
 
 A lot of Hermitian matrices in practice come in the form BᴴB (or BᵀB for real B)
@@ -680,4 +686,4 @@ A positive **semidefinite** matrix is almost the same, except you replace
 (There are also "negative definite" and "negative semidefinite" matrices, which
 are the same things except with the opposites signs, i.e. "< 0" or "≤ 0" above.)
 
-**Further reading:** Strang, sections 6.3–6.4, 9.2;  [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/), and [lecture 26](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/).
+**Further reading:** Strang, sections 6.5;  [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/).
