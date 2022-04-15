@@ -600,7 +600,7 @@ Next, reformulated the solution of dx/dt=Ax in terms of the [matrix exponential]
 ## Lecture 28 (April 15)
 
 * handwritten notes
-* pset 9 solutions: coming soon
+* [pset 9 solutions](psets/pset9sol.ipynb)
 * pset 10: coming soon
 
 ### Complex matrices, vectors, and dot products: the adjoint H
