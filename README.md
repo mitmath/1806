@@ -686,4 +686,47 @@ A positive **semidefinite** matrix is almost the same, except you replace
 (There are also "negative definite" and "negative semidefinite" matrices, which
 are the same things except with the opposites signs, i.e. "< 0" or "≤ 0" above.)
 
+We can also easily see (e.g. via the xᴴAx > 0 property) that the *sum* of positive-definite matrices is also positive definite.
+
+### Constructing postive-definite matrices: Masses and springs
+
+As an application of real-symmetric and positive-definite matrices, I returned
+to the system of masses and springs from our first ODE lectures, but this time I considered
+n masses m and n+1 springs kᵢ.   I showed that Newton's laws take the form:
+
+* mẍ = -DᵀKDx ⟹ ẍ = -Ax, where D is "difference" and K is a diagonal matrix of spring constants, so that A=Dᵀ(K/m)D.
+
+A is obviously real-symmetric, so its eigenvalues λ are real.  With a little more work, we saw that it must be positive-definite.  For example, A=-BᵀB for B = √(K/m)D, with √(K/m) being the diagonal matrix with √(kᵢ/m) on the diagonal, so A must be negative semidefinite.
+
 **Further reading:** Strang, sections 6.5;  [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/).
+
+## Lecture 30 (April 22)
+
+* handwritten notes
+* pset 10 solutions: coming soon
+* pset 11: coming soon
+
+### Masses and springs, continued
+
+A little more consideration of the matrix from last lecture shows that A must be negative *definite*: it cannot have λ=0 eigenvalues, i.e. N(A)=N(B)=N(D)={0}.  Since Dᵀ is upper triangular, by inspection it has rank n (n pivots), and hence D has full column rank and N(D)={0}=N(A).
+
+The fact that A is negative definite allowed us to derive that *any* such system of masses and springs has *orthogonal oscillating solutions* called the [normal modes](https://en.wikipedia.org/wiki/Normal_mode). In particular, given the eigenvectors vⱼ (orthogonal since A is real-symmetric!), satisfying Aqⱼ=λⱼqⱼ with λⱼ<0, we expanded the solution x(t)=∑ⱼcⱼ(t)qⱼ in the basis of these eigenvectors qⱼ.  For each eigenvector component, the matrix A acts just like a negative number λⱼ=-ωⱼ², allowing us to easily solve the equation c̈ⱼ=-ωⱼ²cⱼ to get sines and cosines, and hence to get the general solution:
+
+* x(t) = ∑ⱼ [αⱼ cos(ωⱼt) + βⱼ sin(ωⱼt)] qⱼ
+
+where ωⱼ=√-λⱼ, and αⱼ and βⱼ are determined from the initial conditions x(0) and ẋ(0).
+
+The key point is that the **structure** of the problem told us that λⱼ<0 and
+hence that the **frequencies** ωⱼ are **real** numbers.  (If they were complex, we would have exponentially growing or decaying solutions, which would make no physical sense for a system of lossless springs and masses.)  The moral of this story is that real-symmetric and definite matrices don't just fall down out of the sky, they arise from how the matrix was constructed, and that these matrix properties are often the key to understanding the physical properties of real problems.
+
+### Eigenproblems and the SVD
+
+For any m×n matrix A, there are two "nice" matrices AᴴA and AAᴴ, both of which are Hermitian positive semidefinite (orthonormal bases of eigenvectors, real eigenvalues ≥ 0).   How can we use these "nice" matrices to go back and help us **understand A**?   It turns out that this leads us directly back to the **singular value decomposition (SVD)**.
+
+In particular we find:
+
+* There are r positive eigenvalues λⱼ=σⱼ² of AᴴA, where r = rank A.  Let vⱼ be the corresponding orthormal eigenvectors — these are a basis for C(Aᴴ).
+* The vectors uⱼ=Avⱼ/σⱼ are actually **eigenvectors** of AAᴴ, are **orthonormal**, and form a basis for C(A).
+* These uⱼ, vⱼ and σⱼ are exactly the left and right singular vectors and the corresponding singular values of A!
+
+**Further reading:** Strang, section 10.2.  See also [these notes on the springs-and-masses problem](https://github.com/mitmath/18303/blob/fall15/lecture-5.5.pdf) from [18.303](https://github.com/mitmath/18303/tree/fall15) (you can ignore the last two pages, which go beyond 18.06, and ignore the Δx factor which is used in 18.303 to connect the discrete problem to a continuous problem).  **SVD**: Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/).  Notes on the [SVD as an eigenproblem](https://github.com/mitmath/1806/blob/master/notes/SVD-eigenproblem.ipynb).
