@@ -703,7 +703,7 @@ A is obviously real-symmetric, so its eigenvalues λ are real.  With a little mo
 ## Lecture 30 (April 22)
 
 * handwritten notes
-* pset 10 solutions: coming soon
+* [pset 10 solutions](psets/pset10sol.ipynb)
 * pset 11: coming soon
 
 ### Masses and springs, continued
