@@ -704,7 +704,7 @@ A is obviously real-symmetric, so its eigenvalues λ are real.  With a little mo
 
 * handwritten notes
 * [pset 10 solutions](psets/pset10sol.ipynb)
-* pset 11: coming soon
+* [pset 11](psets/pset11.ipynb), due Friday April 29.
 
 ### Masses and springs, continued
 
