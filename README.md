@@ -747,7 +747,7 @@ To understand what happens with defective matrices, I introduce Jordan vectors (
 * handwritten notes
 * [Notes on Jordan vectors](notes/jordan-vectors.pdf)
 
-Continued discussion of defective matrices from last lecture.  Discussed generalization to other eigenvalue multiplicities.
+Continued discussion of defective matrices from last lecture.  Discussed generalization to other eigenvalue multiplicities, obtained the [Jordan form](https://en.wikipedia.org/wiki/Jordan_normal_form) of a matrix by writing it in the basis of eigenvectors + generalized/Jordan eigenvectors.
 
 Began discussing the Google [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm, which is a nice application of Markov matrices and will lead us (next time) into a discussion of iterative linear-algebra methods for huge matrices.
 
