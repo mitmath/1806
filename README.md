@@ -742,11 +742,34 @@ To understand what happens with defective matrices, I introduce Jordan vectors (
 
 **Further reading**: Strang book, section 8.3.  Going far beyond 18.06, there is a wonderful book, *Spectra and Pseudospectra* by Trefethen and Embree, entirely devoted to cases where diagonalization fails (or nearly fails).
 
-## Exam 3 (May 6): 11am in 10-250
+## Lecture 32 (April 27)
 
+* handwritten notes
+* [Notes on Jordan vectors](notes/jordan-vectors.pdf)
+
+Continued discussion of defective matrices from last lecture.  Discussed generalization to other eigenvalue multiplicities.
+
+Began discussing the Google [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm, which is a nice application of Markov matrices and will lead us (next time) into a discussion of iterative linear-algebra methods for huge matrices.
+
+**Further reading**: Although exactly defective matrices are unlikely to occur by accident, it is common to tune some parameter of a matrix to "force" two (or more) eigenvalues/eigenvectors to coalesce.  In physics, this is called an "exceptional point", and is associated with a lot of interesting phenomena in [quantum mechanics](https://iopscience.iop.org/article/10.1088/1751-8113/45/44/444016) and [optics](https://www.science.org/doi/10.1126/science.aar7709), for example.
+
+## Lecture 33 (April 29)
+
+* pset 11 solutions: to be posted
+* pset 12: to be posted, short pset due May 4
+
+## Lecture 34 (May 2)
+
+## Lecture 35 (May 4)
+
+## Exam 3 (May 6): 11am in 10-250
 
 Exam 3 will cover the material through **lecture 33** and **pset 12**: exam-1 and exam-2 material, determinant, trace, eigenvalues/eigenvectors, diagonalization, similar matrices, matrix powers and linear recurrences xₙ=Aⁿx₀, linear ODEs dx/dt=Ax (and d²x/dt²=Ax), matrix exponentials (and other matrix functions), complex matrices and the adjoint Aᴴ, real-symmetric/Hermitian matrices, positive-definite matrices (and semi-definite, negative-definite, etc), SVD, defective matrices and generalized eigenvectors.
 
 * (Optional) **review session**: Wednesday 5/4 4–5pm, location TBA.  Practice problems from review session: to be posted.
 
 * Some practice problems: [Spring 2009 exam 3](http://web.mit.edu/18.06/www/Spring09/examsS09.html); [Spring 2014 exam 3, problems 1–2](http://web.mit.edu/18.06/www/Spring14/oldS14.html) ([solutions](http://web.mit.edu/18.06/www/Spring09/quiz3-s09-soln.pdf)); [Fall 2013 exam 2, problem 3](http://web.mit.edu/18.06/www/Fall13/exam2_f13.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall13/exam2_f13_sol.pdf)); [Fall 2013 exam 3, problems 2–3](http://web.mit.edu/18.06/www/Fall13/oldF13.html) ([solutions](http://web.mit.edu/18.06/www/Fall13/exam3_f13_sol.pdf)); [Fall 2012 exam 3, problem 1](http://web.mit.edu/18.06/www/Fall12/oldF12.html) ([solutions](http://web.mit.edu/18.06/www/Fall12/Exam%203/quiz3-1806-f12-solution.pdf)); [Spring 2012 exam 3, problems 1, 2, 3a, 3b](http://web.mit.edu/18.06/www/Spring12/oldS12.html) ([solutions](http://web.mit.edu/18.06/www/Spring12/q3_sp12_sol.pdf)); [Fall 2011 exam 3, problems 1.1, 1.2, 3](http://web.mit.edu/18.06/www/Fall11/oldF11.html) ([solutions](http://web.mit.edu/18.06/www/Fall11/q3_f11_sol.pdf)); [Fall 2011 exam 2, problem 3](http://web.mit.edu/18.06/www/Fall11/q2_f11.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall11/q2_f11_sol.pdf)); [Fall 2007 exam 3](http://web.mit.edu/18.06/www/Fall07/examsF07.html) ([solutions](http://web.mit.edu/18.06/www/Fall07/quiz3-1806-F07-sol.pdf)); [Fall 2018 exam 3](https://github.com/mitmath/1806/blob/fall18/exams/exam3.pdf) and [solutions](https://github.com/mitmath/1806/blob/fall18/exams/exam3sol.pdf); [Fall 2017 exam 3](https://github.com/mitmath/1806/blob/fall17/exams/exam3.pdf) and [solutions](https://github.com/mitmath/1806/blob/fall17/exams/exam3-sol.pdf)
+
+## Lecture 36 (May 10)
+
+## Final exam (May 18): 9am–noon in 10-250
