@@ -757,7 +757,7 @@ Began discussing the Google [PageRank](https://en.wikipedia.org/wiki/PageRank) a
 
 * handwritten notes
 * [Power method](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Power-Method.ipynb)
-* pset 11 solutions: to be posted
+* [pset 11 solutions](psets/pset11sol.ipynb)
 * [pset 12](psets/pset12.ipynb): short pset due **Wed. May 4**
 
  The Google [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm, which is a nice application of Markov matrices and leads us into a discussion of iterative linear-algebra methods for huge matrices, starting with the power method.
