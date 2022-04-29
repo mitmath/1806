@@ -755,8 +755,19 @@ Began discussing the Google [PageRank](https://en.wikipedia.org/wiki/PageRank) a
 
 ## Lecture 33 (April 29)
 
+* handwritten notes
+* [Power method](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Power-Method.ipynb)
+* [Dense and sparse matrices](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Dense-and-Sparse.ipynb)
 * pset 11 solutions: to be posted
-* pset 12: to be posted, short pset due May 4
+* [pset 12](psets/pset12.ipynb): short pset due **Wed. May 4**
+
+ The Google [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm, which is a nice application of Markov matrices and leads us into a discussion of iterative linear-algebra methods for huge matrices, starting with the power method.
+
+ In particular, the pagerank is essentially an enormous Markov eigenproblem (# web pages by # web pages, whose entries indicate links), too big to even store, but it is *mostly zero* (each web page only links to a few other pages).  Hence, you can multiply by it much more quickly, and because of that the power method (and related methods) can be used to approximately find the steady state.
+
+More generally, this leads us to large-scale linear algebra: the computational techniques (but not the *conceptual approaches*) of linear algebra completely change when one looks at very large-scale matrix problems (100000×100000 or more).  There, the focus turns to exploiting matrix **sparsity** (matrices that are mostly zero) and other structures that let you multiply matrices by vectors quickly (and let you avoid storing the whole matrix).
+
+**Further reading**: Textbook, section 11.3 has some discussion of iterative methods.  More advanced treatments include the book *Numerical Linear Algebra* by Trefethen and Bao, and surveys of algorithms can be found in the *Templates* books for [Ax=b](http://www.netlib.org/linalg/html_templates/Templates.html) and [Ax=λx](http://web.cs.ucdavis.edu/~bai/ET/contents.html).  Sparse-direct solvers are described in detail by the book *Direct Methods for Sparse Linear Systems* by Davis.  The course 18.335 spends much more time on these methods.
 
 ## Lecture 34 (May 2)
 
