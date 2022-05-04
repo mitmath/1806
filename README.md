@@ -798,4 +798,6 @@ Exam 3 will cover the material through **lecture 33** and **pset 12**: exam-1 an
 
 ## Lecture 36 (May 10)
 
-## Final exam (May 18): 9am–noon in 10-250
+## Final exam (May 18): ~~9am–noon in 10-250~~ VIRTUAL
+
+The final exam will be posted here **May 17 at noon** and will be due **May 18 at noon**.  (It will be the same 3-hour closed-book/closed-notes exam, but you can take as much time as you like.)
