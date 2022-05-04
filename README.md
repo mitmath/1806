@@ -779,6 +779,7 @@ Large-scale linear algebra: the computational techniques (but not the *conceptua
 ## Lecture 35 (May 4)
 
 * [Circulant matrices and the fast Fourier transform](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Circulant-Matrices.ipynb)
+* [pset 12 solutions](psets/pset12sol.ipynb)
 
 In this lecture, I want to introduce you to a new type of matrix: circulant matrices. Like Hermitian matrices, they have orthonormal eigenvectors, but unlike Hermitian matrices we know exactly what their eigenvectors are! Moreover, their eigenvectors are closely related to the famous Fourier transform and Fourier series. Even more importantly, it turns out that circulant matrices and the eigenvectors lend themselves to incredibly efficient algorithms called FFTs, that play a central role in much of computational science and engineering.
 
