@@ -637,7 +637,7 @@ some
 
 
 \series bold
-must/may/cannot
+ must/may/cannot
 \series default
  have an eigenvalue 
 \begin_inset Formula $\lambda$
@@ -673,7 +673,7 @@ every
 
 
 \series bold
-must/may/cannot
+ must/may/cannot
 \series default
  have an eigenvalue 
 \begin_inset Formula $\lambda$
