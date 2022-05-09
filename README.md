@@ -799,6 +799,7 @@ Exam 3 will cover the material through **lecture 33** and **pset 12**: exam-1 an
 
 ## Lecture 36 (May 10)
 
+* chalkboard lecture (no tablet notes, sorry)
 
 Examined the analogues of Hermitian positive-definite matrices, matrix exponentials, etcetera, for *infinite-dimensional* linear algebra.  (This material will *not* be on the final.)   It turns out that this is tremendously important for understanding [partial differential equations (PDEs)](https://en.wikipedia.org/wiki/Partial_differential_equation) arising in science and engineering.
 
