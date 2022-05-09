@@ -789,7 +789,7 @@ In this lecture, I want to introduce you to a new type of matrix: circulant matr
 
 You can take exam 3 **either physically or virtually**.  If you take it virtually, the exam will be posted *here* at **11:05am** and you must **submit it on Canvas before 12:05pm**.  Download the exam:
 
-* [virtual exam 3](exams/exam3.pdf)
+* [virtual exam 3](exams/exam3.pdf) and [solutions](exams/exam3sol.pdf)
 
 Exam 3 will cover the material through **lecture 33** and **pset 12**: exam-1 and exam-2 material, determinant, trace, eigenvalues/eigenvectors, diagonalization, similar matrices, matrix powers and linear recurrences xₙ=Aⁿx₀, linear ODEs dx/dt=Ax (and d²x/dt²=Ax), matrix exponentials (and other matrix functions), complex matrices and the adjoint Aᴴ, real-symmetric/Hermitian matrices, positive-definite matrices (and semi-definite, negative-definite, etc), SVD, defective matrices and generalized eigenvectors.
 

@@ -1,0 +1,1239 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{(\roman{enumii})}
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MIT 18.06 Exam 3 
+\series bold
+Solutions
+\series default
+, Spring 2022
+\begin_inset Newline newline
+\end_inset
+
+Johnson
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 (10+10+10 points):
+\end_layout
+
+\begin_layout Standard
+The matrix 
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cc}
+3 & 1\\
+2 & 2
+\end{array}\right)
+\]
+
+\end_inset
+
+has an eigenvalue 
+\begin_inset Formula $\lambda_{1}=1$
+\end_inset
+
+ and corresponding eigenvector 
+\begin_inset Formula $x_{1}=\left(\begin{array}{c}
+1\\
+-2
+\end{array}\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+What is the other eigenvalue 
+\begin_inset Formula $\lambda_{2}$
+\end_inset
+
+ and a corresponding eigenvector 
+\begin_inset Formula $x_{2}=\left(\begin{array}{c}
+1\\
+??
+\end{array}\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $B$
+\end_inset
+
+ is a 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix such that 
+\begin_inset Formula $Bx_{k}=(1-\lambda_{k}+\lambda_{k}^{2})x_{k}$
+\end_inset
+
+ for the two eigenvectors (
+\begin_inset Formula $k=1,2$
+\end_inset
+
+).
+ What is 
+\begin_inset Formula $B$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+What is 
+\begin_inset Formula $A^{3/2}\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathrm{trace}(A)=3+2=5=\lambda_{1}+\lambda_{2}$
+\end_inset
+
+, so the other eigenvalue is 
+\begin_inset Formula $\lambda_{2}=5-\lambda_{1}=\boxed{4}$
+\end_inset
+
+.
+ To find a corresponding eigenvector, we need to solve 
+\begin_inset Formula 
+\[
+(A-4I)x_{2}=\left(\begin{array}{cc}
+-1 & 1\\
+2 & -2
+\end{array}\right)x_{2}=0\,.
+\]
+
+\end_inset
+
+By insspection, the second column is minus the first, so a solution is 
+\begin_inset Formula $\boxed{x_{2}=\left(\begin{array}{c}
+1\\
+1
+\end{array}\right)}$
+\end_inset
+
+ or any multiple thereof (but you were requested to scale 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ so that the first component 
+\begin_inset Formula $=1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Bx_{k}=(1-\lambda_{k}+\lambda_{k}^{2})x_{k}$
+\end_inset
+
+ is an eigen-equation: 
+\begin_inset Formula $B$
+\end_inset
+
+ has the same eigenvectors as 
+\begin_inset Formula $A$
+\end_inset
+
+ but with the eigenvalues replaced by 
+\begin_inset Formula $1-\lambda_{k}+\lambda_{k}^{2}$
+\end_inset
+
+.
+ That means that 
+\begin_inset Formula 
+\[
+B=I-A+A^{2}=\left(\begin{array}{cc}
+1\\
+ & 1
+\end{array}\right)-\left(\begin{array}{cc}
+3 & 1\\
+2 & 2
+\end{array}\right)+\underbrace{\left(\begin{array}{cc}
+3 & 1\\
+2 & 2
+\end{array}\right)\left(\begin{array}{cc}
+3 & 1\\
+2 & 2
+\end{array}\right)}_{\left(\begin{array}{cc}
+11 & 5\\
+10 & 6
+\end{array}\right)}=\boxed{\left(\begin{array}{cc}
+9 & 4\\
+8 & 5
+\end{array}\right)}.
+\]
+
+\end_inset
+
+You could have also solved this by diagonalization: 
+\begin_inset Formula $B=X\left(\begin{array}{cc}
+1-\lambda_{2}+\lambda_{2}^{2}\\
+ & 1-\lambda_{2}+\lambda_{2}^{2}
+\end{array}\right)X^{-1}$
+\end_inset
+
+ where 
+\begin_inset Formula $X=\left(\begin{array}{cc}
+x_{1} & x_{2}\end{array}\right)$
+\end_inset
+
+ is the matrix of eigenvectors, but this may be more work since you have
+ to compute 
+\begin_inset Formula $X^{-1}$
+\end_inset
+
+, unless you happen to remember the formula for the inverse of a 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix.
+\end_layout
+
+\begin_layout Enumerate
+The key trick, as usual, is that 
+\begin_inset Formula $A^{3/2}$
+\end_inset
+
+ multiplies an 
+\emph on
+eigenvector
+\emph default
+ (where 
+\begin_inset Formula $A$
+\end_inset
+
+ acts like a scalar) by 
+\begin_inset Formula $\lambda^{3/2}$
+\end_inset
+
+.
+ So, to apply 
+\begin_inset Formula $A^{3/2}$
+\end_inset
+
+ to an arbitrary vector, we just expand that vector in the basis of the
+ eigenvectors and then multiply each term by 
+\begin_inset Formula $\lambda^{3/2}$
+\end_inset
+
+.
+ Here,
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right)=c_{1}\underbrace{\left(\begin{array}{c}
+1\\
+-2
+\end{array}\right)}_{x_{1}}+c_{2}\underbrace{\left(\begin{array}{c}
+1\\
+1
+\end{array}\right)}_{x_{2}}=\underbrace{\left(\begin{array}{cc}
+1 & 1\\
+-2 & 1
+\end{array}\right)}_{X}\left(\begin{array}{c}
+c_{1}\\
+c_{2}
+\end{array}\right).
+\]
+
+\end_inset
+
+Proceeding by Gaussian elimination, we add twice the first row to the second
+ row to obtain: 
+\begin_inset Formula 
+\[
+\underbrace{\left(\begin{array}{cc}
+1 & 1\\
+0 & 3
+\end{array}\right)}_{U}\left(\begin{array}{c}
+c_{1}\\
+c_{2}
+\end{array}\right)=\left(\begin{array}{c}
+1\\
+1
+\end{array}\right)\implies c_{2}=1/3,\;c_{1}=1-1/3=2/3\,.
+\]
+
+\end_inset
+
+(Yes, the answer requires the dread 
+\begin_inset Quotes eld
+\end_inset
+
+fractions.
+\begin_inset Quotes erd
+\end_inset
+
+ Sorry!) Hence 
+\begin_inset Formula 
+\[
+A^{3/2}\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right)=\frac{2}{3}\lambda_{1}^{3/2}x_{1}+\frac{1}{3}\lambda_{2}^{3/2}x_{2}=\frac{2}{3}\left(\begin{array}{c}
+1\\
+-2
+\end{array}\right)+\frac{8}{3}\left(\begin{array}{c}
+1\\
+1
+\end{array}\right)=\boxed{\left(\begin{array}{c}
+10/3\\
+4/3
+\end{array}\right)}.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 2 (7+7+7 points):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ is a square matrix such that 
+\begin_inset Formula $N(A-I)$
+\end_inset
+
+ is spanned by 
+\begin_inset Formula $\left(\begin{array}{c}
+1\\
+2
+\end{array}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $N(A-5I)$
+\end_inset
+
+ is spanned by 
+\begin_inset Formula $\left(\begin{array}{c}
+1\\
+-2
+\end{array}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Without much calculation, you can tell that 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\series bold
+is / is not
+\series default
+ (choose 1) Hermitian because 
+\begin_inset Formula $\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+What is 
+\begin_inset Formula $A$
+\end_inset
+
+? You can leave your answer as a 
+\series bold
+product of matrices and/or matrix inverses
+\series default
+ without multiplying/inverting them.
+\end_layout
+
+\begin_layout Enumerate
+What is 
+\begin_inset Formula $e^{A+I}$
+\end_inset
+
+? You can leave your answer as a 
+\series bold
+product of matrices and/or matrix inverses
+\series default
+ without multiplying/inverting them, but your answer should not have exponential
+s of matrices or infinite series.
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+The two nullspace vectors are eigenvectors of 
+\begin_inset Formula $A$
+\end_inset
+
+ with 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+ and 
+\begin_inset Formula $5$
+\end_inset
+
+, respectively, but they are clearly 
+\series bold
+not orthogonal
+\series default
+, so 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\series bold
+not
+\series default
+ Hermitian.
+\end_layout
+
+\begin_layout Enumerate
+From the dimensions of the vectors, 
+\begin_inset Formula $A$
+\end_inset
+
+ must be a 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix, and we are given two eigenvectors for two eigenvectors.
+ Hence, it is diagonalizable and 
+\begin_inset Formula 
+\[
+A=X\Lambda X^{-1}=\boxed{\left(\begin{array}{cc}
+1 & 1\\
+2 & -2
+\end{array}\right)\left(\begin{array}{cc}
+1\\
+ & 5
+\end{array}\right)\left(\begin{array}{cc}
+1 & 1\\
+2 & -2
+\end{array}\right)^{-1}}.
+\]
+
+\end_inset
+
+You 
+\series bold
+weren't required
+\series default
+ to simplify it further, but it turns out that 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+3 & -1\\
+-4 & 3
+\end{array}\right)$
+\end_inset
+
+ if you work it all out.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $e^{A+I}$
+\end_inset
+
+ has the same eigenvectors as 
+\begin_inset Formula $A$
+\end_inset
+
+, with the eigenvalues replaced by 
+\begin_inset Formula $\lambda\to e^{\lambda+1}$
+\end_inset
+
+.
+ So, we can again use the diagonalization 
+\begin_inset Formula 
+\[
+e^{A+I}=\boxed{\left(\begin{array}{cc}
+1 & 1\\
+2 & -2
+\end{array}\right)\left(\begin{array}{cc}
+e^{2}\\
+ & e^{6}
+\end{array}\right)\left(\begin{array}{cc}
+1 & 1\\
+2 & -2
+\end{array}\right)^{-1}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 3 (4+4+4+4+4+4 points):
+\end_layout
+
+\begin_layout Standard
+For each of the following, say whether it 
+\series bold
+must
+\series default
+ be true, it 
+\series bold
+may
+\series default
+ be true, or it 
+\series bold
+cannot
+\series default
+ be true.
+ No justification needed.
+\end_layout
+
+\begin_layout Enumerate
+If a matrix is diagonalizable, it 
+\series bold
+must/may/cannot
+\series default
+ have orthogonal eigenvectors.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+ is a Markov matrix.
+ If 
+\begin_inset Formula $M^{n}x$
+\end_inset
+
+ converges to a steady state as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+ for 
+\emph on
+any
+\emph default
+ vector 
+\begin_inset Formula $x$
+\end_inset
+
+, the 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\series bold
+must/may/cannot
+\series default
+ be a positive Markov matrix (i.e.
+ have all entries 
+\begin_inset Formula $>0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+If a matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\emph on
+not 
+\emph default
+diagonalizable, then 
+\begin_inset Formula $\det(A-\lambda I$
+\end_inset
+
+) 
+\series bold
+must/may/cannot
+\series default
+ have repeated roots.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A^{n}x$
+\end_inset
+
+ goes to zero as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+ for 
+\emph on
+some
+\emph default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+, then 
+\begin_inset Formula $A$
+\end_inset
+
+
+\series bold
+ must/may/cannot
+\series default
+ have an eigenvalue 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ with 
+\begin_inset Formula $|\lambda|>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $e^{At}x$
+\end_inset
+
+ goes to zero as 
+\begin_inset Formula $t\to\infty$
+\end_inset
+
+ for 
+\emph on
+every
+\emph default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+, then 
+\begin_inset Formula $A$
+\end_inset
+
+
+\series bold
+ must/may/cannot
+\series default
+ have an eigenvalue 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ with 
+\begin_inset Formula $|\lambda|>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ has an eigenvector 
+\begin_inset Formula $\left(\begin{array}{c}
+1\\
+2\\
+3
+\end{array}\right)$
+\end_inset
+
+, then it 
+\series bold
+must/may/cannot
+\series default
+ have an eigenvector 
+\begin_inset Formula $\left(\begin{array}{c}
+-3\\
+-6\\
+-9
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+May
+\series default
+.
+ (All 
+\begin_inset Quotes eld
+\end_inset
+
+normal
+\begin_inset Quotes erd
+\end_inset
+
+ matrices 
+\begin_inset Formula $AA^{H}=AA^{H}$
+\end_inset
+
+, such as Hermitian matrices, are diagonalizable with orthogonal eigenvectors,
+ but the converse is not true: not all diagonalizable matrices are normal.
+ On the other hand, all diagonalizable matrices are 
+\emph on
+similar
+\emph default
+ to normal matrices, so there is 
+\emph on
+some
+\emph default
+ change of basis in which their eigenvectors are orthogonal.)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+May
+\series default
+.
+ (All 
+\emph on
+positive
+\emph default
+ Markov matrices 
+\emph on
+must
+\emph default
+ yield a steady state—they have a single 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+ eigenvalue and all others have 
+\begin_inset Formula $|\lambda|<1$
+\end_inset
+
+, but the converse is not true: a Markov matrix with zero entries 
+\emph on
+may
+\emph default
+ still have a single 
+\begin_inset Formula $|\lambda|=1$
+\end_inset
+
+ eigenvalue.
+ On the other hand, although 
+\emph on
+any
+\emph default
+ Markov matrix 
+\emph on
+must
+\emph default
+ have a 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+ eigenvalue, it 
+\emph on
+may
+\emph default
+ also have other eigenvalues like 
+\begin_inset Formula $\lambda=-1$
+\end_inset
+
+ that can cause 
+\begin_inset Formula $M^{n}x$
+\end_inset
+
+ to oscillate forever without converging.)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Must
+\series default
+.
+ Non-diagonalizable (defective) matrices can only arise when the characteristic
+ polynomial has repeated roots.
+ (The converse is not true, however: a matrix with repeated eigenvalues
+ 
+\emph on
+may
+\emph default
+ still be diagonalizable.)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+May
+\series default
+.
+ Even if there is some 
+\begin_inset Formula $|\lambda_{k}|>1$
+\end_inset
+
+, you can still get decaying 
+\begin_inset Formula $A^{n}x$
+\end_inset
+
+ if 
+\begin_inset Formula $x$
+\end_inset
+
+ is chosen to be an eigenvector 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ of a different eigenvalue with 
+\begin_inset Formula $|\lambda_{j}|<1$
+\end_inset
+
+, or to be a linear combination of such eigenvectors.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+May
+\series default
+.
+ For 
+\begin_inset Formula $e^{At}x$
+\end_inset
+
+ to decay, all of its eigenvalues must have 
+\emph on
+negative real parts
+\emph default
+.
+ This is unrelated to the magnitude 
+\begin_inset Formula $|\lambda|$
+\end_inset
+
+.
+ For example, it could have an eigenvalue 
+\begin_inset Formula $\lambda=-2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Must
+\series default
+.
+ 
+\begin_inset Formula $\left(\begin{array}{c}
+-3\\
+-6\\
+-9
+\end{array}\right)=-3\left(\begin{array}{c}
+1\\
+2\\
+3
+\end{array}\right)$
+\end_inset
+
+, and all nonzero multiples of an eigenvector are also eigenvectors (of
+ the same eigenvalue).
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 4 (25 points):
+\end_layout
+
+\begin_layout Standard
+Suppose 
+\begin_inset Formula $A$
+\end_inset
+
+ is a real-symmetric matrix with eigenvalues 
+\begin_inset Formula $\lambda_{1}=1$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{2}=3$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{3}=0$
+\end_inset
+
+, and 
+\begin_inset Formula $\lambda_{4}=7$
+\end_inset
+
+, with corresponding eigenvectors: 
+\begin_inset Formula 
+\[
+x_{1}=\left(\begin{array}{c}
+1\\
+1\\
+1\\
+1
+\end{array}\right),\;x_{2}=\left(\begin{array}{c}
+1\\
+-1\\
+1\\
+-1
+\end{array}\right),\;x_{3}=\left(\begin{array}{c}
+1\\
+1\\
+-1\\
+-1
+\end{array}\right),\;x_{4}=\left(\begin{array}{c}
+1\\
+-1\\
+-1\\
+1
+\end{array}\right).
+\]
+
+\end_inset
+
+Now, we construct a sequence of vectors 
+\begin_inset Formula $y_{0},y_{1},y_{2},\ldots$
+\end_inset
+
+ where each vector 
+\begin_inset Formula $y_{k+1}$
+\end_inset
+
+ in the sequence is computed from the previous vector 
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ by solving 
+\begin_inset Formula 
+\[
+(A-2I)y_{k+1}=y_{k}
+\]
+
+\end_inset
+
+for 
+\begin_inset Formula $y_{k+1}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $y_{0}=\left(\begin{array}{c}
+4\\
+3\\
+2\\
+1
+\end{array}\right)$
+\end_inset
+
+, 
+\series bold
+give a good approximation
+\series default
+ for 
+\begin_inset Formula $y_{100}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Standard
+Rearranging, we have 
+\begin_inset Formula $y_{k+1}=(A-2I)^{-1}y_{k}$
+\end_inset
+
+, so 
+\begin_inset Formula 
+\[
+y_{k}=(A-2I)^{-k}y_{0}.
+\]
+
+\end_inset
+
+For 
+\begin_inset Formula $k=100$
+\end_inset
+
+, this will be dominated by the largest 
+\begin_inset Formula $|\lambda|$
+\end_inset
+
+ eigenvalues of 
+\begin_inset Formula $(A-2I)^{-1}$
+\end_inset
+
+, but this matrix has the 
+\series bold
+same eigenvectors
+\series default
+ as 
+\begin_inset Formula $A$
+\end_inset
+
+ with its eigenvalues 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ replaced by 
+\begin_inset Formula $\frac{1}{\lambda-2}$
+\end_inset
+
+.
+ So, the eigenvalues of 
+\begin_inset Formula $(A-2I)^{-1}$
+\end_inset
+
+ are 
+\begin_inset Formula 
+\[
+\frac{1}{\lambda_{1}-2}=-1,\;\frac{1}{\lambda_{2}-2}=1,\;\frac{1}{\lambda_{3}-2}=-\frac{1}{2},\;\text{and }\frac{1}{\lambda_{4}-2}=\frac{1}{5}.
+\]
+
+\end_inset
+
+Of these, the largest magnitudes are 
+\begin_inset Formula $-1$
+\end_inset
+
+ and 
+\begin_inset Formula $+1$
+\end_inset
+
+, which both have magnitude 
+\begin_inset Formula $1$
+\end_inset
+
+, so 
+\begin_inset Formula $y_{100}$
+\end_inset
+
+ will be dominated by the 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ terms in the expansion of 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+.
+ More explicitly, if we expand 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ in the basis of eigenvectors: 
+\begin_inset Formula 
+\[
+y_{0}=c_{1}x_{1}+c_{2}x_{2}+c_{3}x_{3}+c_{4}x_{4}\,,
+\]
+
+\end_inset
+
+then 
+\begin_inset Formula 
+\[
+y_{100}=(A-2I)^{-100}y_{0}=(-1)^{100}c_{1}x_{1}+1^{100}c_{2}x_{2}+\left(-\frac{1}{2}\right)^{100}c_{3}x_{3}+\left(\frac{1}{5}\right)^{100}c_{4}x_{4}\approx c_{1}x_{1}+c_{2}x_{2}\,.
+\]
+
+\end_inset
+
+To compute this explicitly, we merely need to compute 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{2}$
+\end_inset
+
+.
+ But 
+\begin_inset Formula $A$
+\end_inset
+
+ is Hermitian and hence the eigenvectors must be (and are) 
+\series bold
+orthogonal
+\series default
+, so we just need 
+\series bold
+orthogonal projection
+\series default
+ to compute the coefficients of the basis expansion: 
+\begin_inset Formula 
+\begin{align*}
+c_{1} & =\text{\ensuremath{\frac{x_{1}^{T}}{x_{1}^{T}x_{1}}y_{0}=}}\frac{1}{4}\left(\begin{array}{cccc}
+1 & 1 & 1 & 1\end{array}\right)\left(\begin{array}{c}
+4\\
+3\\
+2\\
+1
+\end{array}\right)=\frac{5}{2},\\
+c_{2} & =\text{\ensuremath{\frac{x_{2}^{T}}{x_{2}^{T}x_{2}}y_{0}=}}\frac{1}{4}\left(\begin{array}{cccc}
+1 & -1 & 1 & -1\end{array}\right)\left(\begin{array}{c}
+4\\
+3\\
+2\\
+1
+\end{array}\right)=\frac{1}{2}.
+\end{align*}
+
+\end_inset
+
+Therefore, 
+\begin_inset Formula 
+\[
+y_{100}\approx\frac{5}{2}\left(\begin{array}{c}
+1\\
+1\\
+1\\
+1
+\end{array}\right)+\frac{1}{2}\left(\begin{array}{c}
+1\\
+-1\\
+1\\
+-1
+\end{array}\right)=\boxed{\left(\begin{array}{c}
+3\\
+2\\
+3\\
+2
+\end{array}\right)}.
+\]
+
+\end_inset
+
+Note that the next biggest term is on the order of 
+\begin_inset Formula $\frac{1}{2^{100}}\approx7.9\times10^{-31}$
+\end_inset
+
+, so this approximation is pretty darn good! Actually, the 
+\begin_inset Formula $c_{3}=1$
+\end_inset
+
+ term is the only correction, since 
+\begin_inset Formula $c_{4}=0$
+\end_inset
+
+ (
+\begin_inset Formula $x_{4}^{T}y_{0}=0$
+\end_inset
+
+).
+ 
+\end_layout
+
+\end_body
+\end_document
