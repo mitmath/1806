@@ -617,7 +617,15 @@ must be equal
  to one another: 
 \begin_inset Formula 
 \[
-\mathrm{trace}(Axx^{T}),\quad\mathrm{trace}(xAx^{T}),\quad\mathrm{trace}(x^{T}Ax),\quad x^{T}Ax,\quad\mathrm{trace}(x^{T}xA),\quad xx^{T}A,\quad\mathrm{trace}(xx^{T}A),,\quad\mathrm{determinant}(xx^{T}A).
+\mathrm{trace}(Axx^{T}),\quad\mathrm{trace}(xAx^{T}),\quad\mathrm{trace}(x^{T}Ax),\quad x^{T}Ax,
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\quad\mathrm{trace}(x^{T}xA),\quad xx^{T}A,\quad\mathrm{trace}(xx^{T}A),\quad\mathrm{determinant}(xx^{T}A).
 \]
 
 \end_inset
