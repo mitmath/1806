@@ -1,0 +1,1305 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{(\roman{enumii})}
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MIT 18.06 Final Exam, Spring 2022
+\begin_inset Newline newline
+\end_inset
+
+Johnson
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Your name: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-6pt"
+width "80col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Recitation: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-6pt"
+width "80col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace 3cm
+\end_inset
+
+
+\size largest
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+problem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size largest
+score
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/14
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/17
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/17
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/16
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/16
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size largest
+\emph on
+total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 3em
+\end_inset
+
+/100
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 0 (
+\begin_inset Formula $\infty$
+\end_inset
+
+ points): Honor code
+\end_layout
+
+\begin_layout Standard
+Copy the following statement with your signature into your solutions:
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+I have completed this exam 
+\series bold
+closed-book/closed-notes
+\series default
+ entirely on my 
+\series bold
+own.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+[your signature]
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 1 (4+4+6 points):
+\end_layout
+
+\begin_layout Standard
+The matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ is given by 
+\begin_inset Formula 
+\[
+A=LUL^{-1}U^{-1}
+\]
+
+\end_inset
+
+for 
+\begin_inset Formula 
+\[
+L=\left(\begin{array}{cccc}
+1\\
+-1 & 1\\
+0 & 3 & 1\\
+1 & 0 & 0 & 1
+\end{array}\right),\qquad U=\left(\begin{array}{cccc}
+2 & 0 & 1 & 1\\
+ & -1 & 0 & -1\\
+ &  & -2 & 1\\
+ &  &  & 1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Write an expression for 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $L$
+\end_inset
+
+, 
+\begin_inset Formula $U$
+\end_inset
+
+, 
+\begin_inset Formula $L^{-1}$
+\end_inset
+
+, and/or 
+\begin_inset Formula $U^{-1}$
+\end_inset
+
+ (but you 
+\series bold
+don't
+\series default
+ need to actually multiply or invert the terms!).
+\end_layout
+
+\begin_layout Enumerate
+What is the determinant of 
+\begin_inset Formula $A$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+Solve 
+\begin_inset Formula $PAx=b$
+\end_inset
+
+ for 
+\begin_inset Formula $x$
+\end_inset
+
+, where 
+\begin_inset Formula $P$
+\end_inset
+
+ is the 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ permutation that swaps the 1st and 4th elements of a vector, and 
+\begin_inset Formula $b=\left(\begin{array}{c}
+-5\\
+4\\
+11\\
+-3
+\end{array}\right).$
+\end_inset
+
+ (You can get partial credit by just outlining a reasonable sequence of
+ steps here that doesn't involve a lot of unnecessary calculation.)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 2 (5+5 points):
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $x$
+\end_inset
+
+ are vectors in 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+, then 
+\begin_inset Formula $aa^{T}x$
+\end_inset
+
+ can be computed using either 
+\series bold
+left-to-right
+\series default
+ as 
+\begin_inset Formula $(aa^{T})x$
+\end_inset
+
+ or 
+\series bold
+right-to-left 
+\series default
+as 
+\begin_inset Formula $a(a^{T}x)$
+\end_inset
+
+, where the parentheses indicate the order of operations.
+ Roughly count the number of arithmetic operations (additions and multiplication
+s) in these two approaches: say whether each approach scales proportional
+ to 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $n^{3}$
+\end_inset
+
+, etcetera.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ is an 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ real matrix and 
+\begin_inset Formula $x$
+\end_inset
+
+ is an 
+\begin_inset Formula $n$
+\end_inset
+
+-component real vector.
+ Indicate which of the following 
+\series bold
+must be equal
+\series default
+ to one another: 
+\begin_inset Formula 
+\[
+\mathrm{trace}(Axx^{T}),\quad\mathrm{trace}(xAx^{T}),\quad\mathrm{trace}(x^{T}Ax),\quad x^{T}Ax,\quad\mathrm{trace}(x^{T}xA),\quad xx^{T}A,\quad\mathrm{trace}(xx^{T}A),,\quad\mathrm{determinant}(xx^{T}A).
+\]
+
+\end_inset
+
+For the expressions that are equal, indicate how you would evaluate this
+ quantity in a cost (in arithmetic operations) proportional to 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 3 (4+4+4+5 points):
+\end_layout
+
+\begin_layout Standard
+You have a 
+\begin_inset Formula $4\times3$
+\end_inset
+
+ matrix 
+\begin_inset Formula $A=\left(\begin{array}{ccc}
+q_{1} & 2q_{2} & 3q_{1}+4q_{2}\end{array}\right)$
+\end_inset
+
+, where we have expressed the three columns of 
+\begin_inset Formula $A$
+\end_inset
+
+ in terms of the orthonormal vectors 
+\begin_inset Formula 
+\[
+q_{1}=\frac{1}{2}\left(\begin{array}{c}
+1\\
+1\\
+-1\\
+-1
+\end{array}\right),\qquad q_{2}=\frac{1}{2}\left(\begin{array}{c}
+1\\
+-1\\
+-1\\
+1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+What is the rank of 
+\begin_inset Formula $A$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+Give a basis for 
+\begin_inset Formula $N(A)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+You are asked to calculate the projection matrix 
+\begin_inset Formula $P$
+\end_inset
+
+ onto 
+\begin_inset Formula $C(A)$
+\end_inset
+
+.
+ Your friend Harvey Ard suggests applying the formula 
+\begin_inset Formula $P=A(A^{T}A)^{-1}A^{T}$
+\end_inset
+
+ he memorized in linear algebra.
+ Explain why this won't work here, and give an even simpler (correct) formula
+ for 
+\begin_inset Formula $P$
+\end_inset
+
+ in terms of the quantities above.
+ (You need not evaluate 
+\begin_inset Formula $P$
+\end_inset
+
+ numerically, just write a formula in terms of products of quantities defined
+ above.)
+\end_layout
+
+\begin_layout Enumerate
+Find the 
+\emph on
+closest
+\emph default
+ vector to 
+\begin_inset Formula $x=\left(\begin{array}{c}
+2\\
+0\\
+0\\
+0
+\end{array}\right)$
+\end_inset
+
+ in 
+\begin_inset Formula $N(A^{T})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 4 (3+4+4+6 points):
+\end_layout
+
+\begin_layout Standard
+The nullspace 
+\begin_inset Formula $N(A)$
+\end_inset
+
+ of the real matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ is spanned by the vector 
+\begin_inset Formula $v=\left(\begin{array}{c}
+1\\
+2\\
+3\\
+4
+\end{array}\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Give as much true information as possible about the size (the number of
+ rows and columns) of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Give an eigenvector and eigenvalue of the matrix 
+\begin_inset Formula $B=(3I-A^{T}A)(3I+A^{T}A)^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Aside from the eigenvalue identified in the previous part, all 
+\emph on
+other
+\emph default
+ eigenvalues 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ of 
+\begin_inset Formula $B$
+\end_inset
+
+ must be (
+\series bold
+circle/copy all that apply
+\series default
+): purely real, purely imaginary, zero, negative real part, positive real
+ part, 
+\begin_inset Formula $|\lambda|<1$
+\end_inset
+
+, 
+\begin_inset Formula $|\lambda|>1$
+\end_inset
+
+, 
+\begin_inset Formula $|\lambda|\le1$
+\end_inset
+
+, 
+\begin_inset Formula $|\lambda|\ge1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Give a good approximate formula for of 
+\begin_inset Formula $B^{n}\left(\begin{array}{c}
+0\\
+-1\\
+0\\
+8
+\end{array}\right)$
+\end_inset
+
+ for large 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ (Give an explicit numerical vector, possibly including simple functions
+ of 
+\begin_inset Formula $n$
+\end_inset
+
+ like 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ or 
+\begin_inset Formula $n^{3}$
+\end_inset
+
+…no other abstract symbolic formulas.)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 5 (10 points):
+\end_layout
+
+\begin_layout Standard
+Describe (give an explicit numerical result with as few unknowns as possible)
+ all possible linear combinations of the vectors
+\begin_inset Formula 
+\[
+a_{1}=\left(\begin{array}{c}
+1\\
+0\\
+2
+\end{array}\right),\;a_{2}=\left(\begin{array}{c}
+1\\
+2\\
+4
+\end{array}\right),\;a_{3}=\left(\begin{array}{c}
+1\\
+-1\\
+3
+\end{array}\right),\;a_{4}=\left(\begin{array}{c}
+1\\
+1\\
+1
+\end{array}\right)
+\]
+
+\end_inset
+
+that give the vector 
+\begin_inset Formula $x=\left(\begin{array}{c}
+4\\
+-1\\
+5
+\end{array}\right).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 6 (8+8 points):
+\end_layout
+
+\begin_layout Standard
+Professor May Trix is trying to construct an 18.06 homework question in which
+ 
+\begin_inset Formula $\frac{dx}{dt}=Ax$
+\end_inset
+
+ has the solution 
+\begin_inset Formula 
+\[
+x(t)=v_{1}\cos(2t)+v_{2}e^{-t}
+\]
+
+\end_inset
+
+for some constant vectors 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+, and some initial condition 
+\begin_inset Formula $x(0)$
+\end_inset
+
+.
+ Help May construct 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $x(0)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+Write down a numerical formula for a possible 
+\series bold
+real
+\series default
+ matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ such that 
+\begin_inset Formula $A$
+\end_inset
+
+ is as 
+\series bold
+small in size as possible
+\series default
+ and where 
+\begin_inset Formula $A$
+\end_inset
+
+ contains 
+\series bold
+no zero entries
+\series default
+.
+ Your formula can be left as a product of some matrices and/or matrix inverses
+ — you 
+\emph on
+don't
+\emph default
+ need to multiply them out or invert any matrices, but you should give possible
+ numeric values for all of the matrices in your formula.
+ (You 
+\emph on
+don't
+\emph default
+ need to explicitly check that your 
+\begin_inset Formula $A$
+\end_inset
+
+ has no zero entries as long as zero entries seem unlikely.
+ e.g.
+ the inverse of a matrix with no special structure probably has no zero
+ entries.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(Note that there are many possible answers here, but they will all have
+ certain things in common.)
+\end_layout
+
+\begin_layout Enumerate
+Using the numbers that you chose from the formula in your previous part,
+ give possible corresponding (numeric) values for 
+\begin_inset Formula $x(0)$
+\end_inset
+
+, 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+, and 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 7 (8+8 points):
+\end_layout
+
+\begin_layout Standard
+Suppose that we have a sequence of 
+\begin_inset Formula $m$
+\end_inset
+
+ data points 
+\begin_inset Formula $(x_{i},y_{i})$
+\end_inset
+
+ coming from a physics experiment that we want to fit to a line 
+\begin_inset Formula $cx+d$
+\end_inset
+
+, where the coefficients 
+\begin_inset Formula $c$
+\end_inset
+
+ and 
+\begin_inset Formula $d$
+\end_inset
+
+ are chosen to minimize the sum of the squares of the errors.
+ But, because some of the data points have more measurement error than others,
+ we don't weight the errors equally in minimizing the error.
+ In particular, suppose that we want to minimize: 
+\begin_inset Formula 
+\[
+E=\text{weighted error}=w_{1}(cx_{1}+d-y_{1})^{2}+w_{2}(cx_{2}+d-y_{2})^{2}+\cdots=\sum_{i=1}^{m}w_{i}(cx_{i}+d-y_{i})^{2}.
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $w_{1},w_{2},\ldots,w_{m}>0$
+\end_inset
+
+ are some positive weights associated with each data point (more uncertain
+ data points have smaller weight).
+\end_layout
+
+\begin_layout Enumerate
+To 
+\series bold
+convert this into a standard least-squares 
+\series default
+problem, show that we can rewrite 
+\begin_inset Formula $E$
+\end_inset
+
+ in the form 
+\begin_inset Formula $E=\Vert Mu-v\Vert^{2}$
+\end_inset
+
+ for some matrix 
+\begin_inset Formula $M$
+\end_inset
+
+, an unknown vector 
+\begin_inset Formula $u$
+\end_inset
+
+, and a known vector 
+\begin_inset Formula $v$
+\end_inset
+
+ — give explicit expressions for 
+\begin_inset Formula $M$
+\end_inset
+
+, 
+\begin_inset Formula $u$
+\end_inset
+
+, and 
+\begin_inset Formula $v$
+\end_inset
+
+ in terms of the points 
+\begin_inset Formula $(x_{i},y_{i})$
+\end_inset
+
+, the weights 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+, and the unknowns 
+\begin_inset Formula $c$
+\end_inset
+
+ and 
+\begin_inset Formula $d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+More generally, suppose that we are minimizing 
+\begin_inset Formula $E=(Ax-b)^{T}W(Ax-b)$
+\end_inset
+
+ over 
+\begin_inset Formula $x\in\mathbb{R}^{n}$
+\end_inset
+
+ where 
+\begin_inset Formula $A$
+\end_inset
+
+ is an 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ real matrix, 
+\begin_inset Formula $b$
+\end_inset
+
+ is an 
+\begin_inset Formula $m$
+\end_inset
+
+-component real vector, and 
+\begin_inset Formula $W$
+\end_inset
+
+ is an 
+\begin_inset Formula $m\times m$
+\end_inset
+
+ real-symmetric 
+\emph on
+positive-definite
+\emph default
+ 
+\begin_inset Quotes eld
+\end_inset
+
+weight
+\begin_inset Quotes erd
+\end_inset
+
+ matrix.
+ Using the 
+\series bold
+properties of positive-definite matrices
+\series default
+ from class, show that we can rewrite 
+\begin_inset Formula $E$
+\end_inset
+
+ as a 
+\series bold
+standard least-squares problem
+\series default
+ 
+\begin_inset Formula $E=\Vert Mx-v\Vert^{2}$
+\end_inset
+
+ for some matrix 
+\begin_inset Formula $M$
+\end_inset
+
+ and vector 
+\begin_inset Formula $v$
+\end_inset
+
+: that is, explain how 
+\begin_inset Formula $M$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+ could be related to 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $W$
+\end_inset
+
+, and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\end_body
+\end_document
