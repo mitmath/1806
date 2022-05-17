@@ -980,7 +980,11 @@ x(t)=v_{1}\cos(2t)+v_{2}e^{-t}+v_{3}\sin(2t)
 
 \end_inset
 
-for some constant vectors 
+for some 
+\series bold
+nonzero
+\series default
+ constant vectors 
 \begin_inset Formula $v_{1},v_{2},v_{3}$
 \end_inset
 
