@@ -982,7 +982,7 @@ x(t)=v_{1}\cos(2t)+v_{2}e^{-t}+v_{3}\sin(2t)
 
 for some 
 \series bold
-nonzero
+nonzero real 
 \series default
  constant vectors 
 \begin_inset Formula $v_{1},v_{2},v_{3}$
