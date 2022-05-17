@@ -825,6 +825,8 @@ The main complication with functions is understanding when the operator is "diag
 
 The final exam will be posted here **May 17 at noon** and will be due **May 18 at noon**.  (It will be the same 3-hour closed-book/closed-notes exam, but you can take as much time as you like.)
 
+* [final exam](exams/final.pdf)
+
 The final will cover the material through **lecture 33** and **pset 12**.
 
 * Practice problems: practice problems from exams 1–3.  [fall 2018 final](exams/final.pdf) and [solutions](exams/final-sol.pdf); [spring 2017 final](https://github.com/stevengj/1806/blob/spring17/exams/final.pdf) and [solutions](https://github.com/stevengj/1806/blob/spring17/exams/final-sol.pdf); [2016 ASE](https://github.com/stevengj/1806/blob/spring17/exams/2016-ase.pdf) and [solutions](https://github.com/stevengj/1806/blob/spring17/exams/2016-ase-sol.pdf); [spring 2009 final](http://web.mit.edu/18.06/www/Spring09/final-s09.pdf) and [solutions](http://web.mit.edu/18.06/www/Spring09/final-s09-soln.pdf); [fall 2007 practice final](http://web.mit.edu/18.06/www/Fall07/practicefinal-sol.pdf); [fall 2015 final](http://web.mit.edu/18.06/www/Fall15/FinalSols.pdf), problems 1–5,7; [spring 2013 final](http://web.mit.edu/18.06/www/Spring13/Examfblank.pdf) and [solutions](http://web.mit.edu/18.06/www/Spring13/final_s13_sol.pdf), problems 2,3,4,5,7; [spring 2007](http://web.mit.edu/18.06/www/Spring07/final.pdf) problems 1–5.  Also review your homework problems.
