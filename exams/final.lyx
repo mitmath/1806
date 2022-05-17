@@ -975,17 +975,13 @@ Professor May Trix is trying to construct an 18.06 homework question in which
  has the solution 
 \begin_inset Formula 
 \[
-x(t)=v_{1}\cos(2t)+v_{2}e^{-t}
+x(t)=v_{1}\cos(2t)+v_{2}e^{-t}+v_{3}\sin(2t)
 \]
 
 \end_inset
 
 for some constant vectors 
-\begin_inset Formula $v_{1}$
-\end_inset
-
- and 
-\begin_inset Formula $v_{2}$
+\begin_inset Formula $v_{1},v_{2},v_{3}$
 \end_inset
 
 , and some initial condition 
@@ -1078,8 +1074,12 @@ Using the numbers that you chose from the formula in your previous part,
 \begin_inset Formula $v_{1}$
 \end_inset
 
-, and 
+, 
 \begin_inset Formula $v_{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $v_{3}$
 \end_inset
 
 .
