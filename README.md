@@ -825,7 +825,7 @@ The main complication with functions is understanding when the operator is "diag
 
 The final exam will be posted here **May 17 at noon** and will be due **May 18 at noon**.  (It will be the same 3-hour closed-book/closed-notes exam, but you can take as much time as you like.)
 
-* [final exam](exams/final.pdf)
+* [final exam](exams/final.pdf) and [solutions](exams/finalsol.pdf)
 
 The final will cover the material through **lecture 33** and **pset 12**.
 
