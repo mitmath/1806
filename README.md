@@ -25,7 +25,7 @@ useful study guide.  (You can also look at the analogous summaries from [Fall 20
 
 ## Lecture 1 (Jan 31)
 
-* [course overview/syllabus](https://docs.google.com/presentation/d/1ivbV1nr67XfasBdXezZF9UWILzDoQtQev8vSqRKBfu0/edit?usp=sharing)
+* [course overview/syllabus](notes/overview-spring22.pptx)
 * [pset 0](psets/pset0.ipynb): due **Friday Feb 4 at 11am** (submit your solutions on Canvas).
 * video: see *recordings* link above.
 
