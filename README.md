@@ -29,3 +29,13 @@ useful study guide.  (You can also look at the analogous summaries from [Spring 
 Slides giving the syllabus and the "big picture" of what 18.06 is about.  Introduction to thinking about matrices as linear operations, not just as "bags of numbers".
 
 **Further reading**: Strang, chapter 1, and section 8.1 on linear transformations.  3blue1brown has a nice video on [matrix multiplication as composition of linear transformations](https://youtu.be/XkY2DOUCWMU).  If you've forgotten the basics of how to multiply matrices by vectors or matrices by matrices, google for some tutorial material online (e.g. [Khan academy](https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:matrices/x9e81a4f98389efdf:multiplying-matrices-by-matrices/a/multiplying-matrices)) and do a quick brush-up.
+
+## *Optional* Julia Tutorial (Monday Sep 12 @ 5pm): [Zoom](https://mit.zoom.us/j/97099588467?pwd=bGVNOXFqdzhZRjVnRjRLeE1qNFNpdz09)
+
+* video recording: to be posted
+
+A basic overview of the Julia programming environment for numerical computations that we will use in 18.06 for simple computational exploration.   This (Zoom-based) tutorial will cover what Julia is and the basics of interaction, scalar/vector/matrix arithmetic, and plotting — we'll be using it as just a "fancy calculator" and no "real programming" will be required.
+
+* [Tutorial materials](https://github.com/mitmath/julia-mit) (and links to other resources)
+
+If possible, try to install Julia on your laptop beforehand using the instructions at the above link.  Failing that, you can run Julia in the cloud (see instructions above).
