@@ -4,16 +4,16 @@ This is a repository for the course [18.06: Linear Algebra](http://web.mit.edu/1
 
 **Instructor**: [Prof. Steven G. Johnson](http://math.mit.edu/~stevenj).  Course administrator: TBA
 
-**Lectures**: MWF11 in 34-101.  Video recordings and handwritten notes to be posted online, along with other materials (slides, further reading) posted below.
+**Lectures**: MWF11 in 26-100.  Video recordings and handwritten notes to be posted online, along with other materials (slides, further reading) posted below.
 
-**Exams**: 11am in 34-101, dates TBA.  Final exam: TBA.
+**Exams**: 11am in 26-100, on 10/7, 11/14, & 12/9.  Final exam: date TBA.
 
 **Recitations**:
 Instructors TBA.
 
 **Undergraduate Assistants**: TBA.
 
-**Resources**: Piazza discussion forum TBA, [math learning center](https://math.mit.edu/learningcenter/), [TSR^2 study/resource room](https://ome.mit.edu/programs/talented-scholars-resource-room-tsr2), [pset partners](https://psetpartners.mit.edu/).
+**Resources**: [Piazza discussion forum](https://piazza.com/class/l7g5ixuivav3rm), [math learning center](https://math.mit.edu/learningcenter/), [TSR^2 study/resource room](https://ome.mit.edu/programs/talented-scholars-resource-room-tsr2), [pset partners](https://psetpartners.mit.edu/).
 
 This document is a *brief* summary of what was covered in each 18.06
 lecture, along with links and suggestions for further reading.  It is
