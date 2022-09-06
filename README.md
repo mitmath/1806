@@ -10,8 +10,6 @@ This is a repository for the course [18.06: Linear Algebra](http://web.mit.edu/1
 
 **Recitations**:
 
-**Recitations**:
-
  * R01,R02 — [Chirag Falor](https://web.mit.edu/directory/?id=cfalor&d=mit.edu): T9 in 2-143, T10 in 2-146 (office hours TBA).
  * R03,R05 — [Gefei Dang](https://math.mit.edu/directory/profile.php?pid=2178): T11 in 2-147, T12 in 2-147 (office hours TBA).
  * R04 — [Sergei Korotkikh](https://math.mit.edu/directory/profile.php?pid=2113): T11 in 2-146 (office hours TBA).
