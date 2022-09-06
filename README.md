@@ -2,14 +2,23 @@
 
 This is a repository for the course [18.06: Linear Algebra](http://web.mit.edu/18.06) at MIT in Fall 2022.   See [other branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/viewing-branches-in-your-repository) of this repository for previous semesters.
 
-**Instructor**: [Prof. Steven G. Johnson](http://math.mit.edu/~stevenj).  Course administrator: TBA
+**Instructor**: [Prof. Steven G. Johnson](http://math.mit.edu/~stevenj).  Course administrator: [Sergei Korotkikh](https://math.mit.edu/directory/profile.php?pid=2113).
 
 **Lectures**: MWF11 in 26-100.  Video recordings and handwritten notes to be posted online, along with other materials (slides, further reading) posted below.
 
 **Exams**: 11am in 26-100, on 10/7, 11/14, & 12/9.  Final exam: date TBA.
 
 **Recitations**:
-Instructors TBA.
+
+**Recitations**:
+
+ * R01,R02 — [Chirag Falor](https://web.mit.edu/directory/?id=cfalor&d=mit.edu): T9 in 2-143, T10 in 2-146 (office hours TBA).
+ * R03,R05 — [Gefei Dang](https://math.mit.edu/directory/profile.php?pid=2178): T11 in 2-147, T12 in 2-147 (office hours TBA).
+ * R04 — [Sergei Korotkikh](https://math.mit.edu/directory/profile.php?pid=2113): T11 in 2-146 (office hours TBA).
+ * R06,R09 — [Victor Rong](https://web.mit.edu/directory/?id=vrong&d=mit.edu): T12 in 2-146, T1 in 2-146 (office hours TBA).
+ * R07,R08 — [Mitchell Harris](https://math.mit.edu/directory/profile.php?pid=2180): T12 in 2-361, T1 in 2-142 (office hours TBA).
+ * R10,R11 — [Ishan Levy](https://math.mit.edu/directory/profile.php?pid=2185): T1 in 2-136, T2 in 2-142 (office hours TBA).
+ * R12,R13 — [Melissa Sherman-Bennett](https://sites.google.com/view/mshermanbennett): T2 in 2-146, T3 in 2-142 (office hours TBA).
 
 **Undergraduate Assistants**: TBA.
 
