@@ -11,12 +11,12 @@ This is a repository for the course [18.06: Linear Algebra](http://web.mit.edu/1
 **Recitations**:
 
  * R01,R02 — [Chirag Falor](https://web.mit.edu/directory/?id=cfalor&d=mit.edu): T9 in 2-143, T10 in 2-146 (office hours TBA).
- * R03,R05 — [Gefei Dang](https://math.mit.edu/directory/profile.php?pid=2178): T11 in 2-147, T12 in 2-147 (office hours TBA).
+ * R03,R05 — [Melissa Sherman-Bennett](https://sites.google.com/view/mshermanbennett): T11 in 2-147, T12 in 2-147 (office hours TBA).
  * R04 — [Sergei Korotkikh](https://math.mit.edu/directory/profile.php?pid=2113): T11 in 2-146 (office hours TBA).
  * R06,R09 — [Victor Rong](https://web.mit.edu/directory/?id=vrong&d=mit.edu): T12 in 2-146, T1 in 2-146 (office hours TBA).
  * R07,R08 — [Mitchell Harris](https://math.mit.edu/directory/profile.php?pid=2180): T12 in 2-361, T1 in 2-142 (office hours TBA).
  * R10,R11 — [Ishan Levy](https://math.mit.edu/directory/profile.php?pid=2185): T1 in 2-136, T2 in 2-142 (office hours TBA).
- * R12,R13 — [Melissa Sherman-Bennett](https://sites.google.com/view/mshermanbennett): T2 in 2-146, T3 in 2-142 (office hours TBA).
+ * R12,R13 — [Gefei Dang](https://math.mit.edu/directory/profile.php?pid=2178): T2 in 2-146, T3 in 2-142 (office hours TBA).
 
 **Undergraduate Assistants**: TBA.
 
