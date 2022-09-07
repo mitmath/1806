@@ -30,7 +30,7 @@ useful study guide.  (You can also look at the analogous summaries from [Spring 
 ## Lecture 1 (Sep 7)
 
 * [course overview/syllabus](https://docs.google.com/presentation/d/1ivbV1nr67XfasBdXezZF9UWILzDoQtQev8vSqRKBfu0/edit?usp=sharing)
-* pset 1: to be posted, due **Friday Sep 16 at 11am** (submit your solutions on Gradescope).
+* [pset 1](psets/pset1.ipynb): due **Friday Sep 16 at 11am** (submit your solutions on Gradescope).
 * [video](https://mit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=19855fd0-d2be-4252-aa41-af0900816383)
 
 Slides giving the syllabus and the "big picture" of what 18.06 is about.  Introduction to thinking about matrices as linear operations, not just as "bags of numbers".
