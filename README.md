@@ -4,7 +4,7 @@ This is a repository for the course [18.06: Linear Algebra](http://web.mit.edu/1
 
 **Instructor**: [Prof. Steven G. Johnson](http://math.mit.edu/~stevenj).  Course administrator: [Sergei Korotkikh](https://math.mit.edu/directory/profile.php?pid=2113).
 
-**Lectures**: MWF11 in 26-100.  Video recordings and handwritten notes to be posted online, along with other materials (slides, further reading) posted below.
+**Lectures**: MWF11 in 26-100.  [Handwritten notes](https://www.dropbox.com/s/a1xy4oh6wb2i5ub/18.06%20Fall%202022.pdf?dl=0) are posted online, along with video recordings (linked below) and other materials (slides, further reading) in the lecture summaries below.
 
 **Exams**: 11am in 26-100, on 10/7, 11/14, & 12/9.  Final exam: date TBA.
 
@@ -36,6 +36,32 @@ useful study guide.  (You can also look at the analogous summaries from [Spring 
 Slides giving the syllabus and the "big picture" of what 18.06 is about.  Introduction to thinking about matrices as linear operations, not just as "bags of numbers".
 
 **Further reading**: Strang, chapter 1, and section 8.1 on linear transformations.  3blue1brown has a nice video on [matrix multiplication as composition of linear transformations](https://youtu.be/XkY2DOUCWMU).  If you've forgotten the basics of how to multiply matrices by vectors or matrices by matrices, google for some tutorial material online (e.g. [Khan academy](https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:matrices/x9e81a4f98389efdf:multiplying-matrices-by-matrices/a/multiplying-matrices)) and do a quick brush-up.
+
+## Lecture 2 (Sep 9)
+
+* handwritten notes: see link above (at beginning)
+* [video](https://mit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b9662b0d-6280-448a-b745-af090062417b)
+
+[Gaussian
+elimination](https://en.wikipedia.org/wiki/Gaussian_elimination) for **Ax=b**:  I
+started with the grade-school/high-school viewpoint of writing out three equations
+in three unknowns, adding/subtracting multiples of equations until we
+were left with one equation in one unknown.  Then, I wrote the
+same equations in matrix form, and renamed this process "Gaussian
+elimination": we add/subtract multiples of matrix rows to introduce
+zeros below the diagonal, i.e. to make the matrix [upper
+triangular](https://en.wikipedia.org/wiki/Triangular_matrix) **U**.  We then do the same row operations to the right hand side **b** to get a new vector **c**.  Finally, we solve **Ux=c** for x by working from bottom (1 equation in 1 variable) to top, a process called "backsubstitution".
+
+To do the same operations to both **A** and **b**, a useful trick for hand calculations is to [augment](https://en.wikipedia.org/wiki/Augmented_matrix) the matrix with a new column representing the right-hand side, forming **[A b]** before starting Gaussian elimination.
+
+What comes next?  The problem with expressing Gaussian elimination this way, as operations on individual numbers in the matrix, is that it is impossible to follow the process in detail for anything except a very tiny matrix.   We need a higher-level "algebraic" way to express the process, both to help us understand it and also to help us to *use* it (e.g. to perform additional algebraic transformations afterwards).   To do this, we want to express the process, not as operations on individual numbers, but as matrix operations.
+
+Rewrote Gaussian elimination in matrix form: we multiply a matrix A on the *left* by a sequence of **lower**-triangular "elimination matrices" Eₙ to arrive at an **upper**-triangular matrix U = EA.  To solve Ax=b, we can think of the earlier process as multiplying *both sides* on the *left* by **E**, the linear operator representing the composition (product) of all of the elimination steps, yielding Ux=EAx on the left and c=Eb on the right.
+
+We're not done: it turns out to be even more fruitful to *reverse* the process, and write A = LU: L represents the operations required to turn the matrix U back into A, and turns out toe be a **lower**-triangular matrix whose entries are just a record of the elimination steps.  This **LU factorization** is extremely useful and important because it allows us to replace a *complicated* matrix A with two *much simpler* (triangular) ones.  For example, solving Ax=b turns into LUx=b, and we can do this just by two "triangular" solves.  More on this next time.
+
+**Further reading:** Textbook sections 2.1, 2.2, 2.3.  Strang [lecture 2 video](https://www.youtube.com/watch?v=QVKj3LADCnA&list=PLE7DDD91010BC51F8&index=3).   And there is a Gaussian-elimination [Julia notebook](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Gaussian-elimination.ipynb) that covers the same steps in Julia form.
+See also "The key reason why A = LU" in section 2.6 of the textbook.
 
 ## *Optional* Julia Tutorial (Monday Sep 12 @ 5pm): [Zoom](https://mit.zoom.us/j/97099588467?pwd=bGVNOXFqdzhZRjVnRjRLeE1qNFNpdz09)
 
