@@ -65,7 +65,7 @@ See also "The key reason why A = LU" in section 2.6 of the textbook.
 
 ## Lecture 3 (Feb 4): recorded
 
-* ~~video (only): see the [spring 2022 recordings](https://mit.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=68796547-c661-4d78-a50e-ae2e00efcbba), lecture 3~~ Unfortunately, the first month of lectures weren't recorded in the spring
+* video (only): see the [spring 2022 recording](https://mit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=885fb286-4dab-4aa6-9ef0-ae2e00f05ceb), lecture 3
 * handwritten notes
 * [Matrix inverse and LU notebook](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Inverses-LU-intro.ipynb)
 
