@@ -124,7 +124,7 @@ Matrix inverses are mainly a *conceptual* tool that we use to move matrices arou
 
 ## Lecture 5 (Sep 16)
 
-* Video recording: coming soon
+* [Video recording](https://mit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=32b37815-81a0-42aa-a2a5-af0c00d75c55)
 * [pset 1 solutions](psets/pset1sol.ipynb)
 * pset 2: coming soon, due **Mon** Sep 26 (Friday is a holiday).
 * [LU factorization for real](https://nbviewer.org/github/mitmath/1806/blob/master/notes/LU-for-real.ipynb)
