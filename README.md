@@ -6,7 +6,7 @@ This is a repository for the course [18.06: Linear Algebra](http://web.mit.edu/1
 
 **Lectures**: MWF11 in 26-100.  [Handwritten notes](https://www.dropbox.com/s/a1xy4oh6wb2i5ub/18.06%20Fall%202022.pdf?dl=0) are posted online, along with video recordings (linked below) and other materials (slides, further reading) in the lecture summaries below.
 
-**Exams**: 11am in 26-100, on 10/7, 11/14, & 12/9.  Final exam: date TBA.
+**Exams**: 11am in 26-100, on 10/7, 11/14, & 12/9.  Final exam: 12/22 9am-noon in Dupont Gym.
 
 **Recitations**:
 
