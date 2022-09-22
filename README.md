@@ -4,7 +4,7 @@ This is a repository for the course [18.06: Linear Algebra](http://web.mit.edu/1
 
 **Instructor**: [Prof. Steven G. Johnson](http://math.mit.edu/~stevenj).  Course administrator: [Sergei Korotkikh](https://math.mit.edu/directory/profile.php?pid=2113).
 
-**Lectures**: MWF11 in 26-100.  [Handwritten notes](https://www.dropbox.com/s/a1xy4oh6wb2i5ub/18.06%20Fall%202022.pdf?dl=0) are posted online, along with video recordings (linked below) and other materials (slides, further reading) in the lecture summaries below.
+**Lectures**: MWF11 in 26-100.  [Handwritten notes](https://www.dropbox.com/s/a1xy4oh6wb2i5ub/18.06%20Fall%202022.pdf?dl=0) are posted online, along with video recordings ([on Canvas Panopto Video](https://mit.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=87c54afd-f3c7-4cb8-b173-af0e00faf1d0)) and other materials (slides, further reading) in the lecture summaries below.
 
 **Exams**: 11am in 26-100, on 10/7, 11/14, & 12/9.  Final exam: 12/22 9am-noon in Dupont Gym.
 
