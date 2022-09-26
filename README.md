@@ -186,7 +186,7 @@ Showed that the **nullspace is preserved by elimination (row) operations**, but 
 * video: Panopto Video link on Canvas
 * handwritten notes
 * [pset 2 solutions](psets/pset2sol.ipynb)
-* pset 3: coming soon (due **Friday** Sep 30)
+* [pset 3](psets/pset3.ipynb): due **Friday** Sep 30
 
 Went through two examples of finding the special solutions as a basis for the nullspace.  They key point is always this: given the free variables, we can easily solve for the corresponding pivot variables.
 
