@@ -195,3 +195,83 @@ We can now find the **complete solution** (i.e., all solutions) to a non-square 
 I used a 3×4 example matrix A (similar in spirit to one in the textbook, section 3.3) that was **rank deficient**: after elimination, we only had two pivots (rank r=2) in the first two rows, and a whole row of zeros.   Furthermore, its pivot columns were the first and *third* columns, with the second and fourth columns being free — this is possible (albeit unusual)!   Showed that we could still get the special solutions by solving for the pivot variables in terms of the free variables = (1,0,…) etcetera, and we still got dimension n-r (= 2) for the null space.   When solving Ax=b by elimination into Ux=c, however, we *only got a solution x if c was zero in the same rows as U*.  If the zero third row of U was matched by a zero third row of c, then we got a particular solution as before by setting the free variables to zero.  If the zero third row of U was *not* matched by a zero third row of c, then there is *no* solution: b was *not in the column space* C(A).  This gives an easy way to check whether the right-hand-side is in the column space.  Went through an example right-hand-sides with no solutions, and in next lecture I'll cover one with infinitely many solutions.
 
 **Further reading:** Textbook sections 3.3–3.4, [lecture 8](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-8-solving-ax-b-row-reduced-form-r/).  As noted in lecture 7, I'm not emphasizing the trick of "rref" form (used extensively by Strang's book and lectures) which makes hand calculation *slightly* easier, but might push students towards memorizing formulas (which are useless in the long run).
+
+## Lecture 9 (Sep 28)
+
+* handwritten notes and lecture video (see links above).
+
+Finished the discussion of "complete solutions" of Ax=b from last lecture, by choosing a right-hand side b ∈ C(A), finding the particular solution (by setting the free variables to zero and solving for the pivot variables), and then adding in the null-space vectors to describe all possible solutions.
+
+### Linear independence and C(A)
+
+Bases, dimension, and independence.   Earlier, I defined a basis as a minimal set of vectors whose span gives an entire vector space, and the dimension of the space as the size of the basis.  Now, we want to think more carefully about the term "minimal".   If we have too many vectors in our basis, the problem is that some of the vectors might be redundant (you can get them from the other basis vectors).  We now rephrase this as saying that such vectors are *linearly dependent*: some linear combination (with nonzero multipliers) of them gives the zero vector, and we want every basis to be **linearly independent**.    The **dimension** of a subspace is still the number of basis vectors.
+
+What does it mean to be linearly independent?  Given a set of n vectors {x₁, ⋯, xₙ}, if we matrix a matrix X whose columns
+are x₁⋯xₙ, then C(X) is precisely the span of x₁⋯xₙ.   To check whether
+the x₁⋯xₙ form a *basis* for C(X), we need to check whether they
+are *linearly independent*.  There are three equivalent ways to think about
+this:
+
+1. We want to make sure that none of x₁⋯xₙ are "redundant": make sure
+   that no xⱼ can be made from a linear combination of the other xᵢ's.
+
+2. Equivalently, we don't want any linear combination of x₁⋯xₙ to give
+   zero unless all the coefficients are zero.
+
+3. Equivalently, we want N(X) = {0}.
+
+In this way, we reduced the concept of independence to thinking about the
+null space.   Since the nullspace is preserved by elimination, it follows
+that *columns of A are dependent/independent if and
+only if the corresponding columns of R are dependent/independent*.
+By looking at R, we can see by inspection that the *pivot columns* form
+a maximal set of independent vectors, and hence are a basis for C(R).
+Hence, the *pivot columns of A* (i.e. the columns of A corresponding to
+the columns of R or U where the pivots appear) are a basis for C(A).
+
+It follows that the dimension of C(A) is exactly rank(A).
+
+### Four important cases for Ax=b
+
+Went through four important cases for an m×n matrix A of rank r.  (Note that we must have r ≤ m and n: you can't have more pivots than there are rows or columns.)
+
+1. If r=n, then A has **full column rank**.  We must have m ≥ n (it is a "tall" matrix), and N(A)={0} (there are no free columns).  Hence, any solution to Ax=b (if it exists at all) must be *unique*.  (If m > n, the problem is "overdetermined": more equations than unknowns.)
+
+2. If r=m, then A has **full row rank**.  We must have n ≥ m (it is a "wide" matrix), and C(A)=ℝᵐ.  Ax=b is *always solvable* (but the solution will not be unique unless m=n).  (If m < n the problem is "underdetermined": more unknowns than equations.)
+
+3. If r=m=n, then A is a square **invertible** matrix.  Ax=b is always solvable and the solution x=A⁻¹b is unique.
+
+4. If r < m and r < n, then A is **rank deficient**.  Solutions to Ax=b may not exist and will not be unique if they do exist.
+
+Cases (1)-(3) are called **full rank**: the rank is as big as possible given the shape of A.  In practice, most matrices that one encounters are full rank (this is essentially always true for *random* matrices).  If the matrix is rank deficient, it usually arises from some special structure of the problem (i.e. you usually want to look at where A came from to help you figure out why it is rank deficient, rather than computing the rank etcetera by mindless calculation).   (A separate problem is that of matrices that are *nearly* rank deficient because the pivots are very small, but the right tools to analyze this case won't come up until near the end of the course.)
+
+**Further reading:** Textbook sections 3.3–3.4, [lecture 9](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-9-independence-basis-and-dimension/).
+
+## Lecture 10 (Sep 30)
+
+* handwritten notes and lecture video: to be posted
+* pset 3 solutions: to be posted
+* pset 4, to be posted: a short pset due Wed Oct 5
+
+### Dot products, transposes, & orthogonality
+
+Reviewed the dot product or **inner product** of two real column vectors, x⋅y, defined as ∑ᵢxᵢyᵢ.  In linear-algebra terms, we write this as x⋅y=xᵀy in terms of the *transpose* of the vector x: if x is a column vector, xᵀ is a row vector (sometimes more technically called a "dual" vector or "covector").  The *length* (or **norm**) of a vector is is the square root of the dot product with itself: ‖x‖=√xᵀx.
+
+The [transpose](https://en.wikipedia.org/wiki/Transpose) Aᵀ of a linear operator A is defined  so that xᵀAy = x⋅(Ay) = (Aᵀx)⋅y = (Aᵀx)ᵀy: transposes move linear operators from one side to the other in an inner product.  In consequence, we find for matrices that Aᵀ is constructed by **swapping rows with columns** in A.   Key properties:
+
+* (AB)ᵀ=BᵀAᵀ
+* αᵀ = α for scalars.  Hence xᵀy = yᵀx (i.e. x⋅y = y⋅x)
+* (A⁻¹)ᵀ = (Aᵀ)⁻¹
+
+[Orthogonal](https://en.wikipedia.org/wiki/Orthogonality) vectors are those for which xᵀy = 0.   Defined the [orthogonal complement](https://en.wikipedia.org/wiki/Orthogonal_complement) S<sup>⟂</sup> of a subspace S ⊆ V as
+{x ∈ V such that xᵀy=0 for all y ∈ S}.  Combining a basis for S and S<sup>⟂</sup> gives a basis for the whole vector space V, so the dimensions of S and S<sup>⟂</sup> sum to the dimension of V.
+
+Taking the orthogonal complements of C(A) and N(A) leads us to the **four fundamental subspaces** for an m×n matrix A of rank r:
+
+* column space C(A) ⊆ ℝᵐ, dimension r
+* C(A)<sup>⟂</sup> = left nullspace N(Aᵀ) ⊆ ℝᵐ, dimension m-r
+* nullspace N(A) ⊆ ℝⁿ, dimension n-r
+* N(A)<sup>⟂</sup> = row space C(Aᵀ) ⊆ ℝⁿ, dimension r
+
+**Further reading:** Textbook sections 3.5, 4.1; video
+[lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/), video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/).  Julia [notebook on transposes and orthogonality](https://github.com/mitmath/1806/blob/master/notes/Transposes.ipynb).
