@@ -250,7 +250,7 @@ Cases (1)-(3) are called **full rank**: the rank is as big as possible given the
 ## Lecture 10 (Sep 30)
 
 * handwritten notes and lecture video (see links above).
-* pset 3 solutions: to be posted
+* [pset 3 solutions](psets/pset3sol.ipynb)
 * [pset 4](psets/pset4.ipynb): a short pset due Wed Oct 5
 
 ### Dot products, transposes, & orthogonality
