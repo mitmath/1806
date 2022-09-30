@@ -249,7 +249,7 @@ Cases (1)-(3) are called **full rank**: the rank is as big as possible given the
 
 ## Lecture 10 (Sep 30)
 
-* handwritten notes and lecture video: to be posted
+* handwritten notes and lecture video (see links above).
 * pset 3 solutions: to be posted
 * [pset 4](psets/pset4.ipynb): a short pset due Wed Oct 5
 
@@ -272,6 +272,8 @@ Taking the orthogonal complements of C(A) and N(A) leads us to the **four fundam
 * C(A)<sup>⟂</sup> = left nullspace N(Aᵀ) ⊆ ℝᵐ, dimension m-r
 * nullspace N(A) ⊆ ℝⁿ, dimension n-r
 * N(A)<sup>⟂</sup> = row space C(Aᵀ) ⊆ ℝⁿ, dimension r
+
+(The consequence of this is an amazing fact: A and Aᵀ have the **same rank** r, since C(A) and C(Aᵀ) must have the same dimension r.   Thus, if you do Gaussian elimination on A and Gaussian elimination on Aᵀ, you will get the **same number of pivots** in both cases even though the elimination processes are quite different.)
 
 **Further reading:** Textbook sections 3.5, 4.1; video
 [lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/), video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/).  Julia [notebook on transposes and orthogonality](https://github.com/mitmath/1806/blob/master/notes/Transposes.ipynb).
