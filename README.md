@@ -251,7 +251,7 @@ Cases (1)-(3) are called **full rank**: the rank is as big as possible given the
 
 * handwritten notes and lecture video: to be posted
 * pset 3 solutions: to be posted
-* pset 4, to be posted: a short pset due Wed Oct 5
+* [pset 4](psets/pset4.ipynb): a short pset due Wed Oct 5
 
 ### Dot products, transposes, & orthogonality
 
