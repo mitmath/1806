@@ -292,8 +292,8 @@ Derivatives viewed as linear approximations have many important applications in 
 ## Lecture 12 (Oct 5)
 
 * handwritten notes and lecture video (see links above).
-* [pset 4 solutions](psets/pset4.ipynb)
-* pset 5: coming soon, due Friday Oct 14
+* [pset 4 solutions](psets/pset4sol.ipynb)
+* [pset 5](pset5.ipynb), due Friday Oct 14
 
 *Continued from lecture 11*: Analyzed derivatives of matrix-valued functions of matrices, like f(x)=A⁻¹ where we showed that f′(x) is the linear operator f′(x)[dA]=–A⁻¹dAA⁻¹.  Using this, if we have a matrix A(p) as a function of a parameter p, showed that we can compute d(A⁻¹)/dp = –A⁻¹(dA/dp)A⁻¹ easily.  This has enormous applications, for example in engineering optimization where you often want to differentiate the solution to a physical problem (often expressed as Ax=b) with respect to parameters of the problem (in A and/or b), in order to optimize the physics (e.g. to maximize the strength of a structure with a given amount of material): see slides from lecture 11.
 
