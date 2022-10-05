@@ -280,15 +280,42 @@ Taking the orthogonal complements of C(A) and N(A) leads us to the **four fundam
 
 ## Lecture 11 (Oct 3)
 
-* handwritten notes
+* handwritten notes and lecture video (see links above).
 * [slides](https://docs.google.com/presentation/d/1SXAmVB07xdLRa8eBQFF5wI0RDpjC1u1-zHd1oPEtkXM/edit?usp=sharing)
-* [notebook](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Newton-Thomson-example.ipynb): Newton's method example
 
 Reviewed and broadened differential calculus (18.01 and 18.02) from the perspective of 18.06, where we view a derivative f′(x) as a **linear operator** acting on a small change in the input (dx) to give you the change in the output (df) to *first order* in dx ("linearized").   This viewpoint makes it easy to generalize derivatives, to scalar-valued functions of vectors where f′(x) is the transposed gradient (∇f)ᵀ, to vector-valued functions of vectors where f′(x) is the [Jacobian matrix](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant), and even to matrix-valued functions of matrices like f(x)=A⁻¹ where f′(x) is the linear operator f′(x)[dA]=–A⁻¹dAA⁻¹.
 
-Derivatives viewed as linear approximations have many important applications in science, machine learning, statistics, and engineering. For example, went over the **multidimensional Newton** algorithm for finding roots f(x)=0 of systems of nonlinear equations. At each step, you just solve a *linear* system of equations with the Jacobian matrix of f(x), and it converges incredibly rapidly.   (See notebook for an example demo where we solve a 2d version of the famous [Thomson problem](https://en.wikipedia.org/wiki/Thomson_problem) to find the equilibrium position of N repulsive "point charges" constrained to lie on a circle; more generally, a sphere or hypersphere.)
+Derivatives viewed as linear approximations have many important applications in science, machine learning, statistics, and engineering. For example, went over the **multidimensional Newton** algorithm for finding roots f(x)=0 of systems of nonlinear equations. At each step, you just solve a *linear* system of equations with the Jacobian matrix of f(x), and it converges incredibly rapidly.   (See notebook for
 
-**Further reading**: This material was presented in much greater depth in our [18.S096: Matrix Calculus](https://github.com/mitmath/matrixcalc) course in IAP 2022 and IAP 2023.    The viewpoint of derivatives as linear operators (also called [Fréchet derivatives](https://en.wikipedia.org/wiki/Fr%C3%A9chet_derivative)) was covered in lectures 1 and 2, Newton's method was covered in lecture 4, and automatic differentiation was covered in lecture 5 — see the posted lecture materials and the further-reading links therein.
+**Further reading**: This material was presented in much greater depth in our [18.S096: Matrix Calculus](https://github.com/mitmath/matrixcalc) course in IAP 2022 and IAP 2023.    The viewpoint of derivatives as linear operators (also called [Fréchet derivatives](https://en.wikipedia.org/wiki/Fr%C3%A9chet_derivative)) was covered in lectures 1 and 2, Newton's method was covered in lecture 4, and automatic differentiation was covered in lecture 5 — see the posted lecture materials and the further-reading links therein.   This [notebook](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Newton-Thomson-example.ipynb) has a Newton's method example demo where we solve a 2d version of the famous [Thomson problem](https://en.wikipedia.org/wiki/Thomson_problem) to find the equilibrium position of N repulsive "point charges" constrained to lie on a circle; more generally, a sphere or hypersphere.
+
+## Lecture 12 (Oct 5)
+
+* handwritten notes and lecture video (see links above).
+* [pset 4 solutions](psets/pset4.ipynb)
+* pset 5: coming soon, due Friday Oct 14
+
+*Continued from lecture 11*: Analyzed derivatives of matrix-valued functions of matrices, like f(x)=A⁻¹ where we showed that f′(x) is the linear operator f′(x)[dA]=–A⁻¹dAA⁻¹.  Using this, if we have a matrix A(p) as a function of a parameter p, showed that we can compute d(A⁻¹)/dp = –A⁻¹(dA/dp)A⁻¹ easily.  This has enormous applications, for example in engineering optimization where you often want to differentiate the solution to a physical problem (often expressed as Ax=b) with respect to parameters of the problem (in A and/or b), in order to optimize the physics (e.g. to maximize the strength of a structure with a given amount of material): see slides from lecture 11.
+
+### Orthonormal bases
+
+Talked about the viewpoint that solving Ax=b when A has full column rank (i.e. independent columns) is equivalent to a change of basis, or writing b in a "new coordinate system".
+
+However, viewing the columns of A as a basis or "coordinate system", it becomes clear that some bases are nicer than others.  (Especially if the basis vectors are *nearly linearly independent* (e.g. nearly parallel), or equivalently if *A is nearly singular*, then the new coordinate system can be difficult and confusing to use.)
+
+A *much nicer* "coordinate system" is an [orthonormal basis](https://en.wikipedia.org/wiki/Orthonormal_basis): vectors q₁,q₂,…,qₙ that are orthogonal to one another and have length 1.   One way of looking at this: **to change "coordinates" to an orthonormal basis just involves dot products.**
+  - If you have a non-orthonormal basis a₁,a₂,…, then to write an arbitrary vector b in this basis, i.e. b = a₁x₁ + a₂x₂ + ⋯ with coefficients x₁,x₂,…, you need to solve a linear system Ax=b for x.  Hard!  (∼m³).
+  - For an orthonormal basis q₁,q₂,… then to write b = q₁x₁ + q₂x₂ + ⋯ you can **just take dot products** xᵢ=qᵢᵀb.  For example, if you take the dot product q₁ᵀb, then you get x₁ (the coefficient of q₁), because all the other terms have dot product *zero*.
+
+Equivalently, we can put these q₁,q₂,…,qₙ into a matrix Q:
+
+* Saying that the columns of Q are orthonormal vectors is *equivalent* to saying QᵀQ = I.
+* If Qx=b is solvable, then the solution simply is x=Qᵀb, which is *equivalent* to taking the dot products of b with each qₖ vector to get xₖ as above.
+
+We will have much more to say about such Q matrices in the coming lectures.
+
+**Further reading:** 3blue1brown has a [nice video on changes of basis](https://www.youtube.com/watch?v=P2LTAUO1TdA).  Textbook sections 3.5, 4.1; video
+[lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/), video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/).
 
 ## Exam 1 (Friday Oct 7 at 11am in 26-100)
 
