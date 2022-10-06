@@ -323,7 +323,7 @@ Exam 1 will cover the material through **lecture 10** and **pset 4**, including:
 
 The exam is **closed book/notes**. (No calculators or computers either.)
 
-* (Optional) **review session**: Thursday 5/6 4–5pm [via Zoom](https://mit.zoom.us/j/97343551743?pwd=dzhmZkhVVGFiT2EvbU9Dam1BVVRVdz09).  A recording and list of practice problems will be posted afterwards.
+* (Optional) **review session**: Thursday 5/6 4–5pm via Zoom: see recording (to be posted), [handwritten notes](https://www.dropbox.com/s/xnowl6zoe1js1t8/18.06%20Fall%2022%20Exam%20Reviews.pdf?dl=0), and practice problems: [spring 2022 exam 1](https://github.com/mitmath/1806/blob/spring22/exams/exam1.pdf) problems 1 and 3 ([solutions](https://github.com/mitmath/1806/blob/spring22/exams/exam1sol.pdf)), fall 2014 exam 1 (below) problem 4, spring 2008 exam 1 (below) problem 1, [spring 2022 final exam](https://github.com/mitmath/1806/blob/spring22/exams/final.pdf) problems 1 and 5 ([solutions](https://github.com/mitmath/1806/blob/spring22/exams/finalsol.pdf)).
 
 Some practice problems: [spring 2017 exam 1](http://web.mit.edu/18.06/www/Spring17/exam1.pdf) problems 1–4 ([solutions](http://web.mit.edu/18.06/www/Spring17/exam1-sol.pdf)); [fall 2017 exam 1](https://github.com/stevengj/1806/blob/fall17/exams/exam1.pdf) problems 1-4 ([solutions](https://github.com/stevengj/1806/blob/fall17/exams/exam1-sol.pdf)); [fall 2017 exam 2](https://github.com/stevengj/1806/blob/fall17/exams/exam2.pdf) problem 1a,b ([solutions](https://github.com/stevengj/1806/blob/fall17/exams/exam2-sol.pdf));
 [fall 2014 exam 1](http://web.mit.edu/18.06/www/Fall14/midterm1_F14.pdf) problems 1, 2, 3, 4c/d/e  ([solutions](http://web.mit.edu/18.06/www/Fall14/Midterm1solF14.pdf));
