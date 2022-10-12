@@ -334,3 +334,15 @@ Some practice problems: [spring 2017 exam 1](http://web.mit.edu/18.06/www/Spring
 [fall 2009 exam 1](http://web.mit.edu/18.06/www/Fall09/exam1.pdf) problems 1, 2, 3, 4 ([solutions](http://web.mit.edu/18.06/www/Fall09/exam1soln.pdf));
 [spring 2008 exam 1](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08.pdf) problems 1, 3, 4
 ([solutions](http://web.mit.edu/18.06/www/Spring08/quiz1-1806-S08-soln.pdf))
+
+## Lecture 13 (Oct 12)
+
+* handwritten notes and lecture video (see links above).
+
+Started talking about **orthogonal projection**: for any subspace S ⊆ V, any vector b ∈ S can be written as a sum of two vectors, one in S and one in S<sup>⟂</sup>.   The former is the orthogonal projection Pb of b onto S, where P is the *projection matrix*, and the latter is b–Pb=(I–P)b (the orthogonal projection of b onto S<sup>⟂</sup>).  Covered:
+
+* Projection matrix P = aaᵀ/aᵀa onto 1d subspaces with a basis vector a.  If a=q (normalized), then P = qqᵀ
+* Projection matrix P = A(AᵀA)⁻¹Aᵀ onto n-dimensional subspaces C(A), where A is m×n with full column rank (rank n), i.e. its columns are a basis.
+* Projection onto C(Q), i.e. a subspace with an orthonormal basis is simply QQᵀ.
+
+**Further reading:** Textbook 4.2; video [lecture 15](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-15-projections-onto-subspaces/).
