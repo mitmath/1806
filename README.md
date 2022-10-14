@@ -359,9 +359,9 @@ More on projections:
 
 * Key properties P²=P, P=Pᵀ, C(P)=C(A), N(P)=C(A)<sup>⟂</sup>=N(Aᵀ).
 * P = I for full-column-rank A.
-* Why AᵀA is invertible for full-column-rank A: rank(AᵀA) = rank(A), N(AᵀA) = N(A), and C(Aᵀ) = C(AᵀA).
+* Why AᵀA is invertible for full-column-rank A, and why the normal equations AᵀAx̂=Aᵀb are solvable for *any* A: rank(AᵀA) = rank(A), N(AᵀA) = N(A), and C(Aᵀ) = C(AᵀA).
 * Projection I-P onto the orthogonal complement of C(A), i.e onto N(Aᵀ).
-* Equivalence between orthogonal projection and least-squares: minimizing ‖b-Ax‖ is equivalent to minimizing ‖b-y‖ over y∈C(A), and the solution is y=Ax̂=Pb, where AᵀAx̂=Aᵀb.
+* Equivalence between orthogonal projection and least-squares: minimizing ‖b-Ax‖ is equivalent to minimizing ‖b-y‖ over y∈C(A), and the solution is p=Ax̂=Pb, where AᵀAx̂=Aᵀb.
 
 Introduced the topic of least-square approximation: the projection p=Ax̂ of b onto C(A) is the *closest* vector to b in C(A), and hence is the solution that *minimizes* ‖b-Ax‖ over all possible x.  The vector x̂ is an **approximate solution** to Ax=b that *minimizes* the error ‖b-Ax‖ when no exact solution exists.
 
