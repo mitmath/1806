@@ -353,7 +353,7 @@ Started talking about **orthogonal projection**: for any subspace S ⊆ V, any v
 
 * handwritten notes and lecture video (see links above).
 * [pset 5 solutions](psets/pset5sol.ipynb)
-* pset 6: coming soon, due Oct 21
+* [pset 6](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset6.ipynb) due Oct 21
 
 More on projections:
 
