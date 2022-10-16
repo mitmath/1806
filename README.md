@@ -358,7 +358,7 @@ Started talking about **orthogonal projection**: for any subspace S ⊆ V, any v
 More on projections:
 
 * Key properties P²=P, P=Pᵀ, C(P)=C(A), N(P)=C(A)<sup>⟂</sup>=N(Aᵀ).
-* P = I for full-column-rank A.
+* P = I for full-row-rank A, for which C(A) is all of ℝᵐ.
 * Why AᵀA is invertible for full-column-rank A, and why the normal equations AᵀAx̂=Aᵀb are solvable for *any* A: rank(AᵀA) = rank(A), N(AᵀA) = N(A), and C(Aᵀ) = C(AᵀA).
 * Projection I-P onto the orthogonal complement of C(A), i.e onto N(Aᵀ).
 * Equivalence between orthogonal projection and least-squares: minimizing ‖b-Ax‖ is equivalent to minimizing ‖b-y‖ over y∈C(A), and the solution is p=Ax̂=Pb, where AᵀAx̂=Aᵀb.
