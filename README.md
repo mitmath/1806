@@ -341,7 +341,7 @@ Some practice problems: [spring 2017 exam 1](http://web.mit.edu/18.06/www/Spring
 
 * handwritten notes and lecture video (see links above).
 
-Started talking about **orthogonal projection**: for any subspace S ⊆ V, any vector b ∈ S can be written as a sum of two vectors, one in S and one in S<sup>⟂</sup>.   The former is the orthogonal projection Pb of b onto S, where P is the *projection matrix*, and the latter is b–Pb=(I–P)b (the orthogonal projection of b onto S<sup>⟂</sup>).  Covered:
+Started talking about **orthogonal projection**: for any subspace S ⊆ V, any vector b ∈ V can be written as a sum of two vectors, one in S and one in S<sup>⟂</sup>.   The former is the orthogonal projection Pb of b onto S, where P is the *projection matrix*, and the latter is b–Pb=(I–P)b (the orthogonal projection of b onto S<sup>⟂</sup>).  Covered:
 
 * Projection matrix P = aaᵀ/aᵀa onto 1d subspaces with a basis vector a.  If a=q (normalized), then P = qqᵀ
 * Projection matrix P = A(AᵀA)⁻¹Aᵀ onto n-dimensional subspaces C(A), where A is m×n with full column rank (rank n), i.e. its columns are a basis.
