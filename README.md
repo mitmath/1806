@@ -411,6 +411,7 @@ This is not unusual: there is often a difference between the way we conceptually
 ## Lecture 17 (Oct 21)
 
 * lecture video (see link above).
+* [SVD introduction](https://nbviewer.org/github/stevengj/1806/blob/master/notes/SVD-intro.ipynb)
 * [pset 6 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset6sol.ipynb)
 * [pset 7](psets/pset7.ipynb): due Friday Oct 28.
 
