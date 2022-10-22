@@ -412,7 +412,7 @@ This is not unusual: there is often a difference between the way we conceptually
 
 * lecture video (see link above).
 * [pset 6 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset6sol.ipynb)
-* pset 7: to be posted, due Friday Oct 28.
+* [pset 7](psets/pset7.ipynb): due Friday Oct 28.
 
 Guest lecture by Prof. Alan Edelman.
 
