@@ -412,11 +412,14 @@ This is not unusual: there is often a difference between the way we conceptually
 
 * lecture video (see link above).
 * [SVD introduction](https://nbviewer.org/github/stevengj/1806/blob/master/notes/SVD-intro.ipynb)
+* [SVD low-rank approximation demos](https://computationalthinking.mit.edu/Spring21/structure/) from the spring 2021 *Computational Thinking* class
 * [pset 6 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset6sol.ipynb)
 * [pset 7](psets/pset7.ipynb): due Friday Oct 28.
 
 Guest lecture by Prof. Alan Edelman.
 
-Introduction to the [singular value decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition) (**SVD**) and its application to [low rank approximation](https://en.wikipedia.org/wiki/Low-rank_approximation).
+Introduction to the [singular value decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition) (**SVD**), the fact that it gives the "right" orthonormal bases for the row and column spaces of a matrix, and its application to [low rank approximation](https://en.wikipedia.org/wiki/Low-rank_approximation).
+
+(Traditionally, the SVD is often left to near the end of an introductory linear algebra course.  One reason for this is that it takes a lot of linear-algebra machinery to *derive* the SVD, much less to calculate yourself.  In fact, it is almost completely impractical to compute by hand except for the nearly useless 2×2 case.   So at this point, **don't worry** about *why* the SVD exists, and trust Julia to calculate it for you.  The main goal for now is to understand what the SVD tells you once you have it.)
 
 **Further reading:** Beware that there are several slightly different forms of the SVD; what I've used here is called the "compact" SVD on Wikipedia and is denoted by an "r" subscript in Strang section 7.2; you can expand this to other forms by augmenting U and V with bases for the left and right nullspaces, respectively, and correspondingly adding rows and columns of zeros to Σ.   Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/).  Note, however, that the connection of SVD to eigenvalues/eigenvectors of AᵀA is something that we won't cover until later in 18.06.   A cool example that uses the SVD to pull out a few key vectors from a big pile of data is the [eigenwalker demo](https://www.biomotionlab.ca/html5-bml-walker/).  The name for this technique in statistics is [principal component analysis (PCA)](https://en.wikipedia.org/wiki/Principal_component_analysis).  Strang section 4.2 on orthogonal projection.
