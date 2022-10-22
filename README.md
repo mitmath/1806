@@ -407,3 +407,15 @@ Some practical tips to keep in mind if you ever need to do least-squares or orth
 This is not unusual: there is often a difference between the way we conceptually *think* about linear algebra and the more sophisticated tricks that are required to make it *work well* on *large matrices* of real data.
 
 **Further reading:** Strang, section 4.4, and video [lecture 17](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-17-orthogonal-matrices-and-gram-schmidt/).   Many advanced linear-algebra texts talk about the practical aspects of roundoff errors in QR and least-squares, e.g. *Numerical Linear Algebra* by Trefethen and Bau (the 18.335 textbook), but this is beyond the scope of 18.06.   A nice historical review can be found in the article [Gram-Schmidt orthogonalization: 100 years and more](https://doi.org/10.1002/nla.1839).
+
+## Lecture 17 (Oct 21)
+
+* lecture video (see link above).
+* [pset 6 solutions](psets/pset6sol.ipynb)
+* pset 7: to be posted, due Friday Oct 28.
+
+Guest lecture by Prof. Alan Edelman.
+
+Introduction to the [singular value decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition) (**SVD**) and its application to [low rank approximation](https://en.wikipedia.org/wiki/Low-rank_approximation).
+
+**Further reading:** Beware that there are several slightly different forms of the SVD; what I've used here is called the "compact" SVD on Wikipedia and is denoted by an "r" subscript in Strang section 7.2; you can expand this to other forms by augmenting U and V with bases for the left and right nullspaces, respectively, and correspondingly adding rows and columns of zeros to Σ.   Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/).  Note, however, that the connection of SVD to eigenvalues/eigenvectors of AᵀA is something that we won't cover until later in 18.06.   A cool example that uses the SVD to pull out a few key vectors from a big pile of data is the [eigenwalker demo](https://www.biomotionlab.ca/html5-bml-walker/).  The name for this technique in statistics is [principal component analysis (PCA)](https://en.wikipedia.org/wiki/Principal_component_analysis).  Strang section 4.2 on orthogonal projection.
