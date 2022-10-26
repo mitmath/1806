@@ -436,3 +436,13 @@ Showed another important example of orthogonal functions: Fourier series, and in
 **Further reading (polynomials):** For example, see these [TAMU notes on orthogonal polynomials](http://www.math.tamu.edu/~yvorobet/MATH304-503/Lect4-04web.pdf) and [these 18.06 notes on orthogonal polynomials](http://web.mit.edu/18.06/www/Spring09/legendre.pdf), or many other sources, e.g. [this book by Szego (1975)](https://people.math.osu.edu/nevai.1/SZEGO/szego=szego1975=ops=OCR.pdf).
 
 **Further reading (Fourier):** Strang, section 10.5 (Fourier series) and these [18.06 sine-series notes](http://web.mit.edu/18.06/www/Spring09/sines.pdf).  There is a [3blue1brown video](https://youtu.be/r6sGWTCMz2k) on Fourier series, along with many, many other resources and videos you can find online… Fourier series and their generalizations are vastly important for lots of applications as well as being a deep and beautiful mathematical subject for their own sake!
+
+## Lecture 19 (Oct 26)
+
+* [Statistics and PCA](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Statistics-and-PCA.ipynb)
+
+*Finished discussion of Fourier series from last lecture.  We will return to these again in the context of differential equations later in the course.*
+
+Discussed the relationship of mean, variance, and covariance/correlation to linear algebra, expressing them in terms of dot products and projections. Given an m×n matrix A whose columns are a bunch of different datasets, with the means subtracted, defined the covariance matrix S=AAᵀ/(m-1). The right singular vectors of A define a coordinate system of uncorrelated variables, with the squared singular values σ² being the variances in each uncorrelated direction. This is called [principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis) in statistics, and allows us to identify the uncorrelated variables that are responsible for most of the variation (biggest σ²) in the data.
+
+**Further reading:** Strang book, sections 7.3, 12.1, 12.2. Googling "principal components analysis" or looking it up in any applied-statistics textbook will give you a lot more detail and examples.  The fossil example in the notebook is taken from [this AMS review article](https://mathvoices.ams.org/featurecolumn/2021/08/01/principal-component-analysis/).
