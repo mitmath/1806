@@ -451,11 +451,11 @@ Discussed the relationship of mean, variance, and covariance/correlation to line
 
 * handwritten notes
 * [Determinants](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Determinants.ipynb)
-* pset 7 solutions: coming soon
+* [pset 7 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset7sol.ipynb)
 * pset 8: coming soon
 
-Started explaining **determinants** and their properties.  Considering how central a role determinants play for the 2×2 and 3×3 matrices you probably encountered before 18.06, you may be surprised that we didn't get to determinants until now.  The fact of the matter is that determinants play a much less important role in applied linear algebra for larger matrices — with a few exceptions, most things that you would want to use determinants for can be done more effectively in other ways.  They are a useful *conceptual* tool, however, especially for thinking about eigenvalues.
+Introduced **determinants** and their properties.  Considering how central a role determinants play for the 2×2 and 3×3 matrices you probably encountered before 18.06, you may be surprised that we didn't get to determinants until now.  The fact of the matter is that determinants play a much less important role in applied linear algebra for larger matrices — with a few exceptions, most things that you would want to use determinants for can be done more effectively in other ways.  They are a useful *conceptual* tool, however, especially for thinking about eigenvalues.
 
-Following Strang, we will define determinants by starting with a few axioms we want them to obey, then working out more properties and finally a way to compute them.  (In the end, there *is* also a "big formula" for determinants, but it's not very practically useful because it has [n factorial](https://en.wikipedia.org/wiki/Factorial) terms.)
+Following Strang, we will define determinants by starting with a few axioms we want them to obey, then working out many more properties and finally a way to compute them by elimination as ± the product of the pivots.  (In the end, there *is* also a "big formula" for determinants, but it's not very practically useful because it has [n factorial](https://en.wikipedia.org/wiki/Factorial) terms.)  Two of the least obvious properties are det(AB)=(det A)(det B) and det(Aᵀ)=det(A).
 
 **Further reading:** Strang, section 5.1; video [lecture 18](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants).  (We will mostly skip Strang, section 5.2 and 5.3, because the formulas in those sections are not so useful in practice except for tiny matrices.)  Wikipedia has a nice list of [lots of determinant properties](https://en.wikipedia.org/wiki/Determinant), more than we will cover in 18.06.
