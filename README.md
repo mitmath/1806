@@ -446,3 +446,16 @@ Showed another important example of orthogonal functions: Fourier series, and in
 Discussed the relationship of mean, variance, and covariance/correlation to linear algebra, expressing them in terms of dot products and projections. Given an m×n matrix A whose columns are a bunch of different datasets, with the means subtracted, defined the covariance matrix S=AAᵀ/(m-1). The right singular vectors of A define a coordinate system of uncorrelated variables, with the squared singular values σ² being the variances in each uncorrelated direction. This is called [principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis) in statistics, and allows us to identify the uncorrelated variables that are responsible for most of the variation (biggest σ²) in the data.
 
 **Further reading:** Strang book, sections 7.3, 12.1, 12.2. Googling "principal components analysis" or looking it up in any applied-statistics textbook will give you a lot more detail and examples.  The fossil example in the notebook is taken from [this AMS review article](https://mathvoices.ams.org/featurecolumn/2021/08/01/principal-component-analysis/).
+
+## Lecture 20 (Oct 28)
+
+* handwritten notes
+* [Determinants](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Determinants.ipynb)
+* pset 7 solutions: coming soon
+* pset 8: coming soon
+
+Started explaining **determinants** and their properties.  Considering how central a role determinants play for the 2×2 and 3×3 matrices you probably encountered before 18.06, you may be surprised that we didn't get to determinants until now.  The fact of the matter is that determinants play a much less important role in applied linear algebra for larger matrices — with a few exceptions, most things that you would want to use determinants for can be done more effectively in other ways.  They are a useful *conceptual* tool, however, especially for thinking about eigenvalues.
+
+Following Strang, we will define determinants by starting with a few axioms we want them to obey, then working out more properties and finally a way to compute them.  (In the end, there *is* also a "big formula" for determinants, but it's not very practically useful because it has [n factorial](https://en.wikipedia.org/wiki/Factorial) terms.)
+
+**Further reading:** Strang, section 5.1; video [lecture 18](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants).  (We will mostly skip Strang, section 5.2 and 5.3, because the formulas in those sections are not so useful in practice except for tiny matrices.)  Wikipedia has a nice list of [lots of determinant properties](https://en.wikipedia.org/wiki/Determinant), more than we will cover in 18.06.
