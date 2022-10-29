@@ -452,7 +452,7 @@ Discussed the relationship of mean, variance, and covariance/correlation to line
 * handwritten notes
 * [Determinants](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Determinants.ipynb)
 * [pset 7 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset7sol.ipynb)
-* pset 8: coming soon
+* [pset 8](psets/pset8.ipynb): due Friday Nov 4
 
 Introduced **determinants** and their properties.  Considering how central a role determinants play for the 2×2 and 3×3 matrices you probably encountered before 18.06, you may be surprised that we didn't get to determinants until now.  The fact of the matter is that determinants play a much less important role in applied linear algebra for larger matrices — with a few exceptions, most things that you would want to use determinants for can be done more effectively in other ways.  They are a useful *conceptual* tool, however, especially for thinking about eigenvalues.
 
