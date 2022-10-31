@@ -462,6 +462,8 @@ Following Strang, we will define determinants by starting with a few axioms we w
 
 ## Lecture 21 ([Oct 31](https://youtu.be/ZVuToMilP0A))
 
+* handwritten notes and lecture video (see links above).
+
 Discussed briefy why |det A| is the volume of an m-dimensional parallelepiped whose edges are the columns of A, and det A is a signed volume: the volume obeys the same 3 axioms as the determinant.  This is why Jacobian factors |det J| arise from changes of variables in 18.02, because they relate the volumes of little hypercubes dxdydz in two coordinate systems.  **END OF EXAM-2 MATERIAL.**
 
 Started on our main topic for exam 3, **eigenvalues and eigenvectors**.  The goal, for an m×m matrix A, is to find a "magic" vector x≠0 such that Ax=λx: for this special "eigenvector", the **matrix acts just like a scalar** λ (the "eigenvalue").   For such a vector, all of linear algebra would become trivially easy, for example A³x=λ³x and A⁻¹x=x/λ.  It turns out that we can almost always find a *basis* of m eigenvectors, in which case the general procedure is:
