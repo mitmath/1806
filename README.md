@@ -459,3 +459,25 @@ Introduced **determinants** and their properties.  Considering how central a rol
 Following Strang, we will define determinants by starting with a few axioms we want them to obey, then working out many more properties and finally a way to compute them by elimination as ± the product of the pivots.  (In the end, there *is* also a "big formula" for determinants, but it's not very practically useful because it has [n factorial](https://en.wikipedia.org/wiki/Factorial) terms.)  Two of the least obvious properties are det(AB)=(det A)(det B) and det(Aᵀ)=det(A).
 
 **Further reading:** Strang, section 5.1; video [lecture 18](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-18-properties-of-determinants).  (We will mostly skip Strang, section 5.2 and 5.3, because the formulas in those sections are not so useful in practice except for tiny matrices.)  Wikipedia has a nice list of [lots of determinant properties](https://en.wikipedia.org/wiki/Determinant), more than we will cover in 18.06.
+
+## Lecture 21 ([Oct 31](https://youtu.be/ZVuToMilP0A))
+
+Discussed briefy why |det A| is the volume of an m-dimensional parallelepiped whose edges are the columns of A, and det A is a signed volume: the volume obeys the same 3 axioms as the determinant.  This is why Jacobian factors |det J| arise from changes of variables in 18.02, because they relate the volumes of little hypercubes dxdydz in two coordinate systems.  **END OF EXAM-2 MATERIAL.**
+
+Started on our main topic for exam 3, **eigenvalues and eigenvectors**.  The goal, for an m×m matrix A, is to find a "magic" vector x≠0 such that Ax=λx: for this special "eigenvector", the **matrix acts just like a scalar** λ (the "eigenvalue").   For such a vector, all of linear algebra would become trivially easy, for example A³x=λ³x and A⁻¹x=x/λ.  It turns out that we can almost always find a *basis* of m eigenvectors, in which case the general procedure is:
+
+1. Find m linearly independent eigenvectors x₁,x₂,…,xₘ and corresponding eigenvalues λ₁,λ₂,…,λₘ.   (This is almost always possible; the rare "defective" exceptions will be dealt with much later in 18.06.)
+
+2. For an arbitrary vector y, expand it in the **basis** of these eigenvectors.
+
+3. Anything you want to do with the matrix A (e.g. Aⁿ, A⁻¹, eᴬ, …) becomes just a number (e.g. λⁿ, λ⁻¹, exp(λ), …) acting on an eigenvector.  Do this term-by-term on each eigenvector for the expansion of y in the eigenvector basis.
+
+The trick for (1) is to figure out **for which λ an eigenvector exists**, and the key is to realize that Ax=λx is equivalent to (A-λI)x=0: an **eigenvector is a nonzero vector in N(A-λI)**.  Such a nonzero nullspace vector only exists when A-λI is singular, or equivalently **det(A-λI)=0**.  This gives us a way (in principle) to find eigenvalues λ, and then to find the corresponding eigenvectors x: find the roots λₖ of the [characteristic polynomial](https://en.wikipedia.org/wiki/Characteristic_polynomial) det(A-λI), a degree-m polynomial, and then eigenvectors are a basis for each nullspace (A-λₖI).
+
+The characteristic polynomial det(A–λI)
+is a good way to *think* about eigenvalue problems: e.g. it tells you immediately
+to expect ≤ m eigenvalues, possibly complex, from an m×m matrix.  Almost always, we will have m distinct roots λₖ; the weird case of repeated roots is mostly something we'll avoid until later.
+But it is not
+really a good way to *compute* them in practice except for tiny (e.g. 2×2) matrices.   In fact, since there is [no quintic formula](https://en.wikipedia.org/wiki/Abel%E2%80%93Ruffini_theorem) for the roots of a degree-5 (or higher) polynomial, eigenvalue algorithms look fundamentally different from eigenvalues like Gaussian elimination or Gram—Schmidt: they are procedures that *approach* the eigenvalues λ (to any desired accuracy) but never exactly reach them, and efficient algorithms were only [discovered starting around 1960](https://www.atm.org.uk/write/MediaUploads/Resources/Mid_Plenary_FrancisGolub.pdf).  So, the emphasis in 18.06 is less about *calculating* eigenvalues/eigenvectors and more about *using* and *interpreting* them, and relating their properties to the structure of the matrix.
+
+ **Further reading (eigenvalues):** Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).   The Julia notebook [Eigenvalues and polynomials](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Eigenvalue-Polynomials.ipynb) also summarizes the same points as above, with more computed examples.
