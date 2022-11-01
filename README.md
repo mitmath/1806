@@ -483,3 +483,16 @@ But it is not
 really a good way to *compute* them in practice except for tiny (e.g. 2×2) matrices.   In fact, since there is [no quintic formula](https://en.wikipedia.org/wiki/Abel%E2%80%93Ruffini_theorem) for the roots of a degree-5 (or higher) polynomial, eigenvalue algorithms look fundamentally different from eigenvalues like Gaussian elimination or Gram—Schmidt: they are procedures that *approach* the eigenvalues λ (to any desired accuracy) but never exactly reach them, and efficient algorithms were only [discovered starting around 1960](https://www.atm.org.uk/write/MediaUploads/Resources/Mid_Plenary_FrancisGolub.pdf).  So, the emphasis in 18.06 is less about *calculating* eigenvalues/eigenvectors and more about *using* and *interpreting* them, and relating their properties to the structure of the matrix.
 
  **Further reading (eigenvalues):** Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).   The Julia notebook [Eigenvalues and polynomials](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Eigenvalue-Polynomials.ipynb) also summarizes the same points as above, with more computed examples.
+
+
+## Exam 2 (Nov `14): 11am in 26-100
+
+Exam 2 will cover the material through **lecture 21** and **pset 8**: it will include exam-1 material, but will focus mainly on **everything to do with orthogonality**.  Transposes and dot products, orthogonal subspaces/complements, projections, least-square solutions, orthogonal/orthonormal bases, Gram–Schmidt and QR factorization, orthogonal functions, and the SVD.   Matrix-calculus topics may also be included, as may determinants.
+
+(*Not* covered: eigenvalue problems and subsequent material.)
+
+The exam is **closed book/notes**. (No calculators or computers either.)
+
+* (Optional) **review session**: Thursday 5/6 4–5pm [via Zoom](https://mit.zoom.us/j/98031703967?pwd=THIxRnRLODNGU0pJYTlMdEE0T2VZQT09).  A recording, notes, and a list of practice problems will be posted.
+
+**Practice problems:** Coming soon.
