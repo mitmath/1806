@@ -484,6 +484,19 @@ really a good way to *compute* them in practice except for tiny (e.g. 2×2) matr
 
  **Further reading (eigenvalues):** Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).   The Julia notebook [Eigenvalues and polynomials](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Eigenvalue-Polynomials.ipynb) also summarizes the same points as above, with more computed examples.
 
+## Lecture 22 (Nov 3)
+
+* [Recurrences and Fibonacci numbers](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Fibonacci.ipynb)
+* [Markov matrices](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Markov.ipynb)
+* pset 8 solutions: coming soon
+* pset 9: a short pset due **Wed** Nov 9.
+
+As an application of matrix powers, considered the famous [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number) 1,1,2,3,5,8,13,21,….  The n-th Fibonacci number fₙ satisfies the [linear recurrence relation](http://mathworld.wolfram.com/LinearRecurrenceEquation.html) fₙ=fₙ₋₁+fₙ₋₂, which we can express in terms of multiplication by a 2×2 matrix F that gives (fₙ,fₙ₋₁) from (fₙ₋₁,fₙ₋₂).  We found that the eigenvalues of F are (1±√5)/2.  The larger of these eigenvalues, (1+√5)/2≈1.618, is the so-called [golden ratio](https://en.wikipedia.org/wiki/Golden_ratio), and it means that the Fibonacci numbers blow up exponentially fast for large n.  Furthermore, we showed that the *ratio* fₙ/fₙ₋₁ of successive Fibonacci numbers goes to the golden ratio for large n.   Checked these facts numerically with a Julia notebook.
+
+As another example of matrix powers, considered [Markov matrices](https://en.wikipedia.org/wiki/Stochastic_matrix) (particularly positive Markov matrices), their eigenvalues, and the *steady state* solution.  These have lots of useful applications in statistics and other fields.
+
+**Further reading:** Strang, section 10.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).   Another fun application of Markov matrices is to analyze simple games, as reviewed in my notebook on [Analyzing Chutes & Ladders](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Chutes-and-Ladders.ipynb).
+
 
 ## Exam 2 (Nov `14): 11am in 26-100
 
