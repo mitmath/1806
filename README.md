@@ -484,8 +484,24 @@ really a good way to *compute* them in practice except for tiny (e.g. 2×2) matr
 
  **Further reading (eigenvalues):** Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).   The Julia notebook [Eigenvalues and polynomials](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Eigenvalue-Polynomials.ipynb) also summarizes the same points as above, with more computed examples.
 
-## Lecture 22 (Nov 3)
+## Lecture 22 (Nov 2)
 
+Eigenproblem properties and examples.
+
+Went through a 2×2 example, showed how to compute matrix powers Aⁿ on an arbitrary vector by expanding in the basis of eigenvectors — for large powers n, Aⁿx will asymptotically be parallel to an *eigenvector for the largest |λ|* (unless that basis coefficient happens to be *exactly* zero).
+
+More generally, given eigenvalues λ₁,λ₂,…,λₘ and eigenvectors x₁,x₂,…,xₘ of an m×m matrix A, we *immediately* know eigensolutions for:
+
+* powers Aⁿ: same eigenvectors x₁,x₂,…,xₘ, new eigenvalues λ₁ⁿ,λ₂ⁿ,…,λₘⁿ
+* shifts A+μI (any scalar μ): same eigenvectors x₁,x₂,…,xₘ, shifted eigenvalues λ₁+μ,λ₂+μ,…,λₘ+μ
+* scaling μA (any scalar μ): same eigenvectors x₁,x₂,…,xₘ, scaled eigenvalues μλ₁,μλ₂,…,μλₘ
+* transposes Aᵀ: *same* eigenvalues λ₁,λ₂,…,λₘ, but in general *different* eigenvectors y₁,y₂,…,yₘ called the "left" eigenvectors of A (since yₖᵀA = λₖyₖᵀ).    This is closely analogous to N(A) and N(Aᵀ): for square A, these have the same dimension, but different vectors; in fact, nonzero vectors in a nullspace are just eigenvectors with λ=0!
+
+Even for real matrices, we may in general have **complex** eigenvalues (and eigenvectors), because real-coefficient polynomials can have complex roots.  Went through a 2×2 example with complex eigenvalues.   *If* the matrix is real, however, the complex eigenvalues/eigenvectors (if any) must come in **complex-conjugate pairs**.
+
+## Lecture 23 (Nov 4)
+
+* handwritten notes and lecture video (see links above).
 * [Recurrences and Fibonacci numbers](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Fibonacci.ipynb)
 * [Markov matrices](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Markov.ipynb)
 * pset 8 solutions: coming soon
