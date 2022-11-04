@@ -486,6 +486,8 @@ really a good way to *compute* them in practice except for tiny (e.g. 2×2) matr
 
 ## Lecture 22 (Nov 2)
 
+* handwritten notes and lecture video (see links above).
+
 Eigenproblem properties and examples.
 
 Went through a 2×2 example, showed how to compute matrix powers Aⁿ on an arbitrary vector by expanding in the basis of eigenvectors — for large powers n, Aⁿx will asymptotically be parallel to an *eigenvector for the largest |λ|* (unless that basis coefficient happens to be *exactly* zero).
