@@ -524,6 +524,6 @@ Exam 2 will cover the material through **lecture 21** and **pset 8**: it will in
 
 The exam is **closed book/notes**. (No calculators or computers either.)
 
-* (Optional) **review session**: Thursday 5/6 4–5pm [via Zoom](https://mit.zoom.us/j/98031703967?pwd=THIxRnRLODNGU0pJYTlMdEE0T2VZQT09).  A recording, notes, and a list of practice problems will be posted.
+* (Optional) **review session**: Thursday 11/10 4–5pm [via Zoom](https://mit.zoom.us/j/98031703967?pwd=THIxRnRLODNGU0pJYTlMdEE0T2VZQT09).  A recording, notes, and a list of practice problems will be posted.
 
 **Practice problems:** Coming soon.
