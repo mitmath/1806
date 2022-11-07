@@ -513,6 +513,20 @@ As an application of matrix powers, considered the famous [Fibonacci numbers](ht
 
 As another example of matrix powers, considered [Markov matrices](https://en.wikipedia.org/wiki/Stochastic_matrix) (particularly positive Markov matrices), their eigenvalues, and the *steady state* solution.  These have lots of useful applications in statistics and other fields.
 
+## Lecture 24 (Nov 7)
+
+* handwritten notes and lecture video (see links above).
+* [Markov matrices](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Markov.ipynb)
+
+Went over Markov matrices A (nonnegative entries ≥ 0 and columns that sum to 1).  Showed:
+
+* A Markov matrix always has an eigenvalue λ₀=1 and a corresponding "steady state" eigenvector Ax₀=x₀.   This follows immediately by writing the column-sum property of A as oᵀA=oᵀ where o ∈ ℝᵐ is the vector of m 1's: this means that Aᵀo=o, i.e. Aᵀ has an eigenvalue λ=1, and A and Aᵀ have the same eigenvalues.
+* *All* eigenvalues of a Markov matrix have magnitude |λ|≤1.    Showed this by the fact that Markov processes "conserve sums": sum(x)=oᵀx=(oᵀA)x=oᵀ(Ax)=sum(Ax); combined with the nonnegative property, this means that Aⁿx can't blow up, so we can't have a |λ|>1.
+
+The above two properties are *not* enough to guarantee that a "Markov process" Aⁿx converges to a steady state — there might be more than one steady state direction (multiple independent eigenvectors for λ=1) or there might be anοther eigenvalue with |λ|=1 but λ≠1, which will give oscillatory behavior.    In order to have convergence to a steady state, we must have all *other* eigenvalues |λ|<1 (not just ≤1), which it turns out is guaranteed if A is a "positive" Markov matrix (all entries > 0, not just ≥ 0).  (For Markov matrices with zero entries, we might need to check numerically whether they have multiple |λ|=1 eigenvalues.)
+
+The Google [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm is a nice application of Markov matrices and leads us into a discussion of iterative linear-algebra methods for huge matrices, starting with the power method. In particular, the pagerank is essentially an enormous Markov eigenproblem (# web pages by # web pages, whose entries indicate links), too big to even store, but it is *mostly zero* (each web page only links to a few other pages).  Hence, you can multiply by it much more quickly, and because of that the power method (and related methods) can be used to approximately find the steady state.
+
 **Further reading:** Strang, section 10.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).   Another fun application of Markov matrices is to analyze simple games, as reviewed in my notebook on [Analyzing Chutes & Ladders](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Chutes-and-Ladders.ipynb).
 
 
