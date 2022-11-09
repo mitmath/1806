@@ -530,6 +530,26 @@ The Google [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm is a nic
 **Further reading:** Strang, section 10.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).   Another fun application of Markov matrices is to analyze simple games, as reviewed in my notebook on [Analyzing Chutes & Ladders](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Chutes-and-Ladders.ipynb).
 
 
+## Lecture 24 (Nov 7)
+
+* handwritten notes and lecture video (see links above).
+* [pset 9 solutions](psets/pset9.ipynb)
+* pset 10: coming soon, short pset due Friday Nov 18
+
+Covered **diagonalization** of a matrix: the process of expanding a vector in the basis of eigenvectors, then multiplying each one by λ, then adding up the eigenvectors with the new coefficients, can be thought of as the matrix factorization A=XΛX⁻¹, where X is the matrix whose columns are the eigenvectors.   This only works if X is invertible: i.e. when for an m×m matrix A we have m eigenvalues (possibly repeated) and m independent eigenvectors (a *basis* of eigenvectors).  Such a matrix is called **diagonalizable**.
+
+It turns out that **almost all matrices in practice are diagonalizable**, so for the most part we will only deal with diagonalizable matrices in 18.06.  The exceedingly rare exceptions are called **defective** matrices (and can only occur when there are *repeated roots* in the characteristic polynomial); we will talk about such defective (non-diagonalizable) cases much later.
+
+Defined [similar matrices](https://en.wikipedia.org/wiki/Matrix_similarity) B=M⁻¹AM, and showed that similar matrices have the same *eigenvalues* (with eigenvectors related by a factor of M), the same *determinant*, the same *characteristic polynomial*, and the same *trace*.  Defined the [trace](https://en.wikipedia.org/wiki/Trace_(linear_algebra)) of a matrix tr(A),
+and showed tr(AB)=tr(BA) for any m×n matrix A and n×m matrix B.  (We saw in lecture 12 that similar matrices essentially
+represent the *same linear operation in a different coordinate system.*)  In hindsight, we
+now see that a diagonalizable matrix A is *similar to a diagonal matrix Λ*.  Hence, we
+see that det(A) is the *product* of the eigenvalues and tr(A) is the *sum* of the eigenvalues.
+
+For a 2×2 matrix, it follows that det(A-λI)=λ²-λtr(A)+det(A), which is a useful formula when solving 2×2 eigenproblems.
+
+**Further reading:** Strang, section 6.2; video [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/) and video [lecture 28](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-28-similar-matrices-and-jordan-form/).  See also this [Diagonalization](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Diagonalization.ipynb) notebook for Julia.
+
 ## Exam 2 (Nov `14): 11am in 26-100
 
 Exam 2 will cover the material through **lecture 21** and **pset 8**: it will include exam-1 material, but will focus mainly on **everything to do with orthogonality**.  Transposes and dot products, orthogonal subspaces/complements, projections, least-square solutions, orthogonal/orthonormal bases, Gram–Schmidt and QR factorization, orthogonal functions, and the SVD.   Matrix-calculus topics may also be included, as may determinants.  (Note that we only covered properties of determinants, but not "cofactor formulas", so ignore cofactor-related materials on previous exams!)
