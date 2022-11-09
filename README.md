@@ -534,7 +534,7 @@ The Google [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm is a nic
 
 * handwritten notes and lecture video (see links above).
 * [pset 9 solutions](psets/pset9sol.ipynb)
-* pset 10: coming soon, short pset due Friday Nov 18
+* [pset 10](psets/pset10.ipynb): short pset due Friday Nov 18
 
 Covered **diagonalization** of a matrix: the process of expanding a vector in the basis of eigenvectors, then multiplying each one by λ, then adding up the eigenvectors with the new coefficients, can be thought of as the matrix factorization A=XΛX⁻¹, where X is the matrix whose columns are the eigenvectors.   This only works if X is invertible: i.e. when for an m×m matrix A we have m eigenvalues (possibly repeated) and m independent eigenvectors (a *basis* of eigenvectors).  Such a matrix is called **diagonalizable**.
 
