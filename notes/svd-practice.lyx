@@ -353,7 +353,7 @@ u_{1} & u_{2} & u_{3} & u_{4}\end{array}\right)}_{U=4\times4\text{ unitary}}\und
  &  & 0\\
  &  & 0
 \end{array}\right)}_{\Sigma=4\times3}\underbrace{\left(\begin{array}{ccc}
-v_{1} & v_{2} & v_{3}\end{array}\right)^{T}}_{V^{T}=3\times3\text{ unitary}}.$
+v_{1} & v_{2} & v_{3}\end{array}\right)^{T}}_{(V=3\times3\text{ unitary})^{T}}.$
 \end_inset
 
 
@@ -370,7 +370,7 @@ u_{1} & u_{2}\end{array}\right)}_{U=4\times2}\underbrace{\left(\begin{array}{cc}
 \sigma_{1}\\
  & \sigma_{2}
 \end{array}\right)}_{\Sigma=2\times2}\underbrace{\left(\begin{array}{cc}
-v_{1} & v_{2}\end{array}\right)^{T}}_{V^{T}=2\times3}.$
+v_{1} & v_{2}\end{array}\right)^{T}}_{(V=3\times2)^{T}}.$
 \end_inset
 
 
@@ -388,7 +388,7 @@ u_{1} & u_{2} & u_{3}\end{array}\right)}_{U=4\times3}\underbrace{\left(\begin{ar
  & \sigma_{2}\\
  &  & 0
 \end{array}\right)}_{\Sigma=3\times3}\underbrace{\left(\begin{array}{ccc}
-v_{1} & v_{2} & v_{3}\end{array}\right)^{T}}_{V=3\times3\text{ unitary}}.$
+v_{1} & v_{2} & v_{3}\end{array}\right)^{T}}_{(V=3\times3\text{ unitary})^{T}}.$
 \end_inset
 
 
