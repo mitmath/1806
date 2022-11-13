@@ -1,0 +1,1888 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+SVD review problems for 18.06
+\end_layout
+
+\begin_layout Author
+Steven G.
+ Johnson, MIT Applied Mathematics
+\end_layout
+
+\begin_layout Section
+SVD variants
+\end_layout
+
+\begin_layout Standard
+One of the confusing things about the SVD is that there are a few different
+ conventions for the sizes of the various matrices, and this can make it
+ more difficult to compare exam and homework questions from different textbooks,
+ semesters, and instructors.
+ If 
+\begin_inset Formula $A$
+\end_inset
+
+ is an 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ matrix (of real numbers) of rank 
+\begin_inset Formula $r$
+\end_inset
+
+, then the main variants of the SVD 
+\begin_inset Formula $A=U\Sigma V^{T}$
+\end_inset
+
+ are:
+\end_layout
+
+\begin_layout Enumerate
+The 
+\series bold
+
+\begin_inset Quotes eld
+\end_inset
+
+full
+\begin_inset Quotes erd
+\end_inset
+
+ SVD
+\series default
+: 
+\begin_inset Formula $U$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times m$
+\end_inset
+
+ and 
+\begin_inset Formula $V$
+\end_inset
+
+ is 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ (i.e.
+ both are 
+\emph on
+unitary
+\emph default
+), and 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The 
+\series bold
+
+\begin_inset Quotes eld
+\end_inset
+
+compact
+\begin_inset Quotes erd
+\end_inset
+
+ SVD
+\series default
+: 
+\begin_inset Formula $U$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times r$
+\end_inset
+
+, 
+\begin_inset Formula $V$
+\end_inset
+
+ is 
+\begin_inset Formula $n\times r$
+\end_inset
+
+, and 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ is 
+\begin_inset Formula $r\times r$
+\end_inset
+
+.
+ (Sometimes denoted 
+\begin_inset Formula $\hat{U}\hat{\Sigma}\hat{V}^{T}$
+\end_inset
+
+ to distinguish it from the full SVD.)
+\end_layout
+
+\begin_layout Enumerate
+The 
+\series bold
+
+\begin_inset Quotes eld
+\end_inset
+
+thin
+\begin_inset Quotes erd
+\end_inset
+
+ SVD
+\series default
+: 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times m$
+\end_inset
+
+ or 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, 
+\series bold
+whichever is smaller
+\series default
+.
+ Hence, there are two cases:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A is 
+\begin_inset Quotes eld
+\end_inset
+
+tall
+\begin_inset Quotes erd
+\end_inset
+
+ (
+\begin_inset Formula $m\ge n$
+\end_inset
+
+): 
+\begin_inset Formula $U$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times n$
+\end_inset
+
+, 
+\begin_inset Formula $V$
+\end_inset
+
+ is 
+\begin_inset Formula $n\times n$
+\end_inset
+
+, 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ is 
+\begin_inset Formula $n\times n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+A is 
+\begin_inset Quotes eld
+\end_inset
+
+wide
+\begin_inset Quotes erd
+\end_inset
+
+ (
+\begin_inset Formula $m\le n$
+\end_inset
+
+): 
+\begin_inset Formula $U$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times m$
+\end_inset
+
+, 
+\begin_inset Formula $V$
+\end_inset
+
+ is 
+\begin_inset Formula $n\times m$
+\end_inset
+
+, 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times m$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+For example, suppose that 
+\begin_inset Formula $A$
+\end_inset
+
+ is a 
+\begin_inset Formula $4\times3$
+\end_inset
+
+ matrix with rank 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Then the three variants would look like:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+full
+\series default
+: 
+\begin_inset Formula $A=\underbrace{\left(\begin{array}{cccc}
+u_{1} & u_{2} & u_{3} & u_{4}\end{array}\right)}_{U=4\times4\text{ unitary}}\underbrace{\left(\begin{array}{ccc}
+\sigma_{1}\\
+ & \sigma_{2}\\
+ &  & 0\\
+ &  & 0
+\end{array}\right)}_{\Sigma=4\times3}\underbrace{\left(\begin{array}{ccc}
+v_{1} & v_{2} & v_{3}\end{array}\right)^{T}}_{V^{T}=3\times3\text{ unitary}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+compact
+\series default
+: 
+\begin_inset Formula $A=\underbrace{\left(\begin{array}{cc}
+u_{1} & u_{2}\end{array}\right)}_{U=4\times2}\underbrace{\left(\begin{array}{cc}
+\sigma_{1}\\
+ & \sigma_{2}
+\end{array}\right)}_{\Sigma=2\times2}\underbrace{\left(\begin{array}{cc}
+v_{1} & v_{2}\end{array}\right)^{T}}_{V^{T}=2\times3}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+thin
+\series default
+: 
+\begin_inset Formula $A=\underbrace{\left(\begin{array}{ccc}
+u_{1} & u_{2} & u_{3}\end{array}\right)}_{U=4\times3}\underbrace{\left(\begin{array}{ccc}
+\sigma_{1}\\
+ & \sigma_{2}\\
+ &  & 0
+\end{array}\right)}_{\Sigma=3\times3}\underbrace{\left(\begin{array}{ccc}
+v_{1} & v_{2} & v_{3}\end{array}\right)^{T}}_{V=3\times3\text{ unitary}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Computer software for the SVD tends to return either the 
+\begin_inset Quotes eld
+\end_inset
+
+thin
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+full
+\begin_inset Quotes erd
+\end_inset
+
+ forms of the SVD, with the latter being smaller and hence more efficient.
+ (The 
+\begin_inset Quotes eld
+\end_inset
+
+compact
+\begin_inset Quotes erd
+\end_inset
+
+ form would be even smaller yet, but it is difficult for a computer with
+ finite precision to distinguish singular values that are very small from
+ actual zeros, i.e.
+\begin_inset space ~
+\end_inset
+
+roundoff errors make it hard to reliably shrink the thin to the compact
+ form.) 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Important features of 
+\emph on
+all
+\emph default
+ SVD variants
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Every
+\emph default
+ variant of the SVD has a number of important features in common:
+\end_layout
+
+\begin_layout Enumerate
+Columns of 
+\begin_inset Formula $U$
+\end_inset
+
+ (
+\begin_inset Quotes eld
+\end_inset
+
+left
+\begin_inset Quotes erd
+\end_inset
+
+ singular vectors 
+\begin_inset Formula $u_{1},u_{2},\ldots$
+\end_inset
+
+) are 
+\series bold
+orthonormal
+\series default
+, and columns of 
+\begin_inset Formula $V$
+\end_inset
+
+ (
+\begin_inset Quotes eld
+\end_inset
+
+right
+\begin_inset Quotes erd
+\end_inset
+
+ singular vectors 
+\begin_inset Formula $v_{1},v_{2},\ldots$
+\end_inset
+
+) are 
+\series bold
+orthonormal
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+The 
+\series bold
+rank
+\series default
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+ is equal to the number of singular values 
+\begin_inset Formula $\sigma_{k}>0$
+\end_inset
+
+, which lie on the 
+\series bold
+diagonal
+\series default
+ of 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The 
+\series bold
+first 
+\begin_inset Formula $r$
+\end_inset
+
+ columns
+\series default
+ 
+\begin_inset Formula $u_{1},\ldots,u_{r}$
+\end_inset
+
+ of 
+\begin_inset Formula $U$
+\end_inset
+
+ (sometimes denoted 
+\begin_inset Formula $\hat{U}$
+\end_inset
+
+) are an orthonormal basis for 
+\begin_inset Formula $C(A)$
+\end_inset
+
+.
+ The 
+\series bold
+first 
+\begin_inset Formula $r$
+\end_inset
+
+ columns
+\series default
+ 
+\begin_inset Formula $v_{1},\ldots,v_{r}$
+\end_inset
+
+ of 
+\begin_inset Formula $V$
+\end_inset
+
+ (sometimes denoted 
+\begin_inset Formula $\hat{V}$
+\end_inset
+
+) are an orthonormal basis for 
+\begin_inset Formula $C(A^{T})$
+\end_inset
+
+.
+ This gives:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A=U\Sigma V^{T}=\sigma_{1}u_{1}v_{1}^{T}+\sigma_{2}u_{2}v_{2}^{T}+\cdots+\sigma_{r}u_{r}v_{r}^{T}$
+\end_inset
+
+.
+ (Any other singular vectors are multiplied by 0's.)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ sends these 
+\begin_inset Formula $r$
+\end_inset
+
+ orthonormal 
+\begin_inset Quotes eld
+\end_inset
+
+input
+\begin_inset Quotes erd
+\end_inset
+
+ vectors 
+\begin_inset Formula $v_{k}$
+\end_inset
+
+ into orthogonal 
+\begin_inset Quotes eld
+\end_inset
+
+outputs
+\begin_inset Quotes erd
+\end_inset
+
+ parallel to 
+\begin_inset Formula $u_{k}$
+\end_inset
+
+: 
+\begin_inset Formula $Av_{k}=\sigma_{k}u_{k}$
+\end_inset
+
+.
+ (This makes it an especially 
+\series bold
+\emph on
+nice
+\emph default
+ orthonormal basis
+\series default
+ for understanding 
+\begin_inset Formula $A$
+\end_inset
+
+, because the orthogonality is 
+\emph on
+preserved
+\emph default
+ by 
+\begin_inset Formula $A$
+\end_inset
+
+.)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+You can get a low-rank 
+\series bold
+approximation
+\series default
+ for 
+\begin_inset Formula $A$
+\end_inset
+
+ (in some sense the 
+\begin_inset Quotes eld
+\end_inset
+
+best
+\begin_inset Quotes erd
+\end_inset
+
+ possible low-rank approximation) by simply 
+\series bold
+dropping
+\series default
+ smaller singular values, i.e.
+ just setting those 
+\begin_inset Formula $\sigma_{k}$
+\end_inset
+
+ terms to 
+\series bold
+zero
+\series default
+.
+ (For convenience, the singular values are conventionally sorted in descending
+ order 
+\begin_inset Formula $\sigma_{1}\ge\sigma_{2}\ge\cdots\ge\sigma_{r}$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Standard
+The only difference between the variants is whether there are 
+\begin_inset Quotes eld
+\end_inset
+
+extra
+\begin_inset Quotes erd
+\end_inset
+
+ columns in 
+\begin_inset Formula $U$
+\end_inset
+
+ and 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Any additional columns beyond the 
+\begin_inset Formula $r$
+\end_inset
+
+-th must be 
+\emph on
+orthogonal
+\emph default
+ to 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ (for 
+\begin_inset Formula $U$
+\end_inset
+
+) or 
+\begin_inset Formula $C(A^{T})$
+\end_inset
+
+ (for 
+\begin_inset Formula $V$
+\end_inset
+
+), and hence must be in 
+\begin_inset Formula $C(A)^{\perp}=N(A^{T})$
+\end_inset
+
+ or 
+\begin_inset Formula $C(A^{T})^{\perp}=N(A)$
+\end_inset
+
+, respectively:
+\end_layout
+
+\begin_layout Enumerate
+Any additional columns of 
+\begin_inset Formula $U$
+\end_inset
+
+ (beyond 
+\begin_inset Formula $u_{r}$
+\end_inset
+
+) are in 
+\begin_inset Formula $N(A^{T})$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $U$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times m$
+\end_inset
+
+ (square/unitary), then these additional 
+\begin_inset Formula $m-r$
+\end_inset
+
+ columns are an orthonormal 
+\emph on
+basis
+\emph default
+ for 
+\begin_inset Formula $N(A^{T})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Any additional columns of 
+\begin_inset Formula $V$
+\end_inset
+
+ (beyond 
+\begin_inset Formula $v_{r}$
+\end_inset
+
+) are in 
+\begin_inset Formula $N(A)$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $V$
+\end_inset
+
+ is 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ (square/unitary), then these additional 
+\begin_inset Formula $n-r$
+\end_inset
+
+ columns are an orthonormal 
+\emph on
+basis
+\emph default
+ for 
+\begin_inset Formula $N(A)$
+\end_inset
+
+.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Quotes eld
+\end_inset
+
+Thin
+\begin_inset Quotes erd
+\end_inset
+
+ SVD practice problems
+\end_layout
+
+\begin_layout Standard
+The following practice problems from previous exams are adapted to the 
+\begin_inset Quotes eld
+\end_inset
+
+thin
+\begin_inset Quotes erd
+\end_inset
+
+ SVD.
+\end_layout
+
+\begin_layout Subsection*
+Spring 2019 quiz 2, problem 1
+\end_layout
+
+\begin_layout Standard
+A random 
+\begin_inset Formula $4\times3$
+\end_inset
+
+ matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ has a thin SVD computed with Julia.
+ The singular values are (to 3 digits): 
+\begin_inset Formula 
+\[
+\sigma_{1},\sigma_{2},\sigma_{3}=2.07,0.996,0.485
+\]
+
+\end_inset
+
+and the corresponding singular vectors are the columns of 
+\begin_inset Formula 
+\[
+U=\left(\begin{array}{ccc}
+-0.534 & 0.697 & 0.397\\
+-0.325 & -0.691 & 0.539\\
+-0.650 & -0.156 & -0.108\\
+-0.431 & -0.108 & -0.735
+\end{array}\right),\qquad V=\left(\begin{array}{ccc}
+-0.392 & 0.466 & 0.793\\
+-0.730 & 0.367 & -0.577\\
+-0.560 & -0.805 & 0.197
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\series bold
+Questions:
+\end_layout
+
+\begin_layout Enumerate
+Is 
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+ invertible? Why or why not?
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $y$
+\end_inset
+
+ is a vector perpendicular to 
+\series bold
+every
+\series default
+ column of 
+\begin_inset Formula $A$
+\end_inset
+
+, find and circle vectors in 
+\begin_inset Formula $U$
+\end_inset
+
+ and/or 
+\begin_inset Formula $V$
+\end_inset
+
+ above that must 
+\series bold
+also
+\series default
+ be 
+\begin_inset Formula $\perp y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Is 
+\begin_inset Formula $AA^{T}$
+\end_inset
+
+ invertible? Why or why not?
+\end_layout
+
+\begin_layout Enumerate
+How many solutions to 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ are likely to exist for a randomly generated 
+\begin_inset Formula $b$
+\end_inset
+
+ such as 
+\begin_inset Formula $b=\left(\begin{array}{c}
+1.26\\
+-0.649\\
+-1.87\\
+-1.67
+\end{array}\right)$
+\end_inset
+
+.
+ Explain briefly.
+\end_layout
+
+\begin_layout Enumerate
+What is the dimension of the 
+\series bold
+orthogonal complement
+\series default
+ of the 
+\series bold
+row space
+\series default
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Solutions:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Yes
+\series default
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ has 3 nonzero singular values, so it is 
+\series bold
+rank 3
+\series default
+ and hence 
+\series bold
+full column rank
+\series default
+.
+ We saw in class that 
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+ and 
+\begin_inset Formula $A$
+\end_inset
+
+ have the 
+\series bold
+same rank
+\series default
+, so 
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+ is a 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ matrix of rank 3 and hence must be invertible.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+In fact, we can explicitly write 
+\begin_inset Formula $(A^{T}A)^{-1}$
+\end_inset
+
+ in terms of the SVD above, since 
+\begin_inset Formula 
+\[
+A^{T}A=(U\Sigma V^{T})^{T}U\Sigma V^{T}=V\Sigma^{T}\cancelto{I}{U^{T}U}\Sigma V^{T}=V\underbrace{\left(\begin{array}{ccc}
+\sigma_{1}^{2}\\
+ & \sigma_{2}^{2}\\
+ &  & \sigma_{3}^{2}
+\end{array}\right)}_{\Sigma^{T}\Sigma=\Sigma^{2}}V^{T},
+\]
+
+\end_inset
+
+using the orthonormal columns of 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $V$
+\end_inset
+
+ is a 
+\emph on
+square
+\emph default
+ matrix with orthonormal columns, it is 
+\emph on
+unitary
+\emph default
+ (
+\begin_inset Formula $V^{T}=V^{-1}$
+\end_inset
+
+), while diagonal matrices like 
+\begin_inset Formula $\Sigma^{2}$
+\end_inset
+
+ are easy to invert, and thus the inverse is: 
+\begin_inset Formula 
+\[
+(A^{T}A)^{-1}=(V^{T})^{-1}\Sigma^{-2}V^{-1}=V\underbrace{\left(\begin{array}{ccc}
+\sigma_{1}^{-2}\\
+ & \sigma_{2}^{-2}\\
+ &  & \sigma_{3}^{-2}
+\end{array}\right)}_{\Sigma^{-2}}V^{T}\:.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y$
+\end_inset
+
+ is in 
+\begin_inset Formula $C(A)^{\perp}$
+\end_inset
+
+, and the first 
+\begin_inset Formula $r=3$
+\end_inset
+
+ columns of 
+\begin_inset Formula $U$
+\end_inset
+
+ (i.e.
+ all the columns in this case) are a 
+\series bold
+basis
+\series default
+ for 
+\begin_inset Formula $C(A)$
+\end_inset
+
+, so 
+\begin_inset Formula $y$
+\end_inset
+
+ must be 
+\series bold
+orthogonal to all three columns of 
+\begin_inset Formula $U$
+\end_inset
+
+
+\series default
+.
+ (Equivalently, 
+\begin_inset Formula $U^{T}y=\vec{0}$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+No
+\series default
+.
+ As in the first part, 
+\begin_inset Formula $\operatorname{rank}(AA^{T})=\operatorname{rank}(A^{T})=\operatorname{rank}(A)=3$
+\end_inset
+
+, so 
+\begin_inset Formula $AA^{T}$
+\end_inset
+
+ is a 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ matrix with rank
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $3$
+\end_inset
+
+ and hence is singular/non-invertible.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+None
+\series default
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ is a 
+\begin_inset Formula $4\times3$
+\end_inset
+
+ matrix with rank 
+\begin_inset Formula $3$
+\end_inset
+
+, so 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ is a 3d subspace of 
+\begin_inset Formula $\mathbb{R}^{4}$
+\end_inset
+
+ — it's vanishingly unlikely that a vector 
+\begin_inset Formula $b$
+\end_inset
+
+ with independently chosen random entries will lie in this subspace.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+0
+\series default
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ is a 
+\begin_inset Formula $4\times3$
+\end_inset
+
+ matrix with rank 
+\begin_inset Formula $3$
+\end_inset
+
+, so its row space 
+\begin_inset Formula $C(A^{T})$
+\end_inset
+
+ is a 
+\begin_inset Formula $3$
+\end_inset
+
+-dimensional subspace of 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ , hence 
+\begin_inset Formula $C(A^{T})=\mathbb{R}^{3}$
+\end_inset
+
+ and its complement is the 0-dimensional subspace 
+\begin_inset Formula $\{\vec{0}\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Spring 2019 practice exam 2, problem 9
+\end_layout
+
+\begin_layout Standard
+Suppose we are given the thin SVD of an 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ on a computer.
+
+\series bold
+ Questions:
+\end_layout
+
+\begin_layout Enumerate
+How would you obtain the rank 
+\begin_inset Formula $r$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+How would you check if 
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+ is invertible?
+\end_layout
+
+\begin_layout Enumerate
+How would you check, given a vector 
+\begin_inset Formula $b$
+\end_inset
+
+, if 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ has a solution?
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ has at least one solution, how could use use the thin SVD to obtain a solution
+ 
+\begin_inset Formula $x$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Solutions:
+\end_layout
+
+\begin_layout Enumerate
+The rank 
+\begin_inset Formula $r$
+\end_inset
+
+ is the number of (nonzero) singular values 
+\begin_inset Formula $\sigma_{k}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(Of course, roundoff errors on a compute throw a wrench into this on a real
+ computer.
+ If 
+\begin_inset Formula $\sigma_{1}$
+\end_inset
+
+ is the biggest singular value, we might treat any singular values 
+\begin_inset Formula $\lesssim10^{-15}\sigma_{1}$
+\end_inset
+
+ as being indistinguishable from zero.)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+ is invertible if 
+\begin_inset Formula $\operatorname{rank}(A^{T}A)=\operatorname{rank}(A)=r$
+\end_inset
+
+ is equal to 
+\begin_inset Formula $n$
+\end_inset
+
+, i.e.
+ if 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\series bold
+full column rank
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+We need to check whether 
+\begin_inset Formula $b\in C(A)$
+\end_inset
+
+.
+ If we let 
+\begin_inset Formula $\hat{U}$
+\end_inset
+
+ denote the first 
+\begin_inset Formula $r$
+\end_inset
+
+ columns of 
+\begin_inset Formula $U$
+\end_inset
+
+, then these are an 
+\series bold
+orthonormal basis 
+\series default
+for 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ and hence projection onto 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ is given by 
+\begin_inset Formula $\hat{U}\hat{U}^{T}$
+\end_inset
+
+.
+ So, 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ is solvable if 
+\begin_inset Formula $\boxed{\hat{U}\hat{U}^{T}b=b}$
+\end_inset
+
+.
+ (On a real computer we would check approximate equality up to many digits,
+ due to roundoff errors.)
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ is solvable, then we can write 
+\begin_inset Formula 
+\[
+b=\hat{U}\underbrace{\hat{U}^{T}b}_{c}=c_{1}u_{1}+c_{2}u_{2}+\cdots+c_{r}u_{r}
+\]
+
+\end_inset
+
+ in the basis of the first 
+\begin_inset Formula $r$
+\end_inset
+
+ left singular vectors (from the previous part, where 
+\begin_inset Formula $c=\hat{U}^{T}b$
+\end_inset
+
+ are the coefficients obtained via dot products).
+ We can look for a particular solution 
+\begin_inset Formula $x$
+\end_inset
+
+ expressed in the 
+\begin_inset Formula $(v_{1}\cdots v_{r})=\hat{V}$
+\end_inset
+
+ basis for 
+\begin_inset Formula $C(A^{T})$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+x=\hat{V}\underbrace{\hat{V}^{T}x}_{y}=y_{1}v_{1}+y_{2}v_{2}+\cdots+y_{r}v_{r}.
+\]
+
+\end_inset
+
+Then 
+\begin_inset Formula 
+\[
+Ax=\underbrace{\sigma_{1}y_{1}}_{c_{1}}u_{1}+\underbrace{\sigma_{2}y_{2}}_{c_{2}}u_{2}+\cdots+\underbrace{\sigma_{r}y_{r}}_{c_{r}}u_{r}=b
+\]
+
+\end_inset
+
+ since 
+\begin_inset Formula $Av_{k}=\sigma_{k}u_{k}$
+\end_inset
+
+, so by inspection we have 
+\begin_inset Formula $y_{k}=c_{k}/\sigma_{k}$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula 
+\[
+\boxed{x=\sigma_{1}^{-1}v_{1}\underbrace{u_{1}^{T}b}_{c_{1}}+\cdots+\sigma_{r}^{-1}v_{r}\underbrace{u_{r}^{T}b}_{c_{r}}=\hat{V}\hat{\Sigma}^{-1}\hat{U}^{T}b},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\hat{\Sigma}$
+\end_inset
+
+ is the 
+\begin_inset Formula $r\times r$
+\end_inset
+
+ diagonal matrix of the first 
+\begin_inset Formula $r$
+\end_inset
+
+ singular values (ala the compact SVD).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+In fact, 
+\begin_inset Formula $\hat{V}\hat{\Sigma}^{-1}\hat{U}^{T}$
+\end_inset
+
+ is something called the 
+\begin_inset Quotes eld
+\end_inset
+
+pseudo-inverse
+\begin_inset Quotes erd
+\end_inset
+
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+, oddly denoted 
+\begin_inset Formula $A^{+}$
+\end_inset
+
+, which generally gives a least-squares solution.
+ When 
+\begin_inset Formula $b\in C(A)$
+\end_inset
+
+, the least-squares solution is an 
+\emph on
+exact 
+\emph default
+solution, which is why this works.
+ But 18.06 doesn't always cover the pseudo-inverse.
+ 
+\series bold
+Probably this problem is too hard for a real exam
+\series default
+ unless the pseudo-inverse was covered in lecturel.
+\end_layout
+
+\begin_layout Subsection*
+Spring 2019 practice exam 2, problem 11
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Questions:
+\end_layout
+
+\begin_layout Enumerate
+Use 
+\begin_inset Formula $Q^{T}Q=I$
+\end_inset
+
+ to show that 
+\begin_inset Formula $\det Q=\pm1$
+\end_inset
+
+ for a (real) unitary matrix 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Show that 
+\begin_inset Formula $\det(A)$
+\end_inset
+
+ is 
+\begin_inset Formula $\pm$
+\end_inset
+
+ the product of its singular values for a non-singular 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Solutions:
+\end_layout
+
+\begin_layout Enumerate
+Using the properties of determinants, 
+\begin_inset Formula $\det(Q^{T}Q)=\underbrace{\det(Q^{T})}_{=\det Q}\det(Q)=(\det Q)^{2}=\det I=1$
+\end_inset
+
+, and the only real numbers whose square 
+\begin_inset Formula $=1$
+\end_inset
+
+ are 
+\begin_inset Formula $\det Q=\pm1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ is a square non-singular 
+\begin_inset Formula $m\times m$
+\end_inset
+
+ matrix, then its SVD is 
+\begin_inset Formula 
+\[
+A=\underbrace{U}_{m\times m}\underbrace{\Sigma}_{m\times m}\underbrace{V^{T}}_{m\times m}
+\]
+
+\end_inset
+
+ (and all of the SVD variants are the same!).
+ Since 
+\begin_inset Formula $U$
+\end_inset
+
+ and 
+\begin_inset Formula $V$
+\end_inset
+
+ are square matrices with orthonormal columns, they are unitary, so 
+\begin_inset Formula 
+\[
+\det A=\cancelto{\pm1}{\det(U)}\det(\Sigma)\cancelto{\pm1}{\det(V^{T})}=\pm\det\Sigma,
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula $\det\Sigma$
+\end_inset
+
+ (being the determinant of a diagonal matrix) is simply the product of the
+ diagonal entries, i.e.
+ the product of the singular values.
+\end_layout
+
+\begin_layout Subsection*
+Spring 2019 practice exam 2, problem 12
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Question:
+\series default
+ Describe how you can use the thin SVD 
+\begin_inset Formula $A=U\Sigma V^{T}$
+\end_inset
+
+ to obtain the projection matrix onto the column space of an 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ matrix 
+\begin_inset Formula $A$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Solution
+\series default
+: The first 
+\begin_inset Formula $r$
+\end_inset
+
+ columns of 
+\begin_inset Formula $U$
+\end_inset
+
+, where 
+\begin_inset Formula $r$
+\end_inset
+
+ is the number of singular values (
+\begin_inset Formula $>0$
+\end_inset
+
+) from the diagonal of 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+, are an orthonormal basis for 
+\begin_inset Formula $C(A)$
+\end_inset
+
+.
+ Denote the first 
+\begin_inset Formula $r$
+\end_inset
+
+ columns by 
+\begin_inset Formula $\hat{U}$
+\end_inset
+
+.
+ Therefore, the projection matrix onto 
+\begin_inset Formula $C(A)=\hat{U}\hat{U}^{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(There is some ambiguity in the rank-0 case.
+ What does a matrix 
+\begin_inset Formula $\hat{U}$
+\end_inset
+
+ with zero columns mean? In this case the projection is simply the 
+\begin_inset Formula $m\times m$
+\end_inset
+
+ matrix of zeros, however, since 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ is 
+\begin_inset Formula $0$
+\end_inset
+
+-dimensional.)
+\end_layout
+
+\begin_layout Subsection*
+Spring 2019 practice exam 2, problem 13
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Question:
+\series default
+ Describe the solution to the least-squares problem of minimizing 
+\begin_inset Formula $\Vert Ax-b\Vert$
+\end_inset
+
+ for an arbitrary 
+\begin_inset Formula $b$
+\end_inset
+
+ (not necessarily in the column space of 
+\begin_inset Formula $A$
+\end_inset
+
+), in terms of the thin SVD 
+\begin_inset Formula $A=U\Sigma V^{T}$
+\end_inset
+
+ of the 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ matrix 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ For simplicity, assume that 
+\begin_inset Formula $A$
+\end_inset
+
+ has full column rank (independent columns).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Solution:
+\series default
+ We are told that 
+\begin_inset Formula $A$
+\end_inset
+
+ has full column rank, i.e.
+ rank 
+\begin_inset Formula $r=n$
+\end_inset
+
+, which means that it is a 
+\begin_inset Quotes eld
+\end_inset
+
+tall
+\begin_inset Quotes erd
+\end_inset
+
+ matrix (
+\begin_inset Formula $m\ge n$
+\end_inset
+
+), there are 
+\begin_inset Formula $n$
+\end_inset
+
+ singular values, and the thin SVD is 
+\begin_inset Formula 
+\[
+\underbrace{A}_{m\times n}=\underbrace{U}_{m\times n}\underbrace{\left(\begin{array}{ccc}
+\sigma_{1}\\
+ & \ddots\\
+ &  & \sigma_{r}
+\end{array}\right)}_{\Sigma=m\times m}\underbrace{V^{T}}_{n\times n}.
+\]
+
+\end_inset
+
+Note, in particular, that the columns of 
+\begin_inset Formula $U$
+\end_inset
+
+ are an orthonormal basis for 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ and 
+\begin_inset Formula $V$
+\end_inset
+
+ is a 
+\emph on
+square
+\emph default
+ unitary (
+\begin_inset Formula $V^{T}=V^{-1}$
+\end_inset
+
+) matrix.
+ There are various ways to proceed, but one option is just to simplify the
+ usual normal-equations formula for the least-squares solution: 
+\begin_inset Formula 
+\begin{align*}
+\hat{x} & =(A^{T}A)^{-1}A^{T}b\\
+ & =\left[(U\Sigma V^{T})^{T}U\Sigma V^{T}\right]^{-1}(U\Sigma V^{T})^{T}b\\
+ & =\left[V\cancelto{\Sigma}{\Sigma^{T}}\cancelto{I}{U^{T}U}\Sigma V^{T}\right]^{-1}V\Sigma U^{T}b\\
+ & =\left[V\Sigma^{2}V^{T}\right]^{-1}V\Sigma U^{T}b\\
+ & =\cancelto{V}{(V^{T})^{-1}}\Sigma^{-2}\cancelto{I}{V^{-1}V}\Sigma U^{T}b\\
+ & =V\Sigma^{-1}U^{T}b=\boxed{V\underbrace{\left(\begin{array}{ccc}
+\sigma_{1}^{-1}\\
+ & \ddots\\
+ &  & \sigma_{r}^{-1}
+\end{array}\right)}_{\Sigma^{-1}}U^{T}b}.
+\end{align*}
+
+\end_inset
+
+That is, we would take the dot products 
+\begin_inset Formula $U^{T}b$
+\end_inset
+
+, then divide by the singular values, then multiply by 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Crucially, this derivation relies on 
+\begin_inset Formula $V$
+\end_inset
+
+ being square, so that we could write 
+\begin_inset Formula $\left[V\Sigma^{2}V^{T}\right]^{-1}$
+\end_inset
+
+ as a product of the inverses in reverse order.
+\end_layout
+
+\begin_layout Itemize
+Related to a comment for a previous problem above, 
+\begin_inset Formula $V\Sigma^{-1}U^{T}$
+\end_inset
+
+ is based on something called the 
+\begin_inset Quotes eld
+\end_inset
+
+pseudo-inverse
+\begin_inset Quotes erd
+\end_inset
+
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+, oddly denoted 
+\begin_inset Formula $A^{+}$
+\end_inset
+
+, which generally gives a least-squares solution from an SVD.
+ But 18.06 doesn't always cover the pseudo-inverse.
+ 
+\series bold
+Probably this problem is too hard for a real exam
+\series default
+, since it is basically trying to teach you the pseudo-inverse.
+\end_layout
+
+\end_body
+\end_document
