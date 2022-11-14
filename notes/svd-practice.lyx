@@ -471,6 +471,14 @@ left
 \series bold
 orthonormal
 \series default
+ vectors in
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\mathbb{R}^{m}$
+\end_inset
+
 , and columns of 
 \begin_inset Formula $V$
 \end_inset
@@ -491,6 +499,14 @@ right
 \series bold
 orthonormal
 \series default
+ vectors in
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
 .
 \end_layout
 
