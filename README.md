@@ -530,7 +530,7 @@ The Google [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm is a nic
 **Further reading:** Strang, section 10.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).   Another fun application of Markov matrices is to analyze simple games, as reviewed in my notebook on [Analyzing Chutes & Ladders](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Chutes-and-Ladders.ipynb).
 
 
-## Lecture 24 (Nov 7)
+## Lecture 25 (Nov 7)
 
 * handwritten notes and lecture video (see links above).
 * [pset 9 solutions](psets/pset9sol.ipynb)
@@ -564,7 +564,7 @@ The exam is **closed book/notes**. (No calculators or computers either.)
 
 **Practice problems:** [spring 2009 practice exam 2](http://web.mit.edu/18.06/www/Spring09/practice-quiz2-S09.pdf) problems 1–17; [spring 2009 exam 2](http://web.mit.edu/18.06/www/Spring09/quiz2-s09.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring09/quiz2-s09-soln.pdf)) problem 1–3; [spring 2017 exam 2](http://web.mit.edu/18.06/www/Spring17/exam2.pdf)  ([solutions](http://web.mit.edu/18.06/www/Spring17/exam2-sol.pdf)) problems 1(b,c), 2, 3; [fall 2014 exam 2](http://web.mit.edu/18.06/www/Fall14/midterm2_F14.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall14/Midterm2solF14.pdf)) problem 1, 2a, 2e, 3a; [spring 2014 exam 2](http://web.mit.edu/18.06/www/Spring14/quiz_2_draft.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring14/StrangExamAprilSolutions.pdf)) problems 1,2,4; [spring 2013 exam 2](http://web.mit.edu/18.06/www/Spring13/Exam2blank.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring13/Exam2.pdf)) problems 1, 2, 3; [fall 2012 exam 2](http://web.mit.edu/18.06/www/Fall12/Exam%202/quiz2-1806-f12.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall12/Exam%202/quiz2-1806-f12-sol.pdf)) problems 1,3; [spring 2019 exam 2](https://github.com/mitmath/1806/blob/spring20/psets/quiz2-1806-S19.pdf) ([solutions](https://github.com/mitmath/1806/blob/spring20/psets/quiz2-1806-S19_solns.pdf)) problems 1 (SVD, slightly different notation), 2, 5 (calculus); [spring 2019 exam 2 practice](https://github.com/mitmath/1806/blob/spring20/psets/Exam%202%20Practice%20.ipynb) ([solutions](https://github.com/mitmath/1806/blob/spring20/psets/midterm_2_practice_problems_solns.ipynb)) problems 4 & 5 (calc), 6 (det), 9 & 10 & 12 & 13 (SVD, slightly different notation); [SVD review problems](notes/svd-practice.pdf) expressed in terms of the "thin SVD" as covered this semester.
 
-## Lecture 25 (Nov 16)
+## Lecture 26 (Nov 16)
 
 Discussed complex eigenvalues of **real** matrices A, and showed:
 
@@ -576,7 +576,7 @@ Key concepts for **complex numbers**: the [complex conjugate](https://en.wikiped
 
 **Further reading** This [brief review of complex numbers](https://web.stanford.edu/~boyd/ee102/complex-primer.pdf) (from Stephen Boyd at Stanford) is at about the level of my lecture.  There are many more basic reviews, e.g. from [Khan academy](https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:complex), that you can find online.  Chapter 9 of Strang's textbook discusses complex vectors and matrices.
 
-## Lecture 26 (Nov 18)
+## Lecture 27 (Nov 18)
 
 * [Ordinary differential equations (ODEs)](https://nbviewer.org/github/mitmath/1806/blob/master/notes/ODEs.ipynb).
 
