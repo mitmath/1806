@@ -558,6 +558,34 @@ Exam 2 will cover the material through **lecture 21** and **pset 8**: it will in
 
 The exam is **closed book/notes**. (No calculators or computers either.)
 
+* Exam and solutions, to be posted **Friday** Nov. 18.
+
 * (Optional) **review session**: Thursday 11/10 4–5pm [via Zoom](https://mit.zoom.us/j/98031703967?pwd=THIxRnRLODNGU0pJYTlMdEE0T2VZQT09): see [video recording](https://mit.zoom.us/rec/share/HgwZS9Z0hn0wS_EU4D9TN80jtfh3QORNOnA0a2ZIpz5vD4FbMC8o5ymfHFXJaQF1.6Wv4HP-vMQtyrOHX?startTime=1668113824000), [handwritten notes](https://www.dropbox.com/s/xnowl6zoe1js1t8/18.06%20Fall%2022%20Exam%20Reviews.pdf?dl=0), and practice problems: [spring 2017 exam 2](https://github.com/mitmath/1806/blob/spring22/exams/exam2.pdf) ([solutions](https://github.com/mitmath/1806/blob/spring22/exams/exam2sol.pdf)) problems 1–3, spring 2017 exam 2 (below) problem 1, spring 2019 exam 2 practice (below) problems 12–13 (replacing the "compact" SVD, which we didn't cover, with "thin" SVD as covered this term … though they are the same thing if A isn't rank-deficient).
 
 **Practice problems:** [spring 2009 practice exam 2](http://web.mit.edu/18.06/www/Spring09/practice-quiz2-S09.pdf) problems 1–17; [spring 2009 exam 2](http://web.mit.edu/18.06/www/Spring09/quiz2-s09.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring09/quiz2-s09-soln.pdf)) problem 1–3; [spring 2017 exam 2](http://web.mit.edu/18.06/www/Spring17/exam2.pdf)  ([solutions](http://web.mit.edu/18.06/www/Spring17/exam2-sol.pdf)) problems 1(b,c), 2, 3; [fall 2014 exam 2](http://web.mit.edu/18.06/www/Fall14/midterm2_F14.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall14/Midterm2solF14.pdf)) problem 1, 2a, 2e, 3a; [spring 2014 exam 2](http://web.mit.edu/18.06/www/Spring14/quiz_2_draft.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring14/StrangExamAprilSolutions.pdf)) problems 1,2,4; [spring 2013 exam 2](http://web.mit.edu/18.06/www/Spring13/Exam2blank.pdf) ([solutions](http://web.mit.edu/18.06/www/Spring13/Exam2.pdf)) problems 1, 2, 3; [fall 2012 exam 2](http://web.mit.edu/18.06/www/Fall12/Exam%202/quiz2-1806-f12.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall12/Exam%202/quiz2-1806-f12-sol.pdf)) problems 1,3; [spring 2019 exam 2](https://github.com/mitmath/1806/blob/spring20/psets/quiz2-1806-S19.pdf) ([solutions](https://github.com/mitmath/1806/blob/spring20/psets/quiz2-1806-S19_solns.pdf)) problems 1 (SVD, slightly different notation), 2, 5 (calculus); [spring 2019 exam 2 practice](https://github.com/mitmath/1806/blob/spring20/psets/Exam%202%20Practice%20.ipynb) ([solutions](https://github.com/mitmath/1806/blob/spring20/psets/midterm_2_practice_problems_solns.ipynb)) problems 4 & 5 (calc), 6 (det), 9 & 10 & 12 & 13 (SVD, slightly different notation); [SVD review problems](notes/svd-practice.pdf) expressed in terms of the "thin SVD" as covered this semester.
+
+## Lecture 25 (Nov 16)
+
+Discussed complex eigenvalues of **real** matrices A, and showed:
+
+* The complex eigenvalues and corresponding eigenvectors come in *complex-conjugate pairs*.
+* Expanding an arbitrary **real** vector x in the eigenvector basis (c=X⁻¹x) leads to *complex-conjugate* coefficients of the corresponding complex eigenvectors, and hence terms 2Re[cₖxₖ] in the expansion.
+* Matrix powers Aⁿ lead to exponential growth/decay determined by the *magnitude* |λₖ| of the eigenvalues.  For complex eigenvalues, the *phase* e<sup>iϕₖ</sup> leads to *oscillating* terms.
+
+Key concepts for **complex numbers**: the [complex conjugate](https://en.wikipedia.org/wiki/Complex_conjugate) z̄, the magnitude |z|=√zz̄, and the [polar form](https://en.wikipedia.org/wiki/Polar_coordinate_system#Complex_numbers) re<sup>iϕ</sup> using [Euler's formula](https://en.wikipedia.org/wiki/Euler%27s_formula) e<sup>iϕ</sup>=cos(ϕ)+isin(ϕ).
+
+**Further reading** This [brief review of complex numbers](https://web.stanford.edu/~boyd/ee102/complex-primer.pdf) (from Stephen Boyd at Stanford) is at about the level of my lecture.  There are many more basic reviews, e.g. from [Khan academy](https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:complex), that you can find online.  Chapter 9 of Strang's textbook discusses complex vectors and matrices.
+
+## Lecture 26 (Nov 18)
+
+* [Ordinary differential equations (ODEs)](https://nbviewer.org/github/mitmath/1806/blob/master/notes/ODEs.ipynb).
+
+We can now solve systems of ODEs dx/dt = Ax in terms of eigenvectors and eigenvalues.
+Each eigenvector is multiplied by exp(λt) (where exp(x)=eˣ), so that solutions decay
+if the eigenvalues have *negative real parts* (and approach a nonzero steady state
+if one eigenvalue is *zero*).
+
+(Soon, we will also express this in terms of a new
+Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential).)
+
+**Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).
