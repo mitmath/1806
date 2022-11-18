@@ -558,7 +558,7 @@ Exam 2 will cover the material through **lecture 21** and **pset 8**: it will in
 
 The exam is **closed book/notes**. (No calculators or computers either.)
 
-* Exam and solutions, to be posted **Friday** Nov. 18.
+* [Exam 2](exams/exam2.pdf) and [solutions](exams/exam2sol.pdf).
 
 * (Optional) **review session**: Thursday 11/10 4–5pm [via Zoom](https://mit.zoom.us/j/98031703967?pwd=THIxRnRLODNGU0pJYTlMdEE0T2VZQT09): see [video recording](https://mit.zoom.us/rec/share/HgwZS9Z0hn0wS_EU4D9TN80jtfh3QORNOnA0a2ZIpz5vD4FbMC8o5ymfHFXJaQF1.6Wv4HP-vMQtyrOHX?startTime=1668113824000), [handwritten notes](https://www.dropbox.com/s/xnowl6zoe1js1t8/18.06%20Fall%2022%20Exam%20Reviews.pdf?dl=0), and practice problems: [spring 2017 exam 2](https://github.com/mitmath/1806/blob/spring22/exams/exam2.pdf) ([solutions](https://github.com/mitmath/1806/blob/spring22/exams/exam2sol.pdf)) problems 1–3, spring 2017 exam 2 (below) problem 1, spring 2019 exam 2 practice (below) problems 12–13 (replacing the "compact" SVD, which we didn't cover, with "thin" SVD as covered this term … though they are the same thing if A isn't rank-deficient).
 
