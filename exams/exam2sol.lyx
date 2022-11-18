@@ -1,0 +1,1338 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{(\roman{enumii})}
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MIT 18.06 Exam 2 Solutions, Fall 2022
+\begin_inset Newline newline
+\end_inset
+
+Johnson
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 [(5+5)+10 points]:
+\end_layout
+
+\begin_layout Standard
+These two parts are 
+\series bold
+answered independently:
+\end_layout
+
+\begin_layout Enumerate
+Consider the 2d 
+\begin_inset Quotes eld
+\end_inset
+
+plane
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ spanned by 
+\begin_inset Formula 
+\[
+a_{1}=\left(\begin{array}{c}
+1\\
+1\\
+1\\
+1
+\end{array}\right),\;a_{2}=\left(\begin{array}{c}
+1\\
+0\\
+0\\
+1
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Give an 
+\series bold
+orthonormal basis
+\series default
+ for 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution: 
+\series default
+We just need to do Gram–Schmidt: 
+\begin_inset Formula 
+\[
+q_{1}=\frac{a_{1}}{\cancelto{2}{\Vert a_{1}\Vert}}=\boxed{\frac{1}{2}\left(\begin{array}{c}
+1\\
+1\\
+1\\
+1
+\end{array}\right)}
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+q_{2}=\frac{a_{2}-q_{1}\cancelto{1}{q_{1}^{T}a_{2}}}{\Vert\cdots\Vert}=\frac{\frac{1}{2}\left(\begin{array}{c}
+1\\
+-1\\
+-1\\
+1
+\end{array}\right)}{\cancelto{1}{\Vert\cdots\Vert}}=\boxed{\frac{1}{2}\left(\begin{array}{c}
+1\\
+-1\\
+-1\\
+1
+\end{array}\right)}\,.
+\]
+
+\end_inset
+
+(Although this is the most obvious approach, there are infinitely many other
+ orthonormal bases we chould have chosen.
+ For example, we could have done Gram–Schmidt in the opposite order, on
+ 
+\begin_inset Formula $a_{2},a_{1}$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Enumerate
+Find the 
+\series bold
+closest point
+\series default
+ in 
+\begin_inset Formula $S$
+\end_inset
+
+ to the (column vector) 
+\begin_inset Formula $y=[-2,4,-6,8]$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: This is just the orthogonal projection 
+\begin_inset Formula $p$
+\end_inset
+
+ of 
+\begin_inset Formula $y$
+\end_inset
+
+ onto 
+\begin_inset Formula $S$
+\end_inset
+
+, which is easy to do using the orthonormal basis from (a):
+\begin_inset Formula 
+\[
+p=q_{1}\cancelto{2}{q_{1}^{T}y}+q_{2}\cancelto{4}{q_{2}^{T}y}=\left(\begin{array}{c}
+1\\
+1\\
+1\\
+1
+\end{array}\right)+2\left(\begin{array}{c}
+1\\
+-1\\
+-1\\
+1
+\end{array}\right)=\boxed{\left(\begin{array}{c}
+3\\
+-1\\
+-1\\
+3
+\end{array}\right)}.
+\]
+
+\end_inset
+
+Note that we could also have computed the projection matrix 
+\begin_inset Formula $P=QQ^{T}=q_{1}q_{1}^{T}+q_{2}q_{2}^{T}$
+\end_inset
+
+ and then multiplied it by 
+\begin_inset Formula $y$
+\end_inset
+
+, but this is 
+\emph on
+much
+\emph default
+ more work (matrices require more arithmetic than vectors)! Even 
+\emph on
+more
+\emph default
+ work would be using 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+a_{1} & a_{2}\end{array}\right)$
+\end_inset
+
+ and then using 
+\begin_inset Formula $A(A^{T}A)^{-1}A^{T}$
+\end_inset
+
+, i..e.
+ solving the normal equations 
+\begin_inset Formula $A^{T}A\hat{x}=A^{T}y$
+\end_inset
+
+ and then finding 
+\begin_inset Formula $p=A\hat{x}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Suppose that we have 
+\begin_inset Formula $100$
+\end_inset
+
+ measurements 
+\begin_inset Formula $(p_{k},v_{k})$
+\end_inset
+
+ of the volume 
+\begin_inset Formula $v$
+\end_inset
+
+ of a gas vs.
+\begin_inset space ~
+\end_inset
+
+its pressure 
+\begin_inset Formula $p$
+\end_inset
+
+, and we want to fit it to a function of the form 
+\begin_inset Formula $v(p)=\frac{c_{1}}{p}+c_{2}$
+\end_inset
+
+ for unknown constants 
+\begin_inset Formula $c_{1},c_{2}$
+\end_inset
+
+.
+ Write down the 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ 
+\series bold
+system of equations
+\series default
+ you would solve to find 
+\begin_inset Formula $c_{1},c_{2}$
+\end_inset
+
+ in order to minimize the sum of the squared errors 
+\begin_inset Formula $\sum_{k}[v(p_{k})-v_{k}]^{2}$
+\end_inset
+
+ .
+ You can write your answer (left- and right-hand sides) as products of matrices
+ and/or vectors, as long as you specify what each term is (in terms of the
+ unknowns 
+\begin_inset Formula $c_{1},c_{2}$
+\end_inset
+
+ and/or the data 
+\begin_inset Formula $p_{1},\ldots,p_{100}$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{1},\ldots,v_{100}$
+\end_inset
+
+).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: This is a least-square problem, so the answer is to solve the normal equations
+ 
+\begin_inset Formula $\boxed{A^{T}Ac=A^{T}b}$
+\end_inset
+
+ for 
+\begin_inset Formula $c=\left(\begin{array}{cc}
+c_{1} & c_{2}\end{array}\right)^{T}$
+\end_inset
+
+ where 
+\begin_inset Formula 
+\[
+\boxed{A=\left(\begin{array}{cc}
+\frac{1}{p_{1}} & 1\\
+\frac{1}{p_{2}} & 1\\
+\vdots & \vdots\\
+\frac{1}{p_{100}} & 1
+\end{array}\right)}\text{ and }\boxed{b=\left(\begin{array}{c}
+v_{1}\\
+v_{2}\\
+\vdots\\
+v_{100}
+\end{array}\right)}
+\]
+
+\end_inset
+
+so that 
+\begin_inset Formula $Ac$
+\end_inset
+
+ is the 
+\begin_inset Quotes eld
+\end_inset
+
+model
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\left(\begin{array}{c}
+v(p_{1})\\
+v(p_{2})\\
+\vdots\\
+v(p_{100})
+\end{array}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are the data we are fitting to, so that 
+\begin_inset Formula $\sum_{k}[v(p_{k})-v_{k}]^{2}=\Vert Ac-b\Vert^{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 2 [4+4+4+4+4+4 points]:
+\end_layout
+
+\begin_layout Standard
+These parts can be 
+\series bold
+answered independently:
+\end_layout
+
+\begin_layout Enumerate
+The matrix 
+\begin_inset Formula $\frac{a_{1}a_{1}^{T}}{a_{1}^{T}a_{1}}+\frac{a_{2}a_{2}^{T}}{a_{2}^{T}a_{2}}$
+\end_inset
+
+ is the projection matrix onto the span of 
+\begin_inset Formula $a_{1},a_{2}\in\mathbb{R}^{m}$
+\end_inset
+
+ if 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ are 
+\series bold
+(circle all true answers)
+\series default
+: 
+\emph on
+independent, orthogonal, parallel, orthonormal, singular, length-1
+\emph default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: 
+\begin_inset Formula $\boxed{\text{orthogonal}}$
+\end_inset
+
+ or 
+\begin_inset Formula $\boxed{\text{orthonormal}}$
+\end_inset
+
+.
+ (They 
+\emph on
+must
+\emph default
+ be orthogonal for this to be a projection—that's the only way you can project
+ one vector at a time via dot products.
+ Their normalization is irrelevant because we are dividing each term by
+ the length
+\begin_inset Formula $^{2}$
+\end_inset
+
+, but it's fine if they are normalized to length 1.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ideally, this problem should have specified explicitly that the 
+\series bold
+vectors 
+\begin_inset Formula $a_{1},a_{2}$
+\end_inset
+
+ are nonzero
+\series default
+ (zero vectors are orthogonal to everything, including themselves), but
+ this is implicit in the problem statement since the formula 
+\begin_inset Formula $\frac{a_{1}a_{1}^{T}}{a_{1}^{T}a_{1}}+\frac{a_{2}a_{2}^{T}}{a_{2}^{T}a_{2}}$
+\end_inset
+
+ makes no sense for zero vectors (
+\begin_inset Formula $\frac{0}{0}$
+\end_inset
+
+?).
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ is the least-square solution minimizing 
+\begin_inset Formula $\Vert Ax-b\Vert$
+\end_inset
+
+ over 
+\begin_inset Formula $x$
+\end_inset
+
+, then 
+\begin_inset Formula $A\hat{x}-b$
+\end_inset
+
+ must lie in 
+\series bold
+which fundamental subspace
+\series default
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: 
+\begin_inset Formula $C(A)^{\perp}=\boxed{N(A^{T})},$
+\end_inset
+
+ i.e.
+ the 
+\series bold
+left nullspace
+\series default
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A\hat{x}$
+\end_inset
+
+ is the projection onto 
+\begin_inset Formula $C(A)$
+\end_inset
+
+, and the error 
+\begin_inset Formula $b-A\hat{x}$
+\end_inset
+
+ is orthogonal to 
+\begin_inset Formula $C(A)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A,B$
+\end_inset
+
+ are 
+\begin_inset Formula $10\times3$
+\end_inset
+
+ matrices, and 
+\begin_inset Formula $b\in\mathbb{R}^{10}$
+\end_inset
+
+.
+ If we want to find the vector 
+\begin_inset Formula $\hat{y}\in\mathbb{R}^{3}$
+\end_inset
+
+ for which 
+\begin_inset Formula $A\hat{y}-b\in C(B)^{\perp}$
+\end_inset
+
+, then 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ satisfies the 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ 
+\series bold
+system of equations
+\series default
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0pt"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+ (in terms of 
+\begin_inset Formula $A,B,b,\hat{y}$
+\end_inset
+
+).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution:
+\series default
+ 
+\begin_inset Formula $C(B)^{\perp}=N(B^{T})$
+\end_inset
+
+, so we just need 
+\begin_inset Formula $B^{T}(A\hat{y}-b)=0\implies\boxed{B^{T}A\hat{y}=B^{T}b}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Note that this is very similar to how we derived the normal equations, by
+ requiring that 
+\begin_inset Formula $A\hat{x}-b$
+\end_inset
+
+ be orthogonal to 
+\begin_inset Formula $C(A)$
+\end_inset
+
+; that is, you get the normal equations if you set 
+\begin_inset Formula $B=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A,B$
+\end_inset
+
+ are matrices with 
+\begin_inset Formula $C(A)=C(B)$
+\end_inset
+
+, and we have solved 
+\begin_inset Formula $A^{T}A\hat{x}=A^{T}b$
+\end_inset
+
+ for 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $B^{T}B\hat{y}=B^{T}b$
+\end_inset
+
+ for 
+\begin_inset Formula $\hat{y}.$
+\end_inset
+
+ 
+\series bold
+Circle statements (if any) that 
+\emph on
+must
+\emph default
+ be true: 
+\series default
+
+\begin_inset Formula $\hat{x}=\hat{y}$
+\end_inset
+
+, 
+\begin_inset Formula $A\hat{x}=B\hat{y}$
+\end_inset
+
+ , and/or 
+\begin_inset Formula $\hat{x}^{T}b=\hat{y}^{T}b$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution:
+\series default
+ 
+\begin_inset Formula $\boxed{A\hat{x}=B\hat{y}}$
+\end_inset
+
+, since these are the orthogonal projections onto 
+\begin_inset Formula $C(A)=C(B)$
+\end_inset
+
+; the column spaces are the same, so the projections are the same.
+ (But the 
+\emph on
+coefficients
+\emph default
+ of the projection 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ in the 
+\begin_inset Formula $A$
+\end_inset
+
+ basis don't need to match the coefficients 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ in the 
+\begin_inset Formula $B$
+\end_inset
+
+ basis!)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Q$
+\end_inset
+
+ is a 
+\begin_inset Formula $5\times3$
+\end_inset
+
+ matrix with orthonormal columns.
+ Circle which 
+\series bold
+must
+\series default
+ be true: 
+\begin_inset Formula $\Vert Qx\Vert=\Vert x\Vert$
+\end_inset
+
+ for 
+\begin_inset Formula $x\in\mathbb{R}^{3}$
+\end_inset
+
+, 
+\begin_inset Formula $\Vert Q^{T}y\Vert=\Vert y\Vert$
+\end_inset
+
+ for 
+\begin_inset Formula $y\in\mathbb{R}^{5}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution:
+\series default
+ 
+\begin_inset Formula $\boxed{\Vert Qx\Vert=\Vert x\Vert}$
+\end_inset
+
+, since 
+\begin_inset Formula $\Vert Qx\Vert=\sqrt{(Qx)^{T}(Qx)}=\sqrt{x^{T}\cancelto{I}{Q^{T}Q}x}=\Vert x\Vert$
+\end_inset
+
+.
+ In contrast, 
+\begin_inset Formula $\Vert Q^{T}y\Vert=\sqrt{(Q^{T}y)^{T}(Q^{T}y)}=\sqrt{y^{T}QQ^{T}y}$
+\end_inset
+
+, but 
+\begin_inset Formula $QQ^{T}\ne I$
+\end_inset
+
+ since 
+\begin_inset Formula $Q$
+\end_inset
+
+ is not square—it is a 
+\begin_inset Formula $5\times5$
+\end_inset
+
+ projection matrix onto the 3-dimensional subspace 
+\begin_inset Formula $C(Q)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ is a 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ matrix with 
+\begin_inset Formula $\det(A)=3$
+\end_inset
+
+, then 
+\begin_inset Formula $\det[A^{T}A^{-1}]+\det(2A)=\underline{\qquad}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution:
+\series default
+ Using the properties of determinants, we find:
+\begin_inset Formula 
+\[
+\det[A^{T}A^{-1}]+\det(2A)=\underbrace{\det(A^{T})}_{\det A=3}\underbrace{\det(A^{-1})}_{(\det A)^{-1}=\frac{1}{3}}+\underbrace{\det(2A)}_{2^{3}\det(A)=24}=\boxed{25}\,.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 3 [(3+3+3)+5 points]:
+\end_layout
+
+\begin_layout Standard
+These two parts are 
+\series bold
+answered independently:
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A$
+\end_inset
+
+ is a 
+\begin_inset Formula $10\times3$
+\end_inset
+
+ matrix has an SVD 
+\begin_inset Formula $U\Sigma V^{T}$
+\end_inset
+
+ with 
+\begin_inset Formula $\Sigma=\left(\begin{array}{ccc}
+100\\
+ & 10\\
+ &  & 1
+\end{array}\right)$
+\end_inset
+
+, then
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $U$
+\end_inset
+
+ is a 
+\begin_inset Formula $\underline{\qquad}\times\underline{\qquad}$
+\end_inset
+
+ matrix, 
+\begin_inset Formula $V$
+\end_inset
+
+ is a 
+\begin_inset Formula $\underline{\qquad}\times\underline{\qquad}$
+\end_inset
+
+ matrix, and 
+\begin_inset Formula $A$
+\end_inset
+
+ has rank 
+\begin_inset Formula $\underline{\qquad}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution:
+\series default
+ 
+\begin_inset Formula $U$
+\end_inset
+
+ is a 
+\begin_inset Formula $\boxed{10\times3}$
+\end_inset
+
+ matrix, 
+\begin_inset Formula $V$
+\end_inset
+
+ is a 
+\begin_inset Formula $\boxed{3\times3}$
+\end_inset
+
+ matrix (this is the standard size of the 
+\begin_inset Quotes eld
+\end_inset
+
+thin
+\begin_inset Quotes erd
+\end_inset
+
+ SVD we covered in class, but these are also the only possible sizes that
+ will give the correct 
+\begin_inset Formula $10\times3$
+\end_inset
+
+ size for 
+\begin_inset Formula $A$
+\end_inset
+
+!), and the rank is 
+\begin_inset Formula $\boxed{3}$
+\end_inset
+
+ (the number of nonzero singular values 
+\begin_inset Formula $\sigma_{1}=100,\sigma_{2}=10,\sigma_{3}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The projection matrix onto 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ is 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0pt"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+ and the projection onto 
+\begin_inset Formula $C(A^{T})$
+\end_inset
+
+ is 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0pt"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+ (
+\series bold
+simplest answers
+\series default
+ in terms of 
+\begin_inset Formula $U,\Sigma,V,I$
+\end_inset
+
+).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: 
+\begin_inset Formula $U$
+\end_inset
+
+ is an orthonormal basis for 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ , so the projection is 
+\begin_inset Formula $\boxed{UU^{T}}.$
+\end_inset
+
+ 
+\begin_inset Formula $V$
+\end_inset
+
+ is an orthonormal basis for 
+\begin_inset Formula $C(A^{T})$
+\end_inset
+
+, so the projection is 
+\begin_inset Formula $VV^{T}$
+\end_inset
+
+, but to get full credit you should notice that 
+\begin_inset Formula $V$
+\end_inset
+
+ is square and hence unitary, so 
+\begin_inset Formula $VV^{T}=\boxed{I}$
+\end_inset
+
+.
+ (Alternatively, since 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\begin_inset Formula $10\times3$
+\end_inset
+
+ with full column rank, the row space is all of 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ , so the projection must be 
+\begin_inset Formula $I$
+\end_inset
+
+.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Note that we could also compute the projection onto 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ by the formula 
+\begin_inset Formula $A(A^{T}A)^{-1}A^{T}$
+\end_inset
+
+ if we substitute 
+\begin_inset Formula $A=U\Sigma V^{T}$
+\end_inset
+
+ and use the fact that 
+\begin_inset Formula $V$
+\end_inset
+
+ is square and hence 
+\begin_inset Formula $V^{T}=V^{-1}$
+\end_inset
+
+: 
+\begin_inset Formula $U\Sigma V^{T}(V\Sigma^{T}\cancel{U^{T}U}\Sigma V^{T})^{-1}V\Sigma^{T}U^{T}=U\Sigma\cancel{V^{T}(V^{T})^{-1}}\Sigma^{-2}\cancel{(V)^{-1}V}\Sigma U^{T}=UU^{T}$
+\end_inset
+
+; not only is this a lot more work, but it also doesn't exploit the fact
+ that we 
+\emph on
+know
+\emph default
+ that 
+\begin_inset Formula $U$
+\end_inset
+
+ is an orthonormal basis for 
+\begin_inset Formula $C(A)$
+\end_inset
+
+.
+ Similarly, we could use 
+\begin_inset Formula $A^{T}(AA^{T})^{-1}A$
+\end_inset
+
+ to project onto 
+\begin_inset Formula $C(A^{T})$
+\end_inset
+
+ and simplify, but this is even tricker to get the algebra right with because
+ 
+\begin_inset Formula $AA^{T}=U\Sigma^{2}U^{T}$
+\end_inset
+
+ but 
+\begin_inset Formula $U$
+\end_inset
+
+ is not invertible (it isn't square!).
+\end_layout
+
+\begin_layout Enumerate
+A good rank-2 approximation for 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0pt"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+ (in terms of 
+\begin_inset Formula $U,V$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution:
+\series default
+ We get a good rank-2 approximation (in some sense the 
+\begin_inset Quotes eld
+\end_inset
+
+best
+\begin_inset Quotes erd
+\end_inset
+
+ rank-2 approximation) by setting the third singular value to zero, i.e.
+ 
+\begin_inset Formula 
+\[
+\boxed{U\left(\begin{array}{ccc}
+100\\
+ & 10\\
+ &  & \mathbf{0}
+\end{array}\right)V^{T}}=\boxed{100u_{1}v_{1}^{T}+10u_{2}v_{2}^{T}}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $u_{1},u_{2}$
+\end_inset
+
+ are the first two columns of 
+\begin_inset Formula $U$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{1},v_{2}$
+\end_inset
+
+ are the first two columns of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+If
+\begin_inset Formula $f(x)=(x^{T}y)^{2}$
+\end_inset
+
+ for 
+\begin_inset Formula $x,y\in\mathbb{R}^{n}$
+\end_inset
+
+, then give a formula for 
+\begin_inset Formula $\nabla f$
+\end_inset
+
+ (in terms of 
+\begin_inset Formula $y$
+\end_inset
+
+ and/or 
+\begin_inset Formula $x$
+\end_inset
+
+).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution:
+\series default
+ Using the product rule, 
+\begin_inset Formula 
+\[
+df=d(x^{T}y)(x^{T}y)+(x^{T}y)d(x^{T}y)=2(x^{T}y)(dx^{T}y)=\underbrace{2(x^{T}y)y^{T}}_{(\nabla f)^{T}}dx
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $\boxed{\nabla f=2(x^{T}y)y}$
+\end_inset
+
+.
+ Alternatively, we could have used the power rule 
+\begin_inset Formula $df=2(x^{T}y)d(x^{T}y)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Note that the parentheses are important here.
+ If we write it without parentheses, we might be tempted to write 
+\begin_inset Formula $2x^{T}yy=2x^{T}y^{2}$
+\end_inset
+
+, but this is nonsense—you can't multiply 
+\begin_inset Formula $yy=y^{2}$
+\end_inset
+
+ because 
+\begin_inset Formula $y$
+\end_inset
+
+ is a column vector.
+ To get an expression that is associative (i.e., which works regardless of
+ where/whether we put parentheses), we would have to write the gradient
+ as something like 
+\begin_inset Formula $\nabla f=2yx^{T}y$
+\end_inset
+
+ or 
+\begin_inset Formula $\nabla f=2yy^{T}x$
+\end_inset
+
+, using the fact that 
+\begin_inset Formula $x^{T}y=y^{T}x$
+\end_inset
+
+ is a scalar that we can move around freely.
+ 
+\end_layout
+
+\end_body
+\end_document
