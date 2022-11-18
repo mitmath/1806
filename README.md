@@ -580,7 +580,7 @@ Key concepts for **complex numbers**: the [complex conjugate](https://en.wikiped
 
 * [Ordinary differential equations (ODEs)](https://nbviewer.org/github/mitmath/1806/blob/master/notes/ODEs.ipynb).
 * pset 10 solutions: coming soon
-* pset 11: coming soon, due **Wednesday** November 23.
+* [pset 11](psets/pset11.ipynb): due **Wednesday** November 23.
 
 We can now solve systems of ODEs dx/dt = Ax in terms of eigenvectors and eigenvalues.
 Each eigenvector is multiplied by exp(λt) (where exp(x)=eˣ), so that solutions decay
