@@ -1153,7 +1153,7 @@ know
 \end_inset
 
 .
- Similarly, we could use 
+ Similarly, we could imagine using 
 \begin_inset Formula $A^{T}(AA^{T})^{-1}A$
 \end_inset
 
@@ -1161,16 +1161,33 @@ know
 \begin_inset Formula $C(A^{T})$
 \end_inset
 
- and simplify, but this is even tricker to get the algebra right with because
- 
+ and simplify, but this is even tricker to get the algebra right—in fact,
+ you can't use that formula directly because 
 \begin_inset Formula $AA^{T}=U\Sigma^{2}U^{T}$
 \end_inset
 
- but 
-\begin_inset Formula $U$
+ is not even invertible (it is a 
+\begin_inset Formula $10\times10$
 \end_inset
 
- is not invertible (it isn't square!).
+ matrix of rank 3!)—we would instead have to start with the normal equations
+ 
+\begin_inset Formula $AA^{T}y=Ab$
+\end_inset
+
+ (which 
+\emph on
+are
+\emph default
+ solvable) and then find the projection 
+\begin_inset Formula $Pb=A^{T}y$
+\end_inset
+
+, which (after a fair amount of work) can indeed be simplified to 
+\begin_inset Formula $Pb=VV^{T}b$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Enumerate
