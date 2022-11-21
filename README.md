@@ -591,3 +591,11 @@ if one eigenvalue is *zero*).
 Matrix operation eᴬᵗ, the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential).)
 
 **Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).
+
+## Lecture 28 (Nov 21)
+
+Continued discussion of ODEs from last lecture, discussing the over/underdamped case and the example of multiple coupled masses and springs.
+
+Next, reformulated the solution of dx/dt=Ax in terms of the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential) eᴬᵗ, and discussed the definition and properties of this fascinating and important matrix operation.
+
+**Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).  [Notebook on Matrix exponentials eᴬ](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Matrix-Exponentials.ipynb).
