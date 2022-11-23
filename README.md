@@ -599,3 +599,40 @@ Continued discussion of ODEs from last lecture, discussing the over/underdamped 
 Next, reformulated the solution of dx/dt=Ax in terms of the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential) eᴬᵗ, and discussed the definition and properties of this fascinating and important matrix operation.
 
 **Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).  [Notebook on Matrix exponentials eᴬ](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Matrix-Exponentials.ipynb).
+
+## Lecture 29 (Nov 23)
+
+* pset 11 solutions: to be posted
+* pset 12: coming soon, due Friday Dec. 2
+
+Continued discussion of matrix exponentials.  Unlike scalars, exp(A+B)≠exp(A)exp(B) **unless** A and B **commute** (AB=BA).  An important example of commuting matrices is when B is a *scalar multiple* of A, from which we see that **exp(A(t₁+t₂))=exp(At₁)exp(At₂)**: evolving a solution of dx/dt=Ax for time t₁+t₂ is the same as evolving it for t₂ then t₁ (or vice versa).   We also see that **exp(A)⁻¹=exp(-A)**, since of course A and -A commute.
+
+### Complex matrices, vectors, and dot products: the adjoint H
+
+To go further, we need
+to generalize our notion of a "dot product" to complex vectors.  The "transpose"
+is actually not the right notion here.  Instead, we define:
+
+* xᴴ and Aᴴ are the **conjugate-transpose** of a vector or matrix (that is, you transpose and then take the complex conjugate of every element).  This is also called the ("Hermitian") [adjoint](https://en.wikipedia.org/wiki/Conjugate_transpose) operation.  *For a real matrix, the adjoint is the same as the transpose.*
+
+For complex vectors, the dot product x⋅y is xᴴy, *not* xᵀy.   And the length
+of a vector ‖x‖² = x⋅x = xᴴx.  Defined this way, it has the key property:
+
+* ‖x‖² = x⋅x = ∑ᵢ|xᵢ|² ≥ 0, and = 0 only for x=0.
+
+If you look back at 18.06 and you change our real vectors to complex vectors, just
+change every transpose to an adjoint.  This includes for Gram-Schmidt and orthonormal
+bases!   And if you look back at 18.06 and change real matrices to complex matrices,
+again the right thing is to *change every transpose (T) to adjoint (H)*:
+
+* The normal equations for minimizing ‖Ax-b‖ are AᴴAx̂=Aᴴb.
+* If the columns of Q are orthonormal, then QᴴQ = I.
+* The projection matrix onto C(A) is A(AᴴA)⁻¹Aᴴ
+* The left nullspace is N(Aᴴ) ⟂ C(A), and N(A) ⟂ C(Aᴴ).
+* A square matrix Q with orthonormal columns (Q⁻¹=Qᴴ) is called **unitary**.  (The term "orthogonal" is only used in the real-A case.)
+* If A=Aᴴ, the matrix is called **Hermitian** (not "symmetric", except in the real-A case).
+
+Again, for real matrices/vectors, the adjoint = the transpose, so everything
+we've done before is just a special case of the complex case with zero imaginary parts.
+
+**Further reading:** Strang, section 9.2;  [lecture 26](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/).
