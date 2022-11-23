@@ -602,8 +602,8 @@ Next, reformulated the solution of dx/dt=Ax in terms of the [matrix exponential]
 
 ## Lecture 29 (Nov 23)
 
-* pset 11 solutions: to be posted
-* pset 12: coming soon, due Friday Dec. 2
+* [pset 11 solutions](pset11sol.ipynb)
+* [pset 12](psets/pset12.ipynb) due Friday Dec. 2
 
 Continued discussion of matrix exponentials.  Unlike scalars, exp(A+B)≠exp(A)exp(B) **unless** A and B **commute** (AB=BA).  An important example of commuting matrices is when B is a *scalar multiple* of A, from which we see that **exp(A(t₁+t₂))=exp(At₁)exp(At₂)**: evolving a solution of dx/dt=Ax for time t₁+t₂ is the same as evolving it for t₂ then t₁ (or vice versa).   We also see that **exp(A)⁻¹=exp(-A)**, since of course A and -A commute.
 
@@ -636,3 +636,9 @@ Again, for real matrices/vectors, the adjoint = the transpose, so everything
 we've done before is just a special case of the complex case with zero imaginary parts.
 
 **Further reading:** Strang, section 9.2;  [lecture 26](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-26-complex-matrices-fast-fourier-transform/).
+
+## Lecture 30 (Nov 28)
+
+Hermitian / real-symmetric eigenproblems and positive-definite matrices.
+
+**Further reading:** Strang, section 6.4;  [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/)
