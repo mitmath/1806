@@ -666,8 +666,7 @@ in an orthonormal basis is easy.*
 ### Positive-definite/semidefinite matrices
 
 A lot of Hermitian matrices in practice come in the form BᴴB (or BᵀB for real B)
-for some matrix B.  e.g. we have seen several of these already, in least-squares
-and circuit/graph problems.   Such matrices are not only Hermitian, but they
+for some matrix B.  e.g. we have seen several of these already, e.g. in least-squares problems.   Such matrices are not only Hermitian, but they
 are **positive-definite**.
 
 In particular, a positive-definite matrix A is a Hermitian matrix A=Aᴴ that
