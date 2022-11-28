@@ -639,6 +639,63 @@ we've done before is just a special case of the complex case with zero imaginary
 
 ## Lecture 30 (Nov 28)
 
-Hermitian / real-symmetric eigenproblems and positive-definite matrices.
+### Hermitian and real-symmetric matrices
 
-**Further reading:** Strang, section 6.4;  [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/)
+Now, for a Hermitian matrix A=Aᴴ (= real-symmetric if A is real) we have:
+
+* All the eigenvalues λ are **real**.  (The eigenvectors are *not* generally real unless A is real.)_
+* The matrix is always **diagonalizable** (no funny defective case).
+* Eigenvectors for different λ are **orthogonal** (and hence eigenvectors can be chosen to be **an orthonormal basis**).
+
+I didn't prove diagonalizability.  (There are various proofs you can easily find online.  See e.g. [this video](https://www.youtube.com/watch?v=_2gGqEGA_IY) if you are curious, but
+they seem slightly too tricky for 18.06.)
+
+Since a **Hermitian matrix has an orthonormal basis of eigenvectors**, we
+can call the eigenvectors q₁,q₂,⋯, and put them as the columns of a
+**unitary** matrix Q (= orthogonal if A is real).  (Formerly, we called this X.)
+We can write:
+
+* A = QΛQᴴ = ∑ₖ λₖqₖqₖᴴ
+
+Equivalently, to **expand an arbitrary vector x** in the eigenvector basis,
+we **just need to take dot products**.   Formerly, to write x=∑ₖcₖxₖ, to find
+the coefficients c we had to solve Xx=x, or c=X⁻¹x.   Now, to write x=∑ₖcₖqₖ,
+the coefficients are just **cₖ=qₖᴴx**, or x=∑ₖqₖ(qₖᴴx).  *Expressing a vector
+in an orthonormal basis is easy.*
+
+### Positive-definite/semidefinite matrices
+
+A lot of Hermitian matrices in practice come in the form BᴴB (or BᵀB for real B)
+for some matrix B.  e.g. we have seen several of these already, in least-squares
+and circuit/graph problems.   Such matrices are not only Hermitian, but they
+are **positive-definite**.
+
+In particular, a positive-definite matrix A is a Hermitian matrix A=Aᴴ that
+*additionally* has the following *equivalent* properties:
+
+* All eigenvalues λ of A are > 0.
+* xᴴAx > 0 for *any* vector x≠0.
+* A = BᴴB for some full-column-rank matrix B
+* All the pivots are > 0 in Gaussian elimination of A.
+
+These are all *equivalent*: any one of these properties implies *all* of
+the other properties for a Hermitian A.   I proved a couple of the equivalencies,
+but not all; some more equivalencies are proved in the textbook.
+
+A positive **semidefinite** matrix is almost the same, except you replace
+"> 0" with "≥ 0", and A = BᴴB is positive semidefinite for *any* B (not necessarily full rank).  (The pivots are > 0, but A may be singular.)
+
+(There are also "negative definite" and "negative semidefinite" matrices, which
+are the same things except with the opposites signs, i.e. "< 0" or "≤ 0" above.)
+
+We can also easily see (e.g. via the xᴴAx > 0 property) that the *sum* of positive-definite matrices is also positive definite.
+
+### Connection to SVD
+
+We are now (*finally*) in a position to start to see a connection between eigenproblems and the SVD, and to see one possible route to deriving *why* the SVD exists.
+
+A "tall" m×n matrix A=UΣVᴴ doesn't *have* eigenvalues if m>n, but the n×n matrix AᴴA=QΛQᴴ is Hermitian semidefinite with eigenvalues λ≥0 and orthonormal eigenvectors Q.   Plugging in the SVD, however, we see that AᴴA simplifies to VΣ²Vᴴ, which means that the **singular values σ** are the **square roots of the positive λ's of AᴴA**, and the **right singular vectors V** are corresponding orthonormal **eigenvectors** of AᴴA.
+
+In fact, it is possible to go backwards and *derive* the SVD in this fashion, obtaining the v's as eigenvectors of AᴴA, the u's as eigenvectors of AAᴴ, and the σ's as the square roots of the positive λ's.
+
+**Further reading:** Strang, section 6.4;  [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/).     **SVD**: Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/).  Notes on the [SVD as an eigenproblem](https://github.com/mitmath/1806/blob/master/notes/SVD-eigenproblem.ipynb).
