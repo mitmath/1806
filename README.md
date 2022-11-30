@@ -701,7 +701,6 @@ In fact, it is possible to go backwards and *derive* the SVD in this fashion, ob
 
 ## Lecture 31 (Nov 30)
 
-
 As an application of real-symmetric and positive-definite matrices, I returned
 to the system of masses and springs from our first ODE lectures, but this time I considered
 n masses m and n+1 springs kᵢ.   I showed that Newton's laws take the form:
