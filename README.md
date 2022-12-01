@@ -602,7 +602,7 @@ Next, reformulated the solution of dx/dt=Ax in terms of the [matrix exponential]
 
 ## Lecture 29 (Nov 23)
 
-* [pset 11 solutions](pset11sol.ipynb)
+* [pset 11 solutions](psets/pset11sol.ipynb)
 * [pset 12](psets/pset12.ipynb) due Friday Dec. 2
 
 Continued discussion of matrix exponentials.  Unlike scalars, exp(A+B)≠exp(A)exp(B) **unless** A and B **commute** (AB=BA).  An important example of commuting matrices is when B is a *scalar multiple* of A, from which we see that **exp(A(t₁+t₂))=exp(At₁)exp(At₂)**: evolving a solution of dx/dt=Ax for time t₁+t₂ is the same as evolving it for t₂ then t₁ (or vice versa).   We also see that **exp(A)⁻¹=exp(-A)**, since of course A and -A commute.
