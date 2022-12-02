@@ -725,7 +725,7 @@ hence that the **frequencies** ωⱼ are **real** numbers.  (If they were comple
 ## Lecture 32 (Dec 2)
 
 * [Notes on "Jordan" vectors](notes/jordan-vectors.pdf)
-* pset 12 solutions: to be posted
+* [pset 12 solutions](psets/pset12sol.ipynb)
 * pset 13: coming soon, short pset due **Wed Dec 7**
 
 Most matrices are diagonalizable.  (*Any* n×n matrix with n distinct eigenvalues is diagonalizable, as is *any* Hermitian A=Aᴴ, unitary A⁻¹=Aᴴ, or anti-Hermitian A=-Aᴴ matrix.)  Non-diagonalizable matrices in practical situations typically arise only by design: you start with a "non-normal" matrix and play with the entries until you *force* two eigenvalues and eigenvectors to coincide.  This does not mean that such "exceptional" or "defective" cases are not interesting, however!   Even more commonly, on encounters a matrix that is *nearly* defective (i.e. the matrix X of eigenvectors is *nearly singular*).
