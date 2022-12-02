@@ -734,7 +734,7 @@ To understand what happens with defective matrices, I introduce "Jordan" vectors
 
 **Further reading**: Strang book, section 8.3.  Going far beyond 18.06, there is a wonderful book, *Spectra and Pseudospectra* by Trefethen and Embree, entirely devoted to cases where diagonalization fails (or nearly fails).
 
-## Exam 3 (Dec 9): 11am in 26-100
+## Exam 3 (Friday, Dec 9): 11am in 26-100
 
 Exam 3 will cover the material through **lecture 32** and **pset 13**: it will include exam-1 and exam-2 material, but will focus mainly on **everything to do with eigenproblems**.  Possible topics include: Determinant, trace, eigenvalues/eigenvectors, diagonalization, similar matrices, matrix powers and linear recurrences xₙ=Aⁿx₀, linear ODEs dx/dt=Ax (and d²x/dt²=Ax), matrix exponentials (and other matrix functions), complex matrices and the adjoint Aᴴ, real-symmetric/Hermitian matrices, positive-definite matrices (and semi-definite, negative-definite, etc), connections to SVD, defective matrices and generalized eigenvectors.
 
