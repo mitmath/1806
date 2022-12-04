@@ -30,7 +30,7 @@ useful study guide.  (You can also look at the analogous summaries from [Spring 
 ## Lecture 1 (Sep 7)
 
 * [course overview/syllabus](https://docs.google.com/presentation/d/1ivbV1nr67XfasBdXezZF9UWILzDoQtQev8vSqRKBfu0/edit?usp=sharing)
-* [pset 1](psets/pset1.ipynb): due **Friday Sep 16 at 11am** (submit your solutions on Gradescope).
+* [pset 1](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset1.ipynb): due **Friday Sep 16 at 11am** (submit your solutions on Gradescope).
 * [video](https://mit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=19855fd0-d2be-4252-aa41-af0900816383)
 
 Slides giving the syllabus and the "big picture" of what 18.06 is about.  Introduction to thinking about matrices as linear operations, not just as "bags of numbers".
@@ -125,8 +125,8 @@ Matrix inverses are mainly a *conceptual* tool that we use to move matrices arou
 ## Lecture 5 (Sep 16)
 
 * [Video recording](https://mit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=32b37815-81a0-42aa-a2a5-af0c00d75c55)
-* [pset 1 solutions](psets/pset1sol.ipynb)
-* [pset 2](psets/pset2.ipynb): due **Mon** Sep 26 (Friday is a holiday).
+* [pset 1 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset1sol.ipynb)
+* [pset 2](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset2.ipynb): due **Mon** Sep 26 (Friday is a holiday).
 * [LU factorization for real](https://nbviewer.org/github/mitmath/1806/blob/master/notes/LU-for-real.ipynb)
 
 Brief review of previous topics in LU factorization with some more examples in the notebook:
@@ -185,8 +185,8 @@ Showed that the **nullspace is preserved by elimination (row) operations**, but 
 
 * video: Panopto Video link on Canvas
 * handwritten notes
-* [pset 2 solutions](psets/pset2sol.ipynb)
-* [pset 3](psets/pset3.ipynb): due **Friday** Sep 30
+* [pset 2 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset2sol.ipynb)
+* [pset 3](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset3.ipynb): due **Friday** Sep 30
 
 Went through two examples of finding the special solutions as a basis for the nullspace.  They key point is always this: given the free variables, we can easily solve for the corresponding pivot variables.
 
@@ -250,8 +250,8 @@ Cases (1)-(3) are called **full rank**: the rank is as big as possible given the
 ## Lecture 10 (Sep 30)
 
 * handwritten notes and lecture video (see links above).
-* [pset 3 solutions](psets/pset3sol.ipynb)
-* [pset 4](psets/pset4.ipynb): a short pset due Wed Oct 5
+* [pset 3 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset3sol.ipynb)
+* [pset 4](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset4.ipynb): a short pset due Wed Oct 5
 
 ### Dot products, transposes, & orthogonality
 
@@ -292,8 +292,8 @@ Derivatives viewed as linear approximations have many important applications in 
 ## Lecture 12 (Oct 5)
 
 * handwritten notes and lecture video (see links above).
-* [pset 4 solutions](psets/pset4sol.ipynb)
-* [pset 5](psets/pset5.ipynb), due Friday Oct 14
+* [pset 4 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset4sol.ipynb)
+* [pset 5](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset5.ipynb), due Friday Oct 14
 
 *Continued from lecture 11*: Analyzed derivatives of matrix-valued functions of matrices, like f(x)=A⁻¹ where we showed that f′(x) is the linear operator f′(x)[dA]=–A⁻¹dAA⁻¹.  Using this, if we have a matrix A(p) as a function of a parameter p, showed that we can compute d(A⁻¹)/dp = –A⁻¹(dA/dp)A⁻¹ easily.  This has enormous applications, for example in engineering optimization where you often want to differentiate the solution to a physical problem (often expressed as Ax=b) with respect to parameters of the problem (in A and/or b), in order to optimize the physics (e.g. to maximize the strength of a structure with a given amount of material): see slides from lecture 11.
 
@@ -352,8 +352,8 @@ Started talking about **orthogonal projection**: for any subspace S ⊆ V, any v
 ## Lecture 14 (Oct 14)
 
 * handwritten notes and lecture video (see links above).
-* [pset 5 solutions](psets/pset5sol.ipynb)
-* [pset 6](psets/pset6.ipynb) due Oct 21
+* [pset 5 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset5sol.ipynb)
+* [pset 6](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset6.ipynb) due Oct 21
 
 More on projections:
 
@@ -414,7 +414,7 @@ This is not unusual: there is often a difference between the way we conceptually
 * [SVD introduction](https://nbviewer.org/github/stevengj/1806/blob/master/notes/SVD-intro.ipynb)
 * [SVD low-rank approximation demos](https://computationalthinking.mit.edu/Spring21/structure/) from the spring 2021 *Computational Thinking* class
 * [pset 6 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset6sol.ipynb)
-* [pset 7](psets/pset7.ipynb): due Friday Oct 28.
+* [pset 7](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset7.ipynb): due Friday Oct 28.
 
 Guest lecture by Prof. Alan Edelman.
 
@@ -452,7 +452,7 @@ Discussed the relationship of mean, variance, and covariance/correlation to line
 * handwritten notes
 * [Determinants](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Determinants.ipynb)
 * [pset 7 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset7sol.ipynb)
-* [pset 8](psets/pset8.ipynb): due Friday Nov 4
+* [pset 8](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset8.ipynb): due Friday Nov 4
 
 Introduced **determinants** and their properties.  Considering how central a role determinants play for the 2×2 and 3×3 matrices you probably encountered before 18.06, you may be surprised that we didn't get to determinants until now.  The fact of the matter is that determinants play a much less important role in applied linear algebra for larger matrices — with a few exceptions, most things that you would want to use determinants for can be done more effectively in other ways.  They are a useful *conceptual* tool, however, especially for thinking about eigenvalues.
 
@@ -506,8 +506,8 @@ Even for real matrices, we may in general have **complex** eigenvalues (and eige
 * handwritten notes and lecture video (see links above).
 * [Recurrences and Fibonacci numbers](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Fibonacci.ipynb)
 * [Markov matrices](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Markov.ipynb)
-* [pset 8 solutions](psets/pset8sol.ipynb)
-* [pset 9](psets/pset9.ipynb): a short pset due **Wed** Nov 9.
+* [pset 8 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset8sol.ipynb)
+* [pset 9](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset9.ipynb): a short pset due **Wed** Nov 9.
 
 As an application of matrix powers, considered the famous [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number) 1,1,2,3,5,8,13,21,….  The n-th Fibonacci number fₙ satisfies the [linear recurrence relation](http://mathworld.wolfram.com/LinearRecurrenceEquation.html) fₙ=fₙ₋₁+fₙ₋₂, which we can express in terms of multiplication by a 2×2 matrix F that gives (fₙ,fₙ₋₁) from (fₙ₋₁,fₙ₋₂).  We found that the eigenvalues of F are (1±√5)/2.  The larger of these eigenvalues, (1+√5)/2≈1.618, is the so-called [golden ratio](https://en.wikipedia.org/wiki/Golden_ratio), and it means that the Fibonacci numbers blow up exponentially fast for large n.  Furthermore, we showed that the *ratio* fₙ/fₙ₋₁ of successive Fibonacci numbers goes to the golden ratio for large n.   Checked these facts numerically with a Julia notebook.
 
@@ -533,8 +533,8 @@ The Google [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm is a nic
 ## Lecture 25 (Nov 7)
 
 * handwritten notes and lecture video (see links above).
-* [pset 9 solutions](psets/pset9sol.ipynb)
-* [pset 10](psets/pset10.ipynb): short pset due Friday Nov 18
+* [pset 9 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset9sol.ipynb)
+* [pset 10](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset10.ipynb): short pset due Friday Nov 18
 
 Covered **diagonalization** of a matrix: the process of expanding a vector in the basis of eigenvectors, then multiplying each one by λ, then adding up the eigenvectors with the new coefficients, can be thought of as the matrix factorization A=XΛX⁻¹, where X is the matrix whose columns are the eigenvectors.   This only works if X is invertible: i.e. when for an m×m matrix A we have m eigenvalues (possibly repeated) and m independent eigenvectors (a *basis* of eigenvectors).  Such a matrix is called **diagonalizable**.
 
@@ -579,8 +579,8 @@ Key concepts for **complex numbers**: the [complex conjugate](https://en.wikiped
 ## Lecture 27 (Nov 18)
 
 * [Ordinary differential equations (ODEs)](https://nbviewer.org/github/mitmath/1806/blob/master/notes/ODEs.ipynb).
-* [pset 10 solutions](psets/pset10sol.ipynb)
-* [pset 11](psets/pset11.ipynb): due **Wednesday** November 23.
+* [pset 10 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset10sol.ipynb)
+* [pset 11](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset11.ipynb): due **Wednesday** November 23.
 
 We can now solve systems of ODEs dx/dt = Ax in terms of eigenvectors and eigenvalues.
 Each eigenvector is multiplied by exp(λt) (where exp(x)=eˣ), so that solutions decay
@@ -602,8 +602,8 @@ Next, reformulated the solution of dx/dt=Ax in terms of the [matrix exponential]
 
 ## Lecture 29 (Nov 23)
 
-* [pset 11 solutions](psets/pset11sol.ipynb)
-* [pset 12](psets/pset12.ipynb) due Friday Dec. 2
+* [pset 11 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset11sol.ipynb)
+* [pset 12](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset12.ipynb) due Friday Dec. 2
 
 Continued discussion of matrix exponentials.  Unlike scalars, exp(A+B)≠exp(A)exp(B) **unless** A and B **commute** (AB=BA).  An important example of commuting matrices is when B is a *scalar multiple* of A, from which we see that **exp(A(t₁+t₂))=exp(At₁)exp(At₂)**: evolving a solution of dx/dt=Ax for time t₁+t₂ is the same as evolving it for t₂ then t₁ (or vice versa).   We also see that **exp(A)⁻¹=exp(-A)**, since of course A and -A commute.
 
@@ -725,8 +725,8 @@ hence that the **frequencies** ωⱼ are **real** numbers.  (If they were comple
 ## Lecture 32 (Dec 2)
 
 * [Notes on "Jordan" vectors](notes/jordan-vectors.pdf)
-* [pset 12 solutions](psets/pset12sol.ipynb)
-* [pset 13](psets/pset13.ipynb): short pset due **Wed Dec 7**
+* [pset 12 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset12sol.ipynb)
+* [pset 13](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset13.ipynb): short pset due **Wed Dec 7**
 
 Most matrices are diagonalizable.  (*Any* n×n matrix with n distinct eigenvalues is diagonalizable, as is *any* Hermitian A=Aᴴ, unitary A⁻¹=Aᴴ, or anti-Hermitian A=-Aᴴ matrix.)  Non-diagonalizable matrices in practical situations typically arise only by design: you start with a "non-normal" matrix and play with the entries until you *force* two eigenvalues and eigenvectors to coincide.  This does not mean that such "exceptional" or "defective" cases are not interesting, however!   Even more commonly, on encounters a matrix that is *nearly* defective (i.e. the matrix X of eigenvectors is *nearly singular*).
 
