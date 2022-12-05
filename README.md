@@ -734,6 +734,26 @@ To understand what happens with defective matrices, I introduce "Jordan" vectors
 
 **Further reading**: Strang book, section 8.3.  Going far beyond 18.06, there is a wonderful book, *Spectra and Pseudospectra* by Trefethen and Embree, entirely devoted to cases where diagonalization fails (or nearly fails).
 
+## Lecture 33 (Dec 5)
+
+Started by deriving how the generalized "Jordan" vectors from the previous vector, when used as a basis, put a matrix into the [Jordan form](https://en.wikipedia.org/wiki/Jordan_normal_form): a diagonal matrix of eigenvalues λ's with 1's above the diagonal in "Jordan blocks" corresponding to defective repeated roots.
+
+The Jordan form is mostly useful as a *conceptual* tool, to understand what the matrix is *approaching* as it becomes more and more *nearly* defective.  (As a practical tool, it is famously tricky to work with, because any tiny perturbation (e.g. roundoff errors) can cause a repeated root to split into distinct eigenvalues.)
+
+### Eigenproblems and the SVD
+
+We are finally in a position to derive that *why* the SVD exists, using eigenproblems for AᴴA and AAᴴ.  (Conceptually, however, you want to continue to think of the SVD as a factorization of A, not as a mere byproduct of AᴴA and AAᴴ eigenproblems.)
+
+For any m×n matrix A, there are two "nice" matrices AᴴA and AAᴴ, both of which are Hermitian positive semidefinite (orthonormal bases of eigenvectors, real eigenvalues ≥ 0).   How can we use these "nice" matrices to go back and help us **understand A**?   It turns out that this leads us directly back to the **singular value decomposition (SVD)**.
+
+In particular we find:
+
+* There are r positive eigenvalues λⱼ=σⱼ² of AᴴA, where r = rank A.  Let vⱼ be the corresponding orthormal eigenvectors — these are a basis for C(Aᴴ).
+* The vectors uⱼ=Avⱼ/σⱼ are actually **eigenvectors** of AAᴴ, are **orthonormal**, and form a basis for C(A).
+* These uⱼ, vⱼ and σⱼ are exactly the left and right singular vectors and the corresponding singular values of A!
+
+**Further reading:**  **SVD**: Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/).  Notes on the [SVD as an eigenproblem](https://nbviewer.org/github/mitmath/1806/blob/master/notes/SVD-eigenproblem.ipynb).
+
 ## Exam 3 (Friday, Dec 9): 11am in 26-100
 
 Exam 3 will cover the material through **lecture 32** and **pset 13**: it will include exam-1 and exam-2 material, but will focus mainly on **everything to do with eigenproblems**.  Possible topics include: Determinant, trace, eigenvalues/eigenvectors, diagonalization, similar matrices, matrix powers and linear recurrences xₙ=Aⁿx₀, linear ODEs dx/dt=Ax (and d²x/dt²=Ax), matrix exponentials (and other matrix functions), complex matrices and the adjoint Aᴴ, real-symmetric/Hermitian matrices, positive-definite matrices (and semi-definite, negative-definite, etc), connections to SVD, defective matrices and generalized eigenvectors.
