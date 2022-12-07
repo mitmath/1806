@@ -756,6 +756,8 @@ In particular we find:
 
 ## Lecture 34 (Dec 7)
 
+* pset 13 solutions: to be posted
+
 Examined the analogues of Hermitian positive-definite matrices, matrix exponentials, etcetera, for *infinite-dimensional* linear algebra.  (This material will *not* be on the final.)   It turns out that this is tremendously important for understanding [partial differential equations (PDEs)](https://en.wikipedia.org/wiki/Partial_differential_equation) arising in science and engineering.
 
 Earlier in the class, we already saw how we can define infinite-dimensional vector spaces of functions, "dot products" of functions via integrals, and hence orthogonal bases of functions, projection, etcetera.  Now, we look at linear operators on functions, and in particular I looked at A=d²/dx² acting on functions u(x)
