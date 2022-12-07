@@ -708,9 +708,8 @@ Equivalently, the trace of
 \end_layout
 
 \begin_layout Enumerate
-There are two ways to do this.
- The easiest way is to recall that the eigenvalues and eigenvectors of any
- real matrix must come in complex-conjugate pairs, so we must have 
+Recall that the eigenvalues and eigenvectors of any real matrix must come
+ in complex-conjugate pairs, so we must have 
 \begin_inset Formula 
 \begin{align*}
 x_{3} & =\overline{x_{2}}=\begin{pmatrix}0\\
@@ -722,45 +721,6 @@ x_{3} & =\overline{x_{2}}=\begin{pmatrix}0\\
 \end_inset
 
 (or any multiple of this vector).
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Alternatively, since 
-\begin_inset Formula $A$
-\end_inset
-
- is a real-symmetric matrix, it must have orthogonal eigenvectors, and we
- can look for an 
-\begin_inset Formula $x_{3}$
-\end_inset
-
- that is orthogonal to 
-\begin_inset Formula $x_{1}$
-\end_inset
-
- and 
-\begin_inset Formula $x_{2}$
-\end_inset
-
- — but be careful, it has to be orthogonal in the sense that 
-\begin_inset Formula $x_{2}^{H}x_{3}=0$
-\end_inset
-
-.
- So, for example, if you want to use the cross product, you have to conjugate.
- For example, you could use 
-\begin_inset Formula $x_{1}\times\overline{x_{3}}$
-\end_inset
-
- (but then you have to multiply by 
-\begin_inset Formula $-i$
-\end_inset
-
- to get the convenient choice above).
 \end_layout
 
 \begin_layout Enumerate
