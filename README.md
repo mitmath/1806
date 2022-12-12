@@ -780,8 +780,30 @@ The wonderful thing about this approach is that it allows us to derive real λ<0
 
 Exam 3 will cover the material through **lecture 32** and **pset 13**: it will include exam-1 and exam-2 material, but will focus mainly on **everything to do with eigenproblems**.  Possible topics include: Determinant, trace, eigenvalues/eigenvectors, diagonalization, similar matrices, matrix powers and linear recurrences xₙ=Aⁿx₀, Markov matrices, linear ODEs dx/dt=Ax (and d²x/dt²=Ax), matrix exponentials (and other matrix functions), complex matrices and the adjoint Aᴴ, real-symmetric/Hermitian matrices, positive-definite matrices (and semi-definite, negative-definite, etc), connections to SVD, defective matrices and generalized eigenvectors.
 
+* Exam 3 and solutions: to be posted in the evening of Dec. 12.
+
 The exam is **closed book/notes**. (No calculators or computers either.)
 
 * (Optional) **review session**: Wednesday 12/7 4–5pm via Zoom: [video recording](https://mit.zoom.us/rec/share/l5amoIqRkrBKbAfPyvkuMquf-V66TOO7wPfmTR62wML4NoxbKC6tGrHrwiqdKYHd.EhGSEKFFJUnSaSIy?startTime=1670446222000),  [handwritten notes](https://www.dropbox.com/s/xnowl6zoe1js1t8/18.06%20Fall%2022%20Exam%20Reviews.pdf?dl=0), and practice problems: [spring 2022 exam 3](https://github.com/mitmath/1806/blob/spring22/exams/exam3.pdf) ([solutions](https://github.com/mitmath/1806/blob/spring22/exams/exam3sol.pdf))
 
 * Some practice problems:  [Spring 2009 exam 3](http://web.mit.edu/18.06/www/Spring09/examsS09.html) ([solutions](http://web.mit.edu/18.06/www/Spring09/quiz3-s09-soln.pdf)); [Spring 2014 exam 3, problems 1–2](http://web.mit.edu/18.06/www/Spring14/oldS14.html) ([solutions](http://web.mit.edu/18.06/www/Spring14/quiz_3_solution.pdf)); [Fall 2013 exam 2, problem 3](http://web.mit.edu/18.06/www/Fall13/exam2_f13.pdf) ([solutions](http://web.mit.edu/18.06/www/Fall13/exam2_f13_sol.pdf)); [Fall 2013 exam 3, problems 2–3](http://web.mit.edu/18.06/www/Fall13/oldF13.html) ([solutions](http://web.mit.edu/18.06/www/Fall13/exam3_f13_sol.pdf)); [Fall 2012 exam 3, problem 1](http://web.mit.edu/18.06/www/Fall12/oldF12.html) ([solutions](http://web.mit.edu/18.06/www/Fall12/Exam%203/quiz3-1806-f12-solution.pdf)); [Spring 2012 exam 3, problems 1, 2, 3a, 3b](http://web.mit.edu/18.06/www/Spring12/oldS12.html) ([solutions](http://web.mit.edu/18.06/www/Spring12/q3_sp12_sol.pdf)); [Fall 2011 exam 3, problems 1.1, 1.2, 3](http://web.mit.edu/18.06/www/Fall11/oldF11.html) ([solutions](http://web.mit.edu/18.06/www/Fall11/q3_f11_sol.pdf)); [Fall 2007 exam 3](http://web.mit.edu/18.06/www/Fall07/examsF07.html) ([solutions](http://web.mit.edu/18.06/www/Fall07/quiz3-1806-F07-sol.pdf)); [Fall 2018 exam 3](https://github.com/mitmath/1806/blob/fall18/exams/exam3.pdf) and [solutions](https://github.com/mitmath/1806/blob/fall18/exams/exam3sol.pdf); [Fall 2017 exam 3](https://github.com/mitmath/1806/blob/fall17/exams/exam3.pdf) and [solutions](https://github.com/mitmath/1806/blob/fall17/exams/exam3-sol.pdf)
+
+## Lecture 35 (Dec 12)
+
+* [Dense and sparse matrices](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Dense-and-Sparse.ipynb)
+
+Large-scale linear algebra: the computational techniques (but not the *conceptual approaches*) of linear algebra completely change when one looks at very large-scale matrix problems (100000×100000 or more).  There, the focus turns to exploiting matrix **sparsity** (matrices that are mostly zero) and other structures that let you multiply matrices by vectors quickly (and let you avoid storing the whole matrix).
+
+Discussed sparse matrices (and other structures), iterative "Krylov" eigensolvers that are more sophisticated versions of the "multiply by A over and over" power method, sparse-direct solvers for Ax=b, and began discussing the connection of Ax=b to **convex quadratic minimization** for positive-definite A.
+
+**Further reading**: Textbook, section 11.3 has some discussion of iterative methods.  More advanced treatments include the book *Numerical Linear Algebra* by Trefethen and Bao, and surveys of algorithms can be found in the *Templates* books for [Ax=b](http://www.netlib.org/linalg/html_templates/Templates.html) and [Ax=λx](http://web.cs.ucdavis.edu/~bai/ET/contents.html).  Sparse-direct solvers are described in detail by the book *Direct Methods for Sparse Linear Systems* by Davis.  The course 18.335 spends much more time on these methods, and there is also some coverage in 18.330.  18.303 and 6.7330 are two classes that talk about discretizing PDEs into large sparse matricdes.
+
+## Lecture 36 (Dec 14)
+
+Linear algebra and optimization: quadratic optimization and beyond.
+
+## Final exam (Dec 22): 12/22 9am-noon
+
+The final will cover the material of **exams 1–3**: through **lecture 32** and **pset 13**.
+
+* Practice problems: practice problems from exams 1–3.  [spring 2022 final](https://github.com/mitmath/1806/blob/spring22/exams/final.pdf) ([solutions](https://github.com/mitmath/1806/blob/spring22/exams/finalsol.pdf)); [fall 2018 final](exams/final.pdf) and [solutions](exams/final-sol.pdf); [spring 2017 final](https://github.com/stevengj/1806/blob/spring17/exams/final.pdf) and [solutions](https://github.com/stevengj/1806/blob/spring17/exams/final-sol.pdf); [2016 ASE](https://github.com/stevengj/1806/blob/spring17/exams/2016-ase.pdf) and [solutions](https://github.com/stevengj/1806/blob/spring17/exams/2016-ase-sol.pdf); [spring 2009 final](http://web.mit.edu/18.06/www/Spring09/final-s09.pdf) and [solutions](http://web.mit.edu/18.06/www/Spring09/final-s09-soln.pdf); [fall 2007 practice final](http://web.mit.edu/18.06/www/Fall07/practicefinal-sol.pdf); [fall 2015 final](http://web.mit.edu/18.06/www/Fall15/FinalSols.pdf), problems 1–5,7; [spring 2013 final](http://web.mit.edu/18.06/www/Spring13/Examfblank.pdf) and [solutions](http://web.mit.edu/18.06/www/Spring13/final_s13_sol.pdf), problems 2,3,4,5,7; [spring 2007](http://web.mit.edu/18.06/www/Spring07/final.pdf) problems 1–5.  Also review your homework problems.
