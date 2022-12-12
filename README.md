@@ -756,7 +756,7 @@ In particular we find:
 
 ## Lecture 34 (Dec 7)
 
-* pset 13 solutions: posted via Canvas announcement
+* [pset 13 solutions](https://github.com/mitmath/1806/blob/master/psets/pset13sol.ipynb)
 
 Examined the analogues of Hermitian positive-definite matrices, matrix exponentials, etcetera, for *infinite-dimensional* linear algebra.  (This material will *not* be on the final.)   It turns out that this is tremendously important for understanding [partial differential equations (PDEs)](https://en.wikipedia.org/wiki/Partial_differential_equation) arising in science and engineering.
 
