@@ -1,0 +1,626 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{(\roman{enumii})}
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MIT 18.06 Exam 3, Fall 2022
+\begin_inset Newline newline
+\end_inset
+
+Johnson
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Your name: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-6pt"
+width "80col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(
+\emph on
+printed
+\emph default
+)
+\end_layout
+
+\begin_layout Paragraph
+Student ID: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-6pt"
+width "80col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Recitation: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-6pt"
+width "80col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 1 [10+(4+4)+5+10 points]:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Two
+\series default
+ of the eigenvectors of the 
+\series bold
+real 
+\series default
+matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ are 
+\begin_inset Formula $x_{1}=\left(\begin{array}{c}
+1\\
+0\\
+1
+\end{array}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{2}=\left(\begin{array}{c}
+0\\
+i\\
+1
+\end{array}\right)$
+\end_inset
+
+with corresponding eigenvalues 
+\begin_inset Formula $\lambda_{1}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{2}=2+i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Another eigenvalue of 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\begin_inset Formula $\lambda_{3}=\underline{\qquad}$
+\end_inset
+
+, and 
+\begin_inset Formula $A$
+\end_inset
+
+ is a 
+\begin_inset Formula $\_\times\_$
+\end_inset
+
+ matrix equal to 
+\begin_inset Formula $A=\underline{\qquad}$
+\end_inset
+
+.
+ You can leave your answer for 
+\begin_inset Formula $A$
+\end_inset
+
+ as a product of matrices and/or matrix inverses without simplifying.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\det A=\underline{\qquad}$
+\end_inset
+
+ and 
+\begin_inset Formula $\operatorname{trace}A=\underline{\qquad}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\det(A-\lambda I)=\underline{\qquad}$
+\end_inset
+
+ (simplify to a polynomial in 
+\begin_inset Formula $\lambda$
+\end_inset
+
+).
+ (Time-saving hint: You can do this without calculating 
+\begin_inset Formula $A$
+\end_inset
+
+ explicitly!)
+\end_layout
+
+\begin_layout Enumerate
+Give 
+\emph on
+all
+\emph default
+ of the eigenvalues, and corresponding eigenvectors, of 
+\begin_inset Formula $(A^{2}-2I)e^{(A^{-1})}$
+\end_inset
+
+.
+ You can leave your eigenvalues as 
+\series bold
+non-simplified
+\series default
+ arithmetic expressions.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 2 [11+11+11 points]:
+\end_layout
+
+\begin_layout Standard
+Consider the differential equation 
+\begin_inset Formula 
+\[
+\frac{dx}{dt}=-B^{T}Bx,\qquad B=\left(\begin{array}{ccc}
+1 & 1 & 1\\
+2 & 0 & 2\\
+3 & 1 & 3\\
+4 & 0 & 4\\
+5 & 1 & 5
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x(t)=\text{(constant vector)}$
+\end_inset
+
+ is a possible solution of this ODE for what vector(s) 
+\begin_inset Formula $x$
+\end_inset
+
+? (Describe 
+\emph on
+all
+\emph default
+ possible answers.
+ Look carefully at 
+\begin_inset Formula $B$
+\end_inset
+
+!)
+\end_layout
+
+\begin_layout Enumerate
+Which of the following looks like a possible plot of 
+\begin_inset Formula $\Vert x(t)\Vert$
+\end_inset
+
+ versus 
+\begin_inset Formula $t$
+\end_inset
+
+ for some initial 
+\begin_inset Formula $x(0)$
+\end_inset
+
+? Circle 
+\series bold
+all possibilities
+\series default
+.
+ (Note: all vertical axes are identical.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+You know this because the eigenvalues of 
+\begin_inset Formula $\underline{\qquad}$
+\end_inset
+
+ must be 
+\begin_inset Formula $\underline{\qquad}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename exam3p3.pdf
+	width 99col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $x(0)=\left(\begin{array}{c}
+1\\
+2\\
+3
+\end{array}\right),$
+\end_inset
+
+ give a 
+\series bold
+good approximation
+\series default
+ for 
+\begin_inset Formula $x(1000)\approx\underline{\qquad}$
+\end_inset
+
+.
+ (Give a specific numerical vector, no unknowns.)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 3 [10+8+8+8 points]:
+\end_layout
+
+\begin_layout Standard
+Suppose that the sequence of vectors 
+\begin_inset Formula $y_{0},y_{1},y_{2},\ldots\in\mathbb{R}^{m}$
+\end_inset
+
+ satisfies the recurrence 
+\begin_inset Formula 
+\[
+\frac{y_{n}-y_{n-1}}{h}=A\left(\frac{y_{n-1}+y_{n}}{2}\right)
+\]
+
+\end_inset
+
+ for some real 
+\begin_inset Formula $h>0$
+\end_inset
+
+ and some 
+\begin_inset Formula $m\times m$
+\end_inset
+
+ matrix 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Write 
+\begin_inset Formula $y_{n}=(\underline{\qquad})y_{n-1}=(\underline{\qquad})y_{0}$
+\end_inset
+
+, where you fill in the blanks with 
+\series bold
+some matrices
+\series default
+ written in terms of 
+\begin_inset Formula $A,$
+\end_inset
+
+ 
+\begin_inset Formula $I$
+\end_inset
+
+ (the 
+\begin_inset Formula $m\times m$
+\end_inset
+
+ identity), 
+\begin_inset Formula $h,$
+\end_inset
+
+ and
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $y_{0}=x_{k}$
+\end_inset
+
+ where 
+\begin_inset Formula $x_{k}$
+\end_inset
+
+ is an 
+\series bold
+eigenvector
+\series default
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+ with eigenvalue 
+\begin_inset Formula $\lambda_{k}$
+\end_inset
+
+, give a 
+\emph on
+much simpler 
+\emph default
+formula 
+\begin_inset Formula $y_{n}=\underline{\qquad}$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $x_{k},\lambda_{k},h,n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The solutions 
+\begin_inset Formula $y_{n}$
+\end_inset
+
+ 
+\series bold
+must
+\series default
+ be 
+\series bold
+decaying to zero
+\series default
+ as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+ if 
+\begin_inset Formula $A$
+\end_inset
+
+ is (
+\series bold
+circle all
+\series default
+ that apply): 
+\emph on
+real, Hermitian, positive-definite, positive-semidefinite, negative-definite,
+ negative-semidefinite.
+ 
+\series bold
+\emph default
+Justify
+\series default
+ your answer (briefly!).
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $A=iB$
+\end_inset
+
+ where 
+\begin_inset Formula $B$
+\end_inset
+
+ is 
+\series bold
+Hermitian
+\series default
+ and 
+\series bold
+invertible
+\series default
+, then the solutions 
+\begin_inset Formula $y_{n}$
+\end_inset
+
+ for 
+\begin_inset Formula $y_{0}\ne0$
+\end_inset
+
+ must be (
+\series bold
+circle one
+\series default
+): growing, decaying to zero, approaching a nonzero constant, oscillating.
+ 
+\series bold
+Justify
+\series default
+ your answer (briefly!).
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\end_body
+\end_document

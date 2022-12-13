@@ -780,7 +780,7 @@ The wonderful thing about this approach is that it allows us to derive real λ<0
 
 Exam 3 will cover the material through **lecture 32** and **pset 13**: it will include exam-1 and exam-2 material, but will focus mainly on **everything to do with eigenproblems**.  Possible topics include: Determinant, trace, eigenvalues/eigenvectors, diagonalization, similar matrices, matrix powers and linear recurrences xₙ=Aⁿx₀, Markov matrices, linear ODEs dx/dt=Ax (and d²x/dt²=Ax), matrix exponentials (and other matrix functions), complex matrices and the adjoint Aᴴ, real-symmetric/Hermitian matrices, positive-definite matrices (and semi-definite, negative-definite, etc), connections to SVD, defective matrices and generalized eigenvectors.
 
-* Exam 3 and solutions: to be posted in the evening of Dec. 12.
+* [Exam 3](exams/exam3.pdf) and [solutions](exams/exam3sol.pdf)
 
 The exam is **closed book/notes**. (No calculators or computers either.)
 
