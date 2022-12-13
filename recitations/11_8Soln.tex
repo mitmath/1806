@@ -1,0 +1,95 @@
+\documentclass{article}
+\usepackage{amsmath, amsthm, amssymb, amsfonts, dsfont, fancyhdr, graphicx, color, tabularx, enumitem}
+\usepackage{geometry}
+
+
+\theoremstyle{definition}
+\newtheorem{prob}{}
+\renewcommand{\qedsymbol}{}
+\renewcommand*{\proofname}{Solution}
+\newcommand{\MSB}[1]{\textcolor{blue}{[MSB: #1]}}
+
+\pagestyle{fancy} \fancyhf{} \lhead{\textsc{18.06}} \rhead{11/8/22} 
+
+\begin{document}
+
+
+\section*{Practice Problems}
+
+\begin{prob}
+	The ``tribonacci numbers" are the sequence defined by $T_1=1$, $T_2=1,$ $T_3=2$ and the recurrence
+	\[T_n=T_{n-1}+ T_{n-2}+ T_{n-3}.\]
+	\begin{itemize}
+		\item[a)] Write this 3-term recurrence as a square matrix $R$ acting on the last \_\_\_\_\_ numbers in this sequence. 
+		\item[b)] Find a formula for $T_n$ involving only $T_1, T_2, T_3$ and $R$.
+		\item[c)] The eigenvalues of this matrix are roughly $-0.42 \pm 0.61 i$ and $1.84$. What does this tell you about the behavior of the Tribonacci numbers for large $n$?
+	\end{itemize}
+
+\end{prob}
+
+\begin{proof}
+	\begin{itemize}
+		\item[a)] The recurrence has 3 terms, so the matrix $R$ should have 3 columns (we need to input 3 numbers). Since $R$ is square, it will also output 3 numbers. Imitating the process from lecture, we are actually looking for the matrix $R$ satisfying
+		\[R\begin{pmatrix}
+			T_{n-1}\\ T_{n-2}\\T_{n-3}
+		\end{pmatrix}=\begin{pmatrix}
+		T_{n}\\ T_{n-1}\\T_{n-2}
+	\end{pmatrix}. \]
+Using the recurrence, it's not too hard to see that
+\[R=\begin{pmatrix}
+	1 & 1 & 1\\
+	1 & 0 & 0\\
+	0 & 1 & 0
+\end{pmatrix}.\]
+Note: you might get a slightly different matrix depending on how you choose to order your vector of $T_i$'s.
+\item[b)] We can obtain $T_n$ by applying $R$ some number of times to the vector $v=[T_3 \ T_2 \ T_1]=[2 \ 1\ 1]$ (technically this will result in a vector, and $T_n$ will be a coordinate of this vector). Notice that $T_4$ is $e_1^T (Rv)$ and $T_5=e_1^T(R^2 v)$. So $T_n= e_1^T (R^{n-3}v)$.
+\item[c)] Since $T_n$ is a coordinate of $R^{n-3} [2 \ 1\ 1]$, we will write $[2\ 1\ 1]$ in an eigenbasis for $R$ and then analyze what happens when we multiply repeatedly by $R$. Say that $v_1$ is the eigenvector of $R$ corresponding to the real eigenvalue $\lambda_1=1.84$ and $v_2, v_3$ correspond to the complex eigenvalues $\lambda_2, \lambda_3$. %Since $R$ is a real matrix, we know that we can choose $v_2, v_3$ so that they are related by complex conjugation. 
+Say also that we've found the expansion of $[T_3 \ T_2 \ T_1]=[2 \ 1\ 1]$ in the eigenvectors, and we get
+\[\begin{pmatrix}
+	2 \\ 1\\ 1
+\end{pmatrix}= c_1 v_1 + c_2 v_2 + c_3 v_3.\]
+Now, remember that $R^j v_r= (\lambda_r)^j v_r$. So 
+\[R^j\begin{pmatrix}
+	2 \\ 1\\ 1
+\end{pmatrix}= c_1 (1.84)^j v_1 + c_2 (-0.42+ 0.61 i)^j v_2 + c_3 (-0.42 - 0.61 i)^j v_3.\]
+	\end{itemize}
+We know that the coefficient of $v_1$ is getting larger and larger as $j$ grows. What about the coefficients of $v_2, v_3$? The best thing to do here is to think about $-0.42\pm 0.61 i$ in polar form. That is, $-0.42+ 0.61 i= r e^{i \theta}$ where $r= \sqrt{(-0.42)^2 + 0.61^2}$. It's easier to understand multiplication in polar form: $(re^{i \theta})^j=r^j e^{i \theta j}$. Notice that $r < 1$ here (it's about $0.74$) so $r^j$ is getting closer and closer to 0 as $j$ increases. This means that $(re^{i \theta})^j$ is getting closer and closer to $0$ as $j$ increases, since the $e^{i \theta j}$ part always has modulus 1. We just thought about the coefficent of $v_2$, but the coefficient of $v_3$ behaves in the same way. In summary, the coefficients of $v_2, v_3$ are shrinking. 
+
+So as $j$ gets very large, the vector $[T_j \ T_{j-1} \ T_{j-2}]$ gets very close to parallel with $v_1$, the first eigenvector. This means that the ratios between $T_j, T_{j-1}, T_{j-2}$ approach the ratios between the corresponding entries of $v_1$.
+\end{proof}
+
+\begin{prob}
+	Consider the matrix 
+	\[\begin{pmatrix}
+		1 & 1\\ -2 & 4
+	\end{pmatrix}\]
+from lecture, which has eigenvalues $\lambda_1=2$ and $\lambda_2=3$, and corresponding eigenvectors $x_1=[1 \ 1]$ and $x_2=[1\ 2]$.
+\begin{itemize}
+	\item[a)] What do we get if we take the vector $x= [3 \ 4]= 2x_1 + x_2$ and multiply 100 times by $A^{-1}$?
+	\item[b)] What happens if we take $x$ and multiply many times by $(2A-5I)^{-1}$? Does it converge to a particular vector?
+	\item[c)] More generally, if we have an arbitrary matrix $A$ with all eigenvalues distinct, and we multiply a vector $x$ repeatedly by $A^{-1}$, it typically approaches what eigenvector? When might this fail to happen?
+\end{itemize}
+\end{prob}
+
+\begin{proof}
+	\begin{itemize}
+		\item[a)] We know that the eigenvectors of $A, A^{-1}$ are the same, and the eigenvalues are reciprocal. So the eigenvalues of $A^{-1}$ are $\lambda_1=1/2$ and $\lambda_2=1/3$, and the corresponding eigenvectors are $x_1, x_2$ respectively. We also know that $A^{-n}x_i= (\lambda_i)^{-n} x_i$. So 
+		\[A^{-100}x= 2 (1/2)^{100} x_1 + (1/3)^{100} x_2= (1/2^{99}) x_1 + (1/3^{100}) x_2.\]
+		\item[b)] We can figure this out without ever computing $(2A-5I)^{-1}$. This is because the eigenvectors of $A, 2A, 2A-5I, (2A-5I)^{-1}$ are all the same. So we just need to figure out how the eigenvalues of $A$ and $(2A-5I)$ are related. 
+		
+		Scaling $A$ scales the eigenvalues by the same amount, so the eigenvalues of $2A$ are $4, 6$. Translating $2A$ by $-5I$ adds $-5$ to each eigenvalue, so the eigenvalues of $2A-5I$ are $-1, 1$. So the eigenvalues of $(2A-5I)^{-1}$ are $-1, 1$ (since $-1=1/-1$ and $1=1/1$). This means 
+		\[(2A-5I)^{-n}x = 2 (-1)^{n} x_1 + (1)^n x_2=2(-1)^{n} x_1 + x_2.\]
+		So $(2A-5I)^{-n}x$ does not converge to a particular vector! It vacillates between $-2x_1 + x_2$ and $2x_1 + x_2$ depending on if $n$ is even or odd.
+		\item[c)] Say the eigenvalues of $A$ are $\lambda_1, \dots, \lambda_r$ and the basis of eigenvectors is $v_1, \dots, v_r$. Say we're interested in some vector $x$, which can be expressed in the basis of eigenvectors as
+		\[x=c_1 v_1 + c_2 v_2 + \dots + c_r v_r .\]
+	As we've seen above,
+	\[A^{-n}x= c_1 (1/\lambda_1)^{n} v_1 + \dots + c_r (1/\lambda_r)^{n} v_r . \]
+	Usually, there will be one eigenvalue, say $\lambda_1$ with smallest modulus, so $1/\lambda_1$ has larger modulus than all the other eigenvalues of $A^{-1}$. The vector $A^{-n}x$ tends to approach an eigenvector with eigenvalue $1/\lambda_1$, since the coefficent $c_1 (1/\lambda_1)^{n}$ of $v_1$ is much much larger in modulus than the coefficients on the other eigenvectors. 
+	
+	There is an exception to this, though---when another eigenvalue, say $\lambda_2$, has the same modulus as $\lambda_1$. Then two coefficients are comparable in modulus, and $A^{-n}x$ does not approach an eigenvector.
+		
+		
+		
+	\end{itemize}
+\end{proof}
+\end{document}

@@ -1,0 +1,145 @@
+\documentclass{article}
+\usepackage{amsmath, amsthm, amssymb, amsfonts, dsfont, fancyhdr, graphicx, color, tabularx, enumitem}
+\usepackage{geometry}
+
+
+\theoremstyle{definition}
+\newtheorem{prob}{}
+\renewcommand{\qedsymbol}{}
+\renewcommand*{\proofname}{Solution}
+\newcommand{\MSB}[1]{\textcolor{blue}{[MSB: #1]}}
+
+\pagestyle{fancy} \fancyhf{} \lhead{\textsc{18.06}} \rhead{10/18/22} 
+
+\begin{document}
+
+
+\section*{Practice Problems}
+\begin{prob}
+	When does the least square solution $\hat{x}$ minimizing $||b-Ax||$ give an exact solution to $Ax=b$?
+\end{prob}
+
+\begin{proof}
+	The vector $\hat{x}$ gives an exact solution to $Ax=b$ exactly if $A\hat{x}=b$. We would like to understand when this happens.
+	
+	Notice that $A \hat{x}$ is in the column space of $A$, so if $b$ is not in $C(A)$ then $\hat{x}$ can't give an exact solution. On the other hand, if $b$ is in the column space, we claim that $\hat{x}$ is always an exact solution. Indeed, if $b$ is in the column space, then we can find an $x$ so that $Ax=b$. So the minimum value of $||b-Ax||$ is 0. Since $\hat{x}$ minimizes this distance, we must have that $||b-A\hat{x}||=0$. In other words, $A\hat{x}=b$ so $\hat{x}$ is an exact solution as claimed.
+\end{proof}
+
+\begin{prob}
+	We want to project onto the plane $x-y-2z=0$. To do this, choose 2 vectors spanning that plane (the nullspace of what matrix?) and make them the columns of a matrix $A$ so that $C(A)$ is the plane. Then compute the projection of the point 
+	\[b=\begin{pmatrix}
+		0\\6\\12
+	\end{pmatrix}\]
+onto this plane.
+\end{prob}
+\begin{proof}
+	The plane $x-y-2z=0$ is the nullspace of 
+	\[B=\begin{pmatrix}
+		1 & -1 & -2
+	\end{pmatrix}.\]
+
+Since it's a small example, we can eyeball a basis of this plane; the vectors $(1 \ 1 \ 0)$ and $(2\ 0\ 1)$ work. So we have 
+\[A=\begin{pmatrix}
+	1 & 2\\
+	1 & 0\\
+	0 & 1
+\end{pmatrix}.\]
+The projection $p$ of $b$ onto $C(A)$ is 
+\[p=A(A^TA)^{-1}A^Tb.\]
+To avoid taking inverses, we use the strategy of setting $\hat{x}=(A^TA)^{-1}A^Tb$, solving the normal equations $A^T A \hat{x}= A^T b$, and then computing $p = A \hat{x}$.
+
+We compute: 
+\[A^T A= \begin{pmatrix}
+	2 & 2\\
+	2 & 5
+\end{pmatrix} 
+\qquad
+A^T b= \begin{pmatrix}
+	6\\12
+\end{pmatrix}.\]
+So we have the equation 
+\[\begin{pmatrix}
+	2 & 2\\
+	2 & 5
+\end{pmatrix} \begin{pmatrix}
+x_1\\x_2
+\end{pmatrix}=\begin{pmatrix}
+6\\12
+\end{pmatrix}.\]
+Solving (however you like), we get $x_1=1$ and $x_2=2$. Now, we need to compute $A \hat{x}:$
+\[\begin{pmatrix}
+	1 & 2\\
+	1 & 0\\
+	0 & 1
+\end{pmatrix} \begin{pmatrix}
+1\\2
+\end{pmatrix}=\begin{pmatrix}
+5 \\ 1\\2
+\end{pmatrix}= p.\]
+
+Alternate solution: we know that $b=p + e$, where $p$ is the projection of $b$ to the plane $x-y-2z=0$ and $e$ is the projection of $b$ to the orthogonal complement of that plane. So if we can compute $e$, we can compute $p=b-e$. 
+
+The orthogonal complement of the plane is the vector space $S$ spanned by $v=(1 \ -1\ -2)$. Using the formula from lecture, the projection of $b$ onto $S$ is
+\[e=\frac{v v^T}{v^T v}b.\]
+Now, $v^Tv=6$ and 
+\[vv^T=\begin{pmatrix}	1\\-1\\-2 \end{pmatrix}\begin{pmatrix}	1&-1&-2 \end{pmatrix}=\begin{pmatrix}
+	1&-1&-2\\-1&1&2\\-2&2&4
+\end{pmatrix}
+\]
+so 
+\[e=\frac{1}{6}\begin{pmatrix}
+	1&-1&-2\\-1&1&2\\-2&2&4
+\end{pmatrix}\begin{pmatrix}
+0\\6\\12
+\end{pmatrix}=\begin{pmatrix}
+-5\\5\\10
+\end{pmatrix} \]
+and 
+\[p=b-e=\begin{pmatrix}
+	0\\6\\12
+\end{pmatrix}-\begin{pmatrix}
+	-5\\5\\10
+\end{pmatrix}=\begin{pmatrix}
+5\\1\\2
+\end{pmatrix}\]
+\end{proof}
+
+\begin{prob}
+	Say $P$ is an $m \times m$ orthogonal-projection matrix onto an $n$-dimensional subspace. What is the rank of $A=(I-P)P$? What is the rank of $B=(I-P)-P$? Show that $B$ is orthogonal. (Hint: helpful to compute $B^2$, and also to draw a picture of what $B$ does.)
+\end{prob}
+\begin{proof}
+	Let's say $S$ is the subspace $P$ projects onto.
+	
+	For the first question, we multiply 
+	\[A=(I-P)P=P-P^2=P-P=0.\]
+So $A$ has rank 0. This makes sense; $I-P$ is the projection onto $S^\perp$. So $A$ first projects $x$ to $S$, and then projects the resulting point of $S$ to $S^\perp$. But if $s$ is a vector in $S$, the closest point in $S^\perp$ will always be 0.
+	
+	For the second question, it's easiest to picture the case where we're in the plane and $S$ is $1$-dimensional (so a line through the origin). In that case, $B$ takes a vector and reflects it across the line through the origin perpendicular to $S$; that is $B$ is reflection across $S^\perp$. This gives us the intuition that $B$ is full rank, since reflection is an invertible transformation. We'll show this using the hint.
+	
+	Taking the hint, we compute 
+	\[B^2=I -4P + 4P^2=I-4P+4P=I\]
+	where we are using the fact that $P^2=P$. This means that $B$ is invertible (in fact, $B$ is its own inverse) and in particular is rank $m$.
+	
+	We've already computed that $B^2=I$, so $B^{-1}=B$. We'd like to show that $B$ is \emph{orthogonal}; that is, that $B^{-1}=B^T$. It's enough to show that $B=B^{T}$. Remember from class that for a projection matrix $P$, $P=P^T$. So we check
+	\[B^T=(I-2P)^T=I-2P^T=I-2P=B\]
+	as desired.
+\end{proof}
+
+\begin{prob}
+	If $A$ is $m \times n$ with rank $n$, what is the complexity of finding the projection $p$ onto $C(A)$ of a point $b$ by 
+	\begin{itemize}
+		\item[(1)] forming the projection matrix $P$ (using the formula from class) then doing the multiplication $Pb$
+		\item[(2)] forming the normal equations, solving them for $\hat{x}$ and then computing $p=A \hat{x}$.
+	\end{itemize}
+\end{prob}
+
+\begin{proof}
+For (1): The formula is 
+\[P=(A^TA)^{-1}A^T.\]
+To compute $A^T$, you do roughly $mn$ arithmetic operations (there are $mn$ entries of $A^T$ and to get a single entry, you do 1 operation, which is selecting a particular entry of $A$). Computing the product $A^T A$ uses $mn^2$ operations (there are $n^2$ entries of $A^T A$ and to get a single entry, you do about $m$ operations). Inverting $A^T A$ uses $n^3$ operations (e.g. using Gaussian elimination). Doing the final multiplication uses $m n^2$ operations (there are $mn$ entries of $P$ and computing one of them takes about $n$ operations). Since $m>n$, the overall computational complexity is on the order of $mn^2$.
+
+For (2): Notice that the most expensive part of the above computation was actually multiplying the matrices $A^TA$, which took $mn^2$ operations. This will also be the most expensive part of this method. The normal equations are $A^T A \hat{x}= A^T b$. Computing $A^T b$ takes $mn$ operations; solving the equations takes $n^3$ operations; multiplying $A\hat{x}$ in the end takes $mn$ operations. So again, the overall computational complexity is on the order of $mn^2$.
+\end{proof}
+
+
+ \end{document}

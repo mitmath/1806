@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{amsmath, amsthm, amssymb, amsfonts, dsfont, fancyhdr, graphicx, color, tabularx, enumitem}
+\usepackage{geometry}
+
+
+\theoremstyle{definition}
+\newtheorem{prob}{}
+\renewcommand{\qedsymbol}{}
+\renewcommand*{\proofname}{Solution}
+\newcommand{\MSB}[1]{\textcolor{blue}{[MSB: #1]}}
+
+\pagestyle{fancy} \fancyhf{} \lhead{\textsc{18.06}} \rhead{10/18/22} 
+
+\begin{document}
+
+
+\section*{Practice Problems}
+\begin{prob} True or False (give a good reason if true/counterexample or reason if false)
+
+\begin{enumerate}
+	
+	\item If the zero vector is in the column space of a matrix $A$, then the columns of $A$ are linearly dependent.
+	
+	\item If the columns of a matrix are dependent, so are the rows.
+	
+	\item The column space of a $2 \times 2$ matrix is the same as its row space.
+	
+	\item The column space of a $2 \times 2$ matrix has the same dimension as its row space.
+	
+	\item The columns of a matrix are a basis for the column space.
+	
+	\item $A$ and $A^T$ have the same number of pivots.
+	
+	\item $A$ and $A^T$ have the same left nullspace.
+	
+	\item If the row space equals the column space then $A^T=A$.
+	
+	\item If $A^T = -A$, then the row space of $A$ equals the column space.
+	
+\end{enumerate}
+	
+\end{prob}
+
+\begin{prob} If $w_1, w_2, w_3$ are independent vectors in $\mathbb{R}^3$, show that the differences 
+\begin{align*}
+	v_1 &= w_2 - w_3 \\
+	v_2 &= w_1 - w_3 \\
+	v_3 &= w_1 - w_2.
+\end{align*}
+are \emph{dependent}.  Find the matrix $A$ so that
+\[ \begin{bmatrix} \\ w_1 & w_2 & w_3 \\ &\end{bmatrix}A = \begin{bmatrix} \\ v_1 & v_2 & v_3 \\ &\end{bmatrix}.\]
+Which matrices above are singular?
+\end{prob}
+
+\begin{prob}Construct $A = uv^T + wz^T$ whose column space has basis $\begin{bmatrix} 1 \\ 2 \\ 4 \end{bmatrix}, \begin{bmatrix} 2 \\ 2 \\ 1 \end{bmatrix}$ and whose row space has basis $(1,0), (1,1)$.  Write $A$ as a $3 \times 2$ matrix times a $2 \times 2$ matrix.
+\end{prob}
+
+\begin{prob} If a subspace $S$ is contained in a subspace $V$, prove that $S^\perp$ contains $V^\perp$.
+\end{prob}
+
+
+\end{document}

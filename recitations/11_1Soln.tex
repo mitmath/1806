@@ -1,0 +1,213 @@
+\documentclass{article}
+\usepackage{amsmath, amsthm, amssymb, amsfonts, dsfont, fancyhdr, graphicx, color, tabularx, enumitem}
+\usepackage{geometry}
+
+
+\theoremstyle{definition}
+\newtheorem{prob}{}
+\renewcommand{\qedsymbol}{}
+\renewcommand*{\proofname}{Solution}
+\newcommand{\MSB}[1]{\textcolor{blue}{[MSB: #1]}}
+
+\pagestyle{fancy} \fancyhf{} \lhead{\textsc{18.06}} \rhead{11/1/22} 
+
+\begin{document}
+
+
+\section*{Practice Problems}
+\begin{prob}
+True, false, or neither (that is, sometimes true, sometimes false):
+\begin{itemize}
+	\item[a)] If $v, w$ are eigenvectors of $A$, then so is $v+w$ and $c v$ for c any scalar.
+	\item[b)] If $v \in N(A)$ is not the zero vector, then $v$ is an eigenvector of $A$.
+\end{itemize}
+\end{prob}
+
+\begin{proof}
+	a) The vector $c v$ will always be an eigenvector, with the same eigenvalue as $v$. If $v, w$ are eigenvectors with the \emph{same} eigenvalue, then $A(v+w)= Av+ Aw=\lambda v + \lambda w = \lambda(v+w)$, so $v+w$ is another eigenvector (as long as it's nonzero). If $v, w$ have \emph{different} eigenvalues, then $v+w$ is \emph{not} an eigenvector.
+	
+	b) is true! Since $v$ is in $N(A)$, $Av=0=0 \cdot v$, so $v$ is an eigenvector with eigenvalue 0.
+\end{proof}
+
+\begin{prob}
+	Describe as many eigenvalues and corresponding eigenvectors as you can (without doing any serious calculation) for
+	
+	\begin{itemize}
+		
+		\item[a)] $A = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$ and $B = \begin{pmatrix} 4 & 3 & -1 \\ 0 & 1 & 4 \\ 0 & 0 &2 \end{pmatrix}$.
+		
+		\item[b)] A projection matrix $P$ onto some subspace $S$ (pick a particular 2-dimensional subspace of $\mathbb{R}^3$ if you're confused).
+		
+		\item[c)] The permutation matrix
+		\[M = \begin{pmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{pmatrix}. \]
+		
+		\item[d)] A rank one matrix $uv^T$ (pick particular 3-component vectors $u, v$ if you're confused).
+		
+	\end{itemize}
+\end{prob}
+
+\begin{proof}
+	\begin{itemize}
+		\item[a)] $I$ fixes every vector; that is $Ix=x$ for any $x$. So all vectors are eigenvectors of $I$, with eigenvalue $1$. For the upper-triangular matrix, the easy eigenvector is $[1\ 0 \ 0]$, which has eigenvalue 4. The other eigenvectors are more difficult.
+		\item[b)] $P$ fixs every vector in $S$, so all vectors in $S$ are eigenvectors, with eigenvalue $1$. On the other hand, $P$ sends every vectors in $S^\perp$ to $0$, so all vectors in $S^\perp$ are eigenvectors with eigenvalue $0$.
+		\item[c)] $M$ fixes the vector $v=[1\ 1 \ 1]$, so $v$ is an eigenvector with eigenvalue 1. The other eigenvalues/vectors are a little more complicated.
+		\item[d)] First, every vector in the nullspace is an eigenvector with eigenvalue 0. Now, say $q$ is a vector which is \emph{not} in the nullspace. Then $u v^t q= u(v^Tq)=(v^Tq)u$ since $v^Tq$ is just a scalar. That is, $(u v^T)q$ is always a scalar multiple of $u$. So the only way for $q$ to be an eigenvector is if $q$ is a scalar multiple of $u$. The vector $c u$ is an eigenvector with eigenvalue $c \cdot v^T u$.
+	\end{itemize}
+\end{proof}
+	
+\begin{prob} For which angles $\theta$ does the rotation matrix
+	\[R = \begin{pmatrix} \cos \theta & -\sin \theta \\ \sin \theta & \cos\theta \end{pmatrix}, \]
+	have real eigenvalues? (Hint: The roots of the quadratic equation $ax^2 + bx + c$ are $(-b \pm \sqrt{b^2-4ac})/2a$.)
+\end{prob}
+\begin{proof}
+	Remember that the eigenvalues are the roots of the equation 
+	\[\det (R-\lambda I) =0.\]
+	In this situation, 
+	\[R-\lambda I = \begin{pmatrix} \cos \theta - \lambda & -\sin \theta \\ \sin \theta & \cos\theta-\lambda \end{pmatrix}\]
+	and 
+	\begin{align*}
+		\det(R- \lambda I)&= (\cos \theta - \lambda)^2 + \sin^2 \theta\\
+		&=\cos^2 \theta - 2 \lambda \cos\theta + \lambda^2 + \sin^2 \theta\\
+		&= \lambda^2 -2 \lambda \cos \theta +1.
+	\end{align*}
+Using the quadratic formula, the roots of this equation are real exactly when $4 \cos^2 \theta -4>0$ (this is the part inside the square root in the quadratic formula). Now $\cos^2 \theta \leq 1$, and $\cos^2 \theta =1$ only when $\theta=0, \pi$. So we see that $R$ has real eigenvalues only when it is the identity matrix or rotation by $\pi$.
+\end{proof}
+	
+	\begin{prob}
+	Suppose that $A, B, C$ are $m \times m$ matrices with eigenbases that you know.
+%\begin{align*}
+% v_{A,1}, \cdots, v_{A, m}, & \qquad \lambda_{A, 1}, \cdots, \lambda_{A, m}, \\
+% v_{B,1}, \cdots, v_{B, m}, & \qquad \lambda_{B, 1}, \cdots, \lambda_{B, m}, \\
+%  v_{C,1}, \cdots, v_{C, m}, & \qquad \lambda_{C, 1}, \cdots, \lambda_{C, m}.
+%  \end{align*}
+%(So that $A v_{A, i} = \lambda_{A, i} v_{A, i}$, $B v_{B, i} = \lambda_{B, i} v_{B, i}$, and $C v_{C, i} = \lambda_{C, i} v_{C, i}$.)
+ What do you know about the eigenvectors and eigenvalues of $A^{2022}$? $A^{-1}$ (assuming $A$ is invertible)? $A^T$? $AB$? $A+B$?
+
+	\end{prob}
+
+\begin{proof}\ 
+	
+	\begin{itemize}
+		\item[$A^{2022}$:] Say $Av=\lambda v$. Then $A^{2022}v= \lambda^{2022}v$. That is, the eigenvectors are the same; the eigenvalues are $2022$ powers.
+		\item[$A^{-1}$:] I can manipulate the equation $Av=\lambda v$ to involve an $A^{-1}$, by multiplying both sides by $A^{-1}$ on the left. I get $v= \lambda A^{-1}v$; dividing both sides by $\lambda$, I get $(1/\lambda) v= A^{-1}v$. So the eigenvectors are the same, but the eigenvalues are reciprocals.
+		\item[$A^T$:] Can't say anything about the eigenvectors in general, but the eigenvalues will be the same. The eigenvalues of $A$ are the roots of $\det(A-\lambda I)$ and the determinant of a matrix and its transpose are equal, so $\det(A-\lambda I)= \det(A-\lambda I)^T= \det(A^T-\lambda I)$. 
+		\item[$AB$] Can't say anything in general. If $A$ and $B$ happen to have an eigenvector, say $v$, in common, then it will be an eigenvector of $AB$ (and the eigenvalues will multiply).
+		\item[$A+B$] Can't say anything in general. Again, if $A$ and $B$ happen to have an eigenvector, say $v$, in common, then $v$ will be an eigenvector of $A+B$, and the eigenvalues will add.
+	\end{itemize}
+\end{proof}
+
+
+
+%1) what is the pattern when you multiply A repeatedly by some vector?  After ___ multiplications, you get back the same vector, so A^___ = ____
+%
+%2) What are eigenvalues and eigenvectors of A?
+%        --- From the previous part, A^4=I ? is that consistent with your eigenvalues?
+%
+%3) Write the column vector x = (1,0) in the basis of the eigenvectors and give a formula for A^n x.
+%        --- Why is this real even though the eigenvectors/values are complex?
+%
+%4) What are the eigenvectors and eigenvectors of B = 2A + I?
+%        -- can do it both the hard way, of re-solving the characteristic polynomial, and the easy way ? ? 2?+1.
+%        -- what does this tell you about B^n x for n goes to +infinity?  To -infinity?
+%
+%More generally, if A is any real mxm matrix and Ax=?x is a solution with a complex eigenvalue ?, what must be another eigenvalue and eigenvector?  (Answer: complex conjugate of ? and x.)
+%
+%In general, if Ax=?x and ? is complex, how can you tell whether A^n x blows up as n goes to +infinity?
+
+
+\begin{prob}
+	Suppose that $A$ is the matrix
+	\[A = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}.\]
+\begin{itemize}
+	
+	\item[a)] What is the pattern when you multiply $A$ repeatedly by some vector?  After \underline{\phantom{aaaaaaa}} multiplications, you get back the same vector, so 
+	\[A^{\overline{\phantom{aaa}}} = \underline{\phantom{aaaaaaaaaaaa}}.\]
+	
+	\item[b)] What are eigenvalues and eigenvectors of $A$?  Is this consistent with the previous part?
+	
+	\item[c)] Write the vector $x = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$ in the basis of the eigenvectors and give a formula for $A^n x$.
+	
+	\item[d)] What are the eigenvectors and eigenvalues of $B = 2A + I$?
+	
+\end{itemize}	
+\end{prob}
+
+\begin{proof}
+	\begin{itemize}
+		\item[a)] $A[a \ b]= [b \ -a]$. So after 4 multiplications, we get back the same vector. This means $A^4=I$.
+	\item[b)] The matrix $A$ is actually an example of a rotation matrix from Problem 3, with $\theta=-\pi/2$. So we know we should expect 2 complex eigenvalues. The characteristic equation is
+	\[\det(A- \lambda I)= \lambda^2+1\]
+	and the two roots of this equation are $\lambda_1=i$ and $\lambda_2= -i$. The two eigenvectors $v_1, v_2$ satisfy 
+	\[A v_1 = i v_1 \qquad \text{and }\qquad A v_2= -i v_2.\]
+	Say $v_1= [a_1 \ b_1]$ and $v_2= [a_2 \ b_2]$. Then these equations are
+	\[\begin{pmatrix}
+		b_1\\-a_1
+	\end{pmatrix}=\begin{pmatrix}
+	i a_1\\i b_1
+\end{pmatrix} \qquad \text{and} \qquad \begin{pmatrix}
+b_2\\-a_2
+\end{pmatrix}=\begin{pmatrix}
+-i a_2\\-i b_2
+\end{pmatrix}. \]
+	The first equations tell us that $b_1=i a_1$ and $i b_1=-a_1$ (these two equations actually contain the same information, since multiplying both sides of the first equation by $i$ give the second). The simplest vector satisfying these conditions is $[1 \ i]$. 
+	
+	The second equations tell us that $b_2=-i a_2$ and $ib_2=a_2$ (again, these equations contain the same information). The simplest vector satisfying these equations is $[i \ 1]$.
+	
+	Remember that the eigenvalues of $A^4$ are exactly the eigenvalues of $A$ raised to the 4th power. Since $A^4=I$ and the only eigenvalue of $I$ is 1, I expect to get $1$ if I raise any eigenvalue of $A$ to the 4th power. And indeed I do, so this checks out.
+	
+	\item[c)] Writing $[1 \ 0]$ in the basis of eigenvectors is the same as solving the equations 
+	\[\begin{pmatrix}
+		1 & i \\i & 1
+	\end{pmatrix}\begin{pmatrix}
+	a \\b
+\end{pmatrix}= \begin{pmatrix}
+1 \\0
+\end{pmatrix}.\]
+Doing this gives
+\[\begin{pmatrix}
+	1 \\0
+\end{pmatrix}= \frac{1}{2}\begin{pmatrix}
+1 \\i
+\end{pmatrix}+ \frac{-i}{2}\begin{pmatrix}
+i \\1
+\end{pmatrix}.\]
+Now 
+\[A^n x= A^n\left(\frac{1}{2}\begin{pmatrix}
+	1 \\i
+\end{pmatrix}+ \frac{-i}{2}\begin{pmatrix}
+	i \\1
+\end{pmatrix}\right)= \frac{i^n}{2}\begin{pmatrix}
+1 \\i
+\end{pmatrix} + \frac{(-i)^{n+1}}{2}\begin{pmatrix}
+1 \\i
+\end{pmatrix}.\]
+\item[d)] Say $Ax= \lambda x$. Then we see that $Bx= 2Ax+ x= 2 \lambda x+x=(2 \lambda +1)x$, so $x$ is \emph{also} an eigenvector of $B$ with eigenvalue $2 \lambda +1$. Similarly, using the fact that $A= (1/2)(B-I)$ we can check that every eigenvector of $B$ is also an eigenvector of $A$. 
+
+So the eigenvalues of $B$ are $2 \lambda_1 +1=2i+1$ and $2 \lambda_2 +1= -2i +1.$ And the eigenvectors are $v_1, v_2$.
+	\end{itemize}
+\end{proof}
+
+%\begin{prob}
+%	 Suppose that $A$ is any $m \times m$ matrix with entries in $\mathbb{R}$ and 
+%	\[Ax = \lambda x \]
+%	for some $\lambda \in \mathbb{C}, \lambda \not\in \mathbb{R}$. 
+%	\begin{enumerate}
+%		\item What must be another eigenvector and eigenvalue?
+%		\item How can you tell if $A^n x$ blows up as $n \to \infty$?
+%	\end{enumerate}
+%	
+%\end{prob}
+%
+%\begin{prob}
+% (Strang, Section 6.1, Problem 19) A $3 \times 3$ matrix $B$ is known to have eigenvalues $0,1,2$.  This is enough information to determine $3$ of the following.  Which are they and what are the answers:
+%	\begin{itemize}
+%		\item[a)] The rank of $B$.
+%		\item[b)] The determinant of $B^TB$.
+%		\item[c)] The eigenvalues of $B^TB$.
+%		\item[d)] The eigenvalues of $(B^2 + I)^{-1}$.
+%	\end{itemize}
+%\end{prob}
+
+
+
+\end{document}

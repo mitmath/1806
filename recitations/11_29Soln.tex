@@ -1,0 +1,138 @@
+\documentclass{article}
+\usepackage{amsmath, amsthm, amssymb, amsfonts, dsfont, fancyhdr, graphicx, color, tabularx, enumitem, hyperref}
+\usepackage{geometry}
+
+
+\theoremstyle{definition}
+\newtheorem{prob}{}
+\renewcommand{\qedsymbol}{}
+\renewcommand*{\proofname}{Solution}
+\newcommand{\MSB}[1]{\textcolor{blue}{[MSB: #1]}}
+\def\tr{\text{tr}}
+
+\pagestyle{fancy} \fancyhf{} \lhead{\textsc{18.06}} \rhead{11/29/22} 
+
+\begin{document}
+
+
+\section*{Practice Problems}
+\begin{prob} Remember that a matrix $Q$ is \emph{unitary} if $Q^HQ = I$. A matrix is \emph{orthogonal} if it is real and unitary; that is, if it is real and $Q^TQ=I$.
+\begin{itemize}
+	\item[a)] Find the flaw in this argument:
+	
+	 \textbf{False Claim: all eigenvalues of an orthogonal matrix are $\pm 1$.}  Indeed, if $Qx = \lambda x$,
+	\[\lambda^2 x^T x = (Qx)^T (Qx) = x^T (Q^T Q) x = x^Tx, \]
+	therefore $\lambda^2 = 1$, so $\lambda = \pm 1$.  If you want, you can think about what happens for a rotation matrix
+	\[ R = \begin{pmatrix} \cos \theta & -\sin \theta \\ \sin \theta & \cos \theta \end{pmatrix}.\]
+	
+	\item[b)] Correct the proof to show 
+	
+	\textbf{True Claim: all eigenvalues of a unitary matrix have magnitude $1$ (e.g. $\lambda = e^{i \phi}$ for some $\phi$).}
+	
+	\item[c)] Show that the eigenvectors for different eigenvalues of a unitary matrix are orthogonal.
+	
+	\item[d)] Show that the determinant of any real unitary matrix (e.g., an orthogonal matrix) is $\pm 1$ using eigenvalues.  (Note: you already proved this on a previous pset in a different way.)
+	
+\end{itemize}
+\end{prob}
+
+\begin{proof}
+	\begin{itemize}
+		\item[a)] Let's think through this carefully. The equality 
+		\[\lambda^2 x^Tx= x^Tx\]
+		from the argument above is true. This equality tells us that 
+		\begin{align*}
+			\lambda^2 x^Tx- x^Tx&=0\\
+			x^Tx(\lambda^2-1)&=0.
+		\end{align*}
+	However, the second equality here tells us that either $\lambda^2=1$ \emph{or} $x^Tx=0$. We are used to thinking about real vectors; if $x$ is real, then $x^Tx=||x||^2>0$ since $x$ cannot be the zero vector here (it is an eigenvector). However, here it's possible that $x$ is complex, and if $x$ is complex, it's easy for $x^Tx=0$ even if $x$ is not the zero vector! For example, if 
+	\[x=\begin{pmatrix}
+		i\\1
+	\end{pmatrix}\]
+then $x^Tx=i^2+1=0$. So the flaw in the proof is the assumption that $x^Tx=0$.
+	\item[b)] To get a proof of the true claim, we switch every $T$ in sight to an $H$ (that is, we take the adjoint rather than the transpose.) So the proof of the true claim goes like this: 
+	
+If $Qx = \lambda x$, then
+	\[\lambda \overline{\lambda} x^H x = (Qx)^H (Qx) = x^H (Q^H Q) x = x^Hx. \]
+	This means that 
+		\begin{align*}
+		\lambda \overline{\lambda} x^Hx- x^Hx&=0\\
+		x^Hx(\lambda \overline{\lambda}-1)&=0.
+	\end{align*}
+	Since $x^Hx=||x||^2>0$, we see that $\lambda \overline{\lambda} = |\lambda|^2=1$.  This means that $\lambda$ has magnitude 1, that is, $\lambda=e^{i \theta}$.
+	\item[c)] Say $x_1, x_2$ are eigenvectors with eigenvalues $\lambda_1 \neq \lambda_2$. We want to show that $x_1^Hx_2=0$. We'll mimic the argument from b), but using $x_1, x_2$ rather than just a single eigenvector.
+	
+	So we have 
+	\[\overline{\lambda_1}\lambda_2 x_1^H x_2= (Qx_1)^H (Qx_2)= x_1^H(Q^HQ)x_2=x_1^Hx_2. \]
+	This tells us that 
+	\[x_1^H x_2(\overline{\lambda_1}\lambda_2 -1)=0.\]
+	So either $x_1^H x_2=0$ or $\overline{\lambda_1}\lambda_2 =1$. The second situation is impossible: remember that since $\lambda_1= e^{i \theta}$, its conjugate $\overline{\lambda_1}=e^{-i\theta}= 1/\lambda_1$. So if we were in the second situation, we would have $\overline{\lambda_1}= 1/\lambda_2$, which would imply $\lambda_1=\lambda_2$. We assumed the two eigenvalues were \emph{not} equal, so this is impossible, as claimed.
+	
+	In summary, we must have $x_1^Hx_2=0$, so the vectors are orthogonal.
+	
+	\item[d)] Say $Q$ is an $m \times m$ orthogonal matrix, with eigenvalues $\lambda_1, \dots, \lambda_m$. Since it's unitary, its eigenvalues must have the form $e^{i \theta}$. Since it's real, its complex eigenvalues must come in complex conjugate pairs. So the eigenvalues are $p$ 1's, $q$ $(-1)$'s and then $r$ pairs of conjugate complex numbers. Remember that $\lambda \overline{\lambda}=|\lambda|^2$, so the product of the complex conjugate pairs is just 1.
+	
+	We know 
+	\[\det(Q)= \lambda_1 \lambda_2 \cdots \lambda_m= 1^p \cdot (-1)^q 1^r= \pm1.\]
+	\end{itemize}
+\end{proof}
+
+\begin{prob}
+Here is a quick ``proof" that the eigenvalues of \textbf{every} real matrix $A$ are real:
+\[\text{\textbf{False Proof: }} Ax = \lambda x \text{ gives } x^TAx = \lambda x^Tx, \quad \text{so } \ \lambda  = \frac{ x^TAx}{x^Tx} = \frac{\text{real}}{\text{real}}.\]
+Find the flaw in this reasoning -- a hidden assumption that is not justified.  You can test those steps on the 90${}^\circ$ rotation matrix
+\[ A = \begin{pmatrix} 0 & -1 \\  1 & 0 \end{pmatrix}, \qquad \lambda =  i, \ x = \begin{pmatrix} i \\ 1 \end{pmatrix}.\]
+\end{prob}
+
+\begin{proof}
+There are a couple of flaws in this argument. First, as we saw in the previous problem, it's possible for $x^Tx=0$ even if $x \neq 0$, so this division at the end might be dividing by zero. Even if we're not dividing by zero, $x^TAx$ and $x^Tx$ are not necessarily real, so the final equality is also not true.
+\end{proof}
+
+
+\begin{prob}
+\begin{itemize}
+	\item[a)] If $S$ is a positive definite matrix, show that $S^{-1}$ is also positive definite.
+	\item[b)] If $S$ and $T$ are positive definite, show that their sum $S + T$ is also positive definite.   If $S = A^HA$ and $T = B^HB$ for full-column-rank matrices $A$ and $B$, then can you write down a full column-rank matrix $C$ so that $S +T = C^TC$?
+\end{itemize}
+\end{prob}
+
+\begin{proof}
+	\begin{itemize}
+		\item[a)] Remember that a matrix $A$ is \emph{positive definite} if it is Hermitian $A^H=A$ and its eigenvalues are all positive (or a couple of other equivalent conditions). So we know that $S^H=S$ and the eigenvalues of $S$ are all positive. We need to check that the same properties hold for $S^{-1}$.
+		
+		The eigenvalues of $S^{-1}$ are just the reciprocals of eigenvalues of $S$, so they are all positive. We should also check that $(S^{-1})^H= S^{-1}$. We check this by starting with the true equation $S^{-1}S=I$ and taking the adjoint of both sides:
+		\begin{align*}
+			(S^{-1}S)^H=&I^H\\
+			S^H (S^{-1})^H&=I\\
+			S (S^{-1})^H&=I
+		\end{align*}
+	where we used the fact that $S^H=S$. 
+	\item[b)] It's easiest to use a different characterization of positive definite matrices for this problem: $S^H=S$ and $x^HSx>0$ for all vectors $x \neq 0$. We check these two properties for $S+T$:
+	\[(S+T)^H= S^H + T^H= S+T \qquad \text{and} \qquad x^H(S+T)x=x^HSx + x^HTx >0.\]
+	
+	The answer to the question is: you can write down the matrix $C$, but it's hard to relate it to $A, B$. In particular, from lecture, one way to get the matrix $C$ (resp., $A$ and $B$) is to look at the diagonalization of $S+T$ (resp, $S$ and $T$). But the diagonalization of $S+T$ is hard to relate to the diagonalization of $S$ and $T$ separately; the eigenvectors and eigenvalues might be completely unrelated. (If anyone has a better answer to this question, I'd be happy to hear it!)
+	
+	\end{itemize}
+
+\end{proof}
+
+\begin{prob}
+	Say $A$ is a $3 \times 3$ real matrix. The matrix $B=A+A^T$ has eigenvalues $\lambda_1=2, \lambda_2=0, \lambda_3=1$, with corresponding eigenvectors $x_1=[1\ 2\ 1]$, $x_2=[-2\ 1\ 0]$ and $x_3=[1 \ 2\ -5]$.
+	\begin{itemize}
+		\item[a)] What is $e^B$? (It's fine to leave your answer as a product of several matrices, as long as each matrix is written down explicitly)
+		\item[b)] Let $C=(I-B)(I+B)^{-1}$. What are the eigenvalues and eigenvectors of $C$?
+		\item[c)] Give a good approximation for 
+		\[y=C^{100} \begin{pmatrix}
+			1\\1\\1
+		\end{pmatrix}\]
+	in terms of a single eigenvector.
+	\end{itemize}
+\end{prob}
+
+\begin{proof}
+	See \url{https://github.com/mitmath/1806/blob/fall18/exams/exam3sol.pdf}, Problem 3. 
+	
+	This is similar to problems we've done before in section. The only new part is to remember that $B$ is a symmetric matrix, so the eigenbasis can be chosen to be orthogonal (you can also see by inspection that $x_1, x_2, x_3$ are orthogonal). This simplifies computing the diagonalization of $B$, and expanding $y$ in terms of the eigenbasis.
+\end{proof}
+
+\end{document}
