@@ -800,7 +800,17 @@ Discussed sparse matrices (and other structures), iterative "Krylov" eigensolver
 
 ## Lecture 36 (Dec 14)
 
-Linear algebra and optimization: quadratic optimization and beyond.
+* [Classes to take after 18.06](notes/where-to-go-after.pdf)
+
+Linear algebra and optimization: quadratic optimization and beyond.  (See notebook from lecture 35.)
+
+We can solve many optimization problems with help from linear algebra.  For example, the convex quadratic function f(x)=½xᵀAx-bᵀx (A positive definite) reaches its minimum at the solution of Ax=b (where ∇f=Ax-b=0).  You can also complicate the problem by adding linear constraints Bx=c (where B is a "wide" matrix), or even linear inequality constraints, and it turns out that you can *still* solve it via linear equations.  These are called [quadratic programming (QP)](https://en.wikipedia.org/wiki/Quadratic_programming) problems.   Even more complicated optimization problems can often be solved by a *sequence* of linear equations.
+
+However, we can also go the other direction: we can **use optimization to solve linear-algebra problems**.   For example, we can solve Ax=b for positive-definite A by minimizing f(x)=½xᵀAx-bᵀx, where the minimization is performed simply by **going "downhill"**.  This is called a [steepest-descent](https://en.wikipedia.org/wiki/Method_of_steepest_descent) algorithm, and has the advantage that **each step only multiplies A by vectors**, so it can work even if A is huge and sparse (too big for Gaussian elimination, even by sparse-direct methods) or if A has some other structure that lets you multiply it by vectors quickly.   (In practice, don't use steepest descent: there are much more sophisticated "Krylov" methods like GMRES or conjugate gradient that converge much faster, but still use only matrix–vector multiplies.)
+
+Finally, talked a bit about [classes you might be interested in taking after 18.06](notes/where-to-go-after.pdf), which use linear algebra heavily and/or go much deeper into topics that we've only touched on.
+
+**Further reading**: See further reading for lecture 35.
 
 ## Final exam (Dec 22): 12/22 9am-noon
 
