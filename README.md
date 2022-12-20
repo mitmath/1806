@@ -675,7 +675,7 @@ In particular, a positive-definite matrix A is a Hermitian matrix A=Aᴴ that
 * All eigenvalues λ of A are > 0.
 * xᴴAx > 0 for *any* vector x≠0.
 * A = BᴴB for some full-column-rank matrix B
-* All the pivots are > 0 in Gaussian elimination of A, and A is full rank.
+* All the diagonal entries of U are > 0 after Gaussian elimination of A; i.e. the pivots are > 0 and A is full rank.
 
 These are all *equivalent*: any one of these properties implies *all* of
 the other properties for a Hermitian A.   I proved a couple of the equivalencies,
