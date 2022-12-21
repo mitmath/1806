@@ -315,7 +315,7 @@ Equivalently, we can put these q₁,q₂,…,qₙ into a matrix Q:
 We will have much more to say about such Q matrices in the coming lectures.
 
 **Further reading:** 3blue1brown has a [nice video on changes of basis](https://www.youtube.com/watch?v=P2LTAUO1TdA).  Textbook sections 3.5, 4.1; video
-[lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/), video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/).
+[lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/), video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/).   If there is *one* think you remember about orthogonal/orthonormal bases, it's that you can compute basis coefficients (or projections) simply by taking dot products; here is a [short video on youtube](https://www.youtube.com/watch?v=FdmppxbMf3g) focusing on that fact.
 
 ## Exam 1 (Friday Oct 7 at 11am in 26-100)
 
