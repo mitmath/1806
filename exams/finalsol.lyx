@@ -1,0 +1,2991 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{(\roman{enumii})}
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MIT 18.06 Final Exam Solutions,
+\begin_inset Newline newline
+\end_inset
+
+Fall 2022, Johnson
+\end_layout
+
+\begin_layout Subsection*
+Problem 1 [5+10 points]:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ has solutions 
+\begin_inset Formula $x_{1}=\left(\begin{array}{c}
+1\\
+2\\
+3
+\end{array}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{2}=\left(\begin{array}{c}
+4\\
+5\\
+6
+\end{array}\right)$
+\end_inset
+
+, and possibly other solutions, for some (real) matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ and right-hand side 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ is an 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ matrix with rank 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Give as 
+\series bold
+much true information as possible
+\series default
+ about 
+\begin_inset Formula $m,n,r$
+\end_inset
+
+.
+ (For example, 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $m=16,r=0,n\le12$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ is a possible, but incorrect, answer.)
+\end_layout
+
+\begin_layout Enumerate
+Give another solution 
+\begin_inset Formula $x_{3}=\underline{\qquad\qquad}$
+\end_inset
+
+ (different from 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+) for the same equation 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+.
+ You can do this because you know a nonzero vector 
+\begin_inset Formula $\underline{\qquad\qquad}$
+\end_inset
+
+ in the 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\underline{\qquad\qquad}$
+\end_inset
+
+ space of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ 
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+We must have 
+\begin_inset Formula $\boxed{n=3}$
+\end_inset
+
+ because the solutions have 3 components.
+ Since the solutions are not unique, 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\series bold
+cannot
+\series default
+ have full column rank and so 
+\begin_inset Formula $\boxed{0\le r\le2}$
+\end_inset
+
+.
+ We must have 
+\begin_inset Formula $\boxed{m\ge r}$
+\end_inset
+
+ rows (which is true for any matrix).
+\end_layout
+
+\begin_layout Enumerate
+The difference 
+\begin_inset Formula $x_{2}-x_{1}=\boxed{\left(\begin{array}{c}
+3\\
+3\\
+3
+\end{array}\right)}$
+\end_inset
+
+ between two solutions (or any multiple thereof) must be a vector in the
+ 
+\series bold
+null space
+\series default
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ So, we can find more solutions simply by adding any multiple of this to
+ 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ or 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+, for example 
+\begin_inset Formula $x_{2}+(x_{2}-x_{1})=\boxed{\left(\begin{array}{c}
+7\\
+8\\
+9
+\end{array}\right)}$
+\end_inset
+
+ is a solution, or in fact 
+\emph on
+any
+\emph default
+ vector of the form 
+\begin_inset Formula $x_{1}+\frac{\alpha}{3}(x_{2}-x_{1})=\boxed{\left(\begin{array}{c}
+\alpha+1\\
+\alpha+2\\
+\alpha+3
+\end{array}\right)}$
+\end_inset
+
+ for any scalar 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ (this is the 
+\begin_inset Quotes eld
+\end_inset
+
+complete
+\begin_inset Quotes erd
+\end_inset
+
+ solution to 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+, though you weren't required to write this explicitly).
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 2 [10+5 points]:
+\end_layout
+
+\begin_layout Standard
+Robert 
+\begin_inset Quotes eld
+\end_inset
+
+Bobby Boy
+\begin_inset Quotes erd
+\end_inset
+
+ Boyle (way back in 1662) measured a sequence of 
+\begin_inset Formula $m$
+\end_inset
+
+ data points 
+\begin_inset Formula $(p_{1},v_{1}),(p_{2},v_{2}),\ldots,(p_{m},v_{m})$
+\end_inset
+
+ relating the pressure 
+\begin_inset Formula $p$
+\end_inset
+
+ of a gas to its volume 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ Suppose that he wanted to fit his data to a model of the form 
+\begin_inset Formula 
+\[
+V(P)=\alpha+\frac{\beta}{P}
+\]
+
+\end_inset
+
+and solve for the unknown coefficients 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ that minimize the sum-of-squares error 
+\begin_inset Formula $\sum_{k}[v_{k}-V(p_{k})]^{2}$
+\end_inset
+
+ between the model and the measured data.
+\end_layout
+
+\begin_layout Enumerate
+Write down a 
+\begin_inset Formula $\underline{\qquad}\times\underline{\qquad}$
+\end_inset
+
+ system of linear equations 
+\begin_inset Formula $(\text{matrix?})(\text{unknowns?})=(\text{right-hand side?})$
+\end_inset
+
+ that Bobby could solve to find these best-fit coefficients 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ You can leave the matrix and right-hand-side as products of terms involving
+ other matrices and/or vectors, but 
+\series bold
+clearly describe how each term
+\series default
+ is constructed from the data 
+\begin_inset Formula $(p_{1},v_{1}),(p_{2},v_{2}),\ldots,(p_{m},v_{m})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Using these best-fit 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ values, the vector 
+\begin_inset Formula $\delta=\left(\begin{array}{c}
+v_{1}-V(p_{1})\\
+v_{2}-V(p_{2})\\
+\vdots\\
+v_{m}-V(p_{m})
+\end{array}\right)$
+\end_inset
+
+ of discrepancies between the model and the data is an orthogonal projection
+ of the vector 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\underline{\qquad\qquad}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ onto the 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\underline{\qquad\qquad}$
+\end_inset
+
+ space of the matrix 
+\begin_inset Formula $\underline{\qquad\qquad}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+There are 2 unknowns, so we will have a 
+\begin_inset Formula $\boxed{2\times2}$
+\end_inset
+
+ system of equations given by the 
+\series bold
+normal equations
+\series default
+ for our least-square problem: 
+\begin_inset Formula 
+\[
+\boxed{A^{T}A\underbrace{\left(\begin{array}{c}
+\alpha\\
+\beta
+\end{array}\right)}_{\hat{x}}=A^{T}b}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\[
+\boxed{A=\underbrace{\left(\begin{array}{cc}
+1 & \frac{1}{p_{1}}\\
+1 & \frac{1}{p_{2}}\\
+\vdots & \vdots\\
+1 & \frac{1}{p_{m}}
+\end{array}\right)}_{m\times2},\qquad b=\left(\begin{array}{c}
+v_{1}\\
+v_{2}\\
+\vdots\\
+v_{m}
+\end{array}\right)}
+\]
+
+\end_inset
+
+ since we want to minimize 
+\begin_inset Formula $\sum_{k}[v_{k}-V(p_{k})]^{2}=\Vert b-Ax\Vert^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The vector 
+\begin_inset Formula $\delta$
+\end_inset
+
+ is precisely the error (
+\begin_inset Quotes eld
+\end_inset
+
+residual
+\begin_inset Quotes erd
+\end_inset
+
+) 
+\begin_inset Formula $\delta=b-A\hat{x}$
+\end_inset
+
+.
+ Recall that the least-square solution 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ is chosen so that 
+\begin_inset Formula $p=A\hat{x}=Pb$
+\end_inset
+
+ is the projection of 
+\begin_inset Formula $b$
+\end_inset
+
+ onto 
+\begin_inset Formula $C(A)$
+\end_inset
+
+, and 
+\begin_inset Formula $\delta=b-A\hat{x}=b-p=(I-P)b$
+\end_inset
+
+ is the 
+\series bold
+projection of 
+\begin_inset Formula $\boxed{b}$
+\end_inset
+
+ onto 
+\begin_inset Formula $\boxed{N(A^{T})},$
+\end_inset
+
+the left nullspace of 
+\begin_inset Formula $\boxed{A}$
+\end_inset
+
+
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(If you've forgotten this, it's always useful to draw a sketch of least-square
+ fitting to remind yourself that the 
+\begin_inset Formula $b-Ax$
+\end_inset
+
+ is minimized when 
+\begin_inset Formula $Ax$
+\end_inset
+
+ is the orthogonal projection of 
+\begin_inset Formula $b$
+\end_inset
+
+ onto 
+\begin_inset Formula $C(A)$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 3 [5+10 points]:
+\end_layout
+
+\begin_layout Standard
+Consider the system of differential equations 
+\begin_inset Formula 
+\[
+\frac{dx}{dt}=\left(\begin{array}{cc}
+-1 & 2\\
+ & a
+\end{array}\right)x
+\]
+
+\end_inset
+
+with initial condition 
+\begin_inset Formula $x(0)=\left(\begin{array}{c}
+3\\
+1
+\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+For what value(s) of 
+\begin_inset Formula $a$
+\end_inset
+
+ will the solution 
+\begin_inset Formula $x(t)$
+\end_inset
+
+ approach a nonzero constant vector at large 
+\begin_inset Formula $t$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+Using the value of 
+\begin_inset Formula $a$
+\end_inset
+
+ from the previous part, write down the exact solution 
+\begin_inset Formula $x(t)$
+\end_inset
+
+ (at all times, not just for large 
+\begin_inset Formula $t$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+To make the ODE solution 
+\begin_inset Formula $x(t)=e^{At}$
+\end_inset
+
+ go to a nonzero constant, we want one 
+\begin_inset Formula $e^{\lambda t}$
+\end_inset
+
+ term to be constant (i.e.
+ 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+) and the other 
+\begin_inset Formula $e^{\lambda t}$
+\end_inset
+
+ term to be decaying (i.e.
+ 
+\begin_inset Formula $\operatorname{Re}(\lambda)<0$
+\end_inset
+
+).
+ Since 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+-1 & 2\\
+ & a
+\end{array}\right)$
+\end_inset
+
+ is an upper-triangular, 
+\begin_inset Formula $\det(A-\lambda I$
+\end_inset
+
+) is just the product of the diagonals 
+\begin_inset Formula $(-1-\lambda)(a-\lambda)$
+\end_inset
+
+ and the eigenvalues are 
+\begin_inset Formula $\lambda_{1}=-1$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{2}=a$
+\end_inset
+
+.
+ The first eigenvalue gives decaying solutions, so we need 
+\begin_inset Formula $\boxed{a=0}$
+\end_inset
+
+ to get a constant solution from the other term.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Technically, we also need to check that 
+\begin_inset Formula $x(0)$
+\end_inset
+
+ has a nonzero coefficient of the 
+\begin_inset Formula $\lambda_{2}=0$
+\end_inset
+
+ eigenvector, but we will verify this in part (b).
+\end_layout
+
+\begin_layout Enumerate
+To obtain 
+\begin_inset Formula $x(t)$
+\end_inset
+
+, we need to (1) expand 
+\begin_inset Formula $x(0)$
+\end_inset
+
+ in the basis of eigenvectors and (2) multiply each term by 
+\begin_inset Formula $e^{\lambda t}$
+\end_inset
+
+.
+ That is, we are looking for the solution: 
+\begin_inset Formula 
+\[
+x(t)=e^{At}x(0)=\underbrace{\left(\begin{array}{cc}
+x_{1} & x_{2}\end{array}\right)}_{X}\underbrace{\left(\begin{array}{cc}
+e^{-t}\\
+ & e^{0t}
+\end{array}\right)}_{e^{\Lambda t}}\underbrace{X^{-1}x(0)}_{c}=c_{1}e^{-t}x_{1}+c_{2}x_{2},
+\]
+
+\end_inset
+
+which corresponds to expanding a solution in the basis of the eigenvectors
+ 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+, finding the coefficients 
+\begin_inset Formula $c$
+\end_inset
+
+ from 
+\begin_inset Formula $x(0)$
+\end_inset
+
+, and multiplying each term by the corresponding 
+\begin_inset Formula $e^{\lambda t}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+First, we need to 
+\emph on
+find
+\emph default
+ the eigenvectors, but this a straightforward exercise in computing nullspaces
+ (which in this simple case can be done by inspection): 
+\begin_inset Formula 
+\[
+(A-\cancelto{-1}{\lambda_{1}}I)x_{1}=\left(\begin{array}{cc}
+0 & 2\\
+ & 1
+\end{array}\right)x_{1}=\vec{0}\implies x_{1}=\left(\begin{array}{c}
+1\\
+0
+\end{array}\right),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+(A-\cancelto{0}{\lambda_{2}}I)x_{2}=\left(\begin{array}{cc}
+-1 & 2\\
+ & 0
+\end{array}\right)x_{2}=\vec{0}\implies x_{2}=\left(\begin{array}{c}
+2\\
+1
+\end{array}\right).
+\]
+
+\end_inset
+
+Now, to expand 
+\begin_inset Formula $x(0)$
+\end_inset
+
+ this basis, we write 
+\begin_inset Formula 
+\[
+x(0)=\left(\begin{array}{c}
+3\\
+1
+\end{array}\right)=c_{1}\underbrace{\left(\begin{array}{c}
+1\\
+0
+\end{array}\right)}_{x_{1}}+c_{2}\underbrace{\left(\begin{array}{c}
+2\\
+1
+\end{array}\right)}_{x_{2}}=\underbrace{\left(\begin{array}{cc}
+1 & 2\\
+ & 1
+\end{array}\right)}_{X}\underbrace{\left(\begin{array}{c}
+c_{1}\\
+c_{2}
+\end{array}\right)}_{c}\implies c=\left(\begin{array}{c}
+1\\
+1
+\end{array}\right),
+\]
+
+\end_inset
+
+which is solvable by inspection, or by using the fact that 
+\begin_inset Formula $X$
+\end_inset
+
+ is upper-triangular so we can do backsubstitution (with no elimination
+ steps).
+ (If we wrote the eigenvalues in the opposite order we would have gotten
+ a lower-triangular 
+\begin_inset Formula $X$
+\end_inset
+
+, from which we could do forward-substitution.) Hence 
+\begin_inset Formula 
+\[
+x(t)=c_{1}e^{\lambda_{1}t}x_{1}+c_{2}e^{\lambda_{2}t}x_{2}=e^{-t}\left(\begin{array}{c}
+1\\
+0
+\end{array}\right)+e^{0t}\left(\begin{array}{c}
+2\\
+1
+\end{array}\right)=\boxed{\left(\begin{array}{c}
+2+e^{-t}\\
+1
+\end{array}\right)},
+\]
+
+\end_inset
+
+which clearly approaches the nonzero constant vector 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ as desired in part (a), since 
+\begin_inset Formula $c_{2}\ne0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 4 [4+4+4+4+4 points]:
+\end_layout
+
+\begin_layout Standard
+The following short-answer questions are answered independently (and refer
+ to unrelated matrices 
+\begin_inset Formula $A$
+\end_inset
+
+ for each part), requiring little or no computation:
+\end_layout
+
+\begin_layout Enumerate
+Any solution 
+\begin_inset Formula $x$
+\end_inset
+
+ of 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ is a sum of a vector in the 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\underline{\qquad\qquad}$
+\end_inset
+
+ space of 
+\begin_inset Formula $A$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ and a vector in the in the 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\underline{\qquad\qquad}$
+\end_inset
+
+ space of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ 
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ is solvable for 
+\emph on
+any
+\emph default
+ 
+\begin_inset Formula $b$
+\end_inset
+
+, then it might be a (
+\series bold
+circle one
+\series default
+) 
+\begin_inset Formula $10\times3$
+\end_inset
+
+ or 
+\begin_inset Formula $3\times10$
+\end_inset
+
+ matrix with rank 
+\begin_inset Formula $r=\underline{\qquad\qquad}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ has a 
+\emph on
+unique
+\emph default
+ solution 
+\begin_inset Formula $x$
+\end_inset
+
+ for some 
+\begin_inset Formula $b$
+\end_inset
+
+ then it might be a (
+\series bold
+circle one
+\series default
+) 
+\begin_inset Formula $10\times3$
+\end_inset
+
+ or 
+\begin_inset Formula $3\times10$
+\end_inset
+
+ matrix with rank 
+\begin_inset Formula $r=\underline{\qquad\qquad}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Relate the four fundamental subspaces of 
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+ to the four fundamental subspaces of a real matrix 
+\begin_inset Formula $A$
+\end_inset
+
+: nullspace of 
+\begin_inset Formula $A^{T}A=\underline{\qquad\qquad}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ space of 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+left nullspace of 
+\begin_inset Formula $A^{T}A=\underline{\qquad\qquad}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ space of 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+column space of 
+\begin_inset Formula $A^{T}A=\underline{\qquad\qquad}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ space of 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+row space of 
+\begin_inset Formula $A^{T}A=\underline{\qquad\qquad}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ space of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ 
+\end_layout
+
+\begin_layout Enumerate
+Suppose we solve 
+\begin_inset Formula $A^{T}A\hat{x}=A^{T}b$
+\end_inset
+
+ for 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ given some real 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Then, the orthogonal projection of 
+\begin_inset Formula $b$
+\end_inset
+
+ into 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ is the vector 
+\begin_inset Formula $\underline{\qquad\qquad}$
+\end_inset
+
+ and the projection of 
+\begin_inset Formula $b$
+\end_inset
+
+ onto 
+\begin_inset Formula $N(A^{T})$
+\end_inset
+
+ is the vector 
+\begin_inset Formula $\underline{\qquad\qquad}$
+\end_inset
+
+.
+ (Give formulas in terms of 
+\begin_inset Formula $A,b,\hat{x}$
+\end_inset
+
+ involving 
+\emph on
+no matrix inverses
+\emph default
+.)
+\end_layout
+
+\begin_layout Enumerate
+Which of the following matrices 
+\series bold
+cannot
+\series default
+ be singular for 
+\series bold
+any
+\series default
+ real square matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ (circle 
+\series bold
+all
+\series default
+ answers): 
+\series bold
+
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+, 
+\begin_inset Formula $A^{2}+I$
+\end_inset
+
+
+\series default
+, 
+\begin_inset Formula $(A+A^{T})^{2}+I$
+\end_inset
+
+,
+\series bold
+ 
+\begin_inset Formula $e^{-A}$
+\end_inset
+
+
+\series default
+, 
+\series bold
+
+\begin_inset Formula $A+10^{100}I$
+\end_inset
+
+
+\series default
+,
+\series bold
+ 
+\begin_inset Formula $3A^{T}A+4I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+The 
+\series bold
+row space 
+\series default
+
+\begin_inset Formula $\boxed{C(A^{H})}$
+\end_inset
+
+ and the 
+\series bold
+null space
+\series default
+ 
+\begin_inset Formula $\boxed{N(A)}$
+\end_inset
+
+, since together these give the whole space 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ of possible inputs of any 
+\begin_inset Formula $m\times n$
+\end_inset
+
+ matrix 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If it's solvable for 
+\emph on
+any
+\emph default
+ 
+\begin_inset Formula $b$
+\end_inset
+
+, then 
+\begin_inset Formula $A$
+\end_inset
+
+ must be a 
+\begin_inset Quotes eld
+\end_inset
+
+wide
+\begin_inset Quotes erd
+\end_inset
+
+ matrix with full row rank, for example a 
+\begin_inset Formula $\boxed{3\times10}$
+\end_inset
+
+ matrix with rank 
+\begin_inset Formula $\boxed{r=3}$
+\end_inset
+
+.
+ If the solutions are unique, then 
+\begin_inset Formula $A$
+\end_inset
+
+ must be a 
+\begin_inset Quotes eld
+\end_inset
+
+tall
+\begin_inset Quotes erd
+\end_inset
+
+ matrix with full column rank, for example a 
+\begin_inset Formula $\boxed{10\times3}$
+\end_inset
+
+ matrix with rank 
+\begin_inset Formula $\boxed{r=3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+We showed in class that the nullspace of 
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+ matches that of 
+\begin_inset Formula $A$
+\end_inset
+
+ and the column space matches that of 
+\begin_inset Formula $A^{T}$
+\end_inset
+
+.
+ Furthermore, since 
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+ is real-symmetric, i.e.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $(A^{T}A)^{T}=A^{T}A$
+\end_inset
+
+, the same things hold true of the left nullspace and the row space.
+ So the nullspace is 
+\begin_inset Formula $\boxed{N(A^{T}A)=N(A)}$
+\end_inset
+
+, the left nullspace is 
+\begin_inset Formula $\boxed{N((A^{T}A)^{T})=N(A)}$
+\end_inset
+
+, the column space is 
+\begin_inset Formula $\boxed{C(A^{T}A)=C(A^{T})}$
+\end_inset
+
+, and the row space is 
+\begin_inset Formula $\boxed{C((A^{T}A)^{T})=C(A^{T})}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The orthogonal projection of 
+\begin_inset Formula $b$
+\end_inset
+
+ onto 
+\begin_inset Formula $C(A)$
+\end_inset
+
+ is 
+\begin_inset Formula $\boxed{A\hat{x}}$
+\end_inset
+
+ and the projection of 
+\begin_inset Formula $b$
+\end_inset
+
+ onto 
+\begin_inset Formula $N(A^{T})$
+\end_inset
+
+ is 
+\begin_inset Formula $\boxed{b-A\hat{x}}$
+\end_inset
+
+.
+ This is how we derived the normal equations 
+\begin_inset Formula $A^{T}A\hat{x}=A^{T}b$
+\end_inset
+
+ in the first place!
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+ can be singular since it is only semidefinite (e.g.
+ suppose 
+\begin_inset Formula $A=0$
+\end_inset
+
+).
+ 
+\begin_inset Formula $A^{2}+I$
+\end_inset
+
+ can be singular if 
+\begin_inset Formula $A$
+\end_inset
+
+ has an eigenvalue of 
+\begin_inset Formula $\pm i$
+\end_inset
+
+ (possible for real 
+\begin_inset Formula $A$
+\end_inset
+
+!).
+ 
+\begin_inset Formula $\boxed{(A+A^{T})^{2}+I}$
+\end_inset
+
+ 
+\series bold
+cannot
+\series default
+ be singular since 
+\begin_inset Formula $A+A^{T}$
+\end_inset
+
+ is real-symmetric with real eigenvalues, so the eigenvalues of 
+\begin_inset Formula $(A+A^{T})^{2}+I$
+\end_inset
+
+ are 
+\begin_inset Formula $(\text{real})^{2}+1>0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\boxed{e^{-A}}$
+\end_inset
+
+ 
+\series bold
+cannot
+\series default
+ be singular since 
+\begin_inset Formula $e^{-\lambda}\ne0$
+\end_inset
+
+ for any eigenvalue 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A+10^{100}I$
+\end_inset
+
+ can be singular if 
+\begin_inset Formula $A$
+\end_inset
+
+ has an eigenvalue 
+\begin_inset Formula $\lambda=-(10^{100})$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\boxed{3A^{T}A+4I}$
+\end_inset
+
+ 
+\series bold
+cannot
+\series default
+ be singular since 
+\begin_inset Formula $A^{T}A$
+\end_inset
+
+ is semidefinite with eigenvalues 
+\begin_inset Formula $\ge0$
+\end_inset
+
+ , so 
+\begin_inset Formula $3A^{T}A+4I$
+\end_inset
+
+ has eigenvalues of the form 
+\begin_inset Formula $3(\text{something}\ge0)+4>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 5 [10+5+5 points]:
+\end_layout
+
+\begin_layout Standard
+Suppose you have a matrix 
+\begin_inset Formula $A=C^{-1}B$
+\end_inset
+
+ where 
+\begin_inset Formula 
+\[
+B=\left(\begin{array}{ccc}
+1\\
+-1 & 2\\
+2 & 1 & 1
+\end{array}\right),\qquad C=\left(\begin{array}{ccc}
+2 &  & 4\\
+ & 2 & 2\\
+4 & 2 & 2
+\end{array}\right).
+\]
+
+\end_inset
+
+The following parts can be 
+\series bold
+answered independently
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+Compute the 
+\series bold
+first column 
+\series default
+of 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Compute the 
+\series bold
+trace
+\series default
+ of the matrix 
+\begin_inset Formula $A^{-1}B$
+\end_inset
+
+.
+ (Little calculation is required because 
+\begin_inset Formula $A^{-1}B$
+\end_inset
+
+ has the same trace, and the same eigenvalues, as 
+\begin_inset Formula $\underline{\qquad\qquad}$
+\end_inset
+
+, since the two matrices are 
+\begin_inset Formula $\underline{\qquad\qquad}$
+\end_inset
+
+!)
+\end_layout
+
+\begin_layout Enumerate
+One of the eigenvalues of 
+\begin_inset Formula $C$
+\end_inset
+
+ is 
+\begin_inset Formula $\lambda_{1}=2$
+\end_inset
+
+.
+ A corresponding eigenvector is 
+\begin_inset Formula $x_{1}=\underline{\qquad\qquad}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+We can do this 
+\emph on
+without 
+\emph default
+computing 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ explicitly (which is almost always a mistake).
+ We just need to compute 
+\begin_inset Formula 
+\[
+x=A^{-1}\left(\begin{array}{c}
+1\\
+0\\
+0
+\end{array}\right)=\left(C^{-1}B\right)^{-1}\left(\begin{array}{c}
+1\\
+0\\
+0
+\end{array}\right)=\underbrace{B^{-1}\underbrace{C\left(\begin{array}{c}
+1\\
+0\\
+0
+\end{array}\right)}_{b}}_{\text{triangular solve }Bx=b}.
+\]
+
+\end_inset
+
+The first step is 
+\begin_inset Formula $b=C\left(\begin{array}{c}
+1\\
+0\\
+0
+\end{array}\right)=\left(\begin{array}{c}
+2\\
+0\\
+4
+\end{array}\right),$
+\end_inset
+
+ just the first column of 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ The second step is to compute 
+\begin_inset Formula $x=B^{-1}b$
+\end_inset
+
+ by solving 
+\begin_inset Formula $Bx=b$
+\end_inset
+
+ for 
+\begin_inset Formula $x$
+\end_inset
+
+, but since 
+\begin_inset Formula $B$
+\end_inset
+
+ is lower-triangular we can do this easily by forward-substitution:
+\begin_inset Formula 
+\[
+\underbrace{\left(\begin{array}{ccc}
+1\\
+-1 & 2\\
+2 & 1 & 1
+\end{array}\right)}_{B}\underbrace{\left(\begin{array}{c}
+x_{1}\\
+x_{2}\\
+x_{3}
+\end{array}\right)}_{x}=\underbrace{\left(\begin{array}{c}
+2\\
+0\\
+4
+\end{array}\right)}_{c}\implies\begin{array}{c}
+x_{1}=2\\
+-x_{1}+2x_{2}=0\implies x_{2}=1\\
+2x_{1}+x_{2}+x_{3}=4\implies x_{3}=-1
+\end{array}\implies x=\boxed{\left(\begin{array}{c}
+2\\
+1\\
+-1
+\end{array}\right)}.
+\]
+
+\end_inset
+
+Of course, there are much more laborious ways to solve this problem by explicitl
+y inverting and multiplying a bunch of matrices.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The key thing to realize is that the matrix 
+\begin_inset Formula $A^{-1}B=B^{-1}CB$
+\end_inset
+
+ is 
+\series bold
+similar
+\series default
+ to the matrix 
+\begin_inset Formula $\boxed{C}$
+\end_inset
+
+, so its trace (and determinant, and eigenvalues) match those of 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ By inspection, then, 
+\begin_inset Formula $\operatorname{trace}(A^{-1}B)=\operatorname{trace}(C)=2+2+2=\boxed{6}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Another way of seeing this is to use the 
+\begin_inset Quotes eld
+\end_inset
+
+cyclic property
+\begin_inset Quotes erd
+\end_inset
+
+ of the trace: 
+\begin_inset Formula $\operatorname{trace}(A^{-1}B)=\operatorname{trace}(\underbrace{BA^{-1}}_{=BB^{-1}C=C})$
+\end_inset
+
+.
+ It's not really correct terminology to say that 
+\begin_inset Formula $A^{-1}B$
+\end_inset
+
+ and 
+\begin_inset Formula $BA^{-1}$
+\end_inset
+
+ are 
+\begin_inset Quotes eld
+\end_inset
+
+cyclic
+\begin_inset Quotes erd
+\end_inset
+
+, however—a 
+\begin_inset Quotes eld
+\end_inset
+
+cyclic matrix
+\begin_inset Quotes erd
+\end_inset
+
+ refers to something else entirely.
+ But it 
+\emph on
+is
+\emph default
+ true that given a product of matrices, you can take a cyclic permutation
+ of the product, and get the same eigenvalues as well as the same trace:
+ (More precisely: 
+\begin_inset Formula $XY$
+\end_inset
+
+ and 
+\begin_inset Formula $YX$
+\end_inset
+
+ have identical eigenvalues for any square 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+, and the nonzero eigenvalues are the same even for non-square 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+! But we often don't cover this fact in 18.06.)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Actually calculating 
+\begin_inset Formula $A^{-1}B$
+\end_inset
+
+ is a 
+\emph on
+lot
+\emph default
+ more work (even for a computer, though for matrices this tiny it hardly
+ matters) and very error-prone (by hand), but if you managed to do it all
+ correctly you would get 
+\begin_inset Formula $A^{-1}=\begin{pmatrix}2 & 0 & 4\\
+1 & 1 & 3\\
+-1 & 1 & -9
+\end{pmatrix}$
+\end_inset
+
+ and 
+\begin_inset Formula $A^{-1}B=\begin{pmatrix}10 & 4 & 4\\
+6 & 5 & 3\\
+-20 & -7 & -9
+\end{pmatrix},$
+\end_inset
+
+ which of course has the same trace 
+\begin_inset Formula $10+5-9=6$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+We just need a basis for 
+\begin_inset Formula $N(C-2I)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+(C-2I)x=\vec{0}=\left(\begin{array}{ccc}
+0 &  & 4\\
+ & 0 & 2\\
+4 & 2 & 0
+\end{array}\right)\left(\begin{array}{c}
+x_{1}\\
+x_{2}\\
+x_{3}
+\end{array}\right),
+\]
+
+\end_inset
+
+but this can be done either by inspection or simply working top-to-bottom.
+ The first two rows immediately give 
+\begin_inset Formula $x_{3}=0$
+\end_inset
+
+ and the last row gives 
+\begin_inset Formula $4x_{1}+2x_{2}=0\implies x_{2}=-2x_{1}$
+\end_inset
+
+ .
+ So, for example, we could pick 
+\begin_inset Formula $x_{1}=1$
+\end_inset
+
+ and get an eigenvector
+\begin_inset Formula 
+\[
+x=\boxed{\left(\begin{array}{c}
+1\\
+-2\\
+0
+\end{array}\right)}
+\]
+
+\end_inset
+
+or any nonzero scalar multiple thereof.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 6 [4+4+4+4+4 points]:
+\end_layout
+
+\begin_layout Standard
+The matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ has eigenvalues 
+\begin_inset Formula $\lambda_{1}=1,$
+\end_inset
+
+ 
+\begin_inset Formula $\lambda_{2}=-2$
+\end_inset
+
+, and 
+\begin_inset Formula $\lambda_{3}=0$
+\end_inset
+
+, with corresponding eigenvectors 
+\begin_inset Formula $x_{1}=\left(\begin{array}{c}
+1\\
+0\\
+1
+\end{array}\right),\;x_{2}=\left(\begin{array}{c}
+1\\
+1\\
+1
+\end{array}\right),\;x_{3}=\left(\begin{array}{c}
+1\\
+0\\
+2
+\end{array}\right).$
+\end_inset
+
+ Consider the recurrence 
+\begin_inset Formula 
+\[
+Ay_{n+1}=y_{n}-3y_{n+1},
+\]
+
+\end_inset
+
+starting with some initial vector 
+\begin_inset Formula $y_{0}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Give an exact formula for 
+\begin_inset Formula $y_{n}=\underline{\qquad\qquad}$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $A,I,y_{0},n$
+\end_inset
+
+.
+ (For example, 
+\begin_inset Formula $y_{n}=(e^{nA}+7I)y_{0}$
+\end_inset
+
+ is a possible but incorrect answer.)
+\end_layout
+
+\begin_layout Enumerate
+For a typical initial vector 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ (e.g.
+ one chosen at random with 
+\family typewriter
+randn(3)
+\family default
+ in Julia), you should expect 
+\begin_inset Formula $y_{n}$
+\end_inset
+
+ for large 
+\begin_inset Formula $n$
+\end_inset
+
+ to be approximately parallel to the vector 
+\begin_inset Formula $\underline{\qquad\qquad}$
+\end_inset
+
+ and 
+\series bold
+growing/decaying/oscillating/nearly constant
+\series default
+ with 
+\begin_inset Formula $n$
+\end_inset
+
+ (circle 
+\series bold
+one
+\series default
+).
+\end_layout
+
+\begin_layout Enumerate
+Give an example of an initial vector 
+\begin_inset Formula $y_{0}=\underline{\qquad\qquad}$
+\end_inset
+
+ for which 
+\begin_inset Formula $y_{n}$
+\end_inset
+
+ is 
+\series bold
+decaying
+\series default
+ towards zero with 
+\begin_inset Formula $n$
+\end_inset
+
+, and for this 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ give an 
+\emph on
+exact
+\emph default
+ numeric formula (in terms of 
+\begin_inset Formula $n$
+\end_inset
+
+) for 
+\begin_inset Formula $y_{n}=\underline{\qquad\qquad}$
+\end_inset
+
+.
+ (There are many possible answers, but not much calculation should be needed.)
+ Your answer should have no matrices or unknowns, only vectors of numbers
+ or simple arithmetic expressions like 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ or 
+\begin_inset Formula $e^{n}$
+\end_inset
+
+ or 
+\begin_inset Formula $\frac{1}{n^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\series bold
+can/must/cannot be
+\series default
+ Hermitian (circle 
+\series bold
+one
+\series default
+).
+ Briefly justify your answer.
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $y_{0}=\left(\begin{array}{c}
+0\\
+-4\\
+1
+\end{array}\right),$
+\end_inset
+
+ give a good approximate formula for 
+\begin_inset Formula $y_{100}=\underline{\qquad\qquad}$
+\end_inset
+
+ (numeric vector, no unknowns or matrices).
+ 
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Ay_{n+1}=y_{n}-3y_{n+1}\implies Ay_{n+1}+3y_{n+1}=(A+3I)y_{n+1}=y_{n}\implies y_{n+1}=(A+3I)^{-1}y_{n}$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $A+3I$
+\end_inset
+
+ must be invertible because 
+\begin_inset Formula $A$
+\end_inset
+
+ has no eigenvalues of 
+\begin_inset Formula $-3$
+\end_inset
+
+.
+ Starting with 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+, we then get 
+\begin_inset Formula $y_{1}=(A+3I)^{-1}y_{0}$
+\end_inset
+
+, followed by 
+\begin_inset Formula $y_{2}=(A+3I)^{-1}y_{1}=(A+3I)^{-2}y_{0}$
+\end_inset
+
+, and so on, so 
+\begin_inset Formula 
+\[
+\boxed{y_{n}=(A+3I)^{-n}y_{0}}
+\]
+
+\end_inset
+
+for any 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Since 
+\begin_inset Formula $A$
+\end_inset
+
+ has eigenvalues 
+\begin_inset Formula $1,-2,0$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $(A+3I)^{-n}$
+\end_inset
+
+ has eigenvalues 
+\begin_inset Formula $(1+3)^{-n},(-2+3)^{-n},(0+3)^{-n}=\frac{1}{4^{n}},1^{n},\frac{1}{3^{n}}$
+\end_inset
+
+.
+ Two of these are decaying exponentially with 
+\begin_inset Formula $n$
+\end_inset
+
+, so for large 
+\begin_inset Formula $n$
+\end_inset
+
+ we should expect 
+\begin_inset Formula $y_{n}$
+\end_inset
+
+ to be dominated by the 
+\begin_inset Formula $1^{n}$
+\end_inset
+
+ term, which is parallel to 
+\begin_inset Formula $\boxed{x_{2}}$
+\end_inset
+
+ and is nearly 
+\series bold
+constant
+\series default
+ with 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ (The only exception would be if the 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ coefficient is exactly zero, which is very unlikely for a random initial
+ vector.)
+\end_layout
+
+\begin_layout Enumerate
+To get a decaying solution, we just need 
+\begin_inset Formula $y_{0}$
+\end_inset
+
+ to be a nonzero vector in the span of 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+, so that the 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ coefficient is zero.
+ For example, we could simply pick 
+\begin_inset Formula $\boxed{y_{0}=x_{1}}$
+\end_inset
+
+ and get 
+\begin_inset Formula $\boxed{y_{n}=\frac{1}{4^{n}}x_{1}}.$
+\end_inset
+
+ More generally, we could pick 
+\begin_inset Formula $y_{0}=c_{1}x_{1}+c_{3}x_{3}$
+\end_inset
+
+ for any coefficients 
+\begin_inset Formula $c_{1},c_{3}$
+\end_inset
+
+ in which case we will get 
+\begin_inset Formula $y_{n}=\frac{c_{1}}{4^{n}}x_{1}+\frac{c_{3}}{3^{n}}x_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\series bold
+cannot
+\series default
+ be Hermitian because the given eigenvectors are 
+\series bold
+not orthogonal
+\series default
+ for distinct eigenvalues.
+\end_layout
+
+\begin_layout Enumerate
+We just need to write this initial vector in the basis of eigenvectors 
+\begin_inset Formula $y_{0}=c_{1}x_{1}+c_{2}x_{2}+c_{3}x_{3}$
+\end_inset
+
+ and then multiply the terms by 
+\begin_inset Formula $\frac{1}{4^{n}},1^{n},\frac{1}{3^{n}}$
+\end_inset
+
+ respectively to get 
+\begin_inset Formula $y_{n}$
+\end_inset
+
+.
+ Unfortunately, since the eigenvectors are not orthogonal, we cannot simply
+ find the coefficients by taking dot products (which would be nice because
+ we only need the 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ coefficient at the end), but have to solve a linear system for the coefficients
+:
+\begin_inset Formula 
+\[
+\underbrace{\left(\begin{array}{ccc}
+1 & 1 & 1\\
+0 & 1 & 0\\
+1 & 1 & 2
+\end{array}\right)}_{X=\left(\begin{array}{ccc}
+x_{1} & x_{2} & x_{3}\end{array}\right)}\underbrace{\left(\begin{array}{c}
+c_{1}\\
+c_{2}\\
+c_{3}
+\end{array}\right)}_{c}=\underbrace{\left(\begin{array}{c}
+0\\
+-4\\
+1
+\end{array}\right)}_{y_{0}}.
+\]
+
+\end_inset
+
+Proceeding by Gaussian elimination, we only need to do a single elimination
+ step (subtract the first row of 
+\begin_inset Formula $X$
+\end_inset
+
+ from the third row) to get it in upper-triangular form, and the same thing
+ to the right-hand side, yielding:
+\begin_inset Formula 
+\[
+\underbrace{\left(\begin{array}{ccc}
+\boxed{1} & 1 & 1\\
+ & \boxed{1} & 0\\
+ &  & \boxed{1}
+\end{array}\right)}_{X\rightsquigarrow U}\underbrace{\left(\begin{array}{c}
+c_{1}\\
+c_{2}\\
+c_{3}
+\end{array}\right)}_{c}=\underbrace{\left(\begin{array}{c}
+0\\
+-4\\
+1
+\end{array}\right)}_{y_{0}\rightsquigarrow b}\implies\begin{array}{c}
+\cdots\\
+c_{2}=-4\\
+\cdots
+\end{array}.
+\]
+
+\end_inset
+
+We don't even need to solve for 
+\begin_inset Formula $c_{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ in this particular case, because 
+\begin_inset Formula $U$
+\end_inset
+
+ is so nice, but if we did we would easily find 
+\begin_inset Formula $c_{3}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{1}=3$
+\end_inset
+
+.
+ So, 
+\begin_inset Formula 
+\[
+y_{100}=\frac{c_{1}}{4^{100}}x_{1}+c_{2}x_{2}+\frac{c_{3}}{3^{100}}x_{3}\approx\boxed{c_{2}x_{2}=-4x_{2}=\left(\begin{array}{c}
+-4\\
+-4\\
+-4
+\end{array}\right)},
+\]
+
+\end_inset
+
+since the 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ terms are negligible.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 7 [5+8+5 points]:
+\end_layout
+
+\begin_layout Standard
+The real Hermitian (real-symmetric) matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ has an eigenvalue 
+\begin_inset Formula $\lambda_{1}=-\frac{1}{2}$
+\end_inset
+
+ 
+\emph on
+(clarification: with multiplicity
+\begin_inset space ~
+\end_inset
+
+1, not a repeated root) 
+\emph default
+and a corresponding eigenvector 
+\begin_inset Formula $x_{1}=\left(\begin{array}{c}
+1\\
+2\\
+-1\\
+0\\
+1
+\end{array}\right)$
+\end_inset
+
+, and its other eigenvalues are all equal to 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Give 
+\emph on
+one
+\emph default
+ example of an eigenvector of 
+\begin_inset Formula $A$
+\end_inset
+
+ for 
+\begin_inset Formula $\lambda_{2}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The orthogonal projection of 
+\begin_inset Formula $b=\left(\begin{array}{c}
+3\\
+1\\
+0\\
+1\\
+2
+\end{array}\right)$
+\end_inset
+
+ onto the span 
+\begin_inset Formula $S$
+\end_inset
+
+ of 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ is 
+\begin_inset Formula $\underline{\qquad\qquad}$
+\end_inset
+
+ and the projection of 
+\begin_inset Formula $b$
+\end_inset
+
+ onto the orthogonal complement 
+\begin_inset Formula $S^{\perp}$
+\end_inset
+
+ is 
+\begin_inset Formula $\underline{\qquad\qquad}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+With the help of the previous part, an 
+\emph on
+exact
+\emph default
+ formula for 
+\begin_inset Formula $A^{n}\left(\begin{array}{c}
+3\\
+1\\
+0\\
+1\\
+2
+\end{array}\right)=\underline{\qquad\qquad}$
+\end_inset
+
+ (in terms of 
+\begin_inset Formula $n$
+\end_inset
+
+ and explicit numerical vectors, no matrices or unknowns).
+ 
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+The key thing is to realize that we just need 
+\emph on
+any 
+\emph default
+nonzero vector 
+\begin_inset Formula $\perp x_{1}$
+\end_inset
+
+, for example 
+\begin_inset Formula $\boxed{\left(\begin{array}{c}
+0\\
+0\\
+0\\
+1\\
+0
+\end{array}\right)}$
+\end_inset
+
+ works.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Since 
+\begin_inset Formula $A$
+\end_inset
+
+ is Hermitian, any eigenvector for eigenvalues 
+\begin_inset Formula $\ne\lambda_{1}$
+\end_inset
+
+ must be 
+\begin_inset Formula $\perp x_{1}$
+\end_inset
+
+, i.e.
+ in the orthogonal complement of the span of 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, which is 4-dimensional.
+ Since 
+\emph on
+all
+\emph default
+ of the other eigenvalues are 
+\begin_inset Formula $1$
+\end_inset
+
+, the eigenvalue of 
+\begin_inset Formula $1$
+\end_inset
+
+ must have multiplicity 
+\begin_inset Formula $4$
+\end_inset
+
+ (there are 
+\begin_inset Formula $5$
+\end_inset
+
+ eigenvalues in total, counting repeated roots) and there must be 4 eigenvectors
+ for that eigenvalue — together with 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, they must form a 
+\emph on
+basis
+\emph default
+ for 
+\begin_inset Formula $\mathbb{R}^{5}$
+\end_inset
+
+ (since 
+\begin_inset Formula $A$
+\end_inset
+
+ is Hermitian therefore diagonalizable).
+ So, the eigenvectors for 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+ must be the 
+\emph on
+whole
+\emph default
+ 4-dimensional subspace 
+\begin_inset Formula $\perp x_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The projection onto 
+\begin_inset Formula $S$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+p=\frac{x_{1}x_{1}^{T}}{x_{1}^{T}x_{1}}b=x_{1}\frac{\cancelto{7}{x_{1}^{T}b}}{\cancelto{7}{x_{1}^{T}x_{1}}}=\boxed{x_{1}=\left(\begin{array}{c}
+1\\
+2\\
+-1\\
+0\\
+1
+\end{array}\right)}.
+\]
+
+\end_inset
+
+Note that, as usual it would be equivalent but 
+\emph on
+much 
+\emph default
+more work to first compute the 
+\begin_inset Formula $5\times5$
+\end_inset
+
+ rank-1 projection matrix 
+\begin_inset Formula $P=\frac{x_{1}x_{1}^{T}}{x_{1}^{T}x_{1}}=\frac{1}{7}\begin{pmatrix}1 & 2 & -1 & 0 & 1\\
+2 & 4 & -2 & 0 & 2\\
+-1 & -2 & 1 & 0 & -1\\
+0 & 0 & 0 & 0 & 0\\
+1 & 2 & -1 & 0 & 1
+\end{pmatrix}$
+\end_inset
+
+ and then multiply it by 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Parentheses make a big practical difference in linear algebra! The projection
+ onto 
+\begin_inset Formula $S^{\perp}$
+\end_inset
+
+ is simply 
+\begin_inset Formula 
+\[
+e=(I-P)b=b-p=b-x_{1}=\boxed{\left(\begin{array}{c}
+2\\
+-1\\
+1\\
+1\\
+1
+\end{array}\right)}.
+\]
+
+\end_inset
+
+Again, it would be a lot more work to first compute 
+\begin_inset Formula $I-P=\frac{1}{7}\begin{pmatrix}6 & -2 & 1 & 0 & -1\\
+-2 & 3 & 2 & 0 & -2\\
+1 & 2 & 6 & 0 & 1\\
+0 & 0 & 0 & 7 & 0\\
+-1 & -2 & 1 & 0 & 6
+\end{pmatrix}$
+\end_inset
+
+ and 
+\emph on
+then
+\emph default
+ multiply it by 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+We can write 
+\begin_inset Formula $b$
+\end_inset
+
+ as the sum of the two projections, 
+\begin_inset Formula $b=p+e$
+\end_inset
+
+, and notice that the first term 
+\begin_inset Formula $p$
+\end_inset
+
+ is an eigenvector of 
+\begin_inset Formula $\lambda_{1}=-\frac{1}{2}$
+\end_inset
+
+ and the second term is in the orthogonal complement and hence (from part
+\begin_inset space ~
+\end_inset
+
+a) an eigenvector of 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+.
+ So,
+\begin_inset Formula 
+\[
+A^{n}b=\lambda_{1}^{n}p+1^{n}e=\boxed{\frac{1}{(-2)^{n}}\left(\begin{array}{c}
+1\\
+2\\
+-1\\
+0\\
+1
+\end{array}\right)+\left(\begin{array}{c}
+2\\
+-1\\
+1\\
+1\\
+1
+\end{array}\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 8 [5+8+5 points]:
+\end_layout
+
+\begin_layout Standard
+Suppose that 
+\begin_inset Formula $Q$
+\end_inset
+
+ is a 
+\begin_inset Formula $4\times3$
+\end_inset
+
+ real matrix with orthonormal columns 
+\begin_inset Formula $q_{1},q_{2},q_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Starting from a real vector 
+\begin_inset Formula $v$
+\end_inset
+
+ (not in the column space of 
+\begin_inset Formula $Q$
+\end_inset
+
+), give a formula for the fourth orthonormal vector 
+\begin_inset Formula $q_{4}$
+\end_inset
+
+ that would be produced by Gram–Schmidt on 
+\begin_inset Formula $q_{1},q_{2},q_{3},v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Describe 
+\begin_inset Formula $N(Q)$
+\end_inset
+
+, 
+\begin_inset Formula $N(Q^{T})$
+\end_inset
+
+, 
+\begin_inset Formula $N(Q^{T}Q)$
+\end_inset
+
+, and 
+\begin_inset Formula $N(QQ^{T})$
+\end_inset
+
+: give the dimension and a basis for each (in terms of 
+\begin_inset Formula $q_{1},q_{2},q_{3},q_{4}$
+\end_inset
+
+ as needed).
+\end_layout
+
+\begin_layout Enumerate
+Suppose 
+\begin_inset Formula $b=q_{1}+2q_{2}+3q_{3}+4q_{4}$
+\end_inset
+
+.
+ Give the least-squares solution 
+\begin_inset Formula $\hat{x}=\underline{\qquad\qquad}$
+\end_inset
+
+ minimizing 
+\begin_inset Formula $\Vert b-Qx\Vert$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Solution:
+\end_layout
+
+\begin_layout Enumerate
+The Gram–Schmidt formula is 
+\begin_inset Formula 
+\[
+\boxed{q_{4}=\frac{v-QQ^{T}v}{\left\Vert v-QQ^{T}v\right\Vert }=\frac{v-q_{1}q_{1}^{T}v-q_{2}q_{2}^{T}v-q_{3}q_{3}^{T}v}{\left\Vert v-q_{1}q_{1}^{T}v-q_{2}q_{2}^{T}v-q_{3}q_{3}^{T}v\right\Vert }},
+\]
+
+\end_inset
+
+i.e.
+\begin_inset space ~
+\end_inset
+
+we subtract the projection onto 
+\begin_inset Formula $C(Q)$
+\end_inset
+
+ and then normalize.
+ It is important that 
+\begin_inset Formula $v\notin C(Q)$
+\end_inset
+
+ since otherwise subtracting the projection would give zero (and we would
+ then divide by zero).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Q$
+\end_inset
+
+ has orthonormal columns and thus is full column rank.
+ Hence 
+\begin_inset Formula $\boxed{N(Q)=\{\vec{0}\}}\subset\mathbb{R}^{3}$
+\end_inset
+
+, i.e.
+ it is 
+\series bold
+zero-dimensional
+\series default
+ and the basis is the 
+\series bold
+empty set
+\series default
+ 
+\begin_inset Formula $\{\}$
+\end_inset
+
+ (zero basis vectors for zero dimensions).
+ 
+\begin_inset Formula $N(Q^{T})=C(Q)^{\perp}$
+\end_inset
+
+ is everything perpendicular to 
+\begin_inset Formula $q_{1},q_{2},q_{3}$
+\end_inset
+
+, but this is simply the 
+\series bold
+1-dimensional
+\series default
+ space 
+\begin_inset Formula $\boxed{N(Q^{T})=\text{span }q_{4}}$
+\end_inset
+
+.
+ We also know 
+\begin_inset Formula $\boxed{N(Q^{T}Q)=N(Q)=\{\vec{0}\}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\boxed{N(QQ^{T})=N(Q^{T})=\text{span }q_{4}}$
+\end_inset
+
+ from the general identity 
+\begin_inset Formula $N(A^{T}A)=N(A)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+We want 
+\begin_inset Formula $Q\hat{x}$
+\end_inset
+
+ to be the projection of 
+\begin_inset Formula $b$
+\end_inset
+
+ onto 
+\begin_inset Formula $C(Q)$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $Q\hat{x}=q_{1}+2q_{2}+3q_{3}$
+\end_inset
+
+, which implies 
+\begin_inset Formula $\boxed{\hat{x}=\left(\begin{array}{c}
+1\\
+2\\
+3
+\end{array}\right)}.$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

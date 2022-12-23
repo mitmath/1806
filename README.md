@@ -816,6 +816,8 @@ Finally, talked a bit about [classes you might be interested in taking after 18.
 
 The final will cover the material of **exams 1–3**: through **lecture 32** and **pset 13**.
 
+* [Final exam](exams/final.pdf) and [solutions](exams/finalsol.pdf)
+
 The exam is **closed book/notes**. (No calculators or computers either.)
 
 * Some [last-minute tips](exams/last_minute_tips.pdf) by TA Victor Rong.
