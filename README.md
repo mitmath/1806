@@ -30,7 +30,7 @@ useful study guide.  (You can also look at the analogous summaries from [Spring 
 ## Lecture 1 (Sep 7)
 
 * [course overview/syllabus](https://docs.google.com/presentation/d/1ivbV1nr67XfasBdXezZF9UWILzDoQtQev8vSqRKBfu0/edit?usp=sharing)
-* [pset 1](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset1.ipynb): due **Friday Sep 16 at 11am** (submit your solutions on Gradescope).
+* [pset 1](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset1.ipynb): due **Friday Sep 16 at 11am** (submit your solutions on Gradescope).
 * [video](https://mit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=19855fd0-d2be-4252-aa41-af0900816383)
 
 Slides giving the syllabus and the "big picture" of what 18.06 is about.  Introduction to thinking about matrices as linear operations, not just as "bags of numbers".
@@ -60,14 +60,14 @@ Rewrote Gaussian elimination in matrix form: we multiply a matrix A on the *left
 
 We're not done: it turns out to be even more fruitful to *reverse* the process, and write A = LU: L represents the operations required to turn the matrix U back into A, and turns out toe be a **lower**-triangular matrix whose entries are just a record of the elimination steps.  This **LU factorization** is extremely useful and important because it allows us to replace a *complicated* matrix A with two *much simpler* (triangular) ones.  For example, solving Ax=b turns into LUx=b, and we can do this just by two "triangular" solves.  More on this next time.
 
-**Further reading:** Textbook sections 2.1, 2.2, 2.3.  Strang [lecture 2 video](https://www.youtube.com/watch?v=QVKj3LADCnA&list=PLE7DDD91010BC51F8&index=3).   And there is a Gaussian-elimination [Julia notebook](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Gaussian-elimination.ipynb) that covers the same steps in Julia form.
+**Further reading:** Textbook sections 2.1, 2.2, 2.3.  Strang [lecture 2 video](https://www.youtube.com/watch?v=QVKj3LADCnA&list=PLE7DDD91010BC51F8&index=3).   And there is a Gaussian-elimination [Julia notebook](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Gaussian-elimination.ipynb) that covers the same steps in Julia form.
 See also "The key reason why A = LU" in section 2.6 of the textbook.
 
 ## Lecture 3 (Feb 4): recorded
 
 * video (only): see the [spring 2022 recording](https://mit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=885fb286-4dab-4aa6-9ef0-ae2e00f05ceb), lecture 3
 * handwritten notes
-* [Matrix inverse and LU notebook](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Inverses-LU-intro.ipynb)
+* [Matrix inverse and LU notebook](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Inverses-LU-intro.ipynb)
 
 (Prof. Johnson is sick and so we will use the recorded lecture from spring.)
 
@@ -111,7 +111,7 @@ If possible, try to install Julia on your laptop beforehand using the instructio
 ## Lecture 4 (Sep 14)
 
 * [video recording](https://mit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=faf2a3ef-fcc2-4ff4-a928-af0900628908)
-* [Matrix inverse and Gauss–Jordan](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Gauss-Jordan.ipynb)
+* [Matrix inverse and Gauss–Jordan](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Gauss-Jordan.ipynb)
 
 Reviewed matrix inverses and key properties thereof.
 
@@ -125,9 +125,9 @@ Matrix inverses are mainly a *conceptual* tool that we use to move matrices arou
 ## Lecture 5 (Sep 16)
 
 * [Video recording](https://mit.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=32b37815-81a0-42aa-a2a5-af0c00d75c55)
-* [pset 1 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset1sol.ipynb)
-* [pset 2](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset2.ipynb): due **Mon** Sep 26 (Friday is a holiday).
-* [LU factorization for real](https://nbviewer.org/github/mitmath/1806/blob/master/notes/LU-for-real.ipynb)
+* [pset 1 solutions](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset1sol.ipynb)
+* [pset 2](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset2.ipynb): due **Mon** Sep 26 (Friday is a holiday).
+* [LU factorization for real](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/LU-for-real.ipynb)
 
 Brief review of previous topics in LU factorization with some more examples in the notebook:
 
@@ -149,7 +149,7 @@ Permutation matrices P are a great example of a linear operator that is often ea
 
 * video: Panopto Video link on Canvas
 * handwritten notes
-* [Computational complexity](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Complexity.ipynb)
+* [Computational complexity](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Complexity.ipynb)
 
 Complexity of matrix operations: why matrix × vector or backsubstitution scale like n² for n×n matrices, while matrix × matrix or Gaussian elimination (LU factorization) scale like n³.   Matrices much bigger than a few thousand square quickly become impractical, and really large problems are only tractable because they have special structure like [sparsity](https://en.wikipedia.org/wiki/Sparse_matrix).
 
@@ -185,8 +185,8 @@ Showed that the **nullspace is preserved by elimination (row) operations**, but 
 
 * video: Panopto Video link on Canvas
 * handwritten notes
-* [pset 2 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset2sol.ipynb)
-* [pset 3](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset3.ipynb): due **Friday** Sep 30
+* [pset 2 solutions](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset2sol.ipynb)
+* [pset 3](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset3.ipynb): due **Friday** Sep 30
 
 Went through two examples of finding the special solutions as a basis for the nullspace.  They key point is always this: given the free variables, we can easily solve for the corresponding pivot variables.
 
@@ -250,8 +250,8 @@ Cases (1)-(3) are called **full rank**: the rank is as big as possible given the
 ## Lecture 10 (Sep 30)
 
 * handwritten notes and lecture video (see links above).
-* [pset 3 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset3sol.ipynb)
-* [pset 4](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset4.ipynb): a short pset due Wed Oct 5
+* [pset 3 solutions](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset3sol.ipynb)
+* [pset 4](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset4.ipynb): a short pset due Wed Oct 5
 
 ### Dot products, transposes, & orthogonality
 
@@ -276,7 +276,7 @@ Taking the orthogonal complements of C(A) and N(A) leads us to the **four fundam
 (The consequence of this is an amazing fact: A and Aᵀ have the **same rank** r, since C(A) and C(Aᵀ) must have the same dimension r.   Thus, if you do Gaussian elimination on A and Gaussian elimination on Aᵀ, you will get the **same number of pivots** in both cases even though the elimination processes are quite different.)
 
 **Further reading:** Textbook sections 3.5, 4.1; video
-[lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/), video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/).  Julia [notebook on transposes and orthogonality](https://github.com/mitmath/1806/blob/master/notes/Transposes.ipynb).
+[lecture 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-10-the-four-fundamental-subspaces/), video [lecture 14](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-14-orthogonal-vectors-and-subspaces/).  Julia [notebook on transposes and orthogonality](https://github.com/mitmath/1806/blob/fall22/notes/Transposes.ipynb).
 
 ## Lecture 11 (Oct 3)
 
@@ -287,13 +287,13 @@ Reviewed and broadened differential calculus (18.01 and 18.02) from the perspect
 
 Derivatives viewed as linear approximations have many important applications in science, machine learning, statistics, and engineering. For example, went over the **multidimensional Newton** algorithm for finding roots f(x)=0 of systems of nonlinear equations. At each step, you just solve a *linear* system of equations with the Jacobian matrix of f(x), and it converges incredibly rapidly.   (See notebook for
 
-**Further reading**: This material was presented in much greater depth in our [18.S096: Matrix Calculus](https://github.com/mitmath/matrixcalc) course in IAP 2022 and IAP 2023.    The viewpoint of derivatives as linear operators (also called [Fréchet derivatives](https://en.wikipedia.org/wiki/Fr%C3%A9chet_derivative)) was covered in lectures 1 and 2, Newton's method was covered in lecture 4, and automatic differentiation was covered in lecture 5 — see the posted lecture materials and the further-reading links therein.   This [notebook](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Newton-Thomson-example.ipynb) has a Newton's method example demo where we solve a 2d version of the famous [Thomson problem](https://en.wikipedia.org/wiki/Thomson_problem) to find the equilibrium position of N repulsive "point charges" constrained to lie on a circle; more generally, a sphere or hypersphere.
+**Further reading**: This material was presented in much greater depth in our [18.S096: Matrix Calculus](https://github.com/mitmath/matrixcalc) course in IAP 2022 and IAP 2023.    The viewpoint of derivatives as linear operators (also called [Fréchet derivatives](https://en.wikipedia.org/wiki/Fr%C3%A9chet_derivative)) was covered in lectures 1 and 2, Newton's method was covered in lecture 4, and automatic differentiation was covered in lecture 5 — see the posted lecture materials and the further-reading links therein.   This [notebook](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Newton-Thomson-example.ipynb) has a Newton's method example demo where we solve a 2d version of the famous [Thomson problem](https://en.wikipedia.org/wiki/Thomson_problem) to find the equilibrium position of N repulsive "point charges" constrained to lie on a circle; more generally, a sphere or hypersphere.
 
 ## Lecture 12 (Oct 5)
 
 * handwritten notes and lecture video (see links above).
-* [pset 4 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset4sol.ipynb)
-* [pset 5](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset5.ipynb), due Friday Oct 14
+* [pset 4 solutions](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset4sol.ipynb)
+* [pset 5](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset5.ipynb), due Friday Oct 14
 
 *Continued from lecture 11*: Analyzed derivatives of matrix-valued functions of matrices, like f(x)=A⁻¹ where we showed that f′(x) is the linear operator f′(x)[dA]=–A⁻¹dAA⁻¹.  Using this, if we have a matrix A(p) as a function of a parameter p, showed that we can compute d(A⁻¹)/dp = –A⁻¹(dA/dp)A⁻¹ easily.  This has enormous applications, for example in engineering optimization where you often want to differentiate the solution to a physical problem (often expressed as Ax=b) with respect to parameters of the problem (in A and/or b), in order to optimize the physics (e.g. to maximize the strength of a structure with a given amount of material): see slides from lecture 11.
 
@@ -352,8 +352,8 @@ Started talking about **orthogonal projection**: for any subspace S ⊆ V, any v
 ## Lecture 14 (Oct 14)
 
 * handwritten notes and lecture video (see links above).
-* [pset 5 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset5sol.ipynb)
-* [pset 6](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset6.ipynb) due Oct 21
+* [pset 5 solutions](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset5sol.ipynb)
+* [pset 6](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset6.ipynb) due Oct 21
 
 More on projections:
 
@@ -370,7 +370,7 @@ Introduced the topic of least-square approximation: the projection p=Ax̂ of b o
 ## Lecture 15 (Oct 17)
 
 * handwritten notes and lecture video (see links above).
-* [Least-square fitting examples](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Least-Square%20Fitting.ipynb)
+* [Least-square fitting examples](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Least-Square%20Fitting.ipynb)
 
 Introduced the topic of least-square fitting of data to curves.  As long as the fitting function is linear in the unknown coefficients x, showed that minimizing the sum of the squares of the errors corresponds to minimizing the norm of the residual ‖b-Ax‖.  Went through several examples (see Julia notebook).
 
@@ -411,10 +411,10 @@ This is not unusual: there is often a difference between the way we conceptually
 ## Lecture 17 (Oct 21)
 
 * lecture video (see link above).
-* [SVD introduction](https://nbviewer.org/github/stevengj/1806/blob/master/notes/SVD-intro.ipynb)
+* [SVD introduction](https://nbviewer.org/github/stevengj/1806/blob/fall22/notes/SVD-intro.ipynb)
 * [SVD low-rank approximation demos](https://computationalthinking.mit.edu/Spring21/structure/) from the spring 2021 *Computational Thinking* class
-* [pset 6 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset6sol.ipynb)
-* [pset 7](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset7.ipynb): due Friday Oct 28.
+* [pset 6 solutions](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset6sol.ipynb)
+* [pset 7](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset7.ipynb): due Friday Oct 28.
 
 Guest lecture by Prof. Alan Edelman.
 
@@ -426,8 +426,8 @@ Introduction to the [singular value decomposition](https://en.wikipedia.org/wiki
 
 ## Lecture 18 (Oct 24)
 
-* [Orthogonal polynomials](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Orthogonal-Polynomials.ipynb)
-* [Fourier sine series](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Sine-series.ipynb)
+* [Orthogonal polynomials](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Orthogonal-Polynomials.ipynb)
+* [Fourier sine series](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Sine-series.ipynb)
 
 Another wonderful and far-reaching application of these ideas is to realize that the same concepts of orthogonal bases and Gram–Schmidt can be applied to *any* vector space once we define a dot product (giving a so-called [Hilbert space](https://en.wikipedia.org/wiki/Hilbert_space), though we won't use that level of abstraction much in 18.06).  In particular, it turns out to be especially powerful to think about **orthogonal/orthonormal bases of functions**.  Introduced a dot product f⋅g=∫fg for functions defined on x∈[-1,1], and we'll use it to make an orthogonal basis of polynomials, the [Legendre polynomials](https://en.wikipedia.org/wiki/Legendre_polynomials).
 
@@ -439,7 +439,7 @@ Showed another important example of orthogonal functions: Fourier series, and in
 
 ## Lecture 19 (Oct 26)
 
-* [Statistics and PCA](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Statistics-and-PCA.ipynb)
+* [Statistics and PCA](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Statistics-and-PCA.ipynb)
 
 *Finished discussion of Fourier series from last lecture.  We will return to these again in the context of differential equations later in the course.*
 
@@ -450,9 +450,9 @@ Discussed the relationship of mean, variance, and covariance/correlation to line
 ## Lecture 20 (Oct 28)
 
 * handwritten notes
-* [Determinants](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Determinants.ipynb)
-* [pset 7 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset7sol.ipynb)
-* [pset 8](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset8.ipynb): due Friday Nov 4
+* [Determinants](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Determinants.ipynb)
+* [pset 7 solutions](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset7sol.ipynb)
+* [pset 8](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset8.ipynb): due Friday Nov 4
 
 Introduced **determinants** and their properties.  Considering how central a role determinants play for the 2×2 and 3×3 matrices you probably encountered before 18.06, you may be surprised that we didn't get to determinants until now.  The fact of the matter is that determinants play a much less important role in applied linear algebra for larger matrices — with a few exceptions, most things that you would want to use determinants for can be done more effectively in other ways.  They are a useful *conceptual* tool, however, especially for thinking about eigenvalues.
 
@@ -482,7 +482,7 @@ to expect ≤ m eigenvalues, possibly complex, from an m×m matrix.  Almost alwa
 But it is not
 really a good way to *compute* them in practice except for tiny (e.g. 2×2) matrices.   In fact, since there is [no quintic formula](https://en.wikipedia.org/wiki/Abel%E2%80%93Ruffini_theorem) for the roots of a degree-5 (or higher) polynomial, eigenvalue algorithms look fundamentally different from eigenvalues like Gaussian elimination or Gram—Schmidt: they are procedures that *approach* the eigenvalues λ (to any desired accuracy) but never exactly reach them, and efficient algorithms were only [discovered starting around 1960](https://www.atm.org.uk/write/MediaUploads/Resources/Mid_Plenary_FrancisGolub.pdf).  So, the emphasis in 18.06 is less about *calculating* eigenvalues/eigenvectors and more about *using* and *interpreting* them, and relating their properties to the structure of the matrix.
 
- **Further reading (eigenvalues):** Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).   The Julia notebook [Eigenvalues and polynomials](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Eigenvalue-Polynomials.ipynb) also summarizes the same points as above, with more computed examples.
+ **Further reading (eigenvalues):** Strang, section 6.1; video [lecture 21](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-21-eigenvalues-and-eigenvectors/).   The Julia notebook [Eigenvalues and polynomials](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Eigenvalue-Polynomials.ipynb) also summarizes the same points as above, with more computed examples.
 
 ## Lecture 22 (Nov 2)
 
@@ -504,10 +504,10 @@ Even for real matrices, we may in general have **complex** eigenvalues (and eige
 ## Lecture 23 (Nov 4)
 
 * handwritten notes and lecture video (see links above).
-* [Recurrences and Fibonacci numbers](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Fibonacci.ipynb)
-* [Markov matrices](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Markov.ipynb)
-* [pset 8 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset8sol.ipynb)
-* [pset 9](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset9.ipynb): a short pset due **Wed** Nov 9.
+* [Recurrences and Fibonacci numbers](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Fibonacci.ipynb)
+* [Markov matrices](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Markov.ipynb)
+* [pset 8 solutions](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset8sol.ipynb)
+* [pset 9](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset9.ipynb): a short pset due **Wed** Nov 9.
 
 As an application of matrix powers, considered the famous [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number) 1,1,2,3,5,8,13,21,….  The n-th Fibonacci number fₙ satisfies the [linear recurrence relation](http://mathworld.wolfram.com/LinearRecurrenceEquation.html) fₙ=fₙ₋₁+fₙ₋₂, which we can express in terms of multiplication by a 2×2 matrix F that gives (fₙ,fₙ₋₁) from (fₙ₋₁,fₙ₋₂).  We found that the eigenvalues of F are (1±√5)/2.  The larger of these eigenvalues, (1+√5)/2≈1.618, is the so-called [golden ratio](https://en.wikipedia.org/wiki/Golden_ratio), and it means that the Fibonacci numbers blow up exponentially fast for large n.  Furthermore, we showed that the *ratio* fₙ/fₙ₋₁ of successive Fibonacci numbers goes to the golden ratio for large n.   Checked these facts numerically with a Julia notebook.
 
@@ -516,7 +516,7 @@ As another example of matrix powers, considered [Markov matrices](https://en.wik
 ## Lecture 24 (Nov 7)
 
 * handwritten notes and lecture video (see links above).
-* [Markov matrices](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Markov.ipynb)
+* [Markov matrices](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Markov.ipynb)
 
 Went over Markov matrices A (nonnegative entries ≥ 0 and columns that sum to 1).  Showed:
 
@@ -527,14 +527,14 @@ The above two properties are *not* enough to guarantee that a "Markov process" A
 
 The Google [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm is a nice application of Markov matrices and leads us into a discussion of iterative linear-algebra methods for huge matrices, starting with the power method. In particular, the pagerank is essentially an enormous Markov eigenproblem (# web pages by # web pages, whose entries indicate links), too big to even store, but it is *mostly zero* (each web page only links to a few other pages).  Hence, you can multiply by it much more quickly, and because of that the power method (and related methods) can be used to approximately find the steady state.
 
-**Further reading:** Strang, section 10.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).   Another fun application of Markov matrices is to analyze simple games, as reviewed in my notebook on [Analyzing Chutes & Ladders](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Chutes-and-Ladders.ipynb).
+**Further reading:** Strang, section 10.3 and video [lecture 24](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-24-markov-matrices-fourier-series/).   Another fun application of Markov matrices is to analyze simple games, as reviewed in my notebook on [Analyzing Chutes & Ladders](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Chutes-and-Ladders.ipynb).
 
 
 ## Lecture 25 (Nov 7)
 
 * handwritten notes and lecture video (see links above).
-* [pset 9 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset9sol.ipynb)
-* [pset 10](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset10.ipynb): short pset due Friday Nov 18
+* [pset 9 solutions](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset9sol.ipynb)
+* [pset 10](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset10.ipynb): short pset due Friday Nov 18
 
 Covered **diagonalization** of a matrix: the process of expanding a vector in the basis of eigenvectors, then multiplying each one by λ, then adding up the eigenvectors with the new coefficients, can be thought of as the matrix factorization A=XΛX⁻¹, where X is the matrix whose columns are the eigenvectors.   This only works if X is invertible: i.e. when for an m×m matrix A we have m eigenvalues (possibly repeated) and m independent eigenvectors (a *basis* of eigenvectors).  Such a matrix is called **diagonalizable**.
 
@@ -548,7 +548,7 @@ see that det(A) is the *product* of the eigenvalues and tr(A) is the *sum* of th
 
 For a 2×2 matrix, it follows that det(A-λI)=λ²-λtr(A)+det(A), which is a useful formula when solving 2×2 eigenproblems.
 
-**Further reading:** Strang, section 6.2; video [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/) and video [lecture 28](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-28-similar-matrices-and-jordan-form/).  See also this [Diagonalization](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Diagonalization.ipynb) notebook for Julia.
+**Further reading:** Strang, section 6.2; video [lecture 22](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-22-diagonalization-and-powers-of-a/) and video [lecture 28](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-28-similar-matrices-and-jordan-form/).  See also this [Diagonalization](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Diagonalization.ipynb) notebook for Julia.
 
 ## Exam 2 (Nov 14): 11am in 26-100
 
@@ -578,9 +578,9 @@ Key concepts for **complex numbers**: the [complex conjugate](https://en.wikiped
 
 ## Lecture 27 (Nov 18)
 
-* [Ordinary differential equations (ODEs)](https://nbviewer.org/github/mitmath/1806/blob/master/notes/ODEs.ipynb).
-* [pset 10 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset10sol.ipynb)
-* [pset 11](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset11.ipynb): due **Wednesday** November 23.
+* [Ordinary differential equations (ODEs)](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/ODEs.ipynb).
+* [pset 10 solutions](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset10sol.ipynb)
+* [pset 11](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset11.ipynb): due **Wednesday** November 23.
 
 We can now solve systems of ODEs dx/dt = Ax in terms of eigenvectors and eigenvalues.
 Each eigenvector is multiplied by exp(λt) (where exp(x)=eˣ), so that solutions decay
@@ -598,12 +598,12 @@ Continued discussion of ODEs from last lecture, discussing the over/underdamped 
 
 Next, reformulated the solution of dx/dt=Ax in terms of the [matrix exponential](https://en.wikipedia.org/wiki/Matrix_exponential) eᴬᵗ, and discussed the definition and properties of this fascinating and important matrix operation.
 
-**Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).  [Notebook on Matrix exponentials eᴬ](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Matrix-Exponentials.ipynb).
+**Further reading:** Strang, section 6.3 and video [lecture 23](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-23-differential-equations-and-exp-at/).  [Notebook on Matrix exponentials eᴬ](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Matrix-Exponentials.ipynb).
 
 ## Lecture 29 (Nov 23)
 
-* [pset 11 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset11sol.ipynb)
-* [pset 12](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset12.ipynb) due Friday Dec. 2
+* [pset 11 solutions](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset11sol.ipynb)
+* [pset 12](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset12.ipynb) due Friday Dec. 2
 
 Continued discussion of matrix exponentials.  Unlike scalars, exp(A+B)≠exp(A)exp(B) **unless** A and B **commute** (AB=BA).  An important example of commuting matrices is when B is a *scalar multiple* of A, from which we see that **exp(A(t₁+t₂))=exp(At₁)exp(At₂)**: evolving a solution of dx/dt=Ax for time t₁+t₂ is the same as evolving it for t₂ then t₁ (or vice versa).   We also see that **exp(A)⁻¹=exp(-A)**, since of course A and -A commute.
 
@@ -697,7 +697,7 @@ A "tall" m×n matrix A=UΣVᴴ doesn't *have* eigenvalues if m>n, but the n×n m
 
 In fact, it is possible to go backwards and *derive* the SVD in this fashion, obtaining the v's as eigenvectors of AᴴA, the u's as eigenvectors of AAᴴ, and the σ's as the square roots of the positive λ's.
 
-**Further reading:** Strang, section 6.4;  [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/).     **SVD**: Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/).  Notes on the [SVD as an eigenproblem](https://github.com/mitmath/1806/blob/master/notes/SVD-eigenproblem.ipynb).
+**Further reading:** Strang, section 6.4;  [lecture 25](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-25-symmetric-matrices-and-positive-definiteness/).     **SVD**: Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/).  Notes on the [SVD as an eigenproblem](https://github.com/mitmath/1806/blob/fall22/notes/SVD-eigenproblem.ipynb).
 
 ## Lecture 31 (Nov 30)
 
@@ -725,8 +725,8 @@ hence that the **frequencies** ωⱼ are **real** numbers.  (If they were comple
 ## Lecture 32 (Dec 2)
 
 * [Notes on "Jordan" vectors](notes/jordan-vectors.pdf)
-* [pset 12 solutions](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset12sol.ipynb)
-* [pset 13](https://nbviewer.org/github/mitmath/1806/blob/master/psets/pset13.ipynb): short pset due **Wed Dec 7**
+* [pset 12 solutions](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset12sol.ipynb)
+* [pset 13](https://nbviewer.org/github/mitmath/1806/blob/fall22/psets/pset13.ipynb): short pset due **Wed Dec 7**
 
 Most matrices are diagonalizable.  (*Any* n×n matrix with n distinct eigenvalues is diagonalizable, as is *any* Hermitian A=Aᴴ, unitary A⁻¹=Aᴴ, or anti-Hermitian A=-Aᴴ matrix.)  Non-diagonalizable matrices in practical situations typically arise only by design: you start with a "non-normal" matrix and play with the entries until you *force* two eigenvalues and eigenvectors to coincide.  This does not mean that such "exceptional" or "defective" cases are not interesting, however!   Even more commonly, on encounters a matrix that is *nearly* defective (i.e. the matrix X of eigenvectors is *nearly singular*).
 
@@ -752,11 +752,11 @@ In particular we find:
 * The vectors uⱼ=Avⱼ/σⱼ are actually **eigenvectors** of AAᴴ, are **orthonormal**, and form a basis for C(A).
 * These uⱼ, vⱼ and σⱼ are exactly the left and right singular vectors and the corresponding singular values of A!
 
-**Further reading:**  **SVD**: Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/).  Notes on the [SVD as an eigenproblem](https://nbviewer.org/github/mitmath/1806/blob/master/notes/SVD-eigenproblem.ipynb).
+**Further reading:**  **SVD**: Strang, sections 7.1–7.2, and video [lecture 29](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/lecture-29-singular-value-decomposition/).  Notes on the [SVD as an eigenproblem](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/SVD-eigenproblem.ipynb).
 
 ## Lecture 34 (Dec 7)
 
-* [pset 13 solutions](https://github.com/mitmath/1806/blob/master/psets/pset13sol.ipynb)
+* [pset 13 solutions](https://github.com/mitmath/1806/blob/fall22/psets/pset13sol.ipynb)
 
 Examined the analogues of Hermitian positive-definite matrices, matrix exponentials, etcetera, for *infinite-dimensional* linear algebra.  (This material will *not* be on the final.)   It turns out that this is tremendously important for understanding [partial differential equations (PDEs)](https://en.wikipedia.org/wiki/Partial_differential_equation) arising in science and engineering.
 
@@ -790,7 +790,7 @@ The exam is **closed book/notes**. (No calculators or computers either.)
 
 ## Lecture 35 (Dec 12)
 
-* [Dense and sparse matrices](https://nbviewer.org/github/mitmath/1806/blob/master/notes/Dense-and-Sparse.ipynb)
+* [Dense and sparse matrices](https://nbviewer.org/github/mitmath/1806/blob/fall22/notes/Dense-and-Sparse.ipynb)
 
 Large-scale linear algebra: the computational techniques (but not the *conceptual approaches*) of linear algebra completely change when one looks at very large-scale matrix problems (100000×100000 or more).  There, the focus turns to exploiting matrix **sparsity** (matrices that are mostly zero) and other structures that let you multiply matrices by vectors quickly (and let you avoid storing the whole matrix).
 
