@@ -9,7 +9,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 ## Syllabus
 
-**Lectures**: Monday, Wednesday, and Friday at 11am in 10-250.
+**Lectures**: Monday, Wednesday, and Friday at 11am in 26-100.
 
 **Instructors**: [Prof. Gilbert Strang](https://math.mit.edu/~gs/) and [Dr. Andrew Horning](https://math.mit.edu/directory/profile.html?pid=2334).  
 
