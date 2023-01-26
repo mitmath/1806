@@ -13,16 +13,21 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 **Instructors**: [Prof. Gilbert Strang](https://math.mit.edu/~gs/) and [Dr. Andrew Horning](https://math.mit.edu/directory/profile.html?pid=2334).  
 
-**Textbook**: [Introduction to Linear Algebra: 6th Edition](http://eduapps.mit.edu/textbook/books.html?Term=2023SP&Subject=18.06). Professor Strang will explain more about this new 6th edition in class (it is not yet on Amazon). It now ends with two chapters on deep learning.
+**Textbook**: [Introduction to Linear Algebra: 6th Edition](http://eduapps.mit.edu/textbook/books.html?Term=2023SP&Subject=18.06). Professor Strang will explain more about this new 6th edition in class (it is not yet on Amazon). It now ends with two chapters on deep learning. Professor Strang plans to make the textbook available for students to purchase at a discount.
 
 
 **Course administrator**: TBD.
 
 **Recitations**:
 
- * T9, T10, and T1 in 2-132.
- * T11 and T12 in 4-159.
- * T10, T11, T12, T1, T2, and T3 in 2-136.
+* T9: Mo Chen 1
+* T10: Mo Chen   2, V. Krylov    3
+* T11: V. Krylov   4,   M. Harris  5
+* T12: M. Harris  6,   D. Kluiev  7,  I. Ganguly 9
+* T1: D. Kluiev   8,  I. Ganguly 10
+* T2: K. Vashaw  11
+* T3: K. Vashaw  12
+
 
 **Undergraduate Assistants**: TBD.
 
