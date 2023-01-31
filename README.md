@@ -34,7 +34,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 * [Piazza](https://piazza.com/mit/spring2023/1806/home) - ask questions in the course discussion forum.
 
 
-In addition, MIT has excellent study resources: [math learning center](https://math.mit.edu/learningcenter/), [TSR^2 study/resource room](https://ome.mit.edu/programs/talented-scholars-resource-room-tsr2), [pset partners](https://psetpartners.mit.edu/).
+MIT also has excellent study resources: [math learning center](https://math.mit.edu/learningcenter/), [TSR^2 study/resource room](https://ome.mit.edu/programs/talented-scholars-resource-room-tsr2), [pset partners](https://psetpartners.mit.edu/).
 
 ## Problem sets
 
