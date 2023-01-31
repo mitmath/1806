@@ -15,18 +15,15 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 **Textbook**: [Introduction to Linear Algebra: 6th Edition](http://eduapps.mit.edu/textbook/books.html?Term=2023SP&Subject=18.06). Professor Strang will explain more about this new 6th edition in class (it is not yet on Amazon). It now ends with two chapters on deep learning. Professor Strang plans to make the textbook available for students to purchase at a discount. Here again is a link to the [preface and contents](https://github.com/mitmath/1806/blob/master/notes/Introduction%20to%20Linear%20Algebra%206th%20edition%20and%20A%20%3D%20CR_04.pdf).
 
+**Recitations**: Tuesday at the following times and locations.
 
-**Course administrator**: TBD.
-
-**Recitations**:
-
-* T9: Mo Chen 1
-* T10: Mo Chen   2, V. Krylov    3
-* T11: V. Krylov   4,   M. Harris  5
-* T12: M. Harris  6,   D. Kluiev  7,  I. Ganguly 9
-* T1: D. Kluiev   8,  I. Ganguly 10
-* T2: K. Vashaw  11
-* T3: K. Vashaw  12
+* Tuesday 9am: R1 Mo Chen (2-132)
+* Tuesday 10am: R2 Mo Chen (2-132), R3 V. Krylov  (2-136)
+* Tuesday 11am: R4 V. Krylov (2-136), R5 M. Harris (4-159)
+* Tuesday 12pm: R6 M. Harris (4-159), R7 D. Kluiev (2-136), R9 I. Ganguly (2-105)
+* Tuesday 1pm: R8 D. Kluiev (2-136),  R10 I. Ganguly (2-132)
+* Tuesday 2pm: R11 K. Vashaw (2-136)
+* Tuesday 3pm: R12 K. Vashaw (2-136)
 
 **Exams**: TBD.
 
