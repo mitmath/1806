@@ -19,9 +19,9 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 * Tuesday 9am: R1 Mo Chen (2-132)
 * Tuesday 10am: R2 Mo Chen (2-132), R3 V. Krylov  (2-136)
-* Tuesday 11am: R4 V. Krylov (2-136), R5 M. Harris (4-159)
+* Tuesday 11am: R4 V. Krylov (2-136), R5 D. Kluiev (4-159)
 * Tuesday 12pm: R6 M. Harris (4-159), R7 D. Kluiev (2-136), R9 I. Ganguly (2-105)
-* Tuesday 1pm: R8 D. Kluiev (2-136),  R10 I. Ganguly (2-132)
+* Tuesday 1pm: R8 M. Harris (2-136),  R10 I. Ganguly (2-132)
 * Tuesday 2pm: R11 K. Vashaw (2-136)
 * Tuesday 3pm: R12 K. Vashaw (2-136)
 
