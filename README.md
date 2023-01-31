@@ -28,12 +28,16 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 * T2: K. Vashaw  11
 * T3: K. Vashaw  12
 
-
-**Undergraduate Assistants**: TBD.
-
 **Exams**: TBD.
 
-**Resources**: Piazza discussion forum, [math learning center](https://math.mit.edu/learningcenter/), [TSR^2 study/resource room](https://ome.mit.edu/programs/talented-scholars-resource-room-tsr2), [pset partners](https://psetpartners.mit.edu/).
+**Resources**: In addition to this repository, we will use the following online resources.
+
+* [Canvas](https://web.mit.edu/canvas/) - course announcements will be posted on Canvas.
+* [Gradescope](https://www.gradescope.com/) - submit Psets and check grades through Gradescope.
+* [Piazza](https://piazza.com/mit/spring2023/1806/home) - ask questions in the course discussion forum.
+
+
+In addition, MIT has excellent study resources: [math learning center](https://math.mit.edu/learningcenter/), [TSR^2 study/resource room](https://ome.mit.edu/programs/talented-scholars-resource-room-tsr2), [pset partners](https://psetpartners.mit.edu/).
 
 ## Problem sets
 
