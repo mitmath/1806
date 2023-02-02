@@ -25,7 +25,9 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 * Tuesday 2pm: R11 K. Vashaw (2-136)
 * Tuesday 3pm: R12 K. Vashaw (2-136)
 
-**Exams**: TBD.
+**Exams**: We will have 3 exams during the semester: February 22, March 20, April 19. Final Exam TBD In May.
+
+**Homework:** Due weekly on Sunday at midnight. 
 
 **Resources**: In addition to this repository, we will use the following online resources.
 
