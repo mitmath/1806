@@ -47,3 +47,15 @@ MIT also has excellent study resources: [math learning center](https://math.mit.
 ## Exams
 
 ## Lecture Material and Summaries
+
+### Lecture 1 (February 6)
+
+Two ways to do matrix-vector multiplication are the "row way" and the "column way."
+* "Row way" = dot products between rows of matrix and the vector.
+* "Column way" = linear combination of columns in the matrix. The coefficients in the linear combination are the entries of the vector.
+
+The column way leads to the _column space_ of a matrix, the space of all possible linear combinations of the columns. Does the column space of a 3 x 3 matrix form a line, a plane, or fill the whole space? It depends on how many _linearly independent_ columns there are. The geometric picture of a matrix's column space is the first key idea of linear algebra.
+
+The dot product tells us how to do matrix-vector multiplication the "row way." The remarkable _cosine formula_ for the dot product also shows how to use it to measure the length of vectors and the angles between them. In particular, perpendicular vectors have dot product = 0. Two useful inequalities follow quickly from the cosine formula: the _Cauchy-Schwarz_ and _triangle_ inequalities. Beyond matrix multiplication, the dot product reveals the geometry of vectors and their linear combinations.
+
+**Further Reading:** Textbook, chapter 1.1 and 1.2.
