@@ -29,7 +29,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 **Exams**: We will have 3 exams during the semester: February 22, March 20, April 19. Final Exam TBD In May. For conflicts and/or accomodations, please contact [Sapphire Tang](https://math.mit.edu/directory/profile?pid=2457) in Academic Services as soon as possible (1-2 weeks in advance).
 
-**Homework:** Due weekly on Sunday at midnight. Upload a .pdf of your clearly written or typed solutions on [Gradescope](https://www.gradescope.com/). Late homework will not be accepted and extensions will not be granted within 48 hours of the due date except in cases of genuine emergency (a letter from S^3 is required).
+**Homework:** Due weekly on Sunday at midnight. Upload a .pdf of your clearly written or typed solutions on [Gradescope](https://www.gradescope.com/). Late homework will not be accepted and extensions will not be granted within 48 hours of the due date except in cases of genuine emergency (a letter from [S^3](https://studentlife.mit.edu/s3) is required).
 
 **Collaboration:** Collaboration on homework is highly encouraged! However, please maintain academic integrity by writing up your solutions individually and by naming all collaborators and information sources consulted for the assignment (you don't need to cite the textbook).
 
