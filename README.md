@@ -29,7 +29,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 **Exams**: We will have 3 exams during the semester: February 22, March 20, April 19. Final Exam TBD In May.
 
-**Homework:** Due weekly on Sunday at midnight. 
+**Homework:** Due weekly on Sunday at midnight. Upload a .pdf of your clearly written or typed solutions on [Gradescope](https://www.gradescope.com/).
 
 **Resources**: In addition to this repository, we will use the following online resources.
 
@@ -41,6 +41,8 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 MIT also has excellent study resources: [math learning center](https://math.mit.edu/learningcenter/), [TSR^2 study/resource room](https://ome.mit.edu/programs/talented-scholars-resource-room-tsr2), [pset partners](https://psetpartners.mit.edu/).
 
 ## Problem sets
+
+* [Pset 1](https://github.com/mitmath/1806/blob/master/psets/pset_1/hw1a.pdf) is due on Sunday February 12 at 11:59pm.
 
 ## Exams
 
