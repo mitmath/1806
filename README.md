@@ -23,9 +23,9 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 * Tuesday 10am: R2 Mo Chen (2-132), R3 V. Krylov  (2-136)
 * Tuesday 11am: R4 V. Krylov (2-136), R5 D. Kluiev (4-159)
 * Tuesday 12pm: R6 M. Harris (4-159), R7 D. Kluiev (2-136), R9 I. Ganguly (2-105)
-* Tuesday 1pm: R8 M. Harris (2-136),  R10 I. Ganguly (2-132)
-* Tuesday 2pm: R11 K. Vashaw (2-136)
-* Tuesday 3pm: R12 K. Vashaw (2-136)
+* Tuesday 1pm: R8 M. Harris (2-136),  R10 I. Ganguly (2-132), R11 Z. Chen (2-135)
+* Tuesday 2pm: R12 Z. Chen (2-132), R13 K. Vashaw (2-136)
+* Tuesday 3pm: R14 K. Vashaw (2-136)
 
 **Exams**: We will have 3 exams during the semester: February 22, March 20, April 19. Final Exam TBD In May.
 
