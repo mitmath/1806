@@ -19,13 +19,20 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 **Recitations**: Tuesday at the following times and locations.
 
-* Tuesday 9am: R1 Mo Chen (2-132)
-* Tuesday 10am: R2 Mo Chen (2-132), R3 V. Krylov  (2-136)
-* Tuesday 11am: R4 V. Krylov (2-136), R5 D. Kluiev (4-159)
-* Tuesday 12pm: R6 M. Harris (4-159), R7 D. Kluiev (2-136), R9 I. Ganguly (2-105)
-* Tuesday 1pm: R8 M. Harris (2-136),  R10 I. Ganguly (2-132), R11 Z. Chen (2-135)
-* Tuesday 2pm: R12 Z. Chen (2-132), R13 K. Vashaw (2-136)
-* Tuesday 3pm: R14 K. Vashaw (2-136)
+* R01: 9am with M. Chen (2-132)
+* R02: 10am with M. Chen (2-132)
+* R03: 10am with V. Krylov (2-136)
+* R04: 11am with D. Kliuev (4-159)
+* R05: 11am with V. Krylov (2-136)
+* R06: 12pm with M. Harris (4-159)
+* R07: 12pm with D. Kliuev (2-105)
+* R08: 12pm with I. Ganguly (2-136)
+* R09: 1pm with M. Harris (2-132)
+* R10: 1pm with I. Ganguly (2-136)
+* R11: 1pm with Z. Chen (2-135)
+* R12: 2pm with Z. Chen (2-132)
+* R13: 2pm with K. Vashaw (2-136)
+* R14: 3pm with K. Vashaw (2-136)
 
 **Exams**: We will have 3 exams during the semester: February 22, March 20, April 19. Final Exam TBD In May. For conflicts and/or accomodations, please contact [Sapphire Tang](https://math.mit.edu/directory/profile?pid=2457) in Academic Services as soon as possible (1-2 weeks in advance).
 
