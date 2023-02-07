@@ -40,6 +40,8 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 **Collaboration:** Collaboration on homework is highly encouraged! However, please maintain academic integrity by writing up your solutions individually and by naming all collaborators and information sources consulted for the assignment (you don't need to cite the textbook).
 
+**Grading:** 20% Homeworks (equally weighted, lowest dropped) + 45% Quizzes (3 midterms, each worth 15%) + 35% Final Exam
+
 **Resources**: In addition to this repository, we will use the following online resources.
 
 * [Canvas](https://web.mit.edu/canvas/) - course announcements will be posted on Canvas.
