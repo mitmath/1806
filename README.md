@@ -19,17 +19,28 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 **Recitations**: Tuesday at the following times and locations.
 
-* Tuesday 9am: R1 Mo Chen (2-132)
-* Tuesday 10am: R2 Mo Chen (2-132), R3 V. Krylov  (2-136)
-* Tuesday 11am: R4 V. Krylov (2-136), R5 D. Kluiev (4-159)
-* Tuesday 12pm: R6 M. Harris (4-159), R7 D. Kluiev (2-136), R9 I. Ganguly (2-105)
-* Tuesday 1pm: R8 M. Harris (2-136),  R10 I. Ganguly (2-132), R11 Z. Chen (2-135)
-* Tuesday 2pm: R12 Z. Chen (2-132), R13 K. Vashaw (2-136)
-* Tuesday 3pm: R14 K. Vashaw (2-136)
+* R01: 9am with M. Chen (2-132)
+* R02: 10am with M. Chen (2-132)
+* R03: 10am with V. Krylov (2-136)
+* R04: 11am with D. Kliuev (4-159)
+* R05: 11am with V. Krylov (2-136)
+* R06: 12pm with M. Harris (4-159)
+* R07: 12pm with D. Kliuev (2-105)
+* R08: 12pm with I. Ganguly (2-136)
+* R09: 1pm with M. Harris (2-132)
+* R10: 1pm with I. Ganguly (2-136)
+* R11: 1pm with Z. Chen (2-135)
+* R12: 2pm with Z. Chen (2-132)
+* R13: 2pm with K. Vashaw (2-136)
+* R14: 3pm with K. Vashaw (2-136)
 
-**Exams**: We will have 3 exams during the semester: February 22, March 20, April 19. Final Exam TBD In May.
+**Exams**: We will have 3 exams during the semester: February 22, March 20, April 19. Final Exam TBD In May. For conflicts and/or accomodations, please contact [Sapphire Tang](https://math.mit.edu/directory/profile?pid=2457) in Academic Services as soon as possible (1-2 weeks in advance).
 
-**Homework:** Due weekly on Sunday at midnight. 
+**Homework:** Due weekly on Sunday at midnight. Upload a .pdf of your clearly written or typed solutions on [Gradescope](https://www.gradescope.com/). Late homework will not be accepted and extensions will not be granted within 48 hours of the due date except in cases of genuine emergency (a letter from [S^3](https://studentlife.mit.edu/s3) is required).
+
+**Collaboration:** Collaboration on homework is highly encouraged! However, please maintain academic integrity by writing up your solutions individually and by naming all collaborators and information sources consulted for the assignment (you don't need to cite the textbook).
+
+**Grading:** 20% Homeworks (equally weighted, lowest dropped) + 45% Quizzes (3 midterms, each worth 15%) + 35% Final Exam
 
 **Resources**: In addition to this repository, we will use the following online resources.
 
@@ -42,6 +53,20 @@ MIT also has excellent study resources: [math learning center](https://math.mit.
 
 ## Problem sets
 
+* [Pset 1](https://github.com/mitmath/1806/blob/master/psets/pset_1/hw1a.pdf) is due on Sunday February 12 at 11:59pm.
+
 ## Exams
 
 ## Lecture Material and Summaries
+
+### Lecture 1 (February 6)
+
+Two ways to do matrix-vector multiplication are the "row way" and the "column way."
+* "Row way" = dot products between rows of matrix and the vector.
+* "Column way" = linear combination of columns in the matrix. The coefficients in the linear combination are the entries of the vector.
+
+The column way leads to the _column space_ of a matrix, the space of all possible linear combinations of the columns. Does the column space of a 3 x 3 matrix form a line, a plane, or fill the whole space? It depends on how many _linearly independent_ columns there are. The geometric picture of a matrix's column space is the first key idea of linear algebra.
+
+The dot product tells us how to do matrix-vector multiplication the "row way." The remarkable _cosine formula_ for the dot product also shows how to use it to measure the length of vectors and the angles between them. In particular, perpendicular vectors have dot product = 0. Two useful inequalities follow quickly from the cosine formula: the _Cauchy-Schwarz_ and _triangle_ inequalities. Beyond matrix multiplication, the dot product reveals the geometry of vectors and their linear combinations.
+
+**Further Reading:** Textbook, chapter 1.1 and 1.2.
