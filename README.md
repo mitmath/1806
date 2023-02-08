@@ -34,6 +34,20 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 * R13: 2pm with K. Vashaw (2-136)
 * R14: 3pm with K. Vashaw (2-136)
 
+**Office Hours:** Please make arrangements to meet Professor Strang before or after class if you wish. The rest of the instructional team will hold weekly office hours. You may attend any office hours that fit your schedule.
+
+* A. Horning: Friday 12:30 - 1:30 in 2-238
+* M. Chen: Friday 4-6 in 2-231
+* V. Krylov: Thursday 4:30 - 6:30 in 2-341
+* D. Kliuev: Thursday 11 - 1 in 2-341
+* M. Harris: Wednesday 4 - 6 in 2-333
+* I. Ganguly: Wednesday 1-2 in TBD
+* Z. Chen: Wednesday 12 - 2 in 2-340
+* K. Vashaw: Friday 1:30 - 2:30 in 2-238
+
+
+
+
 **Exams**: We will have 3 exams during the semester: February 22, March 20, April 19. Final Exam TBD In May. For conflicts and/or accomodations, please contact [Sapphire Tang](https://math.mit.edu/directory/profile?pid=2457) in Academic Services as soon as possible (1-2 weeks in advance).
 
 **Homework:** Due weekly on Sunday at midnight. Upload a .pdf of your clearly written or typed solutions on [Gradescope](https://www.gradescope.com/). Late homework will not be accepted and extensions will not be granted within 48 hours of the due date except in cases of genuine emergency (a letter from [S^3](https://studentlife.mit.edu/s3) is required).
