@@ -41,7 +41,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 * V. Krylov: Thursday 4:30 - 6:30 in 2-341
 * D. Kliuev: Thursday 11 - 1 in 2-341
 * M. Harris: Wednesday 4 - 6 in 2-333
-* I. Ganguly: Wednesday 1-2 in TBD
+* I. Ganguly: Monday 12:30-1:30 and Thrusday 1-2 in TBD
 * Z. Chen: Wednesday 12 - 2 in 2-340
 * K. Vashaw: Friday 1:30 - 2:30 in 2-238
 
