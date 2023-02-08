@@ -84,3 +84,9 @@ The column way leads to the _column space_ of a matrix, the space of all possibl
 The dot product tells us how to do matrix-vector multiplication the "row way." The remarkable _cosine formula_ for the dot product also shows how to use it to measure the length of vectors and the angles between them. In particular, perpendicular vectors have dot product = 0. Two useful inequalities follow quickly from the cosine formula: the _Cauchy-Schwarz_ and _triangle_ inequalities. Beyond matrix multiplication, the dot product reveals the geometry of vectors and their linear combinations.
 
 **Further Reading:** Textbook, chapter 1.1 and 1.2.
+
+### Lecture 2 (February 8)
+
+The number of linearly indepdent columns in a matrix is the _column rank_. The number of linearly independent rows is the _row rank_. The remarkable fact is that these two numbers are the same! In the rank one case, this means that all the columns are multiples of a single vector. The rows are also multiples of a single vector! We can write the rank one matrix A as the product of a column vector and row vector: the row vector tells us what multiples we use to get the columns of A.
+
+Beyond rank one, we can select linearly independent columns of A by moving from left to right. We ask, is the next column a linear combination of the previous columns? The linearly independent columns of A become the columns of a matrix C. The columns of a matrix R tell us how to combine the columns of C to get ALL columns of A: this is the _factorization_ A = C  R. R always contains the identity matrix (unless A is zero) and its rows are linearly independent. With A = C  R, we are very close to understanding why the column and row rank of A have to be the same!
