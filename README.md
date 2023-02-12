@@ -34,9 +34,23 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 * R13: 2pm with K. Vashaw (2-136)
 * R14: 3pm with K. Vashaw (2-136)
 
+**Office Hours:** Please make arrangements to meet Professor Strang before or after class if you wish. The rest of the instructional team will hold weekly office hours. You may attend any office hours that fit your schedule.
+
+* A. Horning: Friday 12:30 - 1:30 in 2-238
+* M. Chen: Friday 4-6 in 2-231
+* V. Krylov: Thursday 4:30 - 6:30 in 2-341
+* D. Kliuev: Thursday 11 - 1 in 2-341
+* M. Harris: Wednesday 4 - 6 in 2-333
+* I. Ganguly: Monday 12:30-1:30 and Thrusday 1-2 in TBD
+* Z. Chen: Wednesday 12 - 2 in 2-340
+* K. Vashaw: Friday 1:30 - 2:30 in 2-238
+
+
+
+
 **Exams**: We will have 3 exams during the semester: February 22, March 20, April 19. Final Exam TBD In May. For conflicts and/or accomodations, please contact [Sapphire Tang](https://math.mit.edu/directory/profile?pid=2457) in Academic Services as soon as possible (1-2 weeks in advance).
 
-**Homework:** Due weekly on Sunday at midnight. Upload a .pdf of your clearly written or typed solutions on [Gradescope](https://www.gradescope.com/). Late homework will not be accepted and extensions will not be granted within 48 hours of the due date except in cases of genuine emergency (a letter from [S^3](https://studentlife.mit.edu/s3) is required).
+**Homework:** Due weekly on Sunday at midnight (except exam weeks and spring break).  Upload a .pdf of your clearly written or typed solutions on [Gradescope](https://www.gradescope.com/). Late homework will not be accepted and extensions will not be granted within 48 hours of the due date except in cases of genuine emergency (a letter from [S^3](https://studentlife.mit.edu/s3) is required).
 
 **Collaboration:** Collaboration on homework is highly encouraged! However, please maintain academic integrity by writing up your solutions individually and by naming all collaborators and information sources consulted for the assignment (you don't need to cite the textbook).
 
@@ -70,3 +84,11 @@ The column way leads to the _column space_ of a matrix, the space of all possibl
 The dot product tells us how to do matrix-vector multiplication the "row way." The remarkable _cosine formula_ for the dot product also shows how to use it to measure the length of vectors and the angles between them. In particular, perpendicular vectors have dot product = 0. Two useful inequalities follow quickly from the cosine formula: the _Cauchy-Schwarz_ and _triangle_ inequalities. Beyond matrix multiplication, the dot product reveals the geometry of vectors and their linear combinations.
 
 **Further Reading:** Textbook, chapter 1.1 and 1.2.
+
+### Lecture 2 (February 8)
+
+The number of linearly indepdent columns in a matrix is the _column rank_. The number of linearly independent rows is the _row rank_. The remarkable fact is that these two numbers are the same! In the rank one case, this means that all the columns are multiples of a single vector. The rows are also multiples of a single vector! We can write the rank one matrix A as the product of a column vector and row vector: the row vector tells us what multiples we use to get the columns of A.
+
+Beyond rank one, we can select linearly independent columns of A by moving from left to right. We ask, is the next column a linear combination of the previous columns? The linearly independent columns of A become the columns of a matrix C. The columns of a matrix R tell us how to combine the columns of C to get ALL columns of A: this is the _factorization_ A = C  R. R always contains the identity matrix (unless A is zero) and its rows are linearly independent. With A = C  R, we are very close to understanding why the column and row rank of A have to be the same!
+
+**Further Reading:** Textbook, chapter 1.3 and 1.4.
