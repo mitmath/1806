@@ -37,7 +37,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 **Office Hours:** Please make arrangements to meet Professor Strang before or after class if you wish. The rest of the instructional team will hold weekly office hours. You may attend any office hours that fit your schedule.
 
 * A. Horning: Friday 12:30 - 1:30 in 2-238
-* M. Chen: Friday 4-6 in 2-231
+* M. Chen: Friday 4-6 in 2-242
 * V. Krylov: Thursday 4:30 - 6:30 in 2-341
 * D. Kliuev: Thursday 11 - 1 in 2-341
 * M. Harris: Wednesday 4 - 6 in 2-333
@@ -92,3 +92,17 @@ The number of linearly indepdent columns in a matrix is the _column rank_. The n
 Beyond rank one, we can select linearly independent columns of A by moving from left to right. We ask, is the next column a linear combination of the previous columns? The linearly independent columns of A become the columns of a matrix C. The columns of a matrix R tell us how to combine the columns of C to get ALL columns of A: this is the _factorization_ A = C  R. R always contains the identity matrix (unless A is zero) and its rows are linearly independent. With A = C  R, we are very close to understanding why the column and row rank of A have to be the same!
 
 **Further Reading:** Textbook, chapter 1.3 and 1.4.
+
+### Lecture 3 (February 10)
+
+There are four useful ways to organize matrix-matrix multiplication:
+* dot product between row i of A and column j of B gives entry (i,j) of AB,
+* matrix A times column j of B gives column j of AB,
+* row i of A times matrix B gives row i of AB,
+* AB is a sum of rank 1 matrices: columns of A times rows of B.
+The middle two are particularly useful for understanding the column or row space of the product AB.
+
+With these conceptual ways to organize matrix-matrix multiplication, we see that A = CR means that the columns of A are combinations of columns of C and the rows of A are combinations of the rows of R. The factors C and R reveal the column space and the row space of the matrix A.
+
+**Further Reading:** Textbook, review chapter 1. You may find this [review sheet](https://github.com/mitmath/1806/blob/master/notes_2023/ch1_review.pdf) helpful.
+
