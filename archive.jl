@@ -29,6 +29,8 @@ final = filter(p -> contains(p, "final") && !contains(p, "sol") && endswith(p, "
                readdir("exams"))[1]
 final = split(basename(final), '.')[1]
 
+sol = isfile("exams/$(final)sol.pdf") ? "sol" : "-sol"
+
 open(dir * "/index.html", "w") do f
     println(f, """
     <!DOCTYPE html>
@@ -39,6 +41,12 @@ open(dir * "/index.html", "w") do f
     </head>
     <body>
         <h1>18.06 $term $year Problem Sets and Exams</h1>
+
+        <p>This is an archive of the problem sets and exams from 18.06 (Linear Algebra) at MIT
+        from $term $year, taught by Prof. <a href="https://math.mit.edu/~stevenj/">Steven G. Johnson</a>.</p>
+
+        <p>The full course materials, including lecture summaries and other notes, can be found in the
+        <a href="https://github.com/mitmath/1806/tree/$branch">$branch branch of github.com/mitmath/1806</a>.
     """)
 
     println(f, "<h2>Problem sets</h2>\n<ul>")
@@ -79,3 +87,5 @@ open(dir * "/index.html", "w") do f
     </html>
     """)
 end
+
+run(`zip -r "$dir.zip" $dir`)
