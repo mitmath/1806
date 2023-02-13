@@ -29,7 +29,7 @@ final = filter(p -> contains(p, "final") && !contains(p, "sol") && endswith(p, "
                readdir("exams"))[1]
 final = split(basename(final), '.')[1]
 
-sol = isfile("exams/$(final)sol.pdf") ? "sol" : "-sol"
+sol_suffix = isfile("exams/$(final)sol.pdf") ? "sol" : "-sol"
 
 open(dir * "/index.html", "w") do f
     println(f, """
@@ -53,7 +53,7 @@ open(dir * "/index.html", "w") do f
     for pset in psets
         n = parse(Int, pset[match(r"[0-9]+$", pset).offset:end])
         println("  -- CONVERTING pset $n")
-        psetsol = pset * "sol"
+        psetsol = pset * sol_suffix
         for p in (pset, psetsol)
             if !isfile("$dir/$p.html")
                 run(`$nbconvert "psets/$p.ipynb" --to html`)
@@ -68,14 +68,14 @@ open(dir * "/index.html", "w") do f
     for exam in exams
         n = parse(Int, exam[match(r"[0-9]+$", exam).offset:end])
         println("  -- COPYING exam $n")
-        examsol = exam * "sol"
+        examsol = exam * sol_suffix
         for e in (exam, examsol)
             isfile("$dir/$e.pdf") || cp("exams/$e.pdf", "$dir/$e.pdf")
         end
         println(f, """<li><a href="$exam.pdf">Exam $n</a> and <a href="$examsol.pdf">solutions</a>.""")
     end
     println("  -- COPYING $final")
-    finalsol = final * "sol"
+    finalsol = final * sol_suffix
     for e in (final, finalsol)
         isfile("$dir/$e.pdf") || cp("exams/$e.pdf", "$dir/$e.pdf")
     end
