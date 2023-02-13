@@ -67,7 +67,9 @@ MIT also has excellent study resources: [math learning center](https://math.mit.
 
 ## Problem sets
 
-* [Pset 1](https://github.com/mitmath/1806/blob/master/psets/pset_1/hw1a.pdf) is due on Sunday February 12 at 11:59pm.
+* [Pset 1](https://github.com/mitmath/1806/blob/master/psets/hw1a.pdf) is due on Sunday February 12 at 11:59pm.
+
+* [Pset 2](https://github.com/mitmath/1806/blob/master/psets/hw2a.pdf) is due on Sunday February 19 at 11:59pm.
 
 ## Exams
 
