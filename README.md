@@ -102,6 +102,7 @@ There are four useful ways to organize matrix-matrix multiplication:
 * matrix A times column j of B gives column j of AB,
 * row i of A times matrix B gives row i of AB,
 * AB is a sum of rank 1 matrices: columns of A times rows of B.
+
 The middle two are particularly useful for understanding the column or row space of the product AB.
 
 With these conceptual ways to organize matrix-matrix multiplication, we see that A = CR means that the columns of A are combinations of columns of C and the rows of A are combinations of the rows of R. The factors C and R reveal the column space and the row space of the matrix A.
