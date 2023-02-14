@@ -115,7 +115,7 @@ At the heart of linear algebra is the equation Ax = b. We have n equations in n 
 * If A has rank n, there is a unique solution.
 * If A has rank less than n, then there is either (a) no solution or (b) infinitely many solutions!
 
-Geometrically, the second scenario happens when the equations define parallel lines that (a) never intersect or (b) are the same line. This is the row picture. In the column picture, b is in the column space 
+Geometrically, the second scenario happens when the equations define parallel lines that (a) never intersect or (b) are the same line. This is the row picture of Ax = b. 
 
 To solve Ax = b, we combine equations to eliminate unknowns. This is elimination: elementary row operations on A and b convert A to upper triangular form. Once A is in triangular form, we can solve one variable at a time with _backsubstituion_.
 
