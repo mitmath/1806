@@ -108,3 +108,13 @@ With these conceptual ways to organize matrix-matrix multiplication, we see that
 
 **Further Reading:** Textbook, review chapter 1. You may find this [review sheet](https://github.com/mitmath/1806/blob/master/notes_2023/ch1_review.pdf) helpful.
 
+### Lecture 4 (February 13)
+
+At the heart of linear algebra is the equation Ax = b. We have n equations in n unknowns and A is an n by n matrix. 
+* If A has rank n, there is a unique solution.
+* If A has rank less than n, then there is either (a) no solution or (b) infinitely many solutions!
+Geometrically, the second scenario happens when the equations define parallel lines that (a) never intersect or (b) are the same line. This is the row picture. In the column picture, b is in the column space 
+
+To solve Ax = b, we combine equations to eliminate unknowns. This is elimination: elementary row operations on A and b convert A to upper triangular form. Once A is in triangular form, we can solve one variable at a time with _backsubstituion_.
+
+**Further Reading:** Textbook, chapter 2.1.
