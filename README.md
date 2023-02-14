@@ -117,6 +117,6 @@ At the heart of linear algebra is the equation Ax = b. We have n equations in n 
 
 In a simple 2 by 2 example, the second scenario happens when the equations define parallel lines that (a) never intersect or (b) are the same line. 
 
-To solve Ax = b, we combine equations to eliminate unknowns. This is elimination: elementary row operations on A and b convert A to upper triangular form. Once A is in triangular form, we can solve one variable at a time with _backsubstituion_.
+To solve Ax = b, we combine equations to eliminate unknowns. This is elimination: elementary row operations on A and b convert A to upper triangular form. Once A is in triangular form, we can solve one variable at a time with _backsubstitution_.
 
 **Further Reading:** Textbook, chapter 2.1.
