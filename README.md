@@ -120,3 +120,11 @@ In a simple 2 by 2 example, the second scenario happens when the equations defin
 To solve Ax = b, we combine equations to eliminate unknowns. This is elimination: elementary row operations on A and b convert A to upper triangular form. Once A is in triangular form, we can solve one variable at a time with _backsubstitution_.
 
 **Further Reading:** Textbook, chapter 2.1.
+
+### Lecture 5 (February 15)
+
+Elimination converts A to an upper triangular matrix U. We can write the elimination steps as multiplication on the left of A by _elimination matrices_. Gathering the product of the elimination matrices on the left of A gives us EA = U. Inverting E, we arive at the famous factorization A = LU: A is the product of a lower (L) and an upper triangular matrix (U). 
+
+Elimination and backsubstitution implicitly invert A to solve Ax = b. In practice, we rarely compute the inverse of A directly (e.g., calculate its entries). However, it's a useful theoretical tool: studying the properties of inverses will allow us to connect the ideas of elimination to the ideas of column and row space from week one.
+
+**Further Reading:** Textbook, chapter 2.2 and 2.3.
