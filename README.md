@@ -38,7 +38,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 * A. Horning: Friday 12:30 - 1:30 in 2-238
 * M. Chen: Friday 4-6 in 2-242
-* V. Krylov: Thursday 4:30 - 6:30 in 2-341
+* V. Krylov: Thursday 5 - 7 in 2-361
 * D. Kliuev: Thursday 11 - 1 in 2-341
 * M. Harris: Wednesday 4 - 6 in 2-333
 * I. Ganguly: Monday 12:30-1:30 and Thrusday 1-2 in TBD
