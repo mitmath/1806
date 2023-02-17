@@ -36,17 +36,14 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 **Office Hours:** Please make arrangements to meet Professor Strang before or after class if you wish. The rest of the instructional team will hold weekly office hours. You may attend any office hours that fit your schedule.
 
-* A. Horning: Friday 12:30 - 1:30 in 2-238
+* A. Horning: Friday 12:30 - 1:30 in 66-144
 * M. Chen: Friday 4-6 in 2-242
 * V. Krylov: Thursday 5 - 7 in 2-361
 * D. Kliuev: Thursday 11 - 1 in 2-341
 * M. Harris: Wednesday 4 - 6 in 2-333
 * I. Ganguly: Monday 12:30-1:30 in 2-146 and Thursday 1-2 in 2-139
 * Z. Chen: Wednesday 12 - 2 in 2-340
-* K. Vashaw: Friday 1:30 - 2:30 in 2-238
-
-
-
+* K. Vashaw: Friday 1:30 - 2:30 in 66-144
 
 **Exams**: We will have 3 exams during the semester: February 22, March 20, April 19. Final Exam TBD In May. For conflicts and/or accomodations, please contact [Sapphire Tang](https://math.mit.edu/directory/profile?pid=2457) in Academic Services as soon as possible (1-2 weeks in advance).
 
