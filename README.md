@@ -70,7 +70,7 @@ MIT also has excellent study resources: [math learning center](https://math.mit.
 
 ## Exams
 
-Exam 1 will be held on Wednesday, February 22 between 11am-12pm. Last names beginning with A-L will be in 50-340, while last names beginning with M-Z will be in 26-100.
+* Exam 1 will be held on Wednesday, February 22 between 11am-12pm. Last names beginning with A-L will be in 50-340, while last names beginning with M-Z will be in 26-100. 
 
 ## Lecture Material and Summaries
 
