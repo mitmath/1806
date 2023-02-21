@@ -142,6 +142,6 @@ The algebra of row interchanges is captured in a very special family, or _group_
 
 The tranpose of a matrix switches the rows and the columns. The tranpose of a column vector is a row vector and vice versa. The transpose of a product is the product of the tranposes, in reverse order. The dot product is a special case of matrix multiplication: the tranpose of x multiplies y. Going back to the law of associativity, the dot product of A times x with y is the dot product of x with A transpose times y.
 
-A very special class of matrices has A transpose equal to A. The rows and columns of A are the same! Professor Strang's favorite matrix is the second central difference matrix: symmetric, tridiagonal, and invertible. It is often used to approximate the second derivative of a function, sampled at finitely many points, with the method of finite-differences.
+A very special class of matrices has A transpose equal to A. The rows and columns of A are the same! Professor Strang's favorite matrix is the second central difference matrix: symmetric, tridiagonal, and invertible. It is often used to approximate the second derivative of a function, sampled at equispaced points, with the method of finite-differences.
 
 **Further Reading:** Textbook, chapter 2.4 and 2.5.
