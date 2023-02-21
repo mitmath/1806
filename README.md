@@ -135,3 +135,13 @@ The inverse of a matrix gives us a direct way to think about Ax = b. An invertib
 We rarely compute inverses explicitly on the computer. Instead, we solve Ax = b with elimination and backsubstitution. The inverse of the product of elimination matrices has a special structure. The diagonal entries are all one and the subdiagonal entries are the multipliers from elimination! This is the lower triangular matrix L in A = LU. If we encounter unwanted zeros on the diagonal during elimination, we can (when A is invertible) remedy the situation by interchanging rows to move the offending zero and replace it with a nonzero pivot. This leads us to elimination with row-interchanges: PA = LU.
 
 **Further Reading:** Textbook, chapter 2.2, 2.3, and 2.4.
+
+### Lecture 7 (February 21)
+
+The algebra of row interchanges is captured in a very special family, or _group_, of matrices called permutatation matrices. The product, inverse, and transpose of a permutation matrix are all also permutation matrices! When permuation matrices multiply a matrix (or vector) from the left, they exchange rows. When they multiply from the right, the exchange columns.
+
+The tranpose of a matrix switches the rows and the columns. The tranpose of a column vector is a row vector and vice versa. The transpose of a product is the product of the tranposes, in reverse order. The dot product is a special case of matrix multiplication: the tranpose of x multiplies y. Going back to the law of associativity, the dot product of A times x with y is the dot product of x with A transpose times y.
+
+A very special class of matrices has A transpose equal to A. The rows and columns of A are the same! Professor Strang's favorite matrix is the second central difference matrix: symmetric, tridiagonal, and invertible. It is often used to approximate the second derivative of a function, sampled at finitely many points, with the method of finite-differences.
+
+**Further Reading:** Textbook, chapter 2.4 and 2.5.
