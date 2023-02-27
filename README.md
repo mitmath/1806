@@ -37,7 +37,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 **Office Hours:** Please make arrangements to meet Professor Strang before or after class if you wish. The rest of the instructional team will hold weekly office hours. You may attend any office hours that fit your schedule.
 
 * A. Horning: Friday 12:30 - 1:30 in 66-144
-* M. Chen: Friday 4-6 in 2-154
+* M. Chen: Friday 4-6 in 66-154
 * V. Krylov: Thursday 5 - 7 in 2-361
 * D. Kliuev: Thursday 11 - 1 in 2-341
 * M. Harris: Wednesday 4 - 6 in 2-333
