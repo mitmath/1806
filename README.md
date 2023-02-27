@@ -68,6 +68,8 @@ MIT also has excellent study resources: [math learning center](https://math.mit.
 
 * [Pset 2](https://github.com/mitmath/1806/blob/master/psets/hw2a.pdf) is due on Sunday February 19 at 11:59pm.
 
+* [Pset 3](https://github.com/mitmath/1806/blob/master/psets/hw3a.pdf) is due on Sunday March 5 at 11:59pm.
+
 ## Exams
 
 * Exam 1 will be held on Wednesday, February 22 between 11am-12pm. Last names beginning with A-L will be in 50-340, while last names beginning with M-Z will be in 26-100. 
