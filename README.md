@@ -135,3 +135,26 @@ The inverse of a matrix gives us a direct way to think about Ax = b. An invertib
 We rarely compute inverses explicitly on the computer. Instead, we solve Ax = b with elimination and backsubstitution. The inverse of the product of elimination matrices has a special structure. The diagonal entries are all one and the subdiagonal entries are the multipliers from elimination! This is the lower triangular matrix L in A = LU. If we encounter unwanted zeros on the diagonal during elimination, we can (when A is invertible) remedy the situation by interchanging rows to move the offending zero and replace it with a nonzero pivot. This leads us to elimination with row-interchanges: PA = LU.
 
 **Further Reading:** Textbook, chapter 2.2, 2.3, and 2.4.
+
+### Lecture 7 (February 21: Tuesday with Monday Schedule)
+
+The algebra of row interchanges is captured in a very special family, or _group_, of matrices called permutatation matrices. The product, inverse, and transpose of a permutation matrix are all also permutation matrices! When permuation matrices multiply a matrix (or vector) from the left, they exchange rows. When they multiply from the right, the exchange columns.
+
+The tranpose of a matrix switches the rows and the columns. The tranpose of a column vector is a row vector and vice versa. The transpose of a product is the product of the tranposes, in reverse order. The dot product is a special case of matrix multiplication: the tranpose of x multiplies y. Going back to the law of associativity, the dot product of A times x with y is the dot product of x with A transpose times y.
+
+A very special class of matrices has A transpose equal to A. The rows and columns of A are the same! Professor Strang's favorite matrix is the second central difference matrix: symmetric, tridiagonal, and invertible. It is often used to approximate the second derivative of a function, sampled at equispaced points, with the method of finite-differences.
+
+**Further Reading:** Textbook, chapter 2.4 and 2.5.
+
+### Lecture 8 (February 22)
+
+EXAM 1: NO LECTURE.
+
+### Lecture 9 (February 24)
+
+Finite difference matrices approximate derivatives of a function from its samples on a finite grid: these are the difference quotients of calculus in the language of linear algebra. The second central different matrix is special: it is symmetric, tridiagonal, and invertible (with the right boundary conditions). It's LU factorization reflects this symmetry: it is a product of forward and backward difference matrices.
+
+We can use difference quotients and finite difference matrices to solve differential equations on the computer! Discretizing the heat equation with finite differences and a backward difference quotient in time (implicit time-stepping), we have to solve a linear system of equations to step forward in time: each new time step gives a new right-hand side that depends on the solution from the previous time step. The coefficient matrix stays the same, so it is best to factor once (A=LU) and only solve triangular systems after that!
+
+**Further Reading:** Textbook, Chapter 2.5.
+
