@@ -19,8 +19,8 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 **Recitations**: Tuesday at the following times and locations.
 
-* R01: 9am with M. Chen (2-132)
-* R02: 10am with M. Chen (2-132)
+* R01: 9am with M. Chen (66-144)
+* R02: 10am with M. Chen (66-144)
 * R03: 10am with V. Krylov (2-136)
 * R04: 11am with D. Kliuev (4-159)
 * R05: 11am with V. Krylov (2-136)
@@ -37,7 +37,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 **Office Hours:** Please make arrangements to meet Professor Strang before or after class if you wish. The rest of the instructional team will hold weekly office hours. You may attend any office hours that fit your schedule.
 
 * A. Horning: Friday 12:30 - 1:30 in 66-144
-* M. Chen: Friday 4-6 in 2-242
+* M. Chen: Friday 4-6 in 66-154
 * V. Krylov: Thursday 5 - 7 in 2-361
 * D. Kliuev: Thursday 11 - 1 in 2-341
 * M. Harris: Wednesday 4 - 6 in 2-333
@@ -67,6 +67,8 @@ MIT also has excellent study resources: [math learning center](https://math.mit.
 * [Pset 1](https://github.com/mitmath/1806/blob/master/psets/hw1a.pdf) is due on Sunday February 12 at 11:59pm.
 
 * [Pset 2](https://github.com/mitmath/1806/blob/master/psets/hw2a.pdf) is due on Sunday February 19 at 11:59pm.
+
+* [Pset 3](https://github.com/mitmath/1806/blob/master/psets/hw3a.pdf) is due on Sunday March 5 at 11:59pm.
 
 ## Exams
 
