@@ -27,7 +27,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 * R06: 12pm with M. Harris (4-159)
 * R07: 12pm with D. Kliuev (2-105)
 * R08: 12pm with I. Ganguly (2-136)
-* R09: 1pm with M. Harris (2-132)
+* R09: 1pm with M. Harris (4-149)
 * R10: 1pm with I. Ganguly (2-136)
 * R11: 1pm with Z. Chen (2-135)
 * R12: 2pm with Z. Chen (2-132)
