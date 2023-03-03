@@ -160,3 +160,26 @@ We can use difference quotients and finite difference matrices to solve differen
 
 **Further Reading:** Textbook, Chapter 2.5.
 
+### Lecture 10 (February 27)
+
+A VECTOR SPACE has 2 operations: sum x + y of "vectors" and multiplication cx by "scalars." Then 8 rules like  c(x + y) = cx + cy must hold. A "SUBSPACE" is a vector space INSIDE another vector space, as in these examples of subspaces of R^n = n-dimensional space:
+   * all combinations of k given vectors
+   * all solutions to Ax = 0 for a given matrix A
+
+Similarly, we have subspaces of C^n with complex numbers and matrix spaces like all m by n real matrices and function spaces like all continuous functions f(x) for 0 <= x <= 1. All diagonal matrices and all symmetric matrices would be subspaces of the vector space of n by n matrices.
+
+**Further Reading:** Textbook, Chapter 3.1.
+
+### Lecture 11 (March 1)
+
+Finding a complete set of solutions to Ax = zero vector for a given m by n matrix A. This is the "nullspace of A " - a subspace of n-dimensional space. We need elimination to simplify Ax = 0 to a "reduced echelon form Rx = 0." Suppose A is m by n of rank r (r independent rows and columns). Use row operations on A to produce R0 (m by n) and then R (m by r, the same R as in A = CR of Chapter 1). 
+
+    1   2   11   17                     1  0  3  5                     1   0   3   5
+    3   7   37   57    reduces to R0 =  0  1  4  6   and then to R =   0   1   4   6
+    4   9   48   74                     0  0  0  0          
+    
+Delete the zero row and now A = CR.
+
+Elimination is complete and we easily solve Rx = 0 (same nullspace as A). There is a special solution for each column of R apart from the r=2 columns of I. Set x3 = 1 and x4 = 0 to find the special solution x = ( -3, -4, 1 , 0) to Ax = 0. Set x3 = 0 and x4 = 1 to find the special solution x = ( -5, -6, 0,  1) to Ax = 0. The combinations of those special solutions fill the nullspace of A. We will soon show that this nullspace is perpendicular to the row space because Ax = 0.
+
+**Further Reading:** Textbook, Chapter 3.2.
