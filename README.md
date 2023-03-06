@@ -191,3 +191,11 @@ We're now ready to describe the complete solution to A * x=b. If A is square and
 If xp solves A * xp = b and xn solves A * xn = 0 (xn is in the nullspace of A), then A * (xp + xn) = b so x = xp + xn also solves A * x = b! Every solution of A * x = b can be written in this form: a _particular solution_ xp, which solves A * xp = b, plus any vector xn in the nullspace of A. When A is invertible, the nullspace is trivial and the solution is unique. Otherwise, we can write down an infinite set of solutions because the nullspace contains infinitely many vectors!
 
 ** Further Reading:** Textbook, Chapter 3.3.
+
+### Lecture 13 (March 6)
+
+The big picture of linear algebra is the four fundamental subspaces of an m x n matrix A with rank r: the column spaces of A and its transpose (row space), and the nullspaces of A and its transpose. The row space (dimension r) and the nullspace (dimension n-r) of A are orthogonal complements in R^n. Every vector in R^n can be written as the sum of two orthogonal vectors: one in the row space and one in the null space. There is a beautiful symmetry here because the same picture holds for the column space of A and the nullspace of A^T!
+
+A basis for a vector space is a spanning set of linearly independent vectors: any vector in the space can be written as a *unique* linear combination of basis vectors. The dimension of a vector space is the number of vectors in (any and every) basis for the space. The factorization A = C*R gives us a basis for the column space of A (columns of C), row space of A (rows of R), and the nullspace of A (constructed by solving Rx = 0: easy since R is already the result of elimination). How can we find a basis for the nullspace of A^T?
+
+**Further Reading:** Textbook, Chapter 3.4 and 3.5.
