@@ -183,3 +183,11 @@ Delete the zero row and now A = CR.
 Elimination is complete and we easily solve Rx = 0 (same nullspace as A). There is a special solution for each column of R apart from the r=2 columns of I. Set x3 = 1 and x4 = 0 to find the special solution x = ( -3, -4, 1 , 0) to Ax = 0. Set x3 = 0 and x4 = 1 to find the special solution x = ( -5, -6, 0,  1) to Ax = 0. The combinations of those special solutions fill the nullspace of A. We will soon show that this nullspace is perpendicular to the row space because Ax = 0.
 
 **Further Reading:** Textbook, Chapter 3.2.
+
+### Lecture 12 (March 3)
+
+We're now ready to describe the complete solution to A * x=b. If b is not in the column space of A, there is no solution. And if A is square and invertible, there is a unique solution. If b is in the column space of A, we have _infinitely many solutions_! How do we describe them? The nullspace of A plays the key role.
+
+If xp solves A * xp = b and xn solves A * xn = 0 (xn is in the nullspace of A), then A * (xp + xn) = b so x = xp + xn also solves A * x = b! Every solution of A * x = b can be written in this form: a _particular solution_ xp, which solves A * xp = b, plus any vector xn in the nullspace of A. When A is invertible, the nullspace is trivial and the solution is unique: x = xp. Otherwise, we can find infinitely many different solutions because the nullspace contains infinitely many vectors!
+
+** Further Reading:** Textbook, Chapter 3.3.
