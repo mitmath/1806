@@ -186,7 +186,7 @@ Elimination is complete and we easily solve Rx = 0 (same nullspace as A). There 
 
 ### Lecture 12 (March 3)
 
-We're now ready to describe the complete solution to A * x=b. And if A is square and invertible, there is a unique solution. If A is not invertible and b is not in the column space of A, there is no solution. If A is not invertible, but b _is_ in the column space of A, we have _infinitely many solutions_! How do we describe them? The nullspace of A plays the key role.
+We're now ready to describe the complete solution to A * x=b. If A is square and invertible, there is a unique solution. If A is not invertible and b is not in the column space of A, there is no solution. If A is not invertible, but b _is_ in the column space of A, we have _infinitely many solutions_! How do we describe them? The nullspace of A plays the key role.
 
 If xp solves A * xp = b and xn solves A * xn = 0 (xn is in the nullspace of A), then A * (xp + xn) = b so x = xp + xn also solves A * x = b! Every solution of A * x = b can be written in this form: a _particular solution_ xp, which solves A * xp = b, plus any vector xn in the nullspace of A. When A is invertible, the nullspace is trivial and the solution is unique. Otherwise, we can write down an infinite set of solutions because the nullspace contains infinitely many vectors!
 
