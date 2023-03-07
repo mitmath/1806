@@ -27,7 +27,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 * R06: 12pm with M. Harris (4-159)
 * R07: 12pm with D. Kliuev (2-105)
 * R08: 12pm with I. Ganguly (2-136)
-* R09: 1pm with M. Harris (2-132)
+* R09: 1pm with M. Harris (4-149)
 * R10: 1pm with I. Ganguly (2-136)
 * R11: 1pm with Z. Chen (2-135)
 * R12: 2pm with Z. Chen (2-132)
@@ -160,3 +160,42 @@ We can use difference quotients and finite difference matrices to solve differen
 
 **Further Reading:** Textbook, Chapter 2.5.
 
+### Lecture 10 (February 27)
+
+A VECTOR SPACE has 2 operations: sum x + y of "vectors" and multiplication cx by "scalars." Then 8 rules like  c(x + y) = cx + cy must hold. A "SUBSPACE" is a vector space INSIDE another vector space, as in these examples of subspaces of R^n = n-dimensional space:
+   * all combinations of k given vectors
+   * all solutions to Ax = 0 for a given matrix A
+
+Similarly, we have subspaces of C^n with complex numbers and matrix spaces like all m by n real matrices and function spaces like all continuous functions f(x) for 0 <= x <= 1. All diagonal matrices and all symmetric matrices would be subspaces of the vector space of n by n matrices.
+
+**Further Reading:** Textbook, Chapter 3.1.
+
+### Lecture 11 (March 1)
+
+Finding a complete set of solutions to Ax = zero vector for a given m by n matrix A. This is the "nullspace of A " - a subspace of n-dimensional space. We need elimination to simplify Ax = 0 to a "reduced echelon form Rx = 0." Suppose A is m by n of rank r (r independent rows and columns). Use row operations on A to produce R0 (m by n) and then R (m by r, the same R as in A = CR of Chapter 1). 
+
+    1   2   11   17                     1  0  3  5                     1   0   3   5
+    3   7   37   57    reduces to R0 =  0  1  4  6   and then to R =   0   1   4   6
+    4   9   48   74                     0  0  0  0          
+    
+Delete the zero row and now A = CR.
+
+Elimination is complete and we easily solve Rx = 0 (same nullspace as A). There is a special solution for each column of R apart from the r=2 columns of I. Set x3 = 1 and x4 = 0 to find the special solution x = ( -3, -4, 1 , 0) to Ax = 0. Set x3 = 0 and x4 = 1 to find the special solution x = ( -5, -6, 0,  1) to Ax = 0. The combinations of those special solutions fill the nullspace of A. We will soon show that this nullspace is perpendicular to the row space because Ax = 0.
+
+**Further Reading:** Textbook, Chapter 3.2.
+
+### Lecture 12 (March 3)
+
+We're now ready to describe the complete solution to A * x=b. If A is square and invertible, there is a unique solution. If A is not invertible and b is not in the column space of A, there is no solution. If A is not invertible, but b _is_ in the column space of A, we have _infinitely many solutions_! How do we describe them? The nullspace of A plays the key role.
+
+If xp solves A * xp = b and xn solves A * xn = 0 (xn is in the nullspace of A), then A * (xp + xn) = b so x = xp + xn also solves A * x = b! Every solution of A * x = b can be written in this form: a _particular solution_ xp, which solves A * xp = b, plus any vector xn in the nullspace of A. When A is invertible, the nullspace is trivial and the solution is unique. Otherwise, we can write down an infinite set of solutions because the nullspace contains infinitely many vectors!
+
+** Further Reading:** Textbook, Chapter 3.3.
+
+### Lecture 13 (March 6)
+
+The big picture of linear algebra is the four fundamental subspaces of an m x n matrix A with rank r: the column spaces of A and its transpose (row space), and the nullspaces of A and its transpose. The row space (dimension r) and the nullspace (dimension n-r) of A are orthogonal complements in R^n. Every vector in R^n can be written as the sum of two orthogonal vectors: one in the row space and one in the null space. There is a beautiful symmetry here because the same picture holds for the column space of A and the nullspace of A^T!
+
+A basis for a vector space is a spanning set of linearly independent vectors: any vector in the space can be written as a *unique* linear combination of basis vectors. The dimension of a vector space is the number of vectors in (any and every) basis for the space. The factorization A = C*R gives us a basis for the column space of A (columns of C), row space of A (rows of R), and the nullspace of A (constructed by solving Rx = 0: easy since R is already the result of elimination). How can we find a basis for the nullspace of A^T?
+
+**Further Reading:** Textbook, Chapter 3.4 and 3.5.
