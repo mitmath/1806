@@ -44,6 +44,8 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 * I. Ganguly: Monday 12:30-1:30 in 2-146 and Thursday 1-2 in 2-139
 * Z. Chen: Wednesday 12 - 2 in 2-340
 * K. Vashaw: Friday 1:30 - 2:30 in 66-144
+* S. Bentley: Friday 3 - 4 in 2-147
+* A. Lu: Friday 7 - 9 in 2-139
 
 **Exams**: We will have 3 exams during the semester: February 22, March 20, April 19. Final Exam TBD In May. For conflicts and/or accomodations, please contact [Sapphire Tang](https://math.mit.edu/directory/profile?pid=2457) in Academic Services as soon as possible (1-2 weeks in advance).
 
