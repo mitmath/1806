@@ -212,6 +212,10 @@ So far, we have learned how to solve and analyze Ax = b when A is square and inv
 
 **Further Reading:** Textbook, Chapter 3.5, 4.1, and 4.2.
 
+### Lecture 15 (March 10)
 
+To make Ax-b as small as possible, we choose x so that Ax - b is orthogonal to the column space of A. Then, Pb = Ax is the orthogonal projection of b onto the column space of A. The error in Ax = b is b - Ax = b - Pb = (I-P)b. The projections P and (I-P) are called orthogonal projectors: they are square, symmetric, and their ranks are equal to the subspaces they project onto. The projector P projects onto the column space of A and I-P projects onto the orthogonal complement, the nullspace of A^T. 
 
+To find P and I - P, we have to find x! The condition Ax - b orthogonal to columns of A leads to the _normal equations_: (A^TA)x=A^Tb. This is a square linear system, and it is invertible when the columns of A are linearly independent.
 
+**Further Reading:** Textbook, Chapter 4.1 and 4.2.
