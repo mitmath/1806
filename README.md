@@ -43,7 +43,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 * M. Harris: Wednesday 4 - 6 in 2-333
 * I. Ganguly: Monday 12:30-1:30 in 2-146 and Thursday 1-2 in 2-139
 * Z. Chen: Wednesday 12 - 2 in 2-340
-* K. Vashaw: Friday 1:30 - 2:30 in 66-144
+* K. Vashaw: Monday 1:30 - 2:30 in 2-131 and Friday 1:30 - 2:30 in 66-144
 * S. Bentley: Friday 3 - 4 in 2-147
 * A. Lu: Friday 7 - 9 in 2-139
 
