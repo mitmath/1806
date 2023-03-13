@@ -1,0 +1,963 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\labelenumi}{(\alph{enumi})}
+\renewcommand{\labelenumii}{(\roman{enumii})}
+\date{}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+MIT 18.06 Exam 1, Spring 2023
+\begin_inset Newline newline
+\end_inset
+
+Gilbert Strang and Andrew Horning
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Your name: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-6pt"
+width "80col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(
+\emph on
+printed
+\emph default
+)
+\end_layout
+
+\begin_layout Paragraph
+Student ID: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-6pt"
+width "80col%"
+height "1pt"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Recitation: 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "-6pt"
+width "80col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 1 (12+10+12=34 points):
+\end_layout
+
+\begin_layout Standard
+Record your final answer in the alloted spaces.
+ You may use the remaining space for your calculations.
+\end_layout
+
+\begin_layout Description
+1(a) Compute the factorization 
+\begin_inset Formula $A=CR$
+\end_inset
+
+ of the 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ matrix 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ As usual, work from left to right until 
+\begin_inset Formula $C$
+\end_inset
+
+ contains a full set of linearly independent columns of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cccc}
+0 & -1 & 0 & -1\\
+1 & 0 & -2 & 0\\
+0 & 2 & 0 & 2\\
+1 & 0 & -2 & 0
+\end{array}\right)=CR.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+C=\left(\begin{array}{ccccc}
+\\
+\\
+\\
+\\
+\\
+\end{array}\qquad\qquad\qquad\right)\qquad\qquad\qquad R=\left(\begin{array}{ccccc}
+\\
+\\
+\\
+\\
+\\
+\end{array}\qquad\qquad\qquad\right)
+\]
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+1(b) True or false (Write T or F in the blank space provided).
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0pt"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+ The row space of 
+\begin_inset Formula $A$
+\end_inset
+
+ is a 2D plane.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0pt"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+ For every 
+\begin_inset Formula $4\times1$
+\end_inset
+
+ vector 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ has a unique solution.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0pt"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+ The column space and row space of 
+\begin_inset Formula $A$
+\end_inset
+
+ are the same.
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+1(c) Compute the 
+\series bold
+first
+\series default
+ column of the matrix 
+\begin_inset Formula $B^{-1}A$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+B^{-1}A=\underbrace{\left(\begin{array}{cccc}
+1 & -1 & 0 & 0\\
+0 & 1 & -1 & 0\\
+0 & 0 & 1 & -1\\
+0 & 0 & 0 & 1
+\end{array}\right)^{-1}}_{B^{-1}}\underbrace{\left(\begin{array}{cccc}
+0 & -1 & 0 & -1\\
+1 & 0 & -2 & 0\\
+0 & 2 & 0 & 2\\
+1 & 0 & -2 & 0
+\end{array}\right)}_{A}
+\]
+
+\end_inset
+
+HINT: Solve 
+\begin_inset Formula $Bx=a_{1},$
+\end_inset
+
+where 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ is the first column of 
+\begin_inset Formula $A$
+\end_inset
+
+, so that 
+\begin_inset Formula $x=$
+\end_inset
+
+ 
+\begin_inset Formula $B^{-1}a_{1}=$
+\end_inset
+
+ (first column of 
+\begin_inset Formula $B^{-1}A).$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+{\rm (first\:}{\rm column\:}{\rm of\:}B^{-1}A)=\left(\begin{array}{ccccc}
+\\
+\\
+\\
+\\
+\\
+\end{array}\qquad\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 2 (18+14+2=34 points):
+\end_layout
+
+\begin_layout Standard
+Record your final answer in the alloted spaces.
+ You may use the remaining space for your calculations.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The bottom row of a 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ depends on a positive parameter 
+\begin_inset Formula $p$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{ccc}
+1 & 0 & 1\\
+2 & -1 & 0\\
+2 & p & p
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Compute the factorization 
+\begin_inset Formula $A=LU$
+\end_inset
+
+ in the following steps.
+\end_layout
+
+\begin_layout Description
+2(a) Write down elimination matrices 
+\begin_inset Formula $E_{21}$
+\end_inset
+
+, 
+\begin_inset Formula $E_{31}$
+\end_inset
+
+, and 
+\begin_inset Formula $E_{32}$
+\end_inset
+
+ that introduce zeros in the 
+\begin_inset Formula $(2,1)$
+\end_inset
+
+, 
+\begin_inset Formula $(3,1),$
+\end_inset
+
+ and 
+\begin_inset Formula $(3,2)$
+\end_inset
+
+ entries so that 
+\begin_inset Formula $E_{32}E_{31}E_{21}A=U$
+\end_inset
+
+ is upper triangular.
+ The elimination matrices may depend on the parameter 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+E_{21}=\left(\begin{array}{cccc}
+\\
+\\
+\\
+\\
+\end{array}\qquad\qquad\right)\quad\enskip E_{31}=\left(\begin{array}{cccc}
+\\
+\\
+\\
+\\
+\end{array}\qquad\qquad\right)\quad\enskip E_{32}=\left(\begin{array}{cccc}
+\\
+\\
+\\
+\\
+\end{array}\qquad\qquad\right)
+\]
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+2(b) Write down the lower and upper triangular factors 
+\begin_inset Formula $L$
+\end_inset
+
+ and 
+\begin_inset Formula $U$
+\end_inset
+
+ that multiply to make 
+\begin_inset Formula $A=LU$
+\end_inset
+
+.
+ The triangular factors may depend on the parameter 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+L=\left(\begin{array}{cccc}
+\\
+\\
+\\
+\\
+\end{array}\qquad\qquad\right)\qquad\qquad U=\left(\begin{array}{cccc}
+\\
+\\
+\\
+\\
+\end{array}\qquad\qquad\right)
+\]
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+2(c) If 
+\begin_inset Formula $p$
+\end_inset
+
+ is 
+\begin_inset Formula $ $
+\end_inset
+
+allowed to be negative, 
+\begin_inset Formula $A$
+\end_inset
+
+ is not invertible when 
+\begin_inset Formula $p=$
+\end_inset
+
+ 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0pt"
+width "10col%"
+height "1pt"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+Problem 3 (15+15+2=32 points):
+\end_layout
+
+\begin_layout Standard
+Record your final answer in the alloted spaces.
+ You may use the remaining space for your calculations.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This upper triangular matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ is not invertible:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A=\left(\begin{array}{cccc}
+1 & 3 & 5 & 7\\
+0 & 2 & 4 & 6\\
+0 & 0 & 0 & 8\\
+0 & 0 & 0 & 9
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Show in two ways that 
+\begin_inset Formula $A$
+\end_inset
+
+ has no inverse.
+\end_layout
+
+\begin_layout Description
+3(a) Find a nontrivial combination of the columns that produces the zero
+ vector, that is, find numbers 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+, and 
+\begin_inset Formula $x_{4}$
+\end_inset
+
+ (not all equal to zero) such that
+\begin_inset Formula 
+\[
+x_{1}\left(\begin{array}{c}
+1\\
+0\\
+0\\
+0
+\end{array}\right)+x_{2}\left(\begin{array}{c}
+3\\
+2\\
+0\\
+0
+\end{array}\right)+x_{3}\left(\begin{array}{c}
+5\\
+4\\
+0\\
+0
+\end{array}\right)+x_{4}\left(\begin{array}{c}
+7\\
+6\\
+8\\
+9
+\end{array}\right)=\left(\begin{array}{c}
+0\\
+0\\
+0\\
+0
+\end{array}\right).
+\]
+
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x_{1}=\qquad\qquad\enskip x_{2}=\qquad\qquad\enskip x_{3}=\qquad\qquad\enskip x_{4}=\qquad\qquad
+\]
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+3(b) Find a column vector 
+\begin_inset Formula $b=(b_{1},b_{2},b_{3},b_{4})^{T}$
+\end_inset
+
+ so that 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+ has no solution 
+\begin_inset Formula $x=(x_{1},x_{2},x_{3},x_{4})^{T}$
+\end_inset
+
+.
+ 
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset Formula 
+\[
+b_{1}=\qquad\qquad\enskip b_{2}=\qquad\qquad\enskip b_{3}=\qquad\qquad\enskip b_{4}=\qquad\qquad
+\]
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+3(c) In general, an upper triangular matrix is invertible exactly when its
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0pt"
+width "20col%"
+height "1pt"
+
+\end_inset
+
+ entries are 
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0pt"
+width "20col%"
+height "1pt"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+(blank page for your work if you need it)
+\end_layout
+
+\end_body
+\end_document
