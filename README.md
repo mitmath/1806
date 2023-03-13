@@ -43,7 +43,9 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 * M. Harris: Wednesday 4 - 6 in 2-333
 * I. Ganguly: Monday 12:30-1:30 in 2-146 and Thursday 1-2 in 2-139
 * Z. Chen: Wednesday 12 - 2 in 2-340
-* K. Vashaw: Friday 1:30 - 2:30 in 66-144
+* K. Vashaw: Monday 1:30 - 2:30 in 2-131 and Friday 1:30 - 2:30 in 66-144
+* S. Bentley: Friday 3 - 4 in 2-147
+* A. Lu: Friday 7 - 9 in 2-139
 
 **Exams**: We will have 3 exams during the semester: February 22, March 20, April 19. Final Exam TBD In May. For conflicts and/or accomodations, please contact [Sapphire Tang](https://math.mit.edu/directory/profile?pid=2457) in Academic Services as soon as possible (1-2 weeks in advance).
 
@@ -200,4 +202,20 @@ The big picture of linear algebra is the four fundamental subspaces of an m x n 
 
 A basis for a vector space is a spanning set of linearly independent vectors: any vector in the space can be written as a *unique* linear combination of basis vectors. The dimension of a vector space is the number of vectors in (any and every) basis for the space. The factorization A = C*R gives us a basis for the column space of A (columns of C), row space of A (rows of R), and the nullspace of A (constructed by solving Rx = 0: easy since R is already the result of elimination). How can we find a basis for the nullspace of A^T?
 
-**Further Reading:** Textbook, Chapter 3.4 and 3.5.
+**Further Reading:** Textbook, Chapter 3.4, 3.5, and 4.1.
+
+### Lecture 14 (March 8)
+
+An incidence matrix A describes the flow of information on a directed graph, e.g., the flow of electricity in an electical circuit. The four fundamental subspaces of A provide clear insight into the structure and behavior of the circuit. Kirchoff's laws of current, voltage, and Euler's formula relating the number of nodes, edges, small loops in the graph: these can all be seen in the column spaces and nullspaces of A and A^T.
+
+So far, we have learned how to solve and analyze Ax = b when A is square and invertible or when b is in the column space of A. But what should we do when b is *not* in the column space of A? This situation is typical of regression problems in classical statistics and data-science, when each data-point leads to an equation and one hopes to find model parameters that fit the data well. The first thing to try is to make Ax as close to b as possible: this means choosing x so that Ax-b is orthogonal to Ax. To find x and Ax-b, we need to study orthogonal projections onto the column space of A.
+
+**Further Reading:** Textbook, Chapter 3.5, 4.1, and 4.2.
+
+### Lecture 15 (March 10)
+
+To make Ax-b as small as possible, we choose x so that Ax - b is orthogonal to the column space of A. Then, Pb = Ax is the orthogonal projection of b onto the column space of A. The error in Ax = b is b - Ax = b - Pb = (I-P)b. The projections P and (I-P) are called orthogonal projectors: they are square, symmetric, and their ranks are equal to the subspaces they project onto. The projector P projects onto the column space of A and I-P projects onto the orthogonal complement, the nullspace of A^T. 
+
+To find P and I - P, we have to find x! The condition Ax - b orthogonal to columns of A leads to the _normal equations_: (A^TA)x=A^Tb. This is a square linear system, and it is invertible when the columns of A are linearly independent.
+
+**Further Reading:** Textbook, Chapter 4.1 and 4.2.
