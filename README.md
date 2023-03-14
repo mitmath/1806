@@ -219,3 +219,11 @@ To make Ax-b as small as possible, we choose x so that Ax - b is orthogonal to t
 To find P and I - P, we have to find x! The condition Ax - b orthogonal to columns of A leads to the _normal equations_: (A^TA)x=A^Tb. This is a square linear system, and it is invertible when the columns of A are linearly independent.
 
 **Further Reading:** Textbook, Chapter 4.1 and 4.2.
+
+## Lecture 16 (March 13)
+
+If the columns of A are indepedent (full column rank), then the normal equations (A^TA)x = A^Tb have a solution **x** that makes the vector A**x**-b as short as possible! The vector p = A**x** is the projection of b onto the column space of A: p = A * (A^T * A)^(-1) A^T * b. The matrix multiplying b from the left is the orthogonal projection matrix P. Applying the projection twice is the same as applying the projection once: P^2 = P. 
+
+We can use the normal equations to solve regression problems in statistics, like finding a line that best fits the data. Each data point gives us an equation, a row of Ax = b. The slope and intercept of the line are the unknowns, entries of x. To choose the slope and intercept of the best fitting line, we minimize ||Ax-b|| - we solve the normal equations! The error in our fit is ||A**x**-b||=||b - A**x**|| = ||(I-P)b||: this is how much of b is orthogonal to the column space of A.
+
+**Further Reading:** Textbook, Chapter 4.2 and 4.3.
