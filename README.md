@@ -232,4 +232,4 @@ We can use the normal equations to solve regression problems in statistics, like
 
 Orthogonal matrices are a beautiful family of square matrices with orthonormal columns: the columns are orthogonal to each other and have unit length. Examples of orthgonal matrices come from permutations, rotations, reflections, and Hadamard matrices (entires are plus and minus one). Orthogonal matrices _preserve the length_ of a vector when they mutliply it. When Q is an orthogonal matrix, ||Qx||=||x||! Orthogonal matrices and orthogonal bases are the key to make orthogonal projections and least-squares work reliably on the computer.
 
-**Further Reading:** Textbook, Chapter 4.4.
+**Further Reading:** Textbook, Chapter 4.4. Check out the [least-squares notebook](https://github.com/mitmath/1806/blob/master/notes_2023/least-squares.ipynb) for more applications of least-squares.
