@@ -227,3 +227,9 @@ If the columns of A are indepedent (full column rank), then the normal equations
 We can use the normal equations to solve regression problems in statistics, like finding a line that best fits the data. Each data point gives us an equation, a row of Ax = b. The slope and intercept of the line are the unknowns, entries of x. To choose the slope and intercept of the best fitting line, we minimize ||Ax-b|| - we solve the normal equations! The error in our fit is ||A**x**-b||=||b - A**x**|| = ||(I-P)b||: this is how much of b is orthogonal to the column space of A.
 
 **Further Reading:** Textbook, Chapter 4.2 and 4.3.
+
+## Lecture 17 (March 15)
+
+Orthogonal matrices are a beautiful family of square matrices with orthonormal columns: the columns are orthogonal to each other and have unit length. Examples of orthgonal matrices come from permutations, rotations, reflections, and Hadamard matrices (entires are plus and minus one). Orthogonal matrices _preserve the length_ of a vector when they mutliply it. When Q is an orthogonal matrix, ||Qx||=||x||! Orthogonal matrices and orthogonal bases are the key to make orthogonal projections and least-squares work reliably on the computer.
+
+**Further Reading:** Textbook, Chapter 4.4.
