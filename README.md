@@ -72,7 +72,7 @@ MIT also has excellent study resources: [math learning center](https://math.mit.
 
 * [Pset 3](https://github.com/mitmath/1806/blob/master/psets/hw3a.pdf) is due on Sunday March 5 at 11:59pm.
 
-* [Pset 4](https://github.com/mitmath/1806/blob/master/psets/hw4a.pdf) is due on Sunday March 12 at 11:59pm.
+* [Pset 4](https://github.com/mitmath/1806/blob/master/psets/hw4a.pdf) is due on Sunday March 12 at 11:59pm. Extended to Wednesday March 15 at 11:59pm.
 
 ## Exams
 
