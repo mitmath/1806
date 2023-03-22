@@ -241,3 +241,9 @@ Orthogonal matrices are a beautiful family of square matrices with orthonormal c
 To find an orthonormal basis (orthogonal and normalized to unit length) for the column space of A, we can perform the Gram-Schmidt orthogonalization procedure. The first k basis vectors from Gram-Schmidt form an orthonormal basis for the first k linearly independent columns of A. If A has linearly independent columns, we get the factorization A = QR. The columns of Q are the orthonormal basis for the column space of A and the columns of R tell us how to recover the columns of A from Q!
 
 **Further Reading:** Textbook, Chapter 4.4.
+
+## Lecture 18 (March 22)
+
+Gramd-Schmidt orthogonalization provdes the factorization A = QR. The columns of Q form an orthonormal basis for the column space of A. The columns of R link the columns of Q to the columns of A. The entries of R are the dot products we compute during Gram-Schmidt. Once we have computed an orthonormal basis for the column space of A, we can use the factros Q and R to solve the least-squares problem. The new (simpler) equation for the least-squares solution is the upper triangular system Rx = Q^Tb. High-quality numerical linear algebra software usually works with Rx = Q^Tb instead of the normal equations in order to reduce the accumulation of rounding errors made during computer arithmetic.
+
+**Further Reading:** Textbook, Chapter 4.4.
