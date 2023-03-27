@@ -74,7 +74,7 @@ MIT also has excellent study resources: [math learning center](https://math.mit.
 
 * [Pset 4](https://github.com/mitmath/1806/blob/master/psets/hw4a.pdf) is due on Sunday March 12 at 11:59pm. Extended to Wednesday March 15 at 11:59pm.
 
-* [Pset 4](https://github.com/mitmath/1806/blob/master/psets/hw5a.pdfhttps://github.com/mitmath/1806/blob/master/psets/hw4a.pdf) is due on Sunday April 9 at 11:59pm. Problem 9 is OPTIONAL for EXTRA CREDIT.
+* [Pset 5](https://github.com/mitmath/1806/blob/master/psets/hw5a.pdfhttps://github.com/mitmath/1806/blob/master/psets/hw4a.pdf) is due on Sunday April 9 at 11:59pm. Problem 9 is OPTIONAL for EXTRA CREDIT.
 
 ## Exams
 
