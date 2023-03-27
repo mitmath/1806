@@ -72,11 +72,13 @@ MIT also has excellent study resources: [math learning center](https://math.mit.
 
 * [Pset 3](https://github.com/mitmath/1806/blob/master/psets/hw3a.pdf) is due on Sunday March 5 at 11:59pm.
 
-* [Pset 4](https://github.com/mitmath/1806/blob/master/psets/hw4a.pdf) is due on Sunday March 12 at 11:59pm.
+* [Pset 4](https://github.com/mitmath/1806/blob/master/psets/hw4a.pdf) is due on Sunday March 12 at 11:59pm. Extended to Wednesday March 15 at 11:59pm.
 
 ## Exams
 
 * Exam 1 will be held on Wednesday, February 22 between 11am-12pm. Last names beginning with A-L will be in 50-340, while last names beginning with M-Z will be in 26-100. 
+
+* Exam 2 will be held on Monday, March 20 between 11am-12pm. Last names beginning with A-L will be in 50-340, while last names beginning with M-Z will be in 26-100. 
 
 ## Lecture Material and Summaries
 
@@ -233,3 +235,15 @@ We can use the normal equations to solve regression problems in statistics, like
 Orthogonal matrices are a beautiful family of square matrices with orthonormal columns: the columns are orthogonal to each other and have unit length. Examples of orthgonal matrices come from permutations, rotations, reflections, and Hadamard matrices (entires are plus and minus one). Orthogonal matrices _preserve the length_ of a vector when they mutliply it. When Q is an orthogonal matrix, ||Qx||=||x||! Orthogonal matrices and orthogonal bases are the key to make orthogonal projections and least-squares work reliably on the computer.
 
 **Further Reading:** Textbook, Chapter 4.4. Check out the [least-squares notebook](https://github.com/mitmath/1806/blob/master/notes_2023/least-squares.ipynb) for more applications of least-squares.
+
+## Lecture 18 (March 17)
+
+To find an orthonormal basis (orthogonal and normalized to unit length) for the column space of A, we can perform the Gram-Schmidt orthogonalization procedure. The first k basis vectors from Gram-Schmidt form an orthonormal basis for the first k linearly independent columns of A. If A has linearly independent columns, we get the factorization A = QR. The columns of Q are the orthonormal basis for the column space of A and the columns of R tell us how to recover the columns of A from Q!
+
+**Further Reading:** Textbook, Chapter 4.4.
+
+## Lecture 18 (March 22)
+
+Gramd-Schmidt orthogonalization provdes the factorization A = QR. The columns of Q form an orthonormal basis for the column space of A. The columns of R link the columns of Q to the columns of A. The entries of R are the dot products we compute during Gram-Schmidt. Once we have computed an orthonormal basis for the column space of A, we can use the factros Q and R to solve the least-squares problem. The new (simpler) equation for the least-squares solution is the upper triangular system Rx = Q^Tb. High-quality numerical linear algebra software usually works with Rx = Q^Tb instead of the normal equations in order to reduce the accumulation of rounding errors made during computer arithmetic.
+
+**Further Reading:** Textbook, Chapter 4.4.
