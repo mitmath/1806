@@ -256,4 +256,4 @@ It's determinant week! The determinant of a square matrix provides a useful test
 
 Although historically important and theoretically insightful, we rarely use the determinant (or explicit formulas) for computing inverses: it is almost always best to solve linear systems by elimination. When the determinant must be computed, it is usually done via elimination and A=LU. Then, det(A) = det(L) * det(U), and the determinants of the triangular matrices L and U are the products of their diagonal elements.
 
-**Further Reading:** Textbook, Chapter 5.
+**Further Reading:** Textbook, Chapter 5.1.
