@@ -74,6 +74,8 @@ MIT also has excellent study resources: [math learning center](https://math.mit.
 
 * [Pset 4](https://github.com/mitmath/1806/blob/master/psets/hw4a.pdf) is due on Sunday March 12 at 11:59pm. Extended to Wednesday March 15 at 11:59pm.
 
+* [Pset 5](https://github.com/mitmath/1806/blob/master/psets/hw5a.pdf) is due on Sunday April 9 at 11:59pm. Problem 9 is OPTIONAL for EXTRA CREDIT.
+
 ## Exams
 
 * Exam 1 will be held on Wednesday, February 22 between 11am-12pm. Last names beginning with A-L will be in 50-340, while last names beginning with M-Z will be in 26-100. 
@@ -244,6 +246,14 @@ To find an orthonormal basis (orthogonal and normalized to unit length) for the 
 
 ## Lecture 18 (March 22)
 
-Gramd-Schmidt orthogonalization provdes the factorization A = QR. The columns of Q form an orthonormal basis for the column space of A. The columns of R link the columns of Q to the columns of A. The entries of R are the dot products we compute during Gram-Schmidt. Once we have computed an orthonormal basis for the column space of A, we can use the factros Q and R to solve the least-squares problem. The new (simpler) equation for the least-squares solution is the upper triangular system Rx = Q^Tb. High-quality numerical linear algebra software usually works with Rx = Q^Tb instead of the normal equations in order to reduce the accumulation of rounding errors made during computer arithmetic.
+Gramd-Schmidt orthogonalization provdes the factorization A = QR. The columns of Q form an orthonormal basis for the column space of A. The columns of R link the columns of Q to the columns of A. The entries of R are the dot products we compute during Gram-Schmidt. Once we have computed an orthonormal basis for the column space of A, we can use the factors Q and R to solve the least-squares problem. The new (simpler) equation for the least-squares solution is the upper triangular system Rx = Q^Tb. High-quality numerical linear algebra software usually works with Rx = Q^Tb instead of the normal equations in order to reduce the accumulation of rounding errors made during computer arithmetic.
 
 **Further Reading:** Textbook, Chapter 4.4.
+
+## Lecture 19 (April 3)
+
+It's determinant week! The determinant of a square matrix provides a useful test for invertibility: it is zero exactly when the matrix is **not** invertible. The determinant of the identity is one, exchanging rows (or columns) changes the sign of the determinant, and the determinant is linear in _each separate row and column_. This last statement means that scaling a single row (or column) scales the whole determinant. The familiar and remarkable formualas for the determinant follow from these three properties!
+
+Although historically important and theoretically insightful, we rarely use the determinant (or explicit formulas) for computing inverses: it is almost always best to solve linear systems by elimination. When the determinant must be computed, it is usually done via elimination and A=LU. Then, det(A) = det(L) * det(U), and the determinants of the triangular matrices L and U are the products of their diagonal elements.
+
+**Further Reading:** Textbook, Chapter 5.1.
