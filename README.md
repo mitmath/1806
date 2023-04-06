@@ -257,3 +257,11 @@ It's determinant week! The determinant of a square matrix provides a useful test
 Although historically important and theoretically insightful, we rarely use the determinant (or explicit formulas) for computing inverses: it is almost always best to solve linear systems by elimination. When the determinant must be computed, it is usually done via elimination and A=LU. Then, det(A) = det(L) * det(U), and the determinants of the triangular matrices L and U are the products of their diagonal elements.
 
 **Further Reading:** Textbook, Chapter 5.1.
+
+## Lecture 20 (April 5)
+
+The three definining properties of the determinant lead to the famous product rule, det(AB) = det(A) * det(B). They also lead to the cofactor expansions, which reduce the determinant calculation to a combination of "one size smaller" determinants: the _cofactors_. The cofactors of a matrix are the key to explicit formulas for its inverse! The inverse of a matrix A is the matrix of cofactors C transposed and divided by the determinant: A^(-1) = C^T / det(A).
+
+The cofactor formula for the inverse is often useful theoretically, but it does not lead to efficient or stable methods for numerical inversion or the solution of linear systems. However, the cofactor expansion also reveals that the determinant of a triangular matrix is the product of its diagonal elements. This leads to an elegant and practical method for computing determinants using A = L * U because det(A) = det(L) * det(U) = (product of pivots). When computing determinants numerically is explicilty required (rarely) in an application, we return to elimination and A = LU.
+
+**Further Reading:** Textbook, Chapter 5.1 and 5.2.
