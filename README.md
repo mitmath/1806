@@ -270,15 +270,15 @@ The cofactor formula for the inverse is often useful theoretically, but it does 
 
 ## Lecture 21 (April 7)
 
-The determinant has an elegant connection to geometry that makes it indispensible in certain areas of geometry and calculus. If we use the columns of a square n-by-n matrix A to fill out the sides of a parallelpiped in n dimensions, the determinant of A is equal to the area of that parallelpiped!
+The determinant has an elegant connection to geometry that makes it indispensible in certain areas of geometry and calculus. If we use the columns of a square n-by-n matrix A to fill out the sides of a parallelpiped in n dimensions, the determinant of A is equal to the area of that parallelpiped.
 
-The eigenvectors of a matrix identify extremely special directions. When a matrix multiplies its eigenvector, the direction doesn't change! The result is a scaled ("strectched" or "shrunk") version of the same eigenvector. The scaling factor is the eigenvalue: if the eigenvalue is less than 1 in magnitude, the eigenvector shrinks. If the eigenvalue is greater than 1 in magnitude, the eigenvector stretches! A zero eigenvalue means the matrix is singular, while an eigenvalue with magnitude one means the matrix doesn't stretch or shrink the eigenvector at all.
+The eigenvectors of a matrix identify extremely special directions. When a matrix multiplies its eigenvector, the direction doesn't change! The result is a scaled ("strectched" or "shrunk") version of the same eigenvector. The scaling factor is the eigenvalue: if the eigenvalue is less than 1 in magnitude, the eigenvector shrinks. If the eigenvalue is greater than 1 in magnitude, the eigenvector stretches. A zero eigenvalue means the matrix is singular, while an eigenvalue with magnitude one means the matrix doesn't stretch or shrink the eigenvector at all.
 
 **Further Reading:** Textbook, Chapter 5.3 and 6.1.
 
 ## Lecture 22 (April 10)
 
-To compute eigenvalues and eigenvectors, we first use the det(A - lambda * I)=0 to find the eigenvalues. Once we have the eigenvalues lambda that make A - lambda * I singular (zero determinant), we solve for vectors in the nullspace of A - lambda * I. These are the eigenvectors, the solutions of Ax = lambda x!
+To compute eigenvalues and eigenvectors, we first use the det(A - lambda * I)=0 to find the eigenvalues. Once we have the eigenvalues lambda that make A - lambda * I singular (zero determinant), we solve for vectors in the nullspace of A - lambda * I. These are the eigenvectors, the solutions of Ax = lambda x.
 
 The eigenvalues of a triangular matrix are just the values on the diagonal. The eigenvectors of a rank one matrix uv^T are u (eigenvalue = v^Tu) and all vectors orthogonal to v (eigenvalues = 0). The eigenvalues of an orthogonal matrix always have |lambda|=1 because orthogonal matrices don't change the lengths of vectors! The eigenvalues of the familiar 2 x 2 "rotation-by-theta" matrix might be a surprise: they are the complex numbers exp(i theta). The eigenvalues of a 2 x 2 matrix can be expressed simply in terms of the trace and determinant of the matrix using the quadratic formula. In any dimension, the trace of a matrix = the sum of the eigenvalues and the determinant of a matrix = the product of the eigenvalues.
 
