@@ -76,6 +76,8 @@ MIT also has excellent study resources: [math learning center](https://math.mit.
 
 * [Pset 5](https://github.com/mitmath/1806/blob/master/psets/hw5a.pdf) is due on Sunday April 9 at 11:59pm. Problem 9 is OPTIONAL for EXTRA CREDIT.
 
+* [Pset 6](https://github.com/mitmath/1806/blob/master/psets/hw6c.pdf) is due on Sunday April 16 at 11:59pm.
+
 ## Exams
 
 * Exam 1 will be held on Wednesday, February 22 between 11am-12pm. Last names beginning with A-L will be in 50-340, while last names beginning with M-Z will be in 26-100. 
