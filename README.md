@@ -47,7 +47,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 * S. Bentley: Friday 3 - 4 in 2-147
 * A. Lu: Friday 7 - 9 in 2-139
 
-**Exams**: We will have 3 exams during the semester: February 22, March 20, April 19. Final Exam TBD In May. For conflicts and/or accomodations, please contact [Sapphire Tang](https://math.mit.edu/directory/profile?pid=2457) in Academic Services as soon as possible (1-2 weeks in advance).
+**Exams**: We will have 3 exams during the semester: February 22, March 20, April 19. Final Exam on May 22 (official schedule [here](https://finalexams.mit.edu/#/Finals)). For conflicts and/or accomodations, please contact [Sapphire Tang](https://math.mit.edu/directory/profile?pid=2457) in Academic Services as soon as possible (1-2 weeks in advance).
 
 **Homework:** Due weekly on Sunday at midnight (except exam weeks and spring break).  Upload a .pdf of your clearly written or typed solutions on [Gradescope](https://www.gradescope.com/). Late homework will not be accepted and extensions will not be granted within 48 hours of the due date except in cases of genuine emergency (a letter from [S^3](https://studentlife.mit.edu/s3) is required).
 
