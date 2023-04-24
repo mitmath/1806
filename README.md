@@ -298,9 +298,9 @@ Matrices that are symmetric, S^T = S, are a very special type of diagonalizable 
 
 **Further Reading:** Textbook, Chapter 6.3.
 
-Although this course focuses primarily on matrices and vectors whose entries are real numbers, _complex_ matrices and vectors play an incredibly important role in applied mathematics. Most of the important facts about real linear algebra have a mirror image in complex linear algebra, as long as we replace the transpose operation for real vectors and matrices by the _conjugate transpose_ operation. Then, real symmetric matrices become complex Hermitian matrices, real orthogonal matrices become complex unitary matrices, and so on.
-
 ## Lecture 25 (April 21)
+
+Although this course focuses primarily on matrices and vectors whose entries are real numbers, _complex_ matrices and vectors play an incredibly important role in applied mathematics. Most of the important facts about real linear algebra have a mirror image in complex linear algebra, as long as we replace the transpose operation for real vectors and matrices by the _conjugate transpose_ operation. Then, real symmetric matrices become complex Hermitian matrices, real orthogonal matrices become complex unitary matrices, and so on.
 
 **Further Reading:** Textbook, Chapter 6.4.
 
