@@ -84,6 +84,8 @@ MIT also has excellent study resources: [math learning center](https://math.mit.
 
 * Exam 2 will be held on Monday, March 20 between 11am-12pm. Last names beginning with A-L will be in 50-340, while last names beginning with M-Z will be in 26-100. 
 
+* Exam 3 will be held on Wednesday, April 19 between 11am-12pm. Last names beginning with A-L will be in 50-340, while last names beginning with M-Z will be in 26-100. 
+
 ## Lecture Material and Summaries
 
 ### Lecture 1 (February 6)
@@ -283,3 +285,23 @@ To compute eigenvalues and eigenvectors, we first use the det(A - lambda * I)=0 
 The eigenvalues of a triangular matrix are just the values on the diagonal. The eigenvectors of a rank one matrix uv^T are u (eigenvalue = v^Tu) and all vectors orthogonal to v (eigenvalues = 0). The eigenvalues of an orthogonal matrix always have |lambda|=1 because orthogonal matrices don't change the lengths of vectors! The eigenvalues of the familiar 2 x 2 "rotation-by-theta" matrix might be a surprise: they are the complex numbers exp(i theta). The eigenvalues of a 2 x 2 matrix can be expressed simply in terms of the trace and determinant of the matrix using the quadratic formula. In any dimension, the trace of a matrix = the sum of the eigenvalues and the determinant of a matrix = the product of the eigenvalues.
 
 **Further Reading:** Textbook, Chapter 6.1 and 6.2.
+
+## Lecture 23 (April 12)
+
+When the eigenvectors of A form a basis (n linearly independent vectors for n x n A), A acts like a diagonal matrix in that basis! We can switch to the eigenvector basis to break difficult problems into simpler pieces. For example, coupled linear differential equations in multiple variables become a collection of uncoupled linear differential equations that can be solved with the tools of 1D calculus. That is the power of eigenvalues and eigenvectors at work! In matrix notation, diagonalization is expressed as A = X D X^(-1), where the columns of X are the eigenvectors of A and the diagonal matrix D has the eigenvalues of A on its diagonal. In the eigenvector basis A becomes X A X^(-1) = D - a diagonal matrix! We say that A is diagonalizable. Every matrix with distinct eigenvalues (no repeats) is diagonalizable. 
+
+**Further Reading:** Textbook, Chapter 6.2 and 6.3.
+
+## Lecture 24 (April 14)
+
+Matrices that are symmetric, S^T = S, are a very special type of diagonalizable matrix. They have a full basis of *orthonormal* eigenvectors! And their eigenvalues are always real (remember that many matrices can have complex eigenvalues). Life is good when we are dealing with symmetric matrices.
+
+**Further Reading:** Textbook, Chapter 6.3.
+
+## Lecture 25 (April 21)
+
+Although this course focuses primarily on matrices and vectors whose entries are real numbers, _complex_ matrices and vectors play an incredibly important role in applied mathematics. Most of the important facts about real linear algebra have a mirror image in complex linear algebra, as long as we replace the transpose operation for real vectors and matrices by the _conjugate transpose_ operation. Then, real symmetric matrices become complex Hermitian matrices, real orthogonal matrices become complex unitary matrices, and so on.
+
+**Further Reading:** Textbook, Chapter 6.4.
+
+
