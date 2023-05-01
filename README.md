@@ -308,4 +308,32 @@ Although this course focuses primarily on matrices and vectors whose entries are
 
 **Further Reading:** Textbook, Chapter 6.4.
 
+## Lecture 26 (April 24)
+
+Eigenvalues and eigenvectors play a key role in the solution and analysis of linear systems of differential equations. The eigenvectors define important _invariant_ directions in the phase space. Any initial condition aligned with an eigenvector stays in that direction for all time! The eigenvalues reveal the _dynamics_ along these invariant directions: positive eigenvalues lead to solutions that grow expontially in time, while negative eigenvalues lead to solutions that decay exponentially in time. The general solutions are linear combinations of the solutions along the invariant directions.
+
+**Further Reading:** Textbook, Chapter 6.5.
+
+## Lecture 27 (April 26)
+
+The singular value decomposition (SVD) factors _every_ matrix (square or rectangular) into the product of three simpler matrices: A = USV^T. U and V have orthonormal columns called left and right singular vectors, respectively, while S is the diagonal matrix of singular values. Geometrically, the SVD that every matrix can be diagonalized by rotating (or reflecting) its input and output spaces, i.e., with orthogonal transformations. At the heart of the SVD, one finds the eigenvalues and eigenvectors of the square symmetric positive definite matrices AA^T and A^TA.
+
+**Further Reading:** Textbook, Chapter 7.1.
+
+## Lecture 28 (April 28)
+
+The SVD is constructed from eigenvalues and eigenvectors of the square symmetric positive definite matrices A^TA and AA^T. Symmetry means these matrices have complete orthogonormal sets of eigenvectors, which can be collected into orthogonal matrices U and V. Postive definite means that the eigenvalues are real and postive - in fact, both matrices have the same nonzero eigenvalues! The key to the SVD is the link between these two orthonormal sets of eigenvectors: they lead to the decomposition AV = US and then A = USV^T. The columns of U and V are orthogonal bases for the column and row spaces of A, respectively, and the singular values S describes how A stretches and shrinks vectors along these coupled input-output directions.
+
+**Further Reading:** Textbook, Chapter 7.1 and 7.2.
+
+## Lecture 29 (May 1)
+
+The singular values of A describe the coupling strength between special input directions (columns of V - right singular vectors) and special output directions (columns of U - left singular vectors). The singular values reveal the _important directions_ in the row and column spaces of A. We can build a _low-rank opproximation_ to A by dropping the small singular values and associated singular vectors from the SVD. Storing the largest few singular values and vectors can provide very good approximations to matrices with rapidly decaying singular values at a fraction of the cost of storing A. 
+
+As a first example, consider the task of compressing an array of pixels in a digital image without losing too much image quality. The SVD of the array can provide remarkable compression power! As a second example, consider the problem of identifying directions of large variance in student or consumer data. Which combinations of variables account for the largest differences among students? The SVD leads to principle componant analysis (PCA), which identifies these directions and uses them to decouple covariant parameters.
+
+**Further Reading:** Textbook, Chapter 7.2 and 7.3. Experiment wit the SVD for [image compression](http://timbaumann.info/svd-image-compression-demo/)!
+
+
+
 
