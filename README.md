@@ -334,6 +334,12 @@ As a first example, consider the task of compressing an array of pixels in a dig
 
 **Further Reading:** Textbook, Chapter 7.2 and 7.3. Experiment wit the SVD for [image compression](http://timbaumann.info/svd-image-compression-demo/)!
 
+## Lecture 30 (May 3)
 
+On the computer, eigenvalues (and singular values) are not computed from det(A - lambda I). Instead, they are computed with an iterative method called the QR algorithm. The idea of the QR algorithm is simple: compute the QR factorization A=QR, reverse the factors and compute AA = RQ, compute the new QR factorization of AA, reverse the factors again, ...., and repeat until convergence! This extroardinary strategy reveals the eigenvalues of A along the diagonal of the upper triangular factors. With the right "bells and whistles," the QR iterations can be computed efficiently and each eigenvalues is revealed rapidly within a few iterations.
+
+Many problems in applied math boil down to finding the minimum value of a function that depends on many variables. Often, we don't know the function explicitly, but we can evaluate it and (perhaps approximate) its partial derivatives. How should we go about finding the minimum? One strategy is to simply _walk downhill_. The gradient (vector of partial derivatives) tells us which way to walk - the direction of steepest descent. Gradient descent (also called steepest descent) is the basic building block for many first-order optimization algorithms that are used to solve engineering design problems, train neural networks, and much more.
+
+**Further Reading:** Textbook, Chapter 9.1.
 
 
