@@ -342,4 +342,12 @@ Many problems in applied math boil down to finding the minimum value of a functi
 
 **Further Reading:** Textbook, Chapter 9.1.
 
+## Lecture 31 (May 5)
+
+Gradient descent is the prototypical "first-order" optimization algorithm: the algorithm tries to find local minima by evaluating the objective function and its derivative to "walk downhill." Pure gradient descent can get stuck in a criss-crossing pattern in narrow valley's, where the function is ill-conditioned, and converge slowly. Adding an inertial term that accounts for the previous search direction can help mitigate slow convergence due to ill-conditioning.
+
+In deep neural networks, complex and high-dimensional functions are approximated by a layered network of "neurons:" Each neuron has an "activation function" that governs its response to inputs. The inputs and ouputs of neurons in each layer are connected by linear (or affine) transformations. The weights of a neural network govern the strength of conectipns between individual neurons. The weights are adjusted while "training" the network, i.e., minimizing a loss function that describes how closely the neural network's predictions match the training data.
+
+**Further Reading:** Textbook, Chapter 9.2
+
 
