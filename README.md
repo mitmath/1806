@@ -334,6 +334,26 @@ As a first example, consider the task of compressing an array of pixels in a dig
 
 **Further Reading:** Textbook, Chapter 7.2 and 7.3. Experiment wit the SVD for [image compression](http://timbaumann.info/svd-image-compression-demo/)!
 
+## Lecture 30 (May 3)
 
+On the computer, eigenvalues (and singular values) are not computed from det(A - lambda I). Instead, they are computed with an iterative method called the QR algorithm. The idea of the QR algorithm is simple: compute the QR factorization A=QR, reverse the factors and compute AA = RQ, compute the new QR factorization of AA, reverse the factors again, ...., and repeat until convergence! This extroardinary strategy reveals the eigenvalues of A along the diagonal of the upper triangular factors. With the right "bells and whistles," the QR iterations can be computed efficiently and each eigenvalues is revealed rapidly within a few iterations.
+
+Many problems in applied math boil down to finding the minimum value of a function that depends on many variables. Often, we don't know the function explicitly, but we can evaluate it and (perhaps approximate) its partial derivatives. How should we go about finding the minimum? One strategy is to simply _walk downhill_. The gradient (vector of partial derivatives) tells us which way to walk - the direction of steepest descent. Gradient descent (also called steepest descent) is the basic building block for many first-order optimization algorithms that are used to solve engineering design problems, train neural networks, and much more.
+
+**Further Reading:** Textbook, Chapter 9.1.
+
+## Lecture 31 (May 5)
+
+Gradient descent is the prototypical "first-order" optimization algorithm: the algorithm tries to find local minima by evaluating the objective function and its derivative to "walk downhill." Pure gradient descent can get stuck in a criss-crossing pattern in narrow valley's, where the function is ill-conditioned, and converge slowly. Adding an inertial term that accounts for the previous search direction can help mitigate slow convergence due to ill-conditioning.
+
+In deep neural networks, complex and high-dimensional functions are approximated by a layered network of "neurons:" Each neuron has an "activation function" that governs its response to inputs. The inputs and ouputs of neurons in each layer are connected by linear (or affine) transformations. The weights of a neural network govern the strength of connections between individual neurons. The weights are adjusted while "training" the network, i.e., minimizing a loss function that describes how closely the neural network's predictions match the training data.
+
+**Further Reading:** Textbook, Chapter 9.2
+
+## Lecture 32 (May 8)
+
+Deep neural networks are constructed by composing relatively simple parts (linear transformations and simple nonlinear activation functions) and composing them in complex architectures. Althuough classical statistics warns against overparametrizing models and "overfitting" noisy data, neural nets have led to the discovery that nonlinear models can actually thrive in the overparametrized regime. Understanding the approximation power of deep neural networks and their ability to generalize from training data to test data is a fascinating area of active research.
+
+**Further Reading:** Explore the basics with this [playground](https://playground.tensorflow.org/) developed by Daniel Smilkov and Shan Carter.
 
 
