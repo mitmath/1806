@@ -33,8 +33,8 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 * Reviewed the gaussian elimination example using matrix multiplications to encode the operations.
 * Gauss-Jordan elimination has a few additional steps which brings the system to reduced row echelon form (RREF) — we did this in the same example, again using matrix multiplications.
 * In the example, the final RREF system was $(G_5)(G_4)(G_3)(G_2)(G_1)Ax=(G_5)(G_4)(G_3)(G_2)(G_1)b=c$. Moreover we found $(G_5)(G_4)(G_3)(G_2)(G_1)A = I_3$, the $3 \times 3$ identity matrix. In this example it allowed us to read off $x = c$.
-* We reviewed basic rules of matrix multiplication: associative $A(BC)=(AB)C$, distributive $A(B+C)=AB+AC$, but NOT COMMUTATIVE: $AB$ and $BA$ are generally not equal!
-* Inversion: if $A$ is an $n \times n$ matrix, it is invertible if there exists a matrix $A^{-1}$, also $n \times n$, such that$ AA^{-1} = A^{-1}A = I_n$, the $n \times n$ identity matrix.
+* We reviewed basic rules of matrix multiplication: associative $A(BC)=(AB)C$, distributive $A(B+C)=AB+AC$, but **not commutative**: $AB$ and $BA$ are generally not equal!
+* Inversion: if $A$ is an $n \times n$ matrix, it is invertible if there exists a matrix $A^{-1}$, also $n \times n$, such that $AA^{-1} = A^{-1}A = I_n$, the $n \times n$ identity matrix.
 * If $A$ is invertible, then Gauss-Jordan elimination converts $(A|b)$ to $(I|c)$. Moreover it converts $(A|I)$ to $(I|A^{-1})$.
 * Square matrices need not be invertible, and we covered some examples.
 
