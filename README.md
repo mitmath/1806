@@ -25,14 +25,14 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 ### Lecture 2 (Wed Feb 5 2025)
 * Dot product, vector length, cosine formula.
 * The gaussian elimination algorithm for solving a system of linear equations Ax=b: reduce the matrix to row echelon form (REF), and do back-substitution. Worked through an example in class.
-* Definition of matrix times matrix: $AB=X$ where $A$ is $M \times N$, $B$ is $N \times P$, $X$ is $M \times P$.* We explained how to view the gaussian elimination operations as matrix multiplication operations: the steps of gaussian elimination correspond to changing $Ax=b$ to $(G_1)Ax=(G_1)b$, $(G_2)(G_1)Ax=(G_2)(G_1)b$, etc.
+* Definition of matrix times matrix: $AB=X$ where $A$ is $M \times N$, $B$ is $N \times P$, $X$ is $M \times P$.* We explained how to view the gaussian elimination operations as matrix multiplication operations: the steps of gaussian elimination correspond to changing $Ax=b$ to $(G1)Ax=(G1)b$, $(G2)(G1)Ax=(G2)(G1)b$, etc.
 
 **Reading:** Strang 2.1-2.2.
 
 ### Lecture 3 (Fri Feb 7 2025)
 * Reviewed the gaussian elimination example using matrix multiplications to encode the operations.
 * Gauss-Jordan elimination has a few additional steps which brings the system to reduced row echelon form (RREF) — we did this in the same example, again using matrix multiplications.
-* In the example, the final RREF system was $(G_5)(G_4)(G_3)(G_2)(G_1)Ax=(G_5)(G_4)(G_3)(G_2)(G_1)b=c$. Moreover we found $(G_5)(G_4)(G_3)(G_2)(G_1)A = I_3$, the $3 \times 3$ identity matrix. In this example it allowed us to read off $x = c$.
+* In the example, the final RREF system was $(G5)(G4)(G3)(G2)(G1)Ax=(G5)(G4)(G3)(G2)(G1)b=c$. Moreover we found $(G5)(G4)(G3)(G2)(G1)A = I_3$, the $3 \times 3$ identity matrix. In this example it allowed us to read off $x = c$.
 * We reviewed basic rules of matrix multiplication: associative $A(BC)=(AB)C$, distributive $A(B+C)=AB+AC$, but **not commutative**: $AB$ and $BA$ are generally not equal!
 * Inversion: if $A$ is an $n \times n$ matrix, it is invertible if there exists a matrix $A^{-1}$, also $n \times n$, such that $AA^{-1} = A^{-1}A = I_n$, the $n \times n$ identity matrix.
 * If $A$ is invertible, then Gauss-Jordan elimination converts $(A|b)$ to $(I|c)$. Moreover it converts $(A|I)$ to $(I|A^{-1})$.
