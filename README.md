@@ -97,7 +97,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 Formal reasoning for the above claims:
 
-1. Column space: $C(A) = {Ax : x in \mathbb{R}^n}$ and $C(R) = {GAx : x in \mathbb{R}^n}$. Thus $b' \in C(R) \Leftrightarrow b' = GAx \text{ for some } x \Leftrightarrow G^{-1}b' = Ax \text{ for some } x \Leftrightarrow G^{-1}b' \in C(A)$.  This proves $C(A) = G^{-1} C(R)$.
+1. Column space: $C(A) = {Ax : x \in \mathbb{R}^n}$ and $C(R) = {GAx : x \in \mathbb{R}^n}$. Thus $b' \in C(R) \Leftrightarrow b' = GAx \text{ for some } x \Leftrightarrow G^{-1}b' = Ax \text{ for some } x \Leftrightarrow G^{-1}b' \in C(A)$.  This proves $C(A) = G^{-1} C(R)$.
 2. Null space: $N(A) = \lbrace x : Ax = 0\rbrace$ and $N(R) = \lbrace x : GAx = 0\rbrace$. Since $G$ invertible, $Ax = 0 \Leftrightarrow GAx = 0$.  This proves $N(A) = N(R)$.
 3. Row space: recall $\mathbb{R}^t = (GA)^t = A^t G^t$.  $C(A^t) = \lbrace A^t x : x \in \mathbb{R}^m\rbrace$ and $C(\mathbb{R}^t) = \lbrace A^t G^t x : x \in \mathbb{R}^m\rbrace$.  Since $G$ is invertible, $G^t$ is also invertible. As $x$ ranges over all of $\mathbb{R}^m$, $G^t x$ also ranges over all of $\mathbb{R}^m$.  Therefore $C(A^t) = C(\mathbb{R}^t)$.
 4. Left null space:  (***There was a typo on the blackboard, so please read this one carefully.***) $N(A^t) = \lbrace x : A^t x = 0\rbrace$ and $N(\mathbb{R}^t) = \lbrace x : A^t G^t x = 0\rbrace$. Therefore $x \in N(\mathbb{R}^t) \Leftrightarrow A^t G^t x = 0 \Leftrightarrow G^t x \in N(A^t)$.  This proves $N(A^t) = G^t N(\mathbb{R}^t)$.
