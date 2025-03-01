@@ -139,7 +139,7 @@ We used the latter characterization to calculate $\text{proj}Y x$ where $Y$ is t
     * Note that $v = A x$ where $x = (A^t A)^{-1} A^t b$. This achieves the minimum distance $\Vert Ax-b \Vert$, and we call this the **least squares solution**.
 * Lastly we went over some examples of the projection matrix formula:
     * In the one-dimensional case $Y = \text{span}\{y\}$ where $y$ is a unit vector, we take $A = y$ and recover the formula $P_Y = yy^t$.
-    * If we have an orthonormal basis $\{u^1, ..., u^r\}$ for $V$, then $P_V = P_1 + ... + P_r$ where $P_j = u_j(u^j)^t$ is the orthogonal projection onto $\text{span}\{u^j\}$.
+    * If we have an orthonormal basis $\{u^1, ..., u^r\}$ for $V$, then $P_V = P_1 + ... + P_r$ where $P_j = u^j(u^j)^t$ is the orthogonal projection onto $\text{span}\{u^j\}$.
 
 **Reading:** Strang 4.3.
 
