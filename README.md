@@ -116,19 +116,18 @@ In class, we calculated the four fundamental subspaces on a small example. We ve
 
 ### Lecture 10 (Wed Feb 26 2025)
 
-We covered what it means for two subspaces of $\mathbb{R}^n$ to be:
-* complementary
-* orthogonal
-* orthogonal complements.
+* We covered what it means for two subspaces of $\mathbb{R}^n$ to be:
+    * complementary
+    * orthogonal
+    * orthogonal complements.
+* In particular:
+    * If $V$ and $W$ are complementary subspaces of $\mathbb{R}^n$, then any $x \in \mathbb{R}^n$ can be uniquely written as $x = v + w$ with $v$ from $V$, $w$ from $W$.
+    * If $V$ and $W$ are in additional orthogonal complements, then $v$ is the orthogonal projection of $x$ onto $V$, while $w$ is the orthogonal projection of $x$ onto $W$. Denoted $v = \text{proj}_V x$ and $w = \text{proj}_W x$.
+* We discussed the geometric interpretation of orthogonal projection:
+    * $v = \text{proj}_V x$ is the unique vector $v$ in $V$ that lies closest to $x$.
+    * equivalently, $v = \text{proj}_V x$ is the unique vector $v$ in $V$ such that $(x-v)$ is perpendicular to $V$.
+    * We used the latter characterization to calculate $\text{proj}Y x$ where $Y$ is the span of a single nonzero vector $y$ in $\mathbb{R}^n$.
 
-In particular:
-* If $V$ and $W$ are complementary subspaces of $\mathbb{R}^n$, then any $x \in \mathbb{R}^n$ can be uniquely written as $x = v + w$ with $v$ from $V$, $w$ from $W$.
-* If $V$ and $W$ are in additional orthogonal complements, then $v$ is the orthogonal projection of $x$ onto $V$, while $w$ is the orthogonal projection of $x$ onto $W$. Denoted $v = \text{proj}_V x$ and $w = \text{proj}_W x$.
-
-We discussed the geometric interpretation of orthogonal projection:
-* $v = \text{proj}_V x$ is the unique vector $v$ in $V$ that lies closest to $x$.
-* equivalently, $v = \text{proj}_V x$ is the unique vector $v$ in $V$ such that $(x-v)$ is perpendicular to $V$.
-We used the latter characterization to calculate $\text{proj}Y x$ where $Y$ is the span of a single nonzero vector $y$ in $\mathbb{R}^n$.
 **Reading:** Strang 4.2.
 
 ### Lecture 11 (Fri Feb 28 2025)
