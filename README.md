@@ -99,8 +99,8 @@ Formal reasoning for the above claims:
 
 1. Column space: $C(A) = {Ax : x in \mathbb{R}^n}$ and $C(R) = {GAx : x in \mathbb{R}^n}$. Thus $b' \in C(R) \Leftrightarrow b' = GAx \text{ for some } x \Leftrightarrow G^{-1}b' = Ax \text{ for some } x \Leftrightarrow G^{-1}b' \in C(A)$.  This proves $C(A) = G^{-1} C(R)$.
 2. Null space: $N(A) = \{x : Ax = 0\}$ and $N(R) = \{x : GAx = 0\}$. Since $G$ invertible, $Ax = 0 \Leftrightarrow GAx = 0$.  This proves $N(A) = N(R)$.
-3. Row space: recall $\mathbb{R}^t = (GA)^t = A^t G^t$.  $C(A^t) = \{A^t x : x in \mathbb{R}^m\}$ and $C(\mathbb{R}^t) = \{A^t G^t x : x in \mathbb{R}^m\}$.  Since $G$ is invertible, $G^t$ is also invertible. As $x$ ranges over all of $\mathbb{R}^m$, $G^t x$ also ranges over all of $\mathbb{R}^m$.  Therefore $C(A^t) = C(\mathbb{R}^t)$.
-4. Left null space:  (***There was a typo on the blackboard, so please read this one carefully.***) $N(A^t) = \{x : A^t x = 0\}$. $N(\mathbb{R}^t) = \{x : A^t G^t x = 0\}$. Therefore $x \in N(\mathbb{R}^t) \Leftrightarrow A^t G^t x = 0 \Leftrightarrow G^t x \in N(A^t)$.  This proves $N(A^t) = G^t N(\mathbb{R}^t)$.
+3. Row space: recall $\mathbb{R}^t = (GA)^t = A^t G^t$.  $C(A^t) = \{A^t x : x \in \mathbb{R}^m\}$ and $C(\mathbb{R}^t) = \{A^t G^t x : x in \mathbb{R}^m\}$.  Since $G$ is invertible, $G^t$ is also invertible. As $x$ ranges over all of $\mathbb{R}^m$, $G^t x$ also ranges over all of $\mathbb{R}^m$.  Therefore $C(A^t) = C(\mathbb{R}^t)$.
+4. Left null space:  (***There was a typo on the blackboard, so please read this one carefully.***) $N(A^t) = \{x : A^t x = 0\}$ and $N(\mathbb{R}^t) = \{x : A^t G^t x = 0\}$. Therefore $x \in N(\mathbb{R}^t) \Leftrightarrow A^t G^t x = 0 \Leftrightarrow G^t x \in N(A^t)$.  This proves $N(A^t) = G^t N(\mathbb{R}^t)$.
 
 In class, we calculated the four fundamental subspaces on a small example. We verified that the column space and left null space are orthogonal subspaces of $\mathbb{R}^m$, while the row space and null space are orthogonal subspace of $\mathbb{R}^n$.
 
