@@ -17,7 +17,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 * Vectors in $\mathbb{R}^2$, and generalization to vectors in $\mathbb{R}^N$ (N-dimensional space).
 * Vector operations: addition and scalar multiplication. Both operations together: linear combinations.
-* The span of a set of vectors $\{u_1,\ldots,u_k\}$ is the set of all linear combinations of these vectors: we covered some examples in class.
+* The span of a set of vectors $\left\{u_1,\ldots,u_k\right\}$ is the set of all linear combinations of these vectors: we covered some examples in class.
 * Definition of matrix times vector: $Ax$ where $A$ is an $M \times N$ matrix, and $x$ is in $\mathbb{R}^N$.
 
 **Reading:** Strang Chapter 1.
@@ -69,9 +69,9 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 ### Lecture 7 (Mon Feb 18 2025)
 * Throughout this class, we let $v^1, \ldots, v^n$ be list of n vectors, each in the space $\mathbb{R}^m$. Let $A$ be the $m \times n$ matrix with columns $v^1, \ldots, v^n$.
-    * The vectors $\{v^1, ..., v^n\}$ are **linearly dependent** if a non-trivial linear combination of them equals zero: this corresponds to $N(A)$ being strictly larger than $\{0\}$. Otherwise, we say they are **linearly independent**: this corresponds to $N(A) = \{0\}$.
-    * A **basis** for a vector space $V$ is a list of vectors that span $V$, and are linearly independent. We covered the standard basis $\{e^1, ..., e^n\}$ for the space $\mathbb{R}^n$.
-    * Let $V = \text{span} \{v^1, ..., v^n\}$. Then $V$ is the same as $C(A)$. If $\{v^1, ..., v^n\}$ are linearly independent, then they form a basis for $V$.
+    * The vectors $\left\{v^1, ..., v^n\right\}$ are **linearly dependent** if a non-trivial linear combination of them equals zero: this corresponds to $N(A)$ being strictly larger than $\left\{0\right\}$. Otherwise, we say they are **linearly independent**: this corresponds to $N(A) = \left\{0\right\}$.
+    * A **basis** for a vector space $V$ is a list of vectors that span $V$, and are linearly independent. We covered the standard basis $\left\{e^1, ..., e^n\right\}$ for the space $\mathbb{R}^n$.
+    * Let $V = \text{span} \left\{v^1, ..., v^n\right\}$. Then $V$ is the same as $C(A)$. If $\left\{v^1, ..., v^n\right\}$ are linearly independent, then they form a basis for $V$.
 * More generally, perform Gauss-Jordan elimination, and let $R = GA$ be the RREF of $A$. Then $C(R) = G C(A)$.
     * The pivot columns of $R$ form a basis for $C(R)$, and the corresponding columns of $A$ form a basis for $C(A)$.
     * Note that rank(A) = # pivots in R = dim C(R) = dim C(A). Meanwhile # free variables in R = dim N(A).
@@ -98,9 +98,9 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 Formal reasoning for the above claims:
 
 1. Column space: $C(A) = {Ax : x in \mathbb{R}^n}$ and $C(R) = {GAx : x in \mathbb{R}^n}$. Thus $b' \in C(R) \Leftrightarrow b' = GAx \text{ for some } x \Leftrightarrow G^{-1}b' = Ax \text{ for some } x \Leftrightarrow G^{-1}b' \in C(A)$.  This proves $C(A) = G^{-1} C(R)$.
-2. Null space: $N(A) = \{x : Ax = 0\}$ and $N(R) = \{x : GAx = 0\}$. Since $G$ invertible, $Ax = 0 \Leftrightarrow GAx = 0$.  This proves $N(A) = N(R)$.
-3. Row space: recall $\mathbb{R}^t = (GA)^t = A^t G^t$.  $C(A^t) = \{A^t x : x \in \mathbb{R}^m\}$ and $C(\mathbb{R}^t) = \{A^t G^t x : x in \mathbb{R}^m\}$.  Since $G$ is invertible, $G^t$ is also invertible. As $x$ ranges over all of $\mathbb{R}^m$, $G^t x$ also ranges over all of $\mathbb{R}^m$.  Therefore $C(A^t) = C(\mathbb{R}^t)$.
-4. Left null space:  (***There was a typo on the blackboard, so please read this one carefully.***) $N(A^t) = \{x : A^t x = 0\}$ and $N(\mathbb{R}^t) = \{x : A^t G^t x = 0\}$. Therefore $x \in N(\mathbb{R}^t) \Leftrightarrow A^t G^t x = 0 \Leftrightarrow G^t x \in N(A^t)$.  This proves $N(A^t) = G^t N(\mathbb{R}^t)$.
+2. Null space: $N(A) = \left\{x : Ax = 0\right\}$ and $N(R) = \left\{x : GAx = 0\right\}$. Since $G$ invertible, $Ax = 0 \Leftrightarrow GAx = 0$.  This proves $N(A) = N(R)$.
+3. Row space: recall $\mathbb{R}^t = (GA)^t = A^t G^t$.  $C(A^t) = \left\{A^t x : x \in \mathbb{R}^m\right\}$ and $C(\mathbb{R}^t) = \left\{A^t G^t x : x \in \mathbb{R}^m\right\}$.  Since $G$ is invertible, $G^t$ is also invertible. As $x$ ranges over all of $\mathbb{R}^m$, $G^t x$ also ranges over all of $\mathbb{R}^m$.  Therefore $C(A^t) = C(\mathbb{R}^t)$.
+4. Left null space:  (***There was a typo on the blackboard, so please read this one carefully.***) $N(A^t) = \left\{x : A^t x = 0\right\}$ and $N(\mathbb{R}^t) = \left\{x : A^t G^t x = 0\right\}$. Therefore $x \in N(\mathbb{R}^t) \Leftrightarrow A^t G^t x = 0 \Leftrightarrow G^t x \in N(A^t)$.  This proves $N(A^t) = G^t N(\mathbb{R}^t)$.
 
 In class, we calculated the four fundamental subspaces on a small example. We verified that the column space and left null space are orthogonal subspaces of $\mathbb{R}^m$, while the row space and null space are orthogonal subspace of $\mathbb{R}^n$.
 
@@ -133,13 +133,13 @@ We used the latter characterization to calculate $\text{proj}Y x$ where $Y$ is t
 
 ### Lecture 11 (Fri Feb 28 2025)
 * We covered the general formulas for orthogonal projection.
-* Projection onto a one-dimensional subspace $Y = \text{span}\{y\}$, where $y$ is a unit vector in $\mathbb{R}^n$: $\text{proj}Y(x) = P_Y x$ where $P_Y = yy^t$. Note that $P_Y$ is an $n \times n$ symmetric matrix. Its column space is exactly the one-dimensional space $Y$, therefore $P_Y$ has rank one.
+* Projection onto a one-dimensional subspace $Y = \text{span}\left\{y\right\}$, where $y$ is a unit vector in $\mathbb{R}^n$: $\text{proj}Y(x) = P_Y x$ where $P_Y = yy^t$. Note that $P_Y$ is an $n \times n$ symmetric matrix. Its column space is exactly the one-dimensional space $Y$, therefore $P_Y$ has rank one.
 * Projection onto a general subspace $V$ of $\mathbb{R}^n$, where $\text{dim } V = r < n$: first express $V = C(A)$ where $A is an n \times r$ matrix whose columns form a basis of $V$. We showed in class that $v = \text{proj}V(b) = P_V b$ where $P_V = A(A^t A)^{-1} A^t$. This is an $n \times n$ symmetric matrix. Its column space is exactly $V = C(A)$, therefore $P_V$ has rank $r$.
     * **Claim:** If $A$ is $n \times r$ with rank $r$, then $A^t A$ is invertible. We stated this fact in class, and used it to define $P_V$. We did not yet give a justification of this fact, and will do so in a future lecture.
     * Note that $v = A x$ where $x = (A^t A)^{-1} A^t b$. This achieves the minimum distance $\Vert Ax-b \Vert$, and we call this the **least squares solution**.
 * Lastly we went over some examples of the projection matrix formula:
-    * In the one-dimensional case $Y = \text{span}\{y\}$ where $y$ is a unit vector, we take $A = y$ and recover the formula $P_Y = yy^t$.
-    * If we have an orthonormal basis $\{u^1, ..., u^r\}$ for $V$, then $P_V = P_1 + ... + P_r$ where $P_j = u^j(u^j)^t$ is the orthogonal projection onto $\text{span}\{u^j\}$.
+    * In the one-dimensional case $Y = \text{span}\left\{y\right\}$ where $y$ is a unit vector, we take $A = y$ and recover the formula $P_Y = yy^t$.
+    * If we have an orthonormal basis $\left\{u^1, ..., u^r\right\}$ for $V$, then $P_V = P_1 + ... + P_r$ where $P_j = u^j(u^j)^t$ is the orthogonal projection onto $\text{span}\left\{u^j\right\}$.
 
 **Reading:** Strang 4.3.
 
