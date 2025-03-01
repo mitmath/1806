@@ -7,9 +7,9 @@ Welcome to MIT 18.06: Linear Algebra! The Spring 2025 course information, materi
 
 Catalog Description: *Basic subject on matrix theory and linear algebra, emphasizing topics useful in other disciplines, including systems of equations, vector spaces, determinants, eigenvalues, singular value decomposition, and positive definite matrices. Applications to least-squares approximations, stability of differential equations, networks, Fourier transforms, and Markov processes. Uses linear algebra software. Compared with 18.700, more emphasis on matrix algorithms and many applications.*
 
-**Instructors**: [Prof. Nike Sun](https://math.mit.edu/~nsun/)
+**Instructor**: [Prof. Nike Sun](https://math.mit.edu/~nsun/)
 
-**Textbook**: [Introduction to Linear Algebra: 6th Edition](http://eduapps.mit.edu/textbook/books.html?Term=2023SP&Subject=18.06). Professor Strang will explain more about this new 6th edition in class (it is not yet on Amazon). It now ends with two chapters on deep learning. Professor Strang plans to make the textbook available for students to purchase at a discount. Here again is a link to the [preface and contents](https://github.com/mitmath/1806/blob/master/notes/Introduction%20to%20Linear%20Algebra%206th%20edition%20and%20A%20%3D%20CR_04.pdf).
+**Textbook**: [Introduction to Linear Algebra: 6th Edition](http://eduapps.mit.edu/textbook/books.html?Term=2023SP&Subject=18.06).
 
 ## Lecture Material and Summaries
 
@@ -57,7 +57,7 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 ### Lecture 6 (Fri Feb 14 2025)
 * In this class we covered the general solution for a system of linear equations Ax=b.
-* The basic principle: if b is not in C(A), then there is no solution. If b is in C(A), then there must exist at least one "particular solution," call it x_0. Then the set of all solutions to Ax=b is the set of vectors x_0 + x', where x_0 is the particular solution, and x' is any vector from the null space N(A).
+* The basic principle: if $b$ is not in $C(A)$, then there is no solution. If $b$ is in $C(A)$, then there must exist at least one "particular solution," call it $x_0$. Then the set of all solutions to $Ax=b$ is the set of vectors $x_0 + x'$, where $x_0$ is the particular solution, and $x'$ is any vector from the null space $N(A)$.
 * General recipe for solving:
     * given $(A|b)$, apply Gauss-Jordan elimination to transform to RREF system $(R|c)$.
     * If the RREF system contains a row that says 0 = nonzero, then we have a contradiction, and in this case $b$ is not in $C(A)$ and there is no solution.
