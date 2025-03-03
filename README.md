@@ -142,4 +142,16 @@ In class, we calculated the four fundamental subspaces on a small example. We ve
 
 **Reading:** Strang 4.3.
 
+### Lecture 12 (Mon March 3 2025)
+* As we learned previously, the equation $Ax=b$ does not have a solution if b does not lie in column space $C(A)$. In this case, one can instead ask for the least squares (LS) solution: the choice of x that minimizes
+```math
+\|Ax-b\|^2 = \sum_i [(Ax)_i - b_i]^2
+```
+* This means $v=Ax$ should be precisely the projection of $x$ onto $C(A)$, so from what we previously learned, we see that $v = A(A^t A)^{-1}A^t b$, and consequently $x=(A^t A)^{-1}A^t b$.
+* Application: given a data set $(a_i,b_i)$ for $1\le i \le 1000$, we covered how to find:
+  * The straight line with no intercept that achieves the least squares fit: $b=xa$ where $x$ is the slope;
+  * The straight line with intercept that achieves the least squares fit: $b = x_0 + x_1 a$ where $x_0$ is the intercept and $x_1$ is the slope;
+  * The cubic function that achieves the least squares fit: $b = x_0 + x_1 a + x_2 a^2 + x_3 a^3$.
+**Reading:** Strang 4.3.
+
 Reading for upcoming lectures: we will continue through Strang Chapter 4.
