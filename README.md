@@ -152,7 +152,7 @@ In class, we calculated the four fundamental subspaces on a small example. We ve
   * The straight line with no intercept that achieves the least squares fit: $b=xa$ where $x$ is the slope;
   * The straight line with intercept that achieves the least squares fit: $b = x_0 + x_1 a$ where $x_0$ is the intercept and $x_1$ is the slope;
   * The cubic function that achieves the least squares fit: $b = x_0 + x_1 a + x_2 a^2 + x_3 a^3$.
-  * 
+
 **Reading:** Strang 4.3.
 
 Reading for upcoming lectures: we will continue through Strang Chapter 4.
