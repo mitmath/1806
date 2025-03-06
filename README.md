@@ -11,6 +11,8 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 **Textbook**: [Introduction to Linear Algebra: 6th Edition](http://eduapps.mit.edu/textbook/books.html?Term=2023SP&Subject=18.06).
 
+**Detailed lecture notes are posted on Canvas (accessible only to registered students).**
+
 ## Lecture Material and Summaries
 
 ### Lecture 1 (Mon Feb 3 2025)
@@ -154,5 +156,13 @@ In class, we calculated the four fundamental subspaces on a small example. We ve
   * The cubic function that achieves the least squares fit: $b = x_0 + x_1 a + x_2 a^2 + x_3 a^3$.
 
 **Reading:** Strang 4.3.
+
+### Lecture 13 (Wed March 5 2025)
+* We learned the **Gram-Schmidt procedure**: given a basis $(v_1,\ldots,v_r)$ for a subspace $V$ of $\mathbb{R}^n$, it produces an orthonormal basis $(u_1,\ldots,u_r)$ of $V$.
+* The Gram-Schmidt procedure can be summarized by the **QR factorization**: $A=QR$ where:
+  * $A$ is the $n\times r$ matrix with columns $v_1,\ldots,v_r$;
+  * $Q$ is the $n\times r$ matrix with columns $u_1,\ldots,u_r$;
+  * $R$ is the $r\times r$ matrix of the coefficients relating the $v$'s to the $u$'s. In particular, $R$ is upper triangular with non-zero diagonal entries, and can be inverted by back-substitution.
+**Reading:** Strang 4.4.
 
 Reading for upcoming lectures: we will continue through Strang Chapter 4.
