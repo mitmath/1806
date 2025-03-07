@@ -163,6 +163,19 @@ In class, we calculated the four fundamental subspaces on a small example. We ve
   * $A$ is the $n\times r$ matrix with columns $v_1,\ldots,v_r$;
   * $Q$ is the $n\times r$ matrix with columns $u_1,\ldots,u_r$;
   * $R$ is the $r\times r$ matrix of the coefficients relating the $v$'s to the $u$'s. In particular, $R$ is upper triangular with non-zero diagonal entries, and can be inverted by back-substitution.
+
 **Reading:** Strang 4.4.
 
-Reading for upcoming lectures: we will continue through Strang Chapter 4.
+### Lecture 14 (Fri March 7 2025)
+* Let $A$ be an $r\times n$ matrix of rank $r$, with $r<n$. This means that the column space $C(A)=\mathbb{R}^r$: therefore, for any $b\in\mathbb{R}^r$, the equation $Ax=b$ has at least one solution $\tilde{x}$. We also know that the null space $N(A)$ is a subspace of $\mathbb{R}^n$ of dimension $n-r>0$. It follows that in fact $Ax=b$ has infinitely many solutions, since $\tilde{x}+x'$ is also a solution for any $x'$ from $N(A)$. We can therefore ask, what is the minimum norm solution $x$? Any solution $x$ can be decomposed as $x^\parallel + x^\perp$ where $x^\parallel \in N(A)$ while $x^\perp\in N(A)^\perp = C(A^\top)$ (the row space of $A$). We discussed in class that the minimum norm solution to $Ax=b$ is exactly $x^\perp$. If we have a QR factorization $A^\top=QR$, then $Ax=b$ can be rearranged to give $x^\perp = QQ^\top x = Q(R^\top)^{-1}b$.
+* If $A$ is an $m\times n$ matrix, then its **matrix pseudoinverse** is the $n\times m$ matrix $A^+$ which does the following:
+  * Given $y\in\mathbb{R}^n$, let $b$ be the orthogonal projection of $y$ onto the column space $C(A)$.
+  * Let $x^\perp$ be the minimum norm solution to the equation $Ax=b$.
+Then $A^+$ is the $n\times m$ matrix which acts as $A^+y=x^\perp$.
+* Two examples of calculating the pseudoinverse:
+  * If $A$ is $r\times n$ with rank $r$, then the above calculation tells us that if we have the QR factorization $A^\top=QR$, then $A^+=Q(R^\top)^{-1}$.
+  * If $A$ is $n\times r$ with rank $r$, then for any $b\in C(A)$, the equation has a unique solution $Ax=b$. It follows that $A^+$ is simply orthogonal projection onto $C(A)$, that is, $A^+ = A(A^\top A)^{-1} A^\top$.
+
+**Reading:** Strang 4.5.
+
+Reading for upcoming lectures: we will next cover Strang Chapter 5.
