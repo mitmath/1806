@@ -178,4 +178,17 @@ Then $A^+$ is the $n\times m$ matrix which acts as $A^+y=x^\perp$.
 
 **Reading:** Strang 4.5.
 
+### Lecture 15 (Mon March 10 2025)
+* If $A$ is an $n\times n$ square determinant, its **determinant** is the **signed** factor by which the linear transformation $A:\mathbb{R}^n\to\mathbb{R}^n$ scales $n$-dimensional volumes.
+* Some key facts:
+  * Product formula: $\det(AB)=(\det A)(\det B)$.
+  * We have $\det A\neq0$ if and only if $A$ is invertible.
+  * The determinant of an upper triangular matrix is the product of the diagonal entries.
+* We covered several cases of $2\times 2$ matrices $A$: the unit square $S$ maps to a parallelogram $AS$, and $\det A$ is (up to sign) the 2-dimensional volume (area) of $AS$.
+* Two ways to calculate $\det A$ up to sign:
+  * Use a (generalized) QR factorization: $A=QR$ where $Q$ is an $n\times n$ orthogonal matrix, and $R$ is upper triangular (possibly with zero entries on the diagonal). Then $\det Q=\pm1$, so $\det A = \pm(\det R)$.
+  * Use gaussian elimination: $GA=\tilde{A}$ where $\tilde{A}$ is in row echelon form (REF), and $G$ is a product of row swap or elimination matrices. Then $\det G = \pm1$, so $\det A = \pm (\det \tilde{A})$.
+
+**Reading:** Strang 5.1.
+
 Reading for upcoming lectures: we will next cover Strang Chapter 5.
