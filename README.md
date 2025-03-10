@@ -187,7 +187,7 @@ Then $A^+$ is the $n\times m$ matrix which acts as $A^+y=x^\perp$.
 * We covered several cases of $2\times 2$ matrices $A$: the unit square $S$ maps to a parallelogram $AS$, and $\det A$ is (up to sign) the 2-dimensional volume (area) of $AS$.
 * Two ways to calculate $\det A$ up to sign:
   * Use a (generalized) QR factorization: $A=QR$ where $Q$ is an $n\times n$ orthogonal matrix, and $R$ is upper triangular (possibly with zero entries on the diagonal). Then $\det Q=\pm1$, so $\det A = \pm(\det R)$.
-  * Use gaussian elimination: $GA=\tilde{A}$ where $\tilde{A}$ is in row echelon form (REF), and $G$ is a product of row swap or elimination matrices. Then $\det G = \pm1$, so $\det A = \pm (\det \tilde{A})$.
+  * Use gaussian elimination: $GA=\tilde{A}$ where $\tilde{A}$ is in row echelon form (REF), and $G$ is a product of row swap or elimination matrices. Then $\det G = \pm1$, so $\det A = \pm(\det\tilde{A})$.
 
 **Reading:** Strang 5.1.
 
