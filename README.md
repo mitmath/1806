@@ -86,6 +86,10 @@ Catalog Description: *Basic subject on matrix theory and linear algebra, emphasi
 
 ------------------------------------------------------
 
+### Exam 1 (Wed Feb 19 2025)
+
+------------------------------------------------------
+
 ### Lecture 8 (Fri Feb 21 2025)
 
 * We started the lecture with the definition of the **matrix transpose** $A^t$.
@@ -191,4 +195,16 @@ Then $A^+$ is the $n\times m$ matrix which acts as $A^+y=x^\perp$.
 
 **Reading:** Strang 5.1.
 
-Reading for upcoming lectures: we will next cover Strang Chapter 5.
+### Lecture 16 (Wed March 12 2025)
+* We covered the "big formula" for the determinant of an $n\times n$ matrix, $\det A = \sum_\sigma (\textup{sgn }\sigma)\prod_{i=1}^n a_{i,\sigma(i)}$. The sum goes over all $n!$ permutations of $\{1,\ldots,n\}$, and $\textup{sgn }\sigma$ denotes the sign of the permutation $\sigma$: it is $+1$ if $\sigma$ is a composition of an even number of swaps, and $-1$ if $\sigma$ is a composition of an odd number of swaps. We explained that this formula can be derived from the multilinearity property of the determinant.
+* In most cases, the more efficient way to compute $\det A$ will be by gaussian elimination: $R = G_k \cdots G_1 A$. $R$ is in REF, so it is upper triangular and its determinant is simply the product of its diagonal entries. Each $G_i$ encodes an elementary row operation: if $G_i$ encodes a row swap, it follows from the big formula that $\det G_i=-1$. Otherwise, if $G_i$ encodes an elimination operation, then $G_i$ is a lower triangular matrix with all $1$'s along the diagonal, and in this case $\det G_i=1$. It follows that $\det A=(-1)^s\det R$, where $s$ is the number of row swaps in the gaussian elimination.
+
+**Reading:** Strang 5.2.
+
+### Lecture 17 (Fri March 14 2025)
+* We covered the Laplace expansion of the determinant, which can be viewed as a way to organize the "big formula" from last time.
+* We considered one example of a circulant matrix; see https://en.wikipedia.org/wiki/Circulant_matrix. Following the Wikipedia notation, our example had $c_0=1$, $c_1=z$, and all other $c_j=0$. We covered how to evaluate the determinant of this matrix using the "big formula", and also using Laplace expansion along the top row.
+
+**Reading:** Strang 5.3.
+
+Reading for upcoming lectures: we will finish Chapter 5 before spring break.
