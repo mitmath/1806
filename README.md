@@ -178,7 +178,7 @@ In class, we calculated the four fundamental subspaces on a small example. We ve
 Then $A^+$ is the $n\times m$ matrix which acts as $A^+y=x^\perp$.
 * Two examples of calculating the pseudoinverse:
   * If $A$ is $r\times n$ with rank $r$, then the above calculation tells us that if we have the QR factorization $A^\top=QR$, then $A^+=Q(R^\top)^{-1}$.
-  * If $A$ is $n\times r$ with rank $r$, then for any $b\in C(A)$, the equation has a unique solution $Ax=b$. It follows that $A^+$ is simply orthogonal projection onto $C(A)$, that is, $A^+ = A(A^\top A)^{-1} A^\top$.
+  * If $A$ is $n\times r$ with rank $r$, then the pseudoinverse should map $y$ to its orthogonal projection onto $C(A)$, that is, $b = A(A^\top A)^{-1} A^\top y$. For any $b\in C(A)$, the equation has a unique solution $Ax=b$, which is given by $x=(A^\top A)^{-1} A^\top y$. It follows that $A^+ = (A^\top A)^{-1} A^\top$.
 
 **Reading:** Strang 4.5.
 
