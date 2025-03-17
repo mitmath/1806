@@ -210,6 +210,17 @@ Then $A^+$ is the $n\times m$ matrix which acts as $A^+y=x^\perp$.
 ### Lecture 18 (Mon March 17 2025)
 * In this lecture we did some review and examples in preparation for the Wednesday exam.
 * If $M=I+vv^\top$, we explained how to calculate that $M^{-1} = I-(1+\|v\|^2)^{-1}vv^\top$.
-* We calculated the pseudoinverse of the matrix $(I \ v)$, where $I$ is the $r\times r$ identity matrix and $v$ is a unit vector in $\mathbb{R}^r$.
+* Let $I$ be the $r\times r$ identity matrix, and $v$ a vector in $\mathbb{R}^r$. We calculated the pseudoinverse of the matrix 
+```math
+A = \begin{pmatrix} I & v  \\ 0 & 0 \end{pmatrix}
+```
 
-Reading for upcoming lectures: we will finish Chapter 5 before spring break.
+------------------------------------------------------
+
+### Exam 2 (Wed March 19 2025)
+
+------------------------------------------------------
+
+### Lecture 19 (Fri March 21 2025)
+
+Reading for upcoming lectures: we will finish the remaining material of Chapter 5 in Lecture 19 (right before spring break).
