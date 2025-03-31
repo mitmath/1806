@@ -222,5 +222,10 @@ A = \begin{pmatrix} I & v  \\ 0 & 0 \end{pmatrix}
 ------------------------------------------------------
 
 ### Lecture 19 (Fri March 21 2025)
+* In this lecture we reviewed the Laplace expansion (also called cofactor expansion) of the determinant.
+* Given an $n\times n$ matrix $A$, the $(i,j)$ **minor** is the $(n-1)\times(n-1)$ matrix $M_{i,j}$ obtained by removing the $i$-th row and $j$-th column of $A$.
+* We defined the $(i,j)$ **cofactor** as $C_{i,j}=(-1)^{i+j}\det M_{i,j}$. The **cofactor matrix** is the $n\times n$ matrix $C$ with entries $C_{i,j}$.
+* The **adjugate matrix** is $X=C^\top$. We derived in class that if $A$ is invertible, then $A^{-1}=(1/\det A) X$.
+* We also used this to derive **Cramer's rule** for solving a linear system $Ax=b$.
 
-Reading for upcoming lectures: we will finish the remaining material of Chapter 5 in Lecture 19 (right before spring break).
+**Reading:** finish Strang Chapter 5.
