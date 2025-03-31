@@ -229,3 +229,14 @@ A = \begin{pmatrix} I & v  \\ 0 & 0 \end{pmatrix}
 * We also used this to derive **Cramer's rule** for solving a linear system $Ax=b$.
 
 **Reading:** finish Strang Chapter 5.
+
+### Lecture 20 (Mon March 31 2025)
+* At the start of this class, we discussed that diagonal matrices act in a simple way.
+* A (square) matrix $A$ is **diagonalizable** if it can be related to a diagonal matrix via the equation $A=EDE^{-1}$ where $E$ is $n\times n$ invertible, and $D$ is $n\times n$ diagonal.
+* **Caution: not all square matrices are diagonalizable!** Nevertheless, it is an important and useful concept.
+* Let $E$ have columns $v^1,\ldots,v^n$, and let $D$ have diagonal entries $d_1,\ldots,d_n$. We showed that $v^j$ is an **eigenvector** of $A$ with **eigenvalue** $d_j$.
+* Since $E$ is invertible (by definition), its columns form a basis of $\mathbb{R}^n$, which is called the **eigenbasis** of $A$. The action of $A$ in the eigenbasis is diagonal.
+* We explained that $E$ and $E^{-1}$ may be viewed as implementing **change of basis**: $E^{-1}$ maps from standard coordinates to eigenbasis coordinates, while $E$ maps from eigenbasis coordinates to standard basis coordinates.
+* We also covered some concrete examples. In future lectures we will learn how to compute matrix eigenvalues and eigenvectors.
+
+**Reading:** start Strang Chapter 6.
