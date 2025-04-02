@@ -240,3 +240,23 @@ A = \begin{pmatrix} I & v  \\ 0 & 0 \end{pmatrix}
 * We also covered some concrete examples. In future lectures we will learn how to compute matrix eigenvalues and eigenvectors.
 
 **Reading:** start Strang Chapter 6.
+
+### Lecture 21 (Wed April 2 2025)
+* Let $A$ be a square $n\times n$ matrix. An **eigenvector** of $A$ is a non-zero vector $v\in\mathbb{R}^n$ such that $Av=\lambda v$ for a scalar $\lambda$ (the **eigenvalue**). We will allow $\lambda$ to be a real or complex number, so in general $\lambda\in\mathbb{C}$.
+* An eigenvector with eigenvalue $\lambda=0$ is just a null vector.
+* In general, for any $\lambda$, an eigenvector with eigenvalue $\lambda$ is any non-zero vector in the null space $N(A-\lambda I)$.
+* It follows that the eigenvalues of $A$ are exactly the roots of $p_A(\lambda)=\det(A-\lambda I)$, the **characteristic polynomial** of $A$.
+* Let $\alpha$ denote the **trace** of $A$ (sum of its diagonal entries). It follows from the determinant formula that $p_A(\lambda)$ is a polynomial in $\lambda$ of degree $n$, of the form
+```math
+p_A(\lambda) = (-1)^n\lambda^n +(-1)^{n-1} \alpha \lambda^{n-1} + \ldots + \det A\,.
+```
+* The **fundamental theorem of algebra** tells us that $p_A(\lambda)$ has $n$ roots $\lambda_1,\ldots,\lambda_n$, and can be factorized as
+```math
+p_A(\lambda) = (-1)^n \prod_{j=1}^n(\lambda-\lambda_j)\,.
+```
+* The eigenvalues are exactly the roots $\lambda_j$. They may be complex-valued, and it is possible to have multiple roots.
+* The **algebraic multiplicity** of an eigenvalue $\lambda$ is the number of times it appears as a root in the characteristic polynomial.
+* The **geometric multiplicity** of an eigenvalue $\lambda$ is the dimension of its **eigenspace**, $N(A-\lambda I)$.
+* In general, $1\le \textup{geo mult} \le \textup{alg mult}$. We will discuss this further in the next lecture.
+
+**Reading:** Strang 6.1-6.2.
