@@ -260,3 +260,15 @@ p_A(\lambda) = (-1)^n \prod_{j=1}^n(\lambda-\lambda_j)\,.
 * In general, $1\le \textup{geo mult} \le \textup{alg mult}$. We will discuss this further in the next lecture.
 
 **Reading:** Strang 6.1-6.2.
+
+### Lecture 22 (Fri April 4 2025)
+
+* Let $A$ be a square $n\times n$ matrix. We discussed last time that the characteristic polynomial $p_A(\lambda)$ is a polynomial in $\lambda$ of degree $n$. The fundamental theorem of algebra then tells us that it has $n$ roots $\lambda_1,\ldots,\lambda_n$, and these are precisely the eigenvalues of $A$. The roots may be complex-valued, and it is possible to have multiple roots.
+* The **algebraic multiplicity** of an eigenvalue $\lambda$ is the number of times it appears as a root of the characteristic polynomial.
+* The **geometric multiplicity** of an eigenvalue $\lambda$ is the dimension of its **eigenspace**, $N(A-\lambda I)$.
+* In general, $1 \le \textup{geo mult} \le \textup{alg mult}$. 
+* The algebraic multiplicities sum up to the total number $n$ of roots. Eigenspaces for distinct eigenvalues are linearly independent, so the geometric multiplicities sum up to the combined dimension of all eigenspaces. The matrix $A$ is **diagonalizable** if and only if the latter sum equals $n$, which means we must have $\textup{geo mult} = \textup{alg mult}$ for all the eigenvalues. This is not guaranteed in general.
+* A special case is that all $n$ roots are distinct. In this case we must have $\textup{geo mult} = \textup{alg mult} = 1$ for all eigenvalues, so the matrix $A$ in this case is always diagonalizable. If the roots are not all distinct, then $A$ may or may not be diagonalizable.
+* If $A$ is not diagonalizable, then it has a Jordan canonical form (JCF), which can be viewed as a generalization of the diagonalization. (In the special case that $A$ is diagonalizable, the JCF is the same as the diagonalization.)
+
+**Reading:** finish reading Strang 6.2-6.3.
