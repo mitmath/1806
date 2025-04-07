@@ -278,6 +278,6 @@ p_A(\lambda) = (-1)^n \prod_{j=1}^n(\lambda-\lambda_j)\,.
 * We discussed that eigenvalues and eigenvectors can be complex-valued, even for real matrices, and covered an example.
 * In general, if $A$ is a real $n\times n$ matrix, then its characteristic polynomial has real coefficients. This implies that the non-real eigenvalues of $A$ must occur in conjugate pairs. (For example, this also implies that if $A$ is $n\times n$ with $n$ odd, then $A$ must have at least one real eiganvalue).
 * We covered some basic concepts of complex numbers, including conjugate and modulus. We also covered complex vectors, the conjugate transpose operation, and the norm of a complex vector.
-* Lastly, we covered the **spectral theorem**, which says that is $A$ is $n\times n$ real symmetric, then it has all real eigenvalues and eigenvectors, and an orthonormal eigenbasis. We can write this as $A=EDE^\st$ where both $D$ and $E$ are real, and $E$ is an orthogonal matrix. In class we also gave a partial proof of the spectral theorem.
+* Lastly, we covered the **spectral theorem**, which says that is $A$ is $n\times n$ real symmetric, then it has all real eigenvalues and eigenvectors, and an orthonormal eigenbasis. We can write this as $A=EDE^\top$ where both $D$ and $E$ are real, and $E$ is an orthogonal matrix. In class we also gave a partial proof of the spectral theorem.
 
 **Reading:** Strang 6.3, as well as the first three pages of Strang 6.4.
