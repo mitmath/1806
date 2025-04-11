@@ -281,3 +281,28 @@ p_A(\lambda) = (-1)^n \prod_{j=1}^n(\lambda-\lambda_j)\,.
 * Lastly, we covered the **spectral theorem**, which says that is $A$ is $n\times n$ real symmetric, then it has all real eigenvalues and eigenvectors, and an orthonormal eigenbasis. We can write this as $A=EDE^\top$ where both $D$ and $E$ are real, and $E$ is an orthogonal matrix. In class we also gave a partial proof of the spectral theorem.
 
 **Reading:** Strang 6.3, as well as the first three pages of Strang 6.4.
+
+### Lecture 24 (Wed April 9 2025)
+
+* A symmetric matrix is **positive-definite (PD)** if all its eigenvalues are strictly positive.
+* A symmetric matrix is **positive semi-definite (PSD)** if all its eigenvalues are nonnegative.
+* If $A$ is symmetric, it is PD if and only if $x^\top Ax>0$ for every vector $x$.
+* If $A$ is symmetric, it is PSD if and only if $x^\top Ax\ge0$ for every vector $x$.
+* For any matrix $M$ ($n\times p$), both $MM^\top$ and $M^\top M$ are PSD.
+* In this lecture we introduced the **singular value decomposition (SVD)**, which applies to any matrix $M$ ($n\times p$). More precisely we covered both the long SVD and the short SVD.
+* In the special case that $M$ is a square matrix of full rank, the long and short SVD are identical, and we covered in class the procedure to find this SVD.
+
+**Reading:** Strang 7.1.
+
+### Lecture 25 (Fri April 11 2025)
+
+* We covered how to find the short and long SVD of a general matrix $M$ ($n\times p$).
+* The matrix $A=M^\top M$ is PSD, so we can find its spectral decomposition $A=EDE^\top$. Moreover we can arrange that the diagonal entries of $D$ are $d_1 \ge \ldots \ge d_r > 0 = d_{r+1} = \ldots = d_p$, where $r$ is the rank of $M$ (and also the rank of $A$).
+* Let $V$ be the $p\times r$ matrix formed from the first $r$ columns of $E$.
+* Let $\Sigma$ be the $r\times r$ diagonal matrix with diagonal entries $\sigma_i=(d_i)^{1/2}$ for $1\le i\le r$.
+* Let $U$ be the $n\times r$ matrix defined by $U=MV\Sigma^{-1}$.
+* Then $M=U\Sigma V^\top$ gives the short SVD of $M$.
+* To convert from short to long SVD: expand $\Sigma$ from $r\times r$ to $n\times p$ by adding zeroes; expand $U$ from $n\times r$ to $n\times n$ so that its columns form an orthonormal basis of $\mathbb{R}^n$; expand $V$ from $p\times r$ to $p\times p$ so that its columns form an orthonormal basis of $\mathbb{R}^p$.
+* We also covered some examples and practice problems.
+
+**Reading:** finish reading Strang 7.1.
