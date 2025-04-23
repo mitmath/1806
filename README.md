@@ -306,3 +306,36 @@ p_A(\lambda) = (-1)^n \prod_{j=1}^n(\lambda-\lambda_j)\,.
 * We also covered some examples and practice problems.
 
 **Reading:** finish reading Strang 7.1.
+
+### Lecture 26 (Wed April 16 2025)
+
+* In this lecture we covered geometric interpretations of the SVD.
+* Throughout, suppose $M$ is $n\times p$ with rank $r$, and that we rank its singular values in nondecreasing order $\sigma_1\ge \ldots \ge \sigma_r>0$.
+* The maximum singular value $\sigma_1$ is the *operator norm* or *spectral norm* of $M$, usually denoted $\|M\|_\textup{op}$ or $\|M\|$.
+* The operator norm of $M$ can be understood as the maximum value of $\|Mv\|$ attained as $v$ ranges over all unit vectors in $\mathbb{R}^p$.
+* The SVD can be used to calculate the pseudoinverse: if the short SVD of $M$ is given by $M=U\Sigma V^\top$, then the pseudoinverse of $M$ is $V\Sigma^{-1}U^\top$.
+
+**Reading:** Strang 7.2.
+
+### Lecture 27 (Fri April 18 2025)
+
+* In this lecture we covered the application of SVD to low-rank approximation and image compression.
+* Suppose $M$ is $n\times p$ with short SVD $M=U\Sigma V^\top$. As always, we rank the singular values (diagonal entries of $\Sigma$) $\sigma_1\ge \ldots \ge \sigma_r>0$.
+* The rank-$k$ approximation of $M$ is given by $M_k = U_k \Sigma_k (V_k)^\top$, where $U_k$ is formed from the first $k$ columns of $U$, $V_k$ is formed from the first $k$ columns of $V$, and $\Sigma_k$ is the upper left $k\times k$ submatrix of $\Sigma$. 
+* We discussed three matrix norms: (1) operator norm / spectral norm; (2) Frobenius norm / Hilbert--Schmidt norm, (3) nuclear norm.
+* Eckhart--Young theorem: among all matrices of rank at most $k$, the best approximation to $M$ is given by $M_k$. It is best with respect to all three of the spectral norms listed above.
+* Application to image compression: if $M$ represents an $n\times p$ image, the original image consists of $np$ pixels. Storing the compressed image $M_k$ requires storing $(n+p)k+k$ values. If $n,p$ are large and $k$ is relatively small, the compressed image requires much less storage.
+* See https://timbaumann.info/svd-image-compression-demo/ for examples.
+
+**Reading:** Strang 7.2.
+
+### Lecture 28 (Wed April 23 2025)
+
+* We covered the application of SVD to PCA (principal components analysis).
+* Let $X$ be an $n\times p$ data matrix where $n$ is the number of individuals or samples, and $p$ is the number of attributes or features. 
+* We assume the data is normalized, so that each column (feature) has mean zero and standard deviation one.
+* 2D PCA: choose the 2D projection of the data that shows the most variability.
+* We learned in class that this is achieved by taking $u,v$ to be the two top right singular vectors (corresponding to the first two columns of the $V$ matrix), resulting in the 2D scatterplot of the values $(x_i\cdot u,x_i\cdot v)$ for $i=1,\ldots,n$.
+* Lastly, we showed that 1D PCA and ordinary least squares (OLS, see Lecture 12) are not the same. This is the reason the textbook refers to 1D PCA as "perpendicular least squares."
+
+**Reading:** Strang 7.3.
