@@ -353,8 +353,8 @@ p_A(\lambda) = (-1)^n \prod_{j=1}^n(\lambda-\lambda_j)\,.
 ### Lecture 30 (Mon 28 April 2025)
 
 * In this class we covered definitions of special classes of complex $n\times n$ matrices.
-* *Unitary* matrices: extension of definition of **orthogonal** matrices. Orthogonal matrices preserve the $\mathbb{R}^n$ scalar product, and unitary matrices preserve the $\mathbb{C}^n$ scalar product.
-* *Hermitian* matrices: extension of definition of **symmetric** matrices. Symmetric matrices are self-adjoint on $\mathbb{R}^n$, and hermitian matrices are self-adjoint on $\mathbb{C}^n$.
+* **Unitary** matrices: extension of definition of **orthogonal** matrices. Orthogonal matrices preserve the $\mathbb{R}^n$ scalar product, and unitary matrices preserve the $\mathbb{C}^n$ scalar product.
+* **Hermitian** matrices: extension of definition of **symmetric** matrices. Symmetric matrices are self-adjoint on $\mathbb{R}^n$, and hermitian matrices are self-adjoint on $\mathbb{C}^n$.
 * A matrix $A\in\mathbb{C}^{n\times n}$ is **normal** if $A\bar{A}^\top=\bar{A}^\top A$. Both sets of unitary matrices and hermitian matrices sit inside the set of normal matrices.
 * We covered the **spectral theorem** for three cases: symmetric matrices (covered previously), hermitian matrices, and normal matrices.
 * Example: same permutation matrix as discussed last time. This matrix is normal, but not symmetric. It has an orthogonal eigenbasis, which corresponds to a special basis of $\mathbb{C}^n$ called the **Fourier basis.**
