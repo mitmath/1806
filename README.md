@@ -339,3 +339,24 @@ p_A(\lambda) = (-1)^n \prod_{j=1}^n(\lambda-\lambda_j)\,.
 * Lastly, we showed that 1D PCA and ordinary least squares (OLS, see Lecture 12) are not the same. This is the reason the textbook refers to 1D PCA as "perpendicular least squares."
 
 **Reading:** Strang 7.3.
+
+### Lecture 29 (Fri 25 April 2025)
+
+* In this lecture we finished our discussion of SVD and PCA by going over the application covered in the paper https://doi.org/10.1038/nature07331.
+* We reviewed the basics of complex numbers: real part, imaginary part, complex conjugate, modulus, polar form, Euler's formula.
+* Example: the permutation matrix $A$ corresponding to the permutation $\sigma$ that maps $1\mapsto 2, 2\mapsto 3, \ldots, n-1\mapsto n, n\mapsto1$. The eigenvalues are the $n$-th roots of unity.
+* Example: solving the differential equation $f''(t)=-f(t)$.
+* We defined the complex dot product (also called scalar product or inner product): for $v,w\in\mathbb{C}^n$, we define $v\cdot w = \bar{v}^\top w$.
+
+**Reading:** start Strang 6.4.
+
+### Lecture 30 (Mon 28 April 2025)
+
+* In this class we covered definitions of special classes of complex $n\times n$ matrices.
+* *Unitary* matrices: extension of definition of **orthogonal** matrices. Orthogonal matrices preserve the $\mathbb{R}^n$ scalar product, and unitary matrices preserve the $\mathbb{C}^n$ scalar product.
+* *Hermitian* matrices: extension of definition of **symmetric** matrices. Symmetric matrices are self-adjoint on $\mathbb{R}^n$, and hermitian matrices are self-adjoint on $\mathbb{C}^n$.
+* A matrix $A\in\mathbb{C}^{n\times n}$ is **normal** if $A\bar{A}^\top=\bar{A}^\top A$. Both sets of unitary matrices and hermitian matrices sit inside the set of normal matrices.
+* We covered the **spectral theorem** for three cases: symmetric matrices (covered previously), hermitian matrices, and normal matrices.
+* Example: same permutation matrix as discussed last time. This matrix is normal, but not symmetric. It has an orthogonal eigenbasis, which corresponds to a special basis of $\mathbb{C}^n$ called the **Fourier basis.**
+
+**Reading:** continue Strang 6.4.
