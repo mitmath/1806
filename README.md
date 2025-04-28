@@ -346,7 +346,7 @@ p_A(\lambda) = (-1)^n \prod_{j=1}^n(\lambda-\lambda_j)\,.
 * We reviewed the basics of complex numbers: real part, imaginary part, complex conjugate, modulus, polar form, Euler's formula.
 * Example: the permutation matrix $A$ corresponding to the permutation $\sigma$ that maps $1\mapsto 2, 2\mapsto 3, \ldots, n-1\mapsto n, n\mapsto1$. The eigenvalues are the $n$-th roots of unity.
 * Example: solving the differential equation $f''(t)=-f(t)$.
-* We defined the complex dot product (also called scalar product or inner product): for $v,w\in\mathbb{C}^n$, we define $v\cdot w = \bar{v}^\top w$.
+* We defined the complex dot product (also called scalar product or inner product): for $v,w\in\mathbb{C}^n$, we define $v\cdot w = \overline{v}^\top w$.
 
 **Reading:** start Strang 6.4.
 
