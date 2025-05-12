@@ -379,3 +379,12 @@ p_A(\lambda) = (-1)^n \prod_{j=1}^n(\lambda-\lambda_j)\,.
 * We also defined a discrete second derivative $\Delta$, which we found was also a circulant matrix. Vectors in the kernel of this matrix correspond to what are called **harmonic** functions.
 
 **Reading:** continue Strang 6.4.
+
+### Lecture 33 (Mon May 5)
+
+* In this lecture we discussed complex vector spaces.
+* We reviewed the basic notions of span, linear independence, basis, dimension in the context of complex vector spaces.
+* We reviewed the orthogonal projection calculation in the context of subspaces of $\mathbb{C}^n$ equipped with the $\mathbb{C}^n$ dot product.
+* In preparation for the next lecture, we reviewed the precise structure of the $6\times6$ Fourier matrix.
+
+**Reading:** continue Strang 6.4.
