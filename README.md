@@ -388,3 +388,26 @@ p_A(\lambda) = (-1)^n \prod_{j=1}^n(\lambda-\lambda_j)\,.
 * In preparation for the next lecture, we reviewed the precise structure of the $6\times6$ Fourier matrix.
 
 **Reading:** continue Strang 6.4.
+
+### Lecture 34 (Wed May 7)
+
+* In this lecture we reviewed the Fourier basis, and covered in detail its connection to the sines-cosines basis.
+* We covered the discrete Fourier transform (DFT), and explained how to regard it as a change of basis operation.
+* We discussed natural applications of DFT to compression and denoising in signal processing.
+
+**Reading:** continue Strang 6.4.
+
+### Lecture 35 (Wed May 9)
+
+* This lecture focused on the fact that the DFT sends convolution to pointwise multiplication. This is a key property of the Fourier transform.
+* We used what we learned about circulant matrices to obtain an algebraic derivation of this identity.
+* We covered some of the uses of this identity: e.g., since convolution can be challenging (e.g. think about the $n$-fold convolution of a vector $x$), one can use DFT to convert convolution to pointwise multiplication --- which is easy --- then apply Fourier inversion to convert back.
+
+**Reading:** continue Strang 6.4.
+
+### Lecture 36 (Mon May 12)
+
+* In this lecture we gave a **probabilistic** derivation of the same fact from last time, that the DFT sends convolution to pointwise multiplication.
+* We also reviewed some previous material about the SVD.
+
+**Reading:** finish reading Strang 6.4.
