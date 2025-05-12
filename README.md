@@ -370,3 +370,12 @@ p_A(\lambda) = (-1)^n \prod_{j=1}^n(\lambda-\lambda_j)\,.
 * The Fourier basis is also an eigenbasis for any circulant matrix. This fact can be used for multiplying circulant matrices, and also implies that circulant matrices commute with one another.
 
 **Reading:** continue Strang 6.4.
+
+### Lecture 32 (Fri May 2 2025)
+
+* In this lecture we continued our discussion of **circulant matrices.** We covered the **cyclic convolution** operation in detail.
+* We introduced $T_n$ as the graph with $n$ vertices numbered $0$ up to $n-1$, with cyclic indexing mod $n$, such that there is an edge between $i$ and $i+1$ (and thus, with cyclic indexing, there is an edge between $n-1$ and $0$). A vector $f=(f_0,\ldots,f_{n-1})\in\mathbb{C}^n$ is equivalent to a function $f:T_n\to\mathbb{C}$ that sends element $j\in T_n$ to value $f(j)=f_j$.
+* We discussed that for functions $f:T_n\to\mathbb{C}$, a natural notion of a discrete derivative of $f$ can be expressed as applying a circulant matrix, $f\mapsto Df$.
+* We also defined a discrete second derivative $\Delta$, which we found was also a circulant matrix. Vectors in the kernel of this matrix correspond to what are called **harmonic** functions.
+
+**Reading:** continue Strang 6.4.
